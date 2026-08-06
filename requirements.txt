@@ -1,0 +1,17 @@
+# Notebooks e análise estatística
+ipykernel
+matplotlib
+nbconvert
+nbformat
+numpy
+pandas
+palmerpenguins
+patsy
+scipy
+seaborn
+statsmodels
+
+# Leitura e inspeção das referências em PDF
+PyMuPDF
+pdfplumber
+pypdf
