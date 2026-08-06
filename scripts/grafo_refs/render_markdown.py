@@ -106,7 +106,13 @@ def render_markdown(graph: dict) -> str:
         for code in completed
     )
     lines.extend(["", "## Conteúdos pendentes", ""])
-    lines.extend(f"- `{code}` — ainda não mapeado" for code in sorted(coverage.get("conteudos_pendentes", [])))
+    pending_codes = {
+        content["codigo"]
+        for content in _content_nodes(graph)
+        if isinstance(content.get("codigo"), str)
+        and query_by_content(graph, content["codigo"])["estado"] == "pendente"
+    }
+    lines.extend(f"- `{code}` — ainda não mapeado" for code in sorted(pending_codes))
 
     lines.extend(["", "## Índice por fonte", ""])
     descendants = _descendants_by_source(graph)

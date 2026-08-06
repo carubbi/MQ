@@ -14,7 +14,7 @@ GRAPH = {
             "estado": "parcial",
             "criterio": "conteudo_curricular",
             "conteudos_concluidos": ["01.01", "01.03"],
-            "conteudos_pendentes": ["02.01"],
+            "conteudos_pendentes": ["02.01", "99.99"],
             "fontes_inventariadas": 1,
         }
     },
@@ -42,6 +42,13 @@ GRAPH = {
             "codigo": "01.01",
             "unidade": "I",
             "nome": "Fundamentos estatísticos",
+        },
+        {
+            "id": "conteudo-01-02",
+            "tipo": "conteudo_curricular",
+            "codigo": "01.02",
+            "unidade": "I",
+            "nome": "Conteúdo curricular omitido da cobertura",
         },
         {
             "id": "conteudo-01-03",
@@ -115,6 +122,15 @@ class RenderMarkdownTests(unittest.TestCase):
         self.assertIn("### `01.01` — Fundamentos estatísticos", rendered)
         self.assertIn("### `01.03` — Análise univariada", rendered)
         self.assertNotIn("### `02.01`", rendered)
+
+    def test_lists_known_content_omitted_from_coverage_as_pending_outside_curated_index(self):
+        """Catches known uncovered content disappearing from the pending section."""
+        rendered = render_markdown(GRAPH)
+
+        self.assertIn("- `01.02` — ainda não mapeado", rendered)
+        self.assertLess(rendered.index("- `01.02` — ainda não mapeado"), rendered.index("- `02.01` — ainda não mapeado"))
+        self.assertNotIn("### `01.02`", rendered)
+        self.assertNotIn("- `99.99` — ainda não mapeado", rendered)
 
     def test_cli_renders_markdown_when_executed_as_a_script(self):
         """Catches a direct CLI execution that cannot import the local package."""
