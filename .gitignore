@@ -17,3 +17,5 @@ tests/*
 !tests/grafo_refs/**
 tmp/
 .venv/
+__pycache__/
+*.py[cod]
