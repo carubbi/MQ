@@ -163,3 +163,11 @@ class SchemaTests(unittest.TestCase):
         graph["metadados"]["cobertura"]["conteudos_pendentes"].append("02.01")
 
         self.assert_invalid(graph)
+
+    def test_requires_complete_canonical_vocabulary_lists(self):
+        for vocabulary_name in valid_graph()["vocabularios"]:
+            with self.subTest(vocabulary_name=vocabulary_name):
+                graph = valid_graph()
+                graph["vocabularios"][vocabulary_name].pop()
+
+                self.assert_invalid(graph)

@@ -96,35 +96,29 @@
         "tipos_no": {
           "type": "array",
           "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "enum": [
-              "fonte",
-              "capitulo",
-              "secao",
-              "item_pedagogico",
-              "topico",
-              "conteudo_curricular"
-            ]
-          }
+          "const": [
+            "fonte",
+            "capitulo",
+            "secao",
+            "item_pedagogico",
+            "topico",
+            "conteudo_curricular"
+          ]
         },
         "subtipos_item_pedagogico": {
           "type": "array",
           "uniqueItems": true,
-          "items": {"type": "string", "enum": ["questao", "exercicio", "exemplo"]}
+          "const": ["questao", "exercicio", "exemplo"]
         },
         "tipos_relacao": {
           "type": "array",
           "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "enum": ["contem", "aborda", "corresponde_a", "precede"]
-          }
+          "const": ["contem", "aborda", "corresponde_a", "precede"]
         },
         "pertinencias_t199": {
           "type": "array",
           "uniqueItems": true,
-          "items": {"$ref": "#/$defs/pertinencia"}
+          "const": ["direta", "indireta", "fora_do_escopo"]
         }
       }
     },

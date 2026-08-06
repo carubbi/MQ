@@ -12,6 +12,7 @@ class ModelTests(unittest.TestCase):
             {
                 "id": "livro-x-cap-01",
                 "tipo": "capitulo",
+                "numero_impresso": "1",
                 "titulo": "Dados",
                 "pagina_pdf_inicio": 1,
                 "pagina_pdf_fim": 4,
@@ -20,6 +21,7 @@ class ModelTests(unittest.TestCase):
             {
                 "id": "livro-x-sec-01-01",
                 "tipo": "secao",
+                "numero_impresso": "1.1",
                 "titulo": "População e amostra",
                 "pagina_pdf_inicio": 2,
                 "pagina_pdf_fim": 4,
@@ -57,6 +59,43 @@ class ModelTests(unittest.TestCase):
                 "destino": "topico-populacao",
             },
             edges,
+        )
+
+    def test_flatten_discards_prohibited_and_free_text_fields(self):
+        curated = [
+            {
+                "id": "livro-x-sec-01-01",
+                "tipo": "secao",
+                "numero_impresso": "1.1",
+                "titulo": "População e amostra",
+                "pagina_pdf_inicio": 2,
+                "pagina_pdf_fim": 4,
+                "pai": "livro-x",
+                "pertinencia_t199": "direta",
+                "dificuldade": "alta",
+                "observacao": "revisar",
+                "enunciado": "Texto completo que não pertence ao grafo.",
+                "solucao": "Solução que não pertence ao grafo.",
+                "imagem": "pagina-2.png",
+                "substituto_livre": "não permitido",
+            }
+        ]
+
+        nodes, _ = flatten_curated_source("livro-x", curated)
+
+        self.assertEqual(
+            nodes,
+            [
+                {
+                    "id": "livro-x-sec-01-01",
+                    "tipo": "secao",
+                    "numero_impresso": "1.1",
+                    "titulo": "População e amostra",
+                    "pagina_pdf_inicio": 2,
+                    "pagina_pdf_fim": 4,
+                    "pertinencia_t199": "direta",
+                }
+            ],
         )
 
     def test_flatten_precedes_consecutive_siblings(self):

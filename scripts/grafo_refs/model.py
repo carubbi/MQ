@@ -4,6 +4,50 @@ import re
 import unicodedata
 
 
+CANONICAL_FIELDS_BY_TYPE = {
+    "fonte": (
+        "id",
+        "tipo",
+        "tipo_fonte",
+        "titulo",
+        "arquivo",
+        "paginas_pdf",
+        "idioma",
+        "hash_sha256",
+    ),
+    "capitulo": (
+        "id",
+        "tipo",
+        "numero_impresso",
+        "titulo",
+        "pagina_pdf_inicio",
+        "pagina_pdf_fim",
+        "pagina_impressa_inicio",
+    ),
+    "secao": (
+        "id",
+        "tipo",
+        "numero_impresso",
+        "titulo",
+        "pagina_pdf_inicio",
+        "pagina_pdf_fim",
+        "pagina_impressa_inicio",
+        "pertinencia_t199",
+    ),
+    "item_pedagogico": (
+        "id",
+        "tipo",
+        "subtipo",
+        "numero_impresso",
+        "pagina_pdf",
+        "pagina_impressa",
+        "pertinencia_t199",
+    ),
+    "topico": ("id", "tipo", "nome"),
+    "conteudo_curricular": ("id", "tipo", "codigo", "unidade", "nome"),
+}
+
+
 def slug_id(value: str) -> str:
     """Normaliza texto em um identificador ASCII estável."""
     normalized = unicodedata.normalize("NFKD", value)
@@ -20,10 +64,19 @@ def flatten_curated_source(
     sibling_groups = {}
 
     for curated_node in nodes:
-        node = curated_node.copy()
-        parent_id = node.pop("pai", source_id)
-        topics = node.pop("topicos", [])
-        contents = node.pop("conteudos", [])
+        try:
+            allowed_fields = CANONICAL_FIELDS_BY_TYPE[curated_node["tipo"]]
+        except KeyError as error:
+            raise ValueError("tipo de nó curado desconhecido") from error
+
+        node = {
+            field: curated_node[field]
+            for field in allowed_fields
+            if field in curated_node
+        }
+        parent_id = curated_node.get("pai", source_id)
+        topics = curated_node.get("topicos", [])
+        contents = curated_node.get("conteudos", [])
         node_id = node["id"]
 
         canonical_nodes.append(node)
