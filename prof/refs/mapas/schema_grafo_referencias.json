@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schema_grafo_referencias.json",
+  "title": "Grafo de referências da T199",
+  "type": "object",
+  "required": ["metadados", "vocabularios", "nos", "relacoes"],
+  "additionalProperties": false,
+  "properties": {
+    "metadados": {"$ref": "#/$defs/metadados"},
+    "vocabularios": {"$ref": "#/$defs/vocabularios"},
+    "nos": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/no"}
+    },
+    "relacoes": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/relacao"}
+    }
+  },
+  "$defs": {
+    "codigoConteudo": {
+      "type": "string",
+      "enum": [
+        "01.01",
+        "01.02",
+        "01.03",
+        "01.04",
+        "02.01",
+        "02.02",
+        "02.03",
+        "02.04",
+        "03.01",
+        "03.02",
+        "03.03",
+        "03.04"
+      ]
+    },
+    "id": {"type": "string", "minLength": 1},
+    "pagina": {"type": "integer", "minimum": 1},
+    "pertinencia": {
+      "type": "string",
+      "enum": ["direta", "indireta", "fora_do_escopo"]
+    },
+    "metadados": {
+      "type": "object",
+      "required": [
+        "versao_esquema",
+        "data_geracao",
+        "semestre_referencia",
+        "cobertura"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "versao_esquema": {"type": "string", "minLength": 1},
+        "data_geracao": {"type": "string", "format": "date"},
+        "semestre_referencia": {"type": "string", "minLength": 1},
+        "cobertura": {"$ref": "#/$defs/cobertura"}
+      }
+    },
+    "cobertura": {
+      "type": "object",
+      "required": [
+        "estado",
+        "criterio",
+        "conteudos_concluidos",
+        "conteudos_pendentes",
+        "fontes_inventariadas"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "estado": {"type": "string", "enum": ["parcial", "completo"]},
+        "criterio": {"const": "conteudo_curricular"},
+        "conteudos_concluidos": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/codigoConteudo"}
+        },
+        "conteudos_pendentes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/codigoConteudo"}
+        },
+        "fontes_inventariadas": {"type": "integer", "minimum": 1}
+      }
+    },
+    "vocabularios": {
+      "type": "object",
+      "required": [
+        "tipos_no",
+        "subtipos_item_pedagogico",
+        "tipos_relacao",
+        "pertinencias_t199"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "tipos_no": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "fonte",
+              "capitulo",
+              "secao",
+              "item_pedagogico",
+              "topico",
+              "conteudo_curricular"
+            ]
+          }
+        },
+        "subtipos_item_pedagogico": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "enum": ["questao", "exercicio", "exemplo"]}
+        },
+        "tipos_relacao": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": ["contem", "aborda", "corresponde_a", "precede"]
+          }
+        },
+        "pertinencias_t199": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/pertinencia"}
+        }
+      }
+    },
+    "no": {
+      "oneOf": [
+        {"$ref": "#/$defs/fonte"},
+        {"$ref": "#/$defs/capitulo"},
+        {"$ref": "#/$defs/secao"},
+        {"$ref": "#/$defs/itemPedagogico"},
+        {"$ref": "#/$defs/topico"},
+        {"$ref": "#/$defs/conteudoCurricular"}
+      ]
+    },
+    "fonte": {
+      "type": "object",
+      "required": [
+        "id",
+        "tipo",
+        "tipo_fonte",
+        "titulo",
+        "arquivo",
+        "paginas_pdf",
+        "idioma",
+        "hash_sha256"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "tipo": {"const": "fonte"},
+        "tipo_fonte": {
+          "type": "string",
+          "enum": ["livro", "apostila", "banco_questoes"]
+        },
+        "titulo": {"type": "string", "minLength": 1},
+        "arquivo": {"type": "string", "minLength": 1},
+        "paginas_pdf": {"$ref": "#/$defs/pagina"},
+        "idioma": {"type": "string", "minLength": 1},
+        "hash_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "capitulo": {
+      "type": "object",
+      "required": [
+        "id",
+        "tipo",
+        "numero_impresso",
+        "titulo",
+        "pagina_pdf_inicio",
+        "pagina_pdf_fim"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "tipo": {"const": "capitulo"},
+        "numero_impresso": {"type": "string", "minLength": 1},
+        "titulo": {"type": "string", "minLength": 1},
+        "pagina_pdf_inicio": {"$ref": "#/$defs/pagina"},
+        "pagina_pdf_fim": {"$ref": "#/$defs/pagina"},
+        "pagina_impressa_inicio": {"$ref": "#/$defs/pagina"}
+      }
+    },
+    "secao": {
+      "type": "object",
+      "required": [
+        "id",
+        "tipo",
+        "numero_impresso",
+        "titulo",
+        "pagina_pdf_inicio",
+        "pagina_pdf_fim",
+        "pertinencia_t199"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "tipo": {"const": "secao"},
+        "numero_impresso": {"type": "string", "minLength": 1},
+        "titulo": {"type": "string", "minLength": 1},
+        "pagina_pdf_inicio": {"$ref": "#/$defs/pagina"},
+        "pagina_pdf_fim": {"$ref": "#/$defs/pagina"},
+        "pagina_impressa_inicio": {"$ref": "#/$defs/pagina"},
+        "pertinencia_t199": {"$ref": "#/$defs/pertinencia"}
+      }
+    },
+    "itemPedagogico": {
+      "type": "object",
+      "required": [
+        "id",
+        "tipo",
+        "subtipo",
+        "numero_impresso",
+        "pagina_pdf",
+        "pertinencia_t199"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "tipo": {"const": "item_pedagogico"},
+        "subtipo": {"type": "string", "enum": ["questao", "exercicio", "exemplo"]},
+        "numero_impresso": {"type": "string", "minLength": 1},
+        "pagina_pdf": {"$ref": "#/$defs/pagina"},
+        "pagina_impressa": {"$ref": "#/$defs/pagina"},
+        "pertinencia_t199": {"$ref": "#/$defs/pertinencia"}
+      }
+    },
+    "topico": {
+      "type": "object",
+      "required": ["id", "tipo", "nome"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "tipo": {"const": "topico"},
+        "nome": {"type": "string", "minLength": 1}
+      }
+    },
+    "conteudoCurricular": {
+      "type": "object",
+      "required": ["id", "tipo", "codigo", "unidade", "nome"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "tipo": {"const": "conteudo_curricular"},
+        "codigo": {"$ref": "#/$defs/codigoConteudo"},
+        "unidade": {"type": "string", "enum": ["I", "II", "III"]},
+        "nome": {"type": "string", "minLength": 1}
+      }
+    },
+    "relacao": {
+      "type": "object",
+      "required": ["origem", "tipo", "destino"],
+      "additionalProperties": false,
+      "properties": {
+        "origem": {"$ref": "#/$defs/id"},
+        "tipo": {
+          "type": "string",
+          "enum": ["contem", "aborda", "corresponde_a", "precede"]
+        },
+        "destino": {"$ref": "#/$defs/id"}
+      }
+    }
+  }
+}
