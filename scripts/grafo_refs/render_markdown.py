@@ -106,7 +106,7 @@ def render_markdown(graph: dict) -> str:
         for code in completed
     )
     lines.extend(["", "## Conteúdos pendentes", ""])
-    lines.extend(f"- `{code}`" for code in sorted(coverage.get("conteudos_pendentes", [])))
+    lines.extend(f"- `{code}` — ainda não mapeado" for code in sorted(coverage.get("conteudos_pendentes", [])))
 
     lines.extend(["", "## Índice por fonte", ""])
     descendants = _descendants_by_source(graph)
@@ -123,7 +123,12 @@ def render_markdown(graph: dict) -> str:
             lines.append("  - nenhum item curado nesta cobertura")
 
     lines.extend(["", "## Índice por conteúdo da Unidade I", ""])
-    for content in (node for node in _content_nodes(graph) if node.get("unidade") == "I"):
+    for content in (
+        node
+        for node in _content_nodes(graph)
+        if node.get("unidade") == "I"
+        and query_by_content(graph, node.get("codigo", ""))["estado"] == "concluido"
+    ):
         lines.append(f"### `{content.get('codigo', content['id'])}` — {content.get('nome', '')}".rstrip())
         results = query_by_content(graph, content.get("codigo", ""))["resultados"]
         lines.extend(f"- {_reference_label(result)}" for result in results)

@@ -27,6 +27,7 @@ GRAPH = {
             "pagina_pdf_fim": 15,
         },
         {"id": "conteudo-01-01", "tipo": "conteudo_curricular", "codigo": "01.01"},
+        {"id": "conteudo-01-02", "tipo": "conteudo_curricular", "codigo": "01.02"},
         {"id": "conteudo-01-03", "tipo": "conteudo_curricular", "codigo": "01.03"},
         {"id": "conteudo-02-01", "tipo": "conteudo_curricular", "codigo": "02.01"},
         {"id": "topico-media", "tipo": "topico", "nome": "Média"},
@@ -46,6 +47,12 @@ class QueryGraphTests(unittest.TestCase):
 
         self.assertEqual(result["estado"], "pendente")
         self.assertEqual(result["resultados"], [])
+
+    def test_returns_pending_state_for_known_content_absent_from_coverage_lists(self):
+        """Catches classifying a known but uncovered curriculum code as unknown."""
+        result = query_by_content(GRAPH, "01.02")
+
+        self.assertEqual(result, {"estado": "pendente", "resultados": []})
 
     def test_returns_only_real_references_for_completed_content(self):
         """Catches fabricated results or loss of source and page location."""

@@ -97,11 +97,7 @@ def _coverage_codes(graph: dict, key: str) -> set[str]:
 
 def query_by_content(graph: dict, code: str) -> dict:
     """Consulta referências de um conteúdo, sem confundir pendência com ausência."""
-    pending = _coverage_codes(graph, "conteudos_pendentes")
     completed = _coverage_codes(graph, "conteudos_concluidos")
-    if code in pending:
-        return {"estado": "pendente", "resultados": []}
-
     content = next(
         (
             node
@@ -110,12 +106,14 @@ def query_by_content(graph: dict, code: str) -> dict:
         ),
         None,
     )
+    if content is None:
+        return {"estado": "desconhecido", "resultados": []}
     if code in completed:
         return {
             "estado": "concluido",
-            "resultados": _references_for_relation(graph, "corresponde_a", content["id"]) if content else [],
+            "resultados": _references_for_relation(graph, "corresponde_a", content["id"]),
         }
-    return {"estado": "desconhecido", "resultados": []}
+    return {"estado": "pendente", "resultados": []}
 
 
 def query_by_topic(graph: dict, topic_id: str) -> list[dict]:

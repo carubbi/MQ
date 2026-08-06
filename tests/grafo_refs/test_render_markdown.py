@@ -50,6 +50,13 @@ GRAPH = {
             "unidade": "I",
             "nome": "Análise univariada",
         },
+        {
+            "id": "conteudo-02-01",
+            "tipo": "conteudo_curricular",
+            "codigo": "02.01",
+            "unidade": "I",
+            "nome": "Conteúdo ainda não mapeado",
+        },
         {"id": "topico-media", "tipo": "topico", "nome": "Média"},
     ],
     "relacoes": [
@@ -93,6 +100,21 @@ class RenderMarkdownTests(unittest.TestCase):
         self.assertIn("não é exaustiva", rendered)
         self.assertIn("$12$–$15$", rendered)
         self.assertNotIn("\\(", rendered)
+
+    def test_distinguishes_pending_coverage_from_completed_content_without_references(self):
+        """Catches rendering a pending content as a completed empty result."""
+        rendered = render_markdown(GRAPH)
+
+        self.assertIn("- `02.01` — ainda não mapeado", rendered)
+        self.assertIn("### `01.01` — Fundamentos estatísticos\n- nenhuma referência curada", rendered)
+
+    def test_content_index_includes_only_completed_coverage(self):
+        """Catches pending curriculum content leaking into the curated content index."""
+        rendered = render_markdown(GRAPH)
+
+        self.assertIn("### `01.01` — Fundamentos estatísticos", rendered)
+        self.assertIn("### `01.03` — Análise univariada", rendered)
+        self.assertNotIn("### `02.01`", rendered)
 
     def test_cli_renders_markdown_when_executed_as_a_script(self):
         """Catches a direct CLI execution that cannot import the local package."""
