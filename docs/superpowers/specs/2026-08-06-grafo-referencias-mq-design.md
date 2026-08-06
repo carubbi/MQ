@@ -4,7 +4,7 @@
 
 **Disciplina:** T199 — Métodos Quantitativos
 
-**Estado:** desenho aprovado para formalização
+**Estado:** desenho integral com primeira entrega incremental aprovada
 
 ## 1. Objetivo
 
@@ -19,7 +19,87 @@ O grafo funcionará como índice de localização e relacionamento. Ele não
 substituirá a consulta às páginas originais nem armazenará transcrições
 extensas das fontes.
 
-## 2. Corpus
+## 2. Estratégia incremental
+
+O objetivo final permanece sendo o mapeamento integral definido nesta
+especificação. A primeira entrega, porém, mapeará exclusivamente os conteúdos
+curriculares `01.01`, `01.02`, `01.03` e `01.04`.
+
+Não será criado um arquivo separado para a Unidade I. A entrega parcial usará
+desde o início os nomes canônicos:
+
+```text
+prof/refs/mapas/
+├── grafo_referencias.json
+├── schema_grafo_referencias.json
+└── grafo_referencias.md
+```
+
+As nove fontes serão inventariadas na primeira entrega. A curadoria de
+capítulos, seções e itens pedagógicos será limitada aos quatro conteúdos
+concluídos. As fases posteriores acrescentarão nós e relações aos mesmos
+arquivos, sem substituir IDs já publicados.
+
+### 2.1 Cobertura declarada
+
+O grafo parcial deverá declarar sua cobertura em `metadados`:
+
+```json
+{
+  "cobertura": {
+    "estado": "parcial",
+    "criterio": "conteudo_curricular",
+    "conteudos_concluidos": [
+      "01.01",
+      "01.02",
+      "01.03",
+      "01.04"
+    ],
+    "conteudos_pendentes": [
+      "02.01",
+      "02.02",
+      "02.03",
+      "02.04",
+      "03.01",
+      "03.02",
+      "03.03",
+      "03.04"
+    ],
+    "fontes_inventariadas": 9
+  }
+}
+```
+
+O estado somente poderá ser alterado para `completo` após o cumprimento dos
+critérios integrais da seção 12.
+
+### 2.2 Regras da primeira entrega
+
+Serão incluídos capítulos, seções, questões e exercícios relacionados a
+`01.01`–`01.04`. Itens híbridos cuja resolução dependa materialmente de um
+conteúdo pendente serão adiados, pois uma representação parcial do item
+produziria relações curriculares enganosas.
+
+Capítulos e seções sem relação com os quatro conteúdos não serão
+representados nesta fase. Questões ausentes também não serão classificadas
+automaticamente como `fora_do_escopo`.
+
+O valor `fora_do_escopo` poderá ser atribuído apenas a um item efetivamente
+examinado durante a busca dos conteúdos da Unidade I. Portanto, uma consulta
+vazia fora de `01.01`–`01.04` significará “ainda não mapeado”, e não
+“inexistente no corpus”.
+
+O Markdown derivado deverá começar com:
+
+> **Cobertura parcial:** esta versão mapeia somente os conteúdos `01.01` a
+> `01.04`. Ausência de resultados para outros conteúdos não indica ausência
+> de referências no corpus.
+
+Esta entrega não apoiará as duas questões de `02.01` previstas para a AT1.
+Esse limite é consequência explícita da escolha pelo recorte curricular
+estrito da Unidade I.
+
+## 3. Corpus
 
 Serão indexados os seguintes PDFs:
 
@@ -37,7 +117,7 @@ A pasta `prof/refs/livros/sumarios/` não será representada como fonte no
 grafo. Seus arquivos poderão auxiliar a extração da estrutura editorial,
 mas o PDF prevalecerá em qualquer divergência.
 
-## 3. Granularidade
+## 4. Granularidade
 
 | Tipo de fonte | Cobertura |
 | --- | --- |
@@ -51,7 +131,12 @@ Nos livros, cobertura integral significa que todas as seções serão
 localizáveis. Não significa transcrever ou individualizar cada exemplo e
 exercício.
 
-## 4. Arquitetura
+Na primeira entrega, a tabela descreve a granularidade final, não a cobertura
+imediata. O banco de questões, a apostila e os livros terão somente os nós
+relacionados a `01.01`–`01.04`; as demais entradas serão incorporadas nas
+fases posteriores.
+
+## 5. Arquitetura
 
 Será adotado um grafo de propriedades em JSON:
 
@@ -82,7 +167,7 @@ As responsabilidades serão:
 O Markdown será sempre derivado do JSON e não deverá receber edições
 manuais.
 
-## 5. Modelo de dados
+## 6. Modelo de dados
 
 O documento canônico terá quatro coleções de nível superior:
 
@@ -95,19 +180,20 @@ O documento canônico terá quatro coleções de nível superior:
 }
 ```
 
-### 5.1 Metadados
+### 6.1 Metadados
 
 `metadados` registrará a versão do esquema, a data de geração, o semestre de
-referência e a cobertura do corpus. A versão permitirá ampliar o grafo
-posteriormente sem alterar silenciosamente o significado dos campos atuais.
+referência e o objeto `cobertura` definido na seção 2.1. A versão permitirá
+ampliar o grafo posteriormente sem alterar silenciosamente o significado dos
+campos atuais.
 
-### 5.2 Vocabulários
+### 6.2 Vocabulários
 
 `vocabularios` registrará os valores permitidos para tipos de nós, subtipos,
 relações e pertinência à T199. Os valores efetivamente permitidos também
 serão validados pelo JSON Schema.
 
-### 5.3 Nós
+### 6.3 Nós
 
 #### Fonte
 
@@ -206,7 +292,7 @@ Representa os conteúdos oficiais `01.01` a `03.04` do projeto de ensino.
 }
 ```
 
-### 5.4 Relações
+### 6.4 Relações
 
 A primeira versão terá quatro tipos de relação:
 
@@ -235,7 +321,7 @@ Exemplos:
 }
 ```
 
-## 6. Pertinência à T199
+## 7. Pertinência à T199
 
 Os valores permitidos serão:
 
@@ -246,9 +332,11 @@ Os valores permitidos serão:
 | `fora_do_escopo` | Pertence ao corpus, mas não à disciplina |
 
 Toda questão do banco será representada, inclusive quando classificada como
-`fora_do_escopo`.
+`fora_do_escopo`, ao final do mapeamento integral. Na primeira entrega, essa
+regra se aplica somente às questões efetivamente examinadas, conforme a seção
+2.2.
 
-## 7. Campos excluídos
+## 8. Campos excluídos
 
 Não integrarão o esquema:
 
@@ -260,7 +348,7 @@ observacao
 Também não serão criados campos genéricos de texto livre para substituir
 indiretamente essas duas chaves.
 
-## 8. Conteúdo não armazenado
+## 9. Conteúdo não armazenado
 
 O grafo não armazenará:
 
@@ -275,7 +363,7 @@ O grafo não armazenará:
 O grafo indicará onde o conteúdo está. A geração futura consultará as páginas
 necessárias na fonte original.
 
-## 9. Fluxo de construção
+## 10. Fluxo de construção
 
 ```text
 Inventário dos PDFs
@@ -299,7 +387,11 @@ Geração do JSON canônico
 Geração automática do Markdown
 ```
 
-## 10. Divergências e falhas de extração
+Cada fase repetirá classificação, validação e geração sobre o mesmo grafo. A
+primeira fase filtrará a curadoria por `01.01`–`01.04`; as fases seguintes
+ampliarão a cobertura declarada.
+
+## 11. Divergências e falhas de extração
 
 O PDF será sempre a fonte canônica.
 
@@ -324,27 +416,54 @@ A numeração máxima observada no banco não será presumida como quantidade de
 questões. A cobertura será reconciliada diretamente com a sequência existente
 no PDF.
 
-## 11. Validação
+## 12. Validação
 
-A conclusão do mapeamento exigirá:
+Toda entrega exigirá:
 
 - todos os PDFs previstos registrados;
 - IDs únicos e estáveis;
 - todas as relações apontando para nós existentes;
 - páginas e intervalos dentro dos limites de cada PDF;
-- todos os capítulos e seções dos livros representados;
-- todas as questões do banco representadas;
-- todas as questões e exercícios da apostila representados;
 - códigos curriculares restritos a `01.01`–`03.04`;
 - valores de pertinência pertencentes ao vocabulário;
 - ausência das chaves `dificuldade` e `observacao`;
 - ausência de enunciados extensos;
 - Markdown reproduzível integralmente a partir do JSON;
-- verificação visual de amostras de cada fonte.
+- verificação visual de amostras de cada fonte curada.
 
-## 12. Consultas obrigatórias
+A primeira entrega exigirá adicionalmente:
 
-O desenho deverá permitir responder:
+- `cobertura.estado` igual a `parcial`;
+- `conteudos_concluidos` contendo exatamente `01.01`–`01.04`;
+- `conteudos_pendentes` contendo exatamente `02.01`–`03.04`;
+- nove fontes inventariadas;
+- somente relações curriculares com `01.01`–`01.04`;
+- ausência de itens híbridos dependentes de conteúdos pendentes;
+- aviso de cobertura parcial no início do Markdown.
+
+A conclusão do mapeamento integral exigirá:
+
+- todos os capítulos e seções dos livros representados;
+- todas as questões do banco representadas;
+- todas as questões e exercícios da apostila representados;
+- `conteudos_concluidos` contendo `01.01`–`03.04`;
+- `conteudos_pendentes` vazio;
+- `cobertura.estado` igual a `completo`.
+
+## 13. Consultas obrigatórias
+
+A primeira entrega deverá permitir responder:
+
+- quais referências abordam fundamentos estatísticos;
+- quais páginas correspondem ao conteúdo `01.01`;
+- quais fontes tratam de organização e representação de dados;
+- quais seções tratam de análise univariada;
+- quais itens tratam de análise bivariada;
+- quais referências podem ser consultadas para produzir um notebook sobre
+  `01.01`, `01.02`, `01.03` ou `01.04`;
+- qual é a cobertura declarada e quais conteúdos permanecem pendentes.
+
+O grafo integral deverá permitir responder também:
 
 - quais referências abordam probabilidade condicional;
 - quais páginas correspondem ao conteúdo `02.01`;
@@ -355,7 +474,7 @@ O desenho deverá permitir responder:
 - quais referências podem ser consultadas para produzir um notebook sobre
   `03.04`.
 
-## 13. Extensão futura
+## 14. Extensão futura
 
 Uma versão posterior poderá acrescentar nós para notebooks, ATs, APs, listas
 de exercícios e materiais de aula, com relações como:
@@ -370,11 +489,16 @@ produz_evidencia_de
 Essa extensão reutilizará os IDs estáveis das referências. Ela não faz parte
 da primeira versão e não deve ser antecipada no mapeamento inicial.
 
-## 14. Limite da próxima etapa
+## 15. Limite da próxima etapa
 
-Após a aprovação desta especificação será produzido um plano de
-implementação. O plano deverá detalhar extração, normalização, classificação,
-validação e geração dos três artefatos previstos.
+Após a aprovação desta versão da especificação, o plano integral existente
+será substituído por um plano prioritário da Unidade I. O novo plano deverá
+detalhar infraestrutura definitiva, inventário das nove fontes, curadoria de
+`01.01`–`01.04`, validação da cobertura parcial e geração dos três artefatos
+previstos.
+
+As Unidades II e III deverão receber planos posteriores que ampliem o mesmo
+grafo e preservem os IDs publicados na primeira entrega.
 
 A aprovação desta especificação não autoriza, por si só, a criação ou
 alteração de ATs, APs, notebooks ou documentos do AVA.
