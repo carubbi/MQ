@@ -1,0 +1,118 @@
+import json
+import subprocess
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+from scripts.grafo_refs.render_markdown import render_markdown
+
+
+GRAPH = {
+    "metadados": {
+        "cobertura": {
+            "estado": "parcial",
+            "criterio": "conteudo_curricular",
+            "conteudos_concluidos": ["01.01", "01.03"],
+            "conteudos_pendentes": ["02.01"],
+            "fontes_inventariadas": 1,
+        }
+    },
+    "nos": [
+        {"id": "fonte-a", "tipo": "fonte", "titulo": "Fonte A", "tipo_fonte": "livro"},
+        {
+            "id": "secao-a",
+            "tipo": "secao",
+            "numero_impresso": "1.2",
+            "titulo": "Medidas de posição",
+            "pagina_pdf_inicio": 12,
+            "pagina_pdf_fim": 15,
+        },
+        {
+            "id": "item-fora",
+            "tipo": "item_pedagogico",
+            "subtipo": "questao",
+            "numero_impresso": "7",
+            "pagina_pdf": 18,
+            "pertinencia_t199": "fora_do_escopo",
+        },
+        {
+            "id": "conteudo-01-01",
+            "tipo": "conteudo_curricular",
+            "codigo": "01.01",
+            "unidade": "I",
+            "nome": "Fundamentos estatísticos",
+        },
+        {
+            "id": "conteudo-01-03",
+            "tipo": "conteudo_curricular",
+            "codigo": "01.03",
+            "unidade": "I",
+            "nome": "Análise univariada",
+        },
+        {"id": "topico-media", "tipo": "topico", "nome": "Média"},
+    ],
+    "relacoes": [
+        {"origem": "fonte-a", "tipo": "contem", "destino": "secao-a"},
+        {"origem": "fonte-a", "tipo": "contem", "destino": "item-fora"},
+        {"origem": "secao-a", "tipo": "corresponde_a", "destino": "conteudo-01-03"},
+        {"origem": "secao-a", "tipo": "aborda", "destino": "topico-media"},
+    ],
+}
+
+
+class RenderMarkdownTests(unittest.TestCase):
+    def test_starts_with_partial_coverage_notice_and_is_deterministic(self):
+        """Catches an output that hides partial coverage or depends on iteration order."""
+        rendered = render_markdown(GRAPH)
+
+        self.assertTrue(
+            rendered.startswith(
+                "# Grafo de referências da T199\n\n"
+                "> **Cobertura parcial:** esta versão mapeia somente os conteúdos `01.01` a\n"
+                "> `01.04`. Ausência de resultados para outros conteúdos não indica ausência\n"
+                "> de referências no corpus.\n"
+            )
+        )
+        self.assertEqual(rendered, render_markdown(GRAPH))
+
+    def test_includes_required_indexes_and_non_exhaustive_out_of_scope_notice(self):
+        """Catches a human view that omits discoverability indexes or overclaims coverage."""
+        rendered = render_markdown(GRAPH)
+
+        for heading in (
+            "## Cobertura do corpus",
+            "## Conteúdos concluídos",
+            "## Conteúdos pendentes",
+            "## Índice por fonte",
+            "## Índice por conteúdo da Unidade I",
+            "## Índice por tópico",
+            "## Itens examinados fora do escopo",
+        ):
+            self.assertIn(heading, rendered)
+        self.assertIn("não é exaustiva", rendered)
+        self.assertIn("$12$–$15$", rendered)
+        self.assertNotIn("\\(", rendered)
+
+    def test_cli_renders_markdown_when_executed_as_a_script(self):
+        """Catches a direct CLI execution that cannot import the local package."""
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            directory = Path(temporary_directory)
+            graph_path = directory / "grafo.json"
+            output_path = directory / "grafo.md"
+            graph_path.write_text(json.dumps(GRAPH), encoding="utf-8")
+
+            completed = subprocess.run(
+                [sys.executable, "scripts/grafo_refs/render_markdown.py", str(graph_path), str(output_path)],
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+
+            rendered = output_path.read_text(encoding="utf-8") if output_path.exists() else ""
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+        self.assertTrue(rendered.startswith("# Grafo de referências da T199\n"))
+
+
+if __name__ == "__main__":
+    unittest.main()
