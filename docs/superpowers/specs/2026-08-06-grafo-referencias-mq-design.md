@@ -1,7 +1,9 @@
 # Grafo de referências da T199 — desenho
 
-**Data:** 6 de agosto de 2026  
-**Disciplina:** T199 — Métodos Quantitativos  
+**Data:** 6 de agosto de 2026
+
+**Disciplina:** T199 — Métodos Quantitativos
+
 **Estado:** desenho aprovado para formalização
 
 ## 1. Objetivo
