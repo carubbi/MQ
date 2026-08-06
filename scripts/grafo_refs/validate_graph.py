@@ -18,6 +18,7 @@ EXPECTED_COVERAGE = {
     "fontes_inventariadas": 9,
 }
 PROHIBITED_KEYS = {"dificuldade", "observacao"}
+MANIFEST_PATH = Path("scripts/grafo_refs/data/fontes.json")
 
 
 def _walk_keys(value):
@@ -56,9 +57,25 @@ def _schema_errors(graph: dict, schema: dict) -> list[str]:
     ]
 
 
+def _manifest_source_pairs(root: Path) -> set[tuple[str, str]] | None:
+    """Lê os pares canônicos de ID e arquivo, sem interromper a validação."""
+    try:
+        manifest = json.loads((root / MANIFEST_PATH).read_text(encoding="utf-8"))
+    except (OSError, TypeError, json.JSONDecodeError):
+        return None
+    if not isinstance(manifest, list):
+        return None
+    return {
+        (source["id"], source["arquivo"])
+        for source in manifest
+        if isinstance(source, dict)
+        and isinstance(source.get("id"), str)
+        and isinstance(source.get("arquivo"), str)
+    }
+
+
 def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
     """Retorna erros de estrutura e de significado, sem alterar o grafo."""
-    del root  # A assinatura reserva a raiz para validações de fontes futuras.
     errors = _schema_errors(graph, schema)
     errors.extend(f"chave proibida: {key}" for key in _walk_keys(graph) if key in PROHIBITED_KEYS)
 
@@ -71,9 +88,11 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
 
     nodes = graph.get("nos", []) if isinstance(graph, dict) else []
     edges = graph.get("relacoes", []) if isinstance(graph, dict) else []
+    nodes = nodes if isinstance(nodes, list) else []
+    edges = edges if isinstance(edges, list) else []
     nodes_by_id = {}
     for node in nodes:
-        if not isinstance(node, dict) or "id" not in node:
+        if not isinstance(node, dict) or not isinstance(node.get("id"), str):
             continue
         node_id = node["id"]
         if node_id in nodes_by_id:
@@ -84,15 +103,27 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
     source_nodes = [node for node in nodes_by_id.values() if node.get("tipo") == "fonte"]
     if len(source_nodes) != 9:
         errors.append(f"fontes inventariadas devem ser 9, recebido {len(source_nodes)}")
+    expected_source_pairs = _manifest_source_pairs(root)
+    if expected_source_pairs is None:
+        errors.append("manifesto canônico de fontes indisponível")
+    else:
+        source_pairs = {
+            (source["id"], source["arquivo"])
+            for source in source_nodes
+            if isinstance(source.get("arquivo"), str)
+        }
+        if source_pairs != expected_source_pairs:
+            errors.append("fontes inventariadas não correspondem ao manifesto canônico")
     for source in source_nodes:
-        if "livros/sumarios/" in source.get("arquivo", "").replace("\\", "/").lower():
+        arquivo = source.get("arquivo")
+        if isinstance(arquivo, str) and "livros/sumarios/" in arquivo.replace("\\", "/").lower():
             errors.append(f"fonte derivada de livros/sumarios/: {source['id']}")
 
     parents = defaultdict(list)
     curriculum_by_id = {
         node_id: node.get("codigo")
         for node_id, node in nodes_by_id.items()
-        if node.get("tipo") == "conteudo_curricular"
+        if node.get("tipo") == "conteudo_curricular" and isinstance(node.get("codigo"), str)
     }
     curricular_edges_by_origin = defaultdict(set)
     for edge in edges:
@@ -100,6 +131,9 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
             continue
         origin = edge.get("origem")
         destination = edge.get("destino")
+        if not isinstance(origin, str) or not isinstance(destination, str):
+            errors.append(f"aresta com extremos inválidos: {origin} -> {destination}")
+            continue
         if origin not in nodes_by_id or destination not in nodes_by_id:
             errors.append(f"aresta órfã: {origin} -> {destination}")
             continue
@@ -145,7 +179,11 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
             errors.append(f"nó paginado sem fonte ancestral: {node_id}")
             continue
         for source in sources:
-            if any(page > source["paginas_pdf"] for page in page_values):
+            page_count = source.get("paginas_pdf")
+            if not isinstance(page_count, int) or isinstance(page_count, bool):
+                errors.append(f"fonte sem paginas_pdf válido: {source['id']}")
+                continue
+            if any(page > page_count for page in page_values):
                 errors.append(f"página fora do PDF de {source['id']}: {node_id}")
 
     return errors

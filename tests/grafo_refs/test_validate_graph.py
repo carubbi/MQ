@@ -180,6 +180,83 @@ class ValidateGraphTests(unittest.TestCase):
 
         self.assert_has_error(self.errors_for(mutate), "fonte derivada de livros/sumarios/")
 
+    def test_returns_errors_when_ancestral_source_lacks_page_count(self):
+        """Catches malformed sources without aborting semantic page validation."""
+        def mutate(graph):
+            source = next(node for node in graph["nos"] if node["id"] == "barbetta-2010")
+            source.pop("paginas_pdf")
+            graph["nos"].append(
+                {
+                    "id": "barbetta-2010-cap-sem-total",
+                    "tipo": "capitulo",
+                    "numero_impresso": "1",
+                    "titulo": "Sem total de páginas",
+                    "pagina_pdf_inicio": 1,
+                    "pagina_pdf_fim": 1,
+                }
+            )
+            graph["relacoes"].append(
+                {
+                    "origem": "barbetta-2010",
+                    "tipo": "contem",
+                    "destino": "barbetta-2010-cap-sem-total",
+                }
+            )
+
+        errors = self.errors_for(mutate)
+        self.assertIsInstance(errors, list)
+        self.assert_has_error(errors, "paginas_pdf")
+
+    def test_returns_errors_when_source_path_is_not_text(self):
+        """Catches malformed source paths without calling string methods on them."""
+        def mutate(graph):
+            source = next(node for node in graph["nos"] if node["id"] == "barbetta-2010")
+            source["arquivo"] = 123
+
+        errors = self.errors_for(mutate)
+        self.assertIsInstance(errors, list)
+        self.assert_has_error(errors, "schema:")
+
+    def test_returns_errors_when_node_id_has_invalid_type(self):
+        """Catches an unhashable node ID without aborting duplicate-ID validation."""
+        errors = self.errors_for(
+            lambda graph: graph["nos"].append({"id": [], "tipo": "topico", "nome": "Inválido"})
+        )
+        self.assertIsInstance(errors, list)
+        self.assert_has_error(errors, "schema:")
+
+    def test_returns_errors_when_edge_endpoint_has_invalid_type(self):
+        """Catches an unhashable edge endpoint without aborting orphan-edge validation."""
+        errors = self.errors_for(
+            lambda graph: graph["relacoes"].append(
+                {"origem": [], "tipo": "contem", "destino": "conteudo-01-01"}
+            )
+        )
+        self.assertIsInstance(errors, list)
+        self.assert_has_error(errors, "is not of type 'string'")
+
+    def test_returns_errors_when_curriculum_code_has_invalid_type(self):
+        """Catches an unhashable curriculum code without aborting scope validation."""
+        def mutate(graph):
+            content = next(node for node in graph["nos"] if node["id"] == "conteudo-01-01")
+            content["codigo"] = []
+            graph["relacoes"].append(
+                {"origem": "topico-amostra", "tipo": "corresponde_a", "destino": "conteudo-01-01"}
+            )
+
+        errors = self.errors_for(mutate)
+        self.assertIsInstance(errors, list)
+        self.assert_has_error(errors, "schema:")
+
+    def test_rejects_nine_sources_that_do_not_match_the_manifest(self):
+        """Catches a nine-source graph with an impostor replacing a canonical source."""
+        def mutate(graph):
+            source = next(node for node in graph["nos"] if node["id"] == "barbetta-2010")
+            source["id"] = "fonte-impostora"
+            source["arquivo"] = "prof/refs/livros/fonte-impostora.pdf"
+
+        self.assert_has_error(self.errors_for(mutate), "fontes inventariadas não correspondem ao manifesto")
+
     def test_rejects_noncanonical_partial_coverage(self):
         """Catches a coverage declaration that no longer matches the approved slice."""
         errors = self.errors_for(
