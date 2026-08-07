@@ -284,10 +284,16 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-amostragem",
+      "topico-amostragem-aleatoria-simples",
+      "topico-amostragem-estratificada",
+      "topico-amostragem-por-conglomerados",
+      "topico-amostragem-por-conveniencia",
+      "topico-amostragem-sistematica",
       "topico-representatividade"
     ],
     "conteudos": [
-      "conteudo-01-01"
+      "conteudo-01-01",
+      "conteudo-03-01"
     ],
     "precede_publicados": [
       "barbetta-2010-sec-2-2-2"
@@ -673,9 +679,13 @@
     "pagina_pdf_inicio": 170,
     "pagina_pdf_fim": 174,
     "pai": "barbetta-2010-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "barbetta-2010-sec-7-2",
@@ -685,9 +695,14 @@
     "pagina_pdf_inicio": 175,
     "pagina_pdf_fim": 179,
     "pai": "barbetta-2010-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "barbetta-2010-sec-7-3",
@@ -697,9 +712,15 @@
     "pagina_pdf_inicio": 180,
     "pagina_pdf_fim": 192,
     "pai": "barbetta-2010-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual",
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "barbetta-2010-sec-7-4",
@@ -721,9 +742,14 @@
     "pagina_pdf_inicio": 199,
     "pagina_pdf_fim": 201,
     "pai": "barbetta-2010-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "barbetta-2010-sec-8-2",
@@ -733,9 +759,14 @@
     "pagina_pdf_inicio": 202,
     "pagina_pdf_fim": 205,
     "pai": "barbetta-2010-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-nivel-de-significancia",
+      "topico-valor-p"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "barbetta-2010-sec-8-3",
@@ -745,9 +776,14 @@
     "pagina_pdf_inicio": 206,
     "pagina_pdf_fim": 206,
     "pai": "barbetta-2010-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-erro-tipo-i",
+      "topico-erro-tipo-ii"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "barbetta-2010-sec-8-4",
@@ -769,9 +805,14 @@
     "pagina_pdf_inicio": 209,
     "pagina_pdf_fim": 211,
     "pai": "barbetta-2010-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "barbetta-2010-sec-8-6",
@@ -793,9 +834,13 @@
     "pagina_pdf_inicio": 213,
     "pagina_pdf_fim": 217,
     "pai": "barbetta-2010-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-proporcao"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "barbetta-2010-sec-8-8",
@@ -805,9 +850,13 @@
     "pagina_pdf_inicio": 218,
     "pagina_pdf_fim": 222,
     "pai": "barbetta-2010-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-media"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "barbetta-2010-sec-8-9",
@@ -829,9 +878,13 @@
     "pagina_pdf_inicio": 225,
     "pagina_pdf_fim": 232,
     "pai": "barbetta-2010-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-poder-do-teste"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "barbetta-2010-sec-9-1",
@@ -1010,9 +1063,19 @@
     "pagina_pdf_inicio": 325,
     "pagina_pdf_fim": 346,
     "pai": "barbetta-2010-cap-11",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-minimos-quadrados",
+      "topico-coeficiente-de-determinacao",
+      "topico-coeficiente-de-determinacao-ajustado",
+      "topico-inferencia-sobre-coeficientes",
+      "topico-residuo",
+      "topico-diagnostico-do-modelo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "barbetta-2010-sec-11-4",
@@ -1022,9 +1085,16 @@
     "pagina_pdf_inicio": 347,
     "pagina_pdf_fim": 350,
     "pai": "barbetta-2010-cap-11",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-multipla",
+      "topico-variavel-indicadora",
+      "topico-inferencia-sobre-coeficientes",
+      "topico-residuo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "barbetta-2010-exercicio-1-2",

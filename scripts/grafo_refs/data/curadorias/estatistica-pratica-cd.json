@@ -468,9 +468,15 @@
     "pagina_pdf_inicio": 72,
     "pagina_pdf_fim": 73,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-amostragem-aleatoria-simples",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-vies",
@@ -480,9 +486,14 @@
     "pagina_pdf_inicio": 74,
     "pagina_pdf_fim": 74,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-selecao-aleatoria",
@@ -492,9 +503,14 @@
     "pagina_pdf_inicio": 75,
     "pagina_pdf_fim": 76,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-amostragem-aleatoria-simples"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-tamanho-versus-qualidade-quando-o-tamanho-importa",
@@ -516,9 +532,13 @@
     "pagina_pdf_inicio": 78,
     "pagina_pdf_fim": 78,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-vies-de-selecao",
@@ -552,9 +572,13 @@
     "pagina_pdf_inicio": 84,
     "pagina_pdf_fim": 85,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-teorema-de-limite-central",
@@ -564,9 +588,14 @@
     "pagina_pdf_inicio": 86,
     "pagina_pdf_fim": 86,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teorema-central-do-limite",
+      "topico-distribuicao-amostral"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-erro-padrao",
@@ -576,9 +605,13 @@
     "pagina_pdf_inicio": 87,
     "pagina_pdf_fim": 87,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-o-bootstrap",
@@ -612,9 +645,14 @@
     "pagina_pdf_inicio": 93,
     "pagina_pdf_fim": 96,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-distribuicao-normal",
@@ -803,9 +841,14 @@
     "pagina_pdf_inicio": 122,
     "pagina_pdf_fim": 123,
     "pai": "estatistica-pratica-cd-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-3-a-hipotese-nula",
@@ -815,9 +858,13 @@
     "pagina_pdf_inicio": 124,
     "pagina_pdf_fim": 124,
     "pai": "estatistica-pratica-cd-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-3-hipotese-alternativa",
@@ -827,9 +874,13 @@
     "pagina_pdf_inicio": 125,
     "pagina_pdf_fim": 125,
     "pai": "estatistica-pratica-cd-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-alternativa"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-3-teste-de-hipotese-unilateral-bilateral",
@@ -839,9 +890,14 @@
     "pagina_pdf_inicio": 125,
     "pagina_pdf_fim": 126,
     "pai": "estatistica-pratica-cd-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-3-reamostragem",
@@ -911,9 +967,14 @@
     "pagina_pdf_inicio": 133,
     "pagina_pdf_fim": 135,
     "pai": "estatistica-pratica-cd-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-nivel-de-significancia",
+      "topico-valor-p"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-3-valor-p",
@@ -947,9 +1008,14 @@
     "pagina_pdf_inicio": 138,
     "pagina_pdf_fim": 138,
     "pai": "estatistica-pratica-cd-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-erro-tipo-i",
+      "topico-erro-tipo-ii"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-3-ciencia-de-dados-e-valores-p",
@@ -971,9 +1037,13 @@
     "pagina_pdf_inicio": 140,
     "pagina_pdf_fim": 142,
     "pai": "estatistica-pratica-cd-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-media"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-3-testagem-multipla",
@@ -1139,9 +1209,13 @@
     "pagina_pdf_inicio": 175,
     "pagina_pdf_fim": 176,
     "pai": "estatistica-pratica-cd-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-4-a-equacao-de-regressao",
@@ -1151,9 +1225,14 @@
     "pagina_pdf_inicio": 177,
     "pagina_pdf_fim": 177,
     "pai": "estatistica-pratica-cd-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-inferencia-sobre-coeficientes"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-4-valores-ajustados-e-residuos",
@@ -1163,9 +1242,13 @@
     "pagina_pdf_inicio": 178,
     "pagina_pdf_fim": 179,
     "pai": "estatistica-pratica-cd-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-residuo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-4-minimos-quadrados",
@@ -1175,9 +1258,13 @@
     "pagina_pdf_inicio": 180,
     "pagina_pdf_fim": 180,
     "pai": "estatistica-pratica-cd-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-minimos-quadrados"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-4-previsao-versus-explicacao-profiling",
@@ -1199,9 +1286,16 @@
     "pagina_pdf_inicio": 183,
     "pagina_pdf_fim": 183,
     "pai": "estatistica-pratica-cd-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-multipla",
+      "topico-coeficiente-de-determinacao",
+      "topico-coeficiente-de-determinacao-ajustado",
+      "topico-inferencia-sobre-coeficientes"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-4-exemplo-dados-imobiliarios-de-king-county",
@@ -1307,9 +1401,13 @@
     "pagina_pdf_inicio": 195,
     "pagina_pdf_fim": 195,
     "pai": "estatistica-pratica-cd-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-indicadora"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-4-representacao-de-variaveis-ficticias",
@@ -1319,9 +1417,13 @@
     "pagina_pdf_inicio": 196,
     "pagina_pdf_fim": 197,
     "pai": "estatistica-pratica-cd-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-indicadora"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-4-variaveis-fatoriais-com-muitos-niveis",
@@ -1415,9 +1517,14 @@
     "pagina_pdf_inicio": 207,
     "pagina_pdf_fim": 207,
     "pai": "estatistica-pratica-cd-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-residuo",
+      "topico-diagnostico-do-modelo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-4-outliers",

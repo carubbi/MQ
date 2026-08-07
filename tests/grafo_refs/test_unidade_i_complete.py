@@ -30,6 +30,10 @@ MIGRATIONS_PATH = (
     REPOSITORY_ROOT
     / "scripts/grafo_refs/data/migracoes_estrutura_unidade_i.json"
 )
+EXPANSIONS_PATH = (
+    REPOSITORY_ROOT
+    / "scripts/grafo_refs/data/expansoes_curriculares_pos_unidade_i.json"
+)
 
 
 def load_published_contract(path: Path) -> dict:
@@ -72,6 +76,9 @@ class UnidadeICompleteTests(unittest.TestCase):
     def test_preserves_the_published_unidade_i_contract(self):
         contract = load_published_contract(CONTRACT_PATH)
         migrations = json.loads(MIGRATIONS_PATH.read_text(encoding="utf-8"))
+        expansions = json.loads(
+            EXPANSIONS_PATH.read_text(encoding="utf-8")
+        )
         graph_nodes = {node["id"]: node for node in self.graph["nos"]}
         self.assertEqual(contract["versao"], 2)
         self.assertTrue(set(contract["nos"]).issubset(graph_nodes))
@@ -86,6 +93,14 @@ class UnidadeICompleteTests(unittest.TestCase):
         }
         contract_edges = {tuple(edge) for edge in contract["relacoes"]}
         published_ids = set(contract["nos"])
+        expansion_edges = {
+            (
+                expansion["origem"],
+                expansion["tipo"],
+                expansion["destino"],
+            )
+            for expansion in expansions["expansoes"]
+        }
         for relation_type in {"aborda", "corresponde_a"}:
             # A origem identifica a referência publicada pela Unidade I.
             # Filtrar pelo destino seria incorreto: tópicos canônicos como
@@ -102,6 +117,11 @@ class UnidadeICompleteTests(unittest.TestCase):
                 {
                     edge
                     for edge in contract_edges
+                    if edge[1] == relation_type
+                }
+                | {
+                    edge
+                    for edge in expansion_edges
                     if edge[1] == relation_type
                 },
             )

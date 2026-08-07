@@ -131,6 +131,55 @@ def build_nodes() -> list[dict]:
                 ["topico-distribuicao-uniforme"],
                 ["conteudo-02-04"],
             ),
+            f"{SOURCE}-cap-7": (
+                ["topico-amostragem", "topico-amostragem-aleatoria-simples"],
+                ["conteudo-03-01"],
+            ),
+            f"{SOURCE}-sec-6-1": (
+                ["topico-distribuicao-amostral", "topico-erro-padrao"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-6-2": (
+                ["topico-distribuicao-amostral", "topico-erro-padrao"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-8-1": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-8-2": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-10-1": (
+                ["topico-teste-para-media"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-10-2": (
+                ["topico-teste-para-proporcao"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-9-1": (
+                [
+                    "topico-regressao-linear-simples",
+                    "topico-minimos-quadrados",
+                    "topico-coeficiente-de-determinacao",
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-residuo",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-9-2": (
+                [
+                    "topico-regressao-linear-multipla",
+                    "topico-minimos-quadrados",
+                    "topico-coeficiente-de-determinacao",
+                    "topico-coeficiente-de-determinacao-ajustado",
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-residuo",
+                ],
+                ["conteudo-03-04"],
+            ),
         },
     )
     return finalize_source(SOURCE, nodes)

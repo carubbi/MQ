@@ -961,9 +961,15 @@
     "pagina_pdf_inicio": 117,
     "pagina_pdf_fim": 118,
     "pai": "apostila-mq-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-12-2",
@@ -973,9 +979,17 @@
     "pagina_pdf_inicio": 119,
     "pagina_pdf_fim": 123,
     "pai": "apostila-mq-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-amostragem-aleatoria-simples",
+      "topico-amostragem-estratificada",
+      "topico-amostragem-sistematica",
+      "topico-amostragem-por-conglomerados"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-12-3",
@@ -997,9 +1011,15 @@
     "pagina_pdf_inicio": 125,
     "pagina_pdf_fim": 125,
     "pai": "apostila-mq-cap-13",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-teorema-central-do-limite",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-13-2",
@@ -1021,9 +1041,14 @@
     "pagina_pdf_inicio": 127,
     "pagina_pdf_fim": 129,
     "pai": "apostila-mq-cap-13",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-14-1",
@@ -1033,9 +1058,13 @@
     "pagina_pdf_inicio": 130,
     "pagina_pdf_fim": 131,
     "pai": "apostila-mq-cap-14",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-14-2",
@@ -1045,9 +1074,13 @@
     "pagina_pdf_inicio": 132,
     "pagina_pdf_fim": 132,
     "pai": "apostila-mq-cap-14",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-14-3",
@@ -1057,9 +1090,14 @@
     "pagina_pdf_inicio": 132,
     "pagina_pdf_fim": 139,
     "pai": "apostila-mq-cap-14",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-14-4",
@@ -1130,9 +1168,17 @@
     "pagina_pdf_inicio": 150,
     "pagina_pdf_fim": 161,
     "pai": "apostila-mq-cap-15",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-minimos-quadrados",
+      "topico-coeficiente-de-determinacao",
+      "topico-inferencia-sobre-coeficientes",
+      "topico-residuo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "apostila-mq-sec-15-4",

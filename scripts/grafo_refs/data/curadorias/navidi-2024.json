@@ -482,9 +482,13 @@
     "pagina_pdf_inicio": 302,
     "pagina_pdf_fim": 306,
     "pai": "navidi-2024-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "navidi-2024-sec-4-10",
@@ -512,9 +516,16 @@
     "pagina_pdf_inicio": 312,
     "pagina_pdf_fim": 324,
     "pai": "navidi-2024-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-teorema-central-do-limite",
+      "topico-erro-padrao",
+      "topico-tamanho-amostral"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "navidi-2024-sec-4-12",
@@ -548,9 +559,15 @@
     "pagina_pdf_inicio": 346,
     "pagina_pdf_fim": 357,
     "pai": "navidi-2024-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual",
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "navidi-2024-sec-5-2",
@@ -560,9 +577,15 @@
     "pagina_pdf_inicio": 358,
     "pagina_pdf_fim": 371,
     "pai": "navidi-2024-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual",
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "navidi-2024-sec-5-3",
@@ -572,9 +595,15 @@
     "pagina_pdf_inicio": 372,
     "pagina_pdf_fim": 377,
     "pai": "navidi-2024-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual",
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "navidi-2024-sec-5-4",
@@ -668,9 +697,17 @@
     "pagina_pdf_inicio": 427,
     "pagina_pdf_fim": 437,
     "pai": "navidi-2024-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa",
+      "topico-nivel-de-significancia",
+      "topico-valor-p",
+      "topico-teste-para-media"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "navidi-2024-sec-6-2",
@@ -680,9 +717,16 @@
     "pagina_pdf_inicio": 438,
     "pagina_pdf_fim": 446,
     "pai": "navidi-2024-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-nivel-de-significancia",
+      "topico-valor-p",
+      "topico-erro-tipo-i",
+      "topico-erro-tipo-ii"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "navidi-2024-sec-6-3",
@@ -692,9 +736,13 @@
     "pagina_pdf_inicio": 447,
     "pagina_pdf_fim": 454,
     "pai": "navidi-2024-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-media"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "navidi-2024-sec-6-4",
@@ -704,9 +752,13 @@
     "pagina_pdf_inicio": 455,
     "pagina_pdf_fim": 460,
     "pai": "navidi-2024-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-proporcao"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "navidi-2024-sec-6-5",
@@ -788,9 +840,15 @@
     "pagina_pdf_inicio": 516,
     "pagina_pdf_fim": 521,
     "pai": "navidi-2024-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa",
+      "topico-nivel-de-significancia"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "navidi-2024-sec-6-12",
@@ -800,9 +858,14 @@
     "pagina_pdf_inicio": 522,
     "pagina_pdf_fim": 530,
     "pai": "navidi-2024-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-erro-tipo-ii",
+      "topico-poder-do-teste"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "navidi-2024-sec-6-13",
@@ -860,9 +923,16 @@
     "pagina_pdf_inicio": 566,
     "pagina_pdf_fim": 582,
     "pai": "navidi-2024-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-minimos-quadrados",
+      "topico-coeficiente-de-determinacao",
+      "topico-residuo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-7-3",
@@ -872,9 +942,16 @@
     "pagina_pdf_inicio": 583,
     "pagina_pdf_fim": 604,
     "pai": "navidi-2024-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-inferencia-sobre-coeficientes",
+      "topico-intervalo-de-confianca",
+      "topico-valor-p"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-7-4",
@@ -884,9 +961,16 @@
     "pagina_pdf_inicio": 605,
     "pagina_pdf_fim": 637,
     "pai": "navidi-2024-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-residuo",
+      "topico-diagnostico-do-modelo",
+      "topico-grafico-qq",
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-8-0",
@@ -908,9 +992,18 @@
     "pagina_pdf_inicio": 638,
     "pagina_pdf_fim": 654,
     "pai": "navidi-2024-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-multipla",
+      "topico-minimos-quadrados",
+      "topico-coeficiente-de-determinacao",
+      "topico-coeficiente-de-determinacao-ajustado",
+      "topico-residuo",
+      "topico-inferencia-sobre-coeficientes"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-8-2",
@@ -920,9 +1013,14 @@
     "pagina_pdf_inicio": 655,
     "pagina_pdf_fim": 663,
     "pai": "navidi-2024-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-multipla",
+      "topico-diagnostico-do-modelo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-8-3",
@@ -1079,5 +1177,39 @@
     "pertinencia_t199": "indireta",
     "topicos": [],
     "conteudos": []
+  },
+  {
+    "id": "navidi-2024-exemplo-1-1",
+    "tipo": "exemplo",
+    "numero_impresso": "1.1",
+    "pagina_pdf": 26,
+    "pai": "navidi-2024-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-populacao",
+      "topico-amostra",
+      "topico-amostragem",
+      "topico-representatividade",
+      "topico-amostragem-aleatoria-simples"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
+  },
+  {
+    "id": "navidi-2024-exercicio-1-1-2",
+    "tipo": "exercicio",
+    "numero_impresso": "2",
+    "pagina_pdf": 34,
+    "pai": "navidi-2024-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade",
+      "topico-amostragem-por-conveniencia"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   }
 ]

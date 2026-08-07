@@ -1283,9 +1283,15 @@
     "pagina_pdf_inicio": 278,
     "pagina_pdf_fim": 280,
     "pai": "morettin-bussab-2010-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-populacao",
+      "topico-amostra",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-10-3",
@@ -1307,9 +1313,14 @@
     "pagina_pdf_inicio": 284,
     "pagina_pdf_fim": 284,
     "pai": "morettin-bussab-2010-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-10-5",
@@ -1319,9 +1330,14 @@
     "pagina_pdf_inicio": 285,
     "pagina_pdf_fim": 287,
     "pai": "morettin-bussab-2010-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-amostragem-aleatoria-simples"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-10-6",
@@ -1331,9 +1347,13 @@
     "pagina_pdf_inicio": 288,
     "pagina_pdf_fim": 288,
     "pai": "morettin-bussab-2010-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-10-7",
@@ -1343,9 +1363,13 @@
     "pagina_pdf_inicio": 289,
     "pagina_pdf_fim": 293,
     "pai": "morettin-bussab-2010-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-10-8",
@@ -1355,9 +1379,16 @@
     "pagina_pdf_inicio": 294,
     "pagina_pdf_fim": 297,
     "pai": "morettin-bussab-2010-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-teorema-central-do-limite",
+      "topico-erro-padrao",
+      "topico-tamanho-amostral"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-10-9",
@@ -1367,9 +1398,15 @@
     "pagina_pdf_inicio": 298,
     "pagina_pdf_fim": 299,
     "pai": "morettin-bussab-2010-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-erro-padrao",
+      "topico-tamanho-amostral"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-10-10",
@@ -1427,9 +1464,14 @@
     "pagina_pdf_inicio": 313,
     "pagina_pdf_fim": 314,
     "pai": "morettin-bussab-2010-cap-11",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estatistica-inferencial",
+      "topico-estimacao-pontual"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-11-2",
@@ -1487,9 +1529,14 @@
     "pagina_pdf_inicio": 327,
     "pagina_pdf_fim": 332,
     "pai": "morettin-bussab-2010-cap-11",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-11-7",
@@ -1499,9 +1546,14 @@
     "pagina_pdf_inicio": 333,
     "pagina_pdf_fim": 333,
     "pai": "morettin-bussab-2010-cap-11",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-11-8",
@@ -1559,9 +1611,17 @@
     "pagina_pdf_inicio": 354,
     "pagina_pdf_fim": 355,
     "pai": "morettin-bussab-2010-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa",
+      "topico-nivel-de-significancia",
+      "topico-erro-tipo-i",
+      "topico-erro-tipo-ii"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-12-4",
@@ -1571,9 +1631,15 @@
     "pagina_pdf_inicio": 356,
     "pagina_pdf_fim": 356,
     "pai": "morettin-bussab-2010-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa",
+      "topico-nivel-de-significancia"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-12-5",
@@ -1583,9 +1649,13 @@
     "pagina_pdf_inicio": 356,
     "pagina_pdf_fim": 357,
     "pai": "morettin-bussab-2010-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-media"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-12-6",
@@ -1595,9 +1665,13 @@
     "pagina_pdf_inicio": 358,
     "pagina_pdf_fim": 360,
     "pai": "morettin-bussab-2010-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-proporcao"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-12-7",
@@ -1607,9 +1681,14 @@
     "pagina_pdf_inicio": 361,
     "pagina_pdf_fim": 364,
     "pai": "morettin-bussab-2010-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-erro-tipo-ii",
+      "topico-poder-do-teste"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-12-8",
@@ -1619,9 +1698,14 @@
     "pagina_pdf_inicio": 365,
     "pagina_pdf_fim": 367,
     "pai": "morettin-bussab-2010-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-nivel-de-significancia",
+      "topico-valor-p"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-12-9",
@@ -1643,9 +1727,13 @@
     "pagina_pdf_inicio": 372,
     "pagina_pdf_fim": 374,
     "pai": "morettin-bussab-2010-cap-12",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-media"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-12-11",
@@ -1931,9 +2019,15 @@
     "pagina_pdf_inicio": 469,
     "pagina_pdf_fim": 470,
     "pai": "morettin-bussab-2010-cap-16",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-minimos-quadrados",
+      "topico-residuo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-16-3",
@@ -1943,9 +2037,16 @@
     "pagina_pdf_inicio": 471,
     "pagina_pdf_fim": 476,
     "pai": "morettin-bussab-2010-cap-16",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-coeficiente-de-determinacao",
+      "topico-inferencia-sobre-coeficientes",
+      "topico-valor-p"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-16-4",
@@ -1955,9 +2056,15 @@
     "pagina_pdf_inicio": 477,
     "pagina_pdf_fim": 483,
     "pai": "morettin-bussab-2010-cap-16",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-inferencia-sobre-coeficientes",
+      "topico-intervalo-de-confianca"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-16-5",
@@ -1967,9 +2074,16 @@
     "pagina_pdf_inicio": 484,
     "pagina_pdf_fim": 489,
     "pai": "morettin-bussab-2010-cap-16",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-residuo",
+      "topico-diagnostico-do-modelo",
+      "topico-grafico-qq",
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-16-6",

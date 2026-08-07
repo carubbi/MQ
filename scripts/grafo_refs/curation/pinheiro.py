@@ -117,6 +117,17 @@ def build_nodes() -> list[dict]:
                 item_type="exercicio",
             )
         )
+    nodes.append(
+        item(
+            SOURCE,
+            "2.5",
+            73,
+            f"{SOURCE}-sec-2-3",
+            [],
+            [],
+            item_type="exemplo",
+        )
+    )
     apply_curricular_mappings(
         nodes,
         {
@@ -229,6 +240,94 @@ def build_nodes() -> list[dict]:
             f"{SOURCE}-exercicio-4-9-p": (
                 ["topico-distribuicao-normal", "topico-padronizacao"],
                 ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-sec-6-3": (
+                ["topico-amostragem", "topico-amostragem-aleatoria-simples"],
+                ["conteudo-03-01"],
+            ),
+            f"{SOURCE}-sec-6-4": (
+                [
+                    "topico-populacao",
+                    "topico-amostra",
+                    "topico-representatividade",
+                    "topico-distribuicao-amostral",
+                    "topico-erro-padrao",
+                ],
+                ["conteudo-03-01", "conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-6-1": (
+                [
+                    "topico-distribuicao-amostral",
+                    "topico-teorema-central-do-limite",
+                    "topico-erro-padrao",
+                    "topico-tamanho-amostral",
+                ],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-6-5": (
+                [
+                    "topico-estatistica-inferencial",
+                    "topico-estimacao-pontual",
+                    "topico-intervalo-de-confianca",
+                ],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-7-1": (
+                ["topico-estatistica-inferencial", "topico-estimacao-pontual"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-7-2": (
+                ["topico-estimacao-pontual", "topico-erro-padrao"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-7-4": (
+                ["topico-estimacao-pontual", "topico-erro-padrao"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-7-7": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-8-1": (
+                [
+                    "topico-hipotese-nula",
+                    "topico-hipotese-alternativa",
+                    "topico-erro-tipo-i",
+                    "topico-erro-tipo-ii",
+                ],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-2": (
+                ["topico-hipotese-nula", "topico-hipotese-alternativa"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-3": (
+                [
+                    "topico-hipotese-nula",
+                    "topico-hipotese-alternativa",
+                    "topico-nivel-de-significancia",
+                ],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-4": (
+                ["topico-teste-para-media"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-5": (
+                ["topico-nivel-de-significancia", "topico-valor-p"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-6": (
+                ["topico-erro-tipo-ii", "topico-poder-do-teste"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-7": (
+                ["topico-teste-para-proporcao"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-exemplo-2-5": (
+                ["topico-regressao-linear-simples", "topico-minimos-quadrados"],
+                ["conteudo-03-04"],
             ),
         },
     )

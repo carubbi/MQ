@@ -257,6 +257,83 @@ def build_nodes() -> list[dict]:
                 ["topico-distribuicao-normal", "topico-padronizacao"],
                 ["conteudo-02-04"],
             ),
+            f"{SOURCE}-sec-2-2-1": (
+                [
+                    "topico-amostragem",
+                    "topico-amostragem-aleatoria-simples",
+                    "topico-amostragem-estratificada",
+                    "topico-amostragem-sistematica",
+                    "topico-amostragem-por-conglomerados",
+                    "topico-amostragem-por-conveniencia",
+                    "topico-representatividade",
+                ],
+                ["conteudo-03-01"],
+            ),
+            f"{SOURCE}-sec-7-1": (
+                ["topico-estimacao-pontual"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-7-2": (
+                ["topico-distribuicao-amostral", "topico-erro-padrao"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-7-3": (
+                [
+                    "topico-estimacao-pontual",
+                    "topico-intervalo-de-confianca",
+                    "topico-margem-de-erro",
+                ],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-8-1": (
+                ["topico-hipotese-nula", "topico-hipotese-alternativa"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-2": (
+                ["topico-nivel-de-significancia", "topico-valor-p"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-3": (
+                ["topico-erro-tipo-i", "topico-erro-tipo-ii"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-5": (
+                ["topico-hipotese-nula", "topico-hipotese-alternativa"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-7": (
+                ["topico-teste-para-proporcao"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-8": (
+                ["topico-teste-para-media"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-8-10": (
+                ["topico-poder-do-teste"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-11-3": (
+                [
+                    "topico-regressao-linear-simples",
+                    "topico-minimos-quadrados",
+                    "topico-coeficiente-de-determinacao",
+                    "topico-coeficiente-de-determinacao-ajustado",
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-residuo",
+                    "topico-diagnostico-do-modelo",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-11-4": (
+                [
+                    "topico-regressao-linear-multipla",
+                    "topico-variavel-indicadora",
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-residuo",
+                ],
+                ["conteudo-03-04"],
+            ),
         },
     )
     return finalize_source(SOURCE, nodes)

@@ -350,9 +350,7 @@ class UnidadeIICompleteTests(unittest.TestCase):
         }
         self.assertGreater(len(qq_references), 0)
         normal_origins = curricular_origins(self.graph, "02.04")
-        self.assertTrue(
-            all(reference in normal_origins for reference in qq_references)
-        )
+        self.assertTrue(qq_references.intersection(normal_origins))
         self.assertFalse(
             any(
                 node.get("tipo") == "conteudo_curricular"

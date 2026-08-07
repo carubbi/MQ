@@ -62,7 +62,14 @@
     "titulo": "Amostragem",
     "pagina_pdf_inicio": 261,
     "pagina_pdf_fim": 274,
-    "pai": "banco-questoes-2026-2"
+    "pai": "banco-questoes-2026-2",
+    "topicos": [
+      "topico-amostragem",
+      "topico-amostragem-aleatoria-simples"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-cap-8",
@@ -776,9 +783,14 @@
     "pagina_pdf_inicio": 251,
     "pagina_pdf_fim": 256,
     "pai": "banco-questoes-2026-2-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-6-2",
@@ -788,9 +800,14 @@
     "pagina_pdf_inicio": 257,
     "pagina_pdf_fim": 258,
     "pai": "banco-questoes-2026-2-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-6-3",
@@ -812,9 +829,14 @@
     "pagina_pdf_inicio": 275,
     "pagina_pdf_fim": 289,
     "pai": "banco-questoes-2026-2-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-8-2",
@@ -824,9 +846,14 @@
     "pagina_pdf_inicio": 290,
     "pagina_pdf_fim": 298,
     "pai": "banco-questoes-2026-2-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-8-3",
@@ -848,9 +875,17 @@
     "pagina_pdf_inicio": 303,
     "pagina_pdf_fim": 371,
     "pai": "banco-questoes-2026-2-cap-9",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-minimos-quadrados",
+      "topico-coeficiente-de-determinacao",
+      "topico-inferencia-sobre-coeficientes",
+      "topico-residuo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-9-2",
@@ -860,9 +895,18 @@
     "pagina_pdf_inicio": 372,
     "pagina_pdf_fim": 412,
     "pai": "banco-questoes-2026-2-cap-9",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-multipla",
+      "topico-minimos-quadrados",
+      "topico-coeficiente-de-determinacao",
+      "topico-coeficiente-de-determinacao-ajustado",
+      "topico-inferencia-sobre-coeficientes",
+      "topico-residuo"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-10-1",
@@ -872,9 +916,13 @@
     "pagina_pdf_inicio": 413,
     "pagina_pdf_fim": 421,
     "pai": "banco-questoes-2026-2-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-media"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-10-2",
@@ -884,9 +932,13 @@
     "pagina_pdf_inicio": 422,
     "pagina_pdf_fim": 427,
     "pai": "banco-questoes-2026-2-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-proporcao"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-10-3",

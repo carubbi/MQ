@@ -248,6 +248,54 @@ def build_nodes() -> list[dict]:
                 ["topico-distribuicao-normal", "topico-padronizacao"],
                 ["conteudo-02-04"],
             ),
+            f"{SOURCE}-sec-12-1": (
+                ["topico-amostragem", "topico-populacao", "topico-amostra"],
+                ["conteudo-03-01"],
+            ),
+            f"{SOURCE}-sec-12-2": (
+                [
+                    "topico-amostragem",
+                    "topico-amostragem-aleatoria-simples",
+                    "topico-amostragem-estratificada",
+                    "topico-amostragem-sistematica",
+                    "topico-amostragem-por-conglomerados",
+                ],
+                ["conteudo-03-01"],
+            ),
+            f"{SOURCE}-sec-13-1": (
+                [
+                    "topico-distribuicao-amostral",
+                    "topico-teorema-central-do-limite",
+                    "topico-erro-padrao",
+                ],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-13-3": (
+                ["topico-distribuicao-amostral", "topico-erro-padrao"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-14-1": (
+                ["topico-estimacao-pontual"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-14-2": (
+                ["topico-estimacao-pontual"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-14-3": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-15-3": (
+                [
+                    "topico-regressao-linear-simples",
+                    "topico-minimos-quadrados",
+                    "topico-coeficiente-de-determinacao",
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-residuo",
+                ],
+                ["conteudo-03-04"],
+            ),
         },
     )
     return finalize_source(SOURCE, nodes)

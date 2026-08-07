@@ -135,6 +135,107 @@ def build_nodes() -> list[dict]:
                 ["topico-distribuicao-exponencial"],
                 ["conteudo-02-04"],
             ),
+            f"{SOURCE}-sec-2-amostragem-aleatoria-e-vies-de-amostra": (
+                [
+                    "topico-amostragem",
+                    "topico-amostragem-aleatoria-simples",
+                    "topico-representatividade",
+                ],
+                ["conteudo-03-01"],
+            ),
+            f"{SOURCE}-sec-2-vies": (
+                ["topico-amostragem", "topico-representatividade"],
+                ["conteudo-03-01"],
+            ),
+            f"{SOURCE}-sec-2-selecao-aleatoria": (
+                ["topico-amostragem", "topico-amostragem-aleatoria-simples"],
+                ["conteudo-03-01"],
+            ),
+            f"{SOURCE}-sec-2-media-amostral-versus-media-populacional": (
+                ["topico-estimacao-pontual"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-2-distribuicao-de-amostragem-de-uma-estatistica": (
+                ["topico-distribuicao-amostral"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-2-teorema-de-limite-central": (
+                ["topico-teorema-central-do-limite", "topico-distribuicao-amostral"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-2-erro-padrao": (
+                ["topico-erro-padrao"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-2-intervalos-de-confianca": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-3-testes-de-hipotese": (
+                ["topico-hipotese-nula", "topico-hipotese-alternativa"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-3-a-hipotese-nula": (
+                ["topico-hipotese-nula"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-3-hipotese-alternativa": (
+                ["topico-hipotese-alternativa"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-3-teste-de-hipotese-unilateral-bilateral": (
+                ["topico-hipotese-nula", "topico-hipotese-alternativa"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-3-significancia-estatistica-e-valores-p": (
+                ["topico-nivel-de-significancia", "topico-valor-p"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-3-erros-tipo-1-e-tipo-2": (
+                ["topico-erro-tipo-i", "topico-erro-tipo-ii"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-3-testes-t": (
+                ["topico-teste-para-media"],
+                ["conteudo-03-03"],
+            ),
+            f"{SOURCE}-sec-4-regressao-linear-simples": (
+                ["topico-regressao-linear-simples"],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-4-a-equacao-de-regressao": (
+                ["topico-regressao-linear-simples", "topico-inferencia-sobre-coeficientes"],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-4-valores-ajustados-e-residuos": (
+                ["topico-residuo"],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-4-minimos-quadrados": (
+                ["topico-minimos-quadrados"],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-4-regressao-linear-multipla": (
+                [
+                    "topico-regressao-linear-multipla",
+                    "topico-coeficiente-de-determinacao",
+                    "topico-coeficiente-de-determinacao-ajustado",
+                    "topico-inferencia-sobre-coeficientes",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-4-variaveis-fatoriais-em-regressao": (
+                ["topico-variavel-indicadora"],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-4-representacao-de-variaveis-ficticias": (
+                ["topico-variavel-indicadora"],
+                ["conteudo-03-04"],
+            ),
+            f"{SOURCE}-sec-4-testando-as-suposicoes-diagnosticos-de-regressao": (
+                ["topico-residuo", "topico-diagnostico-do-modelo"],
+                ["conteudo-03-04"],
+            ),
         },
     )
     return finalize_source(SOURCE, nodes)

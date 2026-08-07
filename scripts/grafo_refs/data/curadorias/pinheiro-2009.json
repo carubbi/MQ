@@ -516,9 +516,16 @@
     "pagina_pdf_inicio": 174,
     "pagina_pdf_fim": 179,
     "pai": "pinheiro-2009-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-teorema-central-do-limite",
+      "topico-erro-padrao",
+      "topico-tamanho-amostral"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-6-2",
@@ -540,9 +547,14 @@
     "pagina_pdf_inicio": 182,
     "pagina_pdf_fim": 183,
     "pai": "pinheiro-2009-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-amostragem-aleatoria-simples"
+    ],
+    "conteudos": [
+      "conteudo-03-01"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-6-4",
@@ -552,9 +564,18 @@
     "pagina_pdf_inicio": 184,
     "pagina_pdf_fim": 184,
     "pai": "pinheiro-2009-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-populacao",
+      "topico-amostra",
+      "topico-representatividade",
+      "topico-distribuicao-amostral",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-01",
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-6-5",
@@ -564,9 +585,15 @@
     "pagina_pdf_inicio": 185,
     "pagina_pdf_fim": 191,
     "pai": "pinheiro-2009-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estatistica-inferencial",
+      "topico-estimacao-pontual",
+      "topico-intervalo-de-confianca"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-7-1",
@@ -576,9 +603,14 @@
     "pagina_pdf_inicio": 194,
     "pagina_pdf_fim": 195,
     "pai": "pinheiro-2009-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estatistica-inferencial",
+      "topico-estimacao-pontual"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-7-2",
@@ -588,9 +620,14 @@
     "pagina_pdf_inicio": 196,
     "pagina_pdf_fim": 201,
     "pai": "pinheiro-2009-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-7-3",
@@ -612,9 +649,14 @@
     "pagina_pdf_inicio": 204,
     "pagina_pdf_fim": 207,
     "pai": "pinheiro-2009-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estimacao-pontual",
+      "topico-erro-padrao"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-7-5",
@@ -648,9 +690,14 @@
     "pagina_pdf_inicio": 212,
     "pagina_pdf_fim": 228,
     "pai": "pinheiro-2009-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-intervalo-de-confianca",
+      "topico-margem-de-erro"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-8-1",
@@ -660,9 +707,16 @@
     "pagina_pdf_inicio": 231,
     "pagina_pdf_fim": 232,
     "pai": "pinheiro-2009-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa",
+      "topico-erro-tipo-i",
+      "topico-erro-tipo-ii"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-8-2",
@@ -672,9 +726,14 @@
     "pagina_pdf_inicio": 233,
     "pagina_pdf_fim": 236,
     "pai": "pinheiro-2009-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-8-3",
@@ -684,9 +743,15 @@
     "pagina_pdf_inicio": 237,
     "pagina_pdf_fim": 237,
     "pai": "pinheiro-2009-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-hipotese-nula",
+      "topico-hipotese-alternativa",
+      "topico-nivel-de-significancia"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-8-4",
@@ -696,9 +761,13 @@
     "pagina_pdf_inicio": 238,
     "pagina_pdf_fim": 240,
     "pai": "pinheiro-2009-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-media"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-8-5",
@@ -708,9 +777,14 @@
     "pagina_pdf_inicio": 241,
     "pagina_pdf_fim": 243,
     "pai": "pinheiro-2009-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-nivel-de-significancia",
+      "topico-valor-p"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-8-6",
@@ -720,9 +794,14 @@
     "pagina_pdf_inicio": 244,
     "pagina_pdf_fim": 245,
     "pai": "pinheiro-2009-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-erro-tipo-ii",
+      "topico-poder-do-teste"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-8-7",
@@ -732,9 +811,13 @@
     "pagina_pdf_inicio": 246,
     "pagina_pdf_fim": 248,
     "pai": "pinheiro-2009-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teste-para-proporcao"
+    ],
+    "conteudos": [
+      "conteudo-03-03"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-8-8",
@@ -1012,6 +1095,21 @@
     ],
     "conteudos": [
       "conteudo-02-04"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exemplo-2-5",
+    "tipo": "exemplo",
+    "numero_impresso": "2.5",
+    "pagina_pdf": 73,
+    "pai": "pinheiro-2009-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regressao-linear-simples",
+      "topico-minimos-quadrados"
+    ],
+    "conteudos": [
+      "conteudo-03-04"
     ]
   }
 ]

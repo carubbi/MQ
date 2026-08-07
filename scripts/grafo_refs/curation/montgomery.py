@@ -127,6 +127,187 @@ def build_nodes() -> list[dict]:
                 ],
                 ["conteudo-02-04"],
             ),
+            f"{source}-sec-7-1": (
+                ["topico-estatistica-inferencial", "topico-estimacao-pontual"],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-7-2": (
+                [
+                    "topico-distribuicao-amostral",
+                    "topico-teorema-central-do-limite",
+                    "topico-erro-padrao",
+                    "topico-tamanho-amostral",
+                ],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-7-3-3": (
+                ["topico-estimacao-pontual", "topico-erro-padrao"],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-8-1-1": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-8-1-5": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-8-2-1": (
+                ["topico-intervalo-de-confianca"],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-8-2-2": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-8-4": (
+                [
+                    "topico-estimacao-pontual",
+                    "topico-intervalo-de-confianca",
+                    "topico-margem-de-erro",
+                ],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-8-5": (
+                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
+                ["conteudo-03-02"],
+            ),
+            f"{source}-sec-9-1-1": (
+                ["topico-hipotese-nula", "topico-hipotese-alternativa"],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-9-1-2": (
+                [
+                    "topico-hipotese-nula",
+                    "topico-hipotese-alternativa",
+                    "topico-nivel-de-significancia",
+                    "topico-erro-tipo-i",
+                    "topico-erro-tipo-ii",
+                ],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-9-1-3": (
+                ["topico-hipotese-alternativa"],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-9-1-4": (
+                ["topico-nivel-de-significancia", "topico-valor-p"],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-9-1-5": (
+                ["topico-intervalo-de-confianca", "topico-valor-p"],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-9-1-6": (
+                [
+                    "topico-hipotese-nula",
+                    "topico-hipotese-alternativa",
+                    "topico-nivel-de-significancia",
+                    "topico-valor-p",
+                ],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-9-2-1": (
+                ["topico-teste-para-media"],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-9-3-1": (
+                ["topico-teste-para-media"],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-9-5-1": (
+                ["topico-teste-para-proporcao"],
+                ["conteudo-03-03"],
+            ),
+            f"{source}-sec-11-2": (
+                [
+                    "topico-regressao-linear-simples",
+                    "topico-minimos-quadrados",
+                    "topico-residuo",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-11-3": (
+                ["topico-regressao-linear-simples", "topico-minimos-quadrados"],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-11-4-1": (
+                [
+                    "topico-regressao-linear-simples",
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-valor-p",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-11-5-1": (
+                [
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-intervalo-de-confianca",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-11-7-1": (
+                [
+                    "topico-residuo",
+                    "topico-diagnostico-do-modelo",
+                    "topico-grafico-qq",
+                    "topico-valor-discrepante",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-11-7-2": (
+                ["topico-coeficiente-de-determinacao"],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-12-1-1": (
+                ["topico-regressao-linear-multipla"],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-12-1-2": (
+                ["topico-regressao-linear-multipla", "topico-minimos-quadrados"],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-12-2-2": (
+                [
+                    "topico-regressao-linear-multipla",
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-valor-p",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-12-3-1": (
+                [
+                    "topico-regressao-linear-multipla",
+                    "topico-inferencia-sobre-coeficientes",
+                    "topico-intervalo-de-confianca",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-12-5-1": (
+                [
+                    "topico-regressao-linear-multipla",
+                    "topico-residuo",
+                    "topico-diagnostico-do-modelo",
+                    "topico-grafico-qq",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-12-5-2": (
+                [
+                    "topico-regressao-linear-multipla",
+                    "topico-diagnostico-do-modelo",
+                    "topico-valor-discrepante",
+                ],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-12-6-2": (
+                ["topico-regressao-linear-multipla", "topico-variavel-indicadora"],
+                ["conteudo-03-04"],
+            ),
+            f"{source}-sec-12-6-4": (
+                ["topico-regressao-linear-multipla", "topico-diagnostico-do-modelo"],
+                ["conteudo-03-04"],
+            ),
         },
     )
     return finalize_source(

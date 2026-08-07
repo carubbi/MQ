@@ -12,6 +12,9 @@ from scripts.grafo_refs.model import slug_id
 DATA_DIRECTORY = REPOSITORY_ROOT / "scripts/grafo_refs/data"
 CONTRACT_PATH = DATA_DIRECTORY / "contrato_publicado_unidade_i.json"
 MIGRATIONS_PATH = DATA_DIRECTORY / "migracoes_estrutura_unidade_i.json"
+EXPANSIONS_PATH = (
+    DATA_DIRECTORY / "expansoes_curriculares_pos_unidade_i.json"
+)
 
 
 def chapter(
@@ -135,6 +138,9 @@ def load_extraction(source: str, pdf_path: Path) -> dict:
 def finalize_source(source: str, nodes: list[dict]) -> list[dict]:
     """Aplica contrato curricular e migrações estruturais auditáveis."""
     contract = json.loads(CONTRACT_PATH.read_text(encoding="utf-8"))
+    expansions = json.loads(EXPANSIONS_PATH.read_text(encoding="utf-8"))[
+        "expansoes"
+    ]
     migrations = json.loads(MIGRATIONS_PATH.read_text(encoding="utf-8"))[
         "migracoes"
     ]
@@ -157,6 +163,18 @@ def finalize_source(source: str, nodes: list[dict]) -> list[dict]:
         elif relation_type == "precede" and origin in contract_nodes:
             precedence.setdefault(origin, []).append(destination)
 
+    expanded_topics = {}
+    expanded_contents = {}
+    for expansion in expansions:
+        origin = expansion["origem"]
+        if not origin.startswith(f"{source}-"):
+            continue
+        destination = expansion["destino"]
+        if expansion["tipo"] == "aborda":
+            expanded_topics.setdefault(origin, []).append(destination)
+        elif expansion["tipo"] == "corresponde_a":
+            expanded_contents.setdefault(origin, []).append(destination)
+
     field_migrations = {
         (migration["id"], migration["campo"]): migration["para"]
         for migration in migrations
@@ -175,6 +193,20 @@ def finalize_source(source: str, nodes: list[dict]) -> list[dict]:
         finalized_node = node.copy()
         if node_id in contract_nodes:
             frozen = contract_nodes[node_id]
+            frozen_topics = set(topics.get(node_id, []))
+            frozen_contents = set(contents.get(node_id, []))
+            allowed_topics = set(expanded_topics.get(node_id, []))
+            allowed_contents = set(expanded_contents.get(node_id, []))
+            proposed_topics = set(finalized_node.get("topicos", []))
+            proposed_contents = set(finalized_node.get("conteudos", []))
+            if proposed_topics - frozen_topics != allowed_topics:
+                raise ValueError(
+                    f"expansão de tópicos não declarada para {node_id}"
+                )
+            if proposed_contents - frozen_contents != allowed_contents:
+                raise ValueError(
+                    f"expansão de conteúdos não declarada para {node_id}"
+                )
             for key in (
                 "pagina_pdf",
                 "pagina_pdf_inicio",
@@ -184,8 +216,10 @@ def finalize_source(source: str, nodes: list[dict]) -> list[dict]:
                     finalized_node[key] = frozen[key]
             if node_id in parents:
                 finalized_node["pai"] = parents[node_id]
-            finalized_node["topicos"] = topics.get(node_id, [])
-            finalized_node["conteudos"] = contents.get(node_id, [])
+            finalized_node["topicos"] = sorted(frozen_topics | allowed_topics)
+            finalized_node["conteudos"] = sorted(
+                frozen_contents | allowed_contents
+            )
             if finalized_node["tipo"] in {
                 "secao",
                 "questao",
