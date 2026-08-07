@@ -9,7 +9,8 @@
 - **Semana:** 1
 - **Data:** 07/08/2026
 - **Aulas:** 1 e 2
-- **Duração prevista:** 200 minutos, com intervalo institucional entre os blocos
+- **Duração de referência:** 200 minutos de encontros, distribuíveis conforme a
+  configuração de horários do semestre
 - **Conteúdos formais:** `01.01`
 - **Tópicos:** Investigação estatística; Estatística descritiva; Estatística inferencial; População; Amostra; Amostragem; Representatividade; Unidade de análise; Tipos de variáveis
 - **Dados:** `../data/raw/penguins_raw.csv`
@@ -70,21 +71,10 @@ Antes do código, a futura implementação deverá apresentar:
 
 Somente `pandas` será necessário nesta semana. A futura implementação deverá registrar a versão usada no ambiente, mas não fixará dependências adicionais sem necessidade.
 
-## 6. Antecipação conceitual antes do cálculo ou da execução
+## 6. Caso reduzido, resolução manual ou decisão conceitual
 
-Antes de carregar o arquivo, o estudante deverá registrar:
-
-1. o que imagina que cada linha representa;
-2. quais colunas provavelmente serão qualitativas, quantitativas ou temporais;
-3. qual variável pode funcionar como identificador;
-4. uma população de interesse possível;
-5. uma limitação que espera encontrar na generalização.
-
-A atividade avaliará a justificativa, não a coincidência exata entre antecipação e estrutura observada.
-
-## 7. Caso reduzido, resolução manual ou decisão conceitual
-
-Exibir, em Markdown, os seis primeiros registros selecionados no material de aula.
+Selecionar, depois do carregamento, um recorte pequeno do próprio arquivo com
+identificador, espécie, ilha, data e uma medida corporal.
 
 Solicitar a classificação manual de:
 
@@ -98,7 +88,7 @@ Solicitar a classificação manual de:
 
 Essa classificação preparará a leitura de `DataFrame.dtypes` sem confundir tipo computacional com papel estatístico.
 
-## 8. Sequência funcional do futuro notebook
+## 7. Sequência funcional do futuro notebook
 
 ### Bloco 1 — Apresentação e pergunta
 
@@ -107,12 +97,14 @@ Essa classificação preparará a leitura de `DataFrame.dtypes` sem confundir ti
 - **Conteúdo:** identificação, fonte, contexto, pergunta principal e evidência esperada.
 - **Tempo previsto:** 10 minutos.
 
-### Bloco 2 — Antecipação
+### Bloco 2 — Preparação conceitual
 
 - **Tipo de célula:** Markdown.
-- **Função pedagógica:** antecipação.
-- **Conteúdo:** campos para o estudante registrar unidade de análise, tipos esperados, população possível e limitação.
-- **Tempo previsto:** 10 minutos.
+- **Função pedagógica:** explicação.
+- **Conteúdo:** síntese operacional de fonte, registro, unidade de análise,
+  variável, população, amostra, descrição e inferência, sem reproduzir os
+  slides.
+- **Tempo previsto:** 20 minutos.
 
 ### Bloco 3 — Dependência e carregamento
 
@@ -120,7 +112,8 @@ Essa classificação preparará a leitura de `DataFrame.dtypes` sem confundir ti
 - **Função pedagógica:** processamento.
 - **Entradas:** `../data/raw/penguins_raw.csv`.
 - **Ação prevista:** importar `pandas` e usar `pandas.read_csv()`.
-- **Produto esperado:** objeto `DataFrame`, sem apresentar antecipadamente seus valores.
+- **Produto esperado:** objeto `DataFrame`, sem fornecer resultados inventados
+  no roteiro.
 - **Verificação:** confirmar existência do arquivo e sucesso da leitura.
 - **Tempo previsto:** 15 minutos.
 
@@ -156,11 +149,13 @@ Essa classificação preparará a leitura de `DataFrame.dtypes` sem confundir ti
 - **Conteúdo:** distinção entre descrição e inferência; formulação de uma pergunta estatística; declaração de população de interesse, amostra disponível e alcance.
 - **Tempo previsto:** 35 minutos.
 
-### Bloco 8 — Verificação da antecipação
+### Bloco 8 — Comparação e diagnóstico
 
 - **Tipo de célula:** Markdown.
 - **Função pedagógica:** verificação.
-- **Conteúdo:** confronto entre a antecipação e a estrutura observada; explicação das diferenças.
+- **Conteúdo:** comparação entre significado estatístico e representação
+  computacional; diagnóstico da correspondência entre a pergunta, os registros
+  disponíveis e a população de interesse.
 - **Tempo previsto:** 20 minutos.
 
 ### Bloco 9 — Evidência e síntese
@@ -170,21 +165,22 @@ Essa classificação preparará a leitura de `DataFrame.dtypes` sem confundir ti
 - **Conteúdo:** resposta à pergunta principal, acompanhada de fonte, unidade, variáveis, população, limitações e alcance.
 - **Tempo previsto:** 25 minutos.
 
-O tempo remanescente será usado para abertura da disciplina, orientação do ambiente e intervalo entre os blocos.
+O tempo remanescente permitirá transições, dúvidas e adequação da execução à
+configuração dos encontros.
 
-## 9. Verificação e contraste
+## 8. Verificação e contraste
 
 A futura implementação deverá confrontar:
 
-- tipos antecipados e `DataFrame.dtypes`;
 - significado estatístico e representação computacional;
 - população pretendida e registros efetivamente disponíveis;
 - afirmações descritivas e inferenciais;
 - pergunta formulada e capacidade real dos dados.
 
-Uma divergência entre antecipação e resultado deverá ser explicada, não apagada.
+Diferenças entre a semântica documentada e a representação computacional
+deverão ser explicadas, não apenas apontadas.
 
-## 10. Evidência de aprendizagem
+## 9. Evidência de aprendizagem
 
 O estudante deverá registrar no futuro notebook:
 
@@ -197,7 +193,7 @@ O estudante deverá registrar no futuro notebook:
 
 A execução de `head()` ou `dtypes`, isoladamente, não constituirá evidência suficiente.
 
-## 11. Síntese e limitações
+## 10. Síntese e limitações
 
 O fechamento deverá responder:
 
@@ -209,7 +205,7 @@ O fechamento deverá responder:
 
 A conclusão será escrita somente depois da inspeção do arquivo.
 
-## 12. Estudo, exercícios e referências
+## 11. Estudo, exercícios e referências
 
 ### Materiais públicos
 
@@ -228,7 +224,7 @@ A conclusão será escrita somente depois da inspeção do arquivo.
 - PINHEIRO et al., capítulo 1, seções 1.1–1.2.
 - GORMAN; WILLIAMS; FRASER, 2014.
 
-## 13. Critérios para implementação futura
+## 12. Critérios para implementação futura
 
 - Executar sequencialmente sem estado oculto.
 - Usar apenas o caminho relativo documentado.
@@ -238,5 +234,5 @@ A conclusão será escrita somente depois da inspeção do arquivo.
 - Não tratar os 344 registros como amostra aleatória simples.
 - Não inventar população-alvo ou desenho amostral.
 - Interpretar cada saída relevante em Markdown.
-- Preservar a antecipação e seu contraste.
+- Comparar significado estatístico e representação computacional.
 - Produzir a evidência observável definida para a semana.
