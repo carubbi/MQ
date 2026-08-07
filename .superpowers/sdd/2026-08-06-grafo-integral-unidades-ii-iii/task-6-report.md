@@ -35,3 +35,17 @@ Resultado: `Ran 42 tests ... OK`.
 
 O grafo canônico também foi construído em memória; a validação semântica
 retornou `validation_errors= []`.
+
+## Fix round 1
+
+O primeiro parecer mostrou que uma aresta emitida por um tópico poderia
+satisfazer o contador de cobertura. O validador passou a aceitar como
+referência real somente capítulo, seção, questão, exercício ou exemplo com
+uma fonte ancestral. O teste substitui todas as referências de `03.04` por
+uma aresta de `topico-amostra` e exige simultaneamente os erros de origem
+não editorial e de conteúdo sem referência.
+
+O teste determinístico com curadoria temporária também deixou explícita a
+separação arquitetural: o construtor produz os metadados canônicos, mas uma
+entrada esparsa só é considerada válida após o validador rejeitar os
+conteúdos sem referências.
