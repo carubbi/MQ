@@ -309,10 +309,6 @@ def build_nodes() -> list[dict]:
                 ["topico-teste-para-media"],
                 ["conteudo-03-03"],
             ),
-            f"{SOURCE}-sec-8-10": (
-                ["topico-poder-do-teste"],
-                ["conteudo-03-03"],
-            ),
             f"{SOURCE}-sec-11-3": (
                 [
                     "topico-regressao-linear-simples",

@@ -265,8 +265,14 @@ def build_nodes() -> list[dict]:
             f"{SOURCE}-sec-13-1": (
                 [
                     "topico-distribuicao-amostral",
-                    "topico-teorema-central-do-limite",
                     "topico-erro-padrao",
+                ],
+                ["conteudo-03-02"],
+            ),
+            f"{SOURCE}-sec-13-2": (
+                [
+                    "topico-distribuicao-amostral",
+                    "topico-teorema-central-do-limite",
                 ],
                 ["conteudo-03-02"],
             ),
@@ -280,10 +286,6 @@ def build_nodes() -> list[dict]:
             ),
             f"{SOURCE}-sec-14-2": (
                 ["topico-estimacao-pontual"],
-                ["conteudo-03-02"],
-            ),
-            f"{SOURCE}-sec-14-3": (
-                ["topico-intervalo-de-confianca", "topico-margem-de-erro"],
                 ["conteudo-03-02"],
             ),
             f"{SOURCE}-sec-15-3": (

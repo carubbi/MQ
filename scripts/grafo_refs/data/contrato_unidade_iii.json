@@ -19,10 +19,10 @@
     ],
     "03.02": [
       "apostila-mq-sec-13-1",
+      "apostila-mq-sec-13-2",
       "apostila-mq-sec-13-3",
       "apostila-mq-sec-14-1",
       "apostila-mq-sec-14-2",
-      "apostila-mq-sec-14-3",
       "banco-questoes-2026-2-sec-6-1",
       "banco-questoes-2026-2-sec-6-2",
       "banco-questoes-2026-2-sec-8-1",
@@ -68,7 +68,6 @@
       "banco-questoes-2026-2-sec-10-1",
       "banco-questoes-2026-2-sec-10-2",
       "barbetta-2010-sec-8-1",
-      "barbetta-2010-sec-8-10",
       "barbetta-2010-sec-8-2",
       "barbetta-2010-sec-8-3",
       "barbetta-2010-sec-8-5",
@@ -166,7 +165,10 @@
     ],
     "apostila-mq-sec-13-1": [
       "topico-distribuicao-amostral",
-      "topico-erro-padrao",
+      "topico-erro-padrao"
+    ],
+    "apostila-mq-sec-13-2": [
+      "topico-distribuicao-amostral",
       "topico-teorema-central-do-limite"
     ],
     "apostila-mq-sec-13-3": [
@@ -178,10 +180,6 @@
     ],
     "apostila-mq-sec-14-2": [
       "topico-estimacao-pontual"
-    ],
-    "apostila-mq-sec-14-3": [
-      "topico-intervalo-de-confianca",
-      "topico-margem-de-erro"
     ],
     "apostila-mq-sec-15-3": [
       "topico-coeficiente-de-determinacao",
@@ -270,9 +268,6 @@
     "barbetta-2010-sec-8-1": [
       "topico-hipotese-alternativa",
       "topico-hipotese-nula"
-    ],
-    "barbetta-2010-sec-8-10": [
-      "topico-poder-do-teste"
     ],
     "barbetta-2010-sec-8-2": [
       "topico-nivel-de-significancia",

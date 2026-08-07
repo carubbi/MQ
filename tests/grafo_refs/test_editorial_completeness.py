@@ -68,6 +68,16 @@ class EditorialCompletenessTests(unittest.TestCase):
 
         self.assertEqual(children, set())
 
+    def test_escovedo_has_no_relations(self):
+        """Catches any relation emitted by or received by Escovedo."""
+        self.assertFalse(
+            any(
+                edge["origem"] == ESCOVEDO_ID
+                or edge["destino"] == ESCOVEDO_ID
+                for edge in self.graph["relacoes"]
+            )
+        )
+
     def test_apostila_exercises_are_individualized_after_27(self):
         """Catches any missing, duplicate, or extra apostila exercise."""
         exercise_ids = {

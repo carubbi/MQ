@@ -878,13 +878,9 @@
     "pagina_pdf_inicio": 225,
     "pagina_pdf_fim": 232,
     "pai": "barbetta-2010-cap-8",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-poder-do-teste"
-    ],
-    "conteudos": [
-      "conteudo-03-03"
-    ]
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "barbetta-2010-sec-9-1",

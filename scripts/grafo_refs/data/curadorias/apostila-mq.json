@@ -1014,7 +1014,6 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-distribuicao-amostral",
-      "topico-teorema-central-do-limite",
       "topico-erro-padrao"
     ],
     "conteudos": [
@@ -1029,9 +1028,14 @@
     "pagina_pdf_inicio": 125,
     "pagina_pdf_fim": 126,
     "pai": "apostila-mq-cap-13",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-amostral",
+      "topico-teorema-central-do-limite"
+    ],
+    "conteudos": [
+      "conteudo-03-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-13-3",
@@ -1090,14 +1094,9 @@
     "pagina_pdf_inicio": 132,
     "pagina_pdf_fim": 139,
     "pai": "apostila-mq-cap-14",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-intervalo-de-confianca",
-      "topico-margem-de-erro"
-    ],
-    "conteudos": [
-      "conteudo-03-02"
-    ]
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "apostila-mq-sec-14-4",

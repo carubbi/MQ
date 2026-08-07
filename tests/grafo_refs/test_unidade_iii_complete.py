@@ -182,6 +182,30 @@ class UnidadeIIICompleteTests(unittest.TestCase):
         self.assertTrue(
             AUTOMATIC_SELECTION_ORIGINS.isdisjoint(regression_origins)
         )
+        nodes = {node["id"]: node for node in self.graph["nos"]}
+        prohibited_fragments = {
+            "aic",
+            "bic",
+            "model selection",
+            "selection of variables",
+            "stepwise",
+            "seleção de modelo",
+            "passo a passo",
+        }
+        for origin in regression_origins:
+            searchable = " ".join(
+                (
+                    origin.lower(),
+                    nodes[origin].get("titulo", "").lower(),
+                )
+            )
+            with self.subTest(origin=origin):
+                self.assertFalse(
+                    any(
+                        fragment in searchable
+                        for fragment in prohibited_fragments
+                    )
+                )
 
 
 if __name__ == "__main__":
