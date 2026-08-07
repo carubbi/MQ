@@ -6,7 +6,10 @@
     "titulo": "Conceitos básicos em Estatística",
     "pagina_pdf_inicio": 8,
     "pagina_pdf_fim": 10,
-    "pai": "apostila-mq"
+    "pai": "apostila-mq",
+    "precede_publicados": [
+      "apostila-mq-cap-2"
+    ]
   },
   {
     "id": "apostila-mq-cap-2",
@@ -15,7 +18,10 @@
     "titulo": "Estudos dos dados estatísticos",
     "pagina_pdf_inicio": 11,
     "pagina_pdf_fim": 21,
-    "pai": "apostila-mq"
+    "pai": "apostila-mq",
+    "precede_publicados": [
+      "apostila-mq-cap-3"
+    ]
   },
   {
     "id": "apostila-mq-cap-3",
@@ -24,7 +30,10 @@
     "titulo": "Distribuição de frequências",
     "pagina_pdf_inicio": 22,
     "pagina_pdf_fim": 26,
-    "pai": "apostila-mq"
+    "pai": "apostila-mq",
+    "precede_publicados": [
+      "apostila-mq-cap-4"
+    ]
   },
   {
     "id": "apostila-mq-cap-4",
@@ -33,7 +42,10 @@
     "titulo": "Medidas de posição",
     "pagina_pdf_inicio": 27,
     "pagina_pdf_fim": 48,
-    "pai": "apostila-mq"
+    "pai": "apostila-mq",
+    "precede_publicados": [
+      "apostila-mq-cap-5"
+    ]
   },
   {
     "id": "apostila-mq-cap-5",
@@ -42,7 +54,10 @@
     "titulo": "Medidas de dispersão",
     "pagina_pdf_inicio": 49,
     "pagina_pdf_fim": 57,
-    "pai": "apostila-mq"
+    "pai": "apostila-mq",
+    "precede_publicados": [
+      "apostila-mq-cap-6"
+    ]
   },
   {
     "id": "apostila-mq-cap-6",
@@ -51,6 +66,81 @@
     "titulo": "Medidas de assimetria e curtose",
     "pagina_pdf_inicio": 58,
     "pagina_pdf_fim": 61,
+    "pai": "apostila-mq",
+    "precede_publicados": [
+      "apostila-mq-cap-15"
+    ]
+  },
+  {
+    "id": "apostila-mq-cap-7",
+    "tipo": "capitulo",
+    "numero_impresso": "7",
+    "titulo": "Índices e Indicadores",
+    "pagina_pdf_inicio": 62,
+    "pagina_pdf_fim": 73,
+    "pai": "apostila-mq"
+  },
+  {
+    "id": "apostila-mq-cap-8",
+    "tipo": "capitulo",
+    "numero_impresso": "8",
+    "titulo": "Probabilidade",
+    "pagina_pdf_inicio": 74,
+    "pagina_pdf_fim": 89,
+    "pai": "apostila-mq"
+  },
+  {
+    "id": "apostila-mq-cap-9",
+    "tipo": "capitulo",
+    "numero_impresso": "9",
+    "titulo": "Variáveis Aleatórias Unidimensionais",
+    "pagina_pdf_inicio": 90,
+    "pagina_pdf_fim": 95,
+    "pai": "apostila-mq"
+  },
+  {
+    "id": "apostila-mq-cap-10",
+    "tipo": "capitulo",
+    "numero_impresso": "10",
+    "titulo": "Distribuições Discretas de Probabilidade",
+    "pagina_pdf_inicio": 96,
+    "pagina_pdf_fim": 104,
+    "pai": "apostila-mq"
+  },
+  {
+    "id": "apostila-mq-cap-11",
+    "tipo": "capitulo",
+    "numero_impresso": "11",
+    "titulo": "Distribuição Normal",
+    "pagina_pdf_inicio": 105,
+    "pagina_pdf_fim": 116,
+    "pai": "apostila-mq"
+  },
+  {
+    "id": "apostila-mq-cap-12",
+    "tipo": "capitulo",
+    "numero_impresso": "12",
+    "titulo": "Amostragem",
+    "pagina_pdf_inicio": 117,
+    "pagina_pdf_fim": 124,
+    "pai": "apostila-mq"
+  },
+  {
+    "id": "apostila-mq-cap-13",
+    "tipo": "capitulo",
+    "numero_impresso": "13",
+    "titulo": "Distribuições Amostrais",
+    "pagina_pdf_inicio": 125,
+    "pagina_pdf_fim": 129,
+    "pai": "apostila-mq"
+  },
+  {
+    "id": "apostila-mq-cap-14",
+    "tipo": "capitulo",
+    "numero_impresso": "14",
+    "titulo": "Estimação",
+    "pagina_pdf_inicio": 130,
+    "pagina_pdf_fim": 147,
     "pai": "apostila-mq"
   },
   {
@@ -60,6 +150,18 @@
     "titulo": "Análise de Correlação e Regressão",
     "pagina_pdf_inicio": 148,
     "pagina_pdf_fim": 163,
+    "pai": "apostila-mq",
+    "precede_publicados": [
+      "apostila-mq-cap-17"
+    ]
+  },
+  {
+    "id": "apostila-mq-cap-16",
+    "tipo": "capitulo",
+    "numero_impresso": "16",
+    "titulo": "Critérios de arredondamentos",
+    "pagina_pdf_inicio": 164,
+    "pagina_pdf_fim": 167,
     "pai": "apostila-mq"
   },
   {
@@ -86,6 +188,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-1-2"
     ]
   },
   {
@@ -104,6 +209,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-1-3"
     ]
   },
   {
@@ -137,6 +245,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-2-2"
     ]
   },
   {
@@ -150,6 +261,41 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-tabela",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-2-2-1",
+    "tipo": "secao",
+    "numero_impresso": "2.2.1",
+    "titulo": "Apresentação tabular",
+    "pagina_pdf_inicio": 12,
+    "pagina_pdf_fim": 13,
+    "pai": "apostila-mq-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-2-2-2"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-2-2-2",
+    "tipo": "secao",
+    "numero_impresso": "2.2.2",
+    "titulo": "Apresentação gráfica",
+    "pagina_pdf_inicio": 14,
+    "pagina_pdf_fim": 21,
+    "pai": "apostila-mq-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
       "topico-grafico"
     ],
     "conteudos": [
@@ -171,6 +317,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-3-2"
     ]
   },
   {
@@ -210,6 +359,124 @@
     ]
   },
   {
+    "id": "apostila-mq-sec-4-1",
+    "tipo": "secao",
+    "numero_impresso": "4.1",
+    "titulo": "Pequenos conjuntos de dados",
+    "pagina_pdf_inicio": 27,
+    "pagina_pdf_fim": 29,
+    "pai": "apostila-mq-sec-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-4-2"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-4-2",
+    "tipo": "secao",
+    "numero_impresso": "4.2",
+    "titulo": "Grandes conjuntos de dados: discretos",
+    "pagina_pdf_inicio": 30,
+    "pagina_pdf_fim": 31,
+    "pai": "apostila-mq-sec-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-4-3"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-4-3",
+    "tipo": "secao",
+    "numero_impresso": "4.3",
+    "titulo": "Grandes conjuntos de dados: contínuos",
+    "pagina_pdf_inicio": 32,
+    "pagina_pdf_fim": 34,
+    "pai": "apostila-mq-sec-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-4-4"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-4-4",
+    "tipo": "secao",
+    "numero_impresso": "4.4",
+    "titulo": "Medidas separatrizes",
+    "pagina_pdf_inicio": 35,
+    "pagina_pdf_fim": 41,
+    "pai": "apostila-mq-sec-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-mediana"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-4-5"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-4-5",
+    "tipo": "secao",
+    "numero_impresso": "4.5",
+    "titulo": "Interpolação linear",
+    "pagina_pdf_inicio": 42,
+    "pagina_pdf_fim": 43,
+    "pai": "apostila-mq-sec-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-4-6"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-4-6",
+    "tipo": "secao",
+    "numero_impresso": "4.6",
+    "titulo": "Outras medidas de posição",
+    "pagina_pdf_inicio": 44,
+    "pagina_pdf_fim": 48,
+    "pai": "apostila-mq-sec-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
     "id": "apostila-mq-sec-5",
     "tipo": "secao",
     "numero_impresso": "5",
@@ -220,6 +487,66 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-amplitude",
+      "topico-variancia",
+      "topico-desvio-padrao",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-5-1",
+    "tipo": "secao",
+    "numero_impresso": "5.1",
+    "titulo": "Pequenos conjuntos de dados",
+    "pagina_pdf_inicio": 49,
+    "pagina_pdf_fim": 52,
+    "pai": "apostila-mq-sec-5",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amplitude",
+      "topico-variancia",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-5-2"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-5-2",
+    "tipo": "secao",
+    "numero_impresso": "5.2",
+    "titulo": "Grandes conjuntos de dados: discretos",
+    "pagina_pdf_inicio": 53,
+    "pagina_pdf_fim": 54,
+    "pai": "apostila-mq-sec-5",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variancia",
+      "topico-desvio-padrao",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-5-3"
+    ]
+  },
+  {
+    "id": "apostila-mq-sec-5-3",
+    "tipo": "secao",
+    "numero_impresso": "5.3",
+    "titulo": "Grandes conjuntos de dados: contínuos",
+    "pagina_pdf_inicio": 55,
+    "pagina_pdf_fim": 57,
+    "pai": "apostila-mq-sec-5",
+    "pertinencia_t199": "direta",
+    "topicos": [
       "topico-variancia",
       "topico-desvio-padrao",
       "topico-coeficiente-de-variacao"
@@ -242,6 +569,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-6-2"
     ]
   },
   {
@@ -261,6 +591,414 @@
     ]
   },
   {
+    "id": "apostila-mq-sec-7-1",
+    "tipo": "secao",
+    "numero_impresso": "7.1",
+    "titulo": "Valor Absoluto e Valor Relativo",
+    "pagina_pdf_inicio": 62,
+    "pagina_pdf_fim": 62,
+    "pai": "apostila-mq-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-7-2",
+    "tipo": "secao",
+    "numero_impresso": "7.2",
+    "titulo": "Coeficientes",
+    "pagina_pdf_inicio": 63,
+    "pagina_pdf_fim": 63,
+    "pai": "apostila-mq-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-7-3",
+    "tipo": "secao",
+    "numero_impresso": "7.3",
+    "titulo": "Índices",
+    "pagina_pdf_inicio": 63,
+    "pagina_pdf_fim": 68,
+    "pai": "apostila-mq-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-7-4",
+    "tipo": "secao",
+    "numero_impresso": "7.4",
+    "titulo": "Indicadores de Desempenho",
+    "pagina_pdf_inicio": 69,
+    "pagina_pdf_fim": 73,
+    "pai": "apostila-mq-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-1",
+    "tipo": "secao",
+    "numero_impresso": "8.1",
+    "titulo": "Conceitos iniciais",
+    "pagina_pdf_inicio": 74,
+    "pagina_pdf_fim": 74,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-2",
+    "tipo": "secao",
+    "numero_impresso": "8.2",
+    "titulo": "Operações com Eventos Aleatórios",
+    "pagina_pdf_inicio": 75,
+    "pagina_pdf_fim": 77,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-3",
+    "tipo": "secao",
+    "numero_impresso": "8.3",
+    "titulo": "Medida de Probabilidade",
+    "pagina_pdf_inicio": 78,
+    "pagina_pdf_fim": 78,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-4",
+    "tipo": "secao",
+    "numero_impresso": "8.4",
+    "titulo": "Teorema da Soma",
+    "pagina_pdf_inicio": 79,
+    "pagina_pdf_fim": 81,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-5",
+    "tipo": "secao",
+    "numero_impresso": "8.5",
+    "titulo": "Eventos Dependentes",
+    "pagina_pdf_inicio": 82,
+    "pagina_pdf_fim": 82,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-6",
+    "tipo": "secao",
+    "numero_impresso": "8.6",
+    "titulo": "Probabilidade Condicional",
+    "pagina_pdf_inicio": 82,
+    "pagina_pdf_fim": 82,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-7",
+    "tipo": "secao",
+    "numero_impresso": "8.7",
+    "titulo": "Teorema do Produto ou Regra do Produto",
+    "pagina_pdf_inicio": 83,
+    "pagina_pdf_fim": 83,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-8",
+    "tipo": "secao",
+    "numero_impresso": "8.8",
+    "titulo": "Eventos Independentes",
+    "pagina_pdf_inicio": 83,
+    "pagina_pdf_fim": 85,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-8-1",
+    "tipo": "secao",
+    "numero_impresso": "8.8.1",
+    "titulo": "Teorema do Produto ou Regra do Produto",
+    "pagina_pdf_inicio": 83,
+    "pagina_pdf_fim": 85,
+    "pai": "apostila-mq-sec-8-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-8-9",
+    "tipo": "secao",
+    "numero_impresso": "8.9",
+    "titulo": "Teorema de Bayes",
+    "pagina_pdf_inicio": 86,
+    "pagina_pdf_fim": 89,
+    "pai": "apostila-mq-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-9-1",
+    "tipo": "secao",
+    "numero_impresso": "9.1",
+    "titulo": "Variáveis Aleatórias Discretas",
+    "pagina_pdf_inicio": 90,
+    "pagina_pdf_fim": 91,
+    "pai": "apostila-mq-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-9-2",
+    "tipo": "secao",
+    "numero_impresso": "9.2",
+    "titulo": "Variáveis Aleatórias Contínuas",
+    "pagina_pdf_inicio": 92,
+    "pagina_pdf_fim": 93,
+    "pai": "apostila-mq-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-9-3",
+    "tipo": "secao",
+    "numero_impresso": "9.3",
+    "titulo": "Propriedades da Esperança e da Variância",
+    "pagina_pdf_inicio": 94,
+    "pagina_pdf_fim": 95,
+    "pai": "apostila-mq-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-10-1",
+    "tipo": "secao",
+    "numero_impresso": "10.1",
+    "titulo": "Distribuição Binomial",
+    "pagina_pdf_inicio": 96,
+    "pagina_pdf_fim": 98,
+    "pai": "apostila-mq-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-10-2",
+    "tipo": "secao",
+    "numero_impresso": "10.2",
+    "titulo": "Distribuição de Poisson",
+    "pagina_pdf_inicio": 99,
+    "pagina_pdf_fim": 100,
+    "pai": "apostila-mq-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-10-3",
+    "tipo": "secao",
+    "numero_impresso": "10.3",
+    "titulo": "Distribuição de Poisson como Aproximação da Binomial",
+    "pagina_pdf_inicio": 101,
+    "pagina_pdf_fim": 101,
+    "pai": "apostila-mq-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-10-4",
+    "tipo": "secao",
+    "numero_impresso": "10.4",
+    "titulo": "Distribuição Hipergeométrica",
+    "pagina_pdf_inicio": 102,
+    "pagina_pdf_fim": 104,
+    "pai": "apostila-mq-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-11-1",
+    "tipo": "secao",
+    "numero_impresso": "11.1",
+    "titulo": "Aproximação da Binomial pela Normal",
+    "pagina_pdf_inicio": 114,
+    "pagina_pdf_fim": 114,
+    "pai": "apostila-mq-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-11-2",
+    "tipo": "secao",
+    "numero_impresso": "11.2",
+    "titulo": "Combinação Linear de Normais Independentes",
+    "pagina_pdf_inicio": 115,
+    "pagina_pdf_fim": 116,
+    "pai": "apostila-mq-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-12-1",
+    "tipo": "secao",
+    "numero_impresso": "12.1",
+    "titulo": "Conceitos Fundamentais em Amostragem",
+    "pagina_pdf_inicio": 117,
+    "pagina_pdf_fim": 118,
+    "pai": "apostila-mq-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-12-2",
+    "tipo": "secao",
+    "numero_impresso": "12.2",
+    "titulo": "Tipos de Amostragem",
+    "pagina_pdf_inicio": 119,
+    "pagina_pdf_fim": 123,
+    "pai": "apostila-mq-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-12-3",
+    "tipo": "secao",
+    "numero_impresso": "12.3",
+    "titulo": "Uso do Excel na amostragem",
+    "pagina_pdf_inicio": 124,
+    "pagina_pdf_fim": 124,
+    "pai": "apostila-mq-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-13-1",
+    "tipo": "secao",
+    "numero_impresso": "13.1",
+    "titulo": "Distribuição Amostral da Média",
+    "pagina_pdf_inicio": 125,
+    "pagina_pdf_fim": 125,
+    "pai": "apostila-mq-cap-13",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-13-2",
+    "tipo": "secao",
+    "numero_impresso": "13.2",
+    "titulo": "O Teorema do Limite Central",
+    "pagina_pdf_inicio": 125,
+    "pagina_pdf_fim": 126,
+    "pai": "apostila-mq-cap-13",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-13-3",
+    "tipo": "secao",
+    "numero_impresso": "13.3",
+    "titulo": "Distribuição Amostral da Proporção",
+    "pagina_pdf_inicio": 127,
+    "pagina_pdf_fim": 129,
+    "pai": "apostila-mq-cap-13",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-14-1",
+    "tipo": "secao",
+    "numero_impresso": "14.1",
+    "titulo": "Conceitos Fundamentais em estimação",
+    "pagina_pdf_inicio": 130,
+    "pagina_pdf_fim": 131,
+    "pai": "apostila-mq-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-14-2",
+    "tipo": "secao",
+    "numero_impresso": "13.2",
+    "titulo": "Estimativa Pontual",
+    "pagina_pdf_inicio": 132,
+    "pagina_pdf_fim": 132,
+    "pai": "apostila-mq-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-14-3",
+    "tipo": "secao",
+    "numero_impresso": "13.3",
+    "titulo": "Estimativa Intervalar ou Intervalo de Confiança para uma Amostra",
+    "pagina_pdf_inicio": 132,
+    "pagina_pdf_fim": 139,
+    "pai": "apostila-mq-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-14-4",
+    "tipo": "secao",
+    "numero_impresso": "13.4",
+    "titulo": "Amostragem para População Finita",
+    "pagina_pdf_inicio": 140,
+    "pagina_pdf_fim": 142,
+    "pai": "apostila-mq-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-14-5",
+    "tipo": "secao",
+    "numero_impresso": "13.5",
+    "titulo": "Estimativa Intervalar ou Intervalo de Confiança para Duas Amostras",
+    "pagina_pdf_inicio": 143,
+    "pagina_pdf_fim": 147,
+    "pai": "apostila-mq-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
     "id": "apostila-mq-sec-15-1",
     "tipo": "secao",
     "numero_impresso": "15.1",
@@ -275,6 +1013,9 @@
     ],
     "conteudos": [
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "apostila-mq-sec-15-2"
     ]
   },
   {
@@ -293,6 +1034,30 @@
     "conteudos": [
       "conteudo-01-04"
     ]
+  },
+  {
+    "id": "apostila-mq-sec-15-3",
+    "tipo": "secao",
+    "numero_impresso": "15.3",
+    "titulo": "Regressão Linear Simples",
+    "pagina_pdf_inicio": 150,
+    "pagina_pdf_fim": 161,
+    "pai": "apostila-mq-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-sec-15-4",
+    "tipo": "secao",
+    "numero_impresso": "15.4",
+    "titulo": "Regressão Linear Simples com Excel",
+    "pagina_pdf_inicio": 162,
+    "pagina_pdf_fim": 163,
+    "pai": "apostila-mq-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "apostila-mq-sec-17-1",
@@ -314,193 +1079,112 @@
     ]
   },
   {
-    "id": "apostila-mq-sec-2-2-1",
+    "id": "apostila-mq-sec-17-2",
     "tipo": "secao",
-    "numero_impresso": "2.2.1",
-    "titulo": "Apresentação tabular",
-    "pagina_pdf_inicio": 12,
-    "pagina_pdf_fim": 13,
-    "pai": "apostila-mq-sec-2-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-tabela"
-    ],
-    "conteudos": [
-      "conteudo-01-02"
-    ]
+    "numero_impresso": "17.2",
+    "titulo": "Introdução ao Estudo dos indicadores",
+    "pagina_pdf_inicio": 173,
+    "pagina_pdf_fim": 173,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "apostila-mq-sec-2-2-2",
+    "id": "apostila-mq-sec-17-3",
     "tipo": "secao",
-    "numero_impresso": "2.2.2",
-    "titulo": "Apresentação gráfica",
-    "pagina_pdf_inicio": 14,
-    "pagina_pdf_fim": 21,
-    "pai": "apostila-mq-sec-2-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-grafico"
-    ],
-    "conteudos": [
-      "conteudo-01-02"
-    ]
+    "numero_impresso": "17.3",
+    "titulo": "Probabilidade",
+    "pagina_pdf_inicio": 174,
+    "pagina_pdf_fim": 176,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "apostila-mq-sec-4-1",
+    "id": "apostila-mq-sec-17-4",
     "tipo": "secao",
-    "numero_impresso": "4.1",
-    "titulo": "Pequenos conjuntos de dados",
-    "pagina_pdf_inicio": 27,
-    "pagina_pdf_fim": 29,
-    "pai": "apostila-mq-sec-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-media",
-      "topico-mediana",
-      "topico-moda"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "17.4",
+    "titulo": "Variáveis Aleatórias",
+    "pagina_pdf_inicio": 177,
+    "pagina_pdf_fim": 179,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "apostila-mq-sec-4-2",
+    "id": "apostila-mq-sec-17-5",
     "tipo": "secao",
-    "numero_impresso": "4.2",
-    "titulo": "Grandes conjuntos de dados: discretos",
-    "pagina_pdf_inicio": 30,
-    "pagina_pdf_fim": 31,
-    "pai": "apostila-mq-sec-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-media",
-      "topico-mediana",
-      "topico-moda"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "17.5",
+    "titulo": "Distribuições Discretas",
+    "pagina_pdf_inicio": 180,
+    "pagina_pdf_fim": 182,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "apostila-mq-sec-4-3",
+    "id": "apostila-mq-sec-17-6",
     "tipo": "secao",
-    "numero_impresso": "4.3",
-    "titulo": "Grandes conjuntos de dados: contínuos",
-    "pagina_pdf_inicio": 32,
-    "pagina_pdf_fim": 34,
-    "pai": "apostila-mq-sec-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-media",
-      "topico-mediana",
-      "topico-moda"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "17.6",
+    "titulo": "Distribuições Contínuas",
+    "pagina_pdf_inicio": 183,
+    "pagina_pdf_fim": 183,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "apostila-mq-sec-4-4",
+    "id": "apostila-mq-sec-17-7",
     "tipo": "secao",
-    "numero_impresso": "4.4",
-    "titulo": "Medidas separatrizes",
-    "pagina_pdf_inicio": 35,
-    "pagina_pdf_fim": 41,
-    "pai": "apostila-mq-sec-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-quantil",
-      "topico-mediana"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "17.7",
+    "titulo": "Distribuição Normal",
+    "pagina_pdf_inicio": 183,
+    "pagina_pdf_fim": 186,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "apostila-mq-sec-4-5",
+    "id": "apostila-mq-sec-17-8",
     "tipo": "secao",
-    "numero_impresso": "4.5",
-    "titulo": "Interpolação linear",
-    "pagina_pdf_inicio": 42,
-    "pagina_pdf_fim": 43,
-    "pai": "apostila-mq-sec-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-quantil"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "17.8",
+    "titulo": "Distribuições Amostrais",
+    "pagina_pdf_inicio": 187,
+    "pagina_pdf_fim": 187,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "apostila-mq-sec-4-6",
+    "id": "apostila-mq-sec-17-9",
     "tipo": "secao",
-    "numero_impresso": "4.6",
-    "titulo": "Outras medidas de posição",
-    "pagina_pdf_inicio": 44,
-    "pagina_pdf_fim": 48,
-    "pai": "apostila-mq-sec-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-media"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "17.9",
+    "titulo": "Amostragem e Estimação",
+    "pagina_pdf_inicio": 188,
+    "pagina_pdf_fim": 190,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "apostila-mq-sec-5-1",
+    "id": "apostila-mq-sec-17-10",
     "tipo": "secao",
-    "numero_impresso": "5.1",
-    "titulo": "Pequenos conjuntos de dados",
-    "pagina_pdf_inicio": 49,
-    "pagina_pdf_fim": 52,
-    "pai": "apostila-mq-sec-5",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-amplitude",
-      "topico-variancia",
-      "topico-desvio-padrao"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
-  },
-  {
-    "id": "apostila-mq-sec-5-2",
-    "tipo": "secao",
-    "numero_impresso": "5.2",
-    "titulo": "Grandes conjuntos de dados: discretos",
-    "pagina_pdf_inicio": 53,
-    "pagina_pdf_fim": 54,
-    "pai": "apostila-mq-sec-5",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-variancia",
-      "topico-desvio-padrao",
-      "topico-coeficiente-de-variacao"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
-  },
-  {
-    "id": "apostila-mq-sec-5-3",
-    "tipo": "secao",
-    "numero_impresso": "5.3",
-    "titulo": "Grandes conjuntos de dados: contínuos",
-    "pagina_pdf_inicio": 55,
-    "pagina_pdf_fim": 57,
-    "pai": "apostila-mq-sec-5",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-variancia",
-      "topico-desvio-padrao",
-      "topico-coeficiente-de-variacao"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "17.10",
+    "titulo": "Análise de Correlação e Regressão",
+    "pagina_pdf_inicio": 191,
+    "pagina_pdf_fim": 193,
+    "pai": "apostila-mq-cap-17",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "apostila-mq-exercicio-1",
@@ -517,6 +1201,9 @@
     "conteudos": [
       "conteudo-01-01",
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-2"
     ]
   },
   {
@@ -534,6 +1221,9 @@
     "conteudos": [
       "conteudo-01-01",
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-3"
     ]
   },
   {
@@ -551,6 +1241,9 @@
     "conteudos": [
       "conteudo-01-01",
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-4"
     ]
   },
   {
@@ -568,6 +1261,9 @@
     "conteudos": [
       "conteudo-01-01",
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-5"
     ]
   },
   {
@@ -585,6 +1281,9 @@
     "conteudos": [
       "conteudo-01-01",
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-6"
     ]
   },
   {
@@ -602,6 +1301,9 @@
     "conteudos": [
       "conteudo-01-01",
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-7"
     ]
   },
   {
@@ -617,6 +1319,9 @@
     ],
     "conteudos": [
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-8"
     ]
   },
   {
@@ -634,6 +1339,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-9"
     ]
   },
   {
@@ -651,6 +1359,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-10"
     ]
   },
   {
@@ -668,6 +1379,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-11"
     ]
   },
   {
@@ -685,6 +1399,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-12"
     ]
   },
   {
@@ -702,6 +1419,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-13"
     ]
   },
   {
@@ -719,6 +1439,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-14"
     ]
   },
   {
@@ -736,6 +1459,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-15"
     ]
   },
   {
@@ -753,6 +1479,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-16"
     ]
   },
   {
@@ -770,6 +1499,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-17"
     ]
   },
   {
@@ -787,6 +1519,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-18"
     ]
   },
   {
@@ -804,6 +1539,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-19"
     ]
   },
   {
@@ -821,6 +1559,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-20"
     ]
   },
   {
@@ -838,6 +1579,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-21"
     ]
   },
   {
@@ -855,6 +1599,9 @@
     "conteudos": [
       "conteudo-01-03",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-22"
     ]
   },
   {
@@ -872,6 +1619,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-23"
     ]
   },
   {
@@ -889,6 +1639,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-24"
     ]
   },
   {
@@ -906,6 +1659,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-25"
     ]
   },
   {
@@ -923,6 +1679,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-26"
     ]
   },
   {
@@ -940,6 +1699,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "apostila-mq-exercicio-27"
     ]
   },
   {
@@ -958,5 +1720,1355 @@
     "conteudos": [
       "conteudo-01-03"
     ]
+  },
+  {
+    "id": "apostila-mq-exercicio-28",
+    "tipo": "exercicio",
+    "numero_impresso": "28",
+    "pagina_pdf": 173,
+    "pai": "apostila-mq-sec-17-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-29",
+    "tipo": "exercicio",
+    "numero_impresso": "29",
+    "pagina_pdf": 173,
+    "pai": "apostila-mq-sec-17-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-30",
+    "tipo": "exercicio",
+    "numero_impresso": "30",
+    "pagina_pdf": 174,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-31",
+    "tipo": "exercicio",
+    "numero_impresso": "31",
+    "pagina_pdf": 174,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-32",
+    "tipo": "exercicio",
+    "numero_impresso": "32",
+    "pagina_pdf": 174,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-33",
+    "tipo": "exercicio",
+    "numero_impresso": "33",
+    "pagina_pdf": 174,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-34",
+    "tipo": "exercicio",
+    "numero_impresso": "34",
+    "pagina_pdf": 174,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-35",
+    "tipo": "exercicio",
+    "numero_impresso": "35",
+    "pagina_pdf": 174,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-36",
+    "tipo": "exercicio",
+    "numero_impresso": "36",
+    "pagina_pdf": 174,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-37",
+    "tipo": "exercicio",
+    "numero_impresso": "37",
+    "pagina_pdf": 174,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-38",
+    "tipo": "exercicio",
+    "numero_impresso": "38",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-39",
+    "tipo": "exercicio",
+    "numero_impresso": "39",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-40",
+    "tipo": "exercicio",
+    "numero_impresso": "40",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-41",
+    "tipo": "exercicio",
+    "numero_impresso": "41",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-42",
+    "tipo": "exercicio",
+    "numero_impresso": "42",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-43",
+    "tipo": "exercicio",
+    "numero_impresso": "43",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-44",
+    "tipo": "exercicio",
+    "numero_impresso": "44",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-45",
+    "tipo": "exercicio",
+    "numero_impresso": "45",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-46",
+    "tipo": "exercicio",
+    "numero_impresso": "46",
+    "pagina_pdf": 175,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-47",
+    "tipo": "exercicio",
+    "numero_impresso": "47",
+    "pagina_pdf": 176,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-48",
+    "tipo": "exercicio",
+    "numero_impresso": "48",
+    "pagina_pdf": 176,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-49",
+    "tipo": "exercicio",
+    "numero_impresso": "49",
+    "pagina_pdf": 176,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-50",
+    "tipo": "exercicio",
+    "numero_impresso": "50",
+    "pagina_pdf": 176,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-51",
+    "tipo": "exercicio",
+    "numero_impresso": "51",
+    "pagina_pdf": 176,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-52",
+    "tipo": "exercicio",
+    "numero_impresso": "52",
+    "pagina_pdf": 176,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-53",
+    "tipo": "exercicio",
+    "numero_impresso": "53",
+    "pagina_pdf": 176,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-54",
+    "tipo": "exercicio",
+    "numero_impresso": "54",
+    "pagina_pdf": 176,
+    "pai": "apostila-mq-sec-17-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-55",
+    "tipo": "exercicio",
+    "numero_impresso": "55",
+    "pagina_pdf": 177,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-56",
+    "tipo": "exercicio",
+    "numero_impresso": "56",
+    "pagina_pdf": 177,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-57",
+    "tipo": "exercicio",
+    "numero_impresso": "57",
+    "pagina_pdf": 177,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-58",
+    "tipo": "exercicio",
+    "numero_impresso": "58",
+    "pagina_pdf": 177,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-59",
+    "tipo": "exercicio",
+    "numero_impresso": "59",
+    "pagina_pdf": 177,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-60",
+    "tipo": "exercicio",
+    "numero_impresso": "60",
+    "pagina_pdf": 178,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-61",
+    "tipo": "exercicio",
+    "numero_impresso": "61",
+    "pagina_pdf": 178,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-62",
+    "tipo": "exercicio",
+    "numero_impresso": "62",
+    "pagina_pdf": 178,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-63",
+    "tipo": "exercicio",
+    "numero_impresso": "63",
+    "pagina_pdf": 178,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-64",
+    "tipo": "exercicio",
+    "numero_impresso": "64",
+    "pagina_pdf": 178,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-65",
+    "tipo": "exercicio",
+    "numero_impresso": "65",
+    "pagina_pdf": 178,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-66",
+    "tipo": "exercicio",
+    "numero_impresso": "66",
+    "pagina_pdf": 179,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-67",
+    "tipo": "exercicio",
+    "numero_impresso": "67",
+    "pagina_pdf": 179,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-68",
+    "tipo": "exercicio",
+    "numero_impresso": "68",
+    "pagina_pdf": 179,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-69",
+    "tipo": "exercicio",
+    "numero_impresso": "69",
+    "pagina_pdf": 179,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-70",
+    "tipo": "exercicio",
+    "numero_impresso": "70",
+    "pagina_pdf": 179,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-71",
+    "tipo": "exercicio",
+    "numero_impresso": "71",
+    "pagina_pdf": 179,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-72",
+    "tipo": "exercicio",
+    "numero_impresso": "72",
+    "pagina_pdf": 179,
+    "pai": "apostila-mq-sec-17-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-73",
+    "tipo": "exercicio",
+    "numero_impresso": "73",
+    "pagina_pdf": 180,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-74",
+    "tipo": "exercicio",
+    "numero_impresso": "74",
+    "pagina_pdf": 180,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-75",
+    "tipo": "exercicio",
+    "numero_impresso": "75",
+    "pagina_pdf": 180,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-76",
+    "tipo": "exercicio",
+    "numero_impresso": "76",
+    "pagina_pdf": 180,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-77",
+    "tipo": "exercicio",
+    "numero_impresso": "77",
+    "pagina_pdf": 180,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-78",
+    "tipo": "exercicio",
+    "numero_impresso": "78",
+    "pagina_pdf": 180,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-79",
+    "tipo": "exercicio",
+    "numero_impresso": "79",
+    "pagina_pdf": 180,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-80",
+    "tipo": "exercicio",
+    "numero_impresso": "80",
+    "pagina_pdf": 180,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-81",
+    "tipo": "exercicio",
+    "numero_impresso": "81",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-82",
+    "tipo": "exercicio",
+    "numero_impresso": "82",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-83",
+    "tipo": "exercicio",
+    "numero_impresso": "83",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-84",
+    "tipo": "exercicio",
+    "numero_impresso": "84",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-85",
+    "tipo": "exercicio",
+    "numero_impresso": "85",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-86",
+    "tipo": "exercicio",
+    "numero_impresso": "86",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-87",
+    "tipo": "exercicio",
+    "numero_impresso": "87",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-88",
+    "tipo": "exercicio",
+    "numero_impresso": "88",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-89",
+    "tipo": "exercicio",
+    "numero_impresso": "89",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-90",
+    "tipo": "exercicio",
+    "numero_impresso": "90",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-91",
+    "tipo": "exercicio",
+    "numero_impresso": "91",
+    "pagina_pdf": 181,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-92",
+    "tipo": "exercicio",
+    "numero_impresso": "92",
+    "pagina_pdf": 182,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-93",
+    "tipo": "exercicio",
+    "numero_impresso": "93",
+    "pagina_pdf": 182,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-94",
+    "tipo": "exercicio",
+    "numero_impresso": "94",
+    "pagina_pdf": 182,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-95",
+    "tipo": "exercicio",
+    "numero_impresso": "95",
+    "pagina_pdf": 182,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-96",
+    "tipo": "exercicio",
+    "numero_impresso": "96",
+    "pagina_pdf": 182,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-97",
+    "tipo": "exercicio",
+    "numero_impresso": "97",
+    "pagina_pdf": 182,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-98",
+    "tipo": "exercicio",
+    "numero_impresso": "98",
+    "pagina_pdf": 182,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-99",
+    "tipo": "exercicio",
+    "numero_impresso": "99",
+    "pagina_pdf": 182,
+    "pai": "apostila-mq-sec-17-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-100",
+    "tipo": "exercicio",
+    "numero_impresso": "100",
+    "pagina_pdf": 183,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-101",
+    "tipo": "exercicio",
+    "numero_impresso": "101",
+    "pagina_pdf": 183,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-102",
+    "tipo": "exercicio",
+    "numero_impresso": "102",
+    "pagina_pdf": 183,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-103",
+    "tipo": "exercicio",
+    "numero_impresso": "103",
+    "pagina_pdf": 183,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-104",
+    "tipo": "exercicio",
+    "numero_impresso": "104",
+    "pagina_pdf": 183,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-105",
+    "tipo": "exercicio",
+    "numero_impresso": "105",
+    "pagina_pdf": 183,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-106",
+    "tipo": "exercicio",
+    "numero_impresso": "106",
+    "pagina_pdf": 183,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-107",
+    "tipo": "exercicio",
+    "numero_impresso": "107",
+    "pagina_pdf": 183,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-108",
+    "tipo": "exercicio",
+    "numero_impresso": "108",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-109",
+    "tipo": "exercicio",
+    "numero_impresso": "109",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-110",
+    "tipo": "exercicio",
+    "numero_impresso": "110",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-111",
+    "tipo": "exercicio",
+    "numero_impresso": "111",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-112",
+    "tipo": "exercicio",
+    "numero_impresso": "112",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-113",
+    "tipo": "exercicio",
+    "numero_impresso": "113",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-114",
+    "tipo": "exercicio",
+    "numero_impresso": "114",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-115",
+    "tipo": "exercicio",
+    "numero_impresso": "115",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-116",
+    "tipo": "exercicio",
+    "numero_impresso": "116",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-117",
+    "tipo": "exercicio",
+    "numero_impresso": "117",
+    "pagina_pdf": 184,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-118",
+    "tipo": "exercicio",
+    "numero_impresso": "118",
+    "pagina_pdf": 185,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-119",
+    "tipo": "exercicio",
+    "numero_impresso": "119",
+    "pagina_pdf": 185,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-120",
+    "tipo": "exercicio",
+    "numero_impresso": "120",
+    "pagina_pdf": 185,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-121",
+    "tipo": "exercicio",
+    "numero_impresso": "121",
+    "pagina_pdf": 185,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-122",
+    "tipo": "exercicio",
+    "numero_impresso": "122",
+    "pagina_pdf": 185,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-123",
+    "tipo": "exercicio",
+    "numero_impresso": "123",
+    "pagina_pdf": 185,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-124",
+    "tipo": "exercicio",
+    "numero_impresso": "124",
+    "pagina_pdf": 185,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-125",
+    "tipo": "exercicio",
+    "numero_impresso": "125",
+    "pagina_pdf": 186,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-126",
+    "tipo": "exercicio",
+    "numero_impresso": "126",
+    "pagina_pdf": 186,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-127",
+    "tipo": "exercicio",
+    "numero_impresso": "127",
+    "pagina_pdf": 186,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-128",
+    "tipo": "exercicio",
+    "numero_impresso": "128",
+    "pagina_pdf": 186,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-129",
+    "tipo": "exercicio",
+    "numero_impresso": "129",
+    "pagina_pdf": 186,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-130",
+    "tipo": "exercicio",
+    "numero_impresso": "130",
+    "pagina_pdf": 186,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-131",
+    "tipo": "exercicio",
+    "numero_impresso": "131",
+    "pagina_pdf": 186,
+    "pai": "apostila-mq-sec-17-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-132",
+    "tipo": "exercicio",
+    "numero_impresso": "132",
+    "pagina_pdf": 187,
+    "pai": "apostila-mq-sec-17-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-133",
+    "tipo": "exercicio",
+    "numero_impresso": "133",
+    "pagina_pdf": 187,
+    "pai": "apostila-mq-sec-17-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-134",
+    "tipo": "exercicio",
+    "numero_impresso": "134",
+    "pagina_pdf": 187,
+    "pai": "apostila-mq-sec-17-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-135",
+    "tipo": "exercicio",
+    "numero_impresso": "135",
+    "pagina_pdf": 187,
+    "pai": "apostila-mq-sec-17-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-136",
+    "tipo": "exercicio",
+    "numero_impresso": "136",
+    "pagina_pdf": 188,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-137",
+    "tipo": "exercicio",
+    "numero_impresso": "137",
+    "pagina_pdf": 188,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-138",
+    "tipo": "exercicio",
+    "numero_impresso": "138",
+    "pagina_pdf": 188,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-139",
+    "tipo": "exercicio",
+    "numero_impresso": "139",
+    "pagina_pdf": 188,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-140",
+    "tipo": "exercicio",
+    "numero_impresso": "140",
+    "pagina_pdf": 189,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-141",
+    "tipo": "exercicio",
+    "numero_impresso": "141",
+    "pagina_pdf": 189,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-142",
+    "tipo": "exercicio",
+    "numero_impresso": "142",
+    "pagina_pdf": 189,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-143",
+    "tipo": "exercicio",
+    "numero_impresso": "143",
+    "pagina_pdf": 189,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-144",
+    "tipo": "exercicio",
+    "numero_impresso": "144",
+    "pagina_pdf": 189,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-145",
+    "tipo": "exercicio",
+    "numero_impresso": "145",
+    "pagina_pdf": 189,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-146",
+    "tipo": "exercicio",
+    "numero_impresso": "146",
+    "pagina_pdf": 189,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-147",
+    "tipo": "exercicio",
+    "numero_impresso": "147",
+    "pagina_pdf": 189,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-148",
+    "tipo": "exercicio",
+    "numero_impresso": "148",
+    "pagina_pdf": 190,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-149",
+    "tipo": "exercicio",
+    "numero_impresso": "149",
+    "pagina_pdf": 190,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-150",
+    "tipo": "exercicio",
+    "numero_impresso": "150",
+    "pagina_pdf": 190,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-151",
+    "tipo": "exercicio",
+    "numero_impresso": "151",
+    "pagina_pdf": 190,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-152",
+    "tipo": "exercicio",
+    "numero_impresso": "152",
+    "pagina_pdf": 190,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-153",
+    "tipo": "exercicio",
+    "numero_impresso": "153",
+    "pagina_pdf": 190,
+    "pai": "apostila-mq-sec-17-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-154",
+    "tipo": "exercicio",
+    "numero_impresso": "154",
+    "pagina_pdf": 191,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-155",
+    "tipo": "exercicio",
+    "numero_impresso": "155",
+    "pagina_pdf": 191,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-156",
+    "tipo": "exercicio",
+    "numero_impresso": "156",
+    "pagina_pdf": 191,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-157",
+    "tipo": "exercicio",
+    "numero_impresso": "157",
+    "pagina_pdf": 192,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-158",
+    "tipo": "exercicio",
+    "numero_impresso": "158",
+    "pagina_pdf": 192,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-159",
+    "tipo": "exercicio",
+    "numero_impresso": "159",
+    "pagina_pdf": 192,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-160",
+    "tipo": "exercicio",
+    "numero_impresso": "160",
+    "pagina_pdf": 192,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-161",
+    "tipo": "exercicio",
+    "numero_impresso": "161",
+    "pagina_pdf": 193,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "apostila-mq-exercicio-162",
+    "tipo": "exercicio",
+    "numero_impresso": "162",
+    "pagina_pdf": 193,
+    "pai": "apostila-mq-sec-17-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   }
 ]

@@ -114,7 +114,7 @@ class UnidadeICompleteTests(unittest.TestCase):
             node for node in self.graph["nos"] if node["tipo"] in ITEM_TYPES
         ]
 
-        self.assertEqual(len(item_nodes), 297)
+        self.assertEqual(len(item_nodes), 432)
         self.assertTrue(all("subtipo" not in node for node in self.graph["nos"]))
         self.assertNotIn(
             "subtipos_item_pedagogico",

@@ -9,6 +9,96 @@
     "pai": "banco-questoes-2026-2"
   },
   {
+    "id": "banco-questoes-2026-2-cap-2",
+    "tipo": "capitulo",
+    "numero_impresso": "2",
+    "titulo": "Momentos, Assimetria e Curtose",
+    "pagina_pdf_inicio": 88,
+    "pagina_pdf_fim": 94,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-3",
+    "tipo": "capitulo",
+    "numero_impresso": "3",
+    "titulo": "Probabilidade",
+    "pagina_pdf_inicio": 95,
+    "pagina_pdf_fim": 147,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-4",
+    "tipo": "capitulo",
+    "numero_impresso": "4",
+    "titulo": "Variáveis Aleatórias",
+    "pagina_pdf_inicio": 148,
+    "pagina_pdf_fim": 176,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-5",
+    "tipo": "capitulo",
+    "numero_impresso": "5",
+    "titulo": "Modelos Probabilísticos",
+    "pagina_pdf_inicio": 177,
+    "pagina_pdf_fim": 250,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-6",
+    "tipo": "capitulo",
+    "numero_impresso": "6",
+    "titulo": "Distribuições Amostrais",
+    "pagina_pdf_inicio": 251,
+    "pagina_pdf_fim": 260,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-7",
+    "tipo": "capitulo",
+    "numero_impresso": "7",
+    "titulo": "Amostragem",
+    "pagina_pdf_inicio": 261,
+    "pagina_pdf_fim": 274,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-8",
+    "tipo": "capitulo",
+    "numero_impresso": "8",
+    "titulo": "Estimação",
+    "pagina_pdf_inicio": 275,
+    "pagina_pdf_fim": 302,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-9",
+    "tipo": "capitulo",
+    "numero_impresso": "9",
+    "titulo": "Correlação e Regressão",
+    "pagina_pdf_inicio": 303,
+    "pagina_pdf_fim": 412,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-10",
+    "tipo": "capitulo",
+    "numero_impresso": "10",
+    "titulo": "Testes de Significância",
+    "pagina_pdf_inicio": 413,
+    "pagina_pdf_fim": 431,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-cap-11",
+    "tipo": "capitulo",
+    "numero_impresso": "11",
+    "titulo": "ENADE",
+    "pagina_pdf_inicio": 432,
+    "pagina_pdf_fim": 470,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
     "id": "banco-questoes-2026-2-sec-1-1",
     "tipo": "secao",
     "numero_impresso": "1.1",
@@ -24,6 +114,48 @@
     "conteudos": [
       "conteudo-01-01",
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-1-2"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-1-2",
+    "tipo": "secao",
+    "numero_impresso": "1.1.2",
+    "titulo": "Variáveis",
+    "pagina_pdf_inicio": 8,
+    "pagina_pdf_fim": 10,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-1-1-3"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-1-3",
+    "tipo": "secao",
+    "numero_impresso": "1.1.3",
+    "titulo": "Séries estatísticas: elementos e classificação",
+    "pagina_pdf_inicio": 11,
+    "pagina_pdf_fim": 12,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-1"
     ]
   },
   {
@@ -42,6 +174,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-1-3"
     ]
   },
   {
@@ -61,6 +196,145 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-2-1"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-1",
+    "tipo": "secao",
+    "numero_impresso": "1.3.1",
+    "titulo": "Análise gráfica",
+    "pagina_pdf_inicio": 16,
+    "pagina_pdf_fim": 17,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-1-3-2"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2",
+    "titulo": "Gráficos especiais",
+    "pagina_pdf_inicio": 18,
+    "pagina_pdf_fim": 33,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-33"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-1",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.1",
+    "titulo": "Histograma",
+    "pagina_pdf_inicio": 18,
+    "pagina_pdf_fim": 19,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-1-3-2-2"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-2",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.2",
+    "titulo": "Gráfico de tendência",
+    "pagina_pdf_inicio": 20,
+    "pagina_pdf_fim": 21,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-1-3-2-3"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-3",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.3",
+    "titulo": "Box plot",
+    "pagina_pdf_inicio": 22,
+    "pagina_pdf_fim": 28,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-boxplot",
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-1-3-2-4"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-4",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.4",
+    "titulo": "Gráfico de Pareto",
+    "pagina_pdf_inicio": 29,
+    "pagina_pdf_fim": 32,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-1-3-2-5"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-5",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.5",
+    "titulo": "Fluxo de processo",
+    "pagina_pdf_inicio": 33,
+    "pagina_pdf_fim": 33,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
     ]
   },
   {
@@ -81,6 +355,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-2-2"
     ]
   },
   {
@@ -100,6 +377,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-2-3"
     ]
   },
   {
@@ -118,6 +398,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-2-4"
     ]
   },
   {
@@ -134,6 +417,85 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-3-1"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4-1",
+    "tipo": "secao",
+    "numero_impresso": "2.4.1",
+    "titulo": "Média geométrica",
+    "pagina_pdf_inicio": 84,
+    "pagina_pdf_fim": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-2-4-2"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4-2",
+    "tipo": "secao",
+    "numero_impresso": "2.4.2",
+    "titulo": "Média harmônica",
+    "pagina_pdf_inicio": 84,
+    "pagina_pdf_fim": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-2-4-3"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4-3",
+    "tipo": "secao",
+    "numero_impresso": "2.4.3",
+    "titulo": "Média ponderada",
+    "pagina_pdf_inicio": 85,
+    "pagina_pdf_fim": 86,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-2-4-4"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4-4",
+    "tipo": "secao",
+    "numero_impresso": "2.4.4",
+    "titulo": "Média quadrática",
+    "pagina_pdf_inicio": 87,
+    "pagina_pdf_fim": 87,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-211"
     ]
   },
   {
@@ -151,6 +513,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-3-2"
     ]
   },
   {
@@ -167,6 +532,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-sec-3-3"
     ]
   },
   {
@@ -186,219 +554,328 @@
     ]
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-1-2",
+    "id": "banco-questoes-2026-2-sec-5-1",
     "tipo": "secao",
-    "numero_impresso": "1.1.2",
-    "titulo": "Variáveis",
-    "pagina_pdf_inicio": 8,
-    "pagina_pdf_fim": 10,
-    "pai": "banco-questoes-2026-2-sec-1-1",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-tipos-de-variaveis"
-    ],
-    "conteudos": [
-      "conteudo-01-02"
-    ]
+    "numero_impresso": "5.1",
+    "titulo": "Modelos Discretos",
+    "pagina_pdf_inicio": 177,
+    "pagina_pdf_fim": 208,
+    "pai": "banco-questoes-2026-2-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-1-3",
+    "id": "banco-questoes-2026-2-sec-5-1-1",
     "tipo": "secao",
-    "numero_impresso": "1.1.3",
-    "titulo": "Séries estatísticas: elementos e classificação",
-    "pagina_pdf_inicio": 11,
-    "pagina_pdf_fim": 12,
-    "pai": "banco-questoes-2026-2-sec-1-1",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-tabela",
-      "topico-tipos-de-variaveis"
-    ],
-    "conteudos": [
-      "conteudo-01-02"
-    ]
+    "numero_impresso": "5.1.1",
+    "titulo": "Distribuição Binomial",
+    "pagina_pdf_inicio": 177,
+    "pagina_pdf_fim": 183,
+    "pai": "banco-questoes-2026-2-sec-5-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-3-1",
+    "id": "banco-questoes-2026-2-sec-5-1-2",
     "tipo": "secao",
-    "numero_impresso": "1.3.1",
-    "titulo": "Análise gráfica",
-    "pagina_pdf_inicio": 16,
-    "pagina_pdf_fim": 17,
-    "pai": "banco-questoes-2026-2-sec-1-3",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-grafico"
-    ],
-    "conteudos": [
-      "conteudo-01-02",
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "5.1.2",
+    "titulo": "Distribuição de Poisson",
+    "pagina_pdf_inicio": 184,
+    "pagina_pdf_fim": 191,
+    "pai": "banco-questoes-2026-2-sec-5-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-3-2",
+    "id": "banco-questoes-2026-2-sec-5-1-3",
     "tipo": "secao",
-    "numero_impresso": "1.3.2",
-    "titulo": "Gráficos especiais",
-    "pagina_pdf_inicio": 18,
-    "pagina_pdf_fim": 33,
-    "pai": "banco-questoes-2026-2-sec-1-3",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-grafico"
-    ],
-    "conteudos": [
-      "conteudo-01-02",
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "5.1.3",
+    "titulo": "Distribuição Hipergeométrica",
+    "pagina_pdf_inicio": 192,
+    "pagina_pdf_fim": 198,
+    "pai": "banco-questoes-2026-2-sec-5-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-3-2-1",
+    "id": "banco-questoes-2026-2-sec-5-1-4",
     "tipo": "secao",
-    "numero_impresso": "1.3.2.1",
-    "titulo": "Histograma",
-    "pagina_pdf_inicio": 18,
-    "pagina_pdf_fim": 19,
-    "pai": "banco-questoes-2026-2-sec-1-3-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-frequencia",
-      "topico-grafico"
-    ],
-    "conteudos": [
-      "conteudo-01-02",
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "5.1.4",
+    "titulo": "Distribuição Geométrica",
+    "pagina_pdf_inicio": 199,
+    "pagina_pdf_fim": 201,
+    "pai": "banco-questoes-2026-2-sec-5-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-3-2-2",
+    "id": "banco-questoes-2026-2-sec-5-1-5",
     "tipo": "secao",
-    "numero_impresso": "1.3.2.2",
-    "titulo": "Gráfico de tendência",
-    "pagina_pdf_inicio": 20,
-    "pagina_pdf_fim": 21,
-    "pai": "banco-questoes-2026-2-sec-1-3-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-grafico"
-    ],
-    "conteudos": [
-      "conteudo-01-02"
-    ]
+    "numero_impresso": "5.1.5",
+    "titulo": "Distribuição Binomial Negativa",
+    "pagina_pdf_inicio": 202,
+    "pagina_pdf_fim": 204,
+    "pai": "banco-questoes-2026-2-sec-5-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-3-2-3",
+    "id": "banco-questoes-2026-2-sec-5-1-6",
     "tipo": "secao",
-    "numero_impresso": "1.3.2.3",
-    "titulo": "Box plot",
-    "pagina_pdf_inicio": 22,
-    "pagina_pdf_fim": 28,
-    "pai": "banco-questoes-2026-2-sec-1-3-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-boxplot",
-      "topico-valor-discrepante"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "5.1.6",
+    "titulo": "Distribuição Uniforme Discreta",
+    "pagina_pdf_inicio": 205,
+    "pagina_pdf_fim": 205,
+    "pai": "banco-questoes-2026-2-sec-5-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-3-2-4",
+    "id": "banco-questoes-2026-2-sec-5-1-7",
     "tipo": "secao",
-    "numero_impresso": "1.3.2.4",
-    "titulo": "Gráfico de Pareto",
-    "pagina_pdf_inicio": 29,
-    "pagina_pdf_fim": 32,
-    "pai": "banco-questoes-2026-2-sec-1-3-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-frequencia",
-      "topico-grafico"
-    ],
-    "conteudos": [
-      "conteudo-01-02"
-    ]
+    "numero_impresso": "5.1.7",
+    "titulo": "Distribuição Multinomial",
+    "pagina_pdf_inicio": 206,
+    "pagina_pdf_fim": 208,
+    "pai": "banco-questoes-2026-2-sec-5-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-1-3-2-5",
+    "id": "banco-questoes-2026-2-sec-5-2",
     "tipo": "secao",
-    "numero_impresso": "1.3.2.5",
-    "titulo": "Fluxo de processo",
-    "pagina_pdf_inicio": 33,
-    "pagina_pdf_fim": 33,
-    "pai": "banco-questoes-2026-2-sec-1-3-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-grafico"
-    ],
-    "conteudos": [
-      "conteudo-01-02"
-    ]
+    "numero_impresso": "5.2",
+    "titulo": "Modelos Contínuos",
+    "pagina_pdf_inicio": 209,
+    "pagina_pdf_fim": 250,
+    "pai": "banco-questoes-2026-2-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-2-4-1",
+    "id": "banco-questoes-2026-2-sec-5-2-1",
     "tipo": "secao",
-    "numero_impresso": "2.4.1",
-    "titulo": "Média geométrica",
-    "pagina_pdf_inicio": 84,
-    "pagina_pdf_fim": 84,
-    "pai": "banco-questoes-2026-2-sec-2-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-media"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "5.2.1",
+    "titulo": "Distribuição Normal",
+    "pagina_pdf_inicio": 209,
+    "pagina_pdf_fim": 223,
+    "pai": "banco-questoes-2026-2-sec-5-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-2-4-2",
+    "id": "banco-questoes-2026-2-sec-5-2-2",
     "tipo": "secao",
-    "numero_impresso": "2.4.2",
-    "titulo": "Média harmônica",
-    "pagina_pdf_inicio": 84,
-    "pagina_pdf_fim": 84,
-    "pai": "banco-questoes-2026-2-sec-2-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-media"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "5.2.2",
+    "titulo": "Distribuição Exponencial Negativa",
+    "pagina_pdf_inicio": 224,
+    "pagina_pdf_fim": 232,
+    "pai": "banco-questoes-2026-2-sec-5-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-2-4-3",
+    "id": "banco-questoes-2026-2-sec-5-2-3",
     "tipo": "secao",
-    "numero_impresso": "2.4.3",
-    "titulo": "Média ponderada",
-    "pagina_pdf_inicio": 85,
-    "pagina_pdf_fim": 86,
-    "pai": "banco-questoes-2026-2-sec-2-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-media"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "5.2.3",
+    "titulo": "Distribuição Beta",
+    "pagina_pdf_inicio": 233,
+    "pagina_pdf_fim": 234,
+    "pai": "banco-questoes-2026-2-sec-5-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "banco-questoes-2026-2-sec-2-4-4",
+    "id": "banco-questoes-2026-2-sec-5-2-4",
     "tipo": "secao",
-    "numero_impresso": "2.4.4",
-    "titulo": "Média quadrática",
-    "pagina_pdf_inicio": 87,
-    "pagina_pdf_fim": 87,
-    "pai": "banco-questoes-2026-2-sec-2-4",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-media"
-    ],
-    "conteudos": [
-      "conteudo-01-03"
-    ]
+    "numero_impresso": "5.2.4",
+    "titulo": "Distribuição Uniforme Contínua",
+    "pagina_pdf_inicio": 235,
+    "pagina_pdf_fim": 242,
+    "pai": "banco-questoes-2026-2-sec-5-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-5-2-5",
+    "tipo": "secao",
+    "numero_impresso": "5.2.5",
+    "titulo": "Distribuição Gama",
+    "pagina_pdf_inicio": 243,
+    "pagina_pdf_fim": 244,
+    "pai": "banco-questoes-2026-2-sec-5-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-5-2-6",
+    "tipo": "secao",
+    "numero_impresso": "5.2.6",
+    "titulo": "Distribuição Weibull",
+    "pagina_pdf_inicio": 245,
+    "pagina_pdf_fim": 246,
+    "pai": "banco-questoes-2026-2-sec-5-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-5-2-7",
+    "tipo": "secao",
+    "numero_impresso": "5.2.7",
+    "titulo": "Distribuição LogNormal",
+    "pagina_pdf_inicio": 247,
+    "pagina_pdf_fim": 250,
+    "pai": "banco-questoes-2026-2-sec-5-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-6-1",
+    "tipo": "secao",
+    "numero_impresso": "6.1",
+    "titulo": "Distribuição Amostral da Média",
+    "pagina_pdf_inicio": 251,
+    "pagina_pdf_fim": 256,
+    "pai": "banco-questoes-2026-2-cap-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-6-2",
+    "tipo": "secao",
+    "numero_impresso": "6.2",
+    "titulo": "Distribuição Amostral da Proporção",
+    "pagina_pdf_inicio": 257,
+    "pagina_pdf_fim": 258,
+    "pai": "banco-questoes-2026-2-cap-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-6-3",
+    "tipo": "secao",
+    "numero_impresso": "6.3",
+    "titulo": "Distribuição Amostral da Variância",
+    "pagina_pdf_inicio": 259,
+    "pagina_pdf_fim": 260,
+    "pai": "banco-questoes-2026-2-cap-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-8-1",
+    "tipo": "secao",
+    "numero_impresso": "8.1",
+    "titulo": "Intervalo de Confiança para Média",
+    "pagina_pdf_inicio": 275,
+    "pagina_pdf_fim": 289,
+    "pai": "banco-questoes-2026-2-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-8-2",
+    "tipo": "secao",
+    "numero_impresso": "8.2",
+    "titulo": "Intervalo de Confiança para Proporção",
+    "pagina_pdf_inicio": 290,
+    "pagina_pdf_fim": 298,
+    "pai": "banco-questoes-2026-2-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-8-3",
+    "tipo": "secao",
+    "numero_impresso": "8.3",
+    "titulo": "Intervalo de Confiança para Variância",
+    "pagina_pdf_inicio": 299,
+    "pagina_pdf_fim": 302,
+    "pai": "banco-questoes-2026-2-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-9-1",
+    "tipo": "secao",
+    "numero_impresso": "9.1",
+    "titulo": "Regressão Simples",
+    "pagina_pdf_inicio": 303,
+    "pagina_pdf_fim": 371,
+    "pai": "banco-questoes-2026-2-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-9-2",
+    "tipo": "secao",
+    "numero_impresso": "9.2",
+    "titulo": "Regressão Múltipla",
+    "pagina_pdf_inicio": 372,
+    "pagina_pdf_fim": 412,
+    "pai": "banco-questoes-2026-2-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-10-1",
+    "tipo": "secao",
+    "numero_impresso": "10.1",
+    "titulo": "Teste de Significância para Média",
+    "pagina_pdf_inicio": 413,
+    "pagina_pdf_fim": 421,
+    "pai": "banco-questoes-2026-2-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-10-2",
+    "tipo": "secao",
+    "numero_impresso": "10.2",
+    "titulo": "Teste de Significância para Proporção",
+    "pagina_pdf_inicio": 422,
+    "pagina_pdf_fim": 427,
+    "pai": "banco-questoes-2026-2-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-10-3",
+    "tipo": "secao",
+    "numero_impresso": "10.3",
+    "titulo": "Teste de Significância para Variância",
+    "pagina_pdf_inicio": 428,
+    "pagina_pdf_fim": 431,
+    "pai": "banco-questoes-2026-2-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "banco-questoes-2026-2-questao-1",
@@ -414,6 +891,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-2"
     ]
   },
   {
@@ -430,6 +910,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-3"
     ]
   },
   {
@@ -446,6 +929,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-4"
     ]
   },
   {
@@ -462,6 +948,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-5"
     ]
   },
   {
@@ -478,6 +967,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-6"
     ]
   },
   {
@@ -494,6 +986,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-7"
     ]
   },
   {
@@ -509,6 +1004,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-8"
     ]
   },
   {
@@ -524,6 +1022,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-9"
     ]
   },
   {
@@ -539,6 +1040,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-10"
     ]
   },
   {
@@ -554,6 +1058,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-11"
     ]
   },
   {
@@ -569,6 +1076,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-12"
     ]
   },
   {
@@ -584,6 +1094,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-13"
     ]
   },
   {
@@ -599,6 +1112,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-14"
     ]
   },
   {
@@ -614,6 +1130,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-15"
     ]
   },
   {
@@ -629,6 +1148,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-16"
     ]
   },
   {
@@ -644,6 +1166,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-17"
     ]
   },
   {
@@ -659,6 +1184,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-18"
     ]
   },
   {
@@ -674,6 +1202,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-19"
     ]
   },
   {
@@ -689,6 +1220,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-20"
     ]
   },
   {
@@ -704,6 +1238,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-21"
     ]
   },
   {
@@ -719,6 +1256,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-22"
     ]
   },
   {
@@ -734,6 +1274,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-23"
     ]
   },
   {
@@ -749,6 +1292,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-24"
     ]
   },
   {
@@ -781,6 +1327,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-26"
     ]
   },
   {
@@ -798,6 +1347,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-27"
     ]
   },
   {
@@ -815,6 +1367,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-28"
     ]
   },
   {
@@ -832,6 +1387,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-29"
     ]
   },
   {
@@ -849,6 +1407,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-30"
     ]
   },
   {
@@ -866,6 +1427,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-31"
     ]
   },
   {
@@ -883,6 +1447,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-32"
     ]
   },
   {
@@ -917,6 +1484,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-34"
     ]
   },
   {
@@ -934,6 +1504,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-35"
     ]
   },
   {
@@ -951,6 +1524,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-36"
     ]
   },
   {
@@ -968,6 +1544,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-37"
     ]
   },
   {
@@ -985,6 +1564,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-38"
     ]
   },
   {
@@ -1002,6 +1584,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-39"
     ]
   },
   {
@@ -1019,6 +1604,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-40"
     ]
   },
   {
@@ -1036,6 +1624,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-41"
     ]
   },
   {
@@ -1053,6 +1644,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-42"
     ]
   },
   {
@@ -1070,6 +1664,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-43"
     ]
   },
   {
@@ -1087,6 +1684,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-44"
     ]
   },
   {
@@ -1104,6 +1704,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-45"
     ]
   },
   {
@@ -1121,6 +1724,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-46"
     ]
   },
   {
@@ -1138,6 +1744,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-47"
     ]
   },
   {
@@ -1155,6 +1764,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-48"
     ]
   },
   {
@@ -1172,6 +1784,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-49"
     ]
   },
   {
@@ -1189,6 +1804,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-50"
     ]
   },
   {
@@ -1206,6 +1824,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-51"
     ]
   },
   {
@@ -1223,6 +1844,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-52"
     ]
   },
   {
@@ -1240,6 +1864,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-53"
     ]
   },
   {
@@ -1257,6 +1884,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-54"
     ]
   },
   {
@@ -1274,6 +1904,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-55"
     ]
   },
   {
@@ -1291,6 +1924,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-56"
     ]
   },
   {
@@ -1308,6 +1944,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-57"
     ]
   },
   {
@@ -1325,6 +1964,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-58"
     ]
   },
   {
@@ -1342,6 +1984,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-59"
     ]
   },
   {
@@ -1359,6 +2004,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-60"
     ]
   },
   {
@@ -1376,6 +2024,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-61"
     ]
   },
   {
@@ -1393,6 +2044,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-62"
     ]
   },
   {
@@ -1410,6 +2064,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-63"
     ]
   },
   {
@@ -1427,6 +2084,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-64"
     ]
   },
   {
@@ -1444,6 +2104,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-65"
     ]
   },
   {
@@ -1461,6 +2124,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-66"
     ]
   },
   {
@@ -1478,6 +2144,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-67"
     ]
   },
   {
@@ -1495,6 +2164,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-68"
     ]
   },
   {
@@ -1512,6 +2184,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-69"
     ]
   },
   {
@@ -1529,6 +2204,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-70"
     ]
   },
   {
@@ -1546,6 +2224,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-71"
     ]
   },
   {
@@ -1563,6 +2244,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-72"
     ]
   },
   {
@@ -1580,6 +2264,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-73"
     ]
   },
   {
@@ -1614,6 +2301,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-75"
     ]
   },
   {
@@ -1631,6 +2321,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-76"
     ]
   },
   {
@@ -1648,6 +2341,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-77"
     ]
   },
   {
@@ -1665,6 +2361,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-78"
     ]
   },
   {
@@ -1682,6 +2381,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-79"
     ]
   },
   {
@@ -1699,6 +2401,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-80"
     ]
   },
   {
@@ -1716,6 +2421,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-81"
     ]
   },
   {
@@ -1733,6 +2441,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-82"
     ]
   },
   {
@@ -1750,6 +2461,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-83"
     ]
   },
   {
@@ -1767,6 +2481,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-84"
     ]
   },
   {
@@ -1784,6 +2501,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-85"
     ]
   },
   {
@@ -1801,6 +2521,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-86"
     ]
   },
   {
@@ -1818,6 +2541,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-87"
     ]
   },
   {
@@ -1835,6 +2561,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-88"
     ]
   },
   {
@@ -1852,6 +2581,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-89"
     ]
   },
   {
@@ -1869,6 +2601,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-90"
     ]
   },
   {
@@ -1886,6 +2621,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-91"
     ]
   },
   {
@@ -1903,6 +2641,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-92"
     ]
   },
   {
@@ -1920,6 +2661,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-93"
     ]
   },
   {
@@ -1937,6 +2681,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-94"
     ]
   },
   {
@@ -1954,6 +2701,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-95"
     ]
   },
   {
@@ -1971,6 +2721,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-96"
     ]
   },
   {
@@ -1988,6 +2741,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-97"
     ]
   },
   {
@@ -2005,6 +2761,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-98"
     ]
   },
   {
@@ -2022,6 +2781,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-99"
     ]
   },
   {
@@ -2039,6 +2801,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-100"
     ]
   },
   {
@@ -2056,6 +2821,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-101"
     ]
   },
   {
@@ -2073,6 +2841,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-102"
     ]
   },
   {
@@ -2090,6 +2861,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-103"
     ]
   },
   {
@@ -2107,6 +2881,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-104"
     ]
   },
   {
@@ -2124,6 +2901,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-105"
     ]
   },
   {
@@ -2141,6 +2921,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-106"
     ]
   },
   {
@@ -2158,6 +2941,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-107"
     ]
   },
   {
@@ -2175,6 +2961,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-108"
     ]
   },
   {
@@ -2192,6 +2981,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-109"
     ]
   },
   {
@@ -2209,6 +3001,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-110"
     ]
   },
   {
@@ -2226,6 +3021,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-111"
     ]
   },
   {
@@ -2243,6 +3041,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-112"
     ]
   },
   {
@@ -2260,6 +3061,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-113"
     ]
   },
   {
@@ -2277,6 +3081,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-114"
     ]
   },
   {
@@ -2294,6 +3101,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-115"
     ]
   },
   {
@@ -2311,6 +3121,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-116"
     ]
   },
   {
@@ -2328,6 +3141,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-117"
     ]
   },
   {
@@ -2345,6 +3161,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-118"
     ]
   },
   {
@@ -2362,6 +3181,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-119"
     ]
   },
   {
@@ -2379,6 +3201,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-120"
     ]
   },
   {
@@ -2396,6 +3221,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-121"
     ]
   },
   {
@@ -2413,6 +3241,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-122"
     ]
   },
   {
@@ -2430,6 +3261,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-123"
     ]
   },
   {
@@ -2447,6 +3281,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-124"
     ]
   },
   {
@@ -2464,6 +3301,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-125"
     ]
   },
   {
@@ -2481,6 +3321,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-126"
     ]
   },
   {
@@ -2498,6 +3341,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-127"
     ]
   },
   {
@@ -2515,6 +3361,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-128"
     ]
   },
   {
@@ -2532,6 +3381,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-129"
     ]
   },
   {
@@ -2549,6 +3401,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-130"
     ]
   },
   {
@@ -2566,6 +3421,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-131"
     ]
   },
   {
@@ -2583,6 +3441,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-132"
     ]
   },
   {
@@ -2600,6 +3461,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-133"
     ]
   },
   {
@@ -2617,6 +3481,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-134"
     ]
   },
   {
@@ -2634,6 +3501,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-135"
     ]
   },
   {
@@ -2651,6 +3521,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-136"
     ]
   },
   {
@@ -2668,6 +3541,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-137"
     ]
   },
   {
@@ -2685,6 +3561,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-138"
     ]
   },
   {
@@ -2702,6 +3581,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-139"
     ]
   },
   {
@@ -2719,6 +3601,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-140"
     ]
   },
   {
@@ -2736,6 +3621,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-141"
     ]
   },
   {
@@ -2753,6 +3641,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-142"
     ]
   },
   {
@@ -2770,6 +3661,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-143"
     ]
   },
   {
@@ -2787,6 +3681,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-144"
     ]
   },
   {
@@ -2804,6 +3701,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-145"
     ]
   },
   {
@@ -2821,6 +3721,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-146"
     ]
   },
   {
@@ -2838,6 +3741,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-147"
     ]
   },
   {
@@ -2855,6 +3761,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-148"
     ]
   },
   {
@@ -2872,6 +3781,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-149"
     ]
   },
   {
@@ -2889,6 +3801,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-150"
     ]
   },
   {
@@ -2906,6 +3821,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-151"
     ]
   },
   {
@@ -2923,6 +3841,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-152"
     ]
   },
   {
@@ -2940,6 +3861,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-153"
     ]
   },
   {
@@ -2957,6 +3881,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-154"
     ]
   },
   {
@@ -2974,6 +3901,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-155"
     ]
   },
   {
@@ -2991,6 +3921,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-156"
     ]
   },
   {
@@ -3008,6 +3941,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-157"
     ]
   },
   {
@@ -3025,6 +3961,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-158"
     ]
   },
   {
@@ -3042,6 +3981,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-159"
     ]
   },
   {
@@ -3059,6 +4001,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-160"
     ]
   },
   {
@@ -3076,6 +4021,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-161"
     ]
   },
   {
@@ -3093,6 +4041,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-162"
     ]
   },
   {
@@ -3110,6 +4061,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-163"
     ]
   },
   {
@@ -3127,6 +4081,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-164"
     ]
   },
   {
@@ -3144,6 +4101,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-165"
     ]
   },
   {
@@ -3161,6 +4121,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-166"
     ]
   },
   {
@@ -3178,6 +4141,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-167"
     ]
   },
   {
@@ -3195,6 +4161,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-168"
     ]
   },
   {
@@ -3228,6 +4197,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-170"
     ]
   },
   {
@@ -3244,6 +4216,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-171"
     ]
   },
   {
@@ -3260,6 +4235,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-172"
     ]
   },
   {
@@ -3276,6 +4254,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-173"
     ]
   },
   {
@@ -3292,6 +4273,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-174"
     ]
   },
   {
@@ -3308,6 +4292,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-175"
     ]
   },
   {
@@ -3324,6 +4311,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-176"
     ]
   },
   {
@@ -3340,6 +4330,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-177"
     ]
   },
   {
@@ -3356,6 +4349,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-178"
     ]
   },
   {
@@ -3372,6 +4368,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-179"
     ]
   },
   {
@@ -3388,6 +4387,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-180"
     ]
   },
   {
@@ -3404,6 +4406,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-181"
     ]
   },
   {
@@ -3420,6 +4425,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-182"
     ]
   },
   {
@@ -3436,6 +4444,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-183"
     ]
   },
   {
@@ -3452,6 +4463,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-184"
     ]
   },
   {
@@ -3468,6 +4482,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-185"
     ]
   },
   {
@@ -3484,6 +4501,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-186"
     ]
   },
   {
@@ -3500,6 +4520,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-187"
     ]
   },
   {
@@ -3516,6 +4539,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-188"
     ]
   },
   {
@@ -3532,6 +4558,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-189"
     ]
   },
   {
@@ -3548,6 +4577,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-190"
     ]
   },
   {
@@ -3564,6 +4596,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-191"
     ]
   },
   {
@@ -3580,6 +4615,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-192"
     ]
   },
   {
@@ -3596,6 +4634,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-193"
     ]
   },
   {
@@ -3612,6 +4653,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-194"
     ]
   },
   {
@@ -3628,6 +4672,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-195"
     ]
   },
   {
@@ -3644,6 +4691,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-196"
     ]
   },
   {
@@ -3660,6 +4710,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-197"
     ]
   },
   {
@@ -3676,6 +4729,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-198"
     ]
   },
   {
@@ -3707,6 +4763,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-200"
     ]
   },
   {
@@ -3722,6 +4781,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-201"
     ]
   },
   {
@@ -3737,6 +4799,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-202"
     ]
   },
   {
@@ -3752,6 +4817,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-203"
     ]
   },
   {
@@ -3767,6 +4835,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-204"
     ]
   },
   {
@@ -3782,6 +4853,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-205"
     ]
   },
   {
@@ -3797,6 +4871,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-206"
     ]
   },
   {
@@ -3812,6 +4889,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-207"
     ]
   },
   {
@@ -3827,6 +4907,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-208"
     ]
   },
   {
@@ -3842,6 +4925,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-209"
     ]
   },
   {
@@ -3857,6 +4943,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-210"
     ]
   },
   {
@@ -3886,6 +4975,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-212"
     ]
   },
   {
@@ -3900,6 +4992,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-213"
     ]
   },
   {
@@ -3914,6 +5009,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-214"
     ]
   },
   {
@@ -3928,6 +5026,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-215"
     ]
   },
   {
@@ -3942,6 +5043,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-216"
     ]
   },
   {
@@ -3956,6 +5060,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-217"
     ]
   },
   {
@@ -3970,6 +5077,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-218"
     ]
   },
   {
@@ -3984,6 +5094,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-219"
     ]
   },
   {
@@ -3998,6 +5111,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-220"
     ]
   },
   {
@@ -4012,6 +5128,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-221"
     ]
   },
   {
@@ -4026,6 +5145,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-222"
     ]
   },
   {
@@ -4040,6 +5162,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-223"
     ]
   },
   {
@@ -4054,6 +5179,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-224"
     ]
   },
   {
@@ -4068,6 +5196,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-225"
     ]
   },
   {
@@ -4082,6 +5213,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-226"
     ]
   },
   {
@@ -4096,6 +5230,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-227"
     ]
   },
   {
@@ -4110,6 +5247,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-228"
     ]
   },
   {
@@ -4124,6 +5264,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-229"
     ]
   },
   {
@@ -4138,6 +5281,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-230"
     ]
   },
   {
@@ -4152,6 +5298,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-231"
     ]
   },
   {
@@ -4166,6 +5315,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-232"
     ]
   },
   {
@@ -4180,6 +5332,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-233"
     ]
   },
   {
@@ -4194,6 +5349,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-234"
     ]
   },
   {
@@ -4223,6 +5381,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-236"
     ]
   },
   {
@@ -4238,6 +5399,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-237"
     ]
   },
   {
@@ -4267,6 +5431,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-239"
     ]
   },
   {
@@ -4281,6 +5448,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-240"
     ]
   },
   {
@@ -4295,6 +5465,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-241"
     ]
   },
   {
@@ -4309,6 +5482,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-242"
     ]
   },
   {
@@ -4323,6 +5499,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-243"
     ]
   },
   {
@@ -4337,6 +5516,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-244"
     ]
   },
   {
@@ -4351,6 +5533,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-245"
     ]
   },
   {
@@ -4365,6 +5550,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-246"
     ]
   },
   {
@@ -4379,6 +5567,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-247"
     ]
   },
   {
@@ -4393,6 +5584,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-248"
     ]
   },
   {
@@ -4407,6 +5601,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-249"
     ]
   },
   {
@@ -4435,6 +5632,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-251"
     ]
   },
   {
@@ -4449,6 +5649,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-252"
     ]
   },
   {
@@ -4463,6 +5666,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-253"
     ]
   },
   {
@@ -4477,6 +5683,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-254"
     ]
   },
   {
@@ -4491,6 +5700,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-255"
     ]
   },
   {
@@ -4505,6 +5717,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-256"
     ]
   },
   {
@@ -4519,6 +5734,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-257"
     ]
   },
   {
@@ -4533,6 +5751,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-258"
     ]
   },
   {
@@ -4547,6 +5768,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "banco-questoes-2026-2-questao-259"
     ]
   },
   {

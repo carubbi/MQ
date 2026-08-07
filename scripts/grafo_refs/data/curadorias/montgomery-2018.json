@@ -6,6 +6,45 @@
     "titulo": "The Role of Statistics in Engineering",
     "pagina_pdf_inicio": 19,
     "pagina_pdf_fim": 34,
+    "pai": "montgomery-2018",
+    "precede_publicados": [
+      "montgomery-2018-cap-6"
+    ]
+  },
+  {
+    "id": "montgomery-2018-cap-2",
+    "tipo": "capitulo",
+    "numero_impresso": "2",
+    "titulo": "Probability",
+    "pagina_pdf_inicio": 35,
+    "pagina_pdf_fim": 59,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-3",
+    "tipo": "capitulo",
+    "numero_impresso": "3",
+    "titulo": "Discrete Random Variables and Probability Distributions",
+    "pagina_pdf_inicio": 60,
+    "pagina_pdf_fim": 83,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-4",
+    "tipo": "capitulo",
+    "numero_impresso": "4",
+    "titulo": "Continuous Random Variables and Probability Distributions",
+    "pagina_pdf_inicio": 84,
+    "pagina_pdf_fim": 112,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-5",
+    "tipo": "capitulo",
+    "numero_impresso": "5",
+    "titulo": "Joint Probability Distributions",
+    "pagina_pdf_inicio": 113,
+    "pagina_pdf_fim": 143,
     "pai": "montgomery-2018"
   },
   {
@@ -15,6 +54,87 @@
     "titulo": "Descriptive Statistics",
     "pagina_pdf_inicio": 144,
     "pagina_pdf_fim": 161,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-7",
+    "tipo": "capitulo",
+    "numero_impresso": "7",
+    "titulo": "Point Estimation of Parameters and Sampling Distributions",
+    "pagina_pdf_inicio": 166,
+    "pagina_pdf_fim": 187,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-8",
+    "tipo": "capitulo",
+    "numero_impresso": "8",
+    "titulo": "Statistical Intervals for a Single Sample",
+    "pagina_pdf_inicio": 188,
+    "pagina_pdf_fim": 210,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-9",
+    "tipo": "capitulo",
+    "numero_impresso": "9",
+    "titulo": "Tests of Hypotheses for a Single Sample",
+    "pagina_pdf_inicio": 211,
+    "pagina_pdf_fim": 261,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-10",
+    "tipo": "capitulo",
+    "numero_impresso": "10",
+    "titulo": "Statistical Inference for Two Samples",
+    "pagina_pdf_inicio": 262,
+    "pagina_pdf_fim": 297,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-11",
+    "tipo": "capitulo",
+    "numero_impresso": "11",
+    "titulo": "Simple Linear Regression and Correlation",
+    "pagina_pdf_inicio": 298,
+    "pagina_pdf_fim": 327,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-12",
+    "tipo": "capitulo",
+    "numero_impresso": "12",
+    "titulo": "Multiple Linear Regression",
+    "pagina_pdf_inicio": 328,
+    "pagina_pdf_fim": 368,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-13",
+    "tipo": "capitulo",
+    "numero_impresso": "13",
+    "titulo": "Design and Analysis of Single-Factor Experiments: The Analysis of Variance",
+    "pagina_pdf_inicio": 369,
+    "pagina_pdf_fim": 392,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-14",
+    "tipo": "capitulo",
+    "numero_impresso": "14",
+    "titulo": "Design of Experiments with Several Factors",
+    "pagina_pdf_inicio": 393,
+    "pagina_pdf_fim": 451,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-15",
+    "tipo": "capitulo",
+    "numero_impresso": "15",
+    "titulo": "Statistical Quality Control",
+    "pagina_pdf_inicio": 452,
+    "pagina_pdf_fim": 500,
     "pai": "montgomery-2018"
   },
   {
@@ -28,6 +148,45 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-investigacao-estatistica",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-1-2"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-1-1",
+    "tipo": "secao",
+    "numero_impresso": "1.1.1",
+    "titulo": "Variability",
+    "pagina_pdf_inicio": 21,
+    "pagina_pdf_fim": 22,
+    "pai": "montgomery-2018-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-1-1-2"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-1-2",
+    "tipo": "secao",
+    "numero_impresso": "1.1.2",
+    "titulo": "Populations and Samples",
+    "pagina_pdf_inicio": 23,
+    "pagina_pdf_fim": 23,
+    "pai": "montgomery-2018-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
       "topico-populacao",
       "topico-amostra"
     ],
@@ -47,6 +206,103 @@
     "topicos": [
       "topico-investigacao-estatistica",
       "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-1-3"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-1",
+    "tipo": "secao",
+    "numero_impresso": "1.2.1",
+    "titulo": "Basic Principles",
+    "pagina_pdf_inicio": 23,
+    "pagina_pdf_fim": 23,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-1-2-2"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-2",
+    "tipo": "secao",
+    "numero_impresso": "1.2.2",
+    "titulo": "Retrospective Study",
+    "pagina_pdf_inicio": 23,
+    "pagina_pdf_fim": 23,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-1-2-3"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-3",
+    "tipo": "secao",
+    "numero_impresso": "1.2.3",
+    "titulo": "Observational Study",
+    "pagina_pdf_inicio": 24,
+    "pagina_pdf_fim": 24,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-1-2-4"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-4",
+    "tipo": "secao",
+    "numero_impresso": "1.2.4",
+    "titulo": "Designed Experiments",
+    "pagina_pdf_inicio": 24,
+    "pagina_pdf_fim": 26,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-1-2-5"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-5",
+    "tipo": "secao",
+    "numero_impresso": "1.2.5",
+    "titulo": "Observing Processes Over Time",
+    "pagina_pdf_inicio": 27,
+    "pagina_pdf_fim": 29,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -70,6 +326,510 @@
     ]
   },
   {
+    "id": "montgomery-2018-sec-1-4",
+    "tipo": "secao",
+    "numero_impresso": "1.4",
+    "titulo": "Probability and Probability Models",
+    "pagina_pdf_inicio": 33,
+    "pagina_pdf_fim": 34,
+    "pai": "montgomery-2018-cap-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-1",
+    "tipo": "secao",
+    "numero_impresso": "2.1",
+    "titulo": "Sample Spaces and Events",
+    "pagina_pdf_inicio": 36,
+    "pagina_pdf_fim": 40,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-1-1",
+    "tipo": "secao",
+    "numero_impresso": "2.1.1",
+    "titulo": "Random Experiments",
+    "pagina_pdf_inicio": 36,
+    "pagina_pdf_fim": 36,
+    "pai": "montgomery-2018-sec-2-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-1-2",
+    "tipo": "secao",
+    "numero_impresso": "2.1.2",
+    "titulo": "Sample Spaces",
+    "pagina_pdf_inicio": 37,
+    "pagina_pdf_fim": 38,
+    "pai": "montgomery-2018-sec-2-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-1-3",
+    "tipo": "secao",
+    "numero_impresso": "2.1.3",
+    "titulo": "Events",
+    "pagina_pdf_inicio": 39,
+    "pagina_pdf_fim": 40,
+    "pai": "montgomery-2018-sec-2-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-2",
+    "tipo": "secao",
+    "numero_impresso": "2.2",
+    "titulo": "Counting Techniques",
+    "pagina_pdf_inicio": 41,
+    "pagina_pdf_fim": 43,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-3",
+    "tipo": "secao",
+    "numero_impresso": "2.3",
+    "titulo": "Interpretations and Axioms of Probability",
+    "pagina_pdf_inicio": 44,
+    "pagina_pdf_fim": 46,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-4",
+    "tipo": "secao",
+    "numero_impresso": "2.4",
+    "titulo": "Unions of Events and Addition Rules",
+    "pagina_pdf_inicio": 47,
+    "pagina_pdf_fim": 48,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-5",
+    "tipo": "secao",
+    "numero_impresso": "2.5",
+    "titulo": "Conditional Probability",
+    "pagina_pdf_inicio": 49,
+    "pagina_pdf_fim": 51,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-6",
+    "tipo": "secao",
+    "numero_impresso": "2.6",
+    "titulo": "Intersections of Events and Multiplication and Total Probability Rules",
+    "pagina_pdf_inicio": 52,
+    "pagina_pdf_fim": 53,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-7",
+    "tipo": "secao",
+    "numero_impresso": "2.7",
+    "titulo": "Independence",
+    "pagina_pdf_inicio": 54,
+    "pagina_pdf_fim": 56,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-8",
+    "tipo": "secao",
+    "numero_impresso": "2.8",
+    "titulo": "Bayes' Theorem",
+    "pagina_pdf_inicio": 57,
+    "pagina_pdf_fim": 57,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-2-9",
+    "tipo": "secao",
+    "numero_impresso": "2.9",
+    "titulo": "Random Variables",
+    "pagina_pdf_inicio": 58,
+    "pagina_pdf_fim": 59,
+    "pai": "montgomery-2018-cap-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-3-1",
+    "tipo": "secao",
+    "numero_impresso": "3.1",
+    "titulo": "Probability Distributions and Probability Mass Functions",
+    "pagina_pdf_inicio": 61,
+    "pagina_pdf_fim": 62,
+    "pai": "montgomery-2018-cap-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-3-2",
+    "tipo": "secao",
+    "numero_impresso": "3.2",
+    "titulo": "Cumulative Distribution Functions",
+    "pagina_pdf_inicio": 63,
+    "pagina_pdf_fim": 64,
+    "pai": "montgomery-2018-cap-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-3-3",
+    "tipo": "secao",
+    "numero_impresso": "3.3",
+    "titulo": "Mean and Variance of a Discrete Random Variable",
+    "pagina_pdf_inicio": 65,
+    "pagina_pdf_fim": 66,
+    "pai": "montgomery-2018-cap-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-3-4",
+    "tipo": "secao",
+    "numero_impresso": "3.4",
+    "titulo": "Discrete Uniform Distribution",
+    "pagina_pdf_inicio": 67,
+    "pagina_pdf_fim": 68,
+    "pai": "montgomery-2018-cap-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-3-5",
+    "tipo": "secao",
+    "numero_impresso": "3.5",
+    "titulo": "Binomial Distribution",
+    "pagina_pdf_inicio": 69,
+    "pagina_pdf_fim": 72,
+    "pai": "montgomery-2018-cap-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-3-6",
+    "tipo": "secao",
+    "numero_impresso": "3.6",
+    "titulo": "Geometric and Negative Binomial Distributions",
+    "pagina_pdf_inicio": 73,
+    "pagina_pdf_fim": 76,
+    "pai": "montgomery-2018-cap-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-3-7",
+    "tipo": "secao",
+    "numero_impresso": "3.7",
+    "titulo": "Hypergeometric Distribution",
+    "pagina_pdf_inicio": 77,
+    "pagina_pdf_fim": 80,
+    "pai": "montgomery-2018-cap-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-3-8",
+    "tipo": "secao",
+    "numero_impresso": "3.8",
+    "titulo": "Poisson Distribution",
+    "pagina_pdf_inicio": 81,
+    "pagina_pdf_fim": 83,
+    "pai": "montgomery-2018-cap-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-1",
+    "tipo": "secao",
+    "numero_impresso": "4.1",
+    "titulo": "Probability Distributions and Probability Density Functions",
+    "pagina_pdf_inicio": 85,
+    "pagina_pdf_fim": 87,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-2",
+    "tipo": "secao",
+    "numero_impresso": "4.2",
+    "titulo": "Cumulative Distribution Functions",
+    "pagina_pdf_inicio": 88,
+    "pagina_pdf_fim": 88,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-3",
+    "tipo": "secao",
+    "numero_impresso": "4.3",
+    "titulo": "Mean and Variance of a Continuous Random Variable",
+    "pagina_pdf_inicio": 89,
+    "pagina_pdf_fim": 89,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-4",
+    "tipo": "secao",
+    "numero_impresso": "4.4",
+    "titulo": "Continuous Uniform Distribution",
+    "pagina_pdf_inicio": 90,
+    "pagina_pdf_fim": 90,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-5",
+    "tipo": "secao",
+    "numero_impresso": "4.5",
+    "titulo": "Normal Distribution",
+    "pagina_pdf_inicio": 91,
+    "pagina_pdf_fim": 96,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-6",
+    "tipo": "secao",
+    "numero_impresso": "4.6",
+    "titulo": "Normal Approximation to the Binomial and Poisson Distributions",
+    "pagina_pdf_inicio": 97,
+    "pagina_pdf_fim": 100,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-7",
+    "tipo": "secao",
+    "numero_impresso": "4.7",
+    "titulo": "Exponential Distribution",
+    "pagina_pdf_inicio": 101,
+    "pagina_pdf_fim": 103,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-8",
+    "tipo": "secao",
+    "numero_impresso": "4.8",
+    "titulo": "Erlang and Gamma Distributions",
+    "pagina_pdf_inicio": 104,
+    "pagina_pdf_fim": 106,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-9",
+    "tipo": "secao",
+    "numero_impresso": "4.9",
+    "titulo": "Weibull Distribution",
+    "pagina_pdf_inicio": 107,
+    "pagina_pdf_fim": 107,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-10",
+    "tipo": "secao",
+    "numero_impresso": "4.10",
+    "titulo": "Lognormal Distribution",
+    "pagina_pdf_inicio": 108,
+    "pagina_pdf_fim": 109,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-4-11",
+    "tipo": "secao",
+    "numero_impresso": "4.11",
+    "titulo": "Beta Distribution",
+    "pagina_pdf_inicio": 110,
+    "pagina_pdf_fim": 112,
+    "pai": "montgomery-2018-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-1",
+    "tipo": "secao",
+    "numero_impresso": "5.1",
+    "titulo": "Joint Probability Distributions for Two Random Variables",
+    "pagina_pdf_inicio": 114,
+    "pagina_pdf_fim": 119,
+    "pai": "montgomery-2018-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-2",
+    "tipo": "secao",
+    "numero_impresso": "5.2",
+    "titulo": "Conditional Probability Distributions and Independence",
+    "pagina_pdf_inicio": 120,
+    "pagina_pdf_fim": 124,
+    "pai": "montgomery-2018-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-3",
+    "tipo": "secao",
+    "numero_impresso": "5.3",
+    "titulo": "Joint Probability Distributions for More Than Two Random Variables",
+    "pagina_pdf_inicio": 125,
+    "pagina_pdf_fim": 127,
+    "pai": "montgomery-2018-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-4",
+    "tipo": "secao",
+    "numero_impresso": "5.4",
+    "titulo": "Covariance and Correlation",
+    "pagina_pdf_inicio": 128,
+    "pagina_pdf_fim": 130,
+    "pai": "montgomery-2018-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-5",
+    "tipo": "secao",
+    "numero_impresso": "5.5",
+    "titulo": "Common Joint Distributions",
+    "pagina_pdf_inicio": 131,
+    "pagina_pdf_fim": 134,
+    "pai": "montgomery-2018-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-5-1",
+    "tipo": "secao",
+    "numero_impresso": "5.5.1",
+    "titulo": "Multinomial Probability Distribution",
+    "pagina_pdf_inicio": 131,
+    "pagina_pdf_fim": 132,
+    "pai": "montgomery-2018-sec-5-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-5-2",
+    "tipo": "secao",
+    "numero_impresso": "5.5.2",
+    "titulo": "Bivariate Normal Distribution",
+    "pagina_pdf_inicio": 133,
+    "pagina_pdf_fim": 134,
+    "pai": "montgomery-2018-sec-5-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-6",
+    "tipo": "secao",
+    "numero_impresso": "5.6",
+    "titulo": "Linear Functions of Random Variables",
+    "pagina_pdf_inicio": 135,
+    "pagina_pdf_fim": 137,
+    "pai": "montgomery-2018-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-7",
+    "tipo": "secao",
+    "numero_impresso": "5.7",
+    "titulo": "General Functions of Random Variables",
+    "pagina_pdf_inicio": 138,
+    "pagina_pdf_fim": 138,
+    "pai": "montgomery-2018-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-5-8",
+    "tipo": "secao",
+    "numero_impresso": "5.8",
+    "titulo": "Moment-Generating Functions",
+    "pagina_pdf_inicio": 139,
+    "pagina_pdf_fim": 143,
+    "pai": "montgomery-2018-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
     "id": "montgomery-2018-sec-6-1",
     "tipo": "secao",
     "numero_impresso": "6.1",
@@ -86,6 +846,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-6-2"
     ]
   },
   {
@@ -103,6 +866,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-6-3"
     ]
   },
   {
@@ -121,6 +887,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-6-4"
     ]
   },
   {
@@ -138,6 +907,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-6-5"
     ]
   },
   {
@@ -154,6 +926,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "montgomery-2018-sec-6-6"
     ]
   },
   {
@@ -174,118 +949,2043 @@
     ]
   },
   {
-    "id": "montgomery-2018-sec-1-1-1",
+    "id": "montgomery-2018-sec-6-7",
     "tipo": "secao",
-    "numero_impresso": "1.1.1",
-    "titulo": "Variability",
-    "pagina_pdf_inicio": 21,
-    "pagina_pdf_fim": 22,
-    "pai": "montgomery-2018-sec-1-1",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-investigacao-estatistica"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "numero_impresso": "6.7",
+    "titulo": "Probability Plots",
+    "pagina_pdf_inicio": 162,
+    "pagina_pdf_fim": 165,
+    "pai": "montgomery-2018-cap-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "montgomery-2018-sec-1-1-2",
+    "id": "montgomery-2018-sec-7-1",
     "tipo": "secao",
-    "numero_impresso": "1.1.2",
-    "titulo": "Populations and Samples",
-    "pagina_pdf_inicio": 23,
-    "pagina_pdf_fim": 23,
-    "pai": "montgomery-2018-sec-1-1",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-populacao",
-      "topico-amostra"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "numero_impresso": "7.1",
+    "titulo": "Point Estimation",
+    "pagina_pdf_inicio": 167,
+    "pagina_pdf_fim": 167,
+    "pai": "montgomery-2018-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "montgomery-2018-sec-1-2-1",
+    "id": "montgomery-2018-sec-7-2",
     "tipo": "secao",
-    "numero_impresso": "1.2.1",
+    "numero_impresso": "7.2",
+    "titulo": "Sampling Distributions and the Central Limit Theorem",
+    "pagina_pdf_inicio": 168,
+    "pagina_pdf_fim": 173,
+    "pai": "montgomery-2018-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-3",
+    "tipo": "secao",
+    "numero_impresso": "7.3",
+    "titulo": "General Concepts of Point Estimation",
+    "pagina_pdf_inicio": 174,
+    "pagina_pdf_fim": 178,
+    "pai": "montgomery-2018-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-3-1",
+    "tipo": "secao",
+    "numero_impresso": "7.3.1",
+    "titulo": "Unbiased Estimators",
+    "pagina_pdf_inicio": 174,
+    "pagina_pdf_fim": 174,
+    "pai": "montgomery-2018-sec-7-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-3-2",
+    "tipo": "secao",
+    "numero_impresso": "7.3.2",
+    "titulo": "Variance of a Point Estimator",
+    "pagina_pdf_inicio": 175,
+    "pagina_pdf_fim": 175,
+    "pai": "montgomery-2018-sec-7-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-3-3",
+    "tipo": "secao",
+    "numero_impresso": "7.3.3",
+    "titulo": "Standard Error: Reporting a Point Estimate",
+    "pagina_pdf_inicio": 176,
+    "pagina_pdf_fim": 176,
+    "pai": "montgomery-2018-sec-7-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-3-4",
+    "tipo": "secao",
+    "numero_impresso": "7.3.4",
+    "titulo": "Bootstrap Standard Error",
+    "pagina_pdf_inicio": 177,
+    "pagina_pdf_fim": 177,
+    "pai": "montgomery-2018-sec-7-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-3-5",
+    "tipo": "secao",
+    "numero_impresso": "7.3.5",
+    "titulo": "Mean Squared Error of an Estimator",
+    "pagina_pdf_inicio": 178,
+    "pagina_pdf_fim": 178,
+    "pai": "montgomery-2018-sec-7-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-4",
+    "tipo": "secao",
+    "numero_impresso": "7.4",
+    "titulo": "Methods of Point Estimation",
+    "pagina_pdf_inicio": 179,
+    "pagina_pdf_fim": 187,
+    "pai": "montgomery-2018-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-4-1",
+    "tipo": "secao",
+    "numero_impresso": "7.4.1",
+    "titulo": "Method of Moments",
+    "pagina_pdf_inicio": 180,
+    "pagina_pdf_fim": 180,
+    "pai": "montgomery-2018-sec-7-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-4-2",
+    "tipo": "secao",
+    "numero_impresso": "7.4.2",
+    "titulo": "Method of Maximum Likelihood",
+    "pagina_pdf_inicio": 181,
+    "pagina_pdf_fim": 184,
+    "pai": "montgomery-2018-sec-7-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-7-4-3",
+    "tipo": "secao",
+    "numero_impresso": "7.4.3",
+    "titulo": "Bayesian Estimation of Parameters",
+    "pagina_pdf_inicio": 185,
+    "pagina_pdf_fim": 187,
+    "pai": "montgomery-2018-sec-7-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-1",
+    "tipo": "secao",
+    "numero_impresso": "8.1",
+    "titulo": "Confidence Interval on the Mean of a Normal Distribution, Variance Known",
+    "pagina_pdf_inicio": 190,
+    "pagina_pdf_fim": 196,
+    "pai": "montgomery-2018-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-1-1",
+    "tipo": "secao",
+    "numero_impresso": "8.1.1",
+    "titulo": "Development of the Confidence Interval and Its Basic Properties",
+    "pagina_pdf_inicio": 190,
+    "pagina_pdf_fim": 192,
+    "pai": "montgomery-2018-sec-8-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-1-2",
+    "tipo": "secao",
+    "numero_impresso": "8.1.2",
+    "titulo": "Choice of Sample Size",
+    "pagina_pdf_inicio": 193,
+    "pagina_pdf_fim": 193,
+    "pai": "montgomery-2018-sec-8-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-1-3",
+    "tipo": "secao",
+    "numero_impresso": "8.1.3",
+    "titulo": "One-Sided Confidence Bounds",
+    "pagina_pdf_inicio": 194,
+    "pagina_pdf_fim": 194,
+    "pai": "montgomery-2018-sec-8-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-1-4",
+    "tipo": "secao",
+    "numero_impresso": "8.1.4",
+    "titulo": "General Method to Derive a Confidence Interval",
+    "pagina_pdf_inicio": 194,
+    "pagina_pdf_fim": 194,
+    "pai": "montgomery-2018-sec-8-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-1-5",
+    "tipo": "secao",
+    "numero_impresso": "8.1.5",
+    "titulo": "Large-Sample Confidence Interval for μ",
+    "pagina_pdf_inicio": 195,
+    "pagina_pdf_fim": 196,
+    "pai": "montgomery-2018-sec-8-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-2",
+    "tipo": "secao",
+    "numero_impresso": "8.2",
+    "titulo": "Confidence Interval on the Mean of a Normal Distribution, Variance Unknown",
+    "pagina_pdf_inicio": 197,
+    "pagina_pdf_fim": 199,
+    "pai": "montgomery-2018-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-2-1",
+    "tipo": "secao",
+    "numero_impresso": "8.2.1",
+    "titulo": "t Distribution",
+    "pagina_pdf_inicio": 198,
+    "pagina_pdf_fim": 198,
+    "pai": "montgomery-2018-sec-8-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-2-2",
+    "tipo": "secao",
+    "numero_impresso": "8.2.2",
+    "titulo": "Confidence Interval on μ",
+    "pagina_pdf_inicio": 199,
+    "pagina_pdf_fim": 199,
+    "pai": "montgomery-2018-sec-8-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-3",
+    "tipo": "secao",
+    "numero_impresso": "8.3",
+    "titulo": "Confidence Interval on the Variance and Standard Deviation of a Normal Distribution",
+    "pagina_pdf_inicio": 200,
+    "pagina_pdf_fim": 202,
+    "pai": "montgomery-2018-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-4",
+    "tipo": "secao",
+    "numero_impresso": "8.4",
+    "titulo": "Large-Sample Confidence Interval for a Population Proportion",
+    "pagina_pdf_inicio": 203,
+    "pagina_pdf_fim": 205,
+    "pai": "montgomery-2018-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-5",
+    "tipo": "secao",
+    "numero_impresso": "8.5",
+    "titulo": "Guidelines for Constructing Confidence Intervals",
+    "pagina_pdf_inicio": 206,
+    "pagina_pdf_fim": 206,
+    "pai": "montgomery-2018-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-6",
+    "tipo": "secao",
+    "numero_impresso": "8.6",
+    "titulo": "Bootstrap Confidence Interval",
+    "pagina_pdf_inicio": 207,
+    "pagina_pdf_fim": 207,
+    "pai": "montgomery-2018-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-7",
+    "tipo": "secao",
+    "numero_impresso": "8.7",
+    "titulo": "Tolerance and Prediction Intervals",
+    "pagina_pdf_inicio": 207,
+    "pagina_pdf_fim": 210,
+    "pai": "montgomery-2018-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-7-1",
+    "tipo": "secao",
+    "numero_impresso": "8.7.1",
+    "titulo": "Prediction Interval for a Future Observation",
+    "pagina_pdf_inicio": 207,
+    "pagina_pdf_fim": 208,
+    "pai": "montgomery-2018-sec-8-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-8-7-2",
+    "tipo": "secao",
+    "numero_impresso": "8.7.2",
+    "titulo": "Tolerance Interval for a Normal Distribution",
+    "pagina_pdf_inicio": 209,
+    "pagina_pdf_fim": 210,
+    "pai": "montgomery-2018-sec-8-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-1",
+    "tipo": "secao",
+    "numero_impresso": "9.1",
+    "titulo": "Hypothesis Testing",
+    "pagina_pdf_inicio": 212,
+    "pagina_pdf_fim": 225,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-1-1",
+    "tipo": "secao",
+    "numero_impresso": "9.1.1",
+    "titulo": "Statistical Hypotheses",
+    "pagina_pdf_inicio": 212,
+    "pagina_pdf_fim": 213,
+    "pai": "montgomery-2018-sec-9-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-1-2",
+    "tipo": "secao",
+    "numero_impresso": "9.1.2",
+    "titulo": "Tests of Statistical Hypotheses",
+    "pagina_pdf_inicio": 214,
+    "pagina_pdf_fim": 219,
+    "pai": "montgomery-2018-sec-9-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-1-3",
+    "tipo": "secao",
+    "numero_impresso": "9.1.3",
+    "titulo": "One-Sided and Two-Sided Hypotheses",
+    "pagina_pdf_inicio": 220,
+    "pagina_pdf_fim": 220,
+    "pai": "montgomery-2018-sec-9-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-1-4",
+    "tipo": "secao",
+    "numero_impresso": "9.1.4",
+    "titulo": "P-Values in Hypothesis Tests",
+    "pagina_pdf_inicio": 221,
+    "pagina_pdf_fim": 223,
+    "pai": "montgomery-2018-sec-9-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-1-5",
+    "tipo": "secao",
+    "numero_impresso": "9.1.5",
+    "titulo": "Connection between Hypothesis Tests and Confidence Intervals",
+    "pagina_pdf_inicio": 224,
+    "pagina_pdf_fim": 224,
+    "pai": "montgomery-2018-sec-9-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-1-6",
+    "tipo": "secao",
+    "numero_impresso": "9.1.6",
+    "titulo": "General Procedure for Hypothesis Tests",
+    "pagina_pdf_inicio": 224,
+    "pagina_pdf_fim": 225,
+    "pai": "montgomery-2018-sec-9-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-2",
+    "tipo": "secao",
+    "numero_impresso": "9.2",
+    "titulo": "Tests on the Mean of a Normal Distribution, Variance Known",
+    "pagina_pdf_inicio": 226,
+    "pagina_pdf_fim": 232,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-2-1",
+    "tipo": "secao",
+    "numero_impresso": "9.2.1",
+    "titulo": "Hypothesis Tests on the Mean",
+    "pagina_pdf_inicio": 226,
+    "pagina_pdf_fim": 228,
+    "pai": "montgomery-2018-sec-9-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-2-2",
+    "tipo": "secao",
+    "numero_impresso": "9.2.2",
+    "titulo": "Type II Error and Choice of Sample Size",
+    "pagina_pdf_inicio": 229,
+    "pagina_pdf_fim": 232,
+    "pai": "montgomery-2018-sec-9-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-2-3",
+    "tipo": "secao",
+    "numero_impresso": "9.2.3",
+    "titulo": "Large-Sample Test",
+    "pagina_pdf_inicio": 233,
+    "pagina_pdf_fim": 233,
+    "pai": "montgomery-2018-sec-9-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-3",
+    "tipo": "secao",
+    "numero_impresso": "9.3",
+    "titulo": "Tests on the Mean of a Normal Distribution, Variance Unknown",
+    "pagina_pdf_inicio": 233,
+    "pagina_pdf_fim": 239,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-3-1",
+    "tipo": "secao",
+    "numero_impresso": "9.3.1",
+    "titulo": "Hypothesis Tests on the Mean",
+    "pagina_pdf_inicio": 233,
+    "pagina_pdf_fim": 237,
+    "pai": "montgomery-2018-sec-9-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-3-2",
+    "tipo": "secao",
+    "numero_impresso": "9.3.2",
+    "titulo": "Type II Error and Choice of Sample Size",
+    "pagina_pdf_inicio": 238,
+    "pagina_pdf_fim": 239,
+    "pai": "montgomery-2018-sec-9-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-4",
+    "tipo": "secao",
+    "numero_impresso": "9.4",
+    "titulo": "Tests on the Variance and Standard Deviation of a Normal Distribution",
+    "pagina_pdf_inicio": 240,
+    "pagina_pdf_fim": 242,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-4-1",
+    "tipo": "secao",
+    "numero_impresso": "9.4.1",
+    "titulo": "Hypothesis Tests on the Variance",
+    "pagina_pdf_inicio": 240,
+    "pagina_pdf_fim": 241,
+    "pai": "montgomery-2018-sec-9-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-4-2",
+    "tipo": "secao",
+    "numero_impresso": "9.4.2",
+    "titulo": "Type II Error and Choice of Sample Size",
+    "pagina_pdf_inicio": 242,
+    "pagina_pdf_fim": 242,
+    "pai": "montgomery-2018-sec-9-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-5",
+    "tipo": "secao",
+    "numero_impresso": "9.5",
+    "titulo": "Tests on a Population Proportion",
+    "pagina_pdf_inicio": 243,
+    "pagina_pdf_fim": 246,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-5-1",
+    "tipo": "secao",
+    "numero_impresso": "9.5.1",
+    "titulo": "Large-Sample Tests on a Proportion",
+    "pagina_pdf_inicio": 243,
+    "pagina_pdf_fim": 244,
+    "pai": "montgomery-2018-sec-9-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-5-2",
+    "tipo": "secao",
+    "numero_impresso": "9.5.2",
+    "titulo": "Type II Error and Choice of Sample Size",
+    "pagina_pdf_inicio": 245,
+    "pagina_pdf_fim": 246,
+    "pai": "montgomery-2018-sec-9-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-6",
+    "tipo": "secao",
+    "numero_impresso": "9.6",
+    "titulo": "Summary Table of Inference Procedures for a Single Sample",
+    "pagina_pdf_inicio": 247,
+    "pagina_pdf_fim": 247,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-7",
+    "tipo": "secao",
+    "numero_impresso": "9.7",
+    "titulo": "Testing for Goodness of Fit",
+    "pagina_pdf_inicio": 247,
+    "pagina_pdf_fim": 249,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-8",
+    "tipo": "secao",
+    "numero_impresso": "9.8",
+    "titulo": "Contingency Table Tests",
+    "pagina_pdf_inicio": 250,
+    "pagina_pdf_fim": 251,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-9",
+    "tipo": "secao",
+    "numero_impresso": "9.9",
+    "titulo": "Nonparametric Procedures",
+    "pagina_pdf_inicio": 252,
+    "pagina_pdf_fim": 257,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-9-1",
+    "tipo": "secao",
+    "numero_impresso": "9.9.1",
+    "titulo": "The Sign Test",
+    "pagina_pdf_inicio": 253,
+    "pagina_pdf_fim": 256,
+    "pai": "montgomery-2018-sec-9-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-9-2",
+    "tipo": "secao",
+    "numero_impresso": "9.9.2",
+    "titulo": "The Wilcoxon Signed-Rank Test",
+    "pagina_pdf_inicio": 257,
+    "pagina_pdf_fim": 257,
+    "pai": "montgomery-2018-sec-9-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-9-3",
+    "tipo": "secao",
+    "numero_impresso": "9.9.3",
+    "titulo": "Comparison to the t-Test",
+    "pagina_pdf_inicio": 258,
+    "pagina_pdf_fim": 258,
+    "pai": "montgomery-2018-sec-9-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-10",
+    "tipo": "secao",
+    "numero_impresso": "9.10",
+    "titulo": "Equivalence Testing",
+    "pagina_pdf_inicio": 258,
+    "pagina_pdf_fim": 259,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-9-11",
+    "tipo": "secao",
+    "numero_impresso": "9.11",
+    "titulo": "Combining P-Values",
+    "pagina_pdf_inicio": 260,
+    "pagina_pdf_fim": 261,
+    "pai": "montgomery-2018-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-1",
+    "tipo": "secao",
+    "numero_impresso": "10.1",
+    "titulo": "Inference on the Difference in Means of Two Normal Distributions, Variances Known",
+    "pagina_pdf_inicio": 263,
+    "pagina_pdf_fim": 270,
+    "pai": "montgomery-2018-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-1-1",
+    "tipo": "secao",
+    "numero_impresso": "10.1.1",
+    "titulo": "Hypothesis Tests on the Difference in Means, Variances Known",
+    "pagina_pdf_inicio": 265,
+    "pagina_pdf_fim": 266,
+    "pai": "montgomery-2018-sec-10-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-1-2",
+    "tipo": "secao",
+    "numero_impresso": "10.1.2",
+    "titulo": "Type II Error and Choice of Sample Size",
+    "pagina_pdf_inicio": 267,
+    "pagina_pdf_fim": 268,
+    "pai": "montgomery-2018-sec-10-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-1-3",
+    "tipo": "secao",
+    "numero_impresso": "10.1.3",
+    "titulo": "Confidence Interval on the Difference in Means, Variances Known",
+    "pagina_pdf_inicio": 269,
+    "pagina_pdf_fim": 270,
+    "pai": "montgomery-2018-sec-10-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-2",
+    "tipo": "secao",
+    "numero_impresso": "10.2",
+    "titulo": "Inference on the Difference in Means of Two Normal Distributions, Variances Unknown",
+    "pagina_pdf_inicio": 271,
+    "pagina_pdf_fim": 278,
+    "pai": "montgomery-2018-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-2-1",
+    "tipo": "secao",
+    "numero_impresso": "10.2.1",
+    "titulo": "Hypotheses Tests on the Difference in Means, Variances Unknown",
+    "pagina_pdf_inicio": 271,
+    "pagina_pdf_fim": 276,
+    "pai": "montgomery-2018-sec-10-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-2-2",
+    "tipo": "secao",
+    "numero_impresso": "10.2.2",
+    "titulo": "Type II Error and Choice of Sample Size",
+    "pagina_pdf_inicio": 277,
+    "pagina_pdf_fim": 277,
+    "pai": "montgomery-2018-sec-10-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-2-3",
+    "tipo": "secao",
+    "numero_impresso": "10.2.3",
+    "titulo": "Confidence Interval on the Difference in Means, Variances Unknown",
+    "pagina_pdf_inicio": 278,
+    "pagina_pdf_fim": 278,
+    "pai": "montgomery-2018-sec-10-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-3",
+    "tipo": "secao",
+    "numero_impresso": "10.3",
+    "titulo": "A Nonparametric Test for the Difference in Two Means",
+    "pagina_pdf_inicio": 279,
+    "pagina_pdf_fim": 281,
+    "pai": "montgomery-2018-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-3-1",
+    "tipo": "secao",
+    "numero_impresso": "10.3.1",
+    "titulo": "Description of the Wilcoxon Rank-Sum Test",
+    "pagina_pdf_inicio": 280,
+    "pagina_pdf_fim": 280,
+    "pai": "montgomery-2018-sec-10-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-3-2",
+    "tipo": "secao",
+    "numero_impresso": "10.3.2",
+    "titulo": "Large-Sample Approximation",
+    "pagina_pdf_inicio": 281,
+    "pagina_pdf_fim": 281,
+    "pai": "montgomery-2018-sec-10-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-3-3",
+    "tipo": "secao",
+    "numero_impresso": "10.3.3",
+    "titulo": "Comparison to the t-Test",
+    "pagina_pdf_inicio": 282,
+    "pagina_pdf_fim": 282,
+    "pai": "montgomery-2018-sec-10-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-4",
+    "tipo": "secao",
+    "numero_impresso": "10.4",
+    "titulo": "Paired t-Test",
+    "pagina_pdf_inicio": 282,
+    "pagina_pdf_fim": 285,
+    "pai": "montgomery-2018-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-5",
+    "tipo": "secao",
+    "numero_impresso": "10.5",
+    "titulo": "Inference on the Variances of Two Normal Distributions",
+    "pagina_pdf_inicio": 286,
+    "pagina_pdf_fim": 290,
+    "pai": "montgomery-2018-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-5-1",
+    "tipo": "secao",
+    "numero_impresso": "10.5.1",
+    "titulo": "F Distribution",
+    "pagina_pdf_inicio": 286,
+    "pagina_pdf_fim": 287,
+    "pai": "montgomery-2018-sec-10-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-5-2",
+    "tipo": "secao",
+    "numero_impresso": "10.5.2",
+    "titulo": "Hypothesis Tests on the Equity of Two Variances",
+    "pagina_pdf_inicio": 288,
+    "pagina_pdf_fim": 289,
+    "pai": "montgomery-2018-sec-10-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-5-3",
+    "tipo": "secao",
+    "numero_impresso": "10.5.3",
+    "titulo": "Type II Error and Choice of Sample Size",
+    "pagina_pdf_inicio": 290,
+    "pagina_pdf_fim": 290,
+    "pai": "montgomery-2018-sec-10-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-5-4",
+    "tipo": "secao",
+    "numero_impresso": "10.5.4",
+    "titulo": "Confidence Interval on the Ratio of Two Variances",
+    "pagina_pdf_inicio": 291,
+    "pagina_pdf_fim": 291,
+    "pai": "montgomery-2018-sec-10-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-6",
+    "tipo": "secao",
+    "numero_impresso": "10.6",
+    "titulo": "Inference on Two Population Proportions",
+    "pagina_pdf_inicio": 291,
+    "pagina_pdf_fim": 295,
+    "pai": "montgomery-2018-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-6-1",
+    "tipo": "secao",
+    "numero_impresso": "10.6.1",
+    "titulo": "Large-Sample Tests on the Difference in Population Proportions",
+    "pagina_pdf_inicio": 292,
+    "pagina_pdf_fim": 293,
+    "pai": "montgomery-2018-sec-10-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-6-2",
+    "tipo": "secao",
+    "numero_impresso": "10.6.2",
+    "titulo": "Type II Error and Choice of Sample Size",
+    "pagina_pdf_inicio": 294,
+    "pagina_pdf_fim": 294,
+    "pai": "montgomery-2018-sec-10-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-6-3",
+    "tipo": "secao",
+    "numero_impresso": "10.6.3",
+    "titulo": "Confidence Interval on the Difference in Population Proportions",
+    "pagina_pdf_inicio": 295,
+    "pagina_pdf_fim": 295,
+    "pai": "montgomery-2018-sec-10-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-10-7",
+    "tipo": "secao",
+    "numero_impresso": "10.7",
+    "titulo": "Summary Table and Road Map for Inference Procedures for Two Samples",
+    "pagina_pdf_inicio": 296,
+    "pagina_pdf_fim": 297,
+    "pai": "montgomery-2018-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-1",
+    "tipo": "secao",
+    "numero_impresso": "11.1",
+    "titulo": "Empirical Models",
+    "pagina_pdf_inicio": 299,
+    "pagina_pdf_fim": 301,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-2",
+    "tipo": "secao",
+    "numero_impresso": "11.2",
+    "titulo": "Simple Linear Regression",
+    "pagina_pdf_inicio": 302,
+    "pagina_pdf_fim": 305,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-3",
+    "tipo": "secao",
+    "numero_impresso": "11.3",
+    "titulo": "Properties of the Least Squares Estimators",
+    "pagina_pdf_inicio": 306,
+    "pagina_pdf_fim": 306,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-4",
+    "tipo": "secao",
+    "numero_impresso": "11.4",
+    "titulo": "Hypothesis Tests in Simple Linear Regression",
+    "pagina_pdf_inicio": 306,
+    "pagina_pdf_fim": 309,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-4-1",
+    "tipo": "secao",
+    "numero_impresso": "11.4.1",
+    "titulo": "Use of t-Tests",
+    "pagina_pdf_inicio": 307,
+    "pagina_pdf_fim": 308,
+    "pai": "montgomery-2018-sec-11-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-4-2",
+    "tipo": "secao",
+    "numero_impresso": "11.4.2",
+    "titulo": "Analysis of Variance Approach to Test Significance of Regression",
+    "pagina_pdf_inicio": 309,
+    "pagina_pdf_fim": 309,
+    "pai": "montgomery-2018-sec-11-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-5",
+    "tipo": "secao",
+    "numero_impresso": "11.5",
+    "titulo": "Confidence Intervals",
+    "pagina_pdf_inicio": 310,
+    "pagina_pdf_fim": 312,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-5-1",
+    "tipo": "secao",
+    "numero_impresso": "11.5.1",
+    "titulo": "Confidence Intervals on the Slope and Intercept",
+    "pagina_pdf_inicio": 310,
+    "pagina_pdf_fim": 310,
+    "pai": "montgomery-2018-sec-11-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-5-2",
+    "tipo": "secao",
+    "numero_impresso": "11.5.2",
+    "titulo": "Confidence Interval on the Mean Response",
+    "pagina_pdf_inicio": 311,
+    "pagina_pdf_fim": 312,
+    "pai": "montgomery-2018-sec-11-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-6",
+    "tipo": "secao",
+    "numero_impresso": "11.6",
+    "titulo": "Prediction of New Observations",
+    "pagina_pdf_inicio": 313,
+    "pagina_pdf_fim": 313,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-7",
+    "tipo": "secao",
+    "numero_impresso": "11.7",
+    "titulo": "Adequacy of the Regression Model",
+    "pagina_pdf_inicio": 314,
+    "pagina_pdf_fim": 316,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-7-1",
+    "tipo": "secao",
+    "numero_impresso": "11.7.1",
+    "titulo": "Residual Analysis",
+    "pagina_pdf_inicio": 314,
+    "pagina_pdf_fim": 315,
+    "pai": "montgomery-2018-sec-11-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-7-2",
+    "tipo": "secao",
+    "numero_impresso": "11.7.2",
+    "titulo": "Coefficient of Determination (R2)",
+    "pagina_pdf_inicio": 316,
+    "pagina_pdf_fim": 316,
+    "pai": "montgomery-2018-sec-11-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-8",
+    "tipo": "secao",
+    "numero_impresso": "11.8",
+    "titulo": "Correlation",
+    "pagina_pdf_inicio": 317,
+    "pagina_pdf_fim": 320,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-9",
+    "tipo": "secao",
+    "numero_impresso": "11.9",
+    "titulo": "Regression on Transformed Variables",
+    "pagina_pdf_inicio": 321,
+    "pagina_pdf_fim": 322,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-11-10",
+    "tipo": "secao",
+    "numero_impresso": "11.10",
+    "titulo": "Logistic Regression",
+    "pagina_pdf_inicio": 323,
+    "pagina_pdf_fim": 327,
+    "pai": "montgomery-2018-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-1",
+    "tipo": "secao",
+    "numero_impresso": "12.1",
+    "titulo": "Multiple Linear Regression Model",
+    "pagina_pdf_inicio": 329,
+    "pagina_pdf_fim": 339,
+    "pai": "montgomery-2018-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-1-1",
+    "tipo": "secao",
+    "numero_impresso": "12.1.1",
+    "titulo": "Introduction",
+    "pagina_pdf_inicio": 329,
+    "pagina_pdf_fim": 331,
+    "pai": "montgomery-2018-sec-12-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-1-2",
+    "tipo": "secao",
+    "numero_impresso": "12.1.2",
+    "titulo": "Least Squares Estimation of the Parameters",
+    "pagina_pdf_inicio": 332,
+    "pagina_pdf_fim": 333,
+    "pai": "montgomery-2018-sec-12-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-1-3",
+    "tipo": "secao",
+    "numero_impresso": "12.1.3",
+    "titulo": "Matrix Approach to Multiple Linear Regression",
+    "pagina_pdf_inicio": 334,
+    "pagina_pdf_fim": 338,
+    "pai": "montgomery-2018-sec-12-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-1-4",
+    "tipo": "secao",
+    "numero_impresso": "12.1.4",
+    "titulo": "Properties of the Least Squares Estimators",
+    "pagina_pdf_inicio": 339,
+    "pagina_pdf_fim": 339,
+    "pai": "montgomery-2018-sec-12-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-2",
+    "tipo": "secao",
+    "numero_impresso": "12.2",
+    "titulo": "Hypothesis Tests in Multiple Linear Regression",
+    "pagina_pdf_inicio": 340,
+    "pagina_pdf_fim": 346,
+    "pai": "montgomery-2018-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-2-1",
+    "tipo": "secao",
+    "numero_impresso": "12.2.1",
+    "titulo": "Test for Significance of Regression",
+    "pagina_pdf_inicio": 340,
+    "pagina_pdf_fim": 342,
+    "pai": "montgomery-2018-sec-12-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-2-2",
+    "tipo": "secao",
+    "numero_impresso": "12.2.2",
+    "titulo": "Tests on Individual Regression Coefficients and Subsets of Coefficients",
+    "pagina_pdf_inicio": 343,
+    "pagina_pdf_fim": 346,
+    "pai": "montgomery-2018-sec-12-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-3",
+    "tipo": "secao",
+    "numero_impresso": "12.3",
+    "titulo": "Confidence Intervals in Multiple Linear Regression",
+    "pagina_pdf_inicio": 347,
+    "pagina_pdf_fim": 348,
+    "pai": "montgomery-2018-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-3-1",
+    "tipo": "secao",
+    "numero_impresso": "12.3.1",
+    "titulo": "Confidence Intervals on Individual Regression Coefficients",
+    "pagina_pdf_inicio": 347,
+    "pagina_pdf_fim": 347,
+    "pai": "montgomery-2018-sec-12-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-3-2",
+    "tipo": "secao",
+    "numero_impresso": "12.3.2",
+    "titulo": "Confidence Interval on the Mean Response",
+    "pagina_pdf_inicio": 348,
+    "pagina_pdf_fim": 348,
+    "pai": "montgomery-2018-sec-12-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-4",
+    "tipo": "secao",
+    "numero_impresso": "12.4",
+    "titulo": "Prediction of New Observations",
+    "pagina_pdf_inicio": 349,
+    "pagina_pdf_fim": 350,
+    "pai": "montgomery-2018-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-5",
+    "tipo": "secao",
+    "numero_impresso": "12.5",
+    "titulo": "Model Adequacy Checking",
+    "pagina_pdf_inicio": 351,
+    "pagina_pdf_fim": 354,
+    "pai": "montgomery-2018-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-5-1",
+    "tipo": "secao",
+    "numero_impresso": "12.5.1",
+    "titulo": "Residual Analysis",
+    "pagina_pdf_inicio": 351,
+    "pagina_pdf_fim": 352,
+    "pai": "montgomery-2018-sec-12-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-5-2",
+    "tipo": "secao",
+    "numero_impresso": "12.5.2",
+    "titulo": "Influential Observations",
+    "pagina_pdf_inicio": 353,
+    "pagina_pdf_fim": 354,
+    "pai": "montgomery-2018-sec-12-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-6",
+    "tipo": "secao",
+    "numero_impresso": "12.6",
+    "titulo": "Aspects of Multiple Regression Modeling",
+    "pagina_pdf_inicio": 355,
+    "pagina_pdf_fim": 368,
+    "pai": "montgomery-2018-cap-12",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-6-1",
+    "tipo": "secao",
+    "numero_impresso": "12.6.1",
+    "titulo": "Polynomial Regression Models",
+    "pagina_pdf_inicio": 355,
+    "pagina_pdf_fim": 356,
+    "pai": "montgomery-2018-sec-12-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-6-2",
+    "tipo": "secao",
+    "numero_impresso": "12.6.2",
+    "titulo": "Categorical Regressors and Indicator Variables",
+    "pagina_pdf_inicio": 357,
+    "pagina_pdf_fim": 358,
+    "pai": "montgomery-2018-sec-12-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-6-3",
+    "tipo": "secao",
+    "numero_impresso": "12.6.3",
+    "titulo": "Selection of Variables and Model Building",
+    "pagina_pdf_inicio": 359,
+    "pagina_pdf_fim": 366,
+    "pai": "montgomery-2018-sec-12-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-12-6-4",
+    "tipo": "secao",
+    "numero_impresso": "12.6.4",
+    "titulo": "Multicollinearity",
+    "pagina_pdf_inicio": 367,
+    "pagina_pdf_fim": 368,
+    "pai": "montgomery-2018-sec-12-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-1",
+    "tipo": "secao",
+    "numero_impresso": "13.1",
+    "titulo": "Designing Engineering Experiments",
+    "pagina_pdf_inicio": 370,
+    "pagina_pdf_fim": 370,
+    "pai": "montgomery-2018-cap-13",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-2",
+    "tipo": "secao",
+    "numero_impresso": "13.2",
+    "titulo": "Completely Randomized Single-Factor Experiment",
+    "pagina_pdf_inicio": 371,
+    "pagina_pdf_fim": 382,
+    "pai": "montgomery-2018-cap-13",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-2-1",
+    "tipo": "secao",
+    "numero_impresso": "13.2.1",
+    "titulo": "Example: Tensile Strength",
+    "pagina_pdf_inicio": 371,
+    "pagina_pdf_fim": 371,
+    "pai": "montgomery-2018-sec-13-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-2-2",
+    "tipo": "secao",
+    "numero_impresso": "13.2.2",
+    "titulo": "Analysis of Variance",
+    "pagina_pdf_inicio": 372,
+    "pagina_pdf_fim": 376,
+    "pai": "montgomery-2018-sec-13-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-2-3",
+    "tipo": "secao",
+    "numero_impresso": "13.2.3",
+    "titulo": "Multiple Comparisons Following the ANOVA",
+    "pagina_pdf_inicio": 377,
+    "pagina_pdf_fim": 378,
+    "pai": "montgomery-2018-sec-13-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-2-4",
+    "tipo": "secao",
+    "numero_impresso": "13.2.4",
+    "titulo": "Residual Analysis and Model Checking",
+    "pagina_pdf_inicio": 379,
+    "pagina_pdf_fim": 380,
+    "pai": "montgomery-2018-sec-13-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-2-5",
+    "tipo": "secao",
+    "numero_impresso": "13.2.5",
+    "titulo": "Determining Sample Size",
+    "pagina_pdf_inicio": 381,
+    "pagina_pdf_fim": 382,
+    "pai": "montgomery-2018-sec-13-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-3",
+    "tipo": "secao",
+    "numero_impresso": "13.3",
+    "titulo": "The Random-Effects Model",
+    "pagina_pdf_inicio": 383,
+    "pagina_pdf_fim": 385,
+    "pai": "montgomery-2018-cap-13",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-3-1",
+    "tipo": "secao",
+    "numero_impresso": "13.3.1",
+    "titulo": "Fixed Versus Random Factors",
+    "pagina_pdf_inicio": 383,
+    "pagina_pdf_fim": 383,
+    "pai": "montgomery-2018-sec-13-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-3-2",
+    "tipo": "secao",
+    "numero_impresso": "13.3.2",
+    "titulo": "ANOVA and Variance Components",
+    "pagina_pdf_inicio": 383,
+    "pagina_pdf_fim": 385,
+    "pai": "montgomery-2018-sec-13-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-4",
+    "tipo": "secao",
+    "numero_impresso": "13.4",
+    "titulo": "Randomized Complete Block Design",
+    "pagina_pdf_inicio": 386,
+    "pagina_pdf_fim": 392,
+    "pai": "montgomery-2018-cap-13",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-4-1",
+    "tipo": "secao",
+    "numero_impresso": "13.4.1",
+    "titulo": "Design and Statistical Analysis",
+    "pagina_pdf_inicio": 386,
+    "pagina_pdf_fim": 389,
+    "pai": "montgomery-2018-sec-13-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-4-2",
+    "tipo": "secao",
+    "numero_impresso": "13.4.2",
+    "titulo": "Multiple Comparisons",
+    "pagina_pdf_inicio": 390,
+    "pagina_pdf_fim": 390,
+    "pai": "montgomery-2018-sec-13-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-13-4-3",
+    "tipo": "secao",
+    "numero_impresso": "13.4.3",
+    "titulo": "Residual Analysis and Model Checking",
+    "pagina_pdf_inicio": 391,
+    "pagina_pdf_fim": 392,
+    "pai": "montgomery-2018-sec-13-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-1",
+    "tipo": "secao",
+    "numero_impresso": "14.1",
+    "titulo": "Introduction",
+    "pagina_pdf_inicio": 394,
+    "pagina_pdf_fim": 395,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-2",
+    "tipo": "secao",
+    "numero_impresso": "14.2",
+    "titulo": "Factorial Experiments",
+    "pagina_pdf_inicio": 396,
+    "pagina_pdf_fim": 399,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-3",
+    "tipo": "secao",
+    "numero_impresso": "14.3",
+    "titulo": "Two-Factor Factorial Experiments",
+    "pagina_pdf_inicio": 400,
+    "pagina_pdf_fim": 405,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-3-1",
+    "tipo": "secao",
+    "numero_impresso": "14.3.1",
+    "titulo": "Statistical Analysis",
+    "pagina_pdf_inicio": 400,
+    "pagina_pdf_fim": 403,
+    "pai": "montgomery-2018-sec-14-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-3-2",
+    "tipo": "secao",
+    "numero_impresso": "14.3.2",
+    "titulo": "Model Adequacy Checking",
+    "pagina_pdf_inicio": 404,
+    "pagina_pdf_fim": 404,
+    "pai": "montgomery-2018-sec-14-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-3-3",
+    "tipo": "secao",
+    "numero_impresso": "14.3.3",
+    "titulo": "One Observation per Cell",
+    "pagina_pdf_inicio": 405,
+    "pagina_pdf_fim": 405,
+    "pai": "montgomery-2018-sec-14-3",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-4",
+    "tipo": "secao",
+    "numero_impresso": "14.4",
+    "titulo": "General Factorial Experiments",
+    "pagina_pdf_inicio": 406,
+    "pagina_pdf_fim": 407,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-5",
+    "tipo": "secao",
+    "numero_impresso": "14.5",
+    "titulo": "2k Factorial Designs",
+    "pagina_pdf_inicio": 408,
+    "pagina_pdf_fim": 419,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-5-1",
+    "tipo": "secao",
+    "numero_impresso": "14.5.1",
+    "titulo": "22 Design",
+    "pagina_pdf_inicio": 408,
+    "pagina_pdf_fim": 413,
+    "pai": "montgomery-2018-sec-14-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-5-2",
+    "tipo": "secao",
+    "numero_impresso": "14.5.2",
+    "titulo": "2k Design for k ≥ 3 Factors",
+    "pagina_pdf_inicio": 414,
+    "pagina_pdf_fim": 419,
+    "pai": "montgomery-2018-sec-14-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-6",
+    "tipo": "secao",
+    "numero_impresso": "14.6",
+    "titulo": "Single Replicate of the 2k Design",
+    "pagina_pdf_inicio": 420,
+    "pagina_pdf_fim": 422,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-7",
+    "tipo": "secao",
+    "numero_impresso": "14.7",
+    "titulo": "Addition of Center Points to a 2k Design",
+    "pagina_pdf_inicio": 423,
+    "pagina_pdf_fim": 425,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-8",
+    "tipo": "secao",
+    "numero_impresso": "14.8",
+    "titulo": "Blocking and Confounding in the 2k Design",
+    "pagina_pdf_inicio": 426,
+    "pagina_pdf_fim": 430,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-9",
+    "tipo": "secao",
+    "numero_impresso": "14.9",
+    "titulo": "One-Half Fraction of the 2k Design",
+    "pagina_pdf_inicio": 431,
+    "pagina_pdf_fim": 435,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-10",
+    "tipo": "secao",
+    "numero_impresso": "14.10",
+    "titulo": "Smaller Fractions: The 2k-p Fractional Factorial",
+    "pagina_pdf_inicio": 436,
+    "pagina_pdf_fim": 442,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-14-11",
+    "tipo": "secao",
+    "numero_impresso": "14.11",
+    "titulo": "Response Surface Methods and Designs",
+    "pagina_pdf_inicio": 443,
+    "pagina_pdf_fim": 451,
+    "pai": "montgomery-2018-cap-14",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-1",
+    "tipo": "secao",
+    "numero_impresso": "15.1",
+    "titulo": "Quality Improvement and Statistics",
+    "pagina_pdf_inicio": 453,
+    "pagina_pdf_fim": 453,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-1-1",
+    "tipo": "secao",
+    "numero_impresso": "15.1.1",
+    "titulo": "Statistical Quality Control",
+    "pagina_pdf_inicio": 454,
+    "pagina_pdf_fim": 454,
+    "pai": "montgomery-2018-sec-15-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-1-2",
+    "tipo": "secao",
+    "numero_impresso": "15.1.2",
+    "titulo": "Statistical Process Control",
+    "pagina_pdf_inicio": 454,
+    "pagina_pdf_fim": 454,
+    "pai": "montgomery-2018-sec-15-1",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-2",
+    "tipo": "secao",
+    "numero_impresso": "15.2",
+    "titulo": "Introduction to Control Charts",
+    "pagina_pdf_inicio": 454,
+    "pagina_pdf_fim": 461,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-2-1",
+    "tipo": "secao",
+    "numero_impresso": "15.2.1",
     "titulo": "Basic Principles",
-    "pagina_pdf_inicio": 23,
-    "pagina_pdf_fim": 23,
-    "pai": "montgomery-2018-sec-1-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-investigacao-estatistica"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "pagina_pdf_inicio": 454,
+    "pagina_pdf_fim": 457,
+    "pai": "montgomery-2018-sec-15-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "montgomery-2018-sec-1-2-2",
+    "id": "montgomery-2018-sec-15-2-2",
     "tipo": "secao",
-    "numero_impresso": "1.2.2",
-    "titulo": "Retrospective Study",
-    "pagina_pdf_inicio": 23,
-    "pagina_pdf_fim": 23,
-    "pai": "montgomery-2018-sec-1-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-investigacao-estatistica",
-      "topico-representatividade"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "numero_impresso": "15.2.2",
+    "titulo": "Design of a Control Chart",
+    "pagina_pdf_inicio": 458,
+    "pagina_pdf_fim": 458,
+    "pai": "montgomery-2018-sec-15-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "montgomery-2018-sec-1-2-3",
+    "id": "montgomery-2018-sec-15-2-3",
     "tipo": "secao",
-    "numero_impresso": "1.2.3",
-    "titulo": "Observational Study",
-    "pagina_pdf_inicio": 24,
-    "pagina_pdf_fim": 24,
-    "pai": "montgomery-2018-sec-1-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-investigacao-estatistica",
-      "topico-representatividade"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "numero_impresso": "15.2.3",
+    "titulo": "Rational Subgroups",
+    "pagina_pdf_inicio": 459,
+    "pagina_pdf_fim": 459,
+    "pai": "montgomery-2018-sec-15-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "montgomery-2018-sec-1-2-4",
+    "id": "montgomery-2018-sec-15-2-4",
     "tipo": "secao",
-    "numero_impresso": "1.2.4",
-    "titulo": "Designed Experiments",
-    "pagina_pdf_inicio": 24,
-    "pagina_pdf_fim": 26,
-    "pai": "montgomery-2018-sec-1-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-investigacao-estatistica"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "numero_impresso": "15.2.4",
+    "titulo": "Analysis of Patterns on Control Charts",
+    "pagina_pdf_inicio": 460,
+    "pagina_pdf_fim": 461,
+    "pai": "montgomery-2018-sec-15-2",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "montgomery-2018-sec-1-2-5",
+    "id": "montgomery-2018-sec-15-3",
     "tipo": "secao",
-    "numero_impresso": "1.2.5",
-    "titulo": "Observing Processes Over Time",
-    "pagina_pdf_inicio": 27,
-    "pagina_pdf_fim": 29,
-    "pai": "montgomery-2018-sec-1-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-investigacao-estatistica"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "numero_impresso": "15.3",
+    "titulo": "X and R or S Control Charts",
+    "pagina_pdf_inicio": 462,
+    "pagina_pdf_fim": 467,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-4",
+    "tipo": "secao",
+    "numero_impresso": "15.4",
+    "titulo": "Control Charts for Individual Measurements",
+    "pagina_pdf_inicio": 468,
+    "pagina_pdf_fim": 469,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-5",
+    "tipo": "secao",
+    "numero_impresso": "15.5",
+    "titulo": "Process Capability",
+    "pagina_pdf_inicio": 470,
+    "pagina_pdf_fim": 473,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-6",
+    "tipo": "secao",
+    "numero_impresso": "15.6",
+    "titulo": "Attribute Control Charts",
+    "pagina_pdf_inicio": 474,
+    "pagina_pdf_fim": 477,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-6-1",
+    "tipo": "secao",
+    "numero_impresso": "15.6.1",
+    "titulo": "P Chart (Control Chart for Proportions)",
+    "pagina_pdf_inicio": 474,
+    "pagina_pdf_fim": 475,
+    "pai": "montgomery-2018-sec-15-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-6-2",
+    "tipo": "secao",
+    "numero_impresso": "15.6.2",
+    "titulo": "U Chart (Control Chart for Defects per Unit)",
+    "pagina_pdf_inicio": 476,
+    "pagina_pdf_fim": 477,
+    "pai": "montgomery-2018-sec-15-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-7",
+    "tipo": "secao",
+    "numero_impresso": "15.7",
+    "titulo": "Control Chart Performance",
+    "pagina_pdf_inicio": 478,
+    "pagina_pdf_fim": 479,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-8",
+    "tipo": "secao",
+    "numero_impresso": "15.8",
+    "titulo": "Time-Weighted Charts",
+    "pagina_pdf_inicio": 480,
+    "pagina_pdf_fim": 488,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-8-1",
+    "tipo": "secao",
+    "numero_impresso": "15.8.1",
+    "titulo": "Exponentially Weighted Moving-Average Control Chart",
+    "pagina_pdf_inicio": 480,
+    "pagina_pdf_fim": 482,
+    "pai": "montgomery-2018-sec-15-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-8-2",
+    "tipo": "secao",
+    "numero_impresso": "15.8.2",
+    "titulo": "Cumulative Sum Control Chart",
+    "pagina_pdf_inicio": 483,
+    "pagina_pdf_fim": 488,
+    "pai": "montgomery-2018-sec-15-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-9",
+    "tipo": "secao",
+    "numero_impresso": "15.9",
+    "titulo": "Other SPC Problem-Solving Tools",
+    "pagina_pdf_inicio": 489,
+    "pagina_pdf_fim": 490,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-10",
+    "tipo": "secao",
+    "numero_impresso": "15.10",
+    "titulo": "Decision Theory",
+    "pagina_pdf_inicio": 491,
+    "pagina_pdf_fim": 493,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-10-1",
+    "tipo": "secao",
+    "numero_impresso": "15.10.1",
+    "titulo": "Decision Models",
+    "pagina_pdf_inicio": 491,
+    "pagina_pdf_fim": 491,
+    "pai": "montgomery-2018-sec-15-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-10-2",
+    "tipo": "secao",
+    "numero_impresso": "15.10.2",
+    "titulo": "Decision Criteria",
+    "pagina_pdf_inicio": 492,
+    "pagina_pdf_fim": 493,
+    "pai": "montgomery-2018-sec-15-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "montgomery-2018-sec-15-11",
+    "tipo": "secao",
+    "numero_impresso": "15.11",
+    "titulo": "Implementing SPC",
+    "pagina_pdf_inicio": 494,
+    "pagina_pdf_fim": 500,
+    "pai": "montgomery-2018-cap-15",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   }
 ]

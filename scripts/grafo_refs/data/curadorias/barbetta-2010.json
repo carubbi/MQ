@@ -6,7 +6,10 @@
     "titulo": "Introdução",
     "pagina_pdf_inicio": 12,
     "pagina_pdf_fim": 23,
-    "pai": "barbetta-2010"
+    "pai": "barbetta-2010",
+    "precede_publicados": [
+      "barbetta-2010-cap-2"
+    ]
   },
   {
     "id": "barbetta-2010-cap-2",
@@ -15,7 +18,10 @@
     "titulo": "O planejamento de uma pesquisa",
     "pagina_pdf_inicio": 24,
     "pagina_pdf_fim": 50,
-    "pai": "barbetta-2010"
+    "pai": "barbetta-2010",
+    "precede_publicados": [
+      "barbetta-2010-cap-3"
+    ]
   },
   {
     "id": "barbetta-2010-cap-3",
@@ -24,6 +30,72 @@
     "titulo": "Análise exploratória de dados",
     "pagina_pdf_inicio": 51,
     "pagina_pdf_fim": 91,
+    "pai": "barbetta-2010",
+    "precede_publicados": [
+      "barbetta-2010-cap-11"
+    ]
+  },
+  {
+    "id": "barbetta-2010-cap-4",
+    "tipo": "capitulo",
+    "numero_impresso": "4",
+    "titulo": "Probabilidade",
+    "pagina_pdf_inicio": 92,
+    "pagina_pdf_fim": 116,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-5",
+    "tipo": "capitulo",
+    "numero_impresso": "5",
+    "titulo": "Variáveis aleatórias discretas",
+    "pagina_pdf_inicio": 117,
+    "pagina_pdf_fim": 140,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-6",
+    "tipo": "capitulo",
+    "numero_impresso": "6",
+    "titulo": "Variáveis aleatórias contínuas",
+    "pagina_pdf_inicio": 141,
+    "pagina_pdf_fim": 169,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-7",
+    "tipo": "capitulo",
+    "numero_impresso": "7",
+    "titulo": "Distribuições amostrais e estimação de parâmetros",
+    "pagina_pdf_inicio": 170,
+    "pagina_pdf_fim": 198,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-8",
+    "tipo": "capitulo",
+    "numero_impresso": "8",
+    "titulo": "Testes de hipóteses",
+    "pagina_pdf_inicio": 199,
+    "pagina_pdf_fim": 232,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-9",
+    "tipo": "capitulo",
+    "numero_impresso": "9",
+    "titulo": "Comparação entre tratamentos",
+    "pagina_pdf_inicio": 233,
+    "pagina_pdf_fim": 273,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-10",
+    "tipo": "capitulo",
+    "numero_impresso": "10",
+    "titulo": "Testes não paramétricos",
+    "pagina_pdf_inicio": 274,
+    "pagina_pdf_fim": 316,
     "pai": "barbetta-2010"
   },
   {
@@ -49,6 +121,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-1-2"
     ]
   },
   {
@@ -66,6 +141,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-1-3"
     ]
   },
   {
@@ -82,6 +160,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-1-4"
     ]
   },
   {
@@ -98,6 +179,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-1-5"
     ]
   },
   {
@@ -115,6 +199,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-1-6"
     ]
   },
   {
@@ -134,6 +221,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-exercicio-1-2"
     ]
   },
   {
@@ -150,6 +240,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-2-2"
     ]
   },
   {
@@ -160,6 +253,46 @@
     "pagina_pdf_inicio": 25,
     "pagina_pdf_fim": 33,
     "pai": "barbetta-2010-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-2-3"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-2-2-1",
+    "tipo": "secao",
+    "numero_impresso": "2.2.1",
+    "titulo": "Procedimentos de amostragem",
+    "pagina_pdf_inicio": 25,
+    "pagina_pdf_fim": 31,
+    "pai": "barbetta-2010-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-2-2-2"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-2-2-2",
+    "tipo": "secao",
+    "numero_impresso": "2.2.2",
+    "titulo": "Tamanho da amostra",
+    "pagina_pdf_inicio": 32,
+    "pagina_pdf_fim": 33,
+    "pai": "barbetta-2010-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-amostragem",
@@ -183,6 +316,9 @@
     ],
     "conteudos": [
       "conteudo-01-01"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-exercicio-2-7"
     ]
   },
   {
@@ -199,6 +335,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-3-2"
     ]
   },
   {
@@ -217,6 +356,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-3-3"
     ]
   },
   {
@@ -235,6 +377,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-3-4"
     ]
   },
   {
@@ -255,6 +400,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-3-5"
     ]
   },
   {
@@ -271,6 +419,9 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-3-6"
     ]
   },
   {
@@ -289,6 +440,9 @@
     "conteudos": [
       "conteudo-01-02",
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-3-7"
     ]
   },
   {
@@ -307,7 +461,442 @@
     "conteudos": [
       "conteudo-01-03",
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-exercicio-3-4"
     ]
+  },
+  {
+    "id": "barbetta-2010-sec-4-1",
+    "tipo": "secao",
+    "numero_impresso": "4.1",
+    "titulo": "Espaço amostral e eventos",
+    "pagina_pdf_inicio": 94,
+    "pagina_pdf_fim": 96,
+    "pai": "barbetta-2010-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-4-2",
+    "tipo": "secao",
+    "numero_impresso": "4.2",
+    "titulo": "Definições de probabilidade",
+    "pagina_pdf_inicio": 97,
+    "pagina_pdf_fim": 102,
+    "pai": "barbetta-2010-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-4-3",
+    "tipo": "secao",
+    "numero_impresso": "4.3",
+    "titulo": "Probabilidade condicional e independência",
+    "pagina_pdf_inicio": 103,
+    "pagina_pdf_fim": 110,
+    "pai": "barbetta-2010-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-4-4",
+    "tipo": "secao",
+    "numero_impresso": "4.4",
+    "titulo": "Teorema da probabilidade total",
+    "pagina_pdf_inicio": 111,
+    "pagina_pdf_fim": 112,
+    "pai": "barbetta-2010-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-4-5",
+    "tipo": "secao",
+    "numero_impresso": "4.5",
+    "titulo": "Teorema de Bayes",
+    "pagina_pdf_inicio": 113,
+    "pagina_pdf_fim": 116,
+    "pai": "barbetta-2010-cap-4",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-5-1",
+    "tipo": "secao",
+    "numero_impresso": "5.1",
+    "titulo": "Variável aleatória",
+    "pagina_pdf_inicio": 117,
+    "pagina_pdf_fim": 126,
+    "pai": "barbetta-2010-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-5-2",
+    "tipo": "secao",
+    "numero_impresso": "5.2",
+    "titulo": "Principais distribuições discretas",
+    "pagina_pdf_inicio": 127,
+    "pagina_pdf_fim": 140,
+    "pai": "barbetta-2010-cap-5",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-6-1",
+    "tipo": "secao",
+    "numero_impresso": "6.1",
+    "titulo": "Caracterização de uma variável aleatória contínua",
+    "pagina_pdf_inicio": 141,
+    "pagina_pdf_fim": 147,
+    "pai": "barbetta-2010-cap-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-6-2",
+    "tipo": "secao",
+    "numero_impresso": "6.2",
+    "titulo": "Principais modelos contínuos",
+    "pagina_pdf_inicio": 148,
+    "pagina_pdf_fim": 159,
+    "pai": "barbetta-2010-cap-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-6-3",
+    "tipo": "secao",
+    "numero_impresso": "6.3",
+    "titulo": "A normal como limite de outras distribuições",
+    "pagina_pdf_inicio": 160,
+    "pagina_pdf_fim": 164,
+    "pai": "barbetta-2010-cap-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-6-4",
+    "tipo": "secao",
+    "numero_impresso": "6.4",
+    "titulo": "Gráfico de probabilidade normal",
+    "pagina_pdf_inicio": 165,
+    "pagina_pdf_fim": 169,
+    "pai": "barbetta-2010-cap-6",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-7-1",
+    "tipo": "secao",
+    "numero_impresso": "7.1",
+    "titulo": "Parâmetros e estatísticas",
+    "pagina_pdf_inicio": 170,
+    "pagina_pdf_fim": 174,
+    "pai": "barbetta-2010-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-7-2",
+    "tipo": "secao",
+    "numero_impresso": "7.2",
+    "titulo": "Distribuições amostrais",
+    "pagina_pdf_inicio": 175,
+    "pagina_pdf_fim": 179,
+    "pai": "barbetta-2010-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-7-3",
+    "tipo": "secao",
+    "numero_impresso": "7.3",
+    "titulo": "Estimação de parâmetros",
+    "pagina_pdf_inicio": 180,
+    "pagina_pdf_fim": 192,
+    "pai": "barbetta-2010-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-7-4",
+    "tipo": "secao",
+    "numero_impresso": "7.4",
+    "titulo": "Tamanho de amostra",
+    "pagina_pdf_inicio": 193,
+    "pagina_pdf_fim": 198,
+    "pai": "barbetta-2010-cap-7",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-1",
+    "tipo": "secao",
+    "numero_impresso": "8.1",
+    "titulo": "As hipóteses",
+    "pagina_pdf_inicio": 199,
+    "pagina_pdf_fim": 201,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-2",
+    "tipo": "secao",
+    "numero_impresso": "8.2",
+    "titulo": "Conceitos básicos",
+    "pagina_pdf_inicio": 202,
+    "pagina_pdf_fim": 205,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-3",
+    "tipo": "secao",
+    "numero_impresso": "8.3",
+    "titulo": "Tipos de erro",
+    "pagina_pdf_inicio": 206,
+    "pagina_pdf_fim": 206,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-4",
+    "tipo": "secao",
+    "numero_impresso": "8.4",
+    "titulo": "Abordagem clássica",
+    "pagina_pdf_inicio": 207,
+    "pagina_pdf_fim": 208,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-5",
+    "tipo": "secao",
+    "numero_impresso": "8.5",
+    "titulo": "Testes unilaterais e bilaterais",
+    "pagina_pdf_inicio": 209,
+    "pagina_pdf_fim": 211,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-6",
+    "tipo": "secao",
+    "numero_impresso": "8.6",
+    "titulo": "Aplicação de testes estatísticos",
+    "pagina_pdf_inicio": 212,
+    "pagina_pdf_fim": 212,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-7",
+    "tipo": "secao",
+    "numero_impresso": "8.7",
+    "titulo": "Teste para proporção",
+    "pagina_pdf_inicio": 213,
+    "pagina_pdf_fim": 217,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-8",
+    "tipo": "secao",
+    "numero_impresso": "8.8",
+    "titulo": "Teste para média",
+    "pagina_pdf_inicio": 218,
+    "pagina_pdf_fim": 222,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-9",
+    "tipo": "secao",
+    "numero_impresso": "8.9",
+    "titulo": "Teste para variância",
+    "pagina_pdf_inicio": 223,
+    "pagina_pdf_fim": 224,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-8-10",
+    "tipo": "secao",
+    "numero_impresso": "8.10",
+    "titulo": "Poder de um teste e tamanho da amostra",
+    "pagina_pdf_inicio": 225,
+    "pagina_pdf_fim": 232,
+    "pai": "barbetta-2010-cap-8",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-9-1",
+    "tipo": "secao",
+    "numero_impresso": "9.1",
+    "titulo": "Amostras independentes e em blocos",
+    "pagina_pdf_inicio": 233,
+    "pagina_pdf_fim": 235,
+    "pai": "barbetta-2010-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-9-2",
+    "tipo": "secao",
+    "numero_impresso": "9.2",
+    "titulo": "Teste t para duas amostras pareadas",
+    "pagina_pdf_inicio": 236,
+    "pagina_pdf_fim": 238,
+    "pai": "barbetta-2010-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-9-3",
+    "tipo": "secao",
+    "numero_impresso": "9.3",
+    "titulo": "Teste t para duas amostras independentes",
+    "pagina_pdf_inicio": 239,
+    "pagina_pdf_fim": 242,
+    "pai": "barbetta-2010-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-9-4",
+    "tipo": "secao",
+    "numero_impresso": "9.4",
+    "titulo": "Tamanho das amostras",
+    "pagina_pdf_inicio": 243,
+    "pagina_pdf_fim": 247,
+    "pai": "barbetta-2010-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-9-5",
+    "tipo": "secao",
+    "numero_impresso": "9.5",
+    "titulo": "Teste F para duas variâncias",
+    "pagina_pdf_inicio": 248,
+    "pagina_pdf_fim": 248,
+    "pai": "barbetta-2010-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-9-6",
+    "tipo": "secao",
+    "numero_impresso": "9.6",
+    "titulo": "Comparação de várias médias",
+    "pagina_pdf_inicio": 249,
+    "pagina_pdf_fim": 258,
+    "pai": "barbetta-2010-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-9-7",
+    "tipo": "secao",
+    "numero_impresso": "9.7",
+    "titulo": "Anova em projetos fatoriais",
+    "pagina_pdf_inicio": 259,
+    "pagina_pdf_fim": 263,
+    "pai": "barbetta-2010-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-9-8",
+    "tipo": "secao",
+    "numero_impresso": "9.8",
+    "titulo": "Anova em projetos do tipo 2k",
+    "pagina_pdf_inicio": 264,
+    "pagina_pdf_fim": 273,
+    "pai": "barbetta-2010-cap-9",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-10-1",
+    "tipo": "secao",
+    "numero_impresso": "10.1",
+    "titulo": "Testes de aderência",
+    "pagina_pdf_inicio": 275,
+    "pagina_pdf_fim": 287,
+    "pai": "barbetta-2010-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-10-2",
+    "tipo": "secao",
+    "numero_impresso": "10.2",
+    "titulo": "Análise de associação",
+    "pagina_pdf_inicio": 288,
+    "pagina_pdf_fim": 293,
+    "pai": "barbetta-2010-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
+  },
+  {
+    "id": "barbetta-2010-sec-10-3",
+    "tipo": "secao",
+    "numero_impresso": "10.3",
+    "titulo": "Testes para duas populações",
+    "pagina_pdf_inicio": 294,
+    "pagina_pdf_fim": 316,
+    "pai": "barbetta-2010-cap-10",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "barbetta-2010-sec-11-1",
@@ -324,6 +913,9 @@
     ],
     "conteudos": [
       "conteudo-01-04"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-sec-11-2"
     ]
   },
   {
@@ -344,38 +936,28 @@
     ]
   },
   {
-    "id": "barbetta-2010-sec-2-2-1",
+    "id": "barbetta-2010-sec-11-3",
     "tipo": "secao",
-    "numero_impresso": "2.2.1",
-    "titulo": "Procedimentos de amostragem",
-    "pagina_pdf_inicio": 25,
-    "pagina_pdf_fim": 31,
-    "pai": "barbetta-2010-sec-2-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-amostragem",
-      "topico-representatividade"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "numero_impresso": "11.3",
+    "titulo": "Regressão linear simples",
+    "pagina_pdf_inicio": 325,
+    "pagina_pdf_fim": 346,
+    "pai": "barbetta-2010-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
-    "id": "barbetta-2010-sec-2-2-2",
+    "id": "barbetta-2010-sec-11-4",
     "tipo": "secao",
-    "numero_impresso": "2.2.2",
-    "titulo": "Tamanho da amostra",
-    "pagina_pdf_inicio": 32,
-    "pagina_pdf_fim": 33,
-    "pai": "barbetta-2010-sec-2-2",
-    "pertinencia_t199": "direta",
-    "topicos": [
-      "topico-amostragem",
-      "topico-representatividade"
-    ],
-    "conteudos": [
-      "conteudo-01-01"
-    ]
+    "numero_impresso": "11.4",
+    "titulo": "Introdução à regressão múltipla",
+    "pagina_pdf_inicio": 347,
+    "pagina_pdf_fim": 350,
+    "pai": "barbetta-2010-cap-11",
+    "pertinencia_t199": "indireta",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "barbetta-2010-exercicio-1-2",
@@ -422,6 +1004,9 @@
     ],
     "conteudos": [
       "conteudo-01-03"
+    ],
+    "precede_publicados": [
+      "barbetta-2010-exercicio-3-8"
     ]
   },
   {

@@ -64,6 +64,7 @@ def flatten_curated_source(
     """Transforma campos de curadoria em nós e relações canônicos."""
     canonical_nodes = []
     edges = []
+    explicit_precedence = []
     sibling_groups = {}
 
     for curated_node in nodes:
@@ -80,6 +81,14 @@ def flatten_curated_source(
         parent_id = curated_node.get("pai", source_id)
         topics = curated_node.get("topicos", [])
         contents = curated_node.get("conteudos", [])
+        explicit_precedence.extend(
+            {
+                "origem": node["id"],
+                "tipo": "precede",
+                "destino": destination,
+            }
+            for destination in curated_node.get("precede_publicados", [])
+        )
         node_id = node["id"]
 
         canonical_nodes.append(node)
@@ -104,4 +113,9 @@ def flatten_curated_source(
             for current, following in zip(siblings, siblings[1:])
         )
 
-    return canonical_nodes, edges
+    edges.extend(explicit_precedence)
+    unique_edges = {
+        (edge["origem"], edge["tipo"], edge["destino"]): edge
+        for edge in edges
+    }
+    return canonical_nodes, list(unique_edges.values())
