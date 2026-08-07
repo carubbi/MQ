@@ -9,7 +9,6 @@ from pathlib import Path
 
 
 AULA_HEADINGS = (
-    "## Agenda",
     "## Pergunta orientadora",
     "## Conceitos e definições",
     "## Notação e formulação matemática",
@@ -38,10 +37,6 @@ ROTEIRO_HEADINGS = (
 
 CONTENT_RE = re.compile(r"\b\d{2}\.\d{2}\b")
 TOPICS_RE = re.compile(r"^- \*\*Tópicos:\*\* (.+)$", re.MULTILINE)
-TOPICS_METADATA_RE = re.compile(
-    r"^<!-- Tópicos curriculares: (.+) -->$",
-    re.MULTILINE,
-)
 LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 FORBIDDEN_LATEX = ("\\(", "\\)", "\\[", "\\]")
 FORBIDDEN_MARKERS = ("TODO", "TBD")
@@ -125,7 +120,7 @@ def validate_resource(
     for code in sorted(codes - known_contents):
         findings.append(f"conteúdo curricular desconhecido: {code}")
 
-    topic_match = TOPICS_RE.search(source) or TOPICS_METADATA_RE.search(source)
+    topic_match = TOPICS_RE.search(source)
     if topic_match is None:
         findings.append("tópicos ausentes")
     else:
