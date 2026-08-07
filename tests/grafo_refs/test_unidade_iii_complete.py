@@ -1,5 +1,6 @@
 import json
 import unittest
+import unicodedata
 
 from scripts.grafo_refs.build_graph import (
     DEFAULT_CURATED_DIRECTORY,
@@ -188,17 +189,25 @@ class UnidadeIIICompleteTests(unittest.TestCase):
             "bic",
             "model selection",
             "selection of variables",
+            "variable selection",
+            "automatic selection",
+            "automatic variable selection",
             "stepwise",
-            "seleção de modelo",
+            "selecao de modelo",
+            "selecao de variaveis",
+            "selecao automatica",
             "passo a passo",
         }
         for origin in regression_origins:
-            searchable = " ".join(
-                (
-                    origin.lower(),
-                    nodes[origin].get("titulo", "").lower(),
-                )
-            )
+            searchable = unicodedata.normalize(
+                "NFKD",
+                " ".join(
+                    (
+                        origin,
+                        nodes[origin].get("titulo", ""),
+                    )
+                ),
+            ).encode("ascii", "ignore").decode("ascii").lower()
             with self.subTest(origin=origin):
                 self.assertFalse(
                     any(
