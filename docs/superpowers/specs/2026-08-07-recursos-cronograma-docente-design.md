@@ -33,10 +33,25 @@ A produção deverá respeitar a seguinte hierarquia:
 O grafo apoia a localização e a rastreabilidade das fontes, mas não substitui a
 decisão pedagógica nem constitui, por si só, um recurso de aula.
 
-## 3. Unidade de produção
+## 3. Unidade de produção e ciclo didático
 
-Cada semana com encontro constitui uma unidade de produção e abrange os dois
-blocos consecutivos da sexta-feira.
+Cada tópico ou conjunto articulado de tópicos do cronograma constituirá um
+ciclo didático integrado. No semestre 2026.2, uma semana com encontro será a
+unidade de produção dos recursos e abrangerá as aulas previstas naquela
+semana. Essa convenção não pressupõe blocos consecutivos nem associação rígida
+entre etapas pedagógicas e horários institucionais.
+
+O ciclo didático seguirá, com distribuição adaptável aos encontros:
+
+1. problema e contexto;
+2. fundamentação científica;
+3. caso reduzido e resolução manual, quando didaticamente pertinente;
+4. aplicação computacional;
+5. comparação, diagnóstico e interpretação.
+
+Os materiais serão funcionalmente distintos, mas integrarão o mesmo ciclo por
+tópico. As etapas poderão ocorrer em um único encontro ou ser distribuídas
+entre encontros de dias diferentes.
 
 Uma semana de desenvolvimento receberá:
 
@@ -92,7 +107,7 @@ Cada material seguirá, com adaptações justificadas ao tema:
 2. pergunta orientadora;
 3. conceitos e definições;
 4. notação e formulação matemática;
-5. exemplo proposto e previsão inicial;
+5. exemplo proposto;
 6. resolução do exemplo;
 7. aplicação ou discussão em sala;
 8. erros comuns e cuidados interpretativos;
@@ -144,7 +159,7 @@ operacional deverá distinguir explicitamente os dois estados:
 ### 6.2 Estrutura
 
 As seções representam funções pedagógicas, e não uma quantidade rígida de
-células. Os itens 1 a 6 e 8 a 13 serão obrigatórios; o item 7 será condicional.
+células. Os itens 1 a 5 e 7 a 12 serão obrigatórios; o item 6 será condicional.
 Cada roteiro será organizado por:
 
 1. **Identificação:** unidade, semana, data, conteúdos formais, duração, fonte
@@ -165,51 +180,32 @@ Cada roteiro será organizado por:
    sintético, variáveis, unidades, caminhos relativos, preparação necessária e
    dependências previstas. Quando não houver arquivo externo, o roteiro
    declarará essa condição em vez de criar uma entrada artificial.
-6. **Antecipação conceitual antes do cálculo ou da execução:** questão a ser
-   respondida e justificada antes de realizar o cálculo ou observar a saída
-   computacional.
-7. **Caso reduzido, resolução manual ou decisão conceitual:** preparação para a
+6. **Caso reduzido, resolução manual ou decisão conceitual:** preparação para a
    aplicação computacional, utilizada somente quando for didaticamente
    pertinente.
-8. **Sequência funcional do futuro notebook:** blocos de formulação,
+7. **Sequência funcional do futuro notebook:** blocos de formulação,
    preparação, cálculo, código, visualização, verificação e interpretação
    necessários à progressão da semana, sem fixar prematuramente a quantidade
    exata de células.
-9. **Verificação e contraste:** comparação apropriada ao conteúdo entre
-   antecipação e resultado, cálculo manual e computacional, teoria e simulação,
-   representações alternativas ou condições esperadas e observadas.
-10. **Evidência de aprendizagem:** produto breve definido no planejamento e no
+8. **Verificação e contraste:** comparação apropriada ao conteúdo entre cálculo
+   manual e computacional, teoria e simulação, representações alternativas ou
+   condições teóricas e observadas.
+9. **Evidência de aprendizagem:** produto breve definido no planejamento e no
     cronograma. A evidência do notebook permanecerá separada do acompanhamento
     e da entrega da AP.
-11. **Síntese e limitações:** perguntas que o futuro notebook deverá retomar
+10. **Síntese e limitações:** perguntas que o futuro notebook deverá retomar
     para responder ao problema e delimitar pressupostos, incertezas e alcance.
     O roteiro não antecipará conclusões dependentes de resultados ainda não
     calculados.
-12. **Estudo, exercícios e referências:** materiais rastreáveis ao grafo e
+11. **Estudo, exercícios e referências:** materiais rastreáveis ao grafo e
     pertinentes à semana. Somente recursos públicos existentes serão ligados
     para acesso discente; referências privadas serão registradas apenas como
     fontes de autoria.
-13. **Critérios para implementação futura:** verificações específicas do
+12. **Critérios para implementação futura:** verificações específicas do
     notebook da semana, sem repetir mecanicamente requisitos que não se
     apliquem ao conteúdo.
 
-### 6.3 Antecipação conceitual
-
-A antecipação não será uma previsão do professor sobre a implementação do
-código. Ela será uma solicitação para que o estudante se comprometa com um
-raciocínio antes de observar a saída.
-
-Conforme o conteúdo, a questão poderá solicitar:
-
-- previsão da direção, da ordem de grandeza, da forma ou do efeito esperado;
-- classificação de variáveis, eventos, dados ou estruturas;
-- escolha justificada de medida, gráfico, modelo ou procedimento;
-- identificação prévia de pressupostos, riscos e limitações.
-
-A exatidão da antecipação não será o objetivo principal; a justificativa será
-obrigatória. A resposta será retomada na verificação e no contraste.
-
-### 6.4 Caso reduzido, resolução manual ou decisão conceitual
+### 6.3 Caso reduzido, resolução manual ou decisão conceitual
 
 Esta seção será condicional. Ela poderá conter:
 
@@ -223,14 +219,17 @@ Quando nenhuma dessas formas contribuir para a aprendizagem da semana, a seção
 será omitida. Não será criado um cálculo manual meramente para satisfazer o
 modelo.
 
-### 6.5 Especificação dos blocos do futuro notebook
+Perguntas informais sobre o comportamento esperado poderão ser usadas pelo
+docente na transição para a aplicação, quando pertinentes. Elas não
+constituirão seção, registro ou verificação obrigatórios nos materiais.
+
+### 6.4 Especificação dos blocos do futuro notebook
 
 O roteiro distinguirá:
 
 - **tipo da célula:** Markdown ou código;
-- **função pedagógica:** formulação, explicação, antecipação, cálculo,
-  processamento, visualização, verificação, interpretação, evidência ou
-  síntese.
+- **função pedagógica:** formulação, explicação, cálculo, processamento,
+  visualização, verificação, interpretação, evidência ou síntese.
 
 “Interpretação” não será tratada como terceiro tipo de célula, pois será
 implementada em Markdown.
@@ -252,11 +251,10 @@ O roteiro organizará blocos funcionais, e não uma lista imutável de cada cél
 A implementação poderá dividir ou combinar células sem alterar a progressão
 pedagógica aprovada.
 
-### 6.6 Verificação, evidência e síntese
+### 6.5 Verificação, evidência e síntese
 
 A verificação deverá usar ao menos uma forma pertinente ao conteúdo:
 
-- confrontar antecipação e resultado;
 - conferir computacionalmente um caso reduzido;
 - comparar valor teórico e resultado simulado;
 - comparar dados originais e preparados;
@@ -271,7 +269,7 @@ A síntese do roteiro especificará as perguntas de fechamento e as limitações
 examinar. A resposta final será escrita no `.ipynb` depois da obtenção dos
 resultados.
 
-### 6.7 Critérios para a implementação posterior
+### 6.6 Critérios para a implementação posterior
 
 O roteiro preparará uma implementação que:
 
@@ -370,15 +368,14 @@ Cada unidade deverá satisfazer:
 - exemplos resolvidos com interpretação;
 - ausência de resultados computacionais inventados;
 - ausência de afirmação de executabilidade nos roteiros;
-- antecipação formulada como raciocínio discente, e não como previsão técnica da
-  implementação;
+- ausência de seção, registro ou verificação obrigatórios de antecipação;
 - caso reduzido ou resolução manual somente quando houver função didática;
 - distinção entre tipo de célula e função pedagógica;
 - evidência correspondente ao planejamento e separada da AP;
 - ausência de títulos vazios, marcadores genéricos, `TODO` ou `TBD`;
 - links relativos válidos;
 - recursos existentes antes da inclusão no cronograma;
-- compatibilidade do volume de conteúdo com os dois blocos da semana.
+- compatibilidade do volume de conteúdo com os encontros do ciclo didático.
 
 Ao final, todas as 16 semanas com encontro deverão possuir material de aula e
 as 13 semanas de desenvolvimento deverão possuir roteiro de notebook. Os dois

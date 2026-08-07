@@ -18,10 +18,18 @@
 - Usar `---` somente como separador editorial dos slides.
 - Definir símbolos e unidades na primeira ocorrência.
 - Apresentar o problema antes de sua resolução e interpretar cada resultado.
+- Organizar cada tópico como ciclo integrado: problema e contexto,
+  fundamentação científica, caso reduzido quando pertinente, aplicação
+  computacional, comparação, diagnóstico e interpretação.
+- Não associar rigidamente etapas pedagógicas a um bloco ou horário
+  institucional.
 - Manter os slides teóricos genéricos, com exemplos adaptados das fontes ou
   explicitamente sintéticos; reservar datasets da disciplina, suas variáveis e
   seus resultados para os roteiros e futuros notebooks práticos.
 - Não inventar saídas computacionais nos roteiros.
+- Não criar seção, registro ou verificação obrigatórios de antecipação;
+  perguntas sobre o comportamento esperado poderão ocorrer informalmente em
+  aula.
 - Tratar o item “caso reduzido, resolução manual ou decisão conceitual” como condicional.
 - Distinguir tipo de célula — Markdown ou código — de sua função pedagógica.
 - Manter a evidência do notebook separada do acompanhamento e da entrega da AP.
@@ -162,25 +170,22 @@ Conceitos.
 ## 5. Dados, entradas e dependências
 Dados.
 
-## 6. Antecipação conceitual antes do cálculo ou da execução
-Antecipação justificada.
-
-## 8. Sequência funcional do futuro notebook
+## 7. Sequência funcional do futuro notebook
 Blocos funcionais.
 
-## 9. Verificação e contraste
+## 8. Verificação e contraste
 Contraste.
 
-## 10. Evidência de aprendizagem
+## 9. Evidência de aprendizagem
 Resultado e justificativa.
 
-## 11. Síntese e limitações
+## 10. Síntese e limitações
 Perguntas de fechamento.
 
-## 12. Estudo, exercícios e referências
+## 11. Estudo, exercícios e referências
 Referências.
 
-## 13. Critérios para implementação futura
+## 12. Critérios para implementação futura
 Critérios específicos.
 """
 
@@ -189,7 +194,7 @@ class TeachingResourceValidatorTests(unittest.TestCase):
     def test_accepts_valid_aula(self):
         self.assertEqual([], validate_resource(Path("aula.md"), "aula", GRAPH, VALID_AULA))
 
-    def test_accepts_valid_roteiro_without_conditional_section_seven(self):
+    def test_accepts_valid_roteiro_without_conditional_section_six(self):
         self.assertEqual(
             [], validate_resource(Path("roteiro.md"), "roteiro", GRAPH, VALID_ROTEIRO)
         )
@@ -209,9 +214,17 @@ class TeachingResourceValidatorTests(unittest.TestCase):
         self.assertIn("tópico desconhecido: Tópico inexistente", findings)
 
     def test_rejects_incomplete_sections(self):
-        invalid = VALID_ROTEIRO.replace("## 10. Evidência de aprendizagem", "## Evidência")
+        invalid = VALID_ROTEIRO.replace("## 9. Evidência de aprendizagem", "## Evidência")
         findings = validate_resource(Path("roteiro.md"), "roteiro", GRAPH, invalid)
-        self.assertIn("seção ausente: ## 10. Evidência de aprendizagem", findings)
+        self.assertIn("seção ausente: ## 9. Evidência de aprendizagem", findings)
+
+    def test_rejects_formal_anticipation_section(self):
+        invalid = (
+            VALID_ROTEIRO
+            + "\n## 6. Antecipação conceitual antes do cálculo ou da execução\n"
+        )
+        findings = validate_resource(Path("roteiro.md"), "roteiro", GRAPH, invalid)
+        self.assertIn("seção formal de antecipação proibida", findings)
 
     def test_rejects_escovedo_and_missing_slide_separator(self):
         invalid = VALID_AULA.replace("\n---\n", "\n").replace(
@@ -279,13 +292,12 @@ ROTEIRO_HEADINGS = (
     "## 3. Contexto e pergunta-problema",
     "## 4. Preparação conceitual",
     "## 5. Dados, entradas e dependências",
-    "## 6. Antecipação conceitual antes do cálculo ou da execução",
-    "## 8. Sequência funcional do futuro notebook",
-    "## 9. Verificação e contraste",
-    "## 10. Evidência de aprendizagem",
-    "## 11. Síntese e limitações",
-    "## 12. Estudo, exercícios e referências",
-    "## 13. Critérios para implementação futura",
+    "## 7. Sequência funcional do futuro notebook",
+    "## 8. Verificação e contraste",
+    "## 9. Evidência de aprendizagem",
+    "## 10. Síntese e limitações",
+    "## 11. Estudo, exercícios e referências",
+    "## 12. Critérios para implementação futura",
 )
 
 CONTENT_RE = re.compile(r"\b\d{2}\.\d{2}\b")
@@ -295,6 +307,9 @@ FORBIDDEN_LATEX = ("\\(", "\\)", "\\[", "\\]")
 FORBIDDEN_MARKERS = ("TODO", "TBD")
 FORBIDDEN_MARP_RE = re.compile(
     r"^(?:marp|theme|paginate|math):\s*", re.MULTILINE | re.IGNORECASE
+)
+FORMAL_ANTICIPATION_RE = re.compile(
+    r"^##\s+(?:\d+\.\s+)?Antecipação\b", re.MULTILINE | re.IGNORECASE
 )
 
 
@@ -341,6 +356,8 @@ def validate_resource(
         findings.append("separador editorial ausente")
     if kind == "roteiro" and "não executável" not in source:
         findings.append("estado não executável ausente")
+    if kind == "roteiro" and FORMAL_ANTICIPATION_RE.search(source):
+        findings.append("seção formal de antecipação proibida")
     if FORBIDDEN_MARP_RE.search(source):
         findings.append("diretiva Marp proibida")
     if any(delimiter in source for delimiter in FORBIDDEN_LATEX):
@@ -406,23 +423,26 @@ Run:
 .venv/bin/python -m unittest tests.grafo_refs.test_validate_teaching_resources -v
 ```
 
-Expected: seven tests, all `OK`.
+Expected: nine tests, all `OK`.
 
 - [ ] **Step 5: Update the private notebook model**
 
 In `docs/modelos/notebook-guiado.md`:
 
 - add a lifecycle section distinguishing `mat/notebooks/*.md` as structural routes from future `.ipynb` implementations;
-- replace the artificial requirement of “previsão” by “antecipação conceitual”, allowing prediction, classification or justified choice;
+- remove anticipation as a formal section, record or mandatory verification;
+- allow the teacher to use questions about expected behavior informally when
+  pertinent;
 - make the reduced manual case conditional;
 - distinguish cell type from pedagogical role;
-- state that one route covers the two blocks of a week;
+- state that one route covers an integrated topic cycle and does not depend on
+  consecutive blocks;
 - use the weekly basename examples approved in the specification.
 
 Run:
 
 ```bash
-rg -n "roteiro estrutural|antecipação conceitual|tipo da célula|função pedagógica|u1_s01" docs/modelos/notebook-guiado.md
+rg -n "roteiro estrutural|ciclo didático|tipo da futura célula|função pedagógica|u1_s01" docs/modelos/notebook-guiado.md
 ```
 
 Expected: all five concepts present. Do not stage this private file.
@@ -511,16 +531,19 @@ Cite without private links:
 
 - [ ] **Step 5: Create the Week 1 notebook route**
 
-Create `mat/notebooks/u1_s01_fundamentos_estatisticos.md` with the approved sections 1–13, omitting section 7 only if the classification activity in section 6 already performs the conceptual preparation.
+Create `mat/notebooks/u1_s01_fundamentos_estatisticos.md` with the approved
+sections 1–12. Section 6 is conditional and will be retained in Week 1 because
+the reduced classification activity prepares the computational inspection.
 
 Specify these functional blocks:
 
 1. Markdown — discipline, context and substantive question;
-2. Markdown — anticipation: infer the unit of analysis and likely variable types from names before loading;
-3. code — import `pandas` and read `../data/raw/penguins_raw.csv`;
-4. code — inspect `shape`, `columns`, `head()` and `dtypes`;
-5. Markdown — identify source, record, variables and types;
-6. Markdown — formulate a statistical question and delimit population, sample and reach;
+2. code — import `pandas` and read `../data/raw/penguins_raw.csv`;
+3. code — inspect `shape`, `columns`, `head()` and `dtypes`;
+4. Markdown — identify source, record, variables and types;
+5. Markdown — formulate a statistical question and delimit population, sample and reach;
+6. Markdown — contrast the conceptual definitions with the observed data
+   structure;
 7. Markdown — record the evidence and limitations.
 
 The expected output descriptions may say “dimensions”, “column list” and “data types”, but may not supply invented values.
@@ -615,7 +638,7 @@ Plan these blocks:
 
 1. load the raw dataset;
 2. inspect names, types, missing values and duplicates;
-3. anticipate which variables need conversion and which representations fit them;
+3. justify which variables need conversion and which representations fit them;
 4. demonstrate the synthetic microcase separately from the real data;
 5. record transformations and reasons;
 6. build qualitative frequency tables;
@@ -708,7 +731,8 @@ Link the apostila and bank. Cite:
 Plan:
 
 1. load the processed dataset;
-2. anticipate center, dispersion and possible group effects in `body_mass_g`;
+2. relate center, dispersion and possible group effects to the substantive
+   question about `body_mass_g`;
 3. calculate a reduced case manually;
 4. calculate measures for the full data and by `species`;
 5. compare original and grouped-data approximations;
@@ -799,7 +823,8 @@ Link the apostila and bank. Cite:
 Plan:
 
 1. load processed data;
-2. anticipate the `species`–`island` pattern and the direction of the quantitative relation;
+2. formulate the questions about the `species`–`island` pattern and the
+   direction of the quantitative relation;
 3. build contingency counts and conditional percentages;
 4. compare a quantitative variable among groups only descriptively;
 5. calculate covariance and Pearson correlation in a reduced case;
@@ -891,7 +916,8 @@ Do not use the Barbetta chapter 5 file because it treats random variables and di
 Plan:
 
 1. formulate events and a finite sample space;
-2. anticipate a union, intersection or conditional result before calculation;
+2. represent a union, intersection or conditional relation manually before
+   computational verification;
 3. represent events by sets, a tree or a frequency table;
 4. calculate complement, union, product and conditional probability;
 5. verify a simple calculation with a reproducible simulation using `numpy.random.default_rng()` and an explicit seed;
