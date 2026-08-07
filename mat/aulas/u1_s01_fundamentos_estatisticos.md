@@ -97,7 +97,7 @@ Fonte: adaptado de Barbetta, Bornia e Reis (2010, seções 1.1–1.4).
 Na tabela, cada linha é uma **observação** e a **unidade de análise** é uma
 requisição, não um servidor. `Servidor` e `status` são **variáveis
 qualitativas**, `latência` é uma **variável quantitativa** medida em
-milissegundos e `instante` registra a **posição temporal**.
+milissegundos e `instante` registra o **horário da requisição**.
 
 Uma linha não é automaticamente uma pessoa, um dispositivo ou um evento. Seu
 significado depende da documentação e do processo que gerou o conjunto.
