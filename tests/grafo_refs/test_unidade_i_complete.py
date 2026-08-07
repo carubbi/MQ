@@ -1,4 +1,6 @@
+import json
 import unittest
+from pathlib import Path
 
 from scripts.grafo_refs.build_graph import (
     DEFAULT_CURATED_DIRECTORY,
@@ -21,6 +23,13 @@ MAPPED_SOURCES = {
     "pinheiro-2009",
 }
 ITEM_TYPES = {"questao", "exercicio", "exemplo"}
+CONTRACT_PATH = (
+    REPOSITORY_ROOT / "scripts/grafo_refs/data/contrato_publicado_unidade_i.json"
+)
+
+
+def load_published_contract(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _source_ancestors(graph: dict, node_id: str) -> set[str]:
@@ -55,6 +64,24 @@ class UnidadeICompleteTests(unittest.TestCase):
                 result = query_by_content(self.graph, code)
                 self.assertEqual(result["estado"], "concluido")
                 self.assertGreater(len(result["resultados"]), 0)
+
+    def test_preserves_the_published_unidade_i_contract(self):
+        contract = load_published_contract(CONTRACT_PATH)
+        graph_nodes = {node["id"]: node for node in self.graph["nos"]}
+        for node_id, expected in contract["nos"].items():
+            self.assertIn(node_id, graph_nodes)
+            actual = graph_nodes[node_id]
+            self.assertEqual(
+                {key: actual[key] for key in expected},
+                expected,
+            )
+        actual_edges = {
+            (edge["origem"], edge["tipo"], edge["destino"])
+            for edge in self.graph["relacoes"]
+        }
+        self.assertTrue(
+            {tuple(edge) for edge in contract["relacoes"]}.issubset(actual_edges)
+        )
 
     def test_expected_sources_are_mapped_without_escovedo(self):
         curricular_origins = {
