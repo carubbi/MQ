@@ -82,6 +82,8 @@ recebe relatos de lentidão e organiza a investigação:
 
 Fonte: adaptado de Barbetta, Bornia e Reis (2010, seções 1.1–1.4).
 
+> **Fonte pública:** [IBGE — Censo Demográfico: conceitos e métodos](https://metadados.ibge.gov.br/consulta/estatisticos/operacoes-estatisticas/CD)
+
 ---
 
 ### Fonte, registro e unidade de análise
