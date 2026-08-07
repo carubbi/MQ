@@ -498,8 +498,8 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 - a recurring, explicitly synthetic server-request dataset, whose context is
   adapted from Barbetta, section 1.4;
 - a source note after the table caption stating
-  `Fonte: elaboração própria, com base em Barbetta, Bornia e Reis (2010, seção 1.4).`
-  on a single line;
+  `Fonte: adaptado de Barbetta, Bornia e Reis (2010, seção 1.4).` on the same
+  Markdown line as the caption;
 - presentation of the reduced data and a short observation question before
   the corresponding definitions;
 - sequential captions immediately after each scientific or didactically

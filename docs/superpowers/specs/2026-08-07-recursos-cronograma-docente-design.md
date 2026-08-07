@@ -159,9 +159,8 @@ integradores e não introduzirão conteúdo curricular novo.
   numeração será sequencial em cada material, e a interpretação não antecipará
   respostas que o estudante ainda deverá construir.
 - Quando os valores forem sintéticos e apenas o contexto vier de uma
-  referência, a nota após a legenda usará o padrão
-  `Fonte: elaboração própria, com base em Autor (ano, seção).`, em uma única
-  linha. Essa redação não atribuirá os dados criados à obra consultada.
+  referência, a legenda terminará, na mesma linha Markdown, com
+  `Fonte: adaptado de Autor (ano, seção).`
 - Material protegido das referências privadas não será reproduzido. Conceitos,
   exemplos e exercícios serão citados, sintetizados ou adaptados de forma
   autoral.

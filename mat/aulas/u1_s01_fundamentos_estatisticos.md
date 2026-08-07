@@ -37,11 +37,7 @@ Um serviço computacional registrou cinco requisições durante cinco minutos.
 | `R04` | 10:03 | B | 105 | sucesso |
 | `R05` | 10:04 | A | ausente | falha |
 
-**Tabela 1 - Registros sintéticos de requisições.** Os cinco registros reúnem
-instante, servidor, latência e status; quatro latências são numéricas e uma
-está ausente.
-
-Fonte: elaboração própria, com base em Barbetta, Bornia e Reis (2010, seção 1.4).
+**Tabela 1 - Registros sintéticos de requisições.** Os cinco registros reúnem instante, servidor, latência e status; quatro latências são numéricas e uma está ausente. Fonte: adaptado de Barbetta, Bornia e Reis (2010, seção 1.4).
 
 > O que representa cada linha e o que foi registrado sobre ela?
 
