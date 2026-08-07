@@ -587,9 +587,14 @@
     "pagina_pdf_inicio": 127,
     "pagina_pdf_fim": 140,
     "pai": "barbetta-2010-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-binomial",
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "barbetta-2010-sec-6-1",

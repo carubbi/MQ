@@ -466,9 +466,13 @@
     "pagina_pdf_inicio": 294,
     "pagina_pdf_fim": 301,
     "pai": "navidi-2024-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-uniforme"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-4-9",

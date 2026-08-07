@@ -74,6 +74,10 @@ def build_nodes() -> list[dict]:
                 ["topico-distribuicao-exponencial"],
                 ["conteudo-02-04"],
             ),
+            f"{source}-sec-4-8": (
+                ["topico-distribuicao-uniforme"],
+                ["conteudo-02-04"],
+            ),
             f"{source}-sec-4-10": (
                 [
                     "topico-distribuicao-normal",

@@ -893,9 +893,14 @@
     "pagina_pdf_inicio": 157,
     "pagina_pdf_fim": 169,
     "pai": "morettin-bussab-2010-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-binomial",
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-6-7",

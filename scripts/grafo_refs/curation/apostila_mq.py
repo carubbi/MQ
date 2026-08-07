@@ -140,6 +140,12 @@ def build_nodes() -> list[dict]:
             "apostila-mq-sec-14-5",
         }:
             node["numero_impresso"] = node["numero_impresso"].replace("14.", "13.")
+        elif node["id"] == "apostila-mq-sec-9-1":
+            # A página 92 encerra a parte discreta com esperança e variância.
+            node["pagina_pdf_fim"] = 92
+        elif node["id"] == "apostila-mq-sec-9-2":
+            # A página 94 encerra a parte contínua antes das propriedades gerais.
+            node["pagina_pdf_fim"] = 94
 
     extracted = load_extraction(SOURCE, PDF_PATH)
     for number, page in extract_sequential_numbered_items(
@@ -212,7 +218,6 @@ def build_nodes() -> list[dict]:
                 [
                     "topico-variavel-aleatoria-discreta",
                     "topico-funcao-de-probabilidade",
-                    "topico-funcao-distribuicao-acumulada",
                     "topico-esperanca",
                     "topico-variancia",
                 ],
@@ -222,7 +227,6 @@ def build_nodes() -> list[dict]:
                 [
                     "topico-variavel-aleatoria-continua",
                     "topico-funcao-densidade",
-                    "topico-funcao-distribuicao-acumulada",
                     "topico-esperanca",
                     "topico-variancia",
                 ],

@@ -824,13 +824,12 @@
     "numero_impresso": "9.1",
     "titulo": "Variáveis Aleatórias Discretas",
     "pagina_pdf_inicio": 90,
-    "pagina_pdf_fim": 91,
+    "pagina_pdf_fim": 92,
     "pai": "apostila-mq-cap-9",
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-variavel-aleatoria-discreta",
       "topico-funcao-de-probabilidade",
-      "topico-funcao-distribuicao-acumulada",
       "topico-esperanca",
       "topico-variancia"
     ],
@@ -844,13 +843,12 @@
     "numero_impresso": "9.2",
     "titulo": "Variáveis Aleatórias Contínuas",
     "pagina_pdf_inicio": 92,
-    "pagina_pdf_fim": 93,
+    "pagina_pdf_fim": 94,
     "pai": "apostila-mq-cap-9",
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-variavel-aleatoria-continua",
       "topico-funcao-densidade",
-      "topico-funcao-distribuicao-acumulada",
       "topico-esperanca",
       "topico-variancia"
     ],

@@ -109,6 +109,13 @@ def build_nodes() -> list[dict]:
                 ["topico-funcao-distribuicao-acumulada"],
                 ["conteudo-02-02"],
             ),
+            f"{source}-sec-6-6": (
+                [
+                    "topico-distribuicao-binomial",
+                    "topico-distribuicao-poisson",
+                ],
+                ["conteudo-02-03"],
+            ),
             f"{source}-sec-7-1": (
                 [
                     "topico-variavel-aleatoria-continua",
