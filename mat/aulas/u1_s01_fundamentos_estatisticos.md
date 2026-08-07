@@ -40,6 +40,8 @@ Uma investigação estatística pode ser organizada em seis movimentos:
 5. analisar a variabilidade e os padrões;
 6. comunicar a conclusão e seu alcance.
 
+> **Material da disciplina:** [Banco de questões, questões 1, 4 e 5, pp. 7–8](../apostila/banco_questoes_provas_2026_2.pdf#page=7)
+
 ---
 
 ### Fonte, registro e unidade de análise
@@ -52,6 +54,10 @@ Uma investigação estatística pode ser organizada em seis movimentos:
 
 Uma linha não é automaticamente uma pessoa, um dispositivo ou um evento. Seu significado depende do processo que gerou o conjunto.
 
+> **Fonte pública:** [Portal Brasileiro de Dados Abertos — conjuntos de dados e metadados](https://dados.gov.br/)
+>
+> **Material da disciplina:** [Apostila, conceitos fundamentais, pp. 9–10](../apostila/apostila_mq.pdf#page=9)
+
 ---
 
 ### População, censo, amostra e amostragem
@@ -63,6 +69,10 @@ Uma linha não é automaticamente uma pessoa, um dispositivo ou um evento. Seu s
 - **Quadro amostral:** representação operacional das unidades que poderiam ser selecionadas.
 
 A população precisa ser declarada. “Todos os atendimentos” e “os atendimentos registrados por determinado serviço durante um período definido” representam populações diferentes.
+
+> **Fonte pública:** [IBGE — Censo Demográfico 2022: população-alvo e metodologia](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html)
+>
+> **Material da disciplina:** [Apostila, população e amostra, pp. 8–9](../apostila/apostila_mq.pdf#page=8)
 
 ---
 
@@ -79,6 +89,10 @@ Uma descrição correta da amostra não garante uma inferência válida para uma
 | Qual é o tempo mediano de todos os atendimentos da população-alvo? | Inferencial |
 | Como os tempos variam entre os grupos registrados? | Descritiva |
 | A diferença observada pode ser generalizada para outro serviço ou período? | Inferencial |
+
+> **Fonte pública:** [SIDRA/IBGE — tabela pública de população residente](https://sidra.ibge.gov.br/Tabela/202)
+>
+> **Material da disciplina:** [Banco de questões, questões 2 e 6, pp. 7–8](../apostila/banco_questoes_provas_2026_2.pdf#page=7)
 
 ---
 
@@ -98,6 +112,10 @@ Dois riscos importantes:
 
 - **viés de seleção:** algumas unidades têm probabilidades diferentes ou desconhecidas de integrar os dados;
 - **viés de medição:** o procedimento de observação produz diferenças sistemáticas entre o valor registrado e a característica de interesse.
+
+> **Fonte pública:** [IBGE — Pesquisa de Pós-Enumeração do Censo 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/40418-pesquisa-de-pos-enumeracao-do-censo-demografico-2022.html)
+>
+> **Material da disciplina:** [Banco de questões, atividade de medição, p. 10](../apostila/banco_questoes_provas_2026_2.pdf#page=10)
 
 ---
 
@@ -133,6 +151,10 @@ Uma amostra grande pode continuar inadequada quando:
 - contém medições produzidas por procedimentos diferentes.
 
 O tamanho $n$ influencia a variabilidade amostral, mas não corrige automaticamente vieses de seleção ou de medição.
+
+> **Fonte pública:** [IBGE — PNAD Contínua: amostra e representatividade](https://painel.ibge.gov.br/saibamais/)
+>
+> **Material da disciplina:** [Apostila, amostragem, p. 9](../apostila/apostila_mq.pdf#page=9)
 
 ---
 
