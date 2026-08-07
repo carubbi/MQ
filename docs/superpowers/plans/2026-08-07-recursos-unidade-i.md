@@ -115,7 +115,12 @@ GRAPH = json.loads(
 VALID_AULA = """# Fundamentos estatísticos
 
 - **Conteúdos formais:** `01.01`
-- **Tópicos:** Investigação estatística; População; Amostra
+<!-- Tópicos curriculares: Investigação estatística; População; Amostra -->
+
+---
+
+## Agenda
+Tópicos e tempos do ciclo integrado.
 
 ---
 
@@ -218,6 +223,11 @@ class TeachingResourceValidatorTests(unittest.TestCase):
         findings = validate_resource(Path("roteiro.md"), "roteiro", GRAPH, invalid)
         self.assertIn("seção ausente: ## 9. Evidência de aprendizagem", findings)
 
+    def test_rejects_aula_without_agenda(self):
+        invalid = VALID_AULA.replace("## Agenda", "## Programação")
+        findings = validate_resource(Path("aula.md"), "aula", GRAPH, invalid)
+        self.assertIn("seção ausente: ## Agenda", findings)
+
     def test_rejects_formal_anticipation_section(self):
         invalid = (
             VALID_ROTEIRO
@@ -274,6 +284,7 @@ from pathlib import Path
 
 
 AULA_HEADINGS = (
+    "## Agenda",
     "## Pergunta orientadora",
     "## Conceitos e definições",
     "## Notação e formulação matemática",
@@ -302,6 +313,9 @@ ROTEIRO_HEADINGS = (
 
 CONTENT_RE = re.compile(r"\b\d{2}\.\d{2}\b")
 TOPICS_RE = re.compile(r"^- \*\*Tópicos:\*\* (.+)$", re.MULTILINE)
+TOPICS_METADATA_RE = re.compile(
+    r"^<!-- Tópicos curriculares: (.+) -->$", re.MULTILINE
+)
 LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 FORBIDDEN_LATEX = ("\\(", "\\)", "\\[", "\\]")
 FORBIDDEN_MARKERS = ("TODO", "TBD")
@@ -373,7 +387,7 @@ def validate_resource(
     for code in sorted(codes - known_contents):
         findings.append(f"conteúdo curricular desconhecido: {code}")
 
-    topic_match = TOPICS_RE.search(source)
+    topic_match = TOPICS_RE.search(source) or TOPICS_METADATA_RE.search(source)
     if topic_match is None:
         findings.append("tópicos ausentes")
     else:
@@ -493,7 +507,8 @@ Do not use Barbetta 2.2.2 on sample-size determination.
 Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 
 - title, discipline, Unit I, Week 1, date 07/08/2026 and content `01.01`;
-- the exact graph topics listed in the task interface;
+- the exact graph topics listed in the task interface, distributed in the
+  agenda rather than repeated on the opening slide;
 - an agenda for the complete 200-minute integrated cycle, with topics,
   reference times, adaptable organization and learning evidence, without
   associating the stages rigidly with institutional time slots;

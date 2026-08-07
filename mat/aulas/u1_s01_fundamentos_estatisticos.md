@@ -5,8 +5,7 @@
 - **Semana:** 1
 - **Data:** 07/08/2026
 - **Conteúdos formais:** `01.01`
-- **Tópicos:** Investigação estatística; Estatística descritiva; Estatística inferencial; População; Amostra; Amostragem; Representatividade; Unidade de análise; Tipos de variáveis
-- **Resultado de aprendizagem:** identificar a estrutura de um conjunto de dados, formular uma pergunta estatística e delimitar o alcance das conclusões a partir da origem dos registros.
+<!-- Tópicos curriculares: Investigação estatística; Estatística descritiva; Estatística inferencial; População; Amostra; Amostragem; Representatividade; Unidade de análise; Tipos de variáveis -->
 
 ---
 
@@ -18,8 +17,8 @@
   manual, aplicação computacional e interpretação.
 
 1. **Problema, contexto e pergunta orientadora — 20 min**
-2. **Investigação, fonte, observação, unidade de análise e variáveis — 40 min**
-3. **Variabilidade, qualidade dos dados, população e amostra — 35 min**
+2. **Investigação, fonte, observação, unidade de análise e tipos de variáveis — 40 min**
+3. **Variabilidade, qualidade dos dados, população, amostra, amostragem e representatividade — 35 min**
 4. **Descrição, inferência, vieses e notação — 35 min**
 5. **Caso reduzido e resolução manual — 30 min**
 6. **Aplicação computacional, comparação e diagnóstico — 30 min**

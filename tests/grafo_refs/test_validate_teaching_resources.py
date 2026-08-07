@@ -14,7 +14,12 @@ GRAPH = json.loads(
 VALID_AULA = """# Fundamentos estatísticos
 
 - **Conteúdos formais:** `01.01`
-- **Tópicos:** Investigação estatística; População; Amostra
+<!-- Tópicos curriculares: Investigação estatística; População; Amostra -->
+
+---
+
+## Agenda
+Tópicos e tempos do ciclo integrado.
 
 ---
 
@@ -156,6 +161,22 @@ class TeachingResourceValidatorTests(unittest.TestCase):
         )
         self.assertIn(
             "seção ausente: ## 9. Evidência de aprendizagem",
+            findings,
+        )
+
+    def test_rejects_aula_without_agenda(self):
+        invalid = VALID_AULA.replace(
+            "## Agenda",
+            "## Programação",
+        )
+        findings = validate_resource(
+            Path("aula.md"),
+            "aula",
+            GRAPH,
+            invalid,
+        )
+        self.assertIn(
+            "seção ausente: ## Agenda",
             findings,
         )
 

@@ -103,9 +103,9 @@ convenção editorial entre slides.
 
 Cada material seguirá, com adaptações justificadas ao tema:
 
-1. título, identificação, data, conteúdos formais e resultado de aprendizagem;
-2. agenda do ciclo, com tópicos, tempos de referência, organização e evidência
-   de aprendizagem;
+1. título, identificação, data e conteúdos formais;
+2. agenda do ciclo, com tópicos curriculares, tempos de referência,
+   organização e evidência de aprendizagem;
 3. pergunta orientadora;
 4. conceitos e definições;
 5. notação e formulação matemática;
@@ -121,6 +121,11 @@ Os tempos da agenda representarão o ciclo semanal completo, incluindo a
 aplicação computacional prevista no roteiro de notebook. Serão adaptáveis à
 configuração dos encontros e não serão associados rigidamente a horários
 institucionais.
+
+Para preservar a rastreabilidade sem repetir visualmente a agenda, os tópicos
+canônicos do grafo serão mantidos na abertura como comentário Markdown no
+formato `<!-- Tópicos curriculares: Tópico A; Tópico B -->`. A lista visível
+será apresentada somente na Agenda.
 
 Semanas de revisão reorganizarão essa estrutura em torno de problemas
 integradores e não introduzirão conteúdo curricular novo.
