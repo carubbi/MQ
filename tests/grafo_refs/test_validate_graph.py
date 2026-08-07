@@ -3,7 +3,7 @@ import json
 import unittest
 from pathlib import Path
 
-from scripts.grafo_refs.build_graph import build_graph
+from scripts.grafo_refs.build_graph import DEFAULT_CURATED_DIRECTORY, build_graph
 from scripts.grafo_refs.validate_graph import validate_graph
 
 
@@ -169,14 +169,19 @@ class ValidateGraphTests(unittest.TestCase):
                 )
                 self.assert_has_error(errors, f"chave proibida: {prohibited_key}")
 
-    def test_rejects_curricular_relationship_to_pending_content(self):
-        """Catches partial graphs that claim a pending curriculum mapping."""
-        errors = self.errors_for(
-            lambda graph: graph["relacoes"].append(
-                {"origem": "topico-amostra", "tipo": "corresponde_a", "destino": "conteudo-02-01"}
+    def test_rejects_a_complete_graph_with_an_uncovered_content(self):
+        """Catches loss of the last reference for any completed curriculum code."""
+        graph = build_graph("2026-08-06", DEFAULT_CURATED_DIRECTORY)
+        graph["relacoes"] = [
+            edge
+            for edge in graph["relacoes"]
+            if not (
+                edge["tipo"] == "corresponde_a"
+                and edge["destino"] == "conteudo-03-04"
             )
-        )
-        self.assert_has_error(errors, "conteúdo pendente")
+        ]
+        errors = validate_graph(graph, self.schema, REPOSITORY_ROOT)
+        self.assert_has_error(errors, "conteúdo concluído sem referência: 03.04")
 
     def test_rejects_curricular_relationship_without_curriculum_content(self):
         """Catches corresponde_a relations that do not target a completed content."""
@@ -187,8 +192,8 @@ class ValidateGraphTests(unittest.TestCase):
         )
         self.assert_has_error(errors, "conteúdo curricular concluído")
 
-    def test_rejects_hybrid_question(self):
-        """Catches a concrete item that combines concluded and pending content."""
+    def test_permits_an_item_with_multiple_completed_contents(self):
+        """Catches obsolete hybrid-item rejection after integral promotion."""
         def mutate(graph):
             graph["nos"].append(
                 {
@@ -207,7 +212,9 @@ class ValidateGraphTests(unittest.TestCase):
                 ]
             )
 
-        self.assert_has_error(self.errors_for(mutate), "item híbrido")
+        self.assertFalse(
+            any("item híbrido" in error for error in self.errors_for(mutate))
+        )
 
     def test_rejects_concrete_item_without_pertinence(self):
         """Catches a concrete item whose pertinence to T199 was not classified."""
@@ -337,15 +344,15 @@ class ValidateGraphTests(unittest.TestCase):
 
         self.assert_has_error(self.errors_for(mutate), "fontes inventariadas não correspondem ao manifesto")
 
-    def test_rejects_noncanonical_partial_coverage(self):
-        """Catches a coverage declaration that no longer matches the approved slice."""
+    def test_rejects_noncanonical_complete_coverage(self):
+        """Catches a coverage declaration that no longer matches the approved graph."""
         errors = self.errors_for(
             lambda graph: graph["metadados"]["cobertura"].update({"fontes_inventariadas": 8})
         )
-        self.assert_has_error(errors, "cobertura parcial não corresponde")
+        self.assert_has_error(errors, "cobertura integral não corresponde")
 
     def test_warns_when_coverage_is_missing(self):
-        """Catches graphs that omit the required partial-coverage declaration."""
+        """Catches graphs that omit the required integral-coverage declaration."""
         errors = self.errors_for(lambda graph: graph["metadados"].pop("cobertura"))
         self.assert_has_error(errors, "aviso: cobertura ausente")
 

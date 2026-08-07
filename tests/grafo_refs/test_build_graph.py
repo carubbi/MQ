@@ -11,8 +11,12 @@ from scripts.grafo_refs.curation import common
 from scripts.grafo_refs.curate_grafo import build_curations, write_curations
 
 
-COMPLETED = ["01.01", "01.02", "01.03", "01.04"]
-PENDING = ["02.01", "02.02", "02.03", "02.04", "03.01", "03.02", "03.03", "03.04"]
+COMPLETED = [
+    "01.01", "01.02", "01.03", "01.04",
+    "02.01", "02.02", "02.03", "02.04",
+    "03.01", "03.02", "03.03", "03.04",
+]
+PENDING = []
 TOPICS_PATH = (
     Path(__file__).resolve().parents[2]
     / "scripts/grafo_refs/data/topicos_t199.json"
@@ -194,7 +198,7 @@ class BuildGraphTests(unittest.TestCase):
                         (CURATIONS_DIRECTORY / f"{source}.json").read_bytes(),
                     )
 
-    def test_builds_the_declared_partial_coverage_deterministically(self):
+    def test_builds_the_declared_complete_coverage_deterministically(self):
         """Catches a build that changes coverage, inventory, or ordering."""
         with tempfile.TemporaryDirectory() as temporary_directory:
             curated_dir = Path(temporary_directory)
@@ -223,7 +227,7 @@ class BuildGraphTests(unittest.TestCase):
 
         coverage = build_a["metadados"]["cobertura"]
         source_nodes = [node for node in build_a["nos"] if node["tipo"] == "fonte"]
-        self.assertEqual(coverage["estado"], "parcial")
+        self.assertEqual(coverage["estado"], "completo")
         self.assertEqual(coverage["conteudos_concluidos"], COMPLETED)
         self.assertEqual(coverage["conteudos_pendentes"], PENDING)
         self.assertEqual(len(source_nodes), 9)

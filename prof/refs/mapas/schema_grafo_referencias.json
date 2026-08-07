@@ -68,17 +68,17 @@
       ],
       "additionalProperties": false,
       "properties": {
-        "estado": {"type": "string", "enum": ["parcial", "completo"]},
+        "estado": {"const": "completo"},
         "criterio": {"const": "conteudo_curricular"},
         "conteudos_concluidos": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {"$ref": "#/$defs/codigoConteudo"}
+          "const": [
+            "01.01", "01.02", "01.03", "01.04",
+            "02.01", "02.02", "02.03", "02.04",
+            "03.01", "03.02", "03.03", "03.04"
+          ]
         },
         "conteudos_pendentes": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {"$ref": "#/$defs/codigoConteudo"}
+          "const": []
         },
         "fontes_inventariadas": {"type": "integer", "minimum": 1}
       }

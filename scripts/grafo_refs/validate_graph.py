@@ -10,13 +10,21 @@ from jsonschema import Draft202012Validator
 from scripts.grafo_refs.model import ITEM_TYPES
 
 
-COMPLETED_CONTENTS = {"01.01", "01.02", "01.03", "01.04"}
-PENDING_CONTENTS = {"02.01", "02.02", "02.03", "02.04", "03.01", "03.02", "03.03", "03.04"}
+COMPLETED_CONTENTS = {
+    "01.01", "01.02", "01.03", "01.04",
+    "02.01", "02.02", "02.03", "02.04",
+    "03.01", "03.02", "03.03", "03.04",
+}
+PENDING_CONTENTS = set()
 EXPECTED_COVERAGE = {
-    "estado": "parcial",
+    "estado": "completo",
     "criterio": "conteudo_curricular",
-    "conteudos_concluidos": ["01.01", "01.02", "01.03", "01.04"],
-    "conteudos_pendentes": ["02.01", "02.02", "02.03", "02.04", "03.01", "03.02", "03.03", "03.04"],
+    "conteudos_concluidos": [
+        "01.01", "01.02", "01.03", "01.04",
+        "02.01", "02.02", "02.03", "02.04",
+        "03.01", "03.02", "03.03", "03.04",
+    ],
+    "conteudos_pendentes": [],
     "fontes_inventariadas": 9,
 }
 PROHIBITED_KEYS = {"dificuldade", "observacao"}
@@ -86,7 +94,7 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
     if coverage is None:
         errors.append("aviso: cobertura ausente")
     elif coverage != EXPECTED_COVERAGE:
-        errors.append("cobertura parcial não corresponde ao recorte canônico")
+        errors.append("cobertura integral não corresponde ao recorte canônico")
 
     nodes = graph.get("nos", []) if isinstance(graph, dict) else []
     edges = graph.get("relacoes", []) if isinstance(graph, dict) else []
@@ -128,6 +136,7 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
         if node.get("tipo") == "conteudo_curricular" and isinstance(node.get("codigo"), str)
     }
     curricular_edges_by_origin = defaultdict(set)
+    curricular_edges_by_code = defaultdict(set)
     for edge in edges:
         if not isinstance(edge, dict):
             continue
@@ -145,14 +154,16 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
             code = curriculum_by_id.get(destination)
             if code is not None:
                 curricular_edges_by_origin[origin].add(code)
+                curricular_edges_by_code[code].add(origin)
             if code not in COMPLETED_CONTENTS:
-                if code in PENDING_CONTENTS:
-                    errors.append(f"correspondência curricular para conteúdo pendente: {code}")
-                else:
-                    errors.append(
-                        "correspondência curricular sem conteúdo curricular concluído: "
-                        f"{destination}"
-                    )
+                errors.append(
+                    "correspondência curricular sem conteúdo curricular concluído: "
+                    f"{destination}"
+                )
+
+    for code in sorted(COMPLETED_CONTENTS):
+        if not curricular_edges_by_code[code]:
+            errors.append(f"conteúdo concluído sem referência: {code}")
 
     for child_id, parent_ids in parents.items():
         if len(set(parent_ids)) > 1:

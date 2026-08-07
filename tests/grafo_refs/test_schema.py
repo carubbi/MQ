@@ -18,19 +18,14 @@ def valid_graph():
             "data_geracao": "2026-08-06",
             "semestre_referencia": "2026.2",
             "cobertura": {
-                "estado": "parcial",
+                "estado": "completo",
                 "criterio": "conteudo_curricular",
-                "conteudos_concluidos": ["01.01", "01.02", "01.03", "01.04"],
-                "conteudos_pendentes": [
-                    "02.01",
-                    "02.02",
-                    "02.03",
-                    "02.04",
-                    "03.01",
-                    "03.02",
-                    "03.03",
-                    "03.04",
+                "conteudos_concluidos": [
+                    "01.01", "01.02", "01.03", "01.04",
+                    "02.01", "02.02", "02.03", "02.04",
+                    "03.01", "03.02", "03.03", "03.04",
                 ],
+                "conteudos_pendentes": [],
                 "fontes_inventariadas": 9,
             },
         },
@@ -125,7 +120,7 @@ class SchemaTests(unittest.TestCase):
     def assert_invalid(self, graph):
         self.assertNotEqual(list(self.validator.iter_errors(graph)), [])
 
-    def test_accepts_a_minimal_graph_with_declared_partial_coverage(self):
+    def test_accepts_a_minimal_graph_with_declared_complete_coverage(self):
         self.assert_valid(valid_graph())
 
     def test_rejects_difficulty_on_a_canonical_node(self):

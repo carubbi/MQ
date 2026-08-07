@@ -12,8 +12,12 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIRECTORY = REPOSITORY_ROOT / "scripts/grafo_refs/data"
 DEFAULT_CURATED_DIRECTORY = DATA_DIRECTORY / "curadorias"
 DEFAULT_OUTPUT = REPOSITORY_ROOT / "prof/refs/mapas/grafo_referencias.json"
-COMPLETED_CONTENTS = ["01.01", "01.02", "01.03", "01.04"]
-PENDING_CONTENTS = ["02.01", "02.02", "02.03", "02.04", "03.01", "03.02", "03.03", "03.04"]
+COMPLETED_CONTENTS = [
+    "01.01", "01.02", "01.03", "01.04",
+    "02.01", "02.02", "02.03", "02.04",
+    "03.01", "03.02", "03.03", "03.04",
+]
+PENDING_CONTENTS = []
 VOCABULARIES = {
     "tipos_no": [
         "fonte",
@@ -51,7 +55,7 @@ def _load_curated_sources(curated_dir: Path) -> tuple[list[dict], list[dict]]:
 
 
 def build_graph(generated_on: str, curated_dir: Path) -> dict:
-    """Monta o grafo parcial, de modo independente da ordem de arquivos."""
+    """Monta o grafo integral, de modo independente da ordem de arquivos."""
     sources = inventory_sources(DATA_DIRECTORY / "fontes.json", REPOSITORY_ROOT)
     source_nodes = [{"id": source["id"], "tipo": "fonte", **{key: value for key, value in source.items() if key != "id"}} for source in sources]
     contents = _read_json(DATA_DIRECTORY / "conteudos_t199.json")
@@ -65,7 +69,7 @@ def build_graph(generated_on: str, curated_dir: Path) -> dict:
             "data_geracao": generated_on,
             "semestre_referencia": "2026.2",
             "cobertura": {
-                "estado": "parcial",
+                "estado": "completo",
                 "criterio": "conteudo_curricular",
                 "conteudos_concluidos": COMPLETED_CONTENTS,
                 "conteudos_pendentes": PENDING_CONTENTS,
@@ -88,7 +92,7 @@ def write_graph(graph: dict, output_path: Path) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Constrói o grafo parcial de referências.")
+    parser = argparse.ArgumentParser(description="Constrói o grafo integral de referências.")
     parser.add_argument("--generated-on", required=True, help="Data de geração em YYYY-MM-DD.")
     parser.add_argument("--curated-dir", type=Path, default=DEFAULT_CURATED_DIRECTORY)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)

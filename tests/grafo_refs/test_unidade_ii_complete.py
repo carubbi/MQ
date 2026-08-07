@@ -359,18 +359,19 @@ class UnidadeIICompleteTests(unittest.TestCase):
             )
         )
 
-    def test_coverage_remains_partial_until_the_integral_gate(self):
-        """Catches premature promotion before Units II and III are complete."""
+    def test_coverage_is_complete_after_the_integral_gate(self):
+        """Catches a regression from the approved integral coverage."""
         coverage = self.graph["metadados"]["cobertura"]
-        self.assertEqual(coverage["estado"], "parcial")
+        self.assertEqual(coverage["estado"], "completo")
         self.assertEqual(
             coverage["conteudos_concluidos"],
-            ["01.01", "01.02", "01.03", "01.04"],
+            [
+                "01.01", "01.02", "01.03", "01.04",
+                "02.01", "02.02", "02.03", "02.04",
+                "03.01", "03.02", "03.03", "03.04",
+            ],
         )
-        self.assertEqual(
-            coverage["conteudos_pendentes"],
-            list(UNIT_II + ("03.01", "03.02", "03.03", "03.04")),
-        )
+        self.assertEqual(coverage["conteudos_pendentes"], [])
 
 
 if __name__ == "__main__":
