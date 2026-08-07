@@ -319,9 +319,15 @@
     "pagina_pdf_inicio": 89,
     "pagina_pdf_fim": 91,
     "pai": "pinheiro-2009-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-experimento-aleatorio",
+      "topico-espaco-amostral",
+      "topico-evento"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-3-2",
@@ -331,9 +337,14 @@
     "pagina_pdf_inicio": 92,
     "pagina_pdf_fim": 92,
     "pai": "pinheiro-2009-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-evento",
+      "topico-regra-da-adicao"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-3-3",
@@ -343,9 +354,15 @@
     "pagina_pdf_inicio": 93,
     "pagina_pdf_fim": 96,
     "pai": "pinheiro-2009-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional",
+      "topico-regra-do-produto",
+      "topico-independencia"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-3-4",
@@ -355,9 +372,16 @@
     "pagina_pdf_inicio": 97,
     "pagina_pdf_fim": 111,
     "pai": "pinheiro-2009-cap-3",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regra-da-adicao",
+      "topico-regra-do-produto",
+      "topico-probabilidade-total",
+      "topico-teorema-de-bayes"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-4-1",
@@ -379,9 +403,14 @@
     "pagina_pdf_inicio": 115,
     "pagina_pdf_fim": 115,
     "pai": "pinheiro-2009-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-discreta",
+      "topico-variavel-aleatoria-continua"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-4-3",
@@ -391,9 +420,17 @@
     "pagina_pdf_inicio": 116,
     "pagina_pdf_fim": 127,
     "pai": "pinheiro-2009-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-discreta",
+      "topico-funcao-de-probabilidade",
+      "topico-funcao-distribuicao-acumulada",
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-4-4",
@@ -403,9 +440,20 @@
     "pagina_pdf_inicio": 128,
     "pagina_pdf_fim": 136,
     "pai": "pinheiro-2009-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-continua",
+      "topico-funcao-densidade",
+      "topico-funcao-distribuicao-acumulada",
+      "topico-esperanca",
+      "topico-variancia",
+      "topico-distribuicao-uniforme",
+      "topico-distribuicao-exponencial"
+    ],
+    "conteudos": [
+      "conteudo-02-02",
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-4-5",
@@ -415,9 +463,14 @@
     "pagina_pdf_inicio": 137,
     "pagina_pdf_fim": 150,
     "pai": "pinheiro-2009-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "pinheiro-2009-sec-5-1",
@@ -838,6 +891,127 @@
     ],
     "conteudos": [
       "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-3-8-p",
+    "tipo": "exercicio",
+    "numero_impresso": "3.8_P",
+    "pagina_pdf": 111,
+    "pai": "pinheiro-2009-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional",
+      "topico-probabilidade-total"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-3-9-p",
+    "tipo": "exercicio",
+    "numero_impresso": "3.9_P",
+    "pagina_pdf": 111,
+    "pai": "pinheiro-2009-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional",
+      "topico-probabilidade-total",
+      "topico-teorema-de-bayes"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-3-10-p",
+    "tipo": "exercicio",
+    "numero_impresso": "3.10_P",
+    "pagina_pdf": 111,
+    "pai": "pinheiro-2009-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional",
+      "topico-probabilidade-total",
+      "topico-teorema-de-bayes"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-4-3-p",
+    "tipo": "exercicio",
+    "numero_impresso": "4.3_P",
+    "pagina_pdf": 148,
+    "pai": "pinheiro-2009-cap-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-discreta",
+      "topico-funcao-de-probabilidade",
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-4-6-p",
+    "tipo": "exercicio",
+    "numero_impresso": "4.6_P",
+    "pagina_pdf": 149,
+    "pai": "pinheiro-2009-cap-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-binomial"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-4-7-p",
+    "tipo": "exercicio",
+    "numero_impresso": "4.7_P",
+    "pagina_pdf": 149,
+    "pai": "pinheiro-2009-cap-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-4-8-p",
+    "tipo": "exercicio",
+    "numero_impresso": "4.8_P",
+    "pagina_pdf": 149,
+    "pai": "pinheiro-2009-cap-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-exponencial"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-4-9-p",
+    "tipo": "exercicio",
+    "numero_impresso": "4.9_P",
+    "pagina_pdf": 149,
+    "pai": "pinheiro-2009-cap-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
     ]
   }
 ]

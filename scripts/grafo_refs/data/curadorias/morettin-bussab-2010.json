@@ -725,9 +725,15 @@
     "pagina_pdf_inicio": 120,
     "pagina_pdf_fim": 122,
     "pai": "morettin-bussab-2010-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-experimento-aleatorio",
+      "topico-espaco-amostral",
+      "topico-evento"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-5-2",
@@ -737,9 +743,14 @@
     "pagina_pdf_inicio": 123,
     "pagina_pdf_fim": 127,
     "pai": "morettin-bussab-2010-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-evento",
+      "topico-regra-da-adicao"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-5-3",
@@ -749,9 +760,15 @@
     "pagina_pdf_inicio": 128,
     "pagina_pdf_fim": 132,
     "pai": "morettin-bussab-2010-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional",
+      "topico-regra-do-produto",
+      "topico-independencia"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-5-4",
@@ -761,9 +778,14 @@
     "pagina_pdf_inicio": 133,
     "pagina_pdf_fim": 137,
     "pai": "morettin-bussab-2010-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-total",
+      "topico-teorema-de-bayes"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-5-5",
@@ -809,9 +831,14 @@
     "pagina_pdf_inicio": 146,
     "pagina_pdf_fim": 151,
     "pai": "morettin-bussab-2010-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-discreta",
+      "topico-funcao-de-probabilidade"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-6-3",
@@ -821,9 +848,14 @@
     "pagina_pdf_inicio": 152,
     "pagina_pdf_fim": 153,
     "pai": "morettin-bussab-2010-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-6-4",
@@ -845,9 +877,13 @@
     "pagina_pdf_inicio": 155,
     "pagina_pdf_fim": 156,
     "pai": "morettin-bussab-2010-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-funcao-distribuicao-acumulada"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-6-6",
@@ -869,9 +905,13 @@
     "pagina_pdf_inicio": 170,
     "pagina_pdf_fim": 170,
     "pai": "morettin-bussab-2010-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-6-8",
@@ -917,9 +957,14 @@
     "pagina_pdf_inicio": 180,
     "pagina_pdf_fim": 183,
     "pai": "morettin-bussab-2010-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-continua",
+      "topico-funcao-densidade"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-7-2",
@@ -929,9 +974,14 @@
     "pagina_pdf_inicio": 184,
     "pagina_pdf_fim": 186,
     "pai": "morettin-bussab-2010-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-7-3",
@@ -941,9 +991,13 @@
     "pagina_pdf_inicio": 187,
     "pagina_pdf_fim": 189,
     "pai": "morettin-bussab-2010-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-funcao-distribuicao-acumulada"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-7-4",
@@ -953,9 +1007,16 @@
     "pagina_pdf_inicio": 190,
     "pagina_pdf_fim": 198,
     "pai": "morettin-bussab-2010-cap-7",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-uniforme",
+      "topico-distribuicao-normal",
+      "topico-distribuicao-exponencial",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "morettin-bussab-2010-sec-7-5",

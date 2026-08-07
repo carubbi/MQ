@@ -662,9 +662,15 @@
     "pagina_pdf_inicio": 74,
     "pagina_pdf_fim": 74,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-experimento-aleatorio",
+      "topico-espaco-amostral",
+      "topico-evento"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-2",
@@ -674,9 +680,13 @@
     "pagina_pdf_inicio": 75,
     "pagina_pdf_fim": 77,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-evento"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-3",
@@ -686,9 +696,13 @@
     "pagina_pdf_inicio": 78,
     "pagina_pdf_fim": 78,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-experimento-aleatorio"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-4",
@@ -698,9 +712,13 @@
     "pagina_pdf_inicio": 79,
     "pagina_pdf_fim": 81,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regra-da-adicao"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-5",
@@ -710,9 +728,13 @@
     "pagina_pdf_inicio": 82,
     "pagina_pdf_fim": 82,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-6",
@@ -722,9 +744,13 @@
     "pagina_pdf_inicio": 82,
     "pagina_pdf_fim": 82,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-7",
@@ -734,9 +760,13 @@
     "pagina_pdf_inicio": 83,
     "pagina_pdf_fim": 83,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-regra-do-produto"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-8",
@@ -746,9 +776,13 @@
     "pagina_pdf_inicio": 83,
     "pagina_pdf_fim": 85,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-independencia"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-8-1",
@@ -758,9 +792,14 @@
     "pagina_pdf_inicio": 83,
     "pagina_pdf_fim": 85,
     "pai": "apostila-mq-sec-8-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-independencia",
+      "topico-regra-do-produto"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-8-9",
@@ -770,9 +809,14 @@
     "pagina_pdf_inicio": 86,
     "pagina_pdf_fim": 89,
     "pai": "apostila-mq-cap-8",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-total",
+      "topico-teorema-de-bayes"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "apostila-mq-sec-9-1",
@@ -782,9 +826,17 @@
     "pagina_pdf_inicio": 90,
     "pagina_pdf_fim": 91,
     "pai": "apostila-mq-cap-9",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-discreta",
+      "topico-funcao-de-probabilidade",
+      "topico-funcao-distribuicao-acumulada",
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-9-2",
@@ -794,9 +846,17 @@
     "pagina_pdf_inicio": 92,
     "pagina_pdf_fim": 93,
     "pai": "apostila-mq-cap-9",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-continua",
+      "topico-funcao-densidade",
+      "topico-funcao-distribuicao-acumulada",
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-9-3",
@@ -806,9 +866,14 @@
     "pagina_pdf_inicio": 94,
     "pagina_pdf_fim": 95,
     "pai": "apostila-mq-cap-9",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "apostila-mq-sec-10-1",
@@ -818,9 +883,13 @@
     "pagina_pdf_inicio": 96,
     "pagina_pdf_fim": 98,
     "pai": "apostila-mq-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-binomial"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "apostila-mq-sec-10-2",
@@ -830,9 +899,13 @@
     "pagina_pdf_inicio": 99,
     "pagina_pdf_fim": 100,
     "pai": "apostila-mq-cap-10",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "apostila-mq-sec-10-3",
@@ -1162,9 +1235,14 @@
     "pagina_pdf_inicio": 183,
     "pagina_pdf_fim": 186,
     "pai": "apostila-mq-cap-17",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "apostila-mq-sec-17-8",

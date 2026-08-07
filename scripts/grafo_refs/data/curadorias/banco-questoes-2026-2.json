@@ -575,9 +575,13 @@
     "pagina_pdf_inicio": 177,
     "pagina_pdf_fim": 183,
     "pai": "banco-questoes-2026-2-sec-5-1",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-binomial"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-5-1-2",
@@ -587,9 +591,13 @@
     "pagina_pdf_inicio": 184,
     "pagina_pdf_fim": 191,
     "pai": "banco-questoes-2026-2-sec-5-1",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-5-1-3",
@@ -671,9 +679,14 @@
     "pagina_pdf_inicio": 209,
     "pagina_pdf_fim": 223,
     "pai": "banco-questoes-2026-2-sec-5-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-5-2-2",
@@ -683,9 +696,13 @@
     "pagina_pdf_inicio": 224,
     "pagina_pdf_fim": 232,
     "pai": "banco-questoes-2026-2-sec-5-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-exponencial"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-5-2-3",
@@ -707,9 +724,13 @@
     "pagina_pdf_inicio": 235,
     "pagina_pdf_fim": 242,
     "pai": "banco-questoes-2026-2-sec-5-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-uniforme"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "banco-questoes-2026-2-sec-5-2-5",

@@ -4,6 +4,7 @@ from collections import Counter
 
 from scripts.grafo_refs.build_graph import REPOSITORY_ROOT
 from scripts.grafo_refs.curation.common import (
+    apply_curricular_mappings,
     chapter,
     load_extraction,
     finalize_source,
@@ -106,4 +107,34 @@ def build_nodes() -> list[dict]:
                 parent,
             )
         )
+    apply_curricular_mappings(
+        nodes,
+        {
+            f"{SOURCE}-sec-2-distribuicao-normal": (
+                ["topico-distribuicao-normal"],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-sec-2-normal-padrao-e-graficos-qq": (
+                [
+                    "topico-distribuicao-normal",
+                    "topico-padronizacao",
+                    "topico-grafico-qq",
+                    "topico-diagnostico-do-modelo",
+                ],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-sec-2-distribuicao-binomial": (
+                ["topico-distribuicao-binomial"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-sec-2-distribuicoes-poisson": (
+                ["topico-distribuicao-poisson"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-sec-2-distribuicao-exponencial": (
+                ["topico-distribuicao-exponencial"],
+                ["conteudo-02-04"],
+            ),
+        },
+    )
     return finalize_source(SOURCE, nodes)

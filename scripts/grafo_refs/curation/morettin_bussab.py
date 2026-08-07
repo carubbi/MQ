@@ -2,6 +2,7 @@
 
 from scripts.grafo_refs.build_graph import REPOSITORY_ROOT
 from scripts.grafo_refs.curation.common import (
+    apply_curricular_mappings,
     finalize_source,
     marker_numbered_nodes,
     section,
@@ -65,5 +66,77 @@ def build_nodes() -> list[dict]:
                 [],
             ),
         ]
+    )
+    apply_curricular_mappings(
+        nodes,
+        {
+            f"{source}-sec-5-1": (
+                [
+                    "topico-experimento-aleatorio",
+                    "topico-espaco-amostral",
+                    "topico-evento",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{source}-sec-5-2": (
+                ["topico-evento", "topico-regra-da-adicao"],
+                ["conteudo-02-01"],
+            ),
+            f"{source}-sec-5-3": (
+                [
+                    "topico-probabilidade-condicional",
+                    "topico-regra-do-produto",
+                    "topico-independencia",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{source}-sec-5-4": (
+                ["topico-probabilidade-total", "topico-teorema-de-bayes"],
+                ["conteudo-02-01"],
+            ),
+            f"{source}-sec-6-2": (
+                [
+                    "topico-variavel-aleatoria-discreta",
+                    "topico-funcao-de-probabilidade",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{source}-sec-6-3": (
+                ["topico-esperanca", "topico-variancia"],
+                ["conteudo-02-02"],
+            ),
+            f"{source}-sec-6-5": (
+                ["topico-funcao-distribuicao-acumulada"],
+                ["conteudo-02-02"],
+            ),
+            f"{source}-sec-7-1": (
+                [
+                    "topico-variavel-aleatoria-continua",
+                    "topico-funcao-densidade",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{source}-sec-7-2": (
+                ["topico-esperanca", "topico-variancia"],
+                ["conteudo-02-02"],
+            ),
+            f"{source}-sec-7-3": (
+                ["topico-funcao-distribuicao-acumulada"],
+                ["conteudo-02-02"],
+            ),
+            f"{source}-sec-6-7": (
+                ["topico-distribuicao-poisson"],
+                ["conteudo-02-03"],
+            ),
+            f"{source}-sec-7-4": (
+                [
+                    "topico-distribuicao-uniforme",
+                    "topico-distribuicao-normal",
+                    "topico-distribuicao-exponencial",
+                    "topico-padronizacao",
+                ],
+                ["conteudo-02-04"],
+            ),
+        },
     )
     return finalize_source(source, nodes)

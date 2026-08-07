@@ -64,8 +64,9 @@ def item(
     *,
     item_type: str,
     pertinence: str = "direta",
+    identifier: str | None = None,
 ) -> dict:
-    stable_number = number.lower().replace(".", "-").replace("_", "-")
+    stable_number = (identifier or number).lower().replace(".", "-").replace("_", "-")
     return {
         "id": f"{source}-{item_type}-{stable_number}",
         "tipo": item_type,
@@ -76,6 +77,25 @@ def item(
         "topicos": topics,
         "conteudos": contents,
     }
+
+
+def apply_curricular_mappings(
+    nodes: list[dict],
+    mappings: dict[str, tuple[list[str], list[str]]],
+) -> list[dict]:
+    """Liga nós editoriais verificados a tópicos e conteúdos curriculares."""
+    nodes_by_id = {node["id"]: node for node in nodes}
+    missing = sorted(set(mappings) - set(nodes_by_id))
+    if missing:
+        raise ValueError(f"nós ausentes na curadoria curricular: {missing}")
+
+    for node_id, (topics, contents) in mappings.items():
+        node = nodes_by_id[node_id]
+        node["topicos"] = topics
+        node["conteudos"] = contents
+        if node["tipo"] in {"secao", "questao", "exercicio", "exemplo"}:
+            node["pertinencia_t199"] = "direta"
+    return nodes
 
 
 def extract_sequential_numbered_items(

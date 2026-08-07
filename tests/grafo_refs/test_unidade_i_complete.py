@@ -85,12 +85,19 @@ class UnidadeICompleteTests(unittest.TestCase):
             for edge in self.graph["relacoes"]
         }
         contract_edges = {tuple(edge) for edge in contract["relacoes"]}
+        published_ids = set(contract["nos"])
         for relation_type in {"aborda", "corresponde_a"}:
+            # A origem identifica a referência publicada pela Unidade I.
+            # Filtrar pelo destino seria incorreto: tópicos canônicos como
+            # variância também podem receber novas referências de outras
+            # unidades. A igualdade continua proibindo qualquer relação
+            # curricular adicional emitida por um ID contratual da Unidade I.
             self.assertEqual(
                 {
                     edge
                     for edge in actual_edges
                     if edge[1] == relation_type
+                    and edge[0] in published_ids
                 },
                 {
                     edge
@@ -165,7 +172,6 @@ class UnidadeICompleteTests(unittest.TestCase):
         contract_precedence = {
             edge for edge in contract_edges if edge[1] == "precede"
         }
-        published_ids = set(contract["nos"])
         actual_precedence = {
             edge
             for edge in actual_edges
@@ -233,8 +239,18 @@ class UnidadeICompleteTests(unittest.TestCase):
         item_nodes = [
             node for node in self.graph["nos"] if node["tipo"] in ITEM_TYPES
         ]
+        item_ids = {node["id"] for node in item_nodes}
+        contract = load_published_contract(CONTRACT_PATH)
+        contract_item_ids = {
+            node_id
+            for node_id, node in contract["nos"].items()
+            if node["tipo"] in ITEM_TYPES
+        }
 
-        self.assertEqual(len(item_nodes), 432)
+        self.assertEqual(
+            item_ids.intersection(contract["nos"]),
+            contract_item_ids,
+        )
         self.assertTrue(all("subtipo" not in node for node in self.graph["nos"]))
         self.assertNotIn(
             "subtipos_item_pedagogico",

@@ -624,9 +624,13 @@
     "pagina_pdf_inicio": 97,
     "pagina_pdf_fim": 97,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-normal-padrao-e-graficos-qq",
@@ -636,9 +640,16 @@
     "pagina_pdf_inicio": 98,
     "pagina_pdf_fim": 99,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-padronizacao",
+      "topico-grafico-qq",
+      "topico-diagnostico-do-modelo"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-distribuicoes-de-cauda-longa",
@@ -672,9 +683,13 @@
     "pagina_pdf_inicio": 106,
     "pagina_pdf_fim": 108,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-binomial"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-poisson-e-distribuicoes-relacionadas",
@@ -696,9 +711,13 @@
     "pagina_pdf_inicio": 109,
     "pagina_pdf_fim": 109,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-distribuicao-exponencial",
@@ -708,9 +727,13 @@
     "pagina_pdf_inicio": 110,
     "pagina_pdf_fim": 110,
     "pai": "estatistica-pratica-cd-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-exponencial"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "estatistica-pratica-cd-sec-2-estimando-a-taxa-de-falha",

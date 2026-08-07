@@ -1,6 +1,7 @@
 """Estrutura editorial verificada de Pinheiro et al. (2009)."""
 
 from scripts.grafo_refs.curation.common import (
+    apply_curricular_mappings,
     finalize_source,
     item,
     numbered_editorial_nodes,
@@ -95,4 +96,140 @@ def build_nodes() -> list[dict]:
                 item_type="exercicio",
             )
         )
+    for number, page, parent in [
+        ("3.8_P", 111, f"{SOURCE}-cap-3"),
+        ("3.9_P", 111, f"{SOURCE}-cap-3"),
+        ("3.10_P", 111, f"{SOURCE}-cap-3"),
+        ("4.3_P", 148, f"{SOURCE}-cap-4"),
+        ("4.6_P", 149, f"{SOURCE}-cap-4"),
+        ("4.7_P", 149, f"{SOURCE}-cap-4"),
+        ("4.8_P", 149, f"{SOURCE}-cap-4"),
+        ("4.9_P", 149, f"{SOURCE}-cap-4"),
+    ]:
+        nodes.append(
+            item(
+                SOURCE,
+                number,
+                page,
+                parent,
+                [],
+                [],
+                item_type="exercicio",
+            )
+        )
+    apply_curricular_mappings(
+        nodes,
+        {
+            f"{SOURCE}-sec-3-1": (
+                [
+                    "topico-experimento-aleatorio",
+                    "topico-espaco-amostral",
+                    "topico-evento",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-3-2": (
+                ["topico-evento", "topico-regra-da-adicao"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-3-3": (
+                [
+                    "topico-probabilidade-condicional",
+                    "topico-regra-do-produto",
+                    "topico-independencia",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-3-4": (
+                [
+                    "topico-regra-da-adicao",
+                    "topico-regra-do-produto",
+                    "topico-probabilidade-total",
+                    "topico-teorema-de-bayes",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-4-2": (
+                [
+                    "topico-variavel-aleatoria-discreta",
+                    "topico-variavel-aleatoria-continua",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-sec-4-3": (
+                [
+                    "topico-variavel-aleatoria-discreta",
+                    "topico-funcao-de-probabilidade",
+                    "topico-funcao-distribuicao-acumulada",
+                    "topico-esperanca",
+                    "topico-variancia",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-sec-4-4": (
+                [
+                    "topico-variavel-aleatoria-continua",
+                    "topico-funcao-densidade",
+                    "topico-funcao-distribuicao-acumulada",
+                    "topico-esperanca",
+                    "topico-variancia",
+                    "topico-distribuicao-uniforme",
+                    "topico-distribuicao-exponencial",
+                ],
+                ["conteudo-02-02", "conteudo-02-04"],
+            ),
+            f"{SOURCE}-sec-4-5": (
+                ["topico-distribuicao-normal", "topico-padronizacao"],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-exercicio-3-8-p": (
+                [
+                    "topico-probabilidade-condicional",
+                    "topico-probabilidade-total",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-exercicio-3-9-p": (
+                [
+                    "topico-probabilidade-condicional",
+                    "topico-probabilidade-total",
+                    "topico-teorema-de-bayes",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-exercicio-3-10-p": (
+                [
+                    "topico-probabilidade-condicional",
+                    "topico-probabilidade-total",
+                    "topico-teorema-de-bayes",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-exercicio-4-3-p": (
+                [
+                    "topico-variavel-aleatoria-discreta",
+                    "topico-funcao-de-probabilidade",
+                    "topico-esperanca",
+                    "topico-variancia",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-exercicio-4-6-p": (
+                ["topico-distribuicao-binomial"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-exercicio-4-7-p": (
+                ["topico-distribuicao-poisson"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-exercicio-4-8-p": (
+                ["topico-distribuicao-exponencial"],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-exercicio-4-9-p": (
+                ["topico-distribuicao-normal", "topico-padronizacao"],
+                ["conteudo-02-04"],
+            ),
+        },
+    )
     return finalize_source(SOURCE, nodes)

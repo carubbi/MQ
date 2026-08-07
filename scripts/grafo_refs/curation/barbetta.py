@@ -1,6 +1,7 @@
 """Estrutura editorial verificada de Barbetta, Reis e Bornia (2010)."""
 
 from scripts.grafo_refs.curation.common import (
+    apply_curricular_mappings,
     finalize_source,
     item,
     numbered_editorial_nodes,
@@ -107,4 +108,148 @@ def build_nodes() -> list[dict]:
                 item_type="exercicio",
             )
         )
+    for number, identifier, page, parent in [
+        ("1", "5-1", 126, f"{SOURCE}-sec-5-1"),
+        ("7", "5-7", 132, f"{SOURCE}-sec-5-2"),
+        ("11", "5-11", 137, f"{SOURCE}-sec-5-2"),
+        ("1", "6-1", 147, f"{SOURCE}-sec-6-1"),
+        ("2", "6-2", 147, f"{SOURCE}-sec-6-1"),
+        ("6", "6-6", 153, f"{SOURCE}-sec-6-2"),
+        ("8", "6-8", 159, f"{SOURCE}-sec-6-2"),
+        ("13", "6-13", 167, f"{SOURCE}-cap-6"),
+        ("17", "6-17", 168, f"{SOURCE}-cap-6"),
+    ]:
+        nodes.append(
+            item(
+                SOURCE,
+                number,
+                page,
+                parent,
+                [],
+                [],
+                item_type="exercicio",
+                identifier=identifier,
+            )
+        )
+    apply_curricular_mappings(
+        nodes,
+        {
+            f"{SOURCE}-sec-4-1": (
+                [
+                    "topico-experimento-aleatorio",
+                    "topico-espaco-amostral",
+                    "topico-evento",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-4-2": (
+                ["topico-evento", "topico-regra-da-adicao"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-4-3": (
+                [
+                    "topico-probabilidade-condicional",
+                    "topico-regra-do-produto",
+                    "topico-independencia",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-4-4": (
+                ["topico-probabilidade-total"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-4-5": (
+                ["topico-teorema-de-bayes"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-5-1": (
+                [
+                    "topico-variavel-aleatoria-discreta",
+                    "topico-funcao-de-probabilidade",
+                    "topico-funcao-distribuicao-acumulada",
+                    "topico-esperanca",
+                    "topico-variancia",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-sec-6-1": (
+                [
+                    "topico-variavel-aleatoria-continua",
+                    "topico-funcao-densidade",
+                    "topico-funcao-distribuicao-acumulada",
+                    "topico-esperanca",
+                    "topico-variancia",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-sec-6-2": (
+                [
+                    "topico-distribuicao-uniforme",
+                    "topico-distribuicao-exponencial",
+                    "topico-distribuicao-normal",
+                    "topico-padronizacao",
+                ],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-sec-6-4": (
+                [
+                    "topico-distribuicao-normal",
+                    "topico-grafico-qq",
+                    "topico-diagnostico-do-modelo",
+                ],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-exercicio-5-1": (
+                [
+                    "topico-variavel-aleatoria-discreta",
+                    "topico-funcao-de-probabilidade",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-exercicio-5-7": (
+                ["topico-distribuicao-binomial"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-exercicio-5-11": (
+                ["topico-distribuicao-poisson"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-exercicio-6-1": (
+                [
+                    "topico-variavel-aleatoria-continua",
+                    "topico-funcao-densidade",
+                    "topico-funcao-distribuicao-acumulada",
+                    "topico-esperanca",
+                    "topico-variancia",
+                    "topico-distribuicao-uniforme",
+                ],
+                ["conteudo-02-02", "conteudo-02-04"],
+            ),
+            f"{SOURCE}-exercicio-6-2": (
+                [
+                    "topico-funcao-densidade",
+                    "topico-distribuicao-uniforme",
+                    "topico-esperanca",
+                    "topico-variancia",
+                ],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-exercicio-6-6": (
+                ["topico-distribuicao-exponencial"],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-exercicio-6-8": (
+                ["topico-distribuicao-normal", "topico-padronizacao"],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-exercicio-6-13": (
+                ["topico-distribuicao-exponencial"],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-exercicio-6-17": (
+                ["topico-distribuicao-normal", "topico-padronizacao"],
+                ["conteudo-02-04"],
+            ),
+        },
+    )
     return finalize_source(SOURCE, nodes)

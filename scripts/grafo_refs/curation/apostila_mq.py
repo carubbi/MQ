@@ -2,6 +2,7 @@
 
 from scripts.grafo_refs.build_graph import REPOSITORY_ROOT
 from scripts.grafo_refs.curation.common import (
+    apply_curricular_mappings,
     extract_sequential_numbered_items,
     item,
     load_extraction,
@@ -160,4 +161,89 @@ def build_nodes() -> list[dict]:
                 pertinence="indireta",
             )
         )
+    apply_curricular_mappings(
+        nodes,
+        {
+            f"{SOURCE}-sec-8-1": (
+                [
+                    "topico-experimento-aleatorio",
+                    "topico-espaco-amostral",
+                    "topico-evento",
+                ],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-2": (
+                ["topico-evento"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-3": (
+                ["topico-experimento-aleatorio"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-4": (
+                ["topico-regra-da-adicao"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-5": (
+                ["topico-probabilidade-condicional"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-6": (
+                ["topico-probabilidade-condicional"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-7": (
+                ["topico-regra-do-produto"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-8": (
+                ["topico-independencia"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-8-1": (
+                ["topico-independencia", "topico-regra-do-produto"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-8-9": (
+                ["topico-probabilidade-total", "topico-teorema-de-bayes"],
+                ["conteudo-02-01"],
+            ),
+            f"{SOURCE}-sec-9-1": (
+                [
+                    "topico-variavel-aleatoria-discreta",
+                    "topico-funcao-de-probabilidade",
+                    "topico-funcao-distribuicao-acumulada",
+                    "topico-esperanca",
+                    "topico-variancia",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-sec-9-2": (
+                [
+                    "topico-variavel-aleatoria-continua",
+                    "topico-funcao-densidade",
+                    "topico-funcao-distribuicao-acumulada",
+                    "topico-esperanca",
+                    "topico-variancia",
+                ],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-sec-9-3": (
+                ["topico-esperanca", "topico-variancia"],
+                ["conteudo-02-02"],
+            ),
+            f"{SOURCE}-sec-10-1": (
+                ["topico-distribuicao-binomial"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-sec-10-2": (
+                ["topico-distribuicao-poisson"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-sec-17-7": (
+                ["topico-distribuicao-normal", "topico-padronizacao"],
+                ["conteudo-02-04"],
+            ),
+        },
+    )
     return finalize_source(SOURCE, nodes)

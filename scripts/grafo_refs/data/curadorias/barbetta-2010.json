@@ -482,9 +482,15 @@
     "pagina_pdf_inicio": 94,
     "pagina_pdf_fim": 96,
     "pai": "barbetta-2010-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-experimento-aleatorio",
+      "topico-espaco-amostral",
+      "topico-evento"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "barbetta-2010-sec-4-2",
@@ -494,9 +500,14 @@
     "pagina_pdf_inicio": 97,
     "pagina_pdf_fim": 102,
     "pai": "barbetta-2010-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-evento",
+      "topico-regra-da-adicao"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "barbetta-2010-sec-4-3",
@@ -506,9 +517,15 @@
     "pagina_pdf_inicio": 103,
     "pagina_pdf_fim": 110,
     "pai": "barbetta-2010-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional",
+      "topico-regra-do-produto",
+      "topico-independencia"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "barbetta-2010-sec-4-4",
@@ -518,9 +535,13 @@
     "pagina_pdf_inicio": 111,
     "pagina_pdf_fim": 112,
     "pai": "barbetta-2010-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-total"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "barbetta-2010-sec-4-5",
@@ -530,9 +551,13 @@
     "pagina_pdf_inicio": 113,
     "pagina_pdf_fim": 116,
     "pai": "barbetta-2010-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-teorema-de-bayes"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "barbetta-2010-sec-5-1",
@@ -542,9 +567,17 @@
     "pagina_pdf_inicio": 117,
     "pagina_pdf_fim": 126,
     "pai": "barbetta-2010-cap-5",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-discreta",
+      "topico-funcao-de-probabilidade",
+      "topico-funcao-distribuicao-acumulada",
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "barbetta-2010-sec-5-2",
@@ -566,9 +599,17 @@
     "pagina_pdf_inicio": 141,
     "pagina_pdf_fim": 147,
     "pai": "barbetta-2010-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-continua",
+      "topico-funcao-densidade",
+      "topico-funcao-distribuicao-acumulada",
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "barbetta-2010-sec-6-2",
@@ -578,9 +619,16 @@
     "pagina_pdf_inicio": 148,
     "pagina_pdf_fim": 159,
     "pai": "barbetta-2010-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-uniforme",
+      "topico-distribuicao-exponencial",
+      "topico-distribuicao-normal",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "barbetta-2010-sec-6-3",
@@ -602,9 +650,15 @@
     "pagina_pdf_inicio": 165,
     "pagina_pdf_fim": 169,
     "pai": "barbetta-2010-cap-6",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-grafico-qq",
+      "topico-diagnostico-do-modelo"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "barbetta-2010-sec-7-1",
@@ -1031,6 +1085,144 @@
     ],
     "conteudos": [
       "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-5-1",
+    "tipo": "exercicio",
+    "numero_impresso": "1",
+    "pagina_pdf": 126,
+    "pai": "barbetta-2010-sec-5-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-discreta",
+      "topico-funcao-de-probabilidade"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-5-7",
+    "tipo": "exercicio",
+    "numero_impresso": "7",
+    "pagina_pdf": 132,
+    "pai": "barbetta-2010-sec-5-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-binomial"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-5-11",
+    "tipo": "exercicio",
+    "numero_impresso": "11",
+    "pagina_pdf": 137,
+    "pai": "barbetta-2010-sec-5-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-6-1",
+    "tipo": "exercicio",
+    "numero_impresso": "1",
+    "pagina_pdf": 147,
+    "pai": "barbetta-2010-sec-6-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-continua",
+      "topico-funcao-densidade",
+      "topico-funcao-distribuicao-acumulada",
+      "topico-esperanca",
+      "topico-variancia",
+      "topico-distribuicao-uniforme"
+    ],
+    "conteudos": [
+      "conteudo-02-02",
+      "conteudo-02-04"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-6-2",
+    "tipo": "exercicio",
+    "numero_impresso": "2",
+    "pagina_pdf": 147,
+    "pai": "barbetta-2010-sec-6-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-funcao-densidade",
+      "topico-distribuicao-uniforme",
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-6-6",
+    "tipo": "exercicio",
+    "numero_impresso": "6",
+    "pagina_pdf": 153,
+    "pai": "barbetta-2010-sec-6-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-exponencial"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-6-8",
+    "tipo": "exercicio",
+    "numero_impresso": "8",
+    "pagina_pdf": 159,
+    "pai": "barbetta-2010-sec-6-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-6-13",
+    "tipo": "exercicio",
+    "numero_impresso": "13",
+    "pagina_pdf": 167,
+    "pai": "barbetta-2010-cap-6",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-exponencial"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-6-17",
+    "tipo": "exercicio",
+    "numero_impresso": "17",
+    "pagina_pdf": 168,
+    "pai": "barbetta-2010-cap-6",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
     ]
   }
 ]

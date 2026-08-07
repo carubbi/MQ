@@ -2,6 +2,7 @@
 
 from scripts.grafo_refs.build_graph import REPOSITORY_ROOT
 from scripts.grafo_refs.curation.common import (
+    apply_curricular_mappings,
     extract_sequential_numbered_items,
     item,
     load_extraction,
@@ -107,4 +108,29 @@ def build_nodes() -> list[dict]:
                 pertinence="indireta",
             )
         )
+    apply_curricular_mappings(
+        nodes,
+        {
+            f"{SOURCE}-sec-5-1-1": (
+                ["topico-distribuicao-binomial"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-sec-5-1-2": (
+                ["topico-distribuicao-poisson"],
+                ["conteudo-02-03"],
+            ),
+            f"{SOURCE}-sec-5-2-1": (
+                ["topico-distribuicao-normal", "topico-padronizacao"],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-sec-5-2-2": (
+                ["topico-distribuicao-exponencial"],
+                ["conteudo-02-04"],
+            ),
+            f"{SOURCE}-sec-5-2-4": (
+                ["topico-distribuicao-uniforme"],
+                ["conteudo-02-04"],
+            ),
+        },
+    )
     return finalize_source(SOURCE, nodes)

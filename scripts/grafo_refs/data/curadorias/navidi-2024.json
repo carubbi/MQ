@@ -196,9 +196,16 @@
     "pagina_pdf_inicio": 70,
     "pagina_pdf_fim": 83,
     "pai": "navidi-2024-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-experimento-aleatorio",
+      "topico-espaco-amostral",
+      "topico-evento",
+      "topico-regra-da-adicao"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "navidi-2024-sec-2-2",
@@ -220,9 +227,17 @@
     "pagina_pdf_inicio": 91,
     "pagina_pdf_fim": 111,
     "pai": "navidi-2024-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-probabilidade-condicional",
+      "topico-regra-do-produto",
+      "topico-independencia",
+      "topico-probabilidade-total",
+      "topico-teorema-de-bayes"
+    ],
+    "conteudos": [
+      "conteudo-02-01"
+    ]
   },
   {
     "id": "navidi-2024-sec-2-4",
@@ -232,9 +247,19 @@
     "pagina_pdf_inicio": 112,
     "pagina_pdf_fim": 137,
     "pai": "navidi-2024-cap-2",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-variavel-aleatoria-discreta",
+      "topico-variavel-aleatoria-continua",
+      "topico-funcao-de-probabilidade",
+      "topico-funcao-densidade",
+      "topico-funcao-distribuicao-acumulada",
+      "topico-esperanca",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-02-02"
+    ]
   },
   {
     "id": "navidi-2024-sec-2-5",
@@ -352,9 +377,13 @@
     "pagina_pdf_inicio": 225,
     "pagina_pdf_fim": 236,
     "pai": "navidi-2024-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-binomial"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "navidi-2024-sec-4-3",
@@ -364,9 +393,13 @@
     "pagina_pdf_inicio": 237,
     "pagina_pdf_fim": 251,
     "pai": "navidi-2024-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-poisson"
+    ],
+    "conteudos": [
+      "conteudo-02-03"
+    ]
   },
   {
     "id": "navidi-2024-sec-4-4",
@@ -388,9 +421,14 @@
     "pagina_pdf_inicio": 263,
     "pagina_pdf_fim": 277,
     "pai": "navidi-2024-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-padronizacao"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-4-6",
@@ -412,9 +450,13 @@
     "pagina_pdf_inicio": 284,
     "pagina_pdf_fim": 293,
     "pai": "navidi-2024-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-exponencial"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-4-8",
@@ -448,9 +490,15 @@
     "pagina_pdf_inicio": 307,
     "pagina_pdf_fim": 311,
     "pai": "navidi-2024-cap-4",
-    "pertinencia_t199": "indireta",
-    "topicos": [],
-    "conteudos": []
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-distribuicao-normal",
+      "topico-grafico-qq",
+      "topico-diagnostico-do-modelo"
+    ],
+    "conteudos": [
+      "conteudo-02-04"
+    ]
   },
   {
     "id": "navidi-2024-sec-4-11",
