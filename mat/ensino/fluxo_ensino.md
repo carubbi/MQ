@@ -99,7 +99,7 @@ Os três acompanhamentos verificam, progressivamente:
 - distribuições amostrais da média e da proporção;
 - estimação pontual e intervalar;
 - erro-padrão e margem de erro;
-- testes de hipóteses para uma média e para duas proporções;
+- testes de hipóteses para uma média e para uma proporção;
 - regressão linear simples e múltipla;
 - interpretação de coeficientes e análise de resíduos.
 
