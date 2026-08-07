@@ -145,14 +145,14 @@ integradores e não introduzirão conteúdo curricular novo.
 - Resultados numéricos não serão apresentados sem contexto ou interpretação.
 - Código será incluído somente quando indispensável à explicação; a progressão
   computacional ficará no roteiro de notebook.
-- Links contextuais externos usarão o rótulo **Fonte pública** e apontarão,
+- Links contextuais externos usarão o rótulo **Link** e apontarão,
   preferencialmente, para fontes oficiais que permitam explorar o conceito em
   um caso autêntico.
 - Links para apostila, banco de questões ou outros recursos públicos da
   disciplina serão consolidados em **Materiais didáticos**, dentro de
   **Estudo e exercícios**, com intervalos de seções ou páginas que cubram os
   itens usados. Esses links não serão repetidos nos blocos conceituais.
-- O rótulo **Fonte pública** será inserido apenas nos blocos conceituais em que
+- O rótulo **Link** será inserido apenas nos blocos conceituais em que
   o recurso apoiar diretamente o tema; não será repetido apenas para
   uniformizar a quantidade de links.
 - Toda tabela científica ou didaticamente interpretável receberá legenda

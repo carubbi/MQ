@@ -102,7 +102,7 @@ milissegundos e `instante` registra a **posição temporal**.
 Uma linha não é automaticamente uma pessoa, um dispositivo ou um evento. Seu
 significado depende da documentação e do processo que gerou o conjunto.
 
-> **Fonte pública:** [Portal Brasileiro de Dados Abertos — conjuntos de dados e metadados](https://dados.gov.br/)
+> **Link:** [Portal Brasileiro de Dados Abertos — conjuntos de dados e metadados](https://dados.gov.br/)
 
 ---
 
@@ -131,7 +131,7 @@ ausência da medição também são informações diferentes. Por sua vez, $430$
 um valor incomum neste conjunto reduzido, mas sua validade precisa ser
 investigada antes de qualquer exclusão.
 
-> **Fonte pública:** [IBGE — Pesquisa de Pós-Enumeração do Censo 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/40418-pesquisa-de-pos-enumeracao-do-censo-demografico-2022.html)
+> **Link:** [IBGE — Pesquisa de Pós-Enumeração do Censo 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/40418-pesquisa-de-pos-enumeracao-do-censo-demografico-2022.html)
 
 ---
 
@@ -153,7 +153,7 @@ populações diferentes. Se o registro capturou todas as requisições do primei
 intervalo, ele constitui um censo dessa população restrita e, ao mesmo tempo,
 pode funcionar como uma amostra inadequada da população semanal.
 
-> **Fonte pública:** [IBGE — Censo Demográfico 2022: população-alvo e metodologia](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html)
+> **Link:** [IBGE — Censo Demográfico 2022: população-alvo e metodologia](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html)
 
 ---
 
@@ -184,7 +184,7 @@ definida, um processo de seleção justificável e um modelo compatível.
 registros observados são descritivas, enquanto generalizações sobre o
 funcionamento do serviço exigem inferência.
 
-> **Fonte pública:** [SIDRA/IBGE — tabela pública de população residente](https://sidra.ibge.gov.br/Tabela/202)
+> **Link:** [SIDRA/IBGE — tabela pública de população residente](https://sidra.ibge.gov.br/Tabela/202)
 
 ---
 
@@ -242,7 +242,7 @@ Uma amostra grande pode continuar inadequada quando:
 
 O tamanho $n$ influencia a variabilidade amostral, mas não corrige automaticamente vieses de seleção ou de medição.
 
-> **Fonte pública:** [IBGE — PNAD Contínua: amostra e representatividade](https://painel.ibge.gov.br/saibamais/)
+> **Link:** [IBGE — PNAD Contínua: amostra e representatividade](https://painel.ibge.gov.br/saibamais/)
 
 ---
 
