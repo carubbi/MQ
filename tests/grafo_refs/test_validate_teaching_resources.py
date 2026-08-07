@@ -176,6 +176,30 @@ class TeachingResourceValidatorTests(unittest.TestCase):
         self.assertIn("referência Escovedo proibida", findings)
         self.assertIn("separador editorial ausente", findings)
 
+    def test_rejects_course_dataset_in_theoretical_slides(self):
+        invalid = VALID_AULA + "\nAplicação com Palmer Penguins.\n"
+        findings = validate_resource(
+            Path("aula.md"),
+            "aula",
+            GRAPH,
+            invalid,
+        )
+        self.assertIn(
+            "conjunto didático específico em slides teóricos: Palmer Penguins",
+            findings,
+        )
+
+        roteiro = VALID_ROTEIRO + "\nDados: Palmer Penguins.\n"
+        self.assertEqual(
+            [],
+            validate_resource(
+                Path("roteiro.md"),
+                "roteiro",
+                GRAPH,
+                roteiro,
+            ),
+        )
+
     def test_rejects_broken_local_link(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "aula.md"

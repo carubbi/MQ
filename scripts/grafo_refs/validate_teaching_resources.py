@@ -41,6 +41,11 @@ TOPICS_RE = re.compile(r"^- \*\*Tópicos:\*\* (.+)$", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 FORBIDDEN_LATEX = ("\\(", "\\)", "\\[", "\\]")
 FORBIDDEN_MARKERS = ("TODO", "TBD")
+THEORETICAL_DATASET_TERMS = {
+    "palmer penguins": "Palmer Penguins",
+    "penguins_raw.csv": "penguins_raw.csv",
+    "penguins.csv": "penguins.csv",
+}
 FORBIDDEN_MARP_RE = re.compile(
     r"^(?:marp|theme|paginate|math):\s*",
     re.MULTILINE | re.IGNORECASE,
@@ -124,6 +129,14 @@ def validate_resource(
 
     if "escovedo" in source.casefold():
         findings.append("referência Escovedo proibida")
+
+    if kind == "aula":
+        normalized_source = source.casefold()
+        for term, label in THEORETICAL_DATASET_TERMS.items():
+            if term in normalized_source:
+                findings.append(
+                    f"conjunto didático específico em slides teóricos: {label}"
+                )
 
     findings.extend(_broken_links(path, source))
     return findings
