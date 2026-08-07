@@ -63,6 +63,23 @@ Uma investigação estatística pode ser organizada em seis movimentos:
 5. analisar a variabilidade e os padrões;
 6. comunicar a conclusão e seu alcance.
 
+**Exemplo - Investigação do tempo de resposta de um serviço.** Uma equipe
+recebe relatos de lentidão e organiza a investigação:
+
+1. **Problema:** há relatos de demora no processamento de requisições.
+2. **Pergunta:** como a latência varia ao longo da semana e entre os servidores?
+3. **População, unidade e variáveis:** a população reúne as requisições da
+   semana; cada requisição é uma unidade; instante, servidor, latência e status
+   são as variáveis.
+4. **Obtenção dos dados:** definir períodos de observação, registrar o processo
+   de seleção e documentar falhas ou valores ausentes.
+5. **Análise:** descrever as latências observadas e verificar diferenças entre
+   períodos e servidores, sem atribuir causalidade automaticamente.
+6. **Conclusão:** responder à pergunta somente para o alcance sustentado pelos
+   registros e declarar as limitações da coleta.
+
+Fonte: adaptado de Barbetta, Bornia e Reis (2010, seções 1.1–1.4).
+
 > **Material da disciplina:** [Banco de questões, questões 1, 4 e 5, pp. 7–8](../apostila/banco_questoes_provas_2026_2.pdf#page=7)
 
 ---

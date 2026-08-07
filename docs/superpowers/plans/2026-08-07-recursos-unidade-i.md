@@ -502,6 +502,9 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
   Markdown line as the caption;
 - presentation of the reduced data and a short observation question before
   the corresponding definitions;
+- a worked example mapping the six movements of a statistical investigation
+  to the recurring server-request context, adapted from Barbetta, sections
+  1.1–1.4;
 - sequential captions immediately after each scientific or didactically
   interpretable table, using the approved `**Tabela X - Descrição curta.**`
   pattern without revealing an answer the student must still construct;
