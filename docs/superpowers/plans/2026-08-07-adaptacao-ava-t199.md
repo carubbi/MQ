@@ -171,14 +171,14 @@ for path in paths:
     assert "<html" not in source and "<body" not in source
 print("identidade e plano de T199: OK")
 PY
-for path in \
+for ava_file in \
   prof/AVA/apres.html \
   prof/AVA/visao_geral.html \
   prof/AVA/plan_ensino.html \
   prof/AVA/pre-req.html \
   prof/AVA/motivacao.html
 do
-  git diff --check --no-index /dev/null "$path" >/dev/null || test $? -eq 1
+  git diff --check --no-index /dev/null "$ava_file" >/dev/null || test $? -eq 1
 done
 ```
 
