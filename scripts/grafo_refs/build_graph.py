@@ -55,7 +55,7 @@ def build_graph(generated_on: str, curated_dir: Path) -> dict:
     sources = inventory_sources(DATA_DIRECTORY / "fontes.json", REPOSITORY_ROOT)
     source_nodes = [{"id": source["id"], "tipo": "fonte", **{key: value for key, value in source.items() if key != "id"}} for source in sources]
     contents = _read_json(DATA_DIRECTORY / "conteudos_t199.json")
-    topics = _read_json(DATA_DIRECTORY / "topicos_unidade_i.json")
+    topics = _read_json(DATA_DIRECTORY / "topicos_t199.json")
     curated_nodes, curated_edges = _load_curated_sources(curated_dir)
     nodes = source_nodes + contents + topics + curated_nodes
 

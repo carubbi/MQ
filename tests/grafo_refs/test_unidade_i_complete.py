@@ -7,7 +7,7 @@ from scripts.grafo_refs.build_graph import (
     REPOSITORY_ROOT,
     build_graph,
 )
-from scripts.grafo_refs.curate_unidade_i import extract_sequential_numbered_items
+from scripts.grafo_refs.curation.common import extract_sequential_numbered_items
 from scripts.grafo_refs.extract_pdf import extract_pdf
 from scripts.grafo_refs.query_graph import query_by_content
 

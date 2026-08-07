@@ -4,13 +4,44 @@ import unittest
 from pathlib import Path
 
 from scripts.grafo_refs.build_graph import build_graph, write_graph
+from scripts.grafo_refs.curate_grafo import build_curations
 
 
 COMPLETED = ["01.01", "01.02", "01.03", "01.04"]
 PENDING = ["02.01", "02.02", "02.03", "02.04", "03.01", "03.02", "03.03", "03.04"]
+TOPICS_PATH = (
+    Path(__file__).resolve().parents[2]
+    / "scripts/grafo_refs/data/topicos_t199.json"
+)
 
 
 class BuildGraphTests(unittest.TestCase):
+    def test_integral_topic_vocabulary_has_unique_ids(self):
+        """Catches a partial vocabulary or colliding topic identifiers."""
+        topics = json.loads(TOPICS_PATH.read_text(encoding="utf-8"))
+        ids = [topic["id"] for topic in topics]
+
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertIn("topico-probabilidade-condicional", ids)
+        self.assertIn("topico-intervalo-de-confianca", ids)
+        self.assertIn("topico-regressao-linear-multipla", ids)
+
+    def test_general_curator_aggregates_only_the_eight_legacy_sources(self):
+        """Catches accidental loss or expansion of the legacy source set."""
+        self.assertEqual(
+            set(build_curations()),
+            {
+                "apostila-mq",
+                "banco-questoes-2026-2",
+                "barbetta-2010",
+                "estatistica-pratica-cd",
+                "montgomery-2018",
+                "morettin-bussab-2010",
+                "navidi-2024",
+                "pinheiro-2009",
+            },
+        )
+
     def test_builds_the_declared_partial_coverage_deterministically(self):
         """Catches a build that changes coverage, inventory, or ordering."""
         with tempfile.TemporaryDirectory() as temporary_directory:

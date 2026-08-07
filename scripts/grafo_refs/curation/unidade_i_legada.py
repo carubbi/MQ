@@ -1,116 +1,25 @@
-"""Gera as curadorias verificadas do subgrafo da Unidade I."""
+"""Preserva as oito curadorias verificadas da Unidade I."""
 
-import argparse
 import json
-import re
-from pathlib import Path
 
 from scripts.grafo_refs.build_graph import (
-    DEFAULT_CURATED_DIRECTORY,
     REPOSITORY_ROOT,
+)
+from scripts.grafo_refs.curation.common import (
+    chapter as make_chapter,
+    extract_sequential_numbered_items,
+    item,
+    section,
 )
 
 
 EXTRACTION_DIRECTORY = REPOSITORY_ROOT / "tmp/grafo_refs"
 
 
-def extract_sequential_numbered_items(
-    extracted: dict,
-    *,
-    start_page: int,
-    end_page: int,
-    first_number: int,
-    last_number: int,
-) -> list[tuple[int, int]]:
-    """Localiza uma sequência editorial e ignora números internos às questões."""
-    expected = first_number
-    items = []
-    pattern = re.compile(r"(?m)^\s*(\d{1,4})\.\s")
-    for page in extracted["paginas"]:
-        page_number = page["pagina_pdf"]
-        if not start_page <= page_number <= end_page:
-            continue
-        for match in pattern.finditer(page["texto"]):
-            number = int(match.group(1))
-            if number == expected:
-                items.append((number, page_number))
-                expected += 1
-                if expected > last_number:
-                    return items
-    raise ValueError(
-        f"sequência incompleta: esperado {expected}, limite {last_number}"
-    )
-
-
-def _chapter(
-    source: str,
-    number: str,
-    title: str,
-    start: int,
-    end: int,
-) -> dict:
-    return {
-        "id": f"{source}-cap-{number.replace('.', '-')}",
-        "tipo": "capitulo",
-        "numero_impresso": number,
-        "titulo": title,
-        "pagina_pdf_inicio": start,
-        "pagina_pdf_fim": end,
-        "pai": source,
-    }
-
-
-def _section(
-    source: str,
-    number: str,
-    title: str,
-    start: int,
-    end: int,
-    parent: str,
-    topics: list[str],
-    contents: list[str],
-) -> dict:
-    return {
-        "id": f"{source}-sec-{number.replace('.', '-')}",
-        "tipo": "secao",
-        "numero_impresso": number,
-        "titulo": title.replace("\x00", "").strip(),
-        "pagina_pdf_inicio": start,
-        "pagina_pdf_fim": end,
-        "pai": parent,
-        "pertinencia_t199": "direta",
-        "topicos": topics,
-        "conteudos": contents,
-    }
-
-
-def _item(
-    source: str,
-    number: str,
-    page: int,
-    parent: str,
-    topics: list[str],
-    contents: list[str],
-    *,
-    subtype: str = "questao",
-) -> dict:
-    stable_number = number.lower().replace(".", "-").replace("_", "-")
-    return {
-        "id": f"{source}-{subtype}-{stable_number}",
-        "tipo": subtype,
-        "numero_impresso": number,
-        "pagina_pdf": page,
-        "pai": parent,
-        "pertinencia_t199": "direta",
-        "topicos": topics,
-        "conteudos": contents,
-    }
-
-
 def _bank_curated() -> list[dict]:
     source = "banco-questoes-2026-2"
     chapter_id = f"{source}-cap-1"
-    nodes = [_chapter(source, "1", "Análise Descritiva", 7, 94)]
+    nodes = [make_chapter(source, "1", "Análise Descritiva", 7, 94)]
     sections = [
         ("1.1", "Conceitos e classificação", 7, 12,
          ["topico-investigacao-estatistica", "topico-tipos-de-variaveis"],
@@ -141,7 +50,7 @@ def _bank_curated() -> list[dict]:
     ]
     for number, title, start, end, topics, contents in sections:
         nodes.append(
-            _section(source, number, title, start, end, chapter_id, topics, contents)
+            section(source, number, title, start, end, chapter_id, topics, contents)
         )
     leaf_sections = [
         ("1.1.2", "Variáveis", 8, 10, "1.1",
@@ -173,7 +82,7 @@ def _bank_curated() -> list[dict]:
     ]
     for number, title, start, end, parent, topics, contents in leaf_sections:
         nodes.append(
-            _section(
+            section(
                 source,
                 number,
                 title,
@@ -242,7 +151,15 @@ def _bank_curated() -> list[dict]:
             topics = ["topico-assimetria"]
             contents = ["conteudo-01-03"]
         nodes.append(
-            _item(source, str(number), page, parent, topics, contents)
+            item(
+                source,
+                str(number),
+                page,
+                parent,
+                topics,
+                contents,
+                item_type="questao",
+            )
         )
     return nodes
 
@@ -260,7 +177,7 @@ def _apostila_curated() -> list[dict]:
         ("17", "Exercícios Propostos", 168, 193),
     ]
     nodes = [
-        _chapter(source, number, title, start, end)
+        make_chapter(source, number, title, start, end)
         for number, title, start, end in chapter_specs
     ]
     section_specs = [
@@ -295,7 +212,7 @@ def _apostila_curated() -> list[dict]:
     ]
     for number, title, start, end, chapter, topics, contents in section_specs:
         nodes.append(
-            _section(
+            section(
                 source,
                 number,
                 title,
@@ -332,7 +249,7 @@ def _apostila_curated() -> list[dict]:
     ]
     for number, title, start, end, parent, topics, contents in leaf_sections:
         nodes.append(
-            _section(
+            section(
                 source,
                 number,
                 title,
@@ -369,14 +286,14 @@ def _apostila_curated() -> list[dict]:
             topics = ["topico-media", "topico-mediana", "topico-variancia", "topico-desvio-padrao"]
             contents = ["conteudo-01-03"]
         nodes.append(
-            _item(
+            item(
                 source,
                 str(number),
                 page,
                 f"{source}-sec-17-1",
                 topics,
                 contents,
-                subtype="exercicio",
+                item_type="exercicio",
             )
         )
     return nodes
@@ -390,7 +307,7 @@ def _barbetta_curated() -> list[dict]:
         ("3", "Análise exploratória de dados", 51, 91),
         ("11", "Correlação e regressão", 317, 350),
     ]
-    nodes = [_chapter(source, *chapter) for chapter in chapters]
+    nodes = [make_chapter(source, *chapter) for chapter in chapters]
     sections = [
         ("1.1", "A estatística", 12, 12, "1", ["topico-investigacao-estatistica"], ["conteudo-01-01"]),
         ("1.2", "Pesquisas, dados, variabilidade e estatística", 13, 13, "1", ["topico-investigacao-estatistica", "topico-representatividade"], ["conteudo-01-01"]),
@@ -412,9 +329,9 @@ def _barbetta_curated() -> list[dict]:
         ("11.2", "Coeficiente de correlação linear de Pearson", 319, 324, "11", ["topico-correlacao-linear", "topico-covariancia"], ["conteudo-01-04"]),
     ]
     for number, title, start, end, chapter, topics, contents in sections:
-        nodes.append(_section(source, number, title, start, end, f"{source}-cap-{chapter}", topics, contents))
+        nodes.append(section(source, number, title, start, end, f"{source}-cap-{chapter}", topics, contents))
     nodes.extend([
-        _section(
+        section(
             source,
             "2.2.1",
             "Procedimentos de amostragem",
@@ -424,7 +341,7 @@ def _barbetta_curated() -> list[dict]:
             ["topico-amostragem", "topico-representatividade"],
             ["conteudo-01-01"],
         ),
-        _section(
+        section(
             source,
             "2.2.2",
             "Tamanho da amostra",
@@ -436,10 +353,10 @@ def _barbetta_curated() -> list[dict]:
         ),
     ])
     nodes.extend([
-        _item(source, "1.2", 23, f"{source}-cap-1", ["topico-populacao", "topico-amostra", "topico-amostragem"], ["conteudo-01-01"], subtype="exercicio"),
-        _item(source, "2.7", 34, f"{source}-cap-2", ["topico-amostragem", "topico-representatividade"], ["conteudo-01-01"], subtype="exercicio"),
-        _item(source, "3.4", 87, f"{source}-cap-3", ["topico-media", "topico-desvio-padrao", "topico-frequencia"], ["conteudo-01-03"], subtype="exercicio"),
-        _item(source, "3.8", 88, f"{source}-cap-3", ["topico-tipos-de-variaveis", "topico-frequencia", "topico-grafico"], ["conteudo-01-02"], subtype="exercicio"),
+        item(source, "1.2", 23, f"{source}-cap-1", ["topico-populacao", "topico-amostra", "topico-amostragem"], ["conteudo-01-01"], item_type="exercicio"),
+        item(source, "2.7", 34, f"{source}-cap-2", ["topico-amostragem", "topico-representatividade"], ["conteudo-01-01"], item_type="exercicio"),
+        item(source, "3.4", 87, f"{source}-cap-3", ["topico-media", "topico-desvio-padrao", "topico-frequencia"], ["conteudo-01-03"], item_type="exercicio"),
+        item(source, "3.8", 88, f"{source}-cap-3", ["topico-tipos-de-variaveis", "topico-frequencia", "topico-grafico"], ["conteudo-01-02"], item_type="exercicio"),
     ])
     return nodes
 
@@ -452,7 +369,7 @@ def _morettin_curated() -> list[dict]:
         ("3", "Medidas-resumo", 52, 84),
         ("4", "Análise bidimensional", 85, 119),
     ]
-    nodes = [_chapter(source, *chapter) for chapter in chapters]
+    nodes = [make_chapter(source, *chapter) for chapter in chapters]
     sections = [
         ("1.1", "Introdução", 18, 18, "1", ["topico-investigacao-estatistica"], ["conteudo-01-01"]),
         ("1.2", "Modelos", 18, 18, "1", ["topico-estatistica-descritiva", "topico-estatistica-inferencial"], ["conteudo-01-01"]),
@@ -484,9 +401,9 @@ def _morettin_curated() -> list[dict]:
         ("4.9", "Problemas e complementos", 111, 119, "4", ["topico-associacao", "topico-correlacao-linear"], ["conteudo-01-04"]),
     ]
     for number, title, start, end, chapter, topics, contents in sections:
-        nodes.append(_section(source, number, title, start, end, f"{source}-cap-{chapter}", topics, contents))
+        nodes.append(section(source, number, title, start, end, f"{source}-cap-{chapter}", topics, contents))
     nodes.extend([
-        _section(
+        section(
             source,
             "2.3.1",
             "Gráficos para variáveis qualitativas",
@@ -496,7 +413,7 @@ def _morettin_curated() -> list[dict]:
             ["topico-grafico", "topico-tipos-de-variaveis"],
             ["conteudo-01-02"],
         ),
-        _section(
+        section(
             source,
             "2.3.2",
             "Gráficos para variáveis quantitativas",
@@ -513,8 +430,8 @@ def _morettin_curated() -> list[dict]:
 def _pinheiro_curated() -> list[dict]:
     source = "pinheiro-2009"
     nodes = [
-        _chapter(source, "1", "Análise exploratória para uma variável", 20, 59),
-        _chapter(source, "2", "Estudando a relação entre duas variáveis", 60, 91),
+        make_chapter(source, "1", "Análise exploratória para uma variável", 20, 59),
+        make_chapter(source, "2", "Estudando a relação entre duas variáveis", 60, 91),
     ]
     sections = [
         ("1.1", "Introdução", 20, 21, "1", ["topico-estatistica-descritiva"], ["conteudo-01-01"]),
@@ -530,7 +447,7 @@ def _pinheiro_curated() -> list[dict]:
         ("2.2", "Correlação entre variáveis quantitativas", 66, 71, "2", ["topico-covariancia", "topico-correlacao-linear"], ["conteudo-01-04"]),
     ]
     for number, title, start, end, chapter, topics, contents in sections:
-        nodes.append(_section(source, number, title, start, end, f"{source}-cap-{chapter}", topics, contents))
+        nodes.append(section(source, number, title, start, end, f"{source}-cap-{chapter}", topics, contents))
     selected = [
         ("1.4_P", 55, "1", ["topico-intervalo-interquartil", "topico-valor-discrepante"], ["conteudo-01-03"]),
         ("1.5_P", 55, "1", ["topico-frequencia", "topico-grafico"], ["conteudo-01-02"]),
@@ -541,14 +458,14 @@ def _pinheiro_curated() -> list[dict]:
         ("2.7_P", 85, "2", ["topico-correlacao-linear", "topico-associacao"], ["conteudo-01-04"]),
     ]
     for number, page, chapter, topics, contents in selected:
-        nodes.append(_item(source, number, page, f"{source}-cap-{chapter}", topics, contents, subtype="exercicio"))
+        nodes.append(item(source, number, page, f"{source}-cap-{chapter}", topics, contents, item_type="exercicio"))
     return nodes
 
 
 def _bruce_curated() -> list[dict]:
     source = "estatistica-pratica-cd"
     chapter_id = f"{source}-cap-1"
-    nodes = [_chapter(source, "1", "Análise Exploratória de Dados", 22, 70)]
+    nodes = [make_chapter(source, "1", "Análise Exploratória de Dados", 22, 70)]
     sections = [
         ("1.1", "Elementos de dados estruturados", 23, 26, ["topico-tipos-de-variaveis", "topico-unidade-de-analise"], ["conteudo-01-02"]),
         ("1.2", "Dados retangulares", 27, 28, ["topico-tabela", "topico-importacao-de-dados"], ["conteudo-01-02"]),
@@ -562,15 +479,15 @@ def _bruce_curated() -> list[dict]:
         ("1.10", "Explorando duas ou mais variáveis", 61, 69, ["topico-tabela-de-contingencia", "topico-associacao", "topico-grafico"], ["conteudo-01-04"]),
     ]
     for number, title, start, end, topics, contents in sections:
-        nodes.append(_section(source, number, title, start, end, chapter_id, topics, contents))
+        nodes.append(section(source, number, title, start, end, chapter_id, topics, contents))
     return nodes
 
 
 def _montgomery_curated() -> list[dict]:
     source = "montgomery-2018"
     nodes = [
-        _chapter(source, "1", "The Role of Statistics in Engineering", 19, 34),
-        _chapter(source, "6", "Descriptive Statistics", 144, 161),
+        make_chapter(source, "1", "The Role of Statistics in Engineering", 19, 34),
+        make_chapter(source, "6", "Descriptive Statistics", 144, 161),
     ]
     sections = [
         ("1.1", "The Engineering Method and Statistical Thinking", 20, 23, "1", ["topico-investigacao-estatistica", "topico-populacao", "topico-amostra"], ["conteudo-01-01"]),
@@ -584,7 +501,7 @@ def _montgomery_curated() -> list[dict]:
         ("6.6", "Scatter Diagrams", 160, 161, "6", ["topico-grafico", "topico-associacao"], ["conteudo-01-04"]),
     ]
     for number, title, start, end, chapter, topics, contents in sections:
-        nodes.append(_section(source, number, title, start, end, f"{source}-cap-{chapter}", topics, contents))
+        nodes.append(section(source, number, title, start, end, f"{source}-cap-{chapter}", topics, contents))
     leaf_sections = [
         ("1.1.1", "Variability", 21, 22, "1.1",
          ["topico-investigacao-estatistica"], ["conteudo-01-01"]),
@@ -603,7 +520,7 @@ def _montgomery_curated() -> list[dict]:
     ]
     for number, title, start, end, parent, topics, contents in leaf_sections:
         nodes.append(
-            _section(
+            section(
                 source,
                 number,
                 title,
@@ -620,7 +537,7 @@ def _montgomery_curated() -> list[dict]:
 def _navidi_curated() -> list[dict]:
     source = "navidi-2024"
     chapter_id = f"{source}-cap-1"
-    nodes = [_chapter(source, "1", "Sampling and Descriptive Statistics", 23, 69)]
+    nodes = [make_chapter(source, "1", "Sampling and Descriptive Statistics", 23, 69)]
     sections = [
         ("1.0", "Introduction", 23, 24, ["topico-investigacao-estatistica"], ["conteudo-01-01"]),
         ("1.1", "Sampling", 25, 34, ["topico-populacao", "topico-amostra", "topico-amostragem", "topico-representatividade"], ["conteudo-01-01"]),
@@ -628,7 +545,7 @@ def _navidi_curated() -> list[dict]:
         ("1.3", "Graphical Summaries", 47, 69, ["topico-frequencia", "topico-grafico", "topico-boxplot", "topico-associacao"], ["conteudo-01-02", "conteudo-01-03", "conteudo-01-04"]),
     ]
     for number, title, start, end, topics, contents in sections:
-        nodes.append(_section(source, number, title, start, end, chapter_id, topics, contents))
+        nodes.append(section(source, number, title, start, end, chapter_id, topics, contents))
     return nodes
 
 
@@ -644,30 +561,3 @@ def build_curations() -> dict[str, list[dict]]:
         "navidi-2024": _navidi_curated(),
         "pinheiro-2009": _pinheiro_curated(),
     }
-
-
-def write_curations(output_directory: Path = DEFAULT_CURATED_DIRECTORY) -> None:
-    """Escreve curadorias determinísticas em UTF-8."""
-    output_directory.mkdir(parents=True, exist_ok=True)
-    for source_id, nodes in build_curations().items():
-        (output_directory / f"{source_id}.json").write_text(
-            json.dumps(nodes, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Gera as curadorias da Unidade I."
-    )
-    parser.add_argument(
-        "--output-directory",
-        type=Path,
-        default=DEFAULT_CURATED_DIRECTORY,
-    )
-    arguments = parser.parse_args()
-    write_curations(arguments.output_directory)
-
-
-if __name__ == "__main__":
-    main()
