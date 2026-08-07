@@ -149,10 +149,12 @@ integradores e não introduzirão conteúdo curricular novo.
   preferencialmente, para fontes oficiais que permitam explorar o conceito em
   um caso autêntico.
 - Links para apostila, banco de questões ou outros recursos públicos da
-  disciplina usarão o rótulo **Material da disciplina**.
-- Esses rótulos serão inseridos apenas nos blocos conceituais em que o recurso
-  apoiar diretamente o tema; não serão repetidos em título, síntese ou
-  referências apenas para uniformizar a quantidade de links.
+  disciplina serão consolidados em **Materiais públicos**, dentro de
+  **Estudo e exercícios**, com intervalos de seções ou páginas que cubram os
+  itens usados. Esses links não serão repetidos nos blocos conceituais.
+- O rótulo **Fonte pública** será inserido apenas nos blocos conceituais em que
+  o recurso apoiar diretamente o tema; não será repetido apenas para
+  uniformizar a quantidade de links.
 - Toda tabela científica ou didaticamente interpretável receberá legenda
   imediatamente depois do artefato, no padrão
   `**Tabela X - Descrição curta.** Descrição e interpretação específicas.` A

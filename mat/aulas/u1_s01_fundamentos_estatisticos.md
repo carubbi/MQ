@@ -80,8 +80,6 @@ recebe relatos de lentidão e organiza a investigação:
 
 Fonte: adaptado de Barbetta, Bornia e Reis (2010, seções 1.1–1.4).
 
-> **Material da disciplina:** [Banco de questões, questões 1, 4 e 5, pp. 7–8](../apostila/banco_questoes_provas_2026_2.pdf#page=7)
-
 ---
 
 ### Fonte, registro e unidade de análise
@@ -102,8 +100,6 @@ Uma linha não é automaticamente uma pessoa, um dispositivo ou um evento. Seu
 significado depende da documentação e do processo que gerou o conjunto.
 
 > **Fonte pública:** [Portal Brasileiro de Dados Abertos — conjuntos de dados e metadados](https://dados.gov.br/)
->
-> **Material da disciplina:** [Apostila, conceitos fundamentais, pp. 9–10](../apostila/apostila_mq.pdf#page=9)
 
 ---
 
@@ -133,8 +129,6 @@ um valor incomum neste conjunto reduzido, mas sua validade precisa ser
 investigada antes de qualquer exclusão.
 
 > **Fonte pública:** [IBGE — Pesquisa de Pós-Enumeração do Censo 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/40418-pesquisa-de-pos-enumeracao-do-censo-demografico-2022.html)
->
-> **Material da disciplina:** [Banco de questões, atividade de medição, p. 10](../apostila/banco_questoes_provas_2026_2.pdf#page=10)
 
 ---
 
@@ -157,8 +151,6 @@ intervalo, ele constitui um censo dessa população restrita e, ao mesmo tempo,
 pode funcionar como uma amostra inadequada da população semanal.
 
 > **Fonte pública:** [IBGE — Censo Demográfico 2022: população-alvo e metodologia](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html)
->
-> **Material da disciplina:** [Apostila, população e amostra, pp. 8–9](../apostila/apostila_mq.pdf#page=8)
 
 ---
 
@@ -190,8 +182,6 @@ registros observados são descritivas, enquanto generalizações sobre o
 funcionamento do serviço exigem inferência.
 
 > **Fonte pública:** [SIDRA/IBGE — tabela pública de população residente](https://sidra.ibge.gov.br/Tabela/202)
->
-> **Material da disciplina:** [Banco de questões, questões 2 e 6, pp. 7–8](../apostila/banco_questoes_provas_2026_2.pdf#page=7)
 
 ---
 
@@ -250,8 +240,6 @@ Uma amostra grande pode continuar inadequada quando:
 O tamanho $n$ influencia a variabilidade amostral, mas não corrige automaticamente vieses de seleção ou de medição.
 
 > **Fonte pública:** [IBGE — PNAD Contínua: amostra e representatividade](https://painel.ibge.gov.br/saibamais/)
->
-> **Material da disciplina:** [Apostila, amostragem, p. 9](../apostila/apostila_mq.pdf#page=9)
 
 ---
 
@@ -377,7 +365,7 @@ o quadro amostral, os períodos sem requisições e a execução efetiva do sort
 ### Materiais públicos
 
 - [Apostila de Métodos Quantitativos](../apostila/apostila_mq.pdf): seções 1.1–1.3, páginas 8–10.
-- [Banco de questões e provas 2026.2](../apostila/banco_questoes_provas_2026_2.pdf): questões relacionadas aos fundamentos estatísticos.
+- [Banco de questões e provas 2026.2](../apostila/banco_questoes_provas_2026_2.pdf): seção 1.1, páginas 7–13.
 
 ### Exercícios indicados
 
