@@ -153,6 +153,11 @@ integradores e não introduzirão conteúdo curricular novo.
 - Esses rótulos serão inseridos apenas nos blocos conceituais em que o recurso
   apoiar diretamente o tema; não serão repetidos em título, síntese ou
   referências apenas para uniformizar a quantidade de links.
+- Toda tabela científica ou didaticamente interpretável receberá legenda
+  imediatamente depois do artefato, no padrão
+  `**Tabela X - Descrição curta.** Descrição e interpretação específicas.` A
+  numeração será sequencial em cada material, e a interpretação não antecipará
+  respostas que o estudante ainda deverá construir.
 - Material protegido das referências privadas não será reproduzido. Conceitos,
   exemplos e exercícios serão citados, sintetizados ou adaptados de forma
   autoral.

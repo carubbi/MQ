@@ -499,6 +499,9 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
   adapted from Barbetta, section 1.4;
 - presentation of the reduced data and a short observation question before
   the corresponding definitions;
+- sequential captions immediately after each scientific or didactically
+  interpretable table, using the approved `**Tabela X - Descrição curta.**`
+  pattern without revealing an answer the student must still construct;
 - distinction among source, observation, variable, unit of analysis, population, census, sample and sampling;
 - distinction between descriptive and inferential statistics;
 - notation $N$ for population size, $n$ for sample size, $\theta$ for a population parameter and $\widehat{\theta}$ for a statistic or estimate;

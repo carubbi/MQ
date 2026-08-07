@@ -38,6 +38,10 @@ O contexto foi adaptado de Barbetta et al., seção 1.4; os dados são sintétic
 | `R04` | 10:03 | B | 105 | sucesso |
 | `R05` | 10:04 | A | ausente | falha |
 
+**Tabela 1 - Registros sintéticos de requisições.** Os cinco registros reúnem
+instante, servidor, latência e status; quatro latências são numéricas e uma
+está ausente.
+
 > O que representa cada linha e o que foi registrado sobre ela?
 
 O conjunto será retomado progressivamente. A tabela, sozinha, não informa se
@@ -166,6 +170,10 @@ definida, um processo de seleção justificável e um modelo compatível.
 | Qual é a latência típica de todas as requisições da semana? | Inferencial |
 | Quantos dos cinco registros têm status de sucesso? | Descritiva |
 | A taxa usual de sucesso do serviço é superior a 90%? | Inferencial |
+
+**Tabela 2 - Perguntas descritivas e inferenciais.** Perguntas restritas aos
+registros observados são descritivas, enquanto generalizações sobre o
+funcionamento do serviço exigem inferência.
 
 > **Fonte pública:** [SIDRA/IBGE — tabela pública de população residente](https://sidra.ibge.gov.br/Tabela/202)
 >
