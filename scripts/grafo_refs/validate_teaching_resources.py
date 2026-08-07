@@ -27,13 +27,12 @@ ROTEIRO_HEADINGS = (
     "## 3. Contexto e pergunta-problema",
     "## 4. Preparação conceitual",
     "## 5. Dados, entradas e dependências",
-    "## 6. Antecipação conceitual antes do cálculo ou da execução",
-    "## 8. Sequência funcional do futuro notebook",
-    "## 9. Verificação e contraste",
-    "## 10. Evidência de aprendizagem",
-    "## 11. Síntese e limitações",
-    "## 12. Estudo, exercícios e referências",
-    "## 13. Critérios para implementação futura",
+    "## 7. Sequência funcional do futuro notebook",
+    "## 8. Verificação e contraste",
+    "## 9. Evidência de aprendizagem",
+    "## 10. Síntese e limitações",
+    "## 11. Estudo, exercícios e referências",
+    "## 12. Critérios para implementação futura",
 )
 
 CONTENT_RE = re.compile(r"\b\d{2}\.\d{2}\b")
@@ -48,6 +47,10 @@ THEORETICAL_DATASET_TERMS = {
 }
 FORBIDDEN_MARP_RE = re.compile(
     r"^(?:marp|theme|paginate|math):\s*",
+    re.MULTILINE | re.IGNORECASE,
+)
+FORMAL_ANTICIPATION_RE = re.compile(
+    r"^##\s+(?:\d+\.\s+)?Antecipação\b",
     re.MULTILINE | re.IGNORECASE,
 )
 
@@ -99,6 +102,8 @@ def validate_resource(
         findings.append("separador editorial ausente")
     if kind == "roteiro" and "não executável" not in source:
         findings.append("estado não executável ausente")
+    if kind == "roteiro" and FORMAL_ANTICIPATION_RE.search(source):
+        findings.append("seção formal de antecipação proibida")
     if FORBIDDEN_MARP_RE.search(source):
         findings.append("diretiva Marp proibida")
     if any(delimiter in source for delimiter in FORBIDDEN_LATEX):

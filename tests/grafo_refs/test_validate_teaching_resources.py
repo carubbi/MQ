@@ -69,25 +69,22 @@ Conceitos.
 ## 5. Dados, entradas e dependências
 Dados.
 
-## 6. Antecipação conceitual antes do cálculo ou da execução
-Antecipação justificada.
-
-## 8. Sequência funcional do futuro notebook
+## 7. Sequência funcional do futuro notebook
 Blocos funcionais.
 
-## 9. Verificação e contraste
+## 8. Verificação e contraste
 Contraste.
 
-## 10. Evidência de aprendizagem
+## 9. Evidência de aprendizagem
 Resultado e justificativa.
 
-## 11. Síntese e limitações
+## 10. Síntese e limitações
 Perguntas de fechamento.
 
-## 12. Estudo, exercícios e referências
+## 11. Estudo, exercícios e referências
 Referências.
 
-## 13. Critérios para implementação futura
+## 12. Critérios para implementação futura
 Critérios específicos.
 """
 
@@ -104,7 +101,7 @@ class TeachingResourceValidatorTests(unittest.TestCase):
             ),
         )
 
-    def test_accepts_valid_roteiro_without_conditional_section_seven(self):
+    def test_accepts_valid_roteiro_without_conditional_section_six(self):
         self.assertEqual(
             [],
             validate_resource(
@@ -148,7 +145,7 @@ class TeachingResourceValidatorTests(unittest.TestCase):
 
     def test_rejects_incomplete_sections(self):
         invalid = VALID_ROTEIRO.replace(
-            "## 10. Evidência de aprendizagem",
+            "## 9. Evidência de aprendizagem",
             "## Evidência",
         )
         findings = validate_resource(
@@ -158,9 +155,22 @@ class TeachingResourceValidatorTests(unittest.TestCase):
             invalid,
         )
         self.assertIn(
-            "seção ausente: ## 10. Evidência de aprendizagem",
+            "seção ausente: ## 9. Evidência de aprendizagem",
             findings,
         )
+
+    def test_rejects_formal_anticipation_section(self):
+        invalid = (
+            VALID_ROTEIRO
+            + "\n## 6. Antecipação conceitual antes do cálculo ou da execução\n"
+        )
+        findings = validate_resource(
+            Path("roteiro.md"),
+            "roteiro",
+            GRAPH,
+            invalid,
+        )
+        self.assertIn("seção formal de antecipação proibida", findings)
 
     def test_rejects_escovedo_and_missing_slide_separator(self):
         invalid = VALID_AULA.replace("\n---\n", "\n").replace(
