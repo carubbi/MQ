@@ -167,12 +167,18 @@ integradores e não introduzirão conteúdo curricular novo.
   `**Tabela X - Descrição curta.** Descrição e interpretação específicas.` A
   numeração será sequencial em cada material, e a interpretação não antecipará
   respostas que o estudante ainda deverá construir.
+- Toda figura receberá texto alternativo e legenda imediatamente depois do
+  artefato, no padrão `**Figura X - Descrição curta.** Interpretação específica.
+  Fonte: Autor (ano, figura).` A numeração será sequencial em cada material.
 - Quando os valores forem sintéticos e apenas o contexto vier de uma
   referência, a legenda terminará, na mesma linha Markdown, com
   `Fonte: adaptado de Autor (ano, seção).`
 - Material protegido das referências privadas não será reproduzido. Conceitos,
   exemplos e exercícios serão citados, sintetizados ou adaptados de forma
   autoral.
+- As figuras 2.1 e 2.2 de Barbetta, Bornia e Reis (2010), fornecidas em
+  `prof/notebooks/assets/imgs/`, constituem exceção explicitamente aprovada e
+  serão copiadas para `mat/aulas/assets/` com fonte declarada na legenda.
 
 ## 6. Roteiro do notebook guiado
 

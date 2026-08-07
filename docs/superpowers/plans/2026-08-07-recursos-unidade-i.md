@@ -508,6 +508,10 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 - a worked example mapping the six movements of a statistical investigation
   to the recurring server-request context, adapted from Barbetta, sections
   1.1–1.4;
+- `assets/barbetta_fig21.png` in a dedicated slide about statistical
+  investigation and `assets/barbetta_fig22.png` in a dedicated slide between
+  population, sampling and inference, both with alternative text, sequential
+  captions and explicit source;
 - sequential captions immediately after each scientific or didactically
   interpretable table, using the approved `**Tabela X - Descrição curta.**`
   pattern without revealing an answer the student must still construct;

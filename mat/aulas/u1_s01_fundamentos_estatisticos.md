@@ -85,8 +85,19 @@ Uma investigação estatística pode ser organizada em seis movimentos:
 5. analisar a **variabilidade** e os **padrões**;
 6. comunicar a **conclusão** e seu **alcance**.
 
-**Exemplo - Investigação do tempo de resposta de um serviço.** Uma equipe
-recebe relatos de lentidão e organiza a investigação:
+---
+
+### Investigação estatística como processo
+
+![Etapas de uma investigação estatística, da definição do problema às conclusões.](assets/barbetta_fig21.png)
+
+**Figura 1 - Etapas de uma investigação estatística.** As metodologias da área e estatística apoiam o processo da definição do problema às conclusões. Fonte: Barbetta, Bornia e Reis (2010, figura 2.1).
+
+---
+
+### Exemplo — investigação do tempo de resposta de um serviço
+
+Uma equipe recebe relatos de lentidão e organiza a investigação:
 
 1. **Problema:** há relatos de demora no processamento de requisições.
 2. **Pergunta:** como a latência varia ao longo da semana e entre os servidores?
@@ -174,6 +185,14 @@ intervalo, ele constitui um censo dessa população restrita e, ao mesmo tempo,
 pode funcionar como uma amostra inadequada da população semanal.
 
 > **Link:** [IBGE — Censo Demográfico 2022: população-alvo e metodologia](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html)
+
+---
+
+### Da população à inferência
+
+![Relação entre população, amostragem, amostra e inferência.](assets/barbetta_fig22.png)
+
+**Figura 2 - Relação entre população, amostra, amostragem e inferência.** A amostragem seleciona um subconjunto da população; a inferência usa a amostra para responder sobre a população, condicionada à qualidade da seleção. Fonte: Barbetta, Bornia e Reis (2010, figura 2.2).
 
 ---
 
