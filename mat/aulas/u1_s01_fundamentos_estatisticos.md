@@ -41,8 +41,7 @@ Um serviço computacional registrou cinco requisições durante cinco minutos.
 instante, servidor, latência e status; quatro latências são numéricas e uma
 está ausente.
 
-Fonte: elaboração própria, com contexto adaptado de Barbetta, Bornia e Reis
-(2010, seção 1.4).
+Fonte: elaboração própria, com base em Barbetta, Bornia e Reis (2010, seção 1.4).
 
 > O que representa cada linha e o que foi registrado sobre ela?
 
