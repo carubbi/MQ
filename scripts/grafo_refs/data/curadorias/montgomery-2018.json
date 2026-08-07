@@ -7,6 +7,8 @@
     "pagina_pdf_inicio": 19,
     "pagina_pdf_fim": 34,
     "pai": "montgomery-2018",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "montgomery-2018-cap-6"
     ]
@@ -53,8 +55,10 @@
     "numero_impresso": "6",
     "titulo": "Descriptive Statistics",
     "pagina_pdf_inicio": 144,
-    "pagina_pdf_fim": 161,
-    "pai": "montgomery-2018"
+    "pagina_pdf_fim": 165,
+    "pai": "montgomery-2018",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "montgomery-2018-cap-7",
@@ -147,9 +151,9 @@
     "pai": "montgomery-2018-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-amostra",
       "topico-investigacao-estatistica",
-      "topico-populacao",
-      "topico-amostra"
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -187,8 +191,8 @@
     "pai": "montgomery-2018-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-populacao",
-      "topico-amostra"
+      "topico-amostra",
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -839,10 +843,10 @@
     "pai": "montgomery-2018-cap-6",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -941,8 +945,8 @@
     "pai": "montgomery-2018-cap-6",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
-      "topico-associacao"
+      "topico-associacao",
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-04"
@@ -1386,7 +1390,7 @@
     "numero_impresso": "9.2",
     "titulo": "Tests on the Mean of a Normal Distribution, Variance Known",
     "pagina_pdf_inicio": 226,
-    "pagina_pdf_fim": 232,
+    "pagina_pdf_fim": 233,
     "pai": "montgomery-2018-cap-9",
     "pertinencia_t199": "indireta",
     "topicos": [],
@@ -1578,7 +1582,7 @@
     "numero_impresso": "9.9",
     "titulo": "Nonparametric Procedures",
     "pagina_pdf_inicio": 252,
-    "pagina_pdf_fim": 257,
+    "pagina_pdf_fim": 258,
     "pai": "montgomery-2018-cap-9",
     "pertinencia_t199": "indireta",
     "topicos": [],
@@ -1746,7 +1750,7 @@
     "numero_impresso": "10.3",
     "titulo": "A Nonparametric Test for the Difference in Two Means",
     "pagina_pdf_inicio": 279,
-    "pagina_pdf_fim": 281,
+    "pagina_pdf_fim": 282,
     "pai": "montgomery-2018-cap-10",
     "pertinencia_t199": "indireta",
     "topicos": [],
@@ -1806,7 +1810,7 @@
     "numero_impresso": "10.5",
     "titulo": "Inference on the Variances of Two Normal Distributions",
     "pagina_pdf_inicio": 286,
-    "pagina_pdf_fim": 290,
+    "pagina_pdf_fim": 291,
     "pai": "montgomery-2018-cap-10",
     "pertinencia_t199": "indireta",
     "topicos": [],
@@ -2718,7 +2722,7 @@
     "numero_impresso": "15.1",
     "titulo": "Quality Improvement and Statistics",
     "pagina_pdf_inicio": 453,
-    "pagina_pdf_fim": 453,
+    "pagina_pdf_fim": 454,
     "pai": "montgomery-2018-cap-15",
     "pertinencia_t199": "indireta",
     "topicos": [],

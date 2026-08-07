@@ -6,7 +6,7 @@ from scripts.grafo_refs.build_graph import REPOSITORY_ROOT
 from scripts.grafo_refs.curation.common import (
     chapter,
     load_extraction,
-    merge_published_nodes,
+    finalize_source,
     unnumbered_section,
 )
 from scripts.grafo_refs.model import slug_id
@@ -54,6 +54,7 @@ def build_nodes() -> list[dict]:
         )
 
     chapter_number = 0
+    active_major_section = None
     occurrences = Counter()
     editorial_markers = [
         marker
@@ -66,6 +67,7 @@ def build_nodes() -> list[dict]:
         title = marker["titulo"].replace("\x00", "").strip()
         if marker["nivel"] == 2:
             chapter_number += 1
+            active_major_section = None
             continue
 
         title_slug = slug_id(title)
@@ -73,6 +75,7 @@ def build_nodes() -> list[dict]:
         published_number = PUBLISHED_SECTION_NUMBERS.get(title_slug)
         if published_number:
             identifier = published_number.replace(".", "-")
+            active_major_section = f"{SOURCE}-sec-{identifier}"
         else:
             identifier = f"{chapter_number}-{title_slug}"
             if occurrences[(chapter_number, title_slug)] > 1:
@@ -86,6 +89,13 @@ def build_nodes() -> list[dict]:
                     following["pagina_pdf"] - 1,
                 )
                 break
+        parent = f"{SOURCE}-cap-{chapter_number}"
+        if (
+            chapter_number == 1
+            and not published_number
+            and active_major_section is not None
+        ):
+            parent = active_major_section
         nodes.append(
             unnumbered_section(
                 SOURCE,
@@ -93,7 +103,7 @@ def build_nodes() -> list[dict]:
                 title,
                 marker["pagina_pdf"],
                 end,
-                f"{SOURCE}-cap-{chapter_number}",
+                parent,
             )
         )
-    return merge_published_nodes(SOURCE, nodes)
+    return finalize_source(SOURCE, nodes)

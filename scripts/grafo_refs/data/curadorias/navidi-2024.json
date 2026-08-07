@@ -6,7 +6,9 @@
     "titulo": "Sampling and Descriptive Statistics",
     "pagina_pdf_inicio": 23,
     "pagina_pdf_fim": 69,
-    "pai": "navidi-2024"
+    "pai": "navidi-2024",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "navidi-2024-cap-2",
@@ -118,9 +120,9 @@
     "pai": "navidi-2024-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-populacao",
       "topico-amostra",
       "topico-amostragem",
+      "topico-populacao",
       "topico-representatividade"
     ],
     "conteudos": [
@@ -140,11 +142,11 @@
     "pai": "navidi-2024-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao",
-      "topico-quantil"
+      "topico-quantil",
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -163,10 +165,10 @@
     "pai": "navidi-2024-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-frequencia",
-      "topico-grafico",
+      "topico-associacao",
       "topico-boxplot",
-      "topico-associacao"
+      "topico-frequencia",
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",

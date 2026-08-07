@@ -1,5 +1,20 @@
 {
-  "versao": 1,
+  "versao": 2,
+  "politica_preservacao": {
+    "ids_e_tipos": "preservacao_exata",
+    "relacoes_curriculares": [
+      "aborda",
+      "corresponde_a"
+    ],
+    "estrutura_migravel_somente_por_manifesto": [
+      "pagina_pdf",
+      "pagina_pdf_inicio",
+      "pagina_pdf_fim",
+      "contem",
+      "precede"
+    ],
+    "manifesto_migracoes": "migracoes_estrutura_unidade_i.json"
+  },
   "nos": {
     "apostila-mq": {
       "tipo": "fonte"

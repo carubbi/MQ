@@ -5,8 +5,10 @@
     "numero_impresso": "1",
     "titulo": "Análise Descritiva",
     "pagina_pdf_inicio": 7,
-    "pagina_pdf_fim": 94,
-    "pai": "banco-questoes-2026-2"
+    "pagina_pdf_fim": 87,
+    "pai": "banco-questoes-2026-2",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "banco-questoes-2026-2-cap-2",
@@ -102,9 +104,9 @@
     "id": "banco-questoes-2026-2-sec-1-1",
     "tipo": "secao",
     "numero_impresso": "1.1",
-    "titulo": "Conceitos e classificação",
+    "titulo": "Conceitos e Classificação",
     "pagina_pdf_inicio": 7,
-    "pagina_pdf_fim": 12,
+    "pagina_pdf_fim": 13,
     "pai": "banco-questoes-2026-2-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
@@ -142,7 +144,7 @@
     "id": "banco-questoes-2026-2-sec-1-1-3",
     "tipo": "secao",
     "numero_impresso": "1.1.3",
-    "titulo": "Séries estatísticas: elementos e classificação",
+    "titulo": "Séries Estatísticas: Elementos e Classificação",
     "pagina_pdf_inicio": 11,
     "pagina_pdf_fim": 12,
     "pai": "banco-questoes-2026-2-sec-1-1",
@@ -162,9 +164,9 @@
     "id": "banco-questoes-2026-2-sec-1-2",
     "tipo": "secao",
     "numero_impresso": "1.2",
-    "titulo": "Tabela de dupla entrada",
+    "titulo": "Tabela de Dupla Entrada",
     "pagina_pdf_inicio": 13,
-    "pagina_pdf_fim": 14,
+    "pagina_pdf_fim": 15,
     "pai": "banco-questoes-2026-2-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
@@ -189,9 +191,9 @@
     "pai": "banco-questoes-2026-2-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -205,7 +207,7 @@
     "id": "banco-questoes-2026-2-sec-1-3-1",
     "tipo": "secao",
     "numero_impresso": "1.3.1",
-    "titulo": "Análise gráfica",
+    "titulo": "Análise Gráfica",
     "pagina_pdf_inicio": 16,
     "pagina_pdf_fim": 17,
     "pai": "banco-questoes-2026-2-sec-1-3",
@@ -225,7 +227,7 @@
     "id": "banco-questoes-2026-2-sec-1-3-2",
     "tipo": "secao",
     "numero_impresso": "1.3.2",
-    "titulo": "Gráficos especiais",
+    "titulo": "Gráficos Especiais",
     "pagina_pdf_inicio": 18,
     "pagina_pdf_fim": 33,
     "pai": "banco-questoes-2026-2-sec-1-3",
@@ -266,7 +268,7 @@
     "id": "banco-questoes-2026-2-sec-1-3-2-2",
     "tipo": "secao",
     "numero_impresso": "1.3.2.2",
-    "titulo": "Gráfico de tendência",
+    "titulo": "Gráfico de Tendência",
     "pagina_pdf_inicio": 20,
     "pagina_pdf_fim": 21,
     "pai": "banco-questoes-2026-2-sec-1-3-2",
@@ -285,7 +287,7 @@
     "id": "banco-questoes-2026-2-sec-1-3-2-3",
     "tipo": "secao",
     "numero_impresso": "1.3.2.3",
-    "titulo": "Box plot",
+    "titulo": "Box Plot",
     "pagina_pdf_inicio": 22,
     "pagina_pdf_fim": 28,
     "pai": "banco-questoes-2026-2-sec-1-3-2",
@@ -325,7 +327,7 @@
     "id": "banco-questoes-2026-2-sec-1-3-2-5",
     "tipo": "secao",
     "numero_impresso": "1.3.2.5",
-    "titulo": "Fluxo de processo",
+    "titulo": "Fluxo de Processo",
     "pagina_pdf_inicio": 33,
     "pagina_pdf_fim": 33,
     "pai": "banco-questoes-2026-2-sec-1-3-2",
@@ -341,17 +343,17 @@
     "id": "banco-questoes-2026-2-sec-2-1",
     "tipo": "secao",
     "numero_impresso": "2.1",
-    "titulo": "Medidas de posição para dados agrupados e não agrupados",
+    "titulo": "Medidas de Posição para Dados Agrupados e Não Agrupados",
     "pagina_pdf_inicio": 34,
     "pagina_pdf_fim": 73,
     "pai": "banco-questoes-2026-2-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
       "topico-moda",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -364,16 +366,16 @@
     "id": "banco-questoes-2026-2-sec-2-2",
     "tipo": "secao",
     "numero_impresso": "2.2",
-    "titulo": "Propriedades das medidas de posição e dispersão",
+    "titulo": "Propriedades das Medidas de Posição e Dispersão",
     "pagina_pdf_inicio": 74,
     "pagina_pdf_fim": 81,
     "pai": "banco-questoes-2026-2-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-media",
-      "topico-variancia",
+      "topico-coeficiente-de-variacao",
       "topico-desvio-padrao",
-      "topico-coeficiente-de-variacao"
+      "topico-media",
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -386,15 +388,15 @@
     "id": "banco-questoes-2026-2-sec-2-3",
     "tipo": "secao",
     "numero_impresso": "2.3",
-    "titulo": "Medidas separatrizes",
+    "titulo": "Medidas Separatrizes",
     "pagina_pdf_inicio": 82,
     "pagina_pdf_fim": 83,
     "pai": "banco-questoes-2026-2-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-intervalo-interquartil",
       "topico-mediana",
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -407,7 +409,7 @@
     "id": "banco-questoes-2026-2-sec-2-4",
     "tipo": "secao",
     "numero_impresso": "2.4",
-    "titulo": "Médias geométrica, harmônica, ponderada e quadrática",
+    "titulo": "Médias Geométrica, Harmônica, Ponderada e Quadrática",
     "pagina_pdf_inicio": 84,
     "pagina_pdf_fim": 87,
     "pai": "banco-questoes-2026-2-cap-1",
@@ -426,7 +428,7 @@
     "id": "banco-questoes-2026-2-sec-2-4-1",
     "tipo": "secao",
     "numero_impresso": "2.4.1",
-    "titulo": "Média geométrica",
+    "titulo": "Média Geométrica",
     "pagina_pdf_inicio": 84,
     "pagina_pdf_fim": 84,
     "pai": "banco-questoes-2026-2-sec-2-4",
@@ -445,7 +447,7 @@
     "id": "banco-questoes-2026-2-sec-2-4-2",
     "tipo": "secao",
     "numero_impresso": "2.4.2",
-    "titulo": "Média harmônica",
+    "titulo": "Média Harmônica",
     "pagina_pdf_inicio": 84,
     "pagina_pdf_fim": 84,
     "pai": "banco-questoes-2026-2-sec-2-4",
@@ -464,7 +466,7 @@
     "id": "banco-questoes-2026-2-sec-2-4-3",
     "tipo": "secao",
     "numero_impresso": "2.4.3",
-    "titulo": "Média ponderada",
+    "titulo": "Média Ponderada",
     "pagina_pdf_inicio": 85,
     "pagina_pdf_fim": 86,
     "pai": "banco-questoes-2026-2-sec-2-4",
@@ -483,7 +485,7 @@
     "id": "banco-questoes-2026-2-sec-2-4-4",
     "tipo": "secao",
     "numero_impresso": "2.4.4",
-    "titulo": "Média quadrática",
+    "titulo": "Média Quadrática",
     "pagina_pdf_inicio": 87,
     "pagina_pdf_fim": 87,
     "pai": "banco-questoes-2026-2-sec-2-4",
@@ -505,7 +507,7 @@
     "titulo": "Momentos",
     "pagina_pdf_inicio": 88,
     "pagina_pdf_fim": 88,
-    "pai": "banco-questoes-2026-2-cap-1",
+    "pai": "banco-questoes-2026-2-cap-2",
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-media",
@@ -525,7 +527,7 @@
     "titulo": "Assimetria",
     "pagina_pdf_inicio": 89,
     "pagina_pdf_fim": 91,
-    "pai": "banco-questoes-2026-2-cap-1",
+    "pai": "banco-questoes-2026-2-cap-2",
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-assimetria"
@@ -544,7 +546,7 @@
     "titulo": "Curtose",
     "pagina_pdf_inicio": 92,
     "pagina_pdf_fim": 94,
-    "pai": "banco-questoes-2026-2-cap-1",
+    "pai": "banco-questoes-2026-2-cap-2",
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-assimetria"
@@ -885,9 +887,9 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-amostra",
       "topico-investigacao-estatistica",
-      "topico-populacao",
-      "topico-amostra"
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -904,9 +906,9 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-amostra",
       "topico-investigacao-estatistica",
-      "topico-populacao",
-      "topico-amostra"
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -923,9 +925,9 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-amostra",
       "topico-investigacao-estatistica",
-      "topico-populacao",
-      "topico-amostra"
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -942,9 +944,9 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-amostra",
       "topico-investigacao-estatistica",
-      "topico-populacao",
-      "topico-amostra"
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -961,9 +963,9 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-amostra",
       "topico-investigacao-estatistica",
-      "topico-populacao",
-      "topico-amostra"
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -980,9 +982,9 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-amostra",
       "topico-investigacao-estatistica",
-      "topico-populacao",
-      "topico-amostra"
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -999,8 +1001,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1017,8 +1019,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1035,8 +1037,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1053,8 +1055,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1071,8 +1073,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1089,8 +1091,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1107,8 +1109,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1125,8 +1127,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1143,8 +1145,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1161,8 +1163,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1179,8 +1181,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1197,8 +1199,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1215,8 +1217,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1233,8 +1235,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1251,8 +1253,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1269,8 +1271,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1287,8 +1289,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1305,8 +1307,8 @@
     "pai": "banco-questoes-2026-2-sec-1-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -1320,9 +1322,9 @@
     "pai": "banco-questoes-2026-2-sec-1-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-associacao",
       "topico-tabela",
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1340,9 +1342,9 @@
     "pai": "banco-questoes-2026-2-sec-1-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-associacao",
       "topico-tabela",
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1360,9 +1362,9 @@
     "pai": "banco-questoes-2026-2-sec-1-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-associacao",
       "topico-tabela",
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1380,9 +1382,9 @@
     "pai": "banco-questoes-2026-2-sec-1-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-associacao",
       "topico-tabela",
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1400,9 +1402,9 @@
     "pai": "banco-questoes-2026-2-sec-1-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-associacao",
       "topico-tabela",
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1420,9 +1422,9 @@
     "pai": "banco-questoes-2026-2-sec-1-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-associacao",
       "topico-tabela",
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1440,9 +1442,9 @@
     "pai": "banco-questoes-2026-2-sec-1-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-associacao",
       "topico-tabela",
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1460,9 +1462,9 @@
     "pai": "banco-questoes-2026-2-sec-1-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-associacao",
       "topico-tabela",
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1477,9 +1479,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1497,9 +1499,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1517,9 +1519,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1537,9 +1539,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1557,9 +1559,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1577,9 +1579,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1597,9 +1599,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1617,9 +1619,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1637,9 +1639,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1657,9 +1659,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1677,9 +1679,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1697,9 +1699,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1717,9 +1719,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1737,9 +1739,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1757,9 +1759,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1777,9 +1779,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1797,9 +1799,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1817,9 +1819,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1837,9 +1839,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1857,9 +1859,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1877,9 +1879,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1897,9 +1899,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1917,9 +1919,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1937,9 +1939,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1957,9 +1959,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1977,9 +1979,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -1997,9 +1999,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2017,9 +2019,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2037,9 +2039,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2057,9 +2059,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2077,9 +2079,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2097,9 +2099,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2117,9 +2119,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2137,9 +2139,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2157,9 +2159,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2177,9 +2179,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2197,9 +2199,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2217,9 +2219,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2237,9 +2239,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2257,9 +2259,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2277,9 +2279,9 @@
     "pai": "banco-questoes-2026-2-sec-1-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
+      "topico-boxplot",
       "topico-frequencia",
-      "topico-boxplot"
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -2294,10 +2296,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2314,10 +2316,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2334,10 +2336,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2354,10 +2356,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2374,10 +2376,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2394,10 +2396,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2414,10 +2416,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2434,10 +2436,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2454,10 +2456,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2474,10 +2476,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2494,10 +2496,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2514,10 +2516,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2534,10 +2536,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2554,10 +2556,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2574,10 +2576,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2594,10 +2596,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2614,10 +2616,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2634,10 +2636,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2654,10 +2656,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2674,10 +2676,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2694,10 +2696,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2714,10 +2716,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2734,10 +2736,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2754,10 +2756,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2774,10 +2776,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2794,10 +2796,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2814,10 +2816,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2834,10 +2836,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2854,10 +2856,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2874,10 +2876,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2894,10 +2896,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2914,10 +2916,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2934,10 +2936,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2954,10 +2956,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2974,10 +2976,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -2994,10 +2996,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3014,10 +3016,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3034,10 +3036,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3054,10 +3056,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3074,10 +3076,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3094,10 +3096,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3114,10 +3116,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3134,10 +3136,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3154,10 +3156,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3174,10 +3176,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3194,10 +3196,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3214,10 +3216,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3234,10 +3236,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3254,10 +3256,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3274,10 +3276,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3294,10 +3296,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3314,10 +3316,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3334,10 +3336,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3354,10 +3356,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3374,10 +3376,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3394,10 +3396,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3414,10 +3416,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3434,10 +3436,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3454,10 +3456,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3474,10 +3476,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3494,10 +3496,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3514,10 +3516,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3534,10 +3536,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3554,10 +3556,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3574,10 +3576,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3594,10 +3596,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3614,10 +3616,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3634,10 +3636,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3654,10 +3656,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3674,10 +3676,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3694,10 +3696,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3714,10 +3716,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3734,10 +3736,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3754,10 +3756,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3774,10 +3776,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3794,10 +3796,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3814,10 +3816,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3834,10 +3836,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3854,10 +3856,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3874,10 +3876,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3894,10 +3896,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3914,10 +3916,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3934,10 +3936,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3954,10 +3956,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3974,10 +3976,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -3994,10 +3996,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4014,10 +4016,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4034,10 +4036,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4054,10 +4056,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4074,10 +4076,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4094,10 +4096,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4114,10 +4116,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4134,10 +4136,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4154,10 +4156,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4174,10 +4176,10 @@
     "pai": "banco-questoes-2026-2-sec-2-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-moda",
-      "topico-desvio-padrao"
+      "topico-moda"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4191,9 +4193,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4210,9 +4212,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4229,9 +4231,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4248,9 +4250,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4267,9 +4269,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4286,9 +4288,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4305,9 +4307,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4324,9 +4326,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4343,9 +4345,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4362,9 +4364,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4381,9 +4383,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4400,9 +4402,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4419,9 +4421,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4438,9 +4440,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4457,9 +4459,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4476,9 +4478,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4495,9 +4497,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4514,9 +4516,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4533,9 +4535,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4552,9 +4554,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4571,9 +4573,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4590,9 +4592,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4609,9 +4611,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4628,9 +4630,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4647,9 +4649,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4666,9 +4668,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4685,9 +4687,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4704,9 +4706,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4723,9 +4725,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4742,9 +4744,9 @@
     "pai": "banco-questoes-2026-2-sec-2-2",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-coeficiente-de-variacao",
       "topico-media",
-      "topico-variancia",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4758,8 +4760,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4776,8 +4778,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4794,8 +4796,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4812,8 +4814,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4830,8 +4832,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4848,8 +4850,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4866,8 +4868,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4884,8 +4886,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4902,8 +4904,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4920,8 +4922,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4938,8 +4940,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -4956,8 +4958,8 @@
     "pai": "banco-questoes-2026-2-sec-2-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-intervalo-interquartil"
+      "topico-intervalo-interquartil",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"

@@ -7,6 +7,8 @@
     "pagina_pdf_inicio": 12,
     "pagina_pdf_fim": 23,
     "pai": "barbetta-2010",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "barbetta-2010-cap-2"
     ]
@@ -19,6 +21,8 @@
     "pagina_pdf_inicio": 24,
     "pagina_pdf_fim": 50,
     "pai": "barbetta-2010",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "barbetta-2010-cap-3"
     ]
@@ -31,6 +35,8 @@
     "pagina_pdf_inicio": 51,
     "pagina_pdf_fim": 91,
     "pai": "barbetta-2010",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "barbetta-2010-cap-11"
     ]
@@ -105,7 +111,9 @@
     "titulo": "Correlação e regressão",
     "pagina_pdf_inicio": 317,
     "pagina_pdf_fim": 350,
-    "pai": "barbetta-2010"
+    "pai": "barbetta-2010",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "barbetta-2010-sec-1-1",
@@ -214,10 +222,10 @@
     "pai": "barbetta-2010-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-populacao",
       "topico-amostra",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-desvio-padrao",
+      "topico-populacao",
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -351,8 +359,8 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-frequencia",
-      "topico-tabela",
-      "topico-grafico"
+      "topico-grafico",
+      "topico-tabela"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -392,11 +400,11 @@
     "pai": "barbetta-2010-cap-3",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-boxplot",
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao",
-      "topico-boxplot"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -434,8 +442,8 @@
     "pai": "barbetta-2010-cap-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-pre-processamento",
-      "topico-grafico"
+      "topico-grafico",
+      "topico-pre-processamento"
     ],
     "conteudos": [
       "conteudo-01-02",
@@ -455,8 +463,8 @@
     "pai": "barbetta-2010-cap-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-estatistica-descritiva",
-      "topico-associacao"
+      "topico-associacao",
+      "topico-estatistica-descritiva"
     ],
     "conteudos": [
       "conteudo-01-03",
@@ -967,9 +975,9 @@
     "pai": "barbetta-2010-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-populacao",
       "topico-amostra",
-      "topico-amostragem"
+      "topico-amostragem",
+      "topico-populacao"
     ],
     "conteudos": [
       "conteudo-01-01"
@@ -998,9 +1006,9 @@
     "pai": "barbetta-2010-cap-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-media",
       "topico-desvio-padrao",
-      "topico-frequencia"
+      "topico-frequencia",
+      "topico-media"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1017,9 +1025,9 @@
     "pai": "barbetta-2010-cap-3",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
       "topico-frequencia",
-      "topico-grafico"
+      "topico-grafico",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"

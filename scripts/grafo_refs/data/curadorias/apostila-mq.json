@@ -3,10 +3,12 @@
     "id": "apostila-mq-cap-1",
     "tipo": "capitulo",
     "numero_impresso": "1",
-    "titulo": "Conceitos básicos em Estatística",
+    "titulo": "Conceitos Básicos em Estatística",
     "pagina_pdf_inicio": 8,
     "pagina_pdf_fim": 10,
     "pai": "apostila-mq",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "apostila-mq-cap-2"
     ]
@@ -15,10 +17,12 @@
     "id": "apostila-mq-cap-2",
     "tipo": "capitulo",
     "numero_impresso": "2",
-    "titulo": "Estudos dos dados estatísticos",
+    "titulo": "Estudos dos Dados Estatísticos",
     "pagina_pdf_inicio": 11,
     "pagina_pdf_fim": 21,
     "pai": "apostila-mq",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "apostila-mq-cap-3"
     ]
@@ -27,10 +31,12 @@
     "id": "apostila-mq-cap-3",
     "tipo": "capitulo",
     "numero_impresso": "3",
-    "titulo": "Distribuição de frequências",
+    "titulo": "Distribuição de Frequências",
     "pagina_pdf_inicio": 22,
     "pagina_pdf_fim": 26,
     "pai": "apostila-mq",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "apostila-mq-cap-4"
     ]
@@ -39,10 +45,12 @@
     "id": "apostila-mq-cap-4",
     "tipo": "capitulo",
     "numero_impresso": "4",
-    "titulo": "Medidas de posição",
+    "titulo": "Medidas de Posição",
     "pagina_pdf_inicio": 27,
     "pagina_pdf_fim": 48,
     "pai": "apostila-mq",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "apostila-mq-cap-5"
     ]
@@ -51,10 +59,12 @@
     "id": "apostila-mq-cap-5",
     "tipo": "capitulo",
     "numero_impresso": "5",
-    "titulo": "Medidas de dispersão",
+    "titulo": "Medidas de Dispersão",
     "pagina_pdf_inicio": 49,
     "pagina_pdf_fim": 57,
     "pai": "apostila-mq",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "apostila-mq-cap-6"
     ]
@@ -63,10 +73,12 @@
     "id": "apostila-mq-cap-6",
     "tipo": "capitulo",
     "numero_impresso": "6",
-    "titulo": "Medidas de assimetria e curtose",
+    "titulo": "Medidas de Assimetria e Curtose",
     "pagina_pdf_inicio": 58,
     "pagina_pdf_fim": 61,
     "pai": "apostila-mq",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "apostila-mq-cap-15"
     ]
@@ -151,6 +163,8 @@
     "pagina_pdf_inicio": 148,
     "pagina_pdf_fim": 163,
     "pai": "apostila-mq",
+    "topicos": [],
+    "conteudos": [],
     "precede_publicados": [
       "apostila-mq-cap-17"
     ]
@@ -171,7 +185,9 @@
     "titulo": "Exercícios Propostos",
     "pagina_pdf_inicio": 168,
     "pagina_pdf_fim": 193,
-    "pai": "apostila-mq"
+    "pai": "apostila-mq",
+    "topicos": [],
+    "conteudos": []
   },
   {
     "id": "apostila-mq-sec-1-1",
@@ -197,14 +213,14 @@
     "id": "apostila-mq-sec-1-2",
     "tipo": "secao",
     "numero_impresso": "1.2",
-    "titulo": "Conceitos fundamentais",
+    "titulo": "Conceitos Fundamentais",
     "pagina_pdf_inicio": 8,
     "pagina_pdf_fim": 9,
     "pai": "apostila-mq-cap-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-populacao",
       "topico-amostra",
+      "topico-populacao",
       "topico-unidade-de-analise"
     ],
     "conteudos": [
@@ -218,7 +234,7 @@
     "id": "apostila-mq-sec-1-3",
     "tipo": "secao",
     "numero_impresso": "1.3",
-    "titulo": "Fases do método estatístico",
+    "titulo": "Fases do Método Estatístico",
     "pagina_pdf_inicio": 10,
     "pagina_pdf_fim": 10,
     "pai": "apostila-mq-cap-1",
@@ -234,14 +250,14 @@
     "id": "apostila-mq-sec-2-1",
     "tipo": "secao",
     "numero_impresso": "2.1",
-    "titulo": "Séries estatísticas",
+    "titulo": "Séries Estatísticas",
     "pagina_pdf_inicio": 11,
     "pagina_pdf_fim": 11,
     "pai": "apostila-mq-cap-2",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -254,14 +270,14 @@
     "id": "apostila-mq-sec-2-2",
     "tipo": "secao",
     "numero_impresso": "2.2",
-    "titulo": "Apresentação tabular e gráfica",
+    "titulo": "Apresentação Tabular e Gráfica",
     "pagina_pdf_inicio": 12,
     "pagina_pdf_fim": 21,
     "pai": "apostila-mq-cap-2",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tabela",
-      "topico-grafico"
+      "topico-grafico",
+      "topico-tabela"
     ],
     "conteudos": [
       "conteudo-01-02"
@@ -271,7 +287,7 @@
     "id": "apostila-mq-sec-2-2-1",
     "tipo": "secao",
     "numero_impresso": "2.2.1",
-    "titulo": "Apresentação tabular",
+    "titulo": "Apresentação Tabular",
     "pagina_pdf_inicio": 12,
     "pagina_pdf_fim": 13,
     "pai": "apostila-mq-sec-2-2",
@@ -290,7 +306,7 @@
     "id": "apostila-mq-sec-2-2-2",
     "tipo": "secao",
     "numero_impresso": "2.2.2",
-    "titulo": "Apresentação gráfica",
+    "titulo": "Apresentação Gráfica",
     "pagina_pdf_inicio": 14,
     "pagina_pdf_fim": 21,
     "pai": "apostila-mq-sec-2-2",
@@ -306,7 +322,7 @@
     "id": "apostila-mq-sec-3-1",
     "tipo": "secao",
     "numero_impresso": "3.1",
-    "titulo": "Distribuição de frequências para dados discretos",
+    "titulo": "Distribuição de Frequências para Dados Discretos",
     "pagina_pdf_inicio": 23,
     "pagina_pdf_fim": 23,
     "pai": "apostila-mq-cap-3",
@@ -326,7 +342,7 @@
     "id": "apostila-mq-sec-3-2",
     "tipo": "secao",
     "numero_impresso": "3.2",
-    "titulo": "Distribuição de frequências para dados contínuos",
+    "titulo": "Distribuição de Frequências para Dados Contínuos",
     "pagina_pdf_inicio": 24,
     "pagina_pdf_fim": 26,
     "pai": "apostila-mq-cap-3",
@@ -343,7 +359,7 @@
     "id": "apostila-mq-sec-4",
     "tipo": "secao",
     "numero_impresso": "4",
-    "titulo": "Medidas de posição",
+    "titulo": "Medidas de Posição",
     "pagina_pdf_inicio": 27,
     "pagina_pdf_fim": 48,
     "pai": "apostila-mq-cap-4",
@@ -362,7 +378,7 @@
     "id": "apostila-mq-sec-4-1",
     "tipo": "secao",
     "numero_impresso": "4.1",
-    "titulo": "Pequenos conjuntos de dados",
+    "titulo": "Pequenos Conjuntos de Dados",
     "pagina_pdf_inicio": 27,
     "pagina_pdf_fim": 29,
     "pai": "apostila-mq-sec-4",
@@ -383,7 +399,7 @@
     "id": "apostila-mq-sec-4-2",
     "tipo": "secao",
     "numero_impresso": "4.2",
-    "titulo": "Grandes conjuntos de dados: discretos",
+    "titulo": "Grandes conjuntos de dados: Discretos",
     "pagina_pdf_inicio": 30,
     "pagina_pdf_fim": 31,
     "pai": "apostila-mq-sec-4",
@@ -404,7 +420,7 @@
     "id": "apostila-mq-sec-4-3",
     "tipo": "secao",
     "numero_impresso": "4.3",
-    "titulo": "Grandes conjuntos de dados: contínuos",
+    "titulo": "Grandes conjuntos de dados: Contínuos",
     "pagina_pdf_inicio": 32,
     "pagina_pdf_fim": 34,
     "pai": "apostila-mq-sec-4",
@@ -425,14 +441,14 @@
     "id": "apostila-mq-sec-4-4",
     "tipo": "secao",
     "numero_impresso": "4.4",
-    "titulo": "Medidas separatrizes",
+    "titulo": "Medidas Separatrizes",
     "pagina_pdf_inicio": 35,
     "pagina_pdf_fim": 41,
     "pai": "apostila-mq-sec-4",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-quantil",
-      "topico-mediana"
+      "topico-mediana",
+      "topico-quantil"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -445,7 +461,7 @@
     "id": "apostila-mq-sec-4-5",
     "tipo": "secao",
     "numero_impresso": "4.5",
-    "titulo": "Interpolação linear",
+    "titulo": "Interpolação Linear",
     "pagina_pdf_inicio": 42,
     "pagina_pdf_fim": 43,
     "pai": "apostila-mq-sec-4",
@@ -464,7 +480,7 @@
     "id": "apostila-mq-sec-4-6",
     "tipo": "secao",
     "numero_impresso": "4.6",
-    "titulo": "Outras medidas de posição",
+    "titulo": "Outras Medidas de Posição",
     "pagina_pdf_inicio": 44,
     "pagina_pdf_fim": 48,
     "pai": "apostila-mq-sec-4",
@@ -480,16 +496,16 @@
     "id": "apostila-mq-sec-5",
     "tipo": "secao",
     "numero_impresso": "5",
-    "titulo": "Medidas de dispersão",
+    "titulo": "Medidas de Dispersão",
     "pagina_pdf_inicio": 49,
     "pagina_pdf_fim": 57,
     "pai": "apostila-mq-cap-5",
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-amplitude",
-      "topico-variancia",
+      "topico-coeficiente-de-variacao",
       "topico-desvio-padrao",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -499,15 +515,15 @@
     "id": "apostila-mq-sec-5-1",
     "tipo": "secao",
     "numero_impresso": "5.1",
-    "titulo": "Pequenos conjuntos de dados",
+    "titulo": "Pequenos Conjuntos de dados",
     "pagina_pdf_inicio": 49,
     "pagina_pdf_fim": 52,
     "pai": "apostila-mq-sec-5",
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-amplitude",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-desvio-padrao",
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -520,15 +536,15 @@
     "id": "apostila-mq-sec-5-2",
     "tipo": "secao",
     "numero_impresso": "5.2",
-    "titulo": "Grandes conjuntos de dados: discretos",
+    "titulo": "Grandes conjuntos de dados: Discretos",
     "pagina_pdf_inicio": 53,
     "pagina_pdf_fim": 54,
     "pai": "apostila-mq-sec-5",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-variancia",
+      "topico-coeficiente-de-variacao",
       "topico-desvio-padrao",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -541,15 +557,15 @@
     "id": "apostila-mq-sec-5-3",
     "tipo": "secao",
     "numero_impresso": "5.3",
-    "titulo": "Grandes conjuntos de dados: contínuos",
+    "titulo": "Grandes conjuntos de dados: Contínuos",
     "pagina_pdf_inicio": 55,
     "pagina_pdf_fim": 57,
     "pai": "apostila-mq-sec-5",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-variancia",
+      "topico-coeficiente-de-variacao",
       "topico-desvio-padrao",
-      "topico-coeficiente-de-variacao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -559,7 +575,7 @@
     "id": "apostila-mq-sec-6-1",
     "tipo": "secao",
     "numero_impresso": "6.1",
-    "titulo": "Medidas de assimetria",
+    "titulo": "Medidas de Assimetria",
     "pagina_pdf_inicio": 58,
     "pagina_pdf_fim": 58,
     "pai": "apostila-mq-cap-6",
@@ -578,7 +594,7 @@
     "id": "apostila-mq-sec-6-2",
     "tipo": "secao",
     "numero_impresso": "6.2",
-    "titulo": "Medidas de curtose",
+    "titulo": "Medidas de Curtose",
     "pagina_pdf_inicio": 59,
     "pagina_pdf_fim": 61,
     "pai": "apostila-mq-cap-6",
@@ -1008,8 +1024,8 @@
     "pai": "apostila-mq-cap-15",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-grafico",
-      "topico-associacao"
+      "topico-associacao",
+      "topico-grafico"
     ],
     "conteudos": [
       "conteudo-01-04"
@@ -1022,7 +1038,7 @@
     "id": "apostila-mq-sec-15-2",
     "tipo": "secao",
     "numero_impresso": "15.2",
-    "titulo": "Coeficiente de correlação de Pearson",
+    "titulo": "Coeficiente de Correlação de Pearson (Rxy)",
     "pagina_pdf_inicio": 149,
     "pagina_pdf_fim": 149,
     "pai": "apostila-mq-cap-15",
@@ -1195,8 +1211,8 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-investigacao-estatistica",
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-01",
@@ -1215,8 +1231,8 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-investigacao-estatistica",
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-01",
@@ -1235,8 +1251,8 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-investigacao-estatistica",
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-01",
@@ -1255,8 +1271,8 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-investigacao-estatistica",
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-01",
@@ -1275,8 +1291,8 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-investigacao-estatistica",
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-01",
@@ -1295,8 +1311,8 @@
     "pertinencia_t199": "direta",
     "topicos": [
       "topico-investigacao-estatistica",
-      "topico-tipos-de-variaveis",
-      "topico-tabela"
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
     ],
     "conteudos": [
       "conteudo-01-01",
@@ -1314,8 +1330,8 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-tabela-de-contingencia",
-      "topico-associacao"
+      "topico-associacao",
+      "topico-tabela-de-contingencia"
     ],
     "conteudos": [
       "conteudo-01-04"
@@ -1332,10 +1348,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1352,10 +1368,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1372,10 +1388,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1392,10 +1408,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1412,10 +1428,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1432,10 +1448,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1452,10 +1468,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1472,10 +1488,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1492,10 +1508,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1512,10 +1528,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1532,10 +1548,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1552,10 +1568,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1572,10 +1588,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1592,9 +1608,9 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
-      "topico-media",
+      "topico-associacao",
       "topico-coeficiente-de-variacao",
-      "topico-associacao"
+      "topico-media"
     ],
     "conteudos": [
       "conteudo-01-03",
@@ -1612,10 +1628,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1632,10 +1648,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1652,10 +1668,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1672,10 +1688,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1692,10 +1708,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"
@@ -1712,10 +1728,10 @@
     "pai": "apostila-mq-sec-17-1",
     "pertinencia_t199": "direta",
     "topicos": [
+      "topico-desvio-padrao",
       "topico-media",
       "topico-mediana",
-      "topico-variancia",
-      "topico-desvio-padrao"
+      "topico-variancia"
     ],
     "conteudos": [
       "conteudo-01-03"

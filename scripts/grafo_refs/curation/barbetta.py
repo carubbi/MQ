@@ -1,6 +1,10 @@
 """Estrutura editorial verificada de Barbetta, Reis e Bornia (2010)."""
 
-from scripts.grafo_refs.curation.common import numbered_editorial_nodes
+from scripts.grafo_refs.curation.common import (
+    finalize_source,
+    item,
+    numbered_editorial_nodes,
+)
 
 
 SOURCE = "barbetta-2010"
@@ -80,9 +84,27 @@ SECTIONS = [
 
 
 def build_nodes() -> list[dict]:
-    return numbered_editorial_nodes(
+    nodes = numbered_editorial_nodes(
         SOURCE,
         CHAPTERS,
         SECTIONS,
         terminal_page=350,
     )
+    for number, page, parent in [
+        ("1.2", 23, f"{SOURCE}-cap-1"),
+        ("2.7", 34, f"{SOURCE}-cap-2"),
+        ("3.4", 87, f"{SOURCE}-cap-3"),
+        ("3.8", 88, f"{SOURCE}-cap-3"),
+    ]:
+        nodes.append(
+            item(
+                SOURCE,
+                number,
+                page,
+                parent,
+                [],
+                [],
+                item_type="exercicio",
+            )
+        )
+    return finalize_source(SOURCE, nodes)

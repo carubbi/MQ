@@ -154,6 +154,87 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
                         f"{destination}"
                     )
 
+    for child_id, parent_ids in parents.items():
+        if len(set(parent_ids)) > 1:
+            errors.append(f"nó com múltiplos pais: {child_id}")
+        child = nodes_by_id.get(child_id, {})
+        child_start = child.get(
+            "pagina_pdf",
+            child.get("pagina_pdf_inicio"),
+        )
+        child_end = child.get(
+            "pagina_pdf",
+            child.get("pagina_pdf_fim"),
+        )
+        for parent_id in parent_ids:
+            parent = nodes_by_id.get(parent_id, {})
+            parent_start = parent.get("pagina_pdf_inicio")
+            parent_end = parent.get("pagina_pdf_fim")
+            if (
+                all(
+                    isinstance(value, int)
+                    for value in (
+                        parent_start,
+                        parent_end,
+                        child_start,
+                        child_end,
+                    )
+                )
+                and not (
+                    parent_start
+                    <= child_start
+                    <= child_end
+                    <= parent_end
+                )
+            ):
+                errors.append(
+                    "filho fora do intervalo do pai: "
+                    f"{parent_id} -> {child_id}"
+                )
+
+    editorial_children = defaultdict(list)
+    for child_id, parent_ids in parents.items():
+        child = nodes_by_id.get(child_id, {})
+        if child.get("tipo") not in {"capitulo", "secao"}:
+            continue
+        for parent_id in set(parent_ids):
+            editorial_children[parent_id].append(child)
+    for siblings in editorial_children.values():
+        ordered = sorted(
+            siblings,
+            key=lambda node: (
+                node.get("pagina_pdf_inicio", 0),
+                node.get("pagina_pdf_fim", 0),
+                node["id"],
+            ),
+        )
+        for index, left in enumerate(ordered):
+            for right in ordered[index + 1 :]:
+                overlap_start = max(
+                    left["pagina_pdf_inicio"],
+                    right["pagina_pdf_inicio"],
+                )
+                overlap_end = min(
+                    left["pagina_pdf_fim"],
+                    right["pagina_pdf_fim"],
+                )
+                if overlap_end - overlap_start + 1 > 1:
+                    errors.append(
+                        "sobreposição editorial inválida: "
+                        f"{left['id']} x {right['id']}"
+                    )
+
+    for node_id in parents:
+        pending = list(parents[node_id])
+        visited = {node_id}
+        while pending:
+            ancestor_id = pending.pop()
+            if ancestor_id in visited:
+                errors.append(f"ciclo de ancestralidade: {node_id}")
+                break
+            visited.add(ancestor_id)
+            pending.extend(parents.get(ancestor_id, []))
+
     for node_id, node in nodes_by_id.items():
         if node.get("tipo") in ITEM_TYPES:
             if "pertinencia_t199" not in node:

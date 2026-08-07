@@ -1,7 +1,11 @@
 """Estrutura editorial verificada de Morettin e Bussab (2010)."""
 
 from scripts.grafo_refs.build_graph import REPOSITORY_ROOT
-from scripts.grafo_refs.curation.common import marker_numbered_nodes
+from scripts.grafo_refs.curation.common import (
+    finalize_source,
+    marker_numbered_nodes,
+    section,
+)
 
 
 PDF_PATH = (
@@ -29,11 +33,37 @@ CHAPTER_TITLES = {
 
 
 def build_nodes() -> list[dict]:
-    return marker_numbered_nodes(
-        "morettin-bussab-2010",
+    source = "morettin-bussab-2010"
+    nodes = marker_numbered_nodes(
+        source,
         PDF_PATH,
         chapter_pattern=r"^Capítulo (\d+)$",
         section_pattern=r"^(\d+\.\d+)\s+",
         terminal_page=511,
         chapter_titles=CHAPTER_TITLES,
     )
+    nodes.extend(
+        [
+            section(
+                source,
+                "2.3.1",
+                "Gráficos para variáveis qualitativas",
+                32,
+                32,
+                f"{source}-sec-2-3",
+                [],
+                [],
+            ),
+            section(
+                source,
+                "2.3.2",
+                "Gráficos para variáveis quantitativas",
+                33,
+                36,
+                f"{source}-sec-2-3",
+                [],
+                [],
+            ),
+        ]
+    )
+    return finalize_source(source, nodes)

@@ -25,6 +25,89 @@ class ValidateGraphTests(unittest.TestCase):
     def assert_has_error(self, errors, expected):
         self.assertTrue(any(expected in error for error in errors), errors)
 
+    def test_rejects_a_child_outside_its_direct_parent_interval(self):
+        """Catches a section or item extending beyond its direct parent."""
+        def mutate(graph):
+            graph["nos"].extend(
+                [
+                    {
+                        "id": "capitulo-a",
+                        "tipo": "capitulo",
+                        "pagina_pdf_inicio": 2,
+                        "pagina_pdf_fim": 5,
+                    },
+                    {
+                        "id": "secao-a",
+                        "tipo": "secao",
+                        "pagina_pdf_inicio": 4,
+                        "pagina_pdf_fim": 6,
+                        "pertinencia_t199": "indireta",
+                    },
+                ]
+            )
+            graph["relacoes"].extend(
+                [
+                    {
+                        "origem": "barbetta-2010",
+                        "tipo": "contem",
+                        "destino": "capitulo-a",
+                    },
+                    {
+                        "origem": "capitulo-a",
+                        "tipo": "contem",
+                        "destino": "secao-a",
+                    },
+                ]
+            )
+
+        errors = self.errors_for(mutate)
+
+        self.assert_has_error(
+            errors,
+            "filho fora do intervalo do pai: capitulo-a -> secao-a",
+        )
+
+    def test_rejects_multi_page_overlap_between_editorial_siblings(self):
+        """Catches sibling chapters or sections with a multi-page overlap."""
+        def mutate(graph):
+            graph["nos"].extend(
+                [
+                    {
+                        "id": "capitulo-a",
+                        "tipo": "capitulo",
+                        "pagina_pdf_inicio": 2,
+                        "pagina_pdf_fim": 8,
+                    },
+                    {
+                        "id": "capitulo-b",
+                        "tipo": "capitulo",
+                        "pagina_pdf_inicio": 7,
+                        "pagina_pdf_fim": 10,
+                    },
+                ]
+            )
+            graph["relacoes"].extend(
+                [
+                    {
+                        "origem": "barbetta-2010",
+                        "tipo": "contem",
+                        "destino": "capitulo-a",
+                    },
+                    {
+                        "origem": "barbetta-2010",
+                        "tipo": "contem",
+                        "destino": "capitulo-b",
+                    },
+                ]
+            )
+
+        errors = self.errors_for(mutate)
+
+        self.assert_has_error(
+            errors,
+            "sobreposição editorial inválida: capitulo-a x capitulo-b",
+        )
+
     def test_rejects_duplicate_node_ids(self):
         """Catches duplicate canonical identifiers."""
         errors = self.errors_for(lambda graph: graph["nos"].append(copy.deepcopy(graph["nos"][0])))

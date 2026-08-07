@@ -1,0 +1,177 @@
+{
+  "versao": 1,
+  "contrato_base": "contrato_publicado_unidade_i.json",
+  "politica": {
+    "preservados": [
+      "id",
+      "tipo",
+      "aborda",
+      "corresponde_a"
+    ],
+    "migraveis_com_evidencia": [
+      "pagina_pdf",
+      "pagina_pdf_inicio",
+      "pagina_pdf_fim",
+      "contem",
+      "precede"
+    ]
+  },
+  "migracoes": [
+    {
+      "tipo": "campo",
+      "id": "banco-questoes-2026-2-cap-1",
+      "campo": "pagina_pdf_fim",
+      "de": 94,
+      "para": 87,
+      "evidencia": {
+        "arquivo_pdf": "mat/apostila/banco_questoes_provas_2026_2.pdf",
+        "pagina_pdf": 88,
+        "justificativa": "A página 88 abre explicitamente o capítulo 2, Momentos, Assimetria e Curtose."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "banco-questoes-2026-2-sec-1-1",
+      "campo": "pagina_pdf_fim",
+      "de": 12,
+      "para": 13,
+      "evidencia": {
+        "arquivo_pdf": "mat/apostila/banco_questoes_provas_2026_2.pdf",
+        "pagina_pdf": 13,
+        "justificativa": "As questões 23 e 24, pertencentes à seção 1.1, continuam na página 13 antes da seção 1.2."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "banco-questoes-2026-2-sec-1-2",
+      "campo": "pagina_pdf_fim",
+      "de": 14,
+      "para": 15,
+      "evidencia": {
+        "arquivo_pdf": "mat/apostila/banco_questoes_provas_2026_2.pdf",
+        "pagina_pdf": 15,
+        "justificativa": "As questões 31 e 32, pertencentes à seção 1.2, continuam na página 15 antes da seção 1.3."
+      }
+    },
+    {
+      "tipo": "relacao",
+      "relacao": "contem",
+      "destino": "banco-questoes-2026-2-sec-3-1",
+      "origem_de": "banco-questoes-2026-2-cap-1",
+      "origem_para": "banco-questoes-2026-2-cap-2",
+      "evidencia": {
+        "arquivo_pdf": "mat/apostila/banco_questoes_provas_2026_2.pdf",
+        "pagina_pdf": 88,
+        "justificativa": "A seção 3.1 aparece na página de abertura do capítulo 2."
+      }
+    },
+    {
+      "tipo": "relacao",
+      "relacao": "contem",
+      "destino": "banco-questoes-2026-2-sec-3-2",
+      "origem_de": "banco-questoes-2026-2-cap-1",
+      "origem_para": "banco-questoes-2026-2-cap-2",
+      "evidencia": {
+        "arquivo_pdf": "mat/apostila/banco_questoes_provas_2026_2.pdf",
+        "pagina_pdf": 89,
+        "justificativa": "A seção 3.2 integra o bloco Momentos, Assimetria e Curtose iniciado como capítulo 2."
+      }
+    },
+    {
+      "tipo": "relacao",
+      "relacao": "contem",
+      "destino": "banco-questoes-2026-2-sec-3-3",
+      "origem_de": "banco-questoes-2026-2-cap-1",
+      "origem_para": "banco-questoes-2026-2-cap-2",
+      "evidencia": {
+        "arquivo_pdf": "mat/apostila/banco_questoes_provas_2026_2.pdf",
+        "pagina_pdf": 92,
+        "justificativa": "A seção 3.3 integra o bloco Momentos, Assimetria e Curtose, encerrado antes do capítulo 3 na página 95."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "estatistica-pratica-cd-sec-1-10",
+      "campo": "pagina_pdf_fim",
+      "de": 69,
+      "para": 70,
+      "evidencia": {
+        "arquivo_pdf": "prof/refs/livros/Estatistica-pratica-para-cientistas-de-dados.pdf",
+        "pagina_pdf": 70,
+        "justificativa": "A subseção Visualizando Variáveis Múltiplas termina na página 70 e integra a seção 1.10."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "montgomery-2018-cap-6",
+      "campo": "pagina_pdf_fim",
+      "de": 161,
+      "para": 165,
+      "evidencia": {
+        "arquivo_pdf": "prof/refs/livros/Montgomery 2018 Applied Statistics and Probability for Engineers.pdf",
+        "pagina_pdf": 165,
+        "justificativa": "A seção 6.7 termina na página 165 e pertence ao capítulo 6; o capítulo 7 começa na página 166."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "pinheiro-2009-cap-1",
+      "campo": "pagina_pdf_inicio",
+      "de": 20,
+      "para": 18,
+      "evidencia": {
+        "arquivo_pdf": "prof/refs/livros/Pinheiro 2009 Estatística básica a arte de trabalhar com dados.pdf",
+        "pagina_pdf": 18,
+        "justificativa": "A página 18 é a abertura formal do capítulo 1."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "pinheiro-2009-cap-1",
+      "campo": "pagina_pdf_fim",
+      "de": 59,
+      "para": 58,
+      "evidencia": {
+        "arquivo_pdf": "prof/refs/livros/Pinheiro 2009 Estatística básica a arte de trabalhar com dados.pdf",
+        "pagina_pdf": 59,
+        "justificativa": "A página 59 abre formalmente o capítulo 2."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "pinheiro-2009-cap-2",
+      "campo": "pagina_pdf_inicio",
+      "de": 60,
+      "para": 59,
+      "evidencia": {
+        "arquivo_pdf": "prof/refs/livros/Pinheiro 2009 Estatística básica a arte de trabalhar com dados.pdf",
+        "pagina_pdf": 59,
+        "justificativa": "A página 59 é a abertura formal do capítulo 2."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "pinheiro-2009-cap-2",
+      "campo": "pagina_pdf_fim",
+      "de": 91,
+      "para": 86,
+      "evidencia": {
+        "arquivo_pdf": "prof/refs/livros/Pinheiro 2009 Estatística básica a arte de trabalhar com dados.pdf",
+        "pagina_pdf": 87,
+        "justificativa": "A página 87 abre formalmente o capítulo 3."
+      }
+    },
+    {
+      "tipo": "campo",
+      "id": "pinheiro-2009-sec-1-9",
+      "campo": "pagina_pdf_fim",
+      "de": 59,
+      "para": 58,
+      "evidencia": {
+        "arquivo_pdf": "prof/refs/livros/Pinheiro 2009 Estatística básica a arte de trabalhar com dados.pdf",
+        "pagina_pdf": 59,
+        "justificativa": "A seção 1.9 encerra antes da abertura do capítulo 2 na página 59."
+      }
+    }
+  ]
+}

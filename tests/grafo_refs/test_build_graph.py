@@ -2,8 +2,12 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
+
+import fitz
 
 from scripts.grafo_refs.build_graph import build_graph, write_graph
+from scripts.grafo_refs.curation import common
 from scripts.grafo_refs.curate_grafo import build_curations, write_curations
 
 
@@ -122,6 +126,45 @@ def _published_curations() -> dict[str, list[dict]]:
 
 
 class BuildGraphTests(unittest.TestCase):
+    def test_general_curator_does_not_read_published_output_as_input(self):
+        """Catches circular regeneration from data/curadorias/*.json."""
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            missing_output = Path(temporary_directory) / "does-not-exist"
+            with patch.object(
+                common,
+                "CURATED_DIRECTORY",
+                missing_output,
+                create=True,
+            ):
+                rebuilt = build_curations()
+
+        self.assertEqual(set(rebuilt), set(CURATED_SOURCES))
+
+    def test_load_extraction_rejects_an_unverified_cache(self):
+        """Catches tmp extraction data being trusted without PDF identity."""
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            pdf_path = root / "canonical.pdf"
+            with fitz.open() as document:
+                page = document.new_page()
+                page.insert_text((72, 72), "canonical PDF text")
+                document.save(pdf_path)
+
+            (root / "sample.extract.json").write_text(
+                json.dumps({"paginas": [], "marcadores": []}),
+                encoding="utf-8",
+            )
+            with patch.object(
+                common,
+                "EXTRACTION_DIRECTORY",
+                root,
+                create=True,
+            ):
+                extracted = common.load_extraction("sample", pdf_path)
+
+        self.assertEqual(len(extracted["paginas"]), 1)
+        self.assertIn("canonical PDF text", extracted["paginas"][0]["texto"])
+
     def test_integral_topic_vocabulary_has_the_exact_canonical_ids(self):
         """Catches any missing, extra, or colliding canonical topic ID."""
         topics = json.loads(TOPICS_PATH.read_text(encoding="utf-8"))

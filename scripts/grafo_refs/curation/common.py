@@ -10,9 +10,8 @@ from scripts.grafo_refs.model import slug_id
 
 
 DATA_DIRECTORY = REPOSITORY_ROOT / "scripts/grafo_refs/data"
-CURATED_DIRECTORY = DATA_DIRECTORY / "curadorias"
 CONTRACT_PATH = DATA_DIRECTORY / "contrato_publicado_unidade_i.json"
-EXTRACTION_DIRECTORY = REPOSITORY_ROOT / "tmp/grafo_refs"
+MIGRATIONS_PATH = DATA_DIRECTORY / "migracoes_estrutura_unidade_i.json"
 
 
 def chapter(
@@ -108,55 +107,113 @@ def extract_sequential_numbered_items(
 
 
 def load_extraction(source: str, pdf_path: Path) -> dict:
-    """Usa o extrato auditável quando presente e o PDF canônico como fallback."""
-    extracted_path = EXTRACTION_DIRECTORY / f"{source}.extract.json"
-    if extracted_path.exists():
-        return json.loads(extracted_path.read_text(encoding="utf-8"))
+    """Extrai sempre do PDF canônico; tmp nunca participa da geração."""
+    del source
     return extract_pdf(pdf_path)
 
 
-def merge_published_nodes(source: str, nodes: list[dict]) -> list[dict]:
-    """Sobrepõe apenas os nós congelados no contrato publicado da Unidade I."""
+def finalize_source(source: str, nodes: list[dict]) -> list[dict]:
+    """Aplica contrato curricular e migrações estruturais auditáveis."""
     contract = json.loads(CONTRACT_PATH.read_text(encoding="utf-8"))
-    published_ids = {
-        node_id
-        for node_id in contract["nos"]
-        if node_id.startswith(f"{source}-")
+    migrations = json.loads(MIGRATIONS_PATH.read_text(encoding="utf-8"))[
+        "migracoes"
+    ]
+    contract_nodes = {
+        node_id: frozen
+        for node_id, frozen in contract["nos"].items()
+        if node_id.startswith(f"{source}-") and frozen["tipo"] != "fonte"
     }
-    current_path = CURATED_DIRECTORY / f"{source}.json"
-    current_nodes = json.loads(current_path.read_text(encoding="utf-8"))
-    published = {
-        node["id"]: node
-        for node in current_nodes
-        if node["id"] in published_ids
-    }
-    published_precedence = {}
+    parents = {}
+    topics = {}
+    contents = {}
+    precedence = {}
     for origin, relation_type, destination in contract["relacoes"]:
-        if (
-            relation_type == "precede"
-            and origin in published_ids
-            and destination in published_ids
-        ):
-            published_precedence.setdefault(origin, []).append(destination)
+        if relation_type == "contem" and destination in contract_nodes:
+            parents[destination] = origin
+        elif relation_type == "aborda" and origin in contract_nodes:
+            topics.setdefault(origin, []).append(destination)
+        elif relation_type == "corresponde_a" and origin in contract_nodes:
+            contents.setdefault(origin, []).append(destination)
+        elif relation_type == "precede" and origin in contract_nodes:
+            precedence.setdefault(origin, []).append(destination)
 
-    merged = []
-    seen = set()
+    field_migrations = {
+        (migration["id"], migration["campo"]): migration["para"]
+        for migration in migrations
+        if migration["tipo"] == "campo"
+    }
+    parent_migrations = {
+        migration["destino"]: migration["origem_para"]
+        for migration in migrations
+        if migration["tipo"] == "relacao"
+        and migration["relacao"] == "contem"
+    }
+
+    finalized = []
     for node in nodes:
         node_id = node["id"]
-        merged_node = published.get(node_id, node).copy()
-        if node_id in published_precedence:
-            merged_node["precede_publicados"] = published_precedence[node_id]
-        merged.append(merged_node)
-        seen.add(node_id)
-    for node_id, node in published.items():
-        if node_id not in seen:
-            merged_node = node.copy()
-            if node_id in published_precedence:
-                merged_node["precede_publicados"] = published_precedence[
-                    node_id
-                ]
-            merged.append(merged_node)
-    return merged
+        finalized_node = node.copy()
+        if node_id in contract_nodes:
+            frozen = contract_nodes[node_id]
+            for key in (
+                "pagina_pdf",
+                "pagina_pdf_inicio",
+                "pagina_pdf_fim",
+            ):
+                if key in frozen:
+                    finalized_node[key] = frozen[key]
+            if node_id in parents:
+                finalized_node["pai"] = parents[node_id]
+            finalized_node["topicos"] = topics.get(node_id, [])
+            finalized_node["conteudos"] = contents.get(node_id, [])
+            if finalized_node["tipo"] in {
+                "secao",
+                "questao",
+                "exercicio",
+                "exemplo",
+            }:
+                finalized_node["pertinencia_t199"] = "direta"
+            if node_id in precedence:
+                finalized_node["precede_publicados"] = precedence[node_id]
+
+        for key in (
+            "pagina_pdf",
+            "pagina_pdf_inicio",
+            "pagina_pdf_fim",
+        ):
+            migrated = field_migrations.get((node_id, key))
+            if migrated is not None:
+                finalized_node[key] = migrated
+        if node_id in parent_migrations:
+            finalized_node["pai"] = parent_migrations[node_id]
+        finalized.append(finalized_node)
+
+    missing = sorted(set(contract_nodes) - {node["id"] for node in finalized})
+    if missing:
+        raise ValueError(
+            f"nós publicados não reconstruídos por {source}: {missing}"
+        )
+    return _enclose_children(finalized)
+
+
+def _enclose_children(nodes: list[dict]) -> list[dict]:
+    """Amplia pais editoriais até conter todos os descendentes diretos."""
+    by_id = {node["id"]: node for node in nodes}
+    changed = True
+    while changed:
+        changed = False
+        for child in nodes:
+            parent = by_id.get(child.get("pai"))
+            if parent is None or "pagina_pdf_fim" not in parent:
+                continue
+            child_end = child.get(
+                "pagina_pdf",
+                child.get("pagina_pdf_fim"),
+            )
+            if child_end is not None and child_end > parent["pagina_pdf_fim"]:
+                parent["pagina_pdf_fim"] = child_end
+                changed = True
+    return nodes
 
 
 def numbered_editorial_nodes(
@@ -212,7 +269,7 @@ def numbered_editorial_nodes(
                 pertinence="indireta",
             )
         )
-    return merge_published_nodes(source, nodes)
+    return nodes
 
 
 def marker_numbered_nodes(

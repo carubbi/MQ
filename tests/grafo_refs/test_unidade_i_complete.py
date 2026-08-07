@@ -26,6 +26,10 @@ ITEM_TYPES = {"questao", "exercicio", "exemplo"}
 CONTRACT_PATH = (
     REPOSITORY_ROOT / "scripts/grafo_refs/data/contrato_publicado_unidade_i.json"
 )
+MIGRATIONS_PATH = (
+    REPOSITORY_ROOT
+    / "scripts/grafo_refs/data/migracoes_estrutura_unidade_i.json"
+)
 
 
 def load_published_contract(path: Path) -> dict:
@@ -67,20 +71,136 @@ class UnidadeICompleteTests(unittest.TestCase):
 
     def test_preserves_the_published_unidade_i_contract(self):
         contract = load_published_contract(CONTRACT_PATH)
+        migrations = json.loads(MIGRATIONS_PATH.read_text(encoding="utf-8"))
         graph_nodes = {node["id"]: node for node in self.graph["nos"]}
+        self.assertEqual(contract["versao"], 2)
+        self.assertTrue(set(contract["nos"]).issubset(graph_nodes))
+
         for node_id, expected in contract["nos"].items():
-            self.assertIn(node_id, graph_nodes)
             actual = graph_nodes[node_id]
-            self.assertEqual(
-                {key: actual[key] for key in expected},
-                expected,
-            )
+            self.assertEqual(actual["tipo"], expected["tipo"])
+
         actual_edges = {
             (edge["origem"], edge["tipo"], edge["destino"])
             for edge in self.graph["relacoes"]
         }
-        self.assertTrue(
-            {tuple(edge) for edge in contract["relacoes"]}.issubset(actual_edges)
+        contract_edges = {tuple(edge) for edge in contract["relacoes"]}
+        for relation_type in {"aborda", "corresponde_a"}:
+            self.assertEqual(
+                {
+                    edge
+                    for edge in actual_edges
+                    if edge[1] == relation_type
+                },
+                {
+                    edge
+                    for edge in contract_edges
+                    if edge[1] == relation_type
+                },
+            )
+
+        actual_field_migrations = set()
+        for node_id, expected in contract["nos"].items():
+            actual = graph_nodes[node_id]
+            for field in {
+                "pagina_pdf",
+                "pagina_pdf_inicio",
+                "pagina_pdf_fim",
+            }:
+                if field in expected and actual.get(field) != expected[field]:
+                    actual_field_migrations.add(
+                        (
+                            node_id,
+                            field,
+                            expected[field],
+                            actual.get(field),
+                        )
+                    )
+        declared_field_migrations = {
+            (
+                migration["id"],
+                migration["campo"],
+                migration["de"],
+                migration["para"],
+            )
+            for migration in migrations["migracoes"]
+            if migration["tipo"] == "campo"
+        }
+        self.assertEqual(
+            actual_field_migrations,
+            declared_field_migrations,
+        )
+
+        contract_parents = {
+            destination: origin
+            for origin, relation_type, destination in contract_edges
+            if relation_type == "contem"
+        }
+        actual_parents = {
+            destination: origin
+            for origin, relation_type, destination in actual_edges
+            if relation_type == "contem"
+            and destination in contract["nos"]
+        }
+        actual_parent_migrations = {
+            (destination, contract_parent, actual_parents[destination])
+            for destination, contract_parent in contract_parents.items()
+            if actual_parents[destination] != contract_parent
+        }
+        declared_parent_migrations = {
+            (
+                migration["destino"],
+                migration["origem_de"],
+                migration["origem_para"],
+            )
+            for migration in migrations["migracoes"]
+            if migration["tipo"] == "relacao"
+            and migration["relacao"] == "contem"
+        }
+        self.assertEqual(
+            actual_parent_migrations,
+            declared_parent_migrations,
+        )
+
+        contract_precedence = {
+            edge for edge in contract_edges if edge[1] == "precede"
+        }
+        published_ids = set(contract["nos"])
+        actual_precedence = {
+            edge
+            for edge in actual_edges
+            if edge[1] == "precede"
+            and edge[0] in published_ids
+            and edge[2] in published_ids
+        }
+        declared_precedence_migrations = {
+            (
+                migration["origem_de"],
+                "precede",
+                migration["destino"],
+                migration["origem_para"],
+            )
+            for migration in migrations["migracoes"]
+            if migration["tipo"] == "relacao"
+            and migration["relacao"] == "precede"
+        }
+        self.assertEqual(
+            (
+                contract_precedence - actual_precedence,
+                actual_precedence - contract_precedence,
+            ),
+            (
+                {
+                    (origin_from, "precede", destination)
+                    for origin_from, _, destination, _origin_to
+                    in declared_precedence_migrations
+                },
+                {
+                    (origin_to, "precede", destination)
+                    for _origin_from, _, destination, origin_to
+                    in declared_precedence_migrations
+                },
+            ),
         )
 
     def test_expected_sources_are_mapped_without_escovedo(self):
@@ -171,7 +291,8 @@ class UnidadeICompleteTests(unittest.TestCase):
             edges,
         )
         self.assertEqual(nodes["barbetta-2010-cap-11"]["pagina_pdf_fim"], 350)
-        self.assertEqual(nodes["pinheiro-2009-cap-2"]["pagina_pdf_fim"], 91)
+        self.assertEqual(nodes["pinheiro-2009-cap-2"]["pagina_pdf_fim"], 86)
+        self.assertEqual(nodes["pinheiro-2009-cap-3"]["pagina_pdf_inicio"], 87)
 
 
 class CurateUnidadeITests(unittest.TestCase):

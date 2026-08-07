@@ -5,7 +5,7 @@ from scripts.grafo_refs.curation.common import (
     extract_sequential_numbered_items,
     item,
     load_extraction,
-    merge_published_nodes,
+    finalize_source,
     numbered_editorial_nodes,
 )
 
@@ -160,4 +160,4 @@ def build_nodes() -> list[dict]:
                 pertinence="indireta",
             )
         )
-    return merge_published_nodes(SOURCE, nodes)
+    return finalize_source(SOURCE, nodes)

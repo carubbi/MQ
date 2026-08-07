@@ -1,6 +1,10 @@
 """Estrutura editorial verificada de Pinheiro et al. (2009)."""
 
-from scripts.grafo_refs.curation.common import numbered_editorial_nodes
+from scripts.grafo_refs.curation.common import (
+    finalize_source,
+    item,
+    numbered_editorial_nodes,
+)
 
 
 SOURCE = "pinheiro-2009"
@@ -65,9 +69,30 @@ SECTIONS = [
 
 
 def build_nodes() -> list[dict]:
-    return numbered_editorial_nodes(
+    nodes = numbered_editorial_nodes(
         SOURCE,
         CHAPTERS,
         SECTIONS,
         terminal_page=281,
     )
+    for number, page, parent in [
+        ("1.4_P", 55, f"{SOURCE}-cap-1"),
+        ("1.5_P", 55, f"{SOURCE}-cap-1"),
+        ("1.7_P", 56, f"{SOURCE}-cap-1"),
+        ("2.1_P", 81, f"{SOURCE}-cap-2"),
+        ("2.2_P", 82, f"{SOURCE}-cap-2"),
+        ("2.5_P", 83, f"{SOURCE}-cap-2"),
+        ("2.7_P", 85, f"{SOURCE}-cap-2"),
+    ]:
+        nodes.append(
+            item(
+                SOURCE,
+                number,
+                page,
+                parent,
+                [],
+                [],
+                item_type="exercicio",
+            )
+        )
+    return finalize_source(SOURCE, nodes)
