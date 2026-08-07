@@ -121,6 +121,75 @@ class TeachingMockupTests(unittest.TestCase):
             findings = validate_notebook_mockup(path, HEAD_TEXT)
         self.assertIn("cabeçalho do notebook divergente", findings)
 
+    def test_complete_t199_resource_inventory(self):
+        expected_materials = {
+            "u1_s01_fundamentos_estatisticos.md",
+            "u1_s03_organizacao_representacao_dados.md",
+            "u1_s04_analise_univariada.md",
+            "u1_s05_analise_bivariada.md",
+            "u1_s06_probabilidade.md",
+            "u2_s01_revisao_at1.md",
+            "u2_s02_variaveis_aleatorias.md",
+            "u2_s03_distribuicoes_discretas.md",
+            "u2_s04_distribuicoes_continuas.md",
+            "u2_s05_normal_auditoria_modelos.md",
+            "u2_s06_revisao_at2.md",
+            "u3_s01_amostragem_distribuicoes_amostrais.md",
+            "u3_s02_estimacao_testes.md",
+            "u3_s03_regressao_linear_simples.md",
+            "u3_s05_regressao_simples_multipla.md",
+            "u3_s06_revisao_at3.md",
+        }
+        expected_notebooks = {
+            "u1_s01_fundamentos_estatisticos_aula01.ipynb",
+            "u1_s01_fundamentos_estatisticos_aula02.ipynb",
+            "u1_s03_organizacao_representacao_dados.ipynb",
+            "u1_s04_analise_univariada.ipynb",
+            "u1_s05_analise_bivariada.ipynb",
+            "u1_s06_probabilidade.ipynb",
+            "u2_s02_variaveis_aleatorias.ipynb",
+            "u2_s03_distribuicoes_discretas.ipynb",
+            "u2_s04_distribuicoes_continuas.ipynb",
+            "u2_s05_normal_auditoria_modelos.ipynb",
+            "u3_s01_amostragem_distribuicoes_amostrais.ipynb",
+            "u3_s02_estimacao_testes.ipynb",
+            "u3_s03_regressao_linear_simples.ipynb",
+            "u3_s05_regressao_simples_multipla.ipynb",
+        }
+
+        materials_dir = ROOT / "mat/aulas"
+        notebooks_dir = ROOT / "mat/notebooks"
+        actual_materials = {
+            path.name for path in materials_dir.glob("u*_s*.md")
+        }
+        actual_notebooks = {
+            path.name for path in notebooks_dir.glob("u*_s*.ipynb")
+        }
+
+        self.assertEqual(expected_materials, actual_materials)
+        self.assertEqual(expected_notebooks, actual_notebooks)
+
+        for name in sorted(expected_materials - {
+            "u1_s01_fundamentos_estatisticos.md"
+        }):
+            self.assertEqual(
+                [],
+                validate_aula_mockup(materials_dir / name, GRAPH),
+                name,
+            )
+        for name in sorted(expected_notebooks - {
+            "u1_s01_fundamentos_estatisticos_aula01.ipynb",
+            "u1_s01_fundamentos_estatisticos_aula02.ipynb",
+        }):
+            self.assertEqual(
+                [],
+                validate_notebook_mockup(
+                    notebooks_dir / name,
+                    HEAD_TEXT,
+                ),
+                name,
+            )
+
     def test_cli_refuses_to_overwrite_existing_notebook(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
