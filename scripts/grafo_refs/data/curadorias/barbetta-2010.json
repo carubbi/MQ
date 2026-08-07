@@ -1,0 +1,443 @@
+[
+  {
+    "id": "barbetta-2010-cap-1",
+    "tipo": "capitulo",
+    "numero_impresso": "1",
+    "titulo": "Introdução",
+    "pagina_pdf_inicio": 12,
+    "pagina_pdf_fim": 23,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-2",
+    "tipo": "capitulo",
+    "numero_impresso": "2",
+    "titulo": "O planejamento de uma pesquisa",
+    "pagina_pdf_inicio": 24,
+    "pagina_pdf_fim": 50,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-3",
+    "tipo": "capitulo",
+    "numero_impresso": "3",
+    "titulo": "Análise exploratória de dados",
+    "pagina_pdf_inicio": 51,
+    "pagina_pdf_fim": 91,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-cap-11",
+    "tipo": "capitulo",
+    "numero_impresso": "11",
+    "titulo": "Correlação e regressão",
+    "pagina_pdf_inicio": 317,
+    "pagina_pdf_fim": 350,
+    "pai": "barbetta-2010"
+  },
+  {
+    "id": "barbetta-2010-sec-1-1",
+    "tipo": "secao",
+    "numero_impresso": "1.1",
+    "titulo": "A estatística",
+    "pagina_pdf_inicio": 12,
+    "pagina_pdf_fim": 12,
+    "pai": "barbetta-2010-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-1-2",
+    "tipo": "secao",
+    "numero_impresso": "1.2",
+    "titulo": "Pesquisas, dados, variabilidade e estatística",
+    "pagina_pdf_inicio": 13,
+    "pagina_pdf_fim": 13,
+    "pai": "barbetta-2010-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-1-3",
+    "tipo": "secao",
+    "numero_impresso": "1.3",
+    "titulo": "A estatística na engenharia",
+    "pagina_pdf_inicio": 14,
+    "pagina_pdf_fim": 14,
+    "pai": "barbetta-2010-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-1-4",
+    "tipo": "secao",
+    "numero_impresso": "1.4",
+    "titulo": "A estatística e a informática",
+    "pagina_pdf_inicio": 15,
+    "pagina_pdf_fim": 15,
+    "pai": "barbetta-2010-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-1-5",
+    "tipo": "secao",
+    "numero_impresso": "1.5",
+    "titulo": "Modelos",
+    "pagina_pdf_inicio": 16,
+    "pagina_pdf_fim": 17,
+    "pai": "barbetta-2010-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estatistica-descritiva",
+      "topico-estatistica-inferencial"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-1-6",
+    "tipo": "secao",
+    "numero_impresso": "1.6",
+    "titulo": "Conceitos básicos",
+    "pagina_pdf_inicio": 18,
+    "pagina_pdf_fim": 23,
+    "pai": "barbetta-2010-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-populacao",
+      "topico-amostra",
+      "topico-variancia",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-2-1",
+    "tipo": "secao",
+    "numero_impresso": "2.1",
+    "titulo": "Aspectos gerais",
+    "pagina_pdf_inicio": 24,
+    "pagina_pdf_fim": 24,
+    "pai": "barbetta-2010-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-2-2",
+    "tipo": "secao",
+    "numero_impresso": "2.2",
+    "titulo": "Pesquisas de levantamento",
+    "pagina_pdf_inicio": 25,
+    "pagina_pdf_fim": 33,
+    "pai": "barbetta-2010-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-2-3",
+    "tipo": "secao",
+    "numero_impresso": "2.3",
+    "titulo": "Planejamento de experimentos",
+    "pagina_pdf_inicio": 34,
+    "pagina_pdf_fim": 50,
+    "pai": "barbetta-2010-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-3-1",
+    "tipo": "secao",
+    "numero_impresso": "3.1",
+    "titulo": "Dados e variáveis",
+    "pagina_pdf_inicio": 52,
+    "pagina_pdf_fim": 53,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-3-2",
+    "tipo": "secao",
+    "numero_impresso": "3.2",
+    "titulo": "Análise de variáveis qualitativas",
+    "pagina_pdf_inicio": 54,
+    "pagina_pdf_fim": 58,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-tabela",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-3-3",
+    "tipo": "secao",
+    "numero_impresso": "3.3",
+    "titulo": "Análise de variáveis quantitativas",
+    "pagina_pdf_inicio": 59,
+    "pagina_pdf_fim": 68,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-3-4",
+    "tipo": "secao",
+    "numero_impresso": "3.4",
+    "titulo": "Medidas descritivas",
+    "pagina_pdf_inicio": 69,
+    "pagina_pdf_fim": 83,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-variancia",
+      "topico-desvio-padrao",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-3-5",
+    "tipo": "secao",
+    "numero_impresso": "3.5",
+    "titulo": "Observações ao longo do tempo",
+    "pagina_pdf_inicio": 84,
+    "pagina_pdf_fim": 84,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-3-6",
+    "tipo": "secao",
+    "numero_impresso": "3.6",
+    "titulo": "Análise exploratória com apoio do computador",
+    "pagina_pdf_inicio": 85,
+    "pagina_pdf_fim": 85,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-pre-processamento",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-3-7",
+    "tipo": "secao",
+    "numero_impresso": "3.7",
+    "titulo": "Orientação geral",
+    "pagina_pdf_inicio": 86,
+    "pagina_pdf_fim": 91,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estatistica-descritiva",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-11-1",
+    "tipo": "secao",
+    "numero_impresso": "11.1",
+    "titulo": "Correlação",
+    "pagina_pdf_inicio": 317,
+    "pagina_pdf_fim": 318,
+    "pai": "barbetta-2010-cap-11",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-associacao",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-11-2",
+    "tipo": "secao",
+    "numero_impresso": "11.2",
+    "titulo": "Coeficiente de correlação linear de Pearson",
+    "pagina_pdf_inicio": 319,
+    "pagina_pdf_fim": 324,
+    "pai": "barbetta-2010-cap-11",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-correlacao-linear",
+      "topico-covariancia"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-2-2-1",
+    "tipo": "secao",
+    "numero_impresso": "2.2.1",
+    "titulo": "Procedimentos de amostragem",
+    "pagina_pdf_inicio": 25,
+    "pagina_pdf_fim": 31,
+    "pai": "barbetta-2010-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-sec-2-2-2",
+    "tipo": "secao",
+    "numero_impresso": "2.2.2",
+    "titulo": "Tamanho da amostra",
+    "pagina_pdf_inicio": 32,
+    "pagina_pdf_fim": 33,
+    "pai": "barbetta-2010-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-1-2",
+    "tipo": "exercicio",
+    "numero_impresso": "1.2",
+    "pagina_pdf": 23,
+    "pai": "barbetta-2010-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-populacao",
+      "topico-amostra",
+      "topico-amostragem"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-2-7",
+    "tipo": "exercicio",
+    "numero_impresso": "2.7",
+    "pagina_pdf": 34,
+    "pai": "barbetta-2010-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amostragem",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-3-4",
+    "tipo": "exercicio",
+    "numero_impresso": "3.4",
+    "pagina_pdf": 87,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-desvio-padrao",
+      "topico-frequencia"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "barbetta-2010-exercicio-3-8",
+    "tipo": "exercicio",
+    "numero_impresso": "3.8",
+    "pagina_pdf": 88,
+    "pai": "barbetta-2010-cap-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  }
+]

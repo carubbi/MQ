@@ -1,0 +1,291 @@
+[
+  {
+    "id": "montgomery-2018-cap-1",
+    "tipo": "capitulo",
+    "numero_impresso": "1",
+    "titulo": "The Role of Statistics in Engineering",
+    "pagina_pdf_inicio": 19,
+    "pagina_pdf_fim": 34,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-cap-6",
+    "tipo": "capitulo",
+    "numero_impresso": "6",
+    "titulo": "Descriptive Statistics",
+    "pagina_pdf_inicio": 144,
+    "pagina_pdf_fim": 161,
+    "pai": "montgomery-2018"
+  },
+  {
+    "id": "montgomery-2018-sec-1-1",
+    "tipo": "secao",
+    "numero_impresso": "1.1",
+    "titulo": "The Engineering Method and Statistical Thinking",
+    "pagina_pdf_inicio": 20,
+    "pagina_pdf_fim": 23,
+    "pai": "montgomery-2018-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2",
+    "tipo": "secao",
+    "numero_impresso": "1.2",
+    "titulo": "Collecting Engineering Data",
+    "pagina_pdf_inicio": 23,
+    "pagina_pdf_fim": 29,
+    "pai": "montgomery-2018-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-3",
+    "tipo": "secao",
+    "numero_impresso": "1.3",
+    "titulo": "Mechanistic and Empirical Models",
+    "pagina_pdf_inicio": 30,
+    "pagina_pdf_fim": 32,
+    "pai": "montgomery-2018-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estatistica-descritiva",
+      "topico-estatistica-inferencial"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-6-1",
+    "tipo": "secao",
+    "numero_impresso": "6.1",
+    "titulo": "Numerical Summaries of Data",
+    "pagina_pdf_inicio": 145,
+    "pagina_pdf_fim": 148,
+    "pai": "montgomery-2018-cap-6",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-variancia",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-6-2",
+    "tipo": "secao",
+    "numero_impresso": "6.2",
+    "titulo": "Stem-and-Leaf Diagrams",
+    "pagina_pdf_inicio": 149,
+    "pagina_pdf_fim": 152,
+    "pai": "montgomery-2018-cap-6",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-6-3",
+    "tipo": "secao",
+    "numero_impresso": "6.3",
+    "titulo": "Frequency Distributions and Histograms",
+    "pagina_pdf_inicio": 153,
+    "pagina_pdf_fim": 156,
+    "pai": "montgomery-2018-cap-6",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-6-4",
+    "tipo": "secao",
+    "numero_impresso": "6.4",
+    "titulo": "Box Plots",
+    "pagina_pdf_inicio": 157,
+    "pagina_pdf_fim": 157,
+    "pai": "montgomery-2018-cap-6",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-boxplot",
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-6-5",
+    "tipo": "secao",
+    "numero_impresso": "6.5",
+    "titulo": "Time Sequence Plots",
+    "pagina_pdf_inicio": 158,
+    "pagina_pdf_fim": 159,
+    "pai": "montgomery-2018-cap-6",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-6-6",
+    "tipo": "secao",
+    "numero_impresso": "6.6",
+    "titulo": "Scatter Diagrams",
+    "pagina_pdf_inicio": 160,
+    "pagina_pdf_fim": 161,
+    "pai": "montgomery-2018-cap-6",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-1-1",
+    "tipo": "secao",
+    "numero_impresso": "1.1.1",
+    "titulo": "Variability",
+    "pagina_pdf_inicio": 21,
+    "pagina_pdf_fim": 22,
+    "pai": "montgomery-2018-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-1-2",
+    "tipo": "secao",
+    "numero_impresso": "1.1.2",
+    "titulo": "Populations and Samples",
+    "pagina_pdf_inicio": 23,
+    "pagina_pdf_fim": 23,
+    "pai": "montgomery-2018-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-1",
+    "tipo": "secao",
+    "numero_impresso": "1.2.1",
+    "titulo": "Basic Principles",
+    "pagina_pdf_inicio": 23,
+    "pagina_pdf_fim": 23,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-2",
+    "tipo": "secao",
+    "numero_impresso": "1.2.2",
+    "titulo": "Retrospective Study",
+    "pagina_pdf_inicio": 23,
+    "pagina_pdf_fim": 23,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-3",
+    "tipo": "secao",
+    "numero_impresso": "1.2.3",
+    "titulo": "Observational Study",
+    "pagina_pdf_inicio": 24,
+    "pagina_pdf_fim": 24,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-representatividade"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-4",
+    "tipo": "secao",
+    "numero_impresso": "1.2.4",
+    "titulo": "Designed Experiments",
+    "pagina_pdf_inicio": 24,
+    "pagina_pdf_fim": 26,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "montgomery-2018-sec-1-2-5",
+    "tipo": "secao",
+    "numero_impresso": "1.2.5",
+    "titulo": "Observing Processes Over Time",
+    "pagina_pdf_inicio": 27,
+    "pagina_pdf_fim": 29,
+    "pai": "montgomery-2018-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  }
+]

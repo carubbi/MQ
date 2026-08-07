@@ -4,6 +4,17 @@ import re
 import unicodedata
 
 
+ITEM_TYPES = {"questao", "exercicio", "exemplo"}
+ITEM_FIELDS = (
+    "id",
+    "tipo",
+    "numero_impresso",
+    "pagina_pdf",
+    "pagina_impressa",
+    "pertinencia_t199",
+)
+
+
 CANONICAL_FIELDS_BY_TYPE = {
     "fonte": (
         "id",
@@ -34,15 +45,7 @@ CANONICAL_FIELDS_BY_TYPE = {
         "pagina_impressa_inicio",
         "pertinencia_t199",
     ),
-    "item_pedagogico": (
-        "id",
-        "tipo",
-        "subtipo",
-        "numero_impresso",
-        "pagina_pdf",
-        "pagina_impressa",
-        "pertinencia_t199",
-    ),
+    **{item_type: ITEM_FIELDS for item_type in ITEM_TYPES},
     "topico": ("id", "tipo", "nome"),
     "conteudo_curricular": ("id", "tipo", "codigo", "unidade", "nome"),
 }

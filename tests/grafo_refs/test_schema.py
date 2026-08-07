@@ -14,7 +14,7 @@ SCHEMA_PATH = (
 def valid_graph():
     return {
         "metadados": {
-            "versao_esquema": "1.0",
+            "versao_esquema": "1.1",
             "data_geracao": "2026-08-06",
             "semestre_referencia": "2026.2",
             "cobertura": {
@@ -39,11 +39,12 @@ def valid_graph():
                 "fonte",
                 "capitulo",
                 "secao",
-                "item_pedagogico",
+                "questao",
+                "exercicio",
+                "exemplo",
                 "topico",
                 "conteudo_curricular",
             ],
-            "subtipos_item_pedagogico": ["questao", "exercicio", "exemplo"],
             "tipos_relacao": ["contem", "aborda", "corresponde_a", "precede"],
             "pertinencias_t199": ["direta", "indireta", "fora_do_escopo"],
         },
@@ -77,8 +78,7 @@ def valid_graph():
             },
             {
                 "id": "fonte-x-q-01",
-                "tipo": "item_pedagogico",
-                "subtipo": "questao",
+                "tipo": "questao",
                 "numero_impresso": "1",
                 "pagina_pdf": 2,
                 "pertinencia_t199": "direta",
@@ -171,3 +171,11 @@ class SchemaTests(unittest.TestCase):
                 graph["vocabularios"][vocabulary_name].pop()
 
                 self.assert_invalid(graph)
+
+    def test_rejects_legacy_pedagogical_item_representation(self):
+        """Catches accepting the removed generic type and subtype field."""
+        graph = valid_graph()
+        graph["nos"][3]["tipo"] = "item_pedagogico"
+        graph["nos"][3]["subtipo"] = "questao"
+
+        self.assert_invalid(graph)

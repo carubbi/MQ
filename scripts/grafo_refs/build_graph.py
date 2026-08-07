@@ -15,8 +15,16 @@ DEFAULT_OUTPUT = REPOSITORY_ROOT / "prof/refs/mapas/grafo_referencias.json"
 COMPLETED_CONTENTS = ["01.01", "01.02", "01.03", "01.04"]
 PENDING_CONTENTS = ["02.01", "02.02", "02.03", "02.04", "03.01", "03.02", "03.03", "03.04"]
 VOCABULARIES = {
-    "tipos_no": ["fonte", "capitulo", "secao", "item_pedagogico", "topico", "conteudo_curricular"],
-    "subtipos_item_pedagogico": ["questao", "exercicio", "exemplo"],
+    "tipos_no": [
+        "fonte",
+        "capitulo",
+        "secao",
+        "questao",
+        "exercicio",
+        "exemplo",
+        "topico",
+        "conteudo_curricular",
+    ],
     "tipos_relacao": ["contem", "aborda", "corresponde_a", "precede"],
     "pertinencias_t199": ["direta", "indireta", "fora_do_escopo"],
 }
@@ -53,7 +61,7 @@ def build_graph(generated_on: str, curated_dir: Path) -> dict:
 
     return {
         "metadados": {
-            "versao_esquema": "1.0",
+            "versao_esquema": "1.1",
             "data_geracao": generated_on,
             "semestre_referencia": "2026.2",
             "cobertura": {

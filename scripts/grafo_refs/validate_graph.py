@@ -7,6 +7,8 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator
 
+from scripts.grafo_refs.model import ITEM_TYPES
+
 
 COMPLETED_CONTENTS = {"01.01", "01.02", "01.03", "01.04"}
 PENDING_CONTENTS = {"02.01", "02.02", "02.03", "02.04", "03.01", "03.02", "03.03", "03.04"}
@@ -153,12 +155,12 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
                     )
 
     for node_id, node in nodes_by_id.items():
-        if node.get("tipo") == "item_pedagogico":
+        if node.get("tipo") in ITEM_TYPES:
             if "pertinencia_t199" not in node:
-                errors.append(f"item pedagógico sem pertinência: {node_id}")
+                errors.append(f"item sem pertinência: {node_id}")
             for key, value in node.items():
                 if key not in {"titulo", "nome"} and isinstance(value, str) and len(value) > 240:
-                    errors.append(f"campo textual longo em item pedagógico: {node_id}.{key}")
+                    errors.append(f"campo textual longo em item: {node_id}.{key}")
             contents = curricular_edges_by_origin[node_id]
             if contents & COMPLETED_CONTENTS and contents & PENDING_CONTENTS:
                 errors.append(f"item híbrido depende de conteúdo pendente: {node_id}")

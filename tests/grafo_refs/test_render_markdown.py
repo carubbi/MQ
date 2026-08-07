@@ -30,8 +30,7 @@ GRAPH = {
         },
         {
             "id": "item-fora",
-            "tipo": "item_pedagogico",
-            "subtipo": "questao",
+            "tipo": "questao",
             "numero_impresso": "7",
             "pagina_pdf": 18,
             "pertinencia_t199": "fora_do_escopo",
@@ -131,6 +130,79 @@ class RenderMarkdownTests(unittest.TestCase):
         self.assertLess(rendered.index("- `01.02` — ainda não mapeado"), rendered.index("- `02.01` — ainda não mapeado"))
         self.assertNotIn("### `01.02`", rendered)
         self.assertNotIn("- `99.99` — ainda não mapeado", rendered)
+
+    def test_source_index_follows_pdf_page_order_instead_of_lexicographic_ids(self):
+        graph = json.loads(json.dumps(GRAPH))
+        graph["nos"].extend(
+            [
+                {
+                    "id": "fonte-a-cap-15",
+                    "tipo": "capitulo",
+                    "numero_impresso": "15",
+                    "titulo": "Capítulo posterior",
+                    "pagina_pdf_inicio": 150,
+                    "pagina_pdf_fim": 160,
+                },
+                {
+                    "id": "fonte-a-cap-2",
+                    "tipo": "capitulo",
+                    "numero_impresso": "2",
+                    "titulo": "Capítulo anterior",
+                    "pagina_pdf_inicio": 20,
+                    "pagina_pdf_fim": 30,
+                },
+            ]
+        )
+        graph["relacoes"].extend(
+            [
+                {"origem": "fonte-a", "tipo": "contem", "destino": "fonte-a-cap-15"},
+                {"origem": "fonte-a", "tipo": "contem", "destino": "fonte-a-cap-2"},
+            ]
+        )
+
+        rendered = render_markdown(graph)
+
+        self.assertLess(
+            rendered.index("capitulo 2 — Capítulo anterior"),
+            rendered.index("capitulo 15 — Capítulo posterior"),
+        )
+
+    def test_source_index_uses_natural_numbering_on_the_same_page(self):
+        graph = json.loads(json.dumps(GRAPH))
+        graph["nos"].extend(
+            [
+                {
+                    "id": "fonte-a-item-100",
+                    "tipo": "questao",
+                    "numero_impresso": "100",
+                    "pagina_pdf": 20,
+                    "pertinencia_t199": "direta",
+                },
+                {
+                    "id": "fonte-a-item-70",
+                    "tipo": "questao",
+                    "numero_impresso": "70",
+                    "pagina_pdf": 20,
+                    "pertinencia_t199": "direta",
+                },
+            ]
+        )
+        graph["relacoes"].extend(
+            [
+                {"origem": "fonte-a", "tipo": "contem", "destino": "fonte-a-item-100"},
+                {"origem": "fonte-a", "tipo": "contem", "destino": "fonte-a-item-70"},
+            ]
+        )
+
+        rendered = render_markdown(graph)
+        source_index = rendered.split("## Índice por fonte", 1)[1].split(
+            "## Índice por conteúdo da Unidade I", 1
+        )[0]
+
+        self.assertLess(
+            source_index.index("questao 70"),
+            source_index.index("questao 100"),
+        )
 
     def test_cli_renders_markdown_when_executed_as_a_script(self):
         """Catches a direct CLI execution that cannot import the local package."""

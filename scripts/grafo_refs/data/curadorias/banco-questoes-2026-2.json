@@ -1,0 +1,4566 @@
+[
+  {
+    "id": "banco-questoes-2026-2-cap-1",
+    "tipo": "capitulo",
+    "numero_impresso": "1",
+    "titulo": "Análise Descritiva",
+    "pagina_pdf_inicio": 7,
+    "pagina_pdf_fim": 94,
+    "pai": "banco-questoes-2026-2"
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-1",
+    "tipo": "secao",
+    "numero_impresso": "1.1",
+    "titulo": "Conceitos e classificação",
+    "pagina_pdf_inicio": 7,
+    "pagina_pdf_fim": 12,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-tipos-de-variaveis"
+    ],
+    "conteudos": [
+      "conteudo-01-01",
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-2",
+    "tipo": "secao",
+    "numero_impresso": "1.2",
+    "titulo": "Tabela de dupla entrada",
+    "pagina_pdf_inicio": 13,
+    "pagina_pdf_fim": 14,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3",
+    "tipo": "secao",
+    "numero_impresso": "1.3",
+    "titulo": "Gráficos",
+    "pagina_pdf_inicio": 15,
+    "pagina_pdf_fim": 33,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-1",
+    "tipo": "secao",
+    "numero_impresso": "2.1",
+    "titulo": "Medidas de posição para dados agrupados e não agrupados",
+    "pagina_pdf_inicio": 34,
+    "pagina_pdf_fim": 73,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-variancia",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-2",
+    "tipo": "secao",
+    "numero_impresso": "2.2",
+    "titulo": "Propriedades das medidas de posição e dispersão",
+    "pagina_pdf_inicio": 74,
+    "pagina_pdf_fim": 81,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-desvio-padrao",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-3",
+    "tipo": "secao",
+    "numero_impresso": "2.3",
+    "titulo": "Medidas separatrizes",
+    "pagina_pdf_inicio": 82,
+    "pagina_pdf_fim": 83,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-mediana",
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4",
+    "tipo": "secao",
+    "numero_impresso": "2.4",
+    "titulo": "Médias geométrica, harmônica, ponderada e quadrática",
+    "pagina_pdf_inicio": 84,
+    "pagina_pdf_fim": 87,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-3-1",
+    "tipo": "secao",
+    "numero_impresso": "3.1",
+    "titulo": "Momentos",
+    "pagina_pdf_inicio": 88,
+    "pagina_pdf_fim": 88,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-3-2",
+    "tipo": "secao",
+    "numero_impresso": "3.2",
+    "titulo": "Assimetria",
+    "pagina_pdf_inicio": 89,
+    "pagina_pdf_fim": 91,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-3-3",
+    "tipo": "secao",
+    "numero_impresso": "3.3",
+    "titulo": "Curtose",
+    "pagina_pdf_inicio": 92,
+    "pagina_pdf_fim": 94,
+    "pai": "banco-questoes-2026-2-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-1-2",
+    "tipo": "secao",
+    "numero_impresso": "1.1.2",
+    "titulo": "Variáveis",
+    "pagina_pdf_inicio": 8,
+    "pagina_pdf_fim": 10,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-1-3",
+    "tipo": "secao",
+    "numero_impresso": "1.1.3",
+    "titulo": "Séries estatísticas: elementos e classificação",
+    "pagina_pdf_inicio": 11,
+    "pagina_pdf_fim": 12,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tipos-de-variaveis"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-1",
+    "tipo": "secao",
+    "numero_impresso": "1.3.1",
+    "titulo": "Análise gráfica",
+    "pagina_pdf_inicio": 16,
+    "pagina_pdf_fim": 17,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2",
+    "titulo": "Gráficos especiais",
+    "pagina_pdf_inicio": 18,
+    "pagina_pdf_fim": 33,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-1",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.1",
+    "titulo": "Histograma",
+    "pagina_pdf_inicio": 18,
+    "pagina_pdf_fim": 19,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-2",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.2",
+    "titulo": "Gráfico de tendência",
+    "pagina_pdf_inicio": 20,
+    "pagina_pdf_fim": 21,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-3",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.3",
+    "titulo": "Box plot",
+    "pagina_pdf_inicio": 22,
+    "pagina_pdf_fim": 28,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-boxplot",
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-4",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.4",
+    "titulo": "Gráfico de Pareto",
+    "pagina_pdf_inicio": 29,
+    "pagina_pdf_fim": 32,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-1-3-2-5",
+    "tipo": "secao",
+    "numero_impresso": "1.3.2.5",
+    "titulo": "Fluxo de processo",
+    "pagina_pdf_inicio": 33,
+    "pagina_pdf_fim": 33,
+    "pai": "banco-questoes-2026-2-sec-1-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4-1",
+    "tipo": "secao",
+    "numero_impresso": "2.4.1",
+    "titulo": "Média geométrica",
+    "pagina_pdf_inicio": 84,
+    "pagina_pdf_fim": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4-2",
+    "tipo": "secao",
+    "numero_impresso": "2.4.2",
+    "titulo": "Média harmônica",
+    "pagina_pdf_inicio": 84,
+    "pagina_pdf_fim": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4-3",
+    "tipo": "secao",
+    "numero_impresso": "2.4.3",
+    "titulo": "Média ponderada",
+    "pagina_pdf_inicio": 85,
+    "pagina_pdf_fim": 86,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-sec-2-4-4",
+    "tipo": "secao",
+    "numero_impresso": "2.4.4",
+    "titulo": "Média quadrática",
+    "pagina_pdf_inicio": 87,
+    "pagina_pdf_fim": 87,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-1",
+    "tipo": "questao",
+    "numero_impresso": "1",
+    "pagina_pdf": 7,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-2",
+    "tipo": "questao",
+    "numero_impresso": "2",
+    "pagina_pdf": 7,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-3",
+    "tipo": "questao",
+    "numero_impresso": "3",
+    "pagina_pdf": 7,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-4",
+    "tipo": "questao",
+    "numero_impresso": "4",
+    "pagina_pdf": 7,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-5",
+    "tipo": "questao",
+    "numero_impresso": "5",
+    "pagina_pdf": 8,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-6",
+    "tipo": "questao",
+    "numero_impresso": "6",
+    "pagina_pdf": 8,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-investigacao-estatistica",
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-7",
+    "tipo": "questao",
+    "numero_impresso": "7",
+    "pagina_pdf": 8,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-8",
+    "tipo": "questao",
+    "numero_impresso": "8",
+    "pagina_pdf": 9,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-9",
+    "tipo": "questao",
+    "numero_impresso": "9",
+    "pagina_pdf": 9,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-10",
+    "tipo": "questao",
+    "numero_impresso": "10",
+    "pagina_pdf": 9,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-11",
+    "tipo": "questao",
+    "numero_impresso": "11",
+    "pagina_pdf": 10,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-12",
+    "tipo": "questao",
+    "numero_impresso": "12",
+    "pagina_pdf": 10,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-13",
+    "tipo": "questao",
+    "numero_impresso": "13",
+    "pagina_pdf": 10,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-14",
+    "tipo": "questao",
+    "numero_impresso": "14",
+    "pagina_pdf": 10,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-15",
+    "tipo": "questao",
+    "numero_impresso": "15",
+    "pagina_pdf": 11,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-16",
+    "tipo": "questao",
+    "numero_impresso": "16",
+    "pagina_pdf": 11,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-17",
+    "tipo": "questao",
+    "numero_impresso": "17",
+    "pagina_pdf": 11,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-18",
+    "tipo": "questao",
+    "numero_impresso": "18",
+    "pagina_pdf": 11,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-19",
+    "tipo": "questao",
+    "numero_impresso": "19",
+    "pagina_pdf": 11,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-20",
+    "tipo": "questao",
+    "numero_impresso": "20",
+    "pagina_pdf": 12,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-21",
+    "tipo": "questao",
+    "numero_impresso": "21",
+    "pagina_pdf": 12,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-22",
+    "tipo": "questao",
+    "numero_impresso": "22",
+    "pagina_pdf": 12,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-23",
+    "tipo": "questao",
+    "numero_impresso": "23",
+    "pagina_pdf": 13,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-24",
+    "tipo": "questao",
+    "numero_impresso": "24",
+    "pagina_pdf": 13,
+    "pai": "banco-questoes-2026-2-sec-1-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis",
+      "topico-tabela"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-25",
+    "tipo": "questao",
+    "numero_impresso": "25",
+    "pagina_pdf": 13,
+    "pai": "banco-questoes-2026-2-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-26",
+    "tipo": "questao",
+    "numero_impresso": "26",
+    "pagina_pdf": 13,
+    "pai": "banco-questoes-2026-2-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-27",
+    "tipo": "questao",
+    "numero_impresso": "27",
+    "pagina_pdf": 13,
+    "pai": "banco-questoes-2026-2-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-28",
+    "tipo": "questao",
+    "numero_impresso": "28",
+    "pagina_pdf": 14,
+    "pai": "banco-questoes-2026-2-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-29",
+    "tipo": "questao",
+    "numero_impresso": "29",
+    "pagina_pdf": 14,
+    "pai": "banco-questoes-2026-2-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-30",
+    "tipo": "questao",
+    "numero_impresso": "30",
+    "pagina_pdf": 14,
+    "pai": "banco-questoes-2026-2-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-31",
+    "tipo": "questao",
+    "numero_impresso": "31",
+    "pagina_pdf": 15,
+    "pai": "banco-questoes-2026-2-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-32",
+    "tipo": "questao",
+    "numero_impresso": "32",
+    "pagina_pdf": 15,
+    "pai": "banco-questoes-2026-2-sec-1-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela",
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-33",
+    "tipo": "questao",
+    "numero_impresso": "33",
+    "pagina_pdf": 15,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-34",
+    "tipo": "questao",
+    "numero_impresso": "34",
+    "pagina_pdf": 16,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-35",
+    "tipo": "questao",
+    "numero_impresso": "35",
+    "pagina_pdf": 16,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-36",
+    "tipo": "questao",
+    "numero_impresso": "36",
+    "pagina_pdf": 16,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-37",
+    "tipo": "questao",
+    "numero_impresso": "37",
+    "pagina_pdf": 17,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-38",
+    "tipo": "questao",
+    "numero_impresso": "38",
+    "pagina_pdf": 17,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-39",
+    "tipo": "questao",
+    "numero_impresso": "39",
+    "pagina_pdf": 18,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-40",
+    "tipo": "questao",
+    "numero_impresso": "40",
+    "pagina_pdf": 18,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-41",
+    "tipo": "questao",
+    "numero_impresso": "41",
+    "pagina_pdf": 19,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-42",
+    "tipo": "questao",
+    "numero_impresso": "42",
+    "pagina_pdf": 19,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-43",
+    "tipo": "questao",
+    "numero_impresso": "43",
+    "pagina_pdf": 20,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-44",
+    "tipo": "questao",
+    "numero_impresso": "44",
+    "pagina_pdf": 20,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-45",
+    "tipo": "questao",
+    "numero_impresso": "45",
+    "pagina_pdf": 20,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-46",
+    "tipo": "questao",
+    "numero_impresso": "46",
+    "pagina_pdf": 21,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-47",
+    "tipo": "questao",
+    "numero_impresso": "47",
+    "pagina_pdf": 21,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-48",
+    "tipo": "questao",
+    "numero_impresso": "48",
+    "pagina_pdf": 22,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-49",
+    "tipo": "questao",
+    "numero_impresso": "49",
+    "pagina_pdf": 23,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-50",
+    "tipo": "questao",
+    "numero_impresso": "50",
+    "pagina_pdf": 23,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-51",
+    "tipo": "questao",
+    "numero_impresso": "51",
+    "pagina_pdf": 24,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-52",
+    "tipo": "questao",
+    "numero_impresso": "52",
+    "pagina_pdf": 24,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-53",
+    "tipo": "questao",
+    "numero_impresso": "53",
+    "pagina_pdf": 24,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-54",
+    "tipo": "questao",
+    "numero_impresso": "54",
+    "pagina_pdf": 25,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-55",
+    "tipo": "questao",
+    "numero_impresso": "55",
+    "pagina_pdf": 25,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-56",
+    "tipo": "questao",
+    "numero_impresso": "56",
+    "pagina_pdf": 26,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-57",
+    "tipo": "questao",
+    "numero_impresso": "57",
+    "pagina_pdf": 26,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-58",
+    "tipo": "questao",
+    "numero_impresso": "58",
+    "pagina_pdf": 26,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-59",
+    "tipo": "questao",
+    "numero_impresso": "59",
+    "pagina_pdf": 27,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-60",
+    "tipo": "questao",
+    "numero_impresso": "60",
+    "pagina_pdf": 27,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-61",
+    "tipo": "questao",
+    "numero_impresso": "61",
+    "pagina_pdf": 27,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-62",
+    "tipo": "questao",
+    "numero_impresso": "62",
+    "pagina_pdf": 28,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-63",
+    "tipo": "questao",
+    "numero_impresso": "63",
+    "pagina_pdf": 29,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-64",
+    "tipo": "questao",
+    "numero_impresso": "64",
+    "pagina_pdf": 29,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-65",
+    "tipo": "questao",
+    "numero_impresso": "65",
+    "pagina_pdf": 29,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-66",
+    "tipo": "questao",
+    "numero_impresso": "66",
+    "pagina_pdf": 30,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-67",
+    "tipo": "questao",
+    "numero_impresso": "67",
+    "pagina_pdf": 30,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-68",
+    "tipo": "questao",
+    "numero_impresso": "68",
+    "pagina_pdf": 31,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-69",
+    "tipo": "questao",
+    "numero_impresso": "69",
+    "pagina_pdf": 31,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-70",
+    "tipo": "questao",
+    "numero_impresso": "70",
+    "pagina_pdf": 32,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-71",
+    "tipo": "questao",
+    "numero_impresso": "71",
+    "pagina_pdf": 32,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-72",
+    "tipo": "questao",
+    "numero_impresso": "72",
+    "pagina_pdf": 33,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-73",
+    "tipo": "questao",
+    "numero_impresso": "73",
+    "pagina_pdf": 33,
+    "pai": "banco-questoes-2026-2-sec-1-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-grafico",
+      "topico-frequencia",
+      "topico-boxplot"
+    ],
+    "conteudos": [
+      "conteudo-01-02",
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-74",
+    "tipo": "questao",
+    "numero_impresso": "74",
+    "pagina_pdf": 34,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-75",
+    "tipo": "questao",
+    "numero_impresso": "75",
+    "pagina_pdf": 34,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-76",
+    "tipo": "questao",
+    "numero_impresso": "76",
+    "pagina_pdf": 34,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-77",
+    "tipo": "questao",
+    "numero_impresso": "77",
+    "pagina_pdf": 34,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-78",
+    "tipo": "questao",
+    "numero_impresso": "78",
+    "pagina_pdf": 35,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-79",
+    "tipo": "questao",
+    "numero_impresso": "79",
+    "pagina_pdf": 35,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-80",
+    "tipo": "questao",
+    "numero_impresso": "80",
+    "pagina_pdf": 35,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-81",
+    "tipo": "questao",
+    "numero_impresso": "81",
+    "pagina_pdf": 35,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-82",
+    "tipo": "questao",
+    "numero_impresso": "82",
+    "pagina_pdf": 35,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-83",
+    "tipo": "questao",
+    "numero_impresso": "83",
+    "pagina_pdf": 35,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-84",
+    "tipo": "questao",
+    "numero_impresso": "84",
+    "pagina_pdf": 36,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-85",
+    "tipo": "questao",
+    "numero_impresso": "85",
+    "pagina_pdf": 36,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-86",
+    "tipo": "questao",
+    "numero_impresso": "86",
+    "pagina_pdf": 36,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-87",
+    "tipo": "questao",
+    "numero_impresso": "87",
+    "pagina_pdf": 36,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-88",
+    "tipo": "questao",
+    "numero_impresso": "88",
+    "pagina_pdf": 36,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-89",
+    "tipo": "questao",
+    "numero_impresso": "89",
+    "pagina_pdf": 38,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-90",
+    "tipo": "questao",
+    "numero_impresso": "90",
+    "pagina_pdf": 39,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-91",
+    "tipo": "questao",
+    "numero_impresso": "91",
+    "pagina_pdf": 39,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-92",
+    "tipo": "questao",
+    "numero_impresso": "92",
+    "pagina_pdf": 41,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-93",
+    "tipo": "questao",
+    "numero_impresso": "93",
+    "pagina_pdf": 41,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-94",
+    "tipo": "questao",
+    "numero_impresso": "94",
+    "pagina_pdf": 42,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-95",
+    "tipo": "questao",
+    "numero_impresso": "95",
+    "pagina_pdf": 42,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-96",
+    "tipo": "questao",
+    "numero_impresso": "96",
+    "pagina_pdf": 43,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-97",
+    "tipo": "questao",
+    "numero_impresso": "97",
+    "pagina_pdf": 44,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-98",
+    "tipo": "questao",
+    "numero_impresso": "98",
+    "pagina_pdf": 44,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-99",
+    "tipo": "questao",
+    "numero_impresso": "99",
+    "pagina_pdf": 45,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-100",
+    "tipo": "questao",
+    "numero_impresso": "100",
+    "pagina_pdf": 45,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-101",
+    "tipo": "questao",
+    "numero_impresso": "101",
+    "pagina_pdf": 46,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-102",
+    "tipo": "questao",
+    "numero_impresso": "102",
+    "pagina_pdf": 47,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-103",
+    "tipo": "questao",
+    "numero_impresso": "103",
+    "pagina_pdf": 47,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-104",
+    "tipo": "questao",
+    "numero_impresso": "104",
+    "pagina_pdf": 47,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-105",
+    "tipo": "questao",
+    "numero_impresso": "105",
+    "pagina_pdf": 48,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-106",
+    "tipo": "questao",
+    "numero_impresso": "106",
+    "pagina_pdf": 48,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-107",
+    "tipo": "questao",
+    "numero_impresso": "107",
+    "pagina_pdf": 49,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-108",
+    "tipo": "questao",
+    "numero_impresso": "108",
+    "pagina_pdf": 49,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-109",
+    "tipo": "questao",
+    "numero_impresso": "109",
+    "pagina_pdf": 50,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-110",
+    "tipo": "questao",
+    "numero_impresso": "110",
+    "pagina_pdf": 51,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-111",
+    "tipo": "questao",
+    "numero_impresso": "111",
+    "pagina_pdf": 51,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-112",
+    "tipo": "questao",
+    "numero_impresso": "112",
+    "pagina_pdf": 51,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-113",
+    "tipo": "questao",
+    "numero_impresso": "113",
+    "pagina_pdf": 52,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-114",
+    "tipo": "questao",
+    "numero_impresso": "114",
+    "pagina_pdf": 52,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-115",
+    "tipo": "questao",
+    "numero_impresso": "115",
+    "pagina_pdf": 52,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-116",
+    "tipo": "questao",
+    "numero_impresso": "116",
+    "pagina_pdf": 53,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-117",
+    "tipo": "questao",
+    "numero_impresso": "117",
+    "pagina_pdf": 53,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-118",
+    "tipo": "questao",
+    "numero_impresso": "118",
+    "pagina_pdf": 53,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-119",
+    "tipo": "questao",
+    "numero_impresso": "119",
+    "pagina_pdf": 53,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-120",
+    "tipo": "questao",
+    "numero_impresso": "120",
+    "pagina_pdf": 53,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-121",
+    "tipo": "questao",
+    "numero_impresso": "121",
+    "pagina_pdf": 54,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-122",
+    "tipo": "questao",
+    "numero_impresso": "122",
+    "pagina_pdf": 54,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-123",
+    "tipo": "questao",
+    "numero_impresso": "123",
+    "pagina_pdf": 54,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-124",
+    "tipo": "questao",
+    "numero_impresso": "124",
+    "pagina_pdf": 55,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-125",
+    "tipo": "questao",
+    "numero_impresso": "125",
+    "pagina_pdf": 56,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-126",
+    "tipo": "questao",
+    "numero_impresso": "126",
+    "pagina_pdf": 56,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-127",
+    "tipo": "questao",
+    "numero_impresso": "127",
+    "pagina_pdf": 57,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-128",
+    "tipo": "questao",
+    "numero_impresso": "128",
+    "pagina_pdf": 58,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-129",
+    "tipo": "questao",
+    "numero_impresso": "129",
+    "pagina_pdf": 58,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-130",
+    "tipo": "questao",
+    "numero_impresso": "130",
+    "pagina_pdf": 59,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-131",
+    "tipo": "questao",
+    "numero_impresso": "131",
+    "pagina_pdf": 59,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-132",
+    "tipo": "questao",
+    "numero_impresso": "132",
+    "pagina_pdf": 59,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-133",
+    "tipo": "questao",
+    "numero_impresso": "133",
+    "pagina_pdf": 60,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-134",
+    "tipo": "questao",
+    "numero_impresso": "134",
+    "pagina_pdf": 61,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-135",
+    "tipo": "questao",
+    "numero_impresso": "135",
+    "pagina_pdf": 61,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-136",
+    "tipo": "questao",
+    "numero_impresso": "136",
+    "pagina_pdf": 61,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-137",
+    "tipo": "questao",
+    "numero_impresso": "137",
+    "pagina_pdf": 62,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-138",
+    "tipo": "questao",
+    "numero_impresso": "138",
+    "pagina_pdf": 62,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-139",
+    "tipo": "questao",
+    "numero_impresso": "139",
+    "pagina_pdf": 62,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-140",
+    "tipo": "questao",
+    "numero_impresso": "140",
+    "pagina_pdf": 63,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-141",
+    "tipo": "questao",
+    "numero_impresso": "141",
+    "pagina_pdf": 63,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-142",
+    "tipo": "questao",
+    "numero_impresso": "142",
+    "pagina_pdf": 63,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-143",
+    "tipo": "questao",
+    "numero_impresso": "143",
+    "pagina_pdf": 64,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-144",
+    "tipo": "questao",
+    "numero_impresso": "144",
+    "pagina_pdf": 64,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-145",
+    "tipo": "questao",
+    "numero_impresso": "145",
+    "pagina_pdf": 64,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-146",
+    "tipo": "questao",
+    "numero_impresso": "146",
+    "pagina_pdf": 65,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-147",
+    "tipo": "questao",
+    "numero_impresso": "147",
+    "pagina_pdf": 65,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-148",
+    "tipo": "questao",
+    "numero_impresso": "148",
+    "pagina_pdf": 66,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-149",
+    "tipo": "questao",
+    "numero_impresso": "149",
+    "pagina_pdf": 66,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-150",
+    "tipo": "questao",
+    "numero_impresso": "150",
+    "pagina_pdf": 67,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-151",
+    "tipo": "questao",
+    "numero_impresso": "151",
+    "pagina_pdf": 67,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-152",
+    "tipo": "questao",
+    "numero_impresso": "152",
+    "pagina_pdf": 67,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-153",
+    "tipo": "questao",
+    "numero_impresso": "153",
+    "pagina_pdf": 68,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-154",
+    "tipo": "questao",
+    "numero_impresso": "154",
+    "pagina_pdf": 68,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-155",
+    "tipo": "questao",
+    "numero_impresso": "155",
+    "pagina_pdf": 69,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-156",
+    "tipo": "questao",
+    "numero_impresso": "156",
+    "pagina_pdf": 69,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-157",
+    "tipo": "questao",
+    "numero_impresso": "157",
+    "pagina_pdf": 69,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-158",
+    "tipo": "questao",
+    "numero_impresso": "158",
+    "pagina_pdf": 69,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-159",
+    "tipo": "questao",
+    "numero_impresso": "159",
+    "pagina_pdf": 70,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-160",
+    "tipo": "questao",
+    "numero_impresso": "160",
+    "pagina_pdf": 70,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-161",
+    "tipo": "questao",
+    "numero_impresso": "161",
+    "pagina_pdf": 71,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-162",
+    "tipo": "questao",
+    "numero_impresso": "162",
+    "pagina_pdf": 71,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-163",
+    "tipo": "questao",
+    "numero_impresso": "163",
+    "pagina_pdf": 71,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-164",
+    "tipo": "questao",
+    "numero_impresso": "164",
+    "pagina_pdf": 72,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-165",
+    "tipo": "questao",
+    "numero_impresso": "165",
+    "pagina_pdf": 72,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-166",
+    "tipo": "questao",
+    "numero_impresso": "166",
+    "pagina_pdf": 73,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-167",
+    "tipo": "questao",
+    "numero_impresso": "167",
+    "pagina_pdf": 73,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-168",
+    "tipo": "questao",
+    "numero_impresso": "168",
+    "pagina_pdf": 73,
+    "pai": "banco-questoes-2026-2-sec-2-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-169",
+    "tipo": "questao",
+    "numero_impresso": "169",
+    "pagina_pdf": 74,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-170",
+    "tipo": "questao",
+    "numero_impresso": "170",
+    "pagina_pdf": 74,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-171",
+    "tipo": "questao",
+    "numero_impresso": "171",
+    "pagina_pdf": 74,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-172",
+    "tipo": "questao",
+    "numero_impresso": "172",
+    "pagina_pdf": 75,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-173",
+    "tipo": "questao",
+    "numero_impresso": "173",
+    "pagina_pdf": 75,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-174",
+    "tipo": "questao",
+    "numero_impresso": "174",
+    "pagina_pdf": 75,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-175",
+    "tipo": "questao",
+    "numero_impresso": "175",
+    "pagina_pdf": 75,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-176",
+    "tipo": "questao",
+    "numero_impresso": "176",
+    "pagina_pdf": 75,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-177",
+    "tipo": "questao",
+    "numero_impresso": "177",
+    "pagina_pdf": 76,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-178",
+    "tipo": "questao",
+    "numero_impresso": "178",
+    "pagina_pdf": 76,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-179",
+    "tipo": "questao",
+    "numero_impresso": "179",
+    "pagina_pdf": 77,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-180",
+    "tipo": "questao",
+    "numero_impresso": "180",
+    "pagina_pdf": 77,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-181",
+    "tipo": "questao",
+    "numero_impresso": "181",
+    "pagina_pdf": 77,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-182",
+    "tipo": "questao",
+    "numero_impresso": "182",
+    "pagina_pdf": 78,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-183",
+    "tipo": "questao",
+    "numero_impresso": "183",
+    "pagina_pdf": 79,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-184",
+    "tipo": "questao",
+    "numero_impresso": "184",
+    "pagina_pdf": 79,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-185",
+    "tipo": "questao",
+    "numero_impresso": "185",
+    "pagina_pdf": 80,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-186",
+    "tipo": "questao",
+    "numero_impresso": "186",
+    "pagina_pdf": 80,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-187",
+    "tipo": "questao",
+    "numero_impresso": "187",
+    "pagina_pdf": 80,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-188",
+    "tipo": "questao",
+    "numero_impresso": "188",
+    "pagina_pdf": 80,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-189",
+    "tipo": "questao",
+    "numero_impresso": "189",
+    "pagina_pdf": 80,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-190",
+    "tipo": "questao",
+    "numero_impresso": "190",
+    "pagina_pdf": 80,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-191",
+    "tipo": "questao",
+    "numero_impresso": "191",
+    "pagina_pdf": 80,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-192",
+    "tipo": "questao",
+    "numero_impresso": "192",
+    "pagina_pdf": 80,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-193",
+    "tipo": "questao",
+    "numero_impresso": "193",
+    "pagina_pdf": 81,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-194",
+    "tipo": "questao",
+    "numero_impresso": "194",
+    "pagina_pdf": 81,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-195",
+    "tipo": "questao",
+    "numero_impresso": "195",
+    "pagina_pdf": 81,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-196",
+    "tipo": "questao",
+    "numero_impresso": "196",
+    "pagina_pdf": 81,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-197",
+    "tipo": "questao",
+    "numero_impresso": "197",
+    "pagina_pdf": 81,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-198",
+    "tipo": "questao",
+    "numero_impresso": "198",
+    "pagina_pdf": 81,
+    "pai": "banco-questoes-2026-2-sec-2-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-199",
+    "tipo": "questao",
+    "numero_impresso": "199",
+    "pagina_pdf": 82,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-200",
+    "tipo": "questao",
+    "numero_impresso": "200",
+    "pagina_pdf": 82,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-201",
+    "tipo": "questao",
+    "numero_impresso": "201",
+    "pagina_pdf": 82,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-202",
+    "tipo": "questao",
+    "numero_impresso": "202",
+    "pagina_pdf": 82,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-203",
+    "tipo": "questao",
+    "numero_impresso": "203",
+    "pagina_pdf": 82,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-204",
+    "tipo": "questao",
+    "numero_impresso": "204",
+    "pagina_pdf": 82,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-205",
+    "tipo": "questao",
+    "numero_impresso": "205",
+    "pagina_pdf": 82,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-206",
+    "tipo": "questao",
+    "numero_impresso": "206",
+    "pagina_pdf": 83,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-207",
+    "tipo": "questao",
+    "numero_impresso": "207",
+    "pagina_pdf": 83,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-208",
+    "tipo": "questao",
+    "numero_impresso": "208",
+    "pagina_pdf": 83,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-209",
+    "tipo": "questao",
+    "numero_impresso": "209",
+    "pagina_pdf": 83,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-210",
+    "tipo": "questao",
+    "numero_impresso": "210",
+    "pagina_pdf": 83,
+    "pai": "banco-questoes-2026-2-sec-2-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-quantil",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-211",
+    "tipo": "questao",
+    "numero_impresso": "211",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-212",
+    "tipo": "questao",
+    "numero_impresso": "212",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-213",
+    "tipo": "questao",
+    "numero_impresso": "213",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-214",
+    "tipo": "questao",
+    "numero_impresso": "214",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-215",
+    "tipo": "questao",
+    "numero_impresso": "215",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-216",
+    "tipo": "questao",
+    "numero_impresso": "216",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-217",
+    "tipo": "questao",
+    "numero_impresso": "217",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-218",
+    "tipo": "questao",
+    "numero_impresso": "218",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-219",
+    "tipo": "questao",
+    "numero_impresso": "219",
+    "pagina_pdf": 84,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-220",
+    "tipo": "questao",
+    "numero_impresso": "220",
+    "pagina_pdf": 85,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-221",
+    "tipo": "questao",
+    "numero_impresso": "221",
+    "pagina_pdf": 85,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-222",
+    "tipo": "questao",
+    "numero_impresso": "222",
+    "pagina_pdf": 85,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-223",
+    "tipo": "questao",
+    "numero_impresso": "223",
+    "pagina_pdf": 85,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-224",
+    "tipo": "questao",
+    "numero_impresso": "224",
+    "pagina_pdf": 85,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-225",
+    "tipo": "questao",
+    "numero_impresso": "225",
+    "pagina_pdf": 85,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-226",
+    "tipo": "questao",
+    "numero_impresso": "226",
+    "pagina_pdf": 85,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-227",
+    "tipo": "questao",
+    "numero_impresso": "227",
+    "pagina_pdf": 86,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-228",
+    "tipo": "questao",
+    "numero_impresso": "228",
+    "pagina_pdf": 86,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-229",
+    "tipo": "questao",
+    "numero_impresso": "229",
+    "pagina_pdf": 86,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-230",
+    "tipo": "questao",
+    "numero_impresso": "230",
+    "pagina_pdf": 86,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-231",
+    "tipo": "questao",
+    "numero_impresso": "231",
+    "pagina_pdf": 86,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-232",
+    "tipo": "questao",
+    "numero_impresso": "232",
+    "pagina_pdf": 87,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-233",
+    "tipo": "questao",
+    "numero_impresso": "233",
+    "pagina_pdf": 87,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-234",
+    "tipo": "questao",
+    "numero_impresso": "234",
+    "pagina_pdf": 87,
+    "pai": "banco-questoes-2026-2-sec-2-4",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-235",
+    "tipo": "questao",
+    "numero_impresso": "235",
+    "pagina_pdf": 88,
+    "pai": "banco-questoes-2026-2-sec-3-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-236",
+    "tipo": "questao",
+    "numero_impresso": "236",
+    "pagina_pdf": 88,
+    "pai": "banco-questoes-2026-2-sec-3-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-237",
+    "tipo": "questao",
+    "numero_impresso": "237",
+    "pagina_pdf": 88,
+    "pai": "banco-questoes-2026-2-sec-3-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-238",
+    "tipo": "questao",
+    "numero_impresso": "238",
+    "pagina_pdf": 89,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-239",
+    "tipo": "questao",
+    "numero_impresso": "239",
+    "pagina_pdf": 89,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-240",
+    "tipo": "questao",
+    "numero_impresso": "240",
+    "pagina_pdf": 89,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-241",
+    "tipo": "questao",
+    "numero_impresso": "241",
+    "pagina_pdf": 89,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-242",
+    "tipo": "questao",
+    "numero_impresso": "242",
+    "pagina_pdf": 89,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-243",
+    "tipo": "questao",
+    "numero_impresso": "243",
+    "pagina_pdf": 90,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-244",
+    "tipo": "questao",
+    "numero_impresso": "244",
+    "pagina_pdf": 90,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-245",
+    "tipo": "questao",
+    "numero_impresso": "245",
+    "pagina_pdf": 90,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-246",
+    "tipo": "questao",
+    "numero_impresso": "246",
+    "pagina_pdf": 90,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-247",
+    "tipo": "questao",
+    "numero_impresso": "247",
+    "pagina_pdf": 90,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-248",
+    "tipo": "questao",
+    "numero_impresso": "248",
+    "pagina_pdf": 91,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-249",
+    "tipo": "questao",
+    "numero_impresso": "249",
+    "pagina_pdf": 91,
+    "pai": "banco-questoes-2026-2-sec-3-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-250",
+    "tipo": "questao",
+    "numero_impresso": "250",
+    "pagina_pdf": 92,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-251",
+    "tipo": "questao",
+    "numero_impresso": "251",
+    "pagina_pdf": 92,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-252",
+    "tipo": "questao",
+    "numero_impresso": "252",
+    "pagina_pdf": 92,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-253",
+    "tipo": "questao",
+    "numero_impresso": "253",
+    "pagina_pdf": 92,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-254",
+    "tipo": "questao",
+    "numero_impresso": "254",
+    "pagina_pdf": 93,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-255",
+    "tipo": "questao",
+    "numero_impresso": "255",
+    "pagina_pdf": 93,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-256",
+    "tipo": "questao",
+    "numero_impresso": "256",
+    "pagina_pdf": 93,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-257",
+    "tipo": "questao",
+    "numero_impresso": "257",
+    "pagina_pdf": 94,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-258",
+    "tipo": "questao",
+    "numero_impresso": "258",
+    "pagina_pdf": 94,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "banco-questoes-2026-2-questao-259",
+    "tipo": "questao",
+    "numero_impresso": "259",
+    "pagina_pdf": 94,
+    "pai": "banco-questoes-2026-2-sec-3-3",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-assimetria"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  }
+]

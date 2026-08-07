@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -10,6 +11,7 @@ if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from scripts.grafo_refs.query_graph import _nodes_by_id, _parents_by_child, _reference, query_by_content, query_by_topic
+from scripts.grafo_refs.model import ITEM_TYPES
 
 
 PARTIAL_COVERAGE_NOTICE = (
@@ -68,8 +70,32 @@ def _descendants_by_source(graph: dict) -> dict[str, list[dict]]:
             continue
         for source in _reference(node_id, nodes_by_id, parents)["fontes"]:
             grouped[source["id"]].append(node)
+    type_order = {
+        "capitulo": 0,
+        "secao": 1,
+        "questao": 2,
+        "exercicio": 2,
+        "exemplo": 2,
+    }
+
+    def natural_number_key(value) -> tuple:
+        return tuple(
+            (0, int(part)) if part.isdigit() else (1, part.casefold())
+            for part in re.split(r"(\d+)", str(value))
+            if part
+        )
+
+    def editorial_key(node: dict) -> tuple:
+        first_page = node.get("pagina_pdf_inicio", node.get("pagina_pdf"))
+        return (
+            first_page if isinstance(first_page, int) else float("inf"),
+            type_order.get(node.get("tipo"), 9),
+            natural_number_key(node.get("numero_impresso", node.get("id", ""))),
+            node.get("id", ""),
+        )
+
     return {
-        source_id: sorted(nodes, key=lambda node: (node.get("tipo", ""), node.get("id", "")))
+        source_id: sorted(nodes, key=editorial_key)
         for source_id, nodes in grouped.items()
     }
 
@@ -160,7 +186,8 @@ def render_markdown(graph: dict) -> str:
         (
             node
             for node in nodes_by_id.values()
-            if node.get("tipo") == "item_pedagogico" and node.get("pertinencia_t199") == "fora_do_escopo"
+            if node.get("tipo") in ITEM_TYPES
+            and node.get("pertinencia_t199") == "fora_do_escopo"
         ),
         key=lambda node: node["id"],
     )

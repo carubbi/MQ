@@ -98,6 +98,34 @@ class ModelTests(unittest.TestCase):
             ],
         )
 
+    def test_flatten_preserves_concrete_item_type_without_legacy_subtype(self):
+        """Catches reintroducing the generic pedagogical-item representation."""
+        curated = [
+            {
+                "id": "livro-x-q-01",
+                "tipo": "questao",
+                "subtipo": "questao",
+                "numero_impresso": "1",
+                "pagina_pdf": 3,
+                "pertinencia_t199": "direta",
+            }
+        ]
+
+        nodes, _ = flatten_curated_source("livro-x", curated)
+
+        self.assertEqual(
+            nodes,
+            [
+                {
+                    "id": "livro-x-q-01",
+                    "tipo": "questao",
+                    "numero_impresso": "1",
+                    "pagina_pdf": 3,
+                    "pertinencia_t199": "direta",
+                }
+            ],
+        )
+
     def test_flatten_precedes_consecutive_siblings(self):
         curated = [
             {"id": "livro-x-cap-01", "tipo": "capitulo", "pai": "livro-x"},

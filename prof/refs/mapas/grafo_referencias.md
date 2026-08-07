@@ -1,0 +1,2243 @@
+# Grafo de referências da T199
+
+> **Cobertura parcial:** esta versão mapeia somente os conteúdos `01.01` a
+> `01.04`. Ausência de resultados para outros conteúdos não indica ausência
+> de referências no corpus.
+
+## Cobertura do corpus
+
+- Estado: parcial
+- Critério: conteudo_curricular
+- Fontes inventariadas: 9
+
+## Conteúdos concluídos
+
+- `01.01` — Fundamentos estatísticos
+- `01.02` — Organização e representação de dados
+- `01.03` — Análise univariada
+- `01.04` — Análise bivariada
+
+## Conteúdos pendentes
+
+- `02.01` — ainda não mapeado
+- `02.02` — ainda não mapeado
+- `02.03` — ainda não mapeado
+- `02.04` — ainda não mapeado
+- `03.01` — ainda não mapeado
+- `03.02` — ainda não mapeado
+- `03.03` — ainda não mapeado
+- `03.04` — ainda não mapeado
+
+## Índice por fonte
+
+- Apostila de Métodos Quantitativos (apostila)
+  - capitulo 1 — Conceitos básicos em Estatística — páginas $8$–$10$
+  - secao 1.1 — Divisão da Estatística — página $8$
+  - secao 1.2 — Conceitos fundamentais — páginas $8$–$9$
+  - secao 1.3 — Fases do método estatístico — página $10$
+  - capitulo 2 — Estudos dos dados estatísticos — páginas $11$–$21$
+  - secao 2.1 — Séries estatísticas — página $11$
+  - secao 2.2 — Apresentação tabular e gráfica — páginas $12$–$21$
+  - secao 2.2.1 — Apresentação tabular — páginas $12$–$13$
+  - secao 2.2.2 — Apresentação gráfica — páginas $14$–$21$
+  - capitulo 3 — Distribuição de frequências — páginas $22$–$26$
+  - secao 3.1 — Distribuição de frequências para dados discretos — página $23$
+  - secao 3.2 — Distribuição de frequências para dados contínuos — páginas $24$–$26$
+  - capitulo 4 — Medidas de posição — páginas $27$–$48$
+  - secao 4 — Medidas de posição — páginas $27$–$48$
+  - secao 4.1 — Pequenos conjuntos de dados — páginas $27$–$29$
+  - secao 4.2 — Grandes conjuntos de dados: discretos — páginas $30$–$31$
+  - secao 4.3 — Grandes conjuntos de dados: contínuos — páginas $32$–$34$
+  - secao 4.4 — Medidas separatrizes — páginas $35$–$41$
+  - secao 4.5 — Interpolação linear — páginas $42$–$43$
+  - secao 4.6 — Outras medidas de posição — páginas $44$–$48$
+  - capitulo 5 — Medidas de dispersão — páginas $49$–$57$
+  - secao 5 — Medidas de dispersão — páginas $49$–$57$
+  - secao 5.1 — Pequenos conjuntos de dados — páginas $49$–$52$
+  - secao 5.2 — Grandes conjuntos de dados: discretos — páginas $53$–$54$
+  - secao 5.3 — Grandes conjuntos de dados: contínuos — páginas $55$–$57$
+  - capitulo 6 — Medidas de assimetria e curtose — páginas $58$–$61$
+  - secao 6.1 — Medidas de assimetria — página $58$
+  - secao 6.2 — Medidas de curtose — páginas $59$–$61$
+  - capitulo 15 — Análise de Correlação e Regressão — páginas $148$–$163$
+  - secao 15.1 — Gráfico de dispersão — página $148$
+  - secao 15.2 — Coeficiente de correlação de Pearson — página $149$
+  - capitulo 17 — Exercícios Propostos — páginas $168$–$193$
+  - secao 17.1 — Análise Descritiva — páginas $168$–$173$
+  - exercicio 1 — página $168$
+  - exercicio 2 — página $168$
+  - exercicio 3 — página $168$
+  - exercicio 4 — página $168$
+  - exercicio 5 — página $168$
+  - exercicio 6 — página $168$
+  - exercicio 7 — página $169$
+  - exercicio 8 — página $169$
+  - exercicio 9 — página $169$
+  - exercicio 10 — página $169$
+  - exercicio 11 — página $170$
+  - exercicio 12 — página $170$
+  - exercicio 13 — página $170$
+  - exercicio 14 — página $170$
+  - exercicio 15 — página $170$
+  - exercicio 16 — página $170$
+  - exercicio 17 — página $170$
+  - exercicio 18 — página $170$
+  - exercicio 19 — página $171$
+  - exercicio 20 — página $171$
+  - exercicio 21 — página $172$
+  - exercicio 22 — página $172$
+  - exercicio 23 — página $172$
+  - exercicio 24 — página $172$
+  - exercicio 25 — página $172$
+  - exercicio 26 — página $172$
+  - exercicio 27 — página $173$
+- Applied Statistics and Probability for Engineers (livro)
+  - capitulo 1 — The Role of Statistics in Engineering — páginas $19$–$34$
+  - secao 1.1 — The Engineering Method and Statistical Thinking — páginas $20$–$23$
+  - secao 1.1.1 — Variability — páginas $21$–$22$
+  - secao 1.1.2 — Populations and Samples — página $23$
+  - secao 1.2 — Collecting Engineering Data — páginas $23$–$29$
+  - secao 1.2.1 — Basic Principles — página $23$
+  - secao 1.2.2 — Retrospective Study — página $23$
+  - secao 1.2.3 — Observational Study — página $24$
+  - secao 1.2.4 — Designed Experiments — páginas $24$–$26$
+  - secao 1.2.5 — Observing Processes Over Time — páginas $27$–$29$
+  - secao 1.3 — Mechanistic and Empirical Models — páginas $30$–$32$
+  - capitulo 6 — Descriptive Statistics — páginas $144$–$161$
+  - secao 6.1 — Numerical Summaries of Data — páginas $145$–$148$
+  - secao 6.2 — Stem-and-Leaf Diagrams — páginas $149$–$152$
+  - secao 6.3 — Frequency Distributions and Histograms — páginas $153$–$156$
+  - secao 6.4 — Box Plots — página $157$
+  - secao 6.5 — Time Sequence Plots — páginas $158$–$159$
+  - secao 6.6 — Scatter Diagrams — páginas $160$–$161$
+- Banco de questões e provas 2026.2 (banco_questoes)
+  - capitulo 1 — Análise Descritiva — páginas $7$–$94$
+  - secao 1.1 — Conceitos e classificação — páginas $7$–$12$
+  - questao 1 — página $7$
+  - questao 2 — página $7$
+  - questao 3 — página $7$
+  - questao 4 — página $7$
+  - secao 1.1.2 — Variáveis — páginas $8$–$10$
+  - questao 5 — página $8$
+  - questao 6 — página $8$
+  - questao 7 — página $8$
+  - questao 8 — página $9$
+  - questao 9 — página $9$
+  - questao 10 — página $9$
+  - questao 11 — página $10$
+  - questao 12 — página $10$
+  - questao 13 — página $10$
+  - questao 14 — página $10$
+  - secao 1.1.3 — Séries estatísticas: elementos e classificação — páginas $11$–$12$
+  - questao 15 — página $11$
+  - questao 16 — página $11$
+  - questao 17 — página $11$
+  - questao 18 — página $11$
+  - questao 19 — página $11$
+  - questao 20 — página $12$
+  - questao 21 — página $12$
+  - questao 22 — página $12$
+  - secao 1.2 — Tabela de dupla entrada — páginas $13$–$14$
+  - questao 23 — página $13$
+  - questao 24 — página $13$
+  - questao 25 — página $13$
+  - questao 26 — página $13$
+  - questao 27 — página $13$
+  - questao 28 — página $14$
+  - questao 29 — página $14$
+  - questao 30 — página $14$
+  - secao 1.3 — Gráficos — páginas $15$–$33$
+  - questao 31 — página $15$
+  - questao 32 — página $15$
+  - questao 33 — página $15$
+  - secao 1.3.1 — Análise gráfica — páginas $16$–$17$
+  - questao 34 — página $16$
+  - questao 35 — página $16$
+  - questao 36 — página $16$
+  - questao 37 — página $17$
+  - questao 38 — página $17$
+  - secao 1.3.2 — Gráficos especiais — páginas $18$–$33$
+  - secao 1.3.2.1 — Histograma — páginas $18$–$19$
+  - questao 39 — página $18$
+  - questao 40 — página $18$
+  - questao 41 — página $19$
+  - questao 42 — página $19$
+  - secao 1.3.2.2 — Gráfico de tendência — páginas $20$–$21$
+  - questao 43 — página $20$
+  - questao 44 — página $20$
+  - questao 45 — página $20$
+  - questao 46 — página $21$
+  - questao 47 — página $21$
+  - secao 1.3.2.3 — Box plot — páginas $22$–$28$
+  - questao 48 — página $22$
+  - questao 49 — página $23$
+  - questao 50 — página $23$
+  - questao 51 — página $24$
+  - questao 52 — página $24$
+  - questao 53 — página $24$
+  - questao 54 — página $25$
+  - questao 55 — página $25$
+  - questao 56 — página $26$
+  - questao 57 — página $26$
+  - questao 58 — página $26$
+  - questao 59 — página $27$
+  - questao 60 — página $27$
+  - questao 61 — página $27$
+  - questao 62 — página $28$
+  - secao 1.3.2.4 — Gráfico de Pareto — páginas $29$–$32$
+  - questao 63 — página $29$
+  - questao 64 — página $29$
+  - questao 65 — página $29$
+  - questao 66 — página $30$
+  - questao 67 — página $30$
+  - questao 68 — página $31$
+  - questao 69 — página $31$
+  - questao 70 — página $32$
+  - questao 71 — página $32$
+  - secao 1.3.2.5 — Fluxo de processo — página $33$
+  - questao 72 — página $33$
+  - questao 73 — página $33$
+  - secao 2.1 — Medidas de posição para dados agrupados e não agrupados — páginas $34$–$73$
+  - questao 74 — página $34$
+  - questao 75 — página $34$
+  - questao 76 — página $34$
+  - questao 77 — página $34$
+  - questao 78 — página $35$
+  - questao 79 — página $35$
+  - questao 80 — página $35$
+  - questao 81 — página $35$
+  - questao 82 — página $35$
+  - questao 83 — página $35$
+  - questao 84 — página $36$
+  - questao 85 — página $36$
+  - questao 86 — página $36$
+  - questao 87 — página $36$
+  - questao 88 — página $36$
+  - questao 89 — página $38$
+  - questao 90 — página $39$
+  - questao 91 — página $39$
+  - questao 92 — página $41$
+  - questao 93 — página $41$
+  - questao 94 — página $42$
+  - questao 95 — página $42$
+  - questao 96 — página $43$
+  - questao 97 — página $44$
+  - questao 98 — página $44$
+  - questao 99 — página $45$
+  - questao 100 — página $45$
+  - questao 101 — página $46$
+  - questao 102 — página $47$
+  - questao 103 — página $47$
+  - questao 104 — página $47$
+  - questao 105 — página $48$
+  - questao 106 — página $48$
+  - questao 107 — página $49$
+  - questao 108 — página $49$
+  - questao 109 — página $50$
+  - questao 110 — página $51$
+  - questao 111 — página $51$
+  - questao 112 — página $51$
+  - questao 113 — página $52$
+  - questao 114 — página $52$
+  - questao 115 — página $52$
+  - questao 116 — página $53$
+  - questao 117 — página $53$
+  - questao 118 — página $53$
+  - questao 119 — página $53$
+  - questao 120 — página $53$
+  - questao 121 — página $54$
+  - questao 122 — página $54$
+  - questao 123 — página $54$
+  - questao 124 — página $55$
+  - questao 125 — página $56$
+  - questao 126 — página $56$
+  - questao 127 — página $57$
+  - questao 128 — página $58$
+  - questao 129 — página $58$
+  - questao 130 — página $59$
+  - questao 131 — página $59$
+  - questao 132 — página $59$
+  - questao 133 — página $60$
+  - questao 134 — página $61$
+  - questao 135 — página $61$
+  - questao 136 — página $61$
+  - questao 137 — página $62$
+  - questao 138 — página $62$
+  - questao 139 — página $62$
+  - questao 140 — página $63$
+  - questao 141 — página $63$
+  - questao 142 — página $63$
+  - questao 143 — página $64$
+  - questao 144 — página $64$
+  - questao 145 — página $64$
+  - questao 146 — página $65$
+  - questao 147 — página $65$
+  - questao 148 — página $66$
+  - questao 149 — página $66$
+  - questao 150 — página $67$
+  - questao 151 — página $67$
+  - questao 152 — página $67$
+  - questao 153 — página $68$
+  - questao 154 — página $68$
+  - questao 155 — página $69$
+  - questao 156 — página $69$
+  - questao 157 — página $69$
+  - questao 158 — página $69$
+  - questao 159 — página $70$
+  - questao 160 — página $70$
+  - questao 161 — página $71$
+  - questao 162 — página $71$
+  - questao 163 — página $71$
+  - questao 164 — página $72$
+  - questao 165 — página $72$
+  - questao 166 — página $73$
+  - questao 167 — página $73$
+  - questao 168 — página $73$
+  - secao 2.2 — Propriedades das medidas de posição e dispersão — páginas $74$–$81$
+  - questao 169 — página $74$
+  - questao 170 — página $74$
+  - questao 171 — página $74$
+  - questao 172 — página $75$
+  - questao 173 — página $75$
+  - questao 174 — página $75$
+  - questao 175 — página $75$
+  - questao 176 — página $75$
+  - questao 177 — página $76$
+  - questao 178 — página $76$
+  - questao 179 — página $77$
+  - questao 180 — página $77$
+  - questao 181 — página $77$
+  - questao 182 — página $78$
+  - questao 183 — página $79$
+  - questao 184 — página $79$
+  - questao 185 — página $80$
+  - questao 186 — página $80$
+  - questao 187 — página $80$
+  - questao 188 — página $80$
+  - questao 189 — página $80$
+  - questao 190 — página $80$
+  - questao 191 — página $80$
+  - questao 192 — página $80$
+  - questao 193 — página $81$
+  - questao 194 — página $81$
+  - questao 195 — página $81$
+  - questao 196 — página $81$
+  - questao 197 — página $81$
+  - questao 198 — página $81$
+  - secao 2.3 — Medidas separatrizes — páginas $82$–$83$
+  - questao 199 — página $82$
+  - questao 200 — página $82$
+  - questao 201 — página $82$
+  - questao 202 — página $82$
+  - questao 203 — página $82$
+  - questao 204 — página $82$
+  - questao 205 — página $82$
+  - questao 206 — página $83$
+  - questao 207 — página $83$
+  - questao 208 — página $83$
+  - questao 209 — página $83$
+  - questao 210 — página $83$
+  - secao 2.4 — Médias geométrica, harmônica, ponderada e quadrática — páginas $84$–$87$
+  - secao 2.4.1 — Média geométrica — página $84$
+  - secao 2.4.2 — Média harmônica — página $84$
+  - questao 211 — página $84$
+  - questao 212 — página $84$
+  - questao 213 — página $84$
+  - questao 214 — página $84$
+  - questao 215 — página $84$
+  - questao 216 — página $84$
+  - questao 217 — página $84$
+  - questao 218 — página $84$
+  - questao 219 — página $84$
+  - secao 2.4.3 — Média ponderada — páginas $85$–$86$
+  - questao 220 — página $85$
+  - questao 221 — página $85$
+  - questao 222 — página $85$
+  - questao 223 — página $85$
+  - questao 224 — página $85$
+  - questao 225 — página $85$
+  - questao 226 — página $85$
+  - questao 227 — página $86$
+  - questao 228 — página $86$
+  - questao 229 — página $86$
+  - questao 230 — página $86$
+  - questao 231 — página $86$
+  - secao 2.4.4 — Média quadrática — página $87$
+  - questao 232 — página $87$
+  - questao 233 — página $87$
+  - questao 234 — página $87$
+  - secao 3.1 — Momentos — página $88$
+  - questao 235 — página $88$
+  - questao 236 — página $88$
+  - questao 237 — página $88$
+  - secao 3.2 — Assimetria — páginas $89$–$91$
+  - questao 238 — página $89$
+  - questao 239 — página $89$
+  - questao 240 — página $89$
+  - questao 241 — página $89$
+  - questao 242 — página $89$
+  - questao 243 — página $90$
+  - questao 244 — página $90$
+  - questao 245 — página $90$
+  - questao 246 — página $90$
+  - questao 247 — página $90$
+  - questao 248 — página $91$
+  - questao 249 — página $91$
+  - secao 3.3 — Curtose — páginas $92$–$94$
+  - questao 250 — página $92$
+  - questao 251 — página $92$
+  - questao 252 — página $92$
+  - questao 253 — página $92$
+  - questao 254 — página $93$
+  - questao 255 — página $93$
+  - questao 256 — página $93$
+  - questao 257 — página $94$
+  - questao 258 — página $94$
+  - questao 259 — página $94$
+- Estatística Básica (livro)
+  - capitulo 1 — Preliminares — páginas $18$–$25$
+  - secao 1.1 — Introdução — página $18$
+  - secao 1.2 — Modelos — página $18$
+  - secao 1.3 — Técnicas computacionais — página $19$
+  - secao 1.4 — Métodos gráficos — página $20$
+  - secao 1.5 — Conjuntos de dados — página $21$
+  - capitulo 2 — Resumo de dados — páginas $26$–$51$
+  - secao 2.1 — Tipos de variáveis — páginas $26$–$27$
+  - secao 2.2 — Distribuições de frequências — páginas $28$–$31$
+  - secao 2.3 — Gráficos — páginas $32$–$36$
+  - secao 2.3.1 — Gráficos para variáveis qualitativas — página $32$
+  - secao 2.3.2 — Gráficos para variáveis quantitativas — páginas $33$–$36$
+  - secao 2.4 — Ramo-e-folhas — páginas $37$–$39$
+  - secao 2.5 — Exemplos computacionais — páginas $40$–$42$
+  - secao 2.6 — Problemas e complementos — páginas $43$–$51$
+  - capitulo 3 — Medidas-resumo — páginas $52$–$84$
+  - secao 3.1 — Medidas de posição — páginas $52$–$53$
+  - secao 3.2 — Medidas de dispersão — páginas $54$–$57$
+  - secao 3.3 — Quantis empíricos — páginas $58$–$63$
+  - secao 3.4 — Box plots — páginas $64$–$67$
+  - secao 3.5 — Gráficos de simetria — página $68$
+  - secao 3.6 — Transformações — páginas $69$–$70$
+  - secao 3.7 — Exemplos computacionais — páginas $71$–$72$
+  - secao 3.8 — Problemas e complementos — páginas $73$–$84$
+  - capitulo 4 — Análise bidimensional — páginas $85$–$119$
+  - secao 4.1 — Introdução — páginas $85$–$86$
+  - secao 4.2 — Variáveis qualitativas — páginas $87$–$89$
+  - secao 4.3 — Associação entre variáveis qualitativas — páginas $90$–$92$
+  - secao 4.4 — Medidas de associação entre variáveis qualitativas — páginas $93$–$96$
+  - secao 4.5 — Associação entre variáveis quantitativas — páginas $97$–$102$
+  - secao 4.6 — Associação entre variáveis qualitativas e quantitativas — páginas $103$–$106$
+  - secao 4.7 — Gráficos q x q — páginas $107$–$108$
+  - secao 4.8 — Exemplos computacionais — páginas $109$–$110$
+  - secao 4.9 — Problemas e complementos — páginas $111$–$119$
+- Estatística básica: a arte de trabalhar com dados (livro)
+  - capitulo 1 — Análise exploratória para uma variável — páginas $20$–$59$
+  - secao 1.1 — Introdução — páginas $20$–$21$
+  - secao 1.2 — População e amostra — páginas $22$–$23$
+  - secao 1.3 — Tipologia das variáveis — páginas $24$–$26$
+  - secao 1.4 — Distribuições de frequências - tabelas e gráficos — páginas $27$–$34$
+  - secao 1.5 — Medidas de centralidade para variáveis quantitativas — páginas $35$–$36$
+  - secao 1.6 — Medidas de dispersão para variáveis quantitativas — páginas $37$–$42$
+  - secao 1.7 — O conceito de resistência de uma medida — página $43$
+  - secao 1.8 — Identificação de discrepâncias em variáveis quantitativas — páginas $44$–$45$
+  - secao 1.9 — Box plot para variáveis quantitativas — páginas $46$–$59$
+  - exercicio 1.4_P — página $55$
+  - exercicio 1.5_P — página $55$
+  - exercicio 1.7_P — página $56$
+  - capitulo 2 — Estudando a relação entre duas variáveis — páginas $60$–$91$
+  - secao 2.1 — Relação entre variáveis qualitativas - tabelas de contingência — páginas $60$–$65$
+  - secao 2.2 — Correlação entre variáveis quantitativas — páginas $66$–$71$
+  - exercicio 2.1_P — página $81$
+  - exercicio 2.2_P — página $82$
+  - exercicio 2.5_P — página $83$
+  - exercicio 2.7_P — página $85$
+- Estatística para cursos de engenharia e informática (livro)
+  - capitulo 1 — Introdução — páginas $12$–$23$
+  - secao 1.1 — A estatística — página $12$
+  - secao 1.2 — Pesquisas, dados, variabilidade e estatística — página $13$
+  - secao 1.3 — A estatística na engenharia — página $14$
+  - secao 1.4 — A estatística e a informática — página $15$
+  - secao 1.5 — Modelos — páginas $16$–$17$
+  - secao 1.6 — Conceitos básicos — páginas $18$–$23$
+  - exercicio 1.2 — página $23$
+  - capitulo 2 — O planejamento de uma pesquisa — páginas $24$–$50$
+  - secao 2.1 — Aspectos gerais — página $24$
+  - secao 2.2 — Pesquisas de levantamento — páginas $25$–$33$
+  - secao 2.2.1 — Procedimentos de amostragem — páginas $25$–$31$
+  - secao 2.2.2 — Tamanho da amostra — páginas $32$–$33$
+  - secao 2.3 — Planejamento de experimentos — páginas $34$–$50$
+  - exercicio 2.7 — página $34$
+  - capitulo 3 — Análise exploratória de dados — páginas $51$–$91$
+  - secao 3.1 — Dados e variáveis — páginas $52$–$53$
+  - secao 3.2 — Análise de variáveis qualitativas — páginas $54$–$58$
+  - secao 3.3 — Análise de variáveis quantitativas — páginas $59$–$68$
+  - secao 3.4 — Medidas descritivas — páginas $69$–$83$
+  - secao 3.5 — Observações ao longo do tempo — página $84$
+  - secao 3.6 — Análise exploratória com apoio do computador — página $85$
+  - secao 3.7 — Orientação geral — páginas $86$–$91$
+  - exercicio 3.4 — página $87$
+  - exercicio 3.8 — página $88$
+  - capitulo 11 — Correlação e regressão — páginas $317$–$350$
+  - secao 11.1 — Correlação — páginas $317$–$318$
+  - secao 11.2 — Coeficiente de correlação linear de Pearson — páginas $319$–$324$
+- Estatística prática para cientistas de dados (livro)
+  - capitulo 1 — Análise Exploratória de Dados — páginas $22$–$70$
+  - secao 1.1 — Elementos de dados estruturados — páginas $23$–$26$
+  - secao 1.2 — Dados retangulares — páginas $27$–$28$
+  - secao 1.3 — Quadros de dados e índices — páginas $29$–$30$
+  - secao 1.4 — Estimativas de localização — páginas $31$–$37$
+  - secao 1.5 — Estimativas de variabilidade — páginas $38$–$44$
+  - secao 1.6 — Explorando a distribuição de dados — páginas $45$–$50$
+  - secao 1.7 — Explorando dados binários e categóricos — páginas $51$–$54$
+  - secao 1.8 — Correlação — páginas $55$–$58$
+  - secao 1.9 — Gráficos de dispersão — páginas $59$–$60$
+  - secao 1.10 — Explorando duas ou mais variáveis — páginas $61$–$69$
+- Introdução à estatística para ciência de dados (livro)
+  - nenhum item curado nesta cobertura
+- Statistics for Engineers and Scientists (livro)
+  - capitulo 1 — Sampling and Descriptive Statistics — páginas $23$–$69$
+  - secao 1.0 — Introduction — páginas $23$–$24$
+  - secao 1.1 — Sampling — páginas $25$–$34$
+  - secao 1.2 — Summary Statistics — páginas $35$–$46$
+  - secao 1.3 — Graphical Summaries — páginas $47$–$69$
+
+## Índice por conteúdo da Unidade I
+
+### `01.01` — Fundamentos estatísticos
+- exercicio 1 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 2 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 3 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 4 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 5 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 6 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 1.2 (página $23$; Estatística para cursos de engenharia e informática)
+- exercicio 2.7 (página $34$; Estatística para cursos de engenharia e informática)
+- questao 1 (página $7$; Banco de questões e provas 2026.2)
+- questao 2 (página $7$; Banco de questões e provas 2026.2)
+- questao 3 (página $7$; Banco de questões e provas 2026.2)
+- questao 4 (página $7$; Banco de questões e provas 2026.2)
+- questao 5 (página $8$; Banco de questões e provas 2026.2)
+- questao 6 (página $8$; Banco de questões e provas 2026.2)
+- secao 1.1 — Divisão da Estatística (página $8$; Apostila de Métodos Quantitativos)
+- secao 1.2 — Conceitos fundamentais (páginas $8$–$9$; Apostila de Métodos Quantitativos)
+- secao 1.3 — Fases do método estatístico (página $10$; Apostila de Métodos Quantitativos)
+- secao 17.1 — Análise Descritiva (páginas $168$–$173$; Apostila de Métodos Quantitativos)
+- secao 1.1 — Conceitos e classificação (páginas $7$–$12$; Banco de questões e provas 2026.2)
+- secao 1.1 — A estatística (página $12$; Estatística para cursos de engenharia e informática)
+- secao 1.2 — Pesquisas, dados, variabilidade e estatística (página $13$; Estatística para cursos de engenharia e informática)
+- secao 1.3 — A estatística na engenharia (página $14$; Estatística para cursos de engenharia e informática)
+- secao 1.4 — A estatística e a informática (página $15$; Estatística para cursos de engenharia e informática)
+- secao 1.5 — Modelos (páginas $16$–$17$; Estatística para cursos de engenharia e informática)
+- secao 1.6 — Conceitos básicos (páginas $18$–$23$; Estatística para cursos de engenharia e informática)
+- secao 2.1 — Aspectos gerais (página $24$; Estatística para cursos de engenharia e informática)
+- secao 2.2 — Pesquisas de levantamento (páginas $25$–$33$; Estatística para cursos de engenharia e informática)
+- secao 2.2.1 — Procedimentos de amostragem (páginas $25$–$31$; Estatística para cursos de engenharia e informática)
+- secao 2.2.2 — Tamanho da amostra (páginas $32$–$33$; Estatística para cursos de engenharia e informática)
+- secao 2.3 — Planejamento de experimentos (páginas $34$–$50$; Estatística para cursos de engenharia e informática)
+- secao 1.1 — The Engineering Method and Statistical Thinking (páginas $20$–$23$; Applied Statistics and Probability for Engineers)
+- secao 1.1.1 — Variability (páginas $21$–$22$; Applied Statistics and Probability for Engineers)
+- secao 1.1.2 — Populations and Samples (página $23$; Applied Statistics and Probability for Engineers)
+- secao 1.2 — Collecting Engineering Data (páginas $23$–$29$; Applied Statistics and Probability for Engineers)
+- secao 1.2.1 — Basic Principles (página $23$; Applied Statistics and Probability for Engineers)
+- secao 1.2.2 — Retrospective Study (página $23$; Applied Statistics and Probability for Engineers)
+- secao 1.2.3 — Observational Study (página $24$; Applied Statistics and Probability for Engineers)
+- secao 1.2.4 — Designed Experiments (páginas $24$–$26$; Applied Statistics and Probability for Engineers)
+- secao 1.2.5 — Observing Processes Over Time (páginas $27$–$29$; Applied Statistics and Probability for Engineers)
+- secao 1.3 — Mechanistic and Empirical Models (páginas $30$–$32$; Applied Statistics and Probability for Engineers)
+- secao 1.1 — Introdução (página $18$; Estatística Básica)
+- secao 1.2 — Modelos (página $18$; Estatística Básica)
+- secao 1.5 — Conjuntos de dados (página $21$; Estatística Básica)
+- secao 1.0 — Introduction (páginas $23$–$24$; Statistics for Engineers and Scientists)
+- secao 1.1 — Sampling (páginas $25$–$34$; Statistics for Engineers and Scientists)
+- secao 1.1 — Introdução (páginas $20$–$21$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.2 — População e amostra (páginas $22$–$23$; Estatística básica: a arte de trabalhar com dados)
+
+### `01.02` — Organização e representação de dados
+- exercicio 1 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 2 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 3 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 4 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 5 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 6 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 3.8 (página $88$; Estatística para cursos de engenharia e informática)
+- exercicio 1.5_P (página $55$; Estatística básica: a arte de trabalhar com dados)
+- questao 10 (página $9$; Banco de questões e provas 2026.2)
+- questao 11 (página $10$; Banco de questões e provas 2026.2)
+- questao 12 (página $10$; Banco de questões e provas 2026.2)
+- questao 13 (página $10$; Banco de questões e provas 2026.2)
+- questao 14 (página $10$; Banco de questões e provas 2026.2)
+- questao 15 (página $11$; Banco de questões e provas 2026.2)
+- questao 16 (página $11$; Banco de questões e provas 2026.2)
+- questao 17 (página $11$; Banco de questões e provas 2026.2)
+- questao 18 (página $11$; Banco de questões e provas 2026.2)
+- questao 19 (página $11$; Banco de questões e provas 2026.2)
+- questao 20 (página $12$; Banco de questões e provas 2026.2)
+- questao 21 (página $12$; Banco de questões e provas 2026.2)
+- questao 22 (página $12$; Banco de questões e provas 2026.2)
+- questao 23 (página $13$; Banco de questões e provas 2026.2)
+- questao 24 (página $13$; Banco de questões e provas 2026.2)
+- questao 25 (página $13$; Banco de questões e provas 2026.2)
+- questao 26 (página $13$; Banco de questões e provas 2026.2)
+- questao 27 (página $13$; Banco de questões e provas 2026.2)
+- questao 28 (página $14$; Banco de questões e provas 2026.2)
+- questao 29 (página $14$; Banco de questões e provas 2026.2)
+- questao 30 (página $14$; Banco de questões e provas 2026.2)
+- questao 31 (página $15$; Banco de questões e provas 2026.2)
+- questao 32 (página $15$; Banco de questões e provas 2026.2)
+- questao 33 (página $15$; Banco de questões e provas 2026.2)
+- questao 34 (página $16$; Banco de questões e provas 2026.2)
+- questao 35 (página $16$; Banco de questões e provas 2026.2)
+- questao 36 (página $16$; Banco de questões e provas 2026.2)
+- questao 37 (página $17$; Banco de questões e provas 2026.2)
+- questao 38 (página $17$; Banco de questões e provas 2026.2)
+- questao 39 (página $18$; Banco de questões e provas 2026.2)
+- questao 40 (página $18$; Banco de questões e provas 2026.2)
+- questao 41 (página $19$; Banco de questões e provas 2026.2)
+- questao 42 (página $19$; Banco de questões e provas 2026.2)
+- questao 43 (página $20$; Banco de questões e provas 2026.2)
+- questao 44 (página $20$; Banco de questões e provas 2026.2)
+- questao 45 (página $20$; Banco de questões e provas 2026.2)
+- questao 46 (página $21$; Banco de questões e provas 2026.2)
+- questao 47 (página $21$; Banco de questões e provas 2026.2)
+- questao 48 (página $22$; Banco de questões e provas 2026.2)
+- questao 49 (página $23$; Banco de questões e provas 2026.2)
+- questao 50 (página $23$; Banco de questões e provas 2026.2)
+- questao 51 (página $24$; Banco de questões e provas 2026.2)
+- questao 52 (página $24$; Banco de questões e provas 2026.2)
+- questao 53 (página $24$; Banco de questões e provas 2026.2)
+- questao 54 (página $25$; Banco de questões e provas 2026.2)
+- questao 55 (página $25$; Banco de questões e provas 2026.2)
+- questao 56 (página $26$; Banco de questões e provas 2026.2)
+- questao 57 (página $26$; Banco de questões e provas 2026.2)
+- questao 58 (página $26$; Banco de questões e provas 2026.2)
+- questao 59 (página $27$; Banco de questões e provas 2026.2)
+- questao 60 (página $27$; Banco de questões e provas 2026.2)
+- questao 61 (página $27$; Banco de questões e provas 2026.2)
+- questao 62 (página $28$; Banco de questões e provas 2026.2)
+- questao 63 (página $29$; Banco de questões e provas 2026.2)
+- questao 64 (página $29$; Banco de questões e provas 2026.2)
+- questao 65 (página $29$; Banco de questões e provas 2026.2)
+- questao 66 (página $30$; Banco de questões e provas 2026.2)
+- questao 67 (página $30$; Banco de questões e provas 2026.2)
+- questao 68 (página $31$; Banco de questões e provas 2026.2)
+- questao 69 (página $31$; Banco de questões e provas 2026.2)
+- questao 7 (página $8$; Banco de questões e provas 2026.2)
+- questao 70 (página $32$; Banco de questões e provas 2026.2)
+- questao 71 (página $32$; Banco de questões e provas 2026.2)
+- questao 72 (página $33$; Banco de questões e provas 2026.2)
+- questao 73 (página $33$; Banco de questões e provas 2026.2)
+- questao 8 (página $9$; Banco de questões e provas 2026.2)
+- questao 9 (página $9$; Banco de questões e provas 2026.2)
+- secao 17.1 — Análise Descritiva (páginas $168$–$173$; Apostila de Métodos Quantitativos)
+- secao 2.1 — Séries estatísticas (página $11$; Apostila de Métodos Quantitativos)
+- secao 2.2 — Apresentação tabular e gráfica (páginas $12$–$21$; Apostila de Métodos Quantitativos)
+- secao 2.2.1 — Apresentação tabular (páginas $12$–$13$; Apostila de Métodos Quantitativos)
+- secao 2.2.2 — Apresentação gráfica (páginas $14$–$21$; Apostila de Métodos Quantitativos)
+- secao 3.1 — Distribuição de frequências para dados discretos (página $23$; Apostila de Métodos Quantitativos)
+- secao 3.2 — Distribuição de frequências para dados contínuos (páginas $24$–$26$; Apostila de Métodos Quantitativos)
+- secao 1.1 — Conceitos e classificação (páginas $7$–$12$; Banco de questões e provas 2026.2)
+- secao 1.1.2 — Variáveis (páginas $8$–$10$; Banco de questões e provas 2026.2)
+- secao 1.1.3 — Séries estatísticas: elementos e classificação (páginas $11$–$12$; Banco de questões e provas 2026.2)
+- secao 1.2 — Tabela de dupla entrada (páginas $13$–$14$; Banco de questões e provas 2026.2)
+- secao 1.3 — Gráficos (páginas $15$–$33$; Banco de questões e provas 2026.2)
+- secao 1.3.1 — Análise gráfica (páginas $16$–$17$; Banco de questões e provas 2026.2)
+- secao 1.3.2 — Gráficos especiais (páginas $18$–$33$; Banco de questões e provas 2026.2)
+- secao 1.3.2.1 — Histograma (páginas $18$–$19$; Banco de questões e provas 2026.2)
+- secao 1.3.2.2 — Gráfico de tendência (páginas $20$–$21$; Banco de questões e provas 2026.2)
+- secao 1.3.2.4 — Gráfico de Pareto (páginas $29$–$32$; Banco de questões e provas 2026.2)
+- secao 1.3.2.5 — Fluxo de processo (página $33$; Banco de questões e provas 2026.2)
+- secao 3.1 — Dados e variáveis (páginas $52$–$53$; Estatística para cursos de engenharia e informática)
+- secao 3.2 — Análise de variáveis qualitativas (páginas $54$–$58$; Estatística para cursos de engenharia e informática)
+- secao 3.3 — Análise de variáveis quantitativas (páginas $59$–$68$; Estatística para cursos de engenharia e informática)
+- secao 3.5 — Observações ao longo do tempo (página $84$; Estatística para cursos de engenharia e informática)
+- secao 3.6 — Análise exploratória com apoio do computador (página $85$; Estatística para cursos de engenharia e informática)
+- secao 1.1 — Elementos de dados estruturados (páginas $23$–$26$; Estatística prática para cientistas de dados)
+- secao 1.2 — Dados retangulares (páginas $27$–$28$; Estatística prática para cientistas de dados)
+- secao 1.3 — Quadros de dados e índices (páginas $29$–$30$; Estatística prática para cientistas de dados)
+- secao 1.6 — Explorando a distribuição de dados (páginas $45$–$50$; Estatística prática para cientistas de dados)
+- secao 1.7 — Explorando dados binários e categóricos (páginas $51$–$54$; Estatística prática para cientistas de dados)
+- secao 6.2 — Stem-and-Leaf Diagrams (páginas $149$–$152$; Applied Statistics and Probability for Engineers)
+- secao 6.3 — Frequency Distributions and Histograms (páginas $153$–$156$; Applied Statistics and Probability for Engineers)
+- secao 6.5 — Time Sequence Plots (páginas $158$–$159$; Applied Statistics and Probability for Engineers)
+- secao 1.3 — Técnicas computacionais (página $19$; Estatística Básica)
+- secao 1.4 — Métodos gráficos (página $20$; Estatística Básica)
+- secao 1.5 — Conjuntos de dados (página $21$; Estatística Básica)
+- secao 2.1 — Tipos de variáveis (páginas $26$–$27$; Estatística Básica)
+- secao 2.2 — Distribuições de frequências (páginas $28$–$31$; Estatística Básica)
+- secao 2.3 — Gráficos (páginas $32$–$36$; Estatística Básica)
+- secao 2.3.1 — Gráficos para variáveis qualitativas (página $32$; Estatística Básica)
+- secao 2.3.2 — Gráficos para variáveis quantitativas (páginas $33$–$36$; Estatística Básica)
+- secao 2.4 — Ramo-e-folhas (páginas $37$–$39$; Estatística Básica)
+- secao 2.5 — Exemplos computacionais (páginas $40$–$42$; Estatística Básica)
+- secao 2.6 — Problemas e complementos (páginas $43$–$51$; Estatística Básica)
+- secao 1.3 — Graphical Summaries (páginas $47$–$69$; Statistics for Engineers and Scientists)
+- secao 1.3 — Tipologia das variáveis (páginas $24$–$26$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.4 — Distribuições de frequências - tabelas e gráficos (páginas $27$–$34$; Estatística básica: a arte de trabalhar com dados)
+
+### `01.03` — Análise univariada
+- exercicio 10 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 11 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 12 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 13 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 14 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 15 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 16 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 17 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 18 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 19 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 20 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 21 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 22 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 23 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 24 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 25 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 26 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 27 (página $173$; Apostila de Métodos Quantitativos)
+- exercicio 8 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 9 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 3.4 (página $87$; Estatística para cursos de engenharia e informática)
+- exercicio 1.4_P (página $55$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 1.7_P (página $56$; Estatística básica: a arte de trabalhar com dados)
+- questao 100 (página $45$; Banco de questões e provas 2026.2)
+- questao 101 (página $46$; Banco de questões e provas 2026.2)
+- questao 102 (página $47$; Banco de questões e provas 2026.2)
+- questao 103 (página $47$; Banco de questões e provas 2026.2)
+- questao 104 (página $47$; Banco de questões e provas 2026.2)
+- questao 105 (página $48$; Banco de questões e provas 2026.2)
+- questao 106 (página $48$; Banco de questões e provas 2026.2)
+- questao 107 (página $49$; Banco de questões e provas 2026.2)
+- questao 108 (página $49$; Banco de questões e provas 2026.2)
+- questao 109 (página $50$; Banco de questões e provas 2026.2)
+- questao 110 (página $51$; Banco de questões e provas 2026.2)
+- questao 111 (página $51$; Banco de questões e provas 2026.2)
+- questao 112 (página $51$; Banco de questões e provas 2026.2)
+- questao 113 (página $52$; Banco de questões e provas 2026.2)
+- questao 114 (página $52$; Banco de questões e provas 2026.2)
+- questao 115 (página $52$; Banco de questões e provas 2026.2)
+- questao 116 (página $53$; Banco de questões e provas 2026.2)
+- questao 117 (página $53$; Banco de questões e provas 2026.2)
+- questao 118 (página $53$; Banco de questões e provas 2026.2)
+- questao 119 (página $53$; Banco de questões e provas 2026.2)
+- questao 120 (página $53$; Banco de questões e provas 2026.2)
+- questao 121 (página $54$; Banco de questões e provas 2026.2)
+- questao 122 (página $54$; Banco de questões e provas 2026.2)
+- questao 123 (página $54$; Banco de questões e provas 2026.2)
+- questao 124 (página $55$; Banco de questões e provas 2026.2)
+- questao 125 (página $56$; Banco de questões e provas 2026.2)
+- questao 126 (página $56$; Banco de questões e provas 2026.2)
+- questao 127 (página $57$; Banco de questões e provas 2026.2)
+- questao 128 (página $58$; Banco de questões e provas 2026.2)
+- questao 129 (página $58$; Banco de questões e provas 2026.2)
+- questao 130 (página $59$; Banco de questões e provas 2026.2)
+- questao 131 (página $59$; Banco de questões e provas 2026.2)
+- questao 132 (página $59$; Banco de questões e provas 2026.2)
+- questao 133 (página $60$; Banco de questões e provas 2026.2)
+- questao 134 (página $61$; Banco de questões e provas 2026.2)
+- questao 135 (página $61$; Banco de questões e provas 2026.2)
+- questao 136 (página $61$; Banco de questões e provas 2026.2)
+- questao 137 (página $62$; Banco de questões e provas 2026.2)
+- questao 138 (página $62$; Banco de questões e provas 2026.2)
+- questao 139 (página $62$; Banco de questões e provas 2026.2)
+- questao 140 (página $63$; Banco de questões e provas 2026.2)
+- questao 141 (página $63$; Banco de questões e provas 2026.2)
+- questao 142 (página $63$; Banco de questões e provas 2026.2)
+- questao 143 (página $64$; Banco de questões e provas 2026.2)
+- questao 144 (página $64$; Banco de questões e provas 2026.2)
+- questao 145 (página $64$; Banco de questões e provas 2026.2)
+- questao 146 (página $65$; Banco de questões e provas 2026.2)
+- questao 147 (página $65$; Banco de questões e provas 2026.2)
+- questao 148 (página $66$; Banco de questões e provas 2026.2)
+- questao 149 (página $66$; Banco de questões e provas 2026.2)
+- questao 150 (página $67$; Banco de questões e provas 2026.2)
+- questao 151 (página $67$; Banco de questões e provas 2026.2)
+- questao 152 (página $67$; Banco de questões e provas 2026.2)
+- questao 153 (página $68$; Banco de questões e provas 2026.2)
+- questao 154 (página $68$; Banco de questões e provas 2026.2)
+- questao 155 (página $69$; Banco de questões e provas 2026.2)
+- questao 156 (página $69$; Banco de questões e provas 2026.2)
+- questao 157 (página $69$; Banco de questões e provas 2026.2)
+- questao 158 (página $69$; Banco de questões e provas 2026.2)
+- questao 159 (página $70$; Banco de questões e provas 2026.2)
+- questao 160 (página $70$; Banco de questões e provas 2026.2)
+- questao 161 (página $71$; Banco de questões e provas 2026.2)
+- questao 162 (página $71$; Banco de questões e provas 2026.2)
+- questao 163 (página $71$; Banco de questões e provas 2026.2)
+- questao 164 (página $72$; Banco de questões e provas 2026.2)
+- questao 165 (página $72$; Banco de questões e provas 2026.2)
+- questao 166 (página $73$; Banco de questões e provas 2026.2)
+- questao 167 (página $73$; Banco de questões e provas 2026.2)
+- questao 168 (página $73$; Banco de questões e provas 2026.2)
+- questao 169 (página $74$; Banco de questões e provas 2026.2)
+- questao 170 (página $74$; Banco de questões e provas 2026.2)
+- questao 171 (página $74$; Banco de questões e provas 2026.2)
+- questao 172 (página $75$; Banco de questões e provas 2026.2)
+- questao 173 (página $75$; Banco de questões e provas 2026.2)
+- questao 174 (página $75$; Banco de questões e provas 2026.2)
+- questao 175 (página $75$; Banco de questões e provas 2026.2)
+- questao 176 (página $75$; Banco de questões e provas 2026.2)
+- questao 177 (página $76$; Banco de questões e provas 2026.2)
+- questao 178 (página $76$; Banco de questões e provas 2026.2)
+- questao 179 (página $77$; Banco de questões e provas 2026.2)
+- questao 180 (página $77$; Banco de questões e provas 2026.2)
+- questao 181 (página $77$; Banco de questões e provas 2026.2)
+- questao 182 (página $78$; Banco de questões e provas 2026.2)
+- questao 183 (página $79$; Banco de questões e provas 2026.2)
+- questao 184 (página $79$; Banco de questões e provas 2026.2)
+- questao 185 (página $80$; Banco de questões e provas 2026.2)
+- questao 186 (página $80$; Banco de questões e provas 2026.2)
+- questao 187 (página $80$; Banco de questões e provas 2026.2)
+- questao 188 (página $80$; Banco de questões e provas 2026.2)
+- questao 189 (página $80$; Banco de questões e provas 2026.2)
+- questao 190 (página $80$; Banco de questões e provas 2026.2)
+- questao 191 (página $80$; Banco de questões e provas 2026.2)
+- questao 192 (página $80$; Banco de questões e provas 2026.2)
+- questao 193 (página $81$; Banco de questões e provas 2026.2)
+- questao 194 (página $81$; Banco de questões e provas 2026.2)
+- questao 195 (página $81$; Banco de questões e provas 2026.2)
+- questao 196 (página $81$; Banco de questões e provas 2026.2)
+- questao 197 (página $81$; Banco de questões e provas 2026.2)
+- questao 198 (página $81$; Banco de questões e provas 2026.2)
+- questao 199 (página $82$; Banco de questões e provas 2026.2)
+- questao 200 (página $82$; Banco de questões e provas 2026.2)
+- questao 201 (página $82$; Banco de questões e provas 2026.2)
+- questao 202 (página $82$; Banco de questões e provas 2026.2)
+- questao 203 (página $82$; Banco de questões e provas 2026.2)
+- questao 204 (página $82$; Banco de questões e provas 2026.2)
+- questao 205 (página $82$; Banco de questões e provas 2026.2)
+- questao 206 (página $83$; Banco de questões e provas 2026.2)
+- questao 207 (página $83$; Banco de questões e provas 2026.2)
+- questao 208 (página $83$; Banco de questões e provas 2026.2)
+- questao 209 (página $83$; Banco de questões e provas 2026.2)
+- questao 210 (página $83$; Banco de questões e provas 2026.2)
+- questao 211 (página $84$; Banco de questões e provas 2026.2)
+- questao 212 (página $84$; Banco de questões e provas 2026.2)
+- questao 213 (página $84$; Banco de questões e provas 2026.2)
+- questao 214 (página $84$; Banco de questões e provas 2026.2)
+- questao 215 (página $84$; Banco de questões e provas 2026.2)
+- questao 216 (página $84$; Banco de questões e provas 2026.2)
+- questao 217 (página $84$; Banco de questões e provas 2026.2)
+- questao 218 (página $84$; Banco de questões e provas 2026.2)
+- questao 219 (página $84$; Banco de questões e provas 2026.2)
+- questao 220 (página $85$; Banco de questões e provas 2026.2)
+- questao 221 (página $85$; Banco de questões e provas 2026.2)
+- questao 222 (página $85$; Banco de questões e provas 2026.2)
+- questao 223 (página $85$; Banco de questões e provas 2026.2)
+- questao 224 (página $85$; Banco de questões e provas 2026.2)
+- questao 225 (página $85$; Banco de questões e provas 2026.2)
+- questao 226 (página $85$; Banco de questões e provas 2026.2)
+- questao 227 (página $86$; Banco de questões e provas 2026.2)
+- questao 228 (página $86$; Banco de questões e provas 2026.2)
+- questao 229 (página $86$; Banco de questões e provas 2026.2)
+- questao 230 (página $86$; Banco de questões e provas 2026.2)
+- questao 231 (página $86$; Banco de questões e provas 2026.2)
+- questao 232 (página $87$; Banco de questões e provas 2026.2)
+- questao 233 (página $87$; Banco de questões e provas 2026.2)
+- questao 234 (página $87$; Banco de questões e provas 2026.2)
+- questao 235 (página $88$; Banco de questões e provas 2026.2)
+- questao 236 (página $88$; Banco de questões e provas 2026.2)
+- questao 237 (página $88$; Banco de questões e provas 2026.2)
+- questao 238 (página $89$; Banco de questões e provas 2026.2)
+- questao 239 (página $89$; Banco de questões e provas 2026.2)
+- questao 240 (página $89$; Banco de questões e provas 2026.2)
+- questao 241 (página $89$; Banco de questões e provas 2026.2)
+- questao 242 (página $89$; Banco de questões e provas 2026.2)
+- questao 243 (página $90$; Banco de questões e provas 2026.2)
+- questao 244 (página $90$; Banco de questões e provas 2026.2)
+- questao 245 (página $90$; Banco de questões e provas 2026.2)
+- questao 246 (página $90$; Banco de questões e provas 2026.2)
+- questao 247 (página $90$; Banco de questões e provas 2026.2)
+- questao 248 (página $91$; Banco de questões e provas 2026.2)
+- questao 249 (página $91$; Banco de questões e provas 2026.2)
+- questao 250 (página $92$; Banco de questões e provas 2026.2)
+- questao 251 (página $92$; Banco de questões e provas 2026.2)
+- questao 252 (página $92$; Banco de questões e provas 2026.2)
+- questao 253 (página $92$; Banco de questões e provas 2026.2)
+- questao 254 (página $93$; Banco de questões e provas 2026.2)
+- questao 255 (página $93$; Banco de questões e provas 2026.2)
+- questao 256 (página $93$; Banco de questões e provas 2026.2)
+- questao 257 (página $94$; Banco de questões e provas 2026.2)
+- questao 258 (página $94$; Banco de questões e provas 2026.2)
+- questao 259 (página $94$; Banco de questões e provas 2026.2)
+- questao 33 (página $15$; Banco de questões e provas 2026.2)
+- questao 34 (página $16$; Banco de questões e provas 2026.2)
+- questao 35 (página $16$; Banco de questões e provas 2026.2)
+- questao 36 (página $16$; Banco de questões e provas 2026.2)
+- questao 37 (página $17$; Banco de questões e provas 2026.2)
+- questao 38 (página $17$; Banco de questões e provas 2026.2)
+- questao 39 (página $18$; Banco de questões e provas 2026.2)
+- questao 40 (página $18$; Banco de questões e provas 2026.2)
+- questao 41 (página $19$; Banco de questões e provas 2026.2)
+- questao 42 (página $19$; Banco de questões e provas 2026.2)
+- questao 43 (página $20$; Banco de questões e provas 2026.2)
+- questao 44 (página $20$; Banco de questões e provas 2026.2)
+- questao 45 (página $20$; Banco de questões e provas 2026.2)
+- questao 46 (página $21$; Banco de questões e provas 2026.2)
+- questao 47 (página $21$; Banco de questões e provas 2026.2)
+- questao 48 (página $22$; Banco de questões e provas 2026.2)
+- questao 49 (página $23$; Banco de questões e provas 2026.2)
+- questao 50 (página $23$; Banco de questões e provas 2026.2)
+- questao 51 (página $24$; Banco de questões e provas 2026.2)
+- questao 52 (página $24$; Banco de questões e provas 2026.2)
+- questao 53 (página $24$; Banco de questões e provas 2026.2)
+- questao 54 (página $25$; Banco de questões e provas 2026.2)
+- questao 55 (página $25$; Banco de questões e provas 2026.2)
+- questao 56 (página $26$; Banco de questões e provas 2026.2)
+- questao 57 (página $26$; Banco de questões e provas 2026.2)
+- questao 58 (página $26$; Banco de questões e provas 2026.2)
+- questao 59 (página $27$; Banco de questões e provas 2026.2)
+- questao 60 (página $27$; Banco de questões e provas 2026.2)
+- questao 61 (página $27$; Banco de questões e provas 2026.2)
+- questao 62 (página $28$; Banco de questões e provas 2026.2)
+- questao 63 (página $29$; Banco de questões e provas 2026.2)
+- questao 64 (página $29$; Banco de questões e provas 2026.2)
+- questao 65 (página $29$; Banco de questões e provas 2026.2)
+- questao 66 (página $30$; Banco de questões e provas 2026.2)
+- questao 67 (página $30$; Banco de questões e provas 2026.2)
+- questao 68 (página $31$; Banco de questões e provas 2026.2)
+- questao 69 (página $31$; Banco de questões e provas 2026.2)
+- questao 70 (página $32$; Banco de questões e provas 2026.2)
+- questao 71 (página $32$; Banco de questões e provas 2026.2)
+- questao 72 (página $33$; Banco de questões e provas 2026.2)
+- questao 73 (página $33$; Banco de questões e provas 2026.2)
+- questao 74 (página $34$; Banco de questões e provas 2026.2)
+- questao 75 (página $34$; Banco de questões e provas 2026.2)
+- questao 76 (página $34$; Banco de questões e provas 2026.2)
+- questao 77 (página $34$; Banco de questões e provas 2026.2)
+- questao 78 (página $35$; Banco de questões e provas 2026.2)
+- questao 79 (página $35$; Banco de questões e provas 2026.2)
+- questao 80 (página $35$; Banco de questões e provas 2026.2)
+- questao 81 (página $35$; Banco de questões e provas 2026.2)
+- questao 82 (página $35$; Banco de questões e provas 2026.2)
+- questao 83 (página $35$; Banco de questões e provas 2026.2)
+- questao 84 (página $36$; Banco de questões e provas 2026.2)
+- questao 85 (página $36$; Banco de questões e provas 2026.2)
+- questao 86 (página $36$; Banco de questões e provas 2026.2)
+- questao 87 (página $36$; Banco de questões e provas 2026.2)
+- questao 88 (página $36$; Banco de questões e provas 2026.2)
+- questao 89 (página $38$; Banco de questões e provas 2026.2)
+- questao 90 (página $39$; Banco de questões e provas 2026.2)
+- questao 91 (página $39$; Banco de questões e provas 2026.2)
+- questao 92 (página $41$; Banco de questões e provas 2026.2)
+- questao 93 (página $41$; Banco de questões e provas 2026.2)
+- questao 94 (página $42$; Banco de questões e provas 2026.2)
+- questao 95 (página $42$; Banco de questões e provas 2026.2)
+- questao 96 (página $43$; Banco de questões e provas 2026.2)
+- questao 97 (página $44$; Banco de questões e provas 2026.2)
+- questao 98 (página $44$; Banco de questões e provas 2026.2)
+- questao 99 (página $45$; Banco de questões e provas 2026.2)
+- secao 17.1 — Análise Descritiva (páginas $168$–$173$; Apostila de Métodos Quantitativos)
+- secao 4 — Medidas de posição (páginas $27$–$48$; Apostila de Métodos Quantitativos)
+- secao 4.1 — Pequenos conjuntos de dados (páginas $27$–$29$; Apostila de Métodos Quantitativos)
+- secao 4.2 — Grandes conjuntos de dados: discretos (páginas $30$–$31$; Apostila de Métodos Quantitativos)
+- secao 4.3 — Grandes conjuntos de dados: contínuos (páginas $32$–$34$; Apostila de Métodos Quantitativos)
+- secao 4.4 — Medidas separatrizes (páginas $35$–$41$; Apostila de Métodos Quantitativos)
+- secao 4.5 — Interpolação linear (páginas $42$–$43$; Apostila de Métodos Quantitativos)
+- secao 4.6 — Outras medidas de posição (páginas $44$–$48$; Apostila de Métodos Quantitativos)
+- secao 5 — Medidas de dispersão (páginas $49$–$57$; Apostila de Métodos Quantitativos)
+- secao 5.1 — Pequenos conjuntos de dados (páginas $49$–$52$; Apostila de Métodos Quantitativos)
+- secao 5.2 — Grandes conjuntos de dados: discretos (páginas $53$–$54$; Apostila de Métodos Quantitativos)
+- secao 5.3 — Grandes conjuntos de dados: contínuos (páginas $55$–$57$; Apostila de Métodos Quantitativos)
+- secao 6.1 — Medidas de assimetria (página $58$; Apostila de Métodos Quantitativos)
+- secao 6.2 — Medidas de curtose (páginas $59$–$61$; Apostila de Métodos Quantitativos)
+- secao 1.3 — Gráficos (páginas $15$–$33$; Banco de questões e provas 2026.2)
+- secao 1.3.1 — Análise gráfica (páginas $16$–$17$; Banco de questões e provas 2026.2)
+- secao 1.3.2 — Gráficos especiais (páginas $18$–$33$; Banco de questões e provas 2026.2)
+- secao 1.3.2.1 — Histograma (páginas $18$–$19$; Banco de questões e provas 2026.2)
+- secao 1.3.2.3 — Box plot (páginas $22$–$28$; Banco de questões e provas 2026.2)
+- secao 2.1 — Medidas de posição para dados agrupados e não agrupados (páginas $34$–$73$; Banco de questões e provas 2026.2)
+- secao 2.2 — Propriedades das medidas de posição e dispersão (páginas $74$–$81$; Banco de questões e provas 2026.2)
+- secao 2.3 — Medidas separatrizes (páginas $82$–$83$; Banco de questões e provas 2026.2)
+- secao 2.4 — Médias geométrica, harmônica, ponderada e quadrática (páginas $84$–$87$; Banco de questões e provas 2026.2)
+- secao 2.4.1 — Média geométrica (página $84$; Banco de questões e provas 2026.2)
+- secao 2.4.2 — Média harmônica (página $84$; Banco de questões e provas 2026.2)
+- secao 2.4.3 — Média ponderada (páginas $85$–$86$; Banco de questões e provas 2026.2)
+- secao 2.4.4 — Média quadrática (página $87$; Banco de questões e provas 2026.2)
+- secao 3.1 — Momentos (página $88$; Banco de questões e provas 2026.2)
+- secao 3.2 — Assimetria (páginas $89$–$91$; Banco de questões e provas 2026.2)
+- secao 3.3 — Curtose (páginas $92$–$94$; Banco de questões e provas 2026.2)
+- secao 3.3 — Análise de variáveis quantitativas (páginas $59$–$68$; Estatística para cursos de engenharia e informática)
+- secao 3.4 — Medidas descritivas (páginas $69$–$83$; Estatística para cursos de engenharia e informática)
+- secao 3.6 — Análise exploratória com apoio do computador (página $85$; Estatística para cursos de engenharia e informática)
+- secao 3.7 — Orientação geral (páginas $86$–$91$; Estatística para cursos de engenharia e informática)
+- secao 1.4 — Estimativas de localização (páginas $31$–$37$; Estatística prática para cientistas de dados)
+- secao 1.5 — Estimativas de variabilidade (páginas $38$–$44$; Estatística prática para cientistas de dados)
+- secao 1.6 — Explorando a distribuição de dados (páginas $45$–$50$; Estatística prática para cientistas de dados)
+- secao 1.7 — Explorando dados binários e categóricos (páginas $51$–$54$; Estatística prática para cientistas de dados)
+- secao 6.1 — Numerical Summaries of Data (páginas $145$–$148$; Applied Statistics and Probability for Engineers)
+- secao 6.3 — Frequency Distributions and Histograms (páginas $153$–$156$; Applied Statistics and Probability for Engineers)
+- secao 6.4 — Box Plots (página $157$; Applied Statistics and Probability for Engineers)
+- secao 2.3.2 — Gráficos para variáveis quantitativas (páginas $33$–$36$; Estatística Básica)
+- secao 3.1 — Medidas de posição (páginas $52$–$53$; Estatística Básica)
+- secao 3.2 — Medidas de dispersão (páginas $54$–$57$; Estatística Básica)
+- secao 3.3 — Quantis empíricos (páginas $58$–$63$; Estatística Básica)
+- secao 3.4 — Box plots (páginas $64$–$67$; Estatística Básica)
+- secao 3.5 — Gráficos de simetria (página $68$; Estatística Básica)
+- secao 3.6 — Transformações (páginas $69$–$70$; Estatística Básica)
+- secao 3.7 — Exemplos computacionais (páginas $71$–$72$; Estatística Básica)
+- secao 3.8 — Problemas e complementos (páginas $73$–$84$; Estatística Básica)
+- secao 1.2 — Summary Statistics (páginas $35$–$46$; Statistics for Engineers and Scientists)
+- secao 1.3 — Graphical Summaries (páginas $47$–$69$; Statistics for Engineers and Scientists)
+- secao 1.5 — Medidas de centralidade para variáveis quantitativas (páginas $35$–$36$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.6 — Medidas de dispersão para variáveis quantitativas (páginas $37$–$42$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.7 — O conceito de resistência de uma medida (página $43$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.8 — Identificação de discrepâncias em variáveis quantitativas (páginas $44$–$45$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.9 — Box plot para variáveis quantitativas (páginas $46$–$59$; Estatística básica: a arte de trabalhar com dados)
+
+### `01.04` — Análise bivariada
+- exercicio 21 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 7 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 2.1_P (página $81$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 2.2_P (página $82$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 2.5_P (página $83$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 2.7_P (página $85$; Estatística básica: a arte de trabalhar com dados)
+- questao 25 (página $13$; Banco de questões e provas 2026.2)
+- questao 26 (página $13$; Banco de questões e provas 2026.2)
+- questao 27 (página $13$; Banco de questões e provas 2026.2)
+- questao 28 (página $14$; Banco de questões e provas 2026.2)
+- questao 29 (página $14$; Banco de questões e provas 2026.2)
+- questao 30 (página $14$; Banco de questões e provas 2026.2)
+- questao 31 (página $15$; Banco de questões e provas 2026.2)
+- questao 32 (página $15$; Banco de questões e provas 2026.2)
+- secao 15.1 — Gráfico de dispersão (página $148$; Apostila de Métodos Quantitativos)
+- secao 15.2 — Coeficiente de correlação de Pearson (página $149$; Apostila de Métodos Quantitativos)
+- secao 17.1 — Análise Descritiva (páginas $168$–$173$; Apostila de Métodos Quantitativos)
+- secao 1.2 — Tabela de dupla entrada (páginas $13$–$14$; Banco de questões e provas 2026.2)
+- secao 11.1 — Correlação (páginas $317$–$318$; Estatística para cursos de engenharia e informática)
+- secao 11.2 — Coeficiente de correlação linear de Pearson (páginas $319$–$324$; Estatística para cursos de engenharia e informática)
+- secao 3.7 — Orientação geral (páginas $86$–$91$; Estatística para cursos de engenharia e informática)
+- secao 1.10 — Explorando duas ou mais variáveis (páginas $61$–$69$; Estatística prática para cientistas de dados)
+- secao 1.8 — Correlação (páginas $55$–$58$; Estatística prática para cientistas de dados)
+- secao 1.9 — Gráficos de dispersão (páginas $59$–$60$; Estatística prática para cientistas de dados)
+- secao 6.6 — Scatter Diagrams (páginas $160$–$161$; Applied Statistics and Probability for Engineers)
+- secao 4.1 — Introdução (páginas $85$–$86$; Estatística Básica)
+- secao 4.2 — Variáveis qualitativas (páginas $87$–$89$; Estatística Básica)
+- secao 4.3 — Associação entre variáveis qualitativas (páginas $90$–$92$; Estatística Básica)
+- secao 4.4 — Medidas de associação entre variáveis qualitativas (páginas $93$–$96$; Estatística Básica)
+- secao 4.5 — Associação entre variáveis quantitativas (páginas $97$–$102$; Estatística Básica)
+- secao 4.6 — Associação entre variáveis qualitativas e quantitativas (páginas $103$–$106$; Estatística Básica)
+- secao 4.7 — Gráficos q x q (páginas $107$–$108$; Estatística Básica)
+- secao 4.8 — Exemplos computacionais (páginas $109$–$110$; Estatística Básica)
+- secao 4.9 — Problemas e complementos (páginas $111$–$119$; Estatística Básica)
+- secao 1.3 — Graphical Summaries (páginas $47$–$69$; Statistics for Engineers and Scientists)
+- secao 2.1 — Relação entre variáveis qualitativas - tabelas de contingência (páginas $60$–$65$; Estatística básica: a arte de trabalhar com dados)
+- secao 2.2 — Correlação entre variáveis quantitativas (páginas $66$–$71$; Estatística básica: a arte de trabalhar com dados)
+
+## Índice por tópico
+
+### Amostra
+- exercicio 1.2 (página $23$; Estatística para cursos de engenharia e informática)
+- questao 1 (página $7$; Banco de questões e provas 2026.2)
+- questao 2 (página $7$; Banco de questões e provas 2026.2)
+- questao 3 (página $7$; Banco de questões e provas 2026.2)
+- questao 4 (página $7$; Banco de questões e provas 2026.2)
+- questao 5 (página $8$; Banco de questões e provas 2026.2)
+- questao 6 (página $8$; Banco de questões e provas 2026.2)
+- secao 1.2 — Conceitos fundamentais (páginas $8$–$9$; Apostila de Métodos Quantitativos)
+- secao 1.6 — Conceitos básicos (páginas $18$–$23$; Estatística para cursos de engenharia e informática)
+- secao 1.1 — The Engineering Method and Statistical Thinking (páginas $20$–$23$; Applied Statistics and Probability for Engineers)
+- secao 1.1.2 — Populations and Samples (página $23$; Applied Statistics and Probability for Engineers)
+- secao 1.1 — Sampling (páginas $25$–$34$; Statistics for Engineers and Scientists)
+- secao 1.2 — População e amostra (páginas $22$–$23$; Estatística básica: a arte de trabalhar com dados)
+
+### Amostragem
+- exercicio 1.2 (página $23$; Estatística para cursos de engenharia e informática)
+- exercicio 2.7 (página $34$; Estatística para cursos de engenharia e informática)
+- secao 2.2 — Pesquisas de levantamento (páginas $25$–$33$; Estatística para cursos de engenharia e informática)
+- secao 2.2.1 — Procedimentos de amostragem (páginas $25$–$31$; Estatística para cursos de engenharia e informática)
+- secao 2.2.2 — Tamanho da amostra (páginas $32$–$33$; Estatística para cursos de engenharia e informática)
+- secao 1.1 — Sampling (páginas $25$–$34$; Statistics for Engineers and Scientists)
+
+### Amplitude
+- secao 5 — Medidas de dispersão (páginas $49$–$57$; Apostila de Métodos Quantitativos)
+- secao 5.1 — Pequenos conjuntos de dados (páginas $49$–$52$; Apostila de Métodos Quantitativos)
+- secao 3.2 — Medidas de dispersão (páginas $54$–$57$; Estatística Básica)
+- secao 1.6 — Medidas de dispersão para variáveis quantitativas (páginas $37$–$42$; Estatística básica: a arte de trabalhar com dados)
+
+### Assimetria
+- questao 238 (página $89$; Banco de questões e provas 2026.2)
+- questao 239 (página $89$; Banco de questões e provas 2026.2)
+- questao 240 (página $89$; Banco de questões e provas 2026.2)
+- questao 241 (página $89$; Banco de questões e provas 2026.2)
+- questao 242 (página $89$; Banco de questões e provas 2026.2)
+- questao 243 (página $90$; Banco de questões e provas 2026.2)
+- questao 244 (página $90$; Banco de questões e provas 2026.2)
+- questao 245 (página $90$; Banco de questões e provas 2026.2)
+- questao 246 (página $90$; Banco de questões e provas 2026.2)
+- questao 247 (página $90$; Banco de questões e provas 2026.2)
+- questao 248 (página $91$; Banco de questões e provas 2026.2)
+- questao 249 (página $91$; Banco de questões e provas 2026.2)
+- questao 250 (página $92$; Banco de questões e provas 2026.2)
+- questao 251 (página $92$; Banco de questões e provas 2026.2)
+- questao 252 (página $92$; Banco de questões e provas 2026.2)
+- questao 253 (página $92$; Banco de questões e provas 2026.2)
+- questao 254 (página $93$; Banco de questões e provas 2026.2)
+- questao 255 (página $93$; Banco de questões e provas 2026.2)
+- questao 256 (página $93$; Banco de questões e provas 2026.2)
+- questao 257 (página $94$; Banco de questões e provas 2026.2)
+- questao 258 (página $94$; Banco de questões e provas 2026.2)
+- questao 259 (página $94$; Banco de questões e provas 2026.2)
+- secao 6.1 — Medidas de assimetria (página $58$; Apostila de Métodos Quantitativos)
+- secao 6.2 — Medidas de curtose (páginas $59$–$61$; Apostila de Métodos Quantitativos)
+- secao 3.2 — Assimetria (páginas $89$–$91$; Banco de questões e provas 2026.2)
+- secao 3.3 — Curtose (páginas $92$–$94$; Banco de questões e provas 2026.2)
+- secao 3.5 — Gráficos de simetria (página $68$; Estatística Básica)
+
+### Associação
+- exercicio 21 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 7 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 2.1_P (página $81$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 2.2_P (página $82$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 2.7_P (página $85$; Estatística básica: a arte de trabalhar com dados)
+- questao 25 (página $13$; Banco de questões e provas 2026.2)
+- questao 26 (página $13$; Banco de questões e provas 2026.2)
+- questao 27 (página $13$; Banco de questões e provas 2026.2)
+- questao 28 (página $14$; Banco de questões e provas 2026.2)
+- questao 29 (página $14$; Banco de questões e provas 2026.2)
+- questao 30 (página $14$; Banco de questões e provas 2026.2)
+- questao 31 (página $15$; Banco de questões e provas 2026.2)
+- questao 32 (página $15$; Banco de questões e provas 2026.2)
+- secao 15.1 — Gráfico de dispersão (página $148$; Apostila de Métodos Quantitativos)
+- secao 11.1 — Correlação (páginas $317$–$318$; Estatística para cursos de engenharia e informática)
+- secao 3.7 — Orientação geral (páginas $86$–$91$; Estatística para cursos de engenharia e informática)
+- secao 1.10 — Explorando duas ou mais variáveis (páginas $61$–$69$; Estatística prática para cientistas de dados)
+- secao 1.9 — Gráficos de dispersão (páginas $59$–$60$; Estatística prática para cientistas de dados)
+- secao 6.6 — Scatter Diagrams (páginas $160$–$161$; Applied Statistics and Probability for Engineers)
+- secao 4.1 — Introdução (páginas $85$–$86$; Estatística Básica)
+- secao 4.3 — Associação entre variáveis qualitativas (páginas $90$–$92$; Estatística Básica)
+- secao 4.4 — Medidas de associação entre variáveis qualitativas (páginas $93$–$96$; Estatística Básica)
+- secao 4.6 — Associação entre variáveis qualitativas e quantitativas (páginas $103$–$106$; Estatística Básica)
+- secao 4.7 — Gráficos q x q (páginas $107$–$108$; Estatística Básica)
+- secao 4.8 — Exemplos computacionais (páginas $109$–$110$; Estatística Básica)
+- secao 4.9 — Problemas e complementos (páginas $111$–$119$; Estatística Básica)
+- secao 1.3 — Graphical Summaries (páginas $47$–$69$; Statistics for Engineers and Scientists)
+- secao 2.1 — Relação entre variáveis qualitativas - tabelas de contingência (páginas $60$–$65$; Estatística básica: a arte de trabalhar com dados)
+
+### Boxplot
+- questao 33 (página $15$; Banco de questões e provas 2026.2)
+- questao 34 (página $16$; Banco de questões e provas 2026.2)
+- questao 35 (página $16$; Banco de questões e provas 2026.2)
+- questao 36 (página $16$; Banco de questões e provas 2026.2)
+- questao 37 (página $17$; Banco de questões e provas 2026.2)
+- questao 38 (página $17$; Banco de questões e provas 2026.2)
+- questao 39 (página $18$; Banco de questões e provas 2026.2)
+- questao 40 (página $18$; Banco de questões e provas 2026.2)
+- questao 41 (página $19$; Banco de questões e provas 2026.2)
+- questao 42 (página $19$; Banco de questões e provas 2026.2)
+- questao 43 (página $20$; Banco de questões e provas 2026.2)
+- questao 44 (página $20$; Banco de questões e provas 2026.2)
+- questao 45 (página $20$; Banco de questões e provas 2026.2)
+- questao 46 (página $21$; Banco de questões e provas 2026.2)
+- questao 47 (página $21$; Banco de questões e provas 2026.2)
+- questao 48 (página $22$; Banco de questões e provas 2026.2)
+- questao 49 (página $23$; Banco de questões e provas 2026.2)
+- questao 50 (página $23$; Banco de questões e provas 2026.2)
+- questao 51 (página $24$; Banco de questões e provas 2026.2)
+- questao 52 (página $24$; Banco de questões e provas 2026.2)
+- questao 53 (página $24$; Banco de questões e provas 2026.2)
+- questao 54 (página $25$; Banco de questões e provas 2026.2)
+- questao 55 (página $25$; Banco de questões e provas 2026.2)
+- questao 56 (página $26$; Banco de questões e provas 2026.2)
+- questao 57 (página $26$; Banco de questões e provas 2026.2)
+- questao 58 (página $26$; Banco de questões e provas 2026.2)
+- questao 59 (página $27$; Banco de questões e provas 2026.2)
+- questao 60 (página $27$; Banco de questões e provas 2026.2)
+- questao 61 (página $27$; Banco de questões e provas 2026.2)
+- questao 62 (página $28$; Banco de questões e provas 2026.2)
+- questao 63 (página $29$; Banco de questões e provas 2026.2)
+- questao 64 (página $29$; Banco de questões e provas 2026.2)
+- questao 65 (página $29$; Banco de questões e provas 2026.2)
+- questao 66 (página $30$; Banco de questões e provas 2026.2)
+- questao 67 (página $30$; Banco de questões e provas 2026.2)
+- questao 68 (página $31$; Banco de questões e provas 2026.2)
+- questao 69 (página $31$; Banco de questões e provas 2026.2)
+- questao 70 (página $32$; Banco de questões e provas 2026.2)
+- questao 71 (página $32$; Banco de questões e provas 2026.2)
+- questao 72 (página $33$; Banco de questões e provas 2026.2)
+- questao 73 (página $33$; Banco de questões e provas 2026.2)
+- secao 1.3 — Gráficos (páginas $15$–$33$; Banco de questões e provas 2026.2)
+- secao 1.3.2.3 — Box plot (páginas $22$–$28$; Banco de questões e provas 2026.2)
+- secao 3.4 — Medidas descritivas (páginas $69$–$83$; Estatística para cursos de engenharia e informática)
+- secao 1.6 — Explorando a distribuição de dados (páginas $45$–$50$; Estatística prática para cientistas de dados)
+- secao 6.4 — Box Plots (página $157$; Applied Statistics and Probability for Engineers)
+- secao 3.4 — Box plots (páginas $64$–$67$; Estatística Básica)
+- secao 3.7 — Exemplos computacionais (páginas $71$–$72$; Estatística Básica)
+- secao 3.8 — Problemas e complementos (páginas $73$–$84$; Estatística Básica)
+- secao 1.3 — Graphical Summaries (páginas $47$–$69$; Statistics for Engineers and Scientists)
+- secao 1.9 — Box plot para variáveis quantitativas (páginas $46$–$59$; Estatística básica: a arte de trabalhar com dados)
+
+### Coeficiente de variação
+- exercicio 21 (página $172$; Apostila de Métodos Quantitativos)
+- questao 169 (página $74$; Banco de questões e provas 2026.2)
+- questao 170 (página $74$; Banco de questões e provas 2026.2)
+- questao 171 (página $74$; Banco de questões e provas 2026.2)
+- questao 172 (página $75$; Banco de questões e provas 2026.2)
+- questao 173 (página $75$; Banco de questões e provas 2026.2)
+- questao 174 (página $75$; Banco de questões e provas 2026.2)
+- questao 175 (página $75$; Banco de questões e provas 2026.2)
+- questao 176 (página $75$; Banco de questões e provas 2026.2)
+- questao 177 (página $76$; Banco de questões e provas 2026.2)
+- questao 178 (página $76$; Banco de questões e provas 2026.2)
+- questao 179 (página $77$; Banco de questões e provas 2026.2)
+- questao 180 (página $77$; Banco de questões e provas 2026.2)
+- questao 181 (página $77$; Banco de questões e provas 2026.2)
+- questao 182 (página $78$; Banco de questões e provas 2026.2)
+- questao 183 (página $79$; Banco de questões e provas 2026.2)
+- questao 184 (página $79$; Banco de questões e provas 2026.2)
+- questao 185 (página $80$; Banco de questões e provas 2026.2)
+- questao 186 (página $80$; Banco de questões e provas 2026.2)
+- questao 187 (página $80$; Banco de questões e provas 2026.2)
+- questao 188 (página $80$; Banco de questões e provas 2026.2)
+- questao 189 (página $80$; Banco de questões e provas 2026.2)
+- questao 190 (página $80$; Banco de questões e provas 2026.2)
+- questao 191 (página $80$; Banco de questões e provas 2026.2)
+- questao 192 (página $80$; Banco de questões e provas 2026.2)
+- questao 193 (página $81$; Banco de questões e provas 2026.2)
+- questao 194 (página $81$; Banco de questões e provas 2026.2)
+- questao 195 (página $81$; Banco de questões e provas 2026.2)
+- questao 196 (página $81$; Banco de questões e provas 2026.2)
+- questao 197 (página $81$; Banco de questões e provas 2026.2)
+- questao 198 (página $81$; Banco de questões e provas 2026.2)
+- secao 5 — Medidas de dispersão (páginas $49$–$57$; Apostila de Métodos Quantitativos)
+- secao 5.2 — Grandes conjuntos de dados: discretos (páginas $53$–$54$; Apostila de Métodos Quantitativos)
+- secao 5.3 — Grandes conjuntos de dados: contínuos (páginas $55$–$57$; Apostila de Métodos Quantitativos)
+- secao 2.2 — Propriedades das medidas de posição e dispersão (páginas $74$–$81$; Banco de questões e provas 2026.2)
+- secao 3.2 — Medidas de dispersão (páginas $54$–$57$; Estatística Básica)
+- secao 1.6 — Medidas de dispersão para variáveis quantitativas (páginas $37$–$42$; Estatística básica: a arte de trabalhar com dados)
+
+### Correlação linear
+- exercicio 2.5_P (página $83$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 2.7_P (página $85$; Estatística básica: a arte de trabalhar com dados)
+- secao 15.2 — Coeficiente de correlação de Pearson (página $149$; Apostila de Métodos Quantitativos)
+- secao 11.2 — Coeficiente de correlação linear de Pearson (páginas $319$–$324$; Estatística para cursos de engenharia e informática)
+- secao 1.8 — Correlação (páginas $55$–$58$; Estatística prática para cientistas de dados)
+- secao 4.5 — Associação entre variáveis quantitativas (páginas $97$–$102$; Estatística Básica)
+- secao 4.9 — Problemas e complementos (páginas $111$–$119$; Estatística Básica)
+- secao 2.2 — Correlação entre variáveis quantitativas (páginas $66$–$71$; Estatística básica: a arte de trabalhar com dados)
+
+### Covariância
+- secao 15.2 — Coeficiente de correlação de Pearson (página $149$; Apostila de Métodos Quantitativos)
+- secao 11.2 — Coeficiente de correlação linear de Pearson (páginas $319$–$324$; Estatística para cursos de engenharia e informática)
+- secao 1.8 — Correlação (páginas $55$–$58$; Estatística prática para cientistas de dados)
+- secao 4.5 — Associação entre variáveis quantitativas (páginas $97$–$102$; Estatística Básica)
+- secao 2.2 — Correlação entre variáveis quantitativas (páginas $66$–$71$; Estatística básica: a arte de trabalhar com dados)
+
+### Desvio-padrão
+- exercicio 10 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 11 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 12 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 13 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 14 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 15 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 16 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 17 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 18 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 19 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 20 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 22 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 23 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 24 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 25 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 26 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 27 (página $173$; Apostila de Métodos Quantitativos)
+- exercicio 8 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 9 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 3.4 (página $87$; Estatística para cursos de engenharia e informática)
+- exercicio 1.7_P (página $56$; Estatística básica: a arte de trabalhar com dados)
+- questao 100 (página $45$; Banco de questões e provas 2026.2)
+- questao 101 (página $46$; Banco de questões e provas 2026.2)
+- questao 102 (página $47$; Banco de questões e provas 2026.2)
+- questao 103 (página $47$; Banco de questões e provas 2026.2)
+- questao 104 (página $47$; Banco de questões e provas 2026.2)
+- questao 105 (página $48$; Banco de questões e provas 2026.2)
+- questao 106 (página $48$; Banco de questões e provas 2026.2)
+- questao 107 (página $49$; Banco de questões e provas 2026.2)
+- questao 108 (página $49$; Banco de questões e provas 2026.2)
+- questao 109 (página $50$; Banco de questões e provas 2026.2)
+- questao 110 (página $51$; Banco de questões e provas 2026.2)
+- questao 111 (página $51$; Banco de questões e provas 2026.2)
+- questao 112 (página $51$; Banco de questões e provas 2026.2)
+- questao 113 (página $52$; Banco de questões e provas 2026.2)
+- questao 114 (página $52$; Banco de questões e provas 2026.2)
+- questao 115 (página $52$; Banco de questões e provas 2026.2)
+- questao 116 (página $53$; Banco de questões e provas 2026.2)
+- questao 117 (página $53$; Banco de questões e provas 2026.2)
+- questao 118 (página $53$; Banco de questões e provas 2026.2)
+- questao 119 (página $53$; Banco de questões e provas 2026.2)
+- questao 120 (página $53$; Banco de questões e provas 2026.2)
+- questao 121 (página $54$; Banco de questões e provas 2026.2)
+- questao 122 (página $54$; Banco de questões e provas 2026.2)
+- questao 123 (página $54$; Banco de questões e provas 2026.2)
+- questao 124 (página $55$; Banco de questões e provas 2026.2)
+- questao 125 (página $56$; Banco de questões e provas 2026.2)
+- questao 126 (página $56$; Banco de questões e provas 2026.2)
+- questao 127 (página $57$; Banco de questões e provas 2026.2)
+- questao 128 (página $58$; Banco de questões e provas 2026.2)
+- questao 129 (página $58$; Banco de questões e provas 2026.2)
+- questao 130 (página $59$; Banco de questões e provas 2026.2)
+- questao 131 (página $59$; Banco de questões e provas 2026.2)
+- questao 132 (página $59$; Banco de questões e provas 2026.2)
+- questao 133 (página $60$; Banco de questões e provas 2026.2)
+- questao 134 (página $61$; Banco de questões e provas 2026.2)
+- questao 135 (página $61$; Banco de questões e provas 2026.2)
+- questao 136 (página $61$; Banco de questões e provas 2026.2)
+- questao 137 (página $62$; Banco de questões e provas 2026.2)
+- questao 138 (página $62$; Banco de questões e provas 2026.2)
+- questao 139 (página $62$; Banco de questões e provas 2026.2)
+- questao 140 (página $63$; Banco de questões e provas 2026.2)
+- questao 141 (página $63$; Banco de questões e provas 2026.2)
+- questao 142 (página $63$; Banco de questões e provas 2026.2)
+- questao 143 (página $64$; Banco de questões e provas 2026.2)
+- questao 144 (página $64$; Banco de questões e provas 2026.2)
+- questao 145 (página $64$; Banco de questões e provas 2026.2)
+- questao 146 (página $65$; Banco de questões e provas 2026.2)
+- questao 147 (página $65$; Banco de questões e provas 2026.2)
+- questao 148 (página $66$; Banco de questões e provas 2026.2)
+- questao 149 (página $66$; Banco de questões e provas 2026.2)
+- questao 150 (página $67$; Banco de questões e provas 2026.2)
+- questao 151 (página $67$; Banco de questões e provas 2026.2)
+- questao 152 (página $67$; Banco de questões e provas 2026.2)
+- questao 153 (página $68$; Banco de questões e provas 2026.2)
+- questao 154 (página $68$; Banco de questões e provas 2026.2)
+- questao 155 (página $69$; Banco de questões e provas 2026.2)
+- questao 156 (página $69$; Banco de questões e provas 2026.2)
+- questao 157 (página $69$; Banco de questões e provas 2026.2)
+- questao 158 (página $69$; Banco de questões e provas 2026.2)
+- questao 159 (página $70$; Banco de questões e provas 2026.2)
+- questao 160 (página $70$; Banco de questões e provas 2026.2)
+- questao 161 (página $71$; Banco de questões e provas 2026.2)
+- questao 162 (página $71$; Banco de questões e provas 2026.2)
+- questao 163 (página $71$; Banco de questões e provas 2026.2)
+- questao 164 (página $72$; Banco de questões e provas 2026.2)
+- questao 165 (página $72$; Banco de questões e provas 2026.2)
+- questao 166 (página $73$; Banco de questões e provas 2026.2)
+- questao 167 (página $73$; Banco de questões e provas 2026.2)
+- questao 168 (página $73$; Banco de questões e provas 2026.2)
+- questao 74 (página $34$; Banco de questões e provas 2026.2)
+- questao 75 (página $34$; Banco de questões e provas 2026.2)
+- questao 76 (página $34$; Banco de questões e provas 2026.2)
+- questao 77 (página $34$; Banco de questões e provas 2026.2)
+- questao 78 (página $35$; Banco de questões e provas 2026.2)
+- questao 79 (página $35$; Banco de questões e provas 2026.2)
+- questao 80 (página $35$; Banco de questões e provas 2026.2)
+- questao 81 (página $35$; Banco de questões e provas 2026.2)
+- questao 82 (página $35$; Banco de questões e provas 2026.2)
+- questao 83 (página $35$; Banco de questões e provas 2026.2)
+- questao 84 (página $36$; Banco de questões e provas 2026.2)
+- questao 85 (página $36$; Banco de questões e provas 2026.2)
+- questao 86 (página $36$; Banco de questões e provas 2026.2)
+- questao 87 (página $36$; Banco de questões e provas 2026.2)
+- questao 88 (página $36$; Banco de questões e provas 2026.2)
+- questao 89 (página $38$; Banco de questões e provas 2026.2)
+- questao 90 (página $39$; Banco de questões e provas 2026.2)
+- questao 91 (página $39$; Banco de questões e provas 2026.2)
+- questao 92 (página $41$; Banco de questões e provas 2026.2)
+- questao 93 (página $41$; Banco de questões e provas 2026.2)
+- questao 94 (página $42$; Banco de questões e provas 2026.2)
+- questao 95 (página $42$; Banco de questões e provas 2026.2)
+- questao 96 (página $43$; Banco de questões e provas 2026.2)
+- questao 97 (página $44$; Banco de questões e provas 2026.2)
+- questao 98 (página $44$; Banco de questões e provas 2026.2)
+- questao 99 (página $45$; Banco de questões e provas 2026.2)
+- secao 5 — Medidas de dispersão (páginas $49$–$57$; Apostila de Métodos Quantitativos)
+- secao 5.1 — Pequenos conjuntos de dados (páginas $49$–$52$; Apostila de Métodos Quantitativos)
+- secao 5.2 — Grandes conjuntos de dados: discretos (páginas $53$–$54$; Apostila de Métodos Quantitativos)
+- secao 5.3 — Grandes conjuntos de dados: contínuos (páginas $55$–$57$; Apostila de Métodos Quantitativos)
+- secao 2.1 — Medidas de posição para dados agrupados e não agrupados (páginas $34$–$73$; Banco de questões e provas 2026.2)
+- secao 2.2 — Propriedades das medidas de posição e dispersão (páginas $74$–$81$; Banco de questões e provas 2026.2)
+- secao 1.6 — Conceitos básicos (páginas $18$–$23$; Estatística para cursos de engenharia e informática)
+- secao 3.4 — Medidas descritivas (páginas $69$–$83$; Estatística para cursos de engenharia e informática)
+- secao 1.5 — Estimativas de variabilidade (páginas $38$–$44$; Estatística prática para cientistas de dados)
+- secao 6.1 — Numerical Summaries of Data (páginas $145$–$148$; Applied Statistics and Probability for Engineers)
+- secao 3.2 — Medidas de dispersão (páginas $54$–$57$; Estatística Básica)
+- secao 1.2 — Summary Statistics (páginas $35$–$46$; Statistics for Engineers and Scientists)
+- secao 1.6 — Medidas de dispersão para variáveis quantitativas (páginas $37$–$42$; Estatística básica: a arte de trabalhar com dados)
+
+### Estatística descritiva
+- secao 1.1 — Divisão da Estatística (página $8$; Apostila de Métodos Quantitativos)
+- secao 17.1 — Análise Descritiva (páginas $168$–$173$; Apostila de Métodos Quantitativos)
+- secao 1.5 — Modelos (páginas $16$–$17$; Estatística para cursos de engenharia e informática)
+- secao 3.7 — Orientação geral (páginas $86$–$91$; Estatística para cursos de engenharia e informática)
+- secao 1.3 — Mechanistic and Empirical Models (páginas $30$–$32$; Applied Statistics and Probability for Engineers)
+- secao 1.2 — Modelos (página $18$; Estatística Básica)
+- secao 1.1 — Introdução (páginas $20$–$21$; Estatística básica: a arte de trabalhar com dados)
+
+### Estatística inferencial
+- secao 1.1 — Divisão da Estatística (página $8$; Apostila de Métodos Quantitativos)
+- secao 1.5 — Modelos (páginas $16$–$17$; Estatística para cursos de engenharia e informática)
+- secao 1.3 — Mechanistic and Empirical Models (páginas $30$–$32$; Applied Statistics and Probability for Engineers)
+- secao 1.2 — Modelos (página $18$; Estatística Básica)
+
+### Frequência
+- exercicio 3.4 (página $87$; Estatística para cursos de engenharia e informática)
+- exercicio 3.8 (página $88$; Estatística para cursos de engenharia e informática)
+- exercicio 1.5_P (página $55$; Estatística básica: a arte de trabalhar com dados)
+- questao 33 (página $15$; Banco de questões e provas 2026.2)
+- questao 34 (página $16$; Banco de questões e provas 2026.2)
+- questao 35 (página $16$; Banco de questões e provas 2026.2)
+- questao 36 (página $16$; Banco de questões e provas 2026.2)
+- questao 37 (página $17$; Banco de questões e provas 2026.2)
+- questao 38 (página $17$; Banco de questões e provas 2026.2)
+- questao 39 (página $18$; Banco de questões e provas 2026.2)
+- questao 40 (página $18$; Banco de questões e provas 2026.2)
+- questao 41 (página $19$; Banco de questões e provas 2026.2)
+- questao 42 (página $19$; Banco de questões e provas 2026.2)
+- questao 43 (página $20$; Banco de questões e provas 2026.2)
+- questao 44 (página $20$; Banco de questões e provas 2026.2)
+- questao 45 (página $20$; Banco de questões e provas 2026.2)
+- questao 46 (página $21$; Banco de questões e provas 2026.2)
+- questao 47 (página $21$; Banco de questões e provas 2026.2)
+- questao 48 (página $22$; Banco de questões e provas 2026.2)
+- questao 49 (página $23$; Banco de questões e provas 2026.2)
+- questao 50 (página $23$; Banco de questões e provas 2026.2)
+- questao 51 (página $24$; Banco de questões e provas 2026.2)
+- questao 52 (página $24$; Banco de questões e provas 2026.2)
+- questao 53 (página $24$; Banco de questões e provas 2026.2)
+- questao 54 (página $25$; Banco de questões e provas 2026.2)
+- questao 55 (página $25$; Banco de questões e provas 2026.2)
+- questao 56 (página $26$; Banco de questões e provas 2026.2)
+- questao 57 (página $26$; Banco de questões e provas 2026.2)
+- questao 58 (página $26$; Banco de questões e provas 2026.2)
+- questao 59 (página $27$; Banco de questões e provas 2026.2)
+- questao 60 (página $27$; Banco de questões e provas 2026.2)
+- questao 61 (página $27$; Banco de questões e provas 2026.2)
+- questao 62 (página $28$; Banco de questões e provas 2026.2)
+- questao 63 (página $29$; Banco de questões e provas 2026.2)
+- questao 64 (página $29$; Banco de questões e provas 2026.2)
+- questao 65 (página $29$; Banco de questões e provas 2026.2)
+- questao 66 (página $30$; Banco de questões e provas 2026.2)
+- questao 67 (página $30$; Banco de questões e provas 2026.2)
+- questao 68 (página $31$; Banco de questões e provas 2026.2)
+- questao 69 (página $31$; Banco de questões e provas 2026.2)
+- questao 70 (página $32$; Banco de questões e provas 2026.2)
+- questao 71 (página $32$; Banco de questões e provas 2026.2)
+- questao 72 (página $33$; Banco de questões e provas 2026.2)
+- questao 73 (página $33$; Banco de questões e provas 2026.2)
+- secao 3.1 — Distribuição de frequências para dados discretos (página $23$; Apostila de Métodos Quantitativos)
+- secao 3.2 — Distribuição de frequências para dados contínuos (páginas $24$–$26$; Apostila de Métodos Quantitativos)
+- secao 1.3 — Gráficos (páginas $15$–$33$; Banco de questões e provas 2026.2)
+- secao 1.3.2.1 — Histograma (páginas $18$–$19$; Banco de questões e provas 2026.2)
+- secao 1.3.2.4 — Gráfico de Pareto (páginas $29$–$32$; Banco de questões e provas 2026.2)
+- secao 3.2 — Análise de variáveis qualitativas (páginas $54$–$58$; Estatística para cursos de engenharia e informática)
+- secao 3.3 — Análise de variáveis quantitativas (páginas $59$–$68$; Estatística para cursos de engenharia e informática)
+- secao 1.6 — Explorando a distribuição de dados (páginas $45$–$50$; Estatística prática para cientistas de dados)
+- secao 6.2 — Stem-and-Leaf Diagrams (páginas $149$–$152$; Applied Statistics and Probability for Engineers)
+- secao 6.3 — Frequency Distributions and Histograms (páginas $153$–$156$; Applied Statistics and Probability for Engineers)
+- secao 2.2 — Distribuições de frequências (páginas $28$–$31$; Estatística Básica)
+- secao 2.4 — Ramo-e-folhas (páginas $37$–$39$; Estatística Básica)
+- secao 2.6 — Problemas e complementos (páginas $43$–$51$; Estatística Básica)
+- secao 1.3 — Graphical Summaries (páginas $47$–$69$; Statistics for Engineers and Scientists)
+- secao 1.4 — Distribuições de frequências - tabelas e gráficos (páginas $27$–$34$; Estatística básica: a arte de trabalhar com dados)
+
+### Gráfico
+- exercicio 3.8 (página $88$; Estatística para cursos de engenharia e informática)
+- exercicio 1.5_P (página $55$; Estatística básica: a arte de trabalhar com dados)
+- questao 33 (página $15$; Banco de questões e provas 2026.2)
+- questao 34 (página $16$; Banco de questões e provas 2026.2)
+- questao 35 (página $16$; Banco de questões e provas 2026.2)
+- questao 36 (página $16$; Banco de questões e provas 2026.2)
+- questao 37 (página $17$; Banco de questões e provas 2026.2)
+- questao 38 (página $17$; Banco de questões e provas 2026.2)
+- questao 39 (página $18$; Banco de questões e provas 2026.2)
+- questao 40 (página $18$; Banco de questões e provas 2026.2)
+- questao 41 (página $19$; Banco de questões e provas 2026.2)
+- questao 42 (página $19$; Banco de questões e provas 2026.2)
+- questao 43 (página $20$; Banco de questões e provas 2026.2)
+- questao 44 (página $20$; Banco de questões e provas 2026.2)
+- questao 45 (página $20$; Banco de questões e provas 2026.2)
+- questao 46 (página $21$; Banco de questões e provas 2026.2)
+- questao 47 (página $21$; Banco de questões e provas 2026.2)
+- questao 48 (página $22$; Banco de questões e provas 2026.2)
+- questao 49 (página $23$; Banco de questões e provas 2026.2)
+- questao 50 (página $23$; Banco de questões e provas 2026.2)
+- questao 51 (página $24$; Banco de questões e provas 2026.2)
+- questao 52 (página $24$; Banco de questões e provas 2026.2)
+- questao 53 (página $24$; Banco de questões e provas 2026.2)
+- questao 54 (página $25$; Banco de questões e provas 2026.2)
+- questao 55 (página $25$; Banco de questões e provas 2026.2)
+- questao 56 (página $26$; Banco de questões e provas 2026.2)
+- questao 57 (página $26$; Banco de questões e provas 2026.2)
+- questao 58 (página $26$; Banco de questões e provas 2026.2)
+- questao 59 (página $27$; Banco de questões e provas 2026.2)
+- questao 60 (página $27$; Banco de questões e provas 2026.2)
+- questao 61 (página $27$; Banco de questões e provas 2026.2)
+- questao 62 (página $28$; Banco de questões e provas 2026.2)
+- questao 63 (página $29$; Banco de questões e provas 2026.2)
+- questao 64 (página $29$; Banco de questões e provas 2026.2)
+- questao 65 (página $29$; Banco de questões e provas 2026.2)
+- questao 66 (página $30$; Banco de questões e provas 2026.2)
+- questao 67 (página $30$; Banco de questões e provas 2026.2)
+- questao 68 (página $31$; Banco de questões e provas 2026.2)
+- questao 69 (página $31$; Banco de questões e provas 2026.2)
+- questao 70 (página $32$; Banco de questões e provas 2026.2)
+- questao 71 (página $32$; Banco de questões e provas 2026.2)
+- questao 72 (página $33$; Banco de questões e provas 2026.2)
+- questao 73 (página $33$; Banco de questões e provas 2026.2)
+- secao 15.1 — Gráfico de dispersão (página $148$; Apostila de Métodos Quantitativos)
+- secao 2.2 — Apresentação tabular e gráfica (páginas $12$–$21$; Apostila de Métodos Quantitativos)
+- secao 2.2.2 — Apresentação gráfica (páginas $14$–$21$; Apostila de Métodos Quantitativos)
+- secao 3.2 — Distribuição de frequências para dados contínuos (páginas $24$–$26$; Apostila de Métodos Quantitativos)
+- secao 1.3 — Gráficos (páginas $15$–$33$; Banco de questões e provas 2026.2)
+- secao 1.3.1 — Análise gráfica (páginas $16$–$17$; Banco de questões e provas 2026.2)
+- secao 1.3.2 — Gráficos especiais (páginas $18$–$33$; Banco de questões e provas 2026.2)
+- secao 1.3.2.1 — Histograma (páginas $18$–$19$; Banco de questões e provas 2026.2)
+- secao 1.3.2.2 — Gráfico de tendência (páginas $20$–$21$; Banco de questões e provas 2026.2)
+- secao 1.3.2.4 — Gráfico de Pareto (páginas $29$–$32$; Banco de questões e provas 2026.2)
+- secao 1.3.2.5 — Fluxo de processo (página $33$; Banco de questões e provas 2026.2)
+- secao 11.1 — Correlação (páginas $317$–$318$; Estatística para cursos de engenharia e informática)
+- secao 3.2 — Análise de variáveis qualitativas (páginas $54$–$58$; Estatística para cursos de engenharia e informática)
+- secao 3.3 — Análise de variáveis quantitativas (páginas $59$–$68$; Estatística para cursos de engenharia e informática)
+- secao 3.5 — Observações ao longo do tempo (página $84$; Estatística para cursos de engenharia e informática)
+- secao 3.6 — Análise exploratória com apoio do computador (página $85$; Estatística para cursos de engenharia e informática)
+- secao 1.10 — Explorando duas ou mais variáveis (páginas $61$–$69$; Estatística prática para cientistas de dados)
+- secao 1.6 — Explorando a distribuição de dados (páginas $45$–$50$; Estatística prática para cientistas de dados)
+- secao 1.7 — Explorando dados binários e categóricos (páginas $51$–$54$; Estatística prática para cientistas de dados)
+- secao 1.9 — Gráficos de dispersão (páginas $59$–$60$; Estatística prática para cientistas de dados)
+- secao 6.2 — Stem-and-Leaf Diagrams (páginas $149$–$152$; Applied Statistics and Probability for Engineers)
+- secao 6.3 — Frequency Distributions and Histograms (páginas $153$–$156$; Applied Statistics and Probability for Engineers)
+- secao 6.5 — Time Sequence Plots (páginas $158$–$159$; Applied Statistics and Probability for Engineers)
+- secao 6.6 — Scatter Diagrams (páginas $160$–$161$; Applied Statistics and Probability for Engineers)
+- secao 1.4 — Métodos gráficos (página $20$; Estatística Básica)
+- secao 2.3 — Gráficos (páginas $32$–$36$; Estatística Básica)
+- secao 2.3.1 — Gráficos para variáveis qualitativas (página $32$; Estatística Básica)
+- secao 2.3.2 — Gráficos para variáveis quantitativas (páginas $33$–$36$; Estatística Básica)
+- secao 2.4 — Ramo-e-folhas (páginas $37$–$39$; Estatística Básica)
+- secao 2.5 — Exemplos computacionais (páginas $40$–$42$; Estatística Básica)
+- secao 2.6 — Problemas e complementos (páginas $43$–$51$; Estatística Básica)
+- secao 3.5 — Gráficos de simetria (página $68$; Estatística Básica)
+- secao 3.7 — Exemplos computacionais (páginas $71$–$72$; Estatística Básica)
+- secao 4.7 — Gráficos q x q (páginas $107$–$108$; Estatística Básica)
+- secao 4.8 — Exemplos computacionais (páginas $109$–$110$; Estatística Básica)
+- secao 1.3 — Graphical Summaries (páginas $47$–$69$; Statistics for Engineers and Scientists)
+- secao 1.4 — Distribuições de frequências - tabelas e gráficos (páginas $27$–$34$; Estatística básica: a arte de trabalhar com dados)
+
+### Importação de dados
+- secao 1.2 — Dados retangulares (páginas $27$–$28$; Estatística prática para cientistas de dados)
+- secao 1.3 — Quadros de dados e índices (páginas $29$–$30$; Estatística prática para cientistas de dados)
+- secao 1.3 — Técnicas computacionais (página $19$; Estatística Básica)
+- secao 2.5 — Exemplos computacionais (páginas $40$–$42$; Estatística Básica)
+
+### Intervalo interquartil
+- exercicio 1.4_P (página $55$; Estatística básica: a arte de trabalhar com dados)
+- questao 199 (página $82$; Banco de questões e provas 2026.2)
+- questao 200 (página $82$; Banco de questões e provas 2026.2)
+- questao 201 (página $82$; Banco de questões e provas 2026.2)
+- questao 202 (página $82$; Banco de questões e provas 2026.2)
+- questao 203 (página $82$; Banco de questões e provas 2026.2)
+- questao 204 (página $82$; Banco de questões e provas 2026.2)
+- questao 205 (página $82$; Banco de questões e provas 2026.2)
+- questao 206 (página $83$; Banco de questões e provas 2026.2)
+- questao 207 (página $83$; Banco de questões e provas 2026.2)
+- questao 208 (página $83$; Banco de questões e provas 2026.2)
+- questao 209 (página $83$; Banco de questões e provas 2026.2)
+- questao 210 (página $83$; Banco de questões e provas 2026.2)
+- secao 2.3 — Medidas separatrizes (páginas $82$–$83$; Banco de questões e provas 2026.2)
+- secao 1.5 — Estimativas de variabilidade (páginas $38$–$44$; Estatística prática para cientistas de dados)
+- secao 3.3 — Quantis empíricos (páginas $58$–$63$; Estatística Básica)
+- secao 1.7 — O conceito de resistência de uma medida (página $43$; Estatística básica: a arte de trabalhar com dados)
+
+### Investigação estatística
+- exercicio 1 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 2 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 3 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 4 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 5 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 6 (página $168$; Apostila de Métodos Quantitativos)
+- questao 1 (página $7$; Banco de questões e provas 2026.2)
+- questao 2 (página $7$; Banco de questões e provas 2026.2)
+- questao 3 (página $7$; Banco de questões e provas 2026.2)
+- questao 4 (página $7$; Banco de questões e provas 2026.2)
+- questao 5 (página $8$; Banco de questões e provas 2026.2)
+- questao 6 (página $8$; Banco de questões e provas 2026.2)
+- secao 1.3 — Fases do método estatístico (página $10$; Apostila de Métodos Quantitativos)
+- secao 1.1 — Conceitos e classificação (páginas $7$–$12$; Banco de questões e provas 2026.2)
+- secao 1.1 — A estatística (página $12$; Estatística para cursos de engenharia e informática)
+- secao 1.2 — Pesquisas, dados, variabilidade e estatística (página $13$; Estatística para cursos de engenharia e informática)
+- secao 1.3 — A estatística na engenharia (página $14$; Estatística para cursos de engenharia e informática)
+- secao 1.4 — A estatística e a informática (página $15$; Estatística para cursos de engenharia e informática)
+- secao 2.1 — Aspectos gerais (página $24$; Estatística para cursos de engenharia e informática)
+- secao 2.3 — Planejamento de experimentos (páginas $34$–$50$; Estatística para cursos de engenharia e informática)
+- secao 1.1 — The Engineering Method and Statistical Thinking (páginas $20$–$23$; Applied Statistics and Probability for Engineers)
+- secao 1.1.1 — Variability (páginas $21$–$22$; Applied Statistics and Probability for Engineers)
+- secao 1.2 — Collecting Engineering Data (páginas $23$–$29$; Applied Statistics and Probability for Engineers)
+- secao 1.2.1 — Basic Principles (página $23$; Applied Statistics and Probability for Engineers)
+- secao 1.2.2 — Retrospective Study (página $23$; Applied Statistics and Probability for Engineers)
+- secao 1.2.3 — Observational Study (página $24$; Applied Statistics and Probability for Engineers)
+- secao 1.2.4 — Designed Experiments (páginas $24$–$26$; Applied Statistics and Probability for Engineers)
+- secao 1.2.5 — Observing Processes Over Time (páginas $27$–$29$; Applied Statistics and Probability for Engineers)
+- secao 1.1 — Introdução (página $18$; Estatística Básica)
+- secao 1.0 — Introduction (páginas $23$–$24$; Statistics for Engineers and Scientists)
+
+### Mediana
+- exercicio 10 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 11 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 12 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 13 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 14 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 15 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 16 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 17 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 18 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 19 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 20 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 22 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 23 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 24 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 25 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 26 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 27 (página $173$; Apostila de Métodos Quantitativos)
+- exercicio 8 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 9 (página $169$; Apostila de Métodos Quantitativos)
+- questao 100 (página $45$; Banco de questões e provas 2026.2)
+- questao 101 (página $46$; Banco de questões e provas 2026.2)
+- questao 102 (página $47$; Banco de questões e provas 2026.2)
+- questao 103 (página $47$; Banco de questões e provas 2026.2)
+- questao 104 (página $47$; Banco de questões e provas 2026.2)
+- questao 105 (página $48$; Banco de questões e provas 2026.2)
+- questao 106 (página $48$; Banco de questões e provas 2026.2)
+- questao 107 (página $49$; Banco de questões e provas 2026.2)
+- questao 108 (página $49$; Banco de questões e provas 2026.2)
+- questao 109 (página $50$; Banco de questões e provas 2026.2)
+- questao 110 (página $51$; Banco de questões e provas 2026.2)
+- questao 111 (página $51$; Banco de questões e provas 2026.2)
+- questao 112 (página $51$; Banco de questões e provas 2026.2)
+- questao 113 (página $52$; Banco de questões e provas 2026.2)
+- questao 114 (página $52$; Banco de questões e provas 2026.2)
+- questao 115 (página $52$; Banco de questões e provas 2026.2)
+- questao 116 (página $53$; Banco de questões e provas 2026.2)
+- questao 117 (página $53$; Banco de questões e provas 2026.2)
+- questao 118 (página $53$; Banco de questões e provas 2026.2)
+- questao 119 (página $53$; Banco de questões e provas 2026.2)
+- questao 120 (página $53$; Banco de questões e provas 2026.2)
+- questao 121 (página $54$; Banco de questões e provas 2026.2)
+- questao 122 (página $54$; Banco de questões e provas 2026.2)
+- questao 123 (página $54$; Banco de questões e provas 2026.2)
+- questao 124 (página $55$; Banco de questões e provas 2026.2)
+- questao 125 (página $56$; Banco de questões e provas 2026.2)
+- questao 126 (página $56$; Banco de questões e provas 2026.2)
+- questao 127 (página $57$; Banco de questões e provas 2026.2)
+- questao 128 (página $58$; Banco de questões e provas 2026.2)
+- questao 129 (página $58$; Banco de questões e provas 2026.2)
+- questao 130 (página $59$; Banco de questões e provas 2026.2)
+- questao 131 (página $59$; Banco de questões e provas 2026.2)
+- questao 132 (página $59$; Banco de questões e provas 2026.2)
+- questao 133 (página $60$; Banco de questões e provas 2026.2)
+- questao 134 (página $61$; Banco de questões e provas 2026.2)
+- questao 135 (página $61$; Banco de questões e provas 2026.2)
+- questao 136 (página $61$; Banco de questões e provas 2026.2)
+- questao 137 (página $62$; Banco de questões e provas 2026.2)
+- questao 138 (página $62$; Banco de questões e provas 2026.2)
+- questao 139 (página $62$; Banco de questões e provas 2026.2)
+- questao 140 (página $63$; Banco de questões e provas 2026.2)
+- questao 141 (página $63$; Banco de questões e provas 2026.2)
+- questao 142 (página $63$; Banco de questões e provas 2026.2)
+- questao 143 (página $64$; Banco de questões e provas 2026.2)
+- questao 144 (página $64$; Banco de questões e provas 2026.2)
+- questao 145 (página $64$; Banco de questões e provas 2026.2)
+- questao 146 (página $65$; Banco de questões e provas 2026.2)
+- questao 147 (página $65$; Banco de questões e provas 2026.2)
+- questao 148 (página $66$; Banco de questões e provas 2026.2)
+- questao 149 (página $66$; Banco de questões e provas 2026.2)
+- questao 150 (página $67$; Banco de questões e provas 2026.2)
+- questao 151 (página $67$; Banco de questões e provas 2026.2)
+- questao 152 (página $67$; Banco de questões e provas 2026.2)
+- questao 153 (página $68$; Banco de questões e provas 2026.2)
+- questao 154 (página $68$; Banco de questões e provas 2026.2)
+- questao 155 (página $69$; Banco de questões e provas 2026.2)
+- questao 156 (página $69$; Banco de questões e provas 2026.2)
+- questao 157 (página $69$; Banco de questões e provas 2026.2)
+- questao 158 (página $69$; Banco de questões e provas 2026.2)
+- questao 159 (página $70$; Banco de questões e provas 2026.2)
+- questao 160 (página $70$; Banco de questões e provas 2026.2)
+- questao 161 (página $71$; Banco de questões e provas 2026.2)
+- questao 162 (página $71$; Banco de questões e provas 2026.2)
+- questao 163 (página $71$; Banco de questões e provas 2026.2)
+- questao 164 (página $72$; Banco de questões e provas 2026.2)
+- questao 165 (página $72$; Banco de questões e provas 2026.2)
+- questao 166 (página $73$; Banco de questões e provas 2026.2)
+- questao 167 (página $73$; Banco de questões e provas 2026.2)
+- questao 168 (página $73$; Banco de questões e provas 2026.2)
+- questao 74 (página $34$; Banco de questões e provas 2026.2)
+- questao 75 (página $34$; Banco de questões e provas 2026.2)
+- questao 76 (página $34$; Banco de questões e provas 2026.2)
+- questao 77 (página $34$; Banco de questões e provas 2026.2)
+- questao 78 (página $35$; Banco de questões e provas 2026.2)
+- questao 79 (página $35$; Banco de questões e provas 2026.2)
+- questao 80 (página $35$; Banco de questões e provas 2026.2)
+- questao 81 (página $35$; Banco de questões e provas 2026.2)
+- questao 82 (página $35$; Banco de questões e provas 2026.2)
+- questao 83 (página $35$; Banco de questões e provas 2026.2)
+- questao 84 (página $36$; Banco de questões e provas 2026.2)
+- questao 85 (página $36$; Banco de questões e provas 2026.2)
+- questao 86 (página $36$; Banco de questões e provas 2026.2)
+- questao 87 (página $36$; Banco de questões e provas 2026.2)
+- questao 88 (página $36$; Banco de questões e provas 2026.2)
+- questao 89 (página $38$; Banco de questões e provas 2026.2)
+- questao 90 (página $39$; Banco de questões e provas 2026.2)
+- questao 91 (página $39$; Banco de questões e provas 2026.2)
+- questao 92 (página $41$; Banco de questões e provas 2026.2)
+- questao 93 (página $41$; Banco de questões e provas 2026.2)
+- questao 94 (página $42$; Banco de questões e provas 2026.2)
+- questao 95 (página $42$; Banco de questões e provas 2026.2)
+- questao 96 (página $43$; Banco de questões e provas 2026.2)
+- questao 97 (página $44$; Banco de questões e provas 2026.2)
+- questao 98 (página $44$; Banco de questões e provas 2026.2)
+- questao 99 (página $45$; Banco de questões e provas 2026.2)
+- secao 4 — Medidas de posição (páginas $27$–$48$; Apostila de Métodos Quantitativos)
+- secao 4.1 — Pequenos conjuntos de dados (páginas $27$–$29$; Apostila de Métodos Quantitativos)
+- secao 4.2 — Grandes conjuntos de dados: discretos (páginas $30$–$31$; Apostila de Métodos Quantitativos)
+- secao 4.3 — Grandes conjuntos de dados: contínuos (páginas $32$–$34$; Apostila de Métodos Quantitativos)
+- secao 4.4 — Medidas separatrizes (páginas $35$–$41$; Apostila de Métodos Quantitativos)
+- secao 2.1 — Medidas de posição para dados agrupados e não agrupados (páginas $34$–$73$; Banco de questões e provas 2026.2)
+- secao 2.3 — Medidas separatrizes (páginas $82$–$83$; Banco de questões e provas 2026.2)
+- secao 3.4 — Medidas descritivas (páginas $69$–$83$; Estatística para cursos de engenharia e informática)
+- secao 1.4 — Estimativas de localização (páginas $31$–$37$; Estatística prática para cientistas de dados)
+- secao 6.1 — Numerical Summaries of Data (páginas $145$–$148$; Applied Statistics and Probability for Engineers)
+- secao 3.1 — Medidas de posição (páginas $52$–$53$; Estatística Básica)
+- secao 1.2 — Summary Statistics (páginas $35$–$46$; Statistics for Engineers and Scientists)
+- secao 1.5 — Medidas de centralidade para variáveis quantitativas (páginas $35$–$36$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.7 — O conceito de resistência de uma medida (página $43$; Estatística básica: a arte de trabalhar com dados)
+
+### Moda
+- questao 100 (página $45$; Banco de questões e provas 2026.2)
+- questao 101 (página $46$; Banco de questões e provas 2026.2)
+- questao 102 (página $47$; Banco de questões e provas 2026.2)
+- questao 103 (página $47$; Banco de questões e provas 2026.2)
+- questao 104 (página $47$; Banco de questões e provas 2026.2)
+- questao 105 (página $48$; Banco de questões e provas 2026.2)
+- questao 106 (página $48$; Banco de questões e provas 2026.2)
+- questao 107 (página $49$; Banco de questões e provas 2026.2)
+- questao 108 (página $49$; Banco de questões e provas 2026.2)
+- questao 109 (página $50$; Banco de questões e provas 2026.2)
+- questao 110 (página $51$; Banco de questões e provas 2026.2)
+- questao 111 (página $51$; Banco de questões e provas 2026.2)
+- questao 112 (página $51$; Banco de questões e provas 2026.2)
+- questao 113 (página $52$; Banco de questões e provas 2026.2)
+- questao 114 (página $52$; Banco de questões e provas 2026.2)
+- questao 115 (página $52$; Banco de questões e provas 2026.2)
+- questao 116 (página $53$; Banco de questões e provas 2026.2)
+- questao 117 (página $53$; Banco de questões e provas 2026.2)
+- questao 118 (página $53$; Banco de questões e provas 2026.2)
+- questao 119 (página $53$; Banco de questões e provas 2026.2)
+- questao 120 (página $53$; Banco de questões e provas 2026.2)
+- questao 121 (página $54$; Banco de questões e provas 2026.2)
+- questao 122 (página $54$; Banco de questões e provas 2026.2)
+- questao 123 (página $54$; Banco de questões e provas 2026.2)
+- questao 124 (página $55$; Banco de questões e provas 2026.2)
+- questao 125 (página $56$; Banco de questões e provas 2026.2)
+- questao 126 (página $56$; Banco de questões e provas 2026.2)
+- questao 127 (página $57$; Banco de questões e provas 2026.2)
+- questao 128 (página $58$; Banco de questões e provas 2026.2)
+- questao 129 (página $58$; Banco de questões e provas 2026.2)
+- questao 130 (página $59$; Banco de questões e provas 2026.2)
+- questao 131 (página $59$; Banco de questões e provas 2026.2)
+- questao 132 (página $59$; Banco de questões e provas 2026.2)
+- questao 133 (página $60$; Banco de questões e provas 2026.2)
+- questao 134 (página $61$; Banco de questões e provas 2026.2)
+- questao 135 (página $61$; Banco de questões e provas 2026.2)
+- questao 136 (página $61$; Banco de questões e provas 2026.2)
+- questao 137 (página $62$; Banco de questões e provas 2026.2)
+- questao 138 (página $62$; Banco de questões e provas 2026.2)
+- questao 139 (página $62$; Banco de questões e provas 2026.2)
+- questao 140 (página $63$; Banco de questões e provas 2026.2)
+- questao 141 (página $63$; Banco de questões e provas 2026.2)
+- questao 142 (página $63$; Banco de questões e provas 2026.2)
+- questao 143 (página $64$; Banco de questões e provas 2026.2)
+- questao 144 (página $64$; Banco de questões e provas 2026.2)
+- questao 145 (página $64$; Banco de questões e provas 2026.2)
+- questao 146 (página $65$; Banco de questões e provas 2026.2)
+- questao 147 (página $65$; Banco de questões e provas 2026.2)
+- questao 148 (página $66$; Banco de questões e provas 2026.2)
+- questao 149 (página $66$; Banco de questões e provas 2026.2)
+- questao 150 (página $67$; Banco de questões e provas 2026.2)
+- questao 151 (página $67$; Banco de questões e provas 2026.2)
+- questao 152 (página $67$; Banco de questões e provas 2026.2)
+- questao 153 (página $68$; Banco de questões e provas 2026.2)
+- questao 154 (página $68$; Banco de questões e provas 2026.2)
+- questao 155 (página $69$; Banco de questões e provas 2026.2)
+- questao 156 (página $69$; Banco de questões e provas 2026.2)
+- questao 157 (página $69$; Banco de questões e provas 2026.2)
+- questao 158 (página $69$; Banco de questões e provas 2026.2)
+- questao 159 (página $70$; Banco de questões e provas 2026.2)
+- questao 160 (página $70$; Banco de questões e provas 2026.2)
+- questao 161 (página $71$; Banco de questões e provas 2026.2)
+- questao 162 (página $71$; Banco de questões e provas 2026.2)
+- questao 163 (página $71$; Banco de questões e provas 2026.2)
+- questao 164 (página $72$; Banco de questões e provas 2026.2)
+- questao 165 (página $72$; Banco de questões e provas 2026.2)
+- questao 166 (página $73$; Banco de questões e provas 2026.2)
+- questao 167 (página $73$; Banco de questões e provas 2026.2)
+- questao 168 (página $73$; Banco de questões e provas 2026.2)
+- questao 74 (página $34$; Banco de questões e provas 2026.2)
+- questao 75 (página $34$; Banco de questões e provas 2026.2)
+- questao 76 (página $34$; Banco de questões e provas 2026.2)
+- questao 77 (página $34$; Banco de questões e provas 2026.2)
+- questao 78 (página $35$; Banco de questões e provas 2026.2)
+- questao 79 (página $35$; Banco de questões e provas 2026.2)
+- questao 80 (página $35$; Banco de questões e provas 2026.2)
+- questao 81 (página $35$; Banco de questões e provas 2026.2)
+- questao 82 (página $35$; Banco de questões e provas 2026.2)
+- questao 83 (página $35$; Banco de questões e provas 2026.2)
+- questao 84 (página $36$; Banco de questões e provas 2026.2)
+- questao 85 (página $36$; Banco de questões e provas 2026.2)
+- questao 86 (página $36$; Banco de questões e provas 2026.2)
+- questao 87 (página $36$; Banco de questões e provas 2026.2)
+- questao 88 (página $36$; Banco de questões e provas 2026.2)
+- questao 89 (página $38$; Banco de questões e provas 2026.2)
+- questao 90 (página $39$; Banco de questões e provas 2026.2)
+- questao 91 (página $39$; Banco de questões e provas 2026.2)
+- questao 92 (página $41$; Banco de questões e provas 2026.2)
+- questao 93 (página $41$; Banco de questões e provas 2026.2)
+- questao 94 (página $42$; Banco de questões e provas 2026.2)
+- questao 95 (página $42$; Banco de questões e provas 2026.2)
+- questao 96 (página $43$; Banco de questões e provas 2026.2)
+- questao 97 (página $44$; Banco de questões e provas 2026.2)
+- questao 98 (página $44$; Banco de questões e provas 2026.2)
+- questao 99 (página $45$; Banco de questões e provas 2026.2)
+- secao 4 — Medidas de posição (páginas $27$–$48$; Apostila de Métodos Quantitativos)
+- secao 4.1 — Pequenos conjuntos de dados (páginas $27$–$29$; Apostila de Métodos Quantitativos)
+- secao 4.2 — Grandes conjuntos de dados: discretos (páginas $30$–$31$; Apostila de Métodos Quantitativos)
+- secao 4.3 — Grandes conjuntos de dados: contínuos (páginas $32$–$34$; Apostila de Métodos Quantitativos)
+- secao 2.1 — Medidas de posição para dados agrupados e não agrupados (páginas $34$–$73$; Banco de questões e provas 2026.2)
+- secao 1.7 — Explorando dados binários e categóricos (páginas $51$–$54$; Estatística prática para cientistas de dados)
+- secao 3.1 — Medidas de posição (páginas $52$–$53$; Estatística Básica)
+- secao 1.5 — Medidas de centralidade para variáveis quantitativas (páginas $35$–$36$; Estatística básica: a arte de trabalhar com dados)
+
+### Média
+- exercicio 10 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 11 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 12 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 13 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 14 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 15 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 16 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 17 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 18 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 19 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 20 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 21 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 22 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 23 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 24 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 25 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 26 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 27 (página $173$; Apostila de Métodos Quantitativos)
+- exercicio 8 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 9 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 3.4 (página $87$; Estatística para cursos de engenharia e informática)
+- exercicio 1.7_P (página $56$; Estatística básica: a arte de trabalhar com dados)
+- questao 100 (página $45$; Banco de questões e provas 2026.2)
+- questao 101 (página $46$; Banco de questões e provas 2026.2)
+- questao 102 (página $47$; Banco de questões e provas 2026.2)
+- questao 103 (página $47$; Banco de questões e provas 2026.2)
+- questao 104 (página $47$; Banco de questões e provas 2026.2)
+- questao 105 (página $48$; Banco de questões e provas 2026.2)
+- questao 106 (página $48$; Banco de questões e provas 2026.2)
+- questao 107 (página $49$; Banco de questões e provas 2026.2)
+- questao 108 (página $49$; Banco de questões e provas 2026.2)
+- questao 109 (página $50$; Banco de questões e provas 2026.2)
+- questao 110 (página $51$; Banco de questões e provas 2026.2)
+- questao 111 (página $51$; Banco de questões e provas 2026.2)
+- questao 112 (página $51$; Banco de questões e provas 2026.2)
+- questao 113 (página $52$; Banco de questões e provas 2026.2)
+- questao 114 (página $52$; Banco de questões e provas 2026.2)
+- questao 115 (página $52$; Banco de questões e provas 2026.2)
+- questao 116 (página $53$; Banco de questões e provas 2026.2)
+- questao 117 (página $53$; Banco de questões e provas 2026.2)
+- questao 118 (página $53$; Banco de questões e provas 2026.2)
+- questao 119 (página $53$; Banco de questões e provas 2026.2)
+- questao 120 (página $53$; Banco de questões e provas 2026.2)
+- questao 121 (página $54$; Banco de questões e provas 2026.2)
+- questao 122 (página $54$; Banco de questões e provas 2026.2)
+- questao 123 (página $54$; Banco de questões e provas 2026.2)
+- questao 124 (página $55$; Banco de questões e provas 2026.2)
+- questao 125 (página $56$; Banco de questões e provas 2026.2)
+- questao 126 (página $56$; Banco de questões e provas 2026.2)
+- questao 127 (página $57$; Banco de questões e provas 2026.2)
+- questao 128 (página $58$; Banco de questões e provas 2026.2)
+- questao 129 (página $58$; Banco de questões e provas 2026.2)
+- questao 130 (página $59$; Banco de questões e provas 2026.2)
+- questao 131 (página $59$; Banco de questões e provas 2026.2)
+- questao 132 (página $59$; Banco de questões e provas 2026.2)
+- questao 133 (página $60$; Banco de questões e provas 2026.2)
+- questao 134 (página $61$; Banco de questões e provas 2026.2)
+- questao 135 (página $61$; Banco de questões e provas 2026.2)
+- questao 136 (página $61$; Banco de questões e provas 2026.2)
+- questao 137 (página $62$; Banco de questões e provas 2026.2)
+- questao 138 (página $62$; Banco de questões e provas 2026.2)
+- questao 139 (página $62$; Banco de questões e provas 2026.2)
+- questao 140 (página $63$; Banco de questões e provas 2026.2)
+- questao 141 (página $63$; Banco de questões e provas 2026.2)
+- questao 142 (página $63$; Banco de questões e provas 2026.2)
+- questao 143 (página $64$; Banco de questões e provas 2026.2)
+- questao 144 (página $64$; Banco de questões e provas 2026.2)
+- questao 145 (página $64$; Banco de questões e provas 2026.2)
+- questao 146 (página $65$; Banco de questões e provas 2026.2)
+- questao 147 (página $65$; Banco de questões e provas 2026.2)
+- questao 148 (página $66$; Banco de questões e provas 2026.2)
+- questao 149 (página $66$; Banco de questões e provas 2026.2)
+- questao 150 (página $67$; Banco de questões e provas 2026.2)
+- questao 151 (página $67$; Banco de questões e provas 2026.2)
+- questao 152 (página $67$; Banco de questões e provas 2026.2)
+- questao 153 (página $68$; Banco de questões e provas 2026.2)
+- questao 154 (página $68$; Banco de questões e provas 2026.2)
+- questao 155 (página $69$; Banco de questões e provas 2026.2)
+- questao 156 (página $69$; Banco de questões e provas 2026.2)
+- questao 157 (página $69$; Banco de questões e provas 2026.2)
+- questao 158 (página $69$; Banco de questões e provas 2026.2)
+- questao 159 (página $70$; Banco de questões e provas 2026.2)
+- questao 160 (página $70$; Banco de questões e provas 2026.2)
+- questao 161 (página $71$; Banco de questões e provas 2026.2)
+- questao 162 (página $71$; Banco de questões e provas 2026.2)
+- questao 163 (página $71$; Banco de questões e provas 2026.2)
+- questao 164 (página $72$; Banco de questões e provas 2026.2)
+- questao 165 (página $72$; Banco de questões e provas 2026.2)
+- questao 166 (página $73$; Banco de questões e provas 2026.2)
+- questao 167 (página $73$; Banco de questões e provas 2026.2)
+- questao 168 (página $73$; Banco de questões e provas 2026.2)
+- questao 169 (página $74$; Banco de questões e provas 2026.2)
+- questao 170 (página $74$; Banco de questões e provas 2026.2)
+- questao 171 (página $74$; Banco de questões e provas 2026.2)
+- questao 172 (página $75$; Banco de questões e provas 2026.2)
+- questao 173 (página $75$; Banco de questões e provas 2026.2)
+- questao 174 (página $75$; Banco de questões e provas 2026.2)
+- questao 175 (página $75$; Banco de questões e provas 2026.2)
+- questao 176 (página $75$; Banco de questões e provas 2026.2)
+- questao 177 (página $76$; Banco de questões e provas 2026.2)
+- questao 178 (página $76$; Banco de questões e provas 2026.2)
+- questao 179 (página $77$; Banco de questões e provas 2026.2)
+- questao 180 (página $77$; Banco de questões e provas 2026.2)
+- questao 181 (página $77$; Banco de questões e provas 2026.2)
+- questao 182 (página $78$; Banco de questões e provas 2026.2)
+- questao 183 (página $79$; Banco de questões e provas 2026.2)
+- questao 184 (página $79$; Banco de questões e provas 2026.2)
+- questao 185 (página $80$; Banco de questões e provas 2026.2)
+- questao 186 (página $80$; Banco de questões e provas 2026.2)
+- questao 187 (página $80$; Banco de questões e provas 2026.2)
+- questao 188 (página $80$; Banco de questões e provas 2026.2)
+- questao 189 (página $80$; Banco de questões e provas 2026.2)
+- questao 190 (página $80$; Banco de questões e provas 2026.2)
+- questao 191 (página $80$; Banco de questões e provas 2026.2)
+- questao 192 (página $80$; Banco de questões e provas 2026.2)
+- questao 193 (página $81$; Banco de questões e provas 2026.2)
+- questao 194 (página $81$; Banco de questões e provas 2026.2)
+- questao 195 (página $81$; Banco de questões e provas 2026.2)
+- questao 196 (página $81$; Banco de questões e provas 2026.2)
+- questao 197 (página $81$; Banco de questões e provas 2026.2)
+- questao 198 (página $81$; Banco de questões e provas 2026.2)
+- questao 211 (página $84$; Banco de questões e provas 2026.2)
+- questao 212 (página $84$; Banco de questões e provas 2026.2)
+- questao 213 (página $84$; Banco de questões e provas 2026.2)
+- questao 214 (página $84$; Banco de questões e provas 2026.2)
+- questao 215 (página $84$; Banco de questões e provas 2026.2)
+- questao 216 (página $84$; Banco de questões e provas 2026.2)
+- questao 217 (página $84$; Banco de questões e provas 2026.2)
+- questao 218 (página $84$; Banco de questões e provas 2026.2)
+- questao 219 (página $84$; Banco de questões e provas 2026.2)
+- questao 220 (página $85$; Banco de questões e provas 2026.2)
+- questao 221 (página $85$; Banco de questões e provas 2026.2)
+- questao 222 (página $85$; Banco de questões e provas 2026.2)
+- questao 223 (página $85$; Banco de questões e provas 2026.2)
+- questao 224 (página $85$; Banco de questões e provas 2026.2)
+- questao 225 (página $85$; Banco de questões e provas 2026.2)
+- questao 226 (página $85$; Banco de questões e provas 2026.2)
+- questao 227 (página $86$; Banco de questões e provas 2026.2)
+- questao 228 (página $86$; Banco de questões e provas 2026.2)
+- questao 229 (página $86$; Banco de questões e provas 2026.2)
+- questao 230 (página $86$; Banco de questões e provas 2026.2)
+- questao 231 (página $86$; Banco de questões e provas 2026.2)
+- questao 232 (página $87$; Banco de questões e provas 2026.2)
+- questao 233 (página $87$; Banco de questões e provas 2026.2)
+- questao 234 (página $87$; Banco de questões e provas 2026.2)
+- questao 235 (página $88$; Banco de questões e provas 2026.2)
+- questao 236 (página $88$; Banco de questões e provas 2026.2)
+- questao 237 (página $88$; Banco de questões e provas 2026.2)
+- questao 74 (página $34$; Banco de questões e provas 2026.2)
+- questao 75 (página $34$; Banco de questões e provas 2026.2)
+- questao 76 (página $34$; Banco de questões e provas 2026.2)
+- questao 77 (página $34$; Banco de questões e provas 2026.2)
+- questao 78 (página $35$; Banco de questões e provas 2026.2)
+- questao 79 (página $35$; Banco de questões e provas 2026.2)
+- questao 80 (página $35$; Banco de questões e provas 2026.2)
+- questao 81 (página $35$; Banco de questões e provas 2026.2)
+- questao 82 (página $35$; Banco de questões e provas 2026.2)
+- questao 83 (página $35$; Banco de questões e provas 2026.2)
+- questao 84 (página $36$; Banco de questões e provas 2026.2)
+- questao 85 (página $36$; Banco de questões e provas 2026.2)
+- questao 86 (página $36$; Banco de questões e provas 2026.2)
+- questao 87 (página $36$; Banco de questões e provas 2026.2)
+- questao 88 (página $36$; Banco de questões e provas 2026.2)
+- questao 89 (página $38$; Banco de questões e provas 2026.2)
+- questao 90 (página $39$; Banco de questões e provas 2026.2)
+- questao 91 (página $39$; Banco de questões e provas 2026.2)
+- questao 92 (página $41$; Banco de questões e provas 2026.2)
+- questao 93 (página $41$; Banco de questões e provas 2026.2)
+- questao 94 (página $42$; Banco de questões e provas 2026.2)
+- questao 95 (página $42$; Banco de questões e provas 2026.2)
+- questao 96 (página $43$; Banco de questões e provas 2026.2)
+- questao 97 (página $44$; Banco de questões e provas 2026.2)
+- questao 98 (página $44$; Banco de questões e provas 2026.2)
+- questao 99 (página $45$; Banco de questões e provas 2026.2)
+- secao 4 — Medidas de posição (páginas $27$–$48$; Apostila de Métodos Quantitativos)
+- secao 4.1 — Pequenos conjuntos de dados (páginas $27$–$29$; Apostila de Métodos Quantitativos)
+- secao 4.2 — Grandes conjuntos de dados: discretos (páginas $30$–$31$; Apostila de Métodos Quantitativos)
+- secao 4.3 — Grandes conjuntos de dados: contínuos (páginas $32$–$34$; Apostila de Métodos Quantitativos)
+- secao 4.6 — Outras medidas de posição (páginas $44$–$48$; Apostila de Métodos Quantitativos)
+- secao 2.1 — Medidas de posição para dados agrupados e não agrupados (páginas $34$–$73$; Banco de questões e provas 2026.2)
+- secao 2.2 — Propriedades das medidas de posição e dispersão (páginas $74$–$81$; Banco de questões e provas 2026.2)
+- secao 2.4 — Médias geométrica, harmônica, ponderada e quadrática (páginas $84$–$87$; Banco de questões e provas 2026.2)
+- secao 2.4.1 — Média geométrica (página $84$; Banco de questões e provas 2026.2)
+- secao 2.4.2 — Média harmônica (página $84$; Banco de questões e provas 2026.2)
+- secao 2.4.3 — Média ponderada (páginas $85$–$86$; Banco de questões e provas 2026.2)
+- secao 2.4.4 — Média quadrática (página $87$; Banco de questões e provas 2026.2)
+- secao 3.1 — Momentos (página $88$; Banco de questões e provas 2026.2)
+- secao 3.4 — Medidas descritivas (páginas $69$–$83$; Estatística para cursos de engenharia e informática)
+- secao 1.4 — Estimativas de localização (páginas $31$–$37$; Estatística prática para cientistas de dados)
+- secao 6.1 — Numerical Summaries of Data (páginas $145$–$148$; Applied Statistics and Probability for Engineers)
+- secao 3.1 — Medidas de posição (páginas $52$–$53$; Estatística Básica)
+- secao 3.8 — Problemas e complementos (páginas $73$–$84$; Estatística Básica)
+- secao 1.2 — Summary Statistics (páginas $35$–$46$; Statistics for Engineers and Scientists)
+- secao 1.5 — Medidas de centralidade para variáveis quantitativas (páginas $35$–$36$; Estatística básica: a arte de trabalhar com dados)
+
+### População
+- exercicio 1.2 (página $23$; Estatística para cursos de engenharia e informática)
+- questao 1 (página $7$; Banco de questões e provas 2026.2)
+- questao 2 (página $7$; Banco de questões e provas 2026.2)
+- questao 3 (página $7$; Banco de questões e provas 2026.2)
+- questao 4 (página $7$; Banco de questões e provas 2026.2)
+- questao 5 (página $8$; Banco de questões e provas 2026.2)
+- questao 6 (página $8$; Banco de questões e provas 2026.2)
+- secao 1.2 — Conceitos fundamentais (páginas $8$–$9$; Apostila de Métodos Quantitativos)
+- secao 1.6 — Conceitos básicos (páginas $18$–$23$; Estatística para cursos de engenharia e informática)
+- secao 1.1 — The Engineering Method and Statistical Thinking (páginas $20$–$23$; Applied Statistics and Probability for Engineers)
+- secao 1.1.2 — Populations and Samples (página $23$; Applied Statistics and Probability for Engineers)
+- secao 1.1 — Sampling (páginas $25$–$34$; Statistics for Engineers and Scientists)
+- secao 1.2 — População e amostra (páginas $22$–$23$; Estatística básica: a arte de trabalhar com dados)
+
+### Pré-processamento
+- secao 3.6 — Análise exploratória com apoio do computador (página $85$; Estatística para cursos de engenharia e informática)
+- secao 1.3 — Técnicas computacionais (página $19$; Estatística Básica)
+- secao 3.6 — Transformações (páginas $69$–$70$; Estatística Básica)
+
+### Quantil
+- questao 199 (página $82$; Banco de questões e provas 2026.2)
+- questao 200 (página $82$; Banco de questões e provas 2026.2)
+- questao 201 (página $82$; Banco de questões e provas 2026.2)
+- questao 202 (página $82$; Banco de questões e provas 2026.2)
+- questao 203 (página $82$; Banco de questões e provas 2026.2)
+- questao 204 (página $82$; Banco de questões e provas 2026.2)
+- questao 205 (página $82$; Banco de questões e provas 2026.2)
+- questao 206 (página $83$; Banco de questões e provas 2026.2)
+- questao 207 (página $83$; Banco de questões e provas 2026.2)
+- questao 208 (página $83$; Banco de questões e provas 2026.2)
+- questao 209 (página $83$; Banco de questões e provas 2026.2)
+- questao 210 (página $83$; Banco de questões e provas 2026.2)
+- secao 4 — Medidas de posição (páginas $27$–$48$; Apostila de Métodos Quantitativos)
+- secao 4.4 — Medidas separatrizes (páginas $35$–$41$; Apostila de Métodos Quantitativos)
+- secao 4.5 — Interpolação linear (páginas $42$–$43$; Apostila de Métodos Quantitativos)
+- secao 2.3 — Medidas separatrizes (páginas $82$–$83$; Banco de questões e provas 2026.2)
+- secao 1.5 — Estimativas de variabilidade (páginas $38$–$44$; Estatística prática para cientistas de dados)
+- secao 3.3 — Quantis empíricos (páginas $58$–$63$; Estatística Básica)
+- secao 1.2 — Summary Statistics (páginas $35$–$46$; Statistics for Engineers and Scientists)
+
+### Representatividade
+- exercicio 2.7 (página $34$; Estatística para cursos de engenharia e informática)
+- secao 1.2 — Pesquisas, dados, variabilidade e estatística (página $13$; Estatística para cursos de engenharia e informática)
+- secao 2.2 — Pesquisas de levantamento (páginas $25$–$33$; Estatística para cursos de engenharia e informática)
+- secao 2.2.1 — Procedimentos de amostragem (páginas $25$–$31$; Estatística para cursos de engenharia e informática)
+- secao 2.2.2 — Tamanho da amostra (páginas $32$–$33$; Estatística para cursos de engenharia e informática)
+- secao 1.2 — Collecting Engineering Data (páginas $23$–$29$; Applied Statistics and Probability for Engineers)
+- secao 1.2.2 — Retrospective Study (página $23$; Applied Statistics and Probability for Engineers)
+- secao 1.2.3 — Observational Study (página $24$; Applied Statistics and Probability for Engineers)
+- secao 1.1 — Sampling (páginas $25$–$34$; Statistics for Engineers and Scientists)
+
+### Tabela
+- exercicio 1 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 2 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 3 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 4 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 5 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 6 (página $168$; Apostila de Métodos Quantitativos)
+- questao 10 (página $9$; Banco de questões e provas 2026.2)
+- questao 11 (página $10$; Banco de questões e provas 2026.2)
+- questao 12 (página $10$; Banco de questões e provas 2026.2)
+- questao 13 (página $10$; Banco de questões e provas 2026.2)
+- questao 14 (página $10$; Banco de questões e provas 2026.2)
+- questao 15 (página $11$; Banco de questões e provas 2026.2)
+- questao 16 (página $11$; Banco de questões e provas 2026.2)
+- questao 17 (página $11$; Banco de questões e provas 2026.2)
+- questao 18 (página $11$; Banco de questões e provas 2026.2)
+- questao 19 (página $11$; Banco de questões e provas 2026.2)
+- questao 20 (página $12$; Banco de questões e provas 2026.2)
+- questao 21 (página $12$; Banco de questões e provas 2026.2)
+- questao 22 (página $12$; Banco de questões e provas 2026.2)
+- questao 23 (página $13$; Banco de questões e provas 2026.2)
+- questao 24 (página $13$; Banco de questões e provas 2026.2)
+- questao 25 (página $13$; Banco de questões e provas 2026.2)
+- questao 26 (página $13$; Banco de questões e provas 2026.2)
+- questao 27 (página $13$; Banco de questões e provas 2026.2)
+- questao 28 (página $14$; Banco de questões e provas 2026.2)
+- questao 29 (página $14$; Banco de questões e provas 2026.2)
+- questao 30 (página $14$; Banco de questões e provas 2026.2)
+- questao 31 (página $15$; Banco de questões e provas 2026.2)
+- questao 32 (página $15$; Banco de questões e provas 2026.2)
+- questao 7 (página $8$; Banco de questões e provas 2026.2)
+- questao 8 (página $9$; Banco de questões e provas 2026.2)
+- questao 9 (página $9$; Banco de questões e provas 2026.2)
+- secao 2.1 — Séries estatísticas (página $11$; Apostila de Métodos Quantitativos)
+- secao 2.2 — Apresentação tabular e gráfica (páginas $12$–$21$; Apostila de Métodos Quantitativos)
+- secao 2.2.1 — Apresentação tabular (páginas $12$–$13$; Apostila de Métodos Quantitativos)
+- secao 3.1 — Distribuição de frequências para dados discretos (página $23$; Apostila de Métodos Quantitativos)
+- secao 1.1.3 — Séries estatísticas: elementos e classificação (páginas $11$–$12$; Banco de questões e provas 2026.2)
+- secao 1.2 — Tabela de dupla entrada (páginas $13$–$14$; Banco de questões e provas 2026.2)
+- secao 3.2 — Análise de variáveis qualitativas (páginas $54$–$58$; Estatística para cursos de engenharia e informática)
+- secao 1.2 — Dados retangulares (páginas $27$–$28$; Estatística prática para cientistas de dados)
+- secao 1.3 — Quadros de dados e índices (páginas $29$–$30$; Estatística prática para cientistas de dados)
+- secao 1.7 — Explorando dados binários e categóricos (páginas $51$–$54$; Estatística prática para cientistas de dados)
+- secao 2.2 — Distribuições de frequências (páginas $28$–$31$; Estatística Básica)
+- secao 1.4 — Distribuições de frequências - tabelas e gráficos (páginas $27$–$34$; Estatística básica: a arte de trabalhar com dados)
+
+### Tabela de contingência
+- exercicio 7 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 2.1_P (página $81$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 2.2_P (página $82$; Estatística básica: a arte de trabalhar com dados)
+- questao 25 (página $13$; Banco de questões e provas 2026.2)
+- questao 26 (página $13$; Banco de questões e provas 2026.2)
+- questao 27 (página $13$; Banco de questões e provas 2026.2)
+- questao 28 (página $14$; Banco de questões e provas 2026.2)
+- questao 29 (página $14$; Banco de questões e provas 2026.2)
+- questao 30 (página $14$; Banco de questões e provas 2026.2)
+- questao 31 (página $15$; Banco de questões e provas 2026.2)
+- questao 32 (página $15$; Banco de questões e provas 2026.2)
+- secao 1.2 — Tabela de dupla entrada (páginas $13$–$14$; Banco de questões e provas 2026.2)
+- secao 1.10 — Explorando duas ou mais variáveis (páginas $61$–$69$; Estatística prática para cientistas de dados)
+- secao 4.2 — Variáveis qualitativas (páginas $87$–$89$; Estatística Básica)
+- secao 4.3 — Associação entre variáveis qualitativas (páginas $90$–$92$; Estatística Básica)
+- secao 2.1 — Relação entre variáveis qualitativas - tabelas de contingência (páginas $60$–$65$; Estatística básica: a arte de trabalhar com dados)
+
+### Tipos de variáveis
+- exercicio 1 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 2 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 3 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 4 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 5 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 6 (página $168$; Apostila de Métodos Quantitativos)
+- exercicio 3.8 (página $88$; Estatística para cursos de engenharia e informática)
+- questao 10 (página $9$; Banco de questões e provas 2026.2)
+- questao 11 (página $10$; Banco de questões e provas 2026.2)
+- questao 12 (página $10$; Banco de questões e provas 2026.2)
+- questao 13 (página $10$; Banco de questões e provas 2026.2)
+- questao 14 (página $10$; Banco de questões e provas 2026.2)
+- questao 15 (página $11$; Banco de questões e provas 2026.2)
+- questao 16 (página $11$; Banco de questões e provas 2026.2)
+- questao 17 (página $11$; Banco de questões e provas 2026.2)
+- questao 18 (página $11$; Banco de questões e provas 2026.2)
+- questao 19 (página $11$; Banco de questões e provas 2026.2)
+- questao 20 (página $12$; Banco de questões e provas 2026.2)
+- questao 21 (página $12$; Banco de questões e provas 2026.2)
+- questao 22 (página $12$; Banco de questões e provas 2026.2)
+- questao 23 (página $13$; Banco de questões e provas 2026.2)
+- questao 24 (página $13$; Banco de questões e provas 2026.2)
+- questao 7 (página $8$; Banco de questões e provas 2026.2)
+- questao 8 (página $9$; Banco de questões e provas 2026.2)
+- questao 9 (página $9$; Banco de questões e provas 2026.2)
+- secao 2.1 — Séries estatísticas (página $11$; Apostila de Métodos Quantitativos)
+- secao 1.1 — Conceitos e classificação (páginas $7$–$12$; Banco de questões e provas 2026.2)
+- secao 1.1.2 — Variáveis (páginas $8$–$10$; Banco de questões e provas 2026.2)
+- secao 1.1.3 — Séries estatísticas: elementos e classificação (páginas $11$–$12$; Banco de questões e provas 2026.2)
+- secao 3.1 — Dados e variáveis (páginas $52$–$53$; Estatística para cursos de engenharia e informática)
+- secao 1.1 — Elementos de dados estruturados (páginas $23$–$26$; Estatística prática para cientistas de dados)
+- secao 1.5 — Conjuntos de dados (página $21$; Estatística Básica)
+- secao 2.1 — Tipos de variáveis (páginas $26$–$27$; Estatística Básica)
+- secao 2.3.1 — Gráficos para variáveis qualitativas (página $32$; Estatística Básica)
+- secao 2.3.2 — Gráficos para variáveis quantitativas (páginas $33$–$36$; Estatística Básica)
+- secao 2.6 — Problemas e complementos (páginas $43$–$51$; Estatística Básica)
+- secao 1.3 — Tipologia das variáveis (páginas $24$–$26$; Estatística básica: a arte de trabalhar com dados)
+
+### Unidade de análise
+- secao 1.2 — Conceitos fundamentais (páginas $8$–$9$; Apostila de Métodos Quantitativos)
+- secao 1.1 — Elementos de dados estruturados (páginas $23$–$26$; Estatística prática para cientistas de dados)
+- secao 1.5 — Conjuntos de dados (página $21$; Estatística Básica)
+
+### Valor discrepante
+- exercicio 1.4_P (página $55$; Estatística básica: a arte de trabalhar com dados)
+- exercicio 2.5_P (página $83$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.3.2.3 — Box plot (páginas $22$–$28$; Banco de questões e provas 2026.2)
+- secao 6.4 — Box Plots (página $157$; Applied Statistics and Probability for Engineers)
+- secao 3.4 — Box plots (páginas $64$–$67$; Estatística Básica)
+- secao 1.8 — Identificação de discrepâncias em variáveis quantitativas (páginas $44$–$45$; Estatística básica: a arte de trabalhar com dados)
+- secao 1.9 — Box plot para variáveis quantitativas (páginas $46$–$59$; Estatística básica: a arte de trabalhar com dados)
+
+### Variância
+- exercicio 10 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 11 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 12 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 13 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 14 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 15 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 16 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 17 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 18 (página $170$; Apostila de Métodos Quantitativos)
+- exercicio 19 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 20 (página $171$; Apostila de Métodos Quantitativos)
+- exercicio 22 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 23 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 24 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 25 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 26 (página $172$; Apostila de Métodos Quantitativos)
+- exercicio 27 (página $173$; Apostila de Métodos Quantitativos)
+- exercicio 8 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 9 (página $169$; Apostila de Métodos Quantitativos)
+- exercicio 1.7_P (página $56$; Estatística básica: a arte de trabalhar com dados)
+- questao 169 (página $74$; Banco de questões e provas 2026.2)
+- questao 170 (página $74$; Banco de questões e provas 2026.2)
+- questao 171 (página $74$; Banco de questões e provas 2026.2)
+- questao 172 (página $75$; Banco de questões e provas 2026.2)
+- questao 173 (página $75$; Banco de questões e provas 2026.2)
+- questao 174 (página $75$; Banco de questões e provas 2026.2)
+- questao 175 (página $75$; Banco de questões e provas 2026.2)
+- questao 176 (página $75$; Banco de questões e provas 2026.2)
+- questao 177 (página $76$; Banco de questões e provas 2026.2)
+- questao 178 (página $76$; Banco de questões e provas 2026.2)
+- questao 179 (página $77$; Banco de questões e provas 2026.2)
+- questao 180 (página $77$; Banco de questões e provas 2026.2)
+- questao 181 (página $77$; Banco de questões e provas 2026.2)
+- questao 182 (página $78$; Banco de questões e provas 2026.2)
+- questao 183 (página $79$; Banco de questões e provas 2026.2)
+- questao 184 (página $79$; Banco de questões e provas 2026.2)
+- questao 185 (página $80$; Banco de questões e provas 2026.2)
+- questao 186 (página $80$; Banco de questões e provas 2026.2)
+- questao 187 (página $80$; Banco de questões e provas 2026.2)
+- questao 188 (página $80$; Banco de questões e provas 2026.2)
+- questao 189 (página $80$; Banco de questões e provas 2026.2)
+- questao 190 (página $80$; Banco de questões e provas 2026.2)
+- questao 191 (página $80$; Banco de questões e provas 2026.2)
+- questao 192 (página $80$; Banco de questões e provas 2026.2)
+- questao 193 (página $81$; Banco de questões e provas 2026.2)
+- questao 194 (página $81$; Banco de questões e provas 2026.2)
+- questao 195 (página $81$; Banco de questões e provas 2026.2)
+- questao 196 (página $81$; Banco de questões e provas 2026.2)
+- questao 197 (página $81$; Banco de questões e provas 2026.2)
+- questao 198 (página $81$; Banco de questões e provas 2026.2)
+- questao 235 (página $88$; Banco de questões e provas 2026.2)
+- questao 236 (página $88$; Banco de questões e provas 2026.2)
+- questao 237 (página $88$; Banco de questões e provas 2026.2)
+- secao 5 — Medidas de dispersão (páginas $49$–$57$; Apostila de Métodos Quantitativos)
+- secao 5.1 — Pequenos conjuntos de dados (páginas $49$–$52$; Apostila de Métodos Quantitativos)
+- secao 5.2 — Grandes conjuntos de dados: discretos (páginas $53$–$54$; Apostila de Métodos Quantitativos)
+- secao 5.3 — Grandes conjuntos de dados: contínuos (páginas $55$–$57$; Apostila de Métodos Quantitativos)
+- secao 2.1 — Medidas de posição para dados agrupados e não agrupados (páginas $34$–$73$; Banco de questões e provas 2026.2)
+- secao 2.2 — Propriedades das medidas de posição e dispersão (páginas $74$–$81$; Banco de questões e provas 2026.2)
+- secao 3.1 — Momentos (página $88$; Banco de questões e provas 2026.2)
+- secao 1.6 — Conceitos básicos (páginas $18$–$23$; Estatística para cursos de engenharia e informática)
+- secao 3.4 — Medidas descritivas (páginas $69$–$83$; Estatística para cursos de engenharia e informática)
+- secao 1.5 — Estimativas de variabilidade (páginas $38$–$44$; Estatística prática para cientistas de dados)
+- secao 6.1 — Numerical Summaries of Data (páginas $145$–$148$; Applied Statistics and Probability for Engineers)
+- secao 3.2 — Medidas de dispersão (páginas $54$–$57$; Estatística Básica)
+- secao 3.8 — Problemas e complementos (páginas $73$–$84$; Estatística Básica)
+- secao 1.2 — Summary Statistics (páginas $35$–$46$; Statistics for Engineers and Scientists)
+- secao 1.6 — Medidas de dispersão para variáveis quantitativas (páginas $37$–$42$; Estatística básica: a arte de trabalhar com dados)
+
+## Itens examinados fora do escopo
+
+Esta lista não é exaustiva: inclui apenas itens efetivamente examinados durante esta cobertura parcial.
+
+- nenhum item examinado registrado

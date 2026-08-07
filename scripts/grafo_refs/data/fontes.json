@@ -3,14 +3,14 @@
     "id": "banco-questoes-2026-2",
     "tipo_fonte": "banco_questoes",
     "titulo": "Banco de questões e provas 2026.2",
-    "arquivo": "prof/refs/apostila/banco_questoes_provas_2026_2.pdf",
+    "arquivo": "mat/apostila/banco_questoes_provas_2026_2.pdf",
     "idioma": "pt-BR"
   },
   {
     "id": "apostila-mq",
     "tipo_fonte": "apostila",
     "titulo": "Apostila de Métodos Quantitativos",
-    "arquivo": "prof/refs/exs/apostila_mq.pdf",
+    "arquivo": "mat/apostila/apostila_mq.pdf",
     "idioma": "pt-BR"
   },
   {

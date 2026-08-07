@@ -11,7 +11,6 @@ DEFAULT_GRAPH = REPOSITORY_ROOT / "prof/refs/mapas/grafo_referencias.json"
 REFERENCE_FIELDS = (
     "id",
     "tipo",
-    "subtipo",
     "numero_impresso",
     "titulo",
     "nome",

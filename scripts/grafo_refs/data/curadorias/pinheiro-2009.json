@@ -1,0 +1,314 @@
+[
+  {
+    "id": "pinheiro-2009-cap-1",
+    "tipo": "capitulo",
+    "numero_impresso": "1",
+    "titulo": "Análise exploratória para uma variável",
+    "pagina_pdf_inicio": 20,
+    "pagina_pdf_fim": 59,
+    "pai": "pinheiro-2009"
+  },
+  {
+    "id": "pinheiro-2009-cap-2",
+    "tipo": "capitulo",
+    "numero_impresso": "2",
+    "titulo": "Estudando a relação entre duas variáveis",
+    "pagina_pdf_inicio": 60,
+    "pagina_pdf_fim": 91,
+    "pai": "pinheiro-2009"
+  },
+  {
+    "id": "pinheiro-2009-sec-1-1",
+    "tipo": "secao",
+    "numero_impresso": "1.1",
+    "titulo": "Introdução",
+    "pagina_pdf_inicio": 20,
+    "pagina_pdf_fim": 21,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-estatistica-descritiva"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-1-2",
+    "tipo": "secao",
+    "numero_impresso": "1.2",
+    "titulo": "População e amostra",
+    "pagina_pdf_inicio": 22,
+    "pagina_pdf_fim": 23,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-populacao",
+      "topico-amostra"
+    ],
+    "conteudos": [
+      "conteudo-01-01"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-1-3",
+    "tipo": "secao",
+    "numero_impresso": "1.3",
+    "titulo": "Tipologia das variáveis",
+    "pagina_pdf_inicio": 24,
+    "pagina_pdf_fim": 26,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tipos-de-variaveis"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-1-4",
+    "tipo": "secao",
+    "numero_impresso": "1.4",
+    "titulo": "Distribuições de frequências - tabelas e gráficos",
+    "pagina_pdf_inicio": 27,
+    "pagina_pdf_fim": 34,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-tabela",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-1-5",
+    "tipo": "secao",
+    "numero_impresso": "1.5",
+    "titulo": "Medidas de centralidade para variáveis quantitativas",
+    "pagina_pdf_inicio": 35,
+    "pagina_pdf_fim": 36,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-mediana",
+      "topico-moda"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-1-6",
+    "tipo": "secao",
+    "numero_impresso": "1.6",
+    "titulo": "Medidas de dispersão para variáveis quantitativas",
+    "pagina_pdf_inicio": 37,
+    "pagina_pdf_fim": 42,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-amplitude",
+      "topico-variancia",
+      "topico-desvio-padrao",
+      "topico-coeficiente-de-variacao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-1-7",
+    "tipo": "secao",
+    "numero_impresso": "1.7",
+    "titulo": "O conceito de resistência de uma medida",
+    "pagina_pdf_inicio": 43,
+    "pagina_pdf_fim": 43,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-mediana",
+      "topico-intervalo-interquartil"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-1-8",
+    "tipo": "secao",
+    "numero_impresso": "1.8",
+    "titulo": "Identificação de discrepâncias em variáveis quantitativas",
+    "pagina_pdf_inicio": 44,
+    "pagina_pdf_fim": 45,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-1-9",
+    "tipo": "secao",
+    "numero_impresso": "1.9",
+    "titulo": "Box plot para variáveis quantitativas",
+    "pagina_pdf_inicio": 46,
+    "pagina_pdf_fim": 59,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-boxplot",
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-2-1",
+    "tipo": "secao",
+    "numero_impresso": "2.1",
+    "titulo": "Relação entre variáveis qualitativas - tabelas de contingência",
+    "pagina_pdf_inicio": 60,
+    "pagina_pdf_fim": 65,
+    "pai": "pinheiro-2009-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-sec-2-2",
+    "tipo": "secao",
+    "numero_impresso": "2.2",
+    "titulo": "Correlação entre variáveis quantitativas",
+    "pagina_pdf_inicio": 66,
+    "pagina_pdf_fim": 71,
+    "pai": "pinheiro-2009-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-covariancia",
+      "topico-correlacao-linear"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-1-4-p",
+    "tipo": "exercicio",
+    "numero_impresso": "1.4_P",
+    "pagina_pdf": 55,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-intervalo-interquartil",
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-1-5-p",
+    "tipo": "exercicio",
+    "numero_impresso": "1.5_P",
+    "pagina_pdf": 55,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-frequencia",
+      "topico-grafico"
+    ],
+    "conteudos": [
+      "conteudo-01-02"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-1-7-p",
+    "tipo": "exercicio",
+    "numero_impresso": "1.7_P",
+    "pagina_pdf": 56,
+    "pai": "pinheiro-2009-cap-1",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-media",
+      "topico-variancia",
+      "topico-desvio-padrao"
+    ],
+    "conteudos": [
+      "conteudo-01-03"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-2-1-p",
+    "tipo": "exercicio",
+    "numero_impresso": "2.1_P",
+    "pagina_pdf": 81,
+    "pai": "pinheiro-2009-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-2-2-p",
+    "tipo": "exercicio",
+    "numero_impresso": "2.2_P",
+    "pagina_pdf": 82,
+    "pai": "pinheiro-2009-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-tabela-de-contingencia",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-2-5-p",
+    "tipo": "exercicio",
+    "numero_impresso": "2.5_P",
+    "pagina_pdf": 83,
+    "pai": "pinheiro-2009-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-correlacao-linear",
+      "topico-valor-discrepante"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  },
+  {
+    "id": "pinheiro-2009-exercicio-2-7-p",
+    "tipo": "exercicio",
+    "numero_impresso": "2.7_P",
+    "pagina_pdf": 85,
+    "pai": "pinheiro-2009-cap-2",
+    "pertinencia_t199": "direta",
+    "topicos": [
+      "topico-correlacao-linear",
+      "topico-associacao"
+    ],
+    "conteudos": [
+      "conteudo-01-04"
+    ]
+  }
+]

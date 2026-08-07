@@ -51,7 +51,7 @@
       ],
       "additionalProperties": false,
       "properties": {
-        "versao_esquema": {"type": "string", "minLength": 1},
+        "versao_esquema": {"const": "1.1"},
         "data_geracao": {"type": "string", "format": "date"},
         "semestre_referencia": {"type": "string", "minLength": 1},
         "cobertura": {"$ref": "#/$defs/cobertura"}
@@ -87,7 +87,6 @@
       "type": "object",
       "required": [
         "tipos_no",
-        "subtipos_item_pedagogico",
         "tipos_relacao",
         "pertinencias_t199"
       ],
@@ -100,15 +99,12 @@
             "fonte",
             "capitulo",
             "secao",
-            "item_pedagogico",
+            "questao",
+            "exercicio",
+            "exemplo",
             "topico",
             "conteudo_curricular"
           ]
-        },
-        "subtipos_item_pedagogico": {
-          "type": "array",
-          "uniqueItems": true,
-          "const": ["questao", "exercicio", "exemplo"]
         },
         "tipos_relacao": {
           "type": "array",
@@ -127,7 +123,7 @@
         {"$ref": "#/$defs/fonte"},
         {"$ref": "#/$defs/capitulo"},
         {"$ref": "#/$defs/secao"},
-        {"$ref": "#/$defs/itemPedagogico"},
+        {"$ref": "#/$defs/item"},
         {"$ref": "#/$defs/topico"},
         {"$ref": "#/$defs/conteudoCurricular"}
       ]
@@ -203,12 +199,11 @@
         "pertinencia_t199": {"$ref": "#/$defs/pertinencia"}
       }
     },
-    "itemPedagogico": {
+    "item": {
       "type": "object",
       "required": [
         "id",
         "tipo",
-        "subtipo",
         "numero_impresso",
         "pagina_pdf",
         "pertinencia_t199"
@@ -216,8 +211,7 @@
       "additionalProperties": false,
       "properties": {
         "id": {"$ref": "#/$defs/id"},
-        "tipo": {"const": "item_pedagogico"},
-        "subtipo": {"type": "string", "enum": ["questao", "exercicio", "exemplo"]},
+        "tipo": {"type": "string", "enum": ["questao", "exercicio", "exemplo"]},
         "numero_impresso": {"type": "string", "minLength": 1},
         "pagina_pdf": {"$ref": "#/$defs/pagina"},
         "pagina_impressa": {"$ref": "#/$defs/pagina"},

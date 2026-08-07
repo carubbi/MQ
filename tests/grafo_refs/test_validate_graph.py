@@ -104,14 +104,13 @@ class ValidateGraphTests(unittest.TestCase):
         )
         self.assert_has_error(errors, "conteúdo curricular concluído")
 
-    def test_rejects_hybrid_pedagogical_item(self):
-        """Catches an item that combines concluded and pending curriculum content."""
+    def test_rejects_hybrid_question(self):
+        """Catches a concrete item that combines concluded and pending content."""
         def mutate(graph):
             graph["nos"].append(
                 {
                     "id": "barbetta-2010-q-hibrida",
-                    "tipo": "item_pedagogico",
-                    "subtipo": "questao",
+                    "tipo": "questao",
                     "numero_impresso": "1",
                     "pagina_pdf": 1,
                     "pertinencia_t199": "direta",
@@ -127,14 +126,13 @@ class ValidateGraphTests(unittest.TestCase):
 
         self.assert_has_error(self.errors_for(mutate), "item híbrido")
 
-    def test_rejects_pedagogical_item_without_pertinence(self):
-        """Catches an item whose pertinence to T199 was not classified."""
+    def test_rejects_concrete_item_without_pertinence(self):
+        """Catches a concrete item whose pertinence to T199 was not classified."""
         def mutate(graph):
             graph["nos"].append(
                 {
                     "id": "barbetta-2010-q-sem-pertinencia",
-                    "tipo": "item_pedagogico",
-                    "subtipo": "questao",
+                    "tipo": "questao",
                     "numero_impresso": "2",
                     "pagina_pdf": 1,
                 }
@@ -147,16 +145,15 @@ class ValidateGraphTests(unittest.TestCase):
                 }
             )
 
-        self.assert_has_error(self.errors_for(mutate), "item pedagógico sem pertinência")
+        self.assert_has_error(self.errors_for(mutate), "item sem pertinência")
 
-    def test_rejects_long_textual_field_on_pedagogical_item(self):
-        """Catches fields that could store a long pedagogical statement."""
+    def test_rejects_long_textual_field_on_concrete_item(self):
+        """Catches fields that could store a long item statement."""
         def mutate(graph):
             graph["nos"].append(
                 {
                     "id": "barbetta-2010-q-texto-longo",
-                    "tipo": "item_pedagogico",
-                    "subtipo": "questao",
+                    "tipo": "questao",
                     "numero_impresso": "x" * 241,
                     "pagina_pdf": 1,
                     "pertinencia_t199": "direta",
@@ -170,7 +167,7 @@ class ValidateGraphTests(unittest.TestCase):
                 }
             )
 
-        self.assert_has_error(self.errors_for(mutate), "campo textual longo em item pedagógico")
+        self.assert_has_error(self.errors_for(mutate), "campo textual longo em item")
 
     def test_rejects_a_source_derived_from_a_summary(self):
         """Catches an auxiliary Markdown-summary path presented as a PDF source."""
