@@ -115,7 +115,13 @@ def render_markdown(graph: dict) -> str:
     """Deriva Markdown estável do JSON, sem acrescentar relações inexistentes."""
     coverage = _coverage(graph)
     nodes_by_id = _nodes_by_id(graph)
-    lines = [PARTIAL_COVERAGE_NOTICE.rstrip(), "", "## Cobertura do corpus", ""]
+    complete_coverage = coverage.get("estado") == "completo"
+    heading = (
+        "# Grafo de referências da T199"
+        if complete_coverage
+        else PARTIAL_COVERAGE_NOTICE.rstrip()
+    )
+    lines = [heading, "", "## Cobertura do corpus", ""]
     lines.extend(
         [
             f"- Estado: {coverage.get('estado', 'não declarado')}",
@@ -139,6 +145,8 @@ def render_markdown(graph: dict) -> str:
         and query_by_content(graph, content["codigo"])["estado"] == "pendente"
     }
     lines.extend(f"- `{code}` — ainda não mapeado" for code in sorted(pending_codes))
+    if not pending_codes:
+        lines.append("- nenhum conteúdo pendente")
 
     lines.extend(["", "## Índice por fonte", ""])
     descendants = _descendants_by_source(graph)
@@ -181,7 +189,14 @@ def render_markdown(graph: dict) -> str:
             lines.append("- nenhuma referência curada")
         lines.append("")
 
-    lines.extend(["## Itens examinados fora do escopo", "", "Esta lista não é exaustiva: inclui apenas itens efetivamente examinados durante esta cobertura parcial.", ""])
+    outside_scope_notice = (
+        "Esta lista não é exaustiva: inclui apenas itens efetivamente examinados "
+        "nesta cobertura."
+        if complete_coverage
+        else "Esta lista não é exaustiva: inclui apenas itens efetivamente examinados "
+        "durante esta cobertura parcial."
+    )
+    lines.extend(["## Itens examinados fora do escopo", "", outside_scope_notice, ""])
     outside_items = sorted(
         (
             node

@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from scripts.grafo_refs.build_graph import DEFAULT_CURATED_DIRECTORY, build_graph
 from scripts.grafo_refs.render_markdown import render_markdown
 
 
@@ -75,6 +76,16 @@ GRAPH = {
 
 
 class RenderMarkdownTests(unittest.TestCase):
+    def test_complete_graph_has_no_partial_notice_and_no_pending_contents(self):
+        """Catches a completed graph being rendered with partial-coverage copy."""
+        rendered = render_markdown(
+            build_graph("2026-08-07", DEFAULT_CURATED_DIRECTORY)
+        )
+
+        self.assertTrue(rendered.startswith("# Grafo de referências da T199\n\n"))
+        self.assertNotIn("Cobertura parcial", rendered)
+        self.assertIn("## Conteúdos pendentes\n\n- nenhum conteúdo pendente", rendered)
+
     def test_starts_with_partial_coverage_notice_and_is_deterministic(self):
         """Catches an output that hides partial coverage or depends on iteration order."""
         rendered = render_markdown(GRAPH)

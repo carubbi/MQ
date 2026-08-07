@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from scripts.grafo_refs.build_graph import DEFAULT_CURATED_DIRECTORY, build_graph
 from scripts.grafo_refs.query_graph import query_by_content, query_by_topic
 
 
@@ -41,6 +42,16 @@ GRAPH = {
 
 
 class QueryGraphTests(unittest.TestCase):
+    def test_complete_content_query_returns_completed_state_with_results(self):
+        """Catches a complete graph being exposed as an empty pending query."""
+        result = query_by_content(
+            build_graph("2026-08-07", DEFAULT_CURATED_DIRECTORY),
+            "03.04",
+        )
+
+        self.assertEqual(result["estado"], "concluido")
+        self.assertGreater(len(result["resultados"]), 0)
+
     def test_returns_pending_state_without_results_for_unmapped_content(self):
         """Catches treating an unmapped curriculum content as absent from the corpus."""
         result = query_by_content(GRAPH, "02.01")
