@@ -18,6 +18,9 @@
 - Usar `---` somente como separador editorial dos slides.
 - Definir símbolos e unidades na primeira ocorrência.
 - Apresentar o problema antes de sua resolução e interpretar cada resultado.
+- Manter os slides teóricos genéricos, com exemplos adaptados das fontes ou
+  explicitamente sintéticos; reservar datasets da disciplina, suas variáveis e
+  seus resultados para os roteiros e futuros notebooks práticos.
 - Não inventar saídas computacionais nos roteiros.
 - Tratar o item “caso reduzido, resolução manual ou decisão conceitual” como condicional.
 - Distinguir tipo de célula — Markdown ou código — de sua função pedagógica.
@@ -470,7 +473,7 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 
 - title, discipline, Unit I, Week 1, date 07/08/2026 and content `01.01`;
 - the exact graph topics listed in the task interface;
-- guiding question: “O que representa cada registro do Palmer Penguins e até onde as conclusões podem ser generalizadas?”;
+- guiding question: “O que representa cada registro de um conjunto de dados e até onde as conclusões obtidas podem ser generalizadas?”;
 - distinction among source, observation, variable, unit of analysis, population, census, sample and sampling;
 - distinction between descriptive and inferential statistics;
 - notation $N$ for population size, $n$ for sample size, $\theta$ for a population parameter and $\widehat{\theta}$ for a statistic or estimate;
@@ -478,14 +481,16 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 
 - [ ] **Step 3: Add the proposed and solved example**
 
-Use the first six records of `mat/data/raw/penguins_raw.csv` as the displayed recorte. Present the problem before the resolution.
+Use a small, explicitly synthetic dataset of service records. Present the
+problem before the resolution.
 
 The resolution must:
 
-- identify an adult penguin associated with a sampled nest as the unit of analysis;
+- identify one service event as the unit of analysis;
 - identify examples of qualitative, quantitative and temporal variables;
-- distinguish the 344 observed records from a conceptual target population;
-- explain why the records do not form a simple random sample of all penguins;
+- distinguish the observed records from a conceptual target population;
+- explain why an available database is not automatically a simple random
+  sample of the target population;
 - delimit descriptive conclusions and warn against unsupported generalization.
 
 Add an in-class transfer question based on a synthetic server-log table, explicitly labeled synthetic, asking students to identify unit, variables, population of interest and possible selection bias.
@@ -495,8 +500,7 @@ Add an in-class transfer question based on a synthetic server-log table, explici
 Add public links:
 
 - `../apostila/apostila_mq.pdf`;
-- `../apostila/banco_questoes_provas_2026_2.pdf`;
-- `../data/raw/penguins_raw.csv`.
+- `../apostila/banco_questoes_provas_2026_2.pdf`.
 
 Cite without private links:
 
@@ -576,16 +580,18 @@ Create the deck with:
 Use this explicitly synthetic microcase for conversion and duplication:
 
 ```text
-id,massa_g,especie
-1,"3750","Adelie"
-2,"NA","Adelie"
-2,"NA","Adelie"
-3,"erro","Gentoo"
+id,tempo_min,canal
+1,"18","A"
+2,"NA","A"
+2,"NA","A"
+3,"erro","B"
 ```
 
 Resolve which values require conversion, missing-value representation, duplicate investigation and preservation of an audit trail.
 
-For frequencies, use `species` and `island`; for histogram classes, use `body_mass_g`.
+For frequencies and histogram classes, use generic or explicitly synthetic
+variables. Reserve `species`, `island` and `body_mass_g` for the notebook
+route.
 
 - [ ] **Step 3: Add the in-class exercise and interpretation**
 
@@ -595,7 +601,7 @@ State that no class rule is universally optimal and that Scott is a reference, n
 
 - [ ] **Step 4: Add references and exercises**
 
-Link the apostila, bank and raw dataset. Cite:
+Link the apostila and bank. Cite:
 
 - Apostila, sections 2.1–3.2;
 - Barbetta, sections 3.1–3.3;
@@ -687,7 +693,7 @@ Compare mean and median before and after the extreme value and interpret resista
 
 - [ ] **Step 4: Add references and exercises**
 
-Link the apostila, bank and processed dataset. Cite:
+Link the apostila and bank. Cite:
 
 - Apostila, sections 4.1–6.1;
 - Barbetta, sections 3.3–3.4;
@@ -747,13 +753,15 @@ Confirm with `--content 01.04`:
 
 Define $n_{ij}$, row and column marginals and conditional percentages with explicit denominators.
 
-Use the verified `species` by `island` table:
+Use this explicitly synthetic contingency table with generic row and column
+categories. Do not use `species`, `island` or verified results from the course
+dataset in the slides:
 
 ```text
-             Biscoe  Dream  Torgersen
-Adelie           44     56         52
-Chinstrap         0     68          0
-Gentoo          124      0          0
+           Canal A  Canal B  Canal C
+Grupo 1          18       12       10
+Grupo 2           9       16       15
+Grupo 3          13       12       15
 ```
 
 Ask for a conditional comparison before resolving it. Explain the effect of the collection design and why the table does not establish causality.
@@ -767,16 +775,18 @@ s_{xy} = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})
 r = \frac{s_{xy}}{s_xs_y}
 ```
 
-Use `flipper_length_mm` and `body_mass_g`. Record the verified results for the 342 complete pairs:
+Use generic variables with explicit units and a small synthetic dataset. Keep
+`flipper_length_mm`, `body_mass_g` and results calculated from the course
+dataset in the notebook route.
 
-- covariance approximately $9824{,}42$ mm·g;
-- Pearson correlation approximately $0{,}8712$.
-
-Interpret direction and linear association only after the scatterplot. Discuss species grouping, outliers, linearity, sensitivity and the absence of an automatic causal conclusion. Do not introduce Spearman, Kendall, heatmaps or universal magnitude bands.
+Interpret direction and linear association only after the scatterplot. Discuss
+possible hidden groups, outliers, linearity, sensitivity and the absence of an
+automatic causal conclusion. Do not introduce Spearman, Kendall, heatmaps or
+universal magnitude bands.
 
 - [ ] **Step 4: Add references and exercises**
 
-Link the apostila, bank and processed dataset. Cite:
+Link the apostila and bank. Cite:
 
 - Apostila, sections 15.1–15.2;
 - Barbetta, sections 11.1–11.2;

@@ -76,7 +76,9 @@ poderá possuir `s01` e `s03` sem possuir `s02`.
 
 O arquivo em `mat/aulas/` será o material de apresentação e discussão em sala.
 Ele deverá combinar fundamentação científica, notação, formulação matemática,
-exemplos e interpretação.
+exemplos e interpretação. Seu tratamento será teórico e genérico, como nas
+fontes científicas, sem vincular a exposição a um conjunto de dados específico
+adotado pela disciplina.
 
 O material será Markdown comum. Não haverá dependência, cabeçalho ou diretiva
 de Marp ou de outro renderizador. O separador `---` será usado apenas como
@@ -108,6 +110,10 @@ integradores e não introduzirão conteúdo curricular novo.
 - Não serão usados `\(...\)` ou `\[...\]`.
 - Toda variável será definida e, quando aplicável, acompanhada de unidade.
 - Um exemplo será apresentado como problema antes da respectiva resolução.
+- Exemplos dos slides serão genéricos, adaptados das fontes ou explicitamente
+  sintéticos.
+- Nomes, variáveis, registros e resultados de conjuntos didáticos específicos,
+  como Palmer Penguins, não serão usados nos slides teóricos.
 - A resolução explicitará procedimento, cálculos, interpretação, pressupostos
   e limitações pertinentes.
 - Resultados numéricos não serão apresentados sem contexto ou interpretação.
@@ -124,6 +130,10 @@ integradores e não introduzirão conteúdo curricular novo.
 O arquivo em `mat/notebooks/` será uma especificação prévia do futuro
 `.ipynb`. Ele não será apresentado como notebook executável e não conterá
 saídas ou resultados computacionais inventados.
+
+Os conjuntos de dados adotados pela disciplina e suas variáveis poderão ser
+usados nos roteiros e nos futuros notebooks, pois esses recursos correspondem
+à aplicação prática dos conceitos apresentados genericamente nos slides.
 
 O futuro `.ipynb` poderá usar o mesmo nome-base do roteiro. A documentação
 operacional deverá distinguir explicitamente os dois estados:
