@@ -28,7 +28,6 @@ Responder exige mais do que executar código. É necessário relacionar:
 ## Contexto recorrente
 
 Um serviço computacional registrou cinco requisições durante cinco minutos.
-O contexto foi adaptado de Barbetta et al., seção 1.4; os dados são sintéticos.
 
 | Requisição | Instante | Servidor | Latência (ms) | Status |
 | --- | --- | --- | ---: | --- |
@@ -41,6 +40,9 @@ O contexto foi adaptado de Barbetta et al., seção 1.4; os dados são sintétic
 **Tabela 1 - Registros sintéticos de requisições.** Os cinco registros reúnem
 instante, servidor, latência e status; quatro latências são numéricas e uma
 está ausente.
+
+Fonte: elaboração própria, com contexto adaptado de Barbetta, Bornia e Reis
+(2010, seção 1.4).
 
 > O que representa cada linha e o que foi registrado sobre ela?
 
@@ -379,6 +381,6 @@ Ao resolver, identifique população, amostra, unidade de análise, variáveis e
 ## Referências
 
 - Apostila de Métodos Quantitativos, seções 1.1–1.3, páginas 8–10.
-- BARBETTA et al. *Estatística para cursos de engenharia e informática*, capítulo 1, seções 1.1–1.6, páginas 12–23; capítulo 2, seções 2.1–2.2.1, páginas 24–31.
+- BARBETTA, Pedro Alberto; BORNIA, Antonio Cezar; REIS, Marcelo Menezes. *Estatística para cursos de engenharia e informática*. 3. ed. São Paulo: Atlas, 2010.
 - NAVIDI. *Statistics for Engineers and Scientists*, capítulo 1, introdução e seção 1.1, páginas 23–30.
 - PINHEIRO et al. *Estatística básica: a arte de trabalhar com dados*, capítulo 1, seções 1.1–1.2, páginas 20–23.

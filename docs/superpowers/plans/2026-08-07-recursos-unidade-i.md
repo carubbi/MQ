@@ -497,6 +497,9 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 - guiding question: “O que representa cada registro de um conjunto de dados e até onde as conclusões obtidas podem ser generalizadas?”;
 - a recurring, explicitly synthetic server-request dataset, whose context is
   adapted from Barbetta, section 1.4;
+- a source note after the table caption stating
+  `Fonte: elaboração própria, com contexto adaptado de Barbetta, Bornia e Reis
+  (2010, seção 1.4).`;
 - presentation of the reduced data and a short observation question before
   the corresponding definitions;
 - sequential captions immediately after each scientific or didactically
