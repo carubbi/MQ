@@ -25,8 +25,9 @@ As dependências dos notebooks estão em `requirements.txt`. O ambiente virtual 
 
 ## Estrutura do repositório
 
-- `mat/`: materiais destinados aos estudantes.
-- `prof/`: referências e materiais de apoio docente, embora públicos nesta repo.
-- `docs/`: especificações e documentos de planejamento versionados.
-- `scripts/` e `tests/`: geração e validação dos artefatos.
-- `bkp/`: artefatos arquivados que não integram o fluxo vigente.
+- `mat/apostila/`: material textual de apoio à disciplina.
+- `mat/artigos/`: artigos e leituras complementares.
+- `mat/aulas/`: materiais utilizados nas aulas.
+- `mat/data/`: conjuntos de dados didáticos.
+- `mat/ensino/`: projeto de ensino, calendário, turmas e fluxo da disciplina.
+- `mat/notebooks/`: notebooks guiados para aplicação computacional.
