@@ -1,0 +1,274 @@
+# Cronograma docente da disciplina T199 — 2026.2
+
+> Fonte canônica para a manutenção dos cronogramas discentes da disciplina.
+
+## 1. Identificação
+
+- **Disciplina:** T199 — Métodos Quantitativos.
+- **Denominação no projeto de ensino:** T199 — MÉT QUANT EM COMPUTAÇÃO.
+- **Carga horária institucional:** 72 horas-aula.
+- **Período letivo:** 3 de agosto a 9 de dezembro de 2026.
+- **Período dos encontros da disciplina:** 7 de agosto a 4 de dezembro de 2026.
+- **Projeto de ensino:** [proj_ensino_2026.md](../../mat/ensino/proj_ensino_2026.md).
+- **Calendário acadêmico:** [calendario_2026_2.md](../../mat/ensino/calendario_2026_2.md).
+- **Turma, horários e sala:** [turmas_2026_2.md](../../mat/ensino/turmas_2026_2.md).
+
+## 2. Organização da turma
+
+### Turma T199-64/65
+
+- **Bloco teórico — turma 64:** `T6CD`, sexta-feira, das 15h30 às 17h10, sala D18.
+- **Bloco prático — turma 65:** `T6EF`, sexta-feira, das 17h20 às 19h, sala D18.
+- **Organização pedagógica:** neste semestre, os dois blocos consecutivos
+  compõem o percurso integrado da mesma disciplina. Os conteúdos serão
+  organizados em ciclos didáticos por tópico, sem associação rígida entre
+  etapa pedagógica e bloco institucional. A distinção administrativa entre
+  teoria e prática não impede fundamentação, resolução manual, aplicação
+  computacional, acompanhamentos ou avaliações nos encontros previstos pelos
+  planejamentos das unidades.
+
+## 3. Critérios de planejamento
+
+- O semestre compreende 18 sextas-feiras, cada uma com dois blocos de 100 minutos, equivalentes a 4 horas-aula.
+- A carga institucional totaliza 72 horas-aula: 64 horas-aula em encontros efetivos e 8 horas-aula correspondentes aos feriados de 14 de agosto e 20 de novembro.
+- Os feriados integram a carga horária institucional, mas não terão aula, atividade obrigatória, conteúdo novo ou reposição.
+- Cada unidade corresponde a seis sextas-feiras e 24 horas-aula institucionais.
+- Cada ciclo didático articulará problema e contexto, fundamentação científica,
+  caso reduzido e resolução manual quando pertinentes, aplicação computacional,
+  comparação, diagnóstico e interpretação. As etapas poderão ocorrer em um
+  único encontro ou ser distribuídas entre encontros, conforme o conteúdo e a
+  configuração de horários do semestre.
+- Os notebooks guiados utilizarão principalmente Palmer Penguins. As APs utilizarão o Ames Housing no mesmo repositório mantido pelo grupo ao longo das três unidades.
+- Cada AV será composta por **AT individual — 70%** e **AP em dupla — 30%**. Um trio será admitido apenas quando a composição da turma impedir a formação exclusiva de duplas.
+- Cada AP será entregue pelo AVA mediante o link do repositório GitHub até 23h59, no horário de Fortaleza, no dia da Aula 12 da unidade.
+- As APs são atividades práticas desenvolvidas com acompanhamento processual ao longo de cada unidade e não terão segunda chamada.
+- Os acompanhamentos da AP serão formativos e não gerarão notas isoladas.
+- As ATs e as APs não precisam restringir-se aos limites de uma única unidade; seu escopo será definido explicitamente pelo projeto de ensino e pela matriz de cada avaliação.
+- As ATs ocuparão o segundo bloco das respectivas datas avaliativas, ainda que esse bloco seja administrativamente identificado como prático.
+
+## 4. Cronograma por unidade
+
+### Unidade I — Fundamentos estatísticos e análise exploratória de dados — 24h
+
+#### Semana 1 — Fundamentos estatísticos — 07/08
+
+- **Conteúdo formal:** 01.01.
+- **Aula 1 — 15h30 às 17h10:** apresentação da disciplina; critérios de avaliação; ambientação no Colab e em Python; fonte, observações, variáveis, tipos computacionais e unidade de análise.
+- **Aula 2 — 17h20 às 19h:** Estatística e processo de investigação; descrição e inferência; população, amostra, amostragem, representatividade, variabilidade, vieses e limites de generalização.
+- **Atividade e evidência:** carregar e inspecionar o Palmer Penguins; formular uma pergunta estatística; identificar população, amostra, unidade de análise e alcance das conclusões.
+- **Recursos:**
+  - **Material de aula — finalizado:** [Fundamentos estatísticos e investigação com dados](../../mat/aulas/u1_s01_fundamentos_estatisticos.md).
+  - **Notebook guiado — finalizado:** [Aula 1 — ambientação computacional e manipulação básica de dados](../../mat/notebooks/u1_s01_fundamentos_estatisticos_aula01.ipynb).
+  - **Notebook guiado — finalizado:** [Aula 2 — amostragem, variabilidade e viés](../../mat/notebooks/u1_s01_fundamentos_estatisticos_aula02.ipynb).
+
+#### Semana 2 — Prorrogação do Dia do Estudante — 14/08
+
+- **Ocorrência institucional:** feriado.
+- **Aulas 3 e 4:** sem encontro acadêmico.
+- **Carga horária:** 4 horas-aula contabilizadas institucionalmente.
+- **Atividade e evidência:** nenhuma.
+- **Exceção:** nenhum conteúdo novo, avaliação, entrega ou reposição.
+
+#### Semana 3 — Organização e representação de dados — 21/08
+
+- **Conteúdo formal:** 01.02.
+- **Aula 5 — 15h30 às 17h10:** estrutura dos dados; tipos estatísticos e computacionais; completude; consistência; conversão; valores ausentes; duplicidades e pré-processamento básico.
+- **Aula 6 — 17h20 às 19h:** frequências absolutas, relativas e acumuladas; dados agrupados; critérios para classes; tabelas, gráficos e histogramas.
+- **Atividade e evidência:** registrar transformações e justificativas; construir distribuições de frequências; comparar classes por Sturges e Freedman–Diaconis, com Scott como referência computacional.
+- **Recursos:**
+  - **Material de aula — em construção:** [Organização e representação de dados](../../mat/aulas/u1_s03_organizacao_representacao_dados.md).
+  - **Notebook guiado — em construção:** [Organização e representação de dados](../../mat/notebooks/u1_s03_organizacao_representacao_dados.ipynb).
+
+#### Semana 4 — Análise univariada — 28/08
+
+- **Conteúdo formal:** 01.03.
+- **Aula 7 — 15h30 às 17h10:** média, mediana, moda, quantis, amplitude, variância, desvio-padrão, intervalo interquartil e coeficiente de variação; aproximações para dados agrupados.
+- **Aula 8 — 17h20 às 19h:** forma da distribuição; assimetria; resistência; impacto e investigação de valores discrepantes; histogramas e boxplots.
+- **Atividade e evidência:** comparar medidas calculadas com dados originais e agrupados; investigar valores extremos sem exclusão automática.
+- **Acompanhamento 1 da AP1 — 30 minutos finais da Aula 8:** repositório, acesso docente, arquivo bruto, importação, estrutura, nomes, tipos, ausências e decisões iniciais de preparação.
+- **Recursos:**
+  - **Material de aula — em construção:** [Análise univariada](../../mat/aulas/u1_s04_analise_univariada.md).
+  - **Notebook guiado — em construção:** [Análise univariada](../../mat/notebooks/u1_s04_analise_univariada.ipynb).
+
+#### Semana 5 — Análise bivariada — 04/09
+
+- **Conteúdo formal:** 01.04.
+- **Aula 9 — 15h30 às 17h10:** tabelas de contingência; frequências conjuntas e marginais; percentuais condicionais; associação descritiva e comparação entre grupos.
+- **Aula 10 — 17h20 às 19h:** diagrama de dispersão; covariância; correlação linear de Pearson; valores discrepantes; linearidade; agrupamentos e distinção entre correlação e causalidade.
+- **Atividade e evidência:** construir e interpretar tabela de contingência e percentuais condicionais; calcular e interpretar correlação após examinar direção, forma, grupos e valores discrepantes.
+- **Acompanhamento 2 da AP1 — 30 minutos finais da Aula 10:** análise univariada, medidas, histogramas, gráfico de barras de $B$, cercas de Tukey, `IQR`, boxplots e decisão preliminar sobre casos sinalizados.
+- **Recursos:**
+  - **Material de aula — em construção:** [Análise bivariada](../../mat/aulas/u1_s05_analise_bivariada.md).
+  - **Notebook guiado — em construção:** [Análise bivariada](../../mat/notebooks/u1_s05_analise_bivariada.ipynb).
+
+#### Semana 6 — Probabilidade e entrega da AP1 — 11/09
+
+- **Conteúdo formal:** 02.01.
+- **Aula 11 — 15h30 às 17h10:** aleatoriedade; experimento; espaço amostral; eventos; complemento; união; interseção; regras da soma e do produto; probabilidade condicional; independência e exclusão mútua.
+- **Aula 12 — 17h20 às 18h30:** partições; probabilidade total; Teorema de Bayes; atualização de probabilidades e efeito da taxa-base.
+- **Atividade e evidência:** representar eventos e calcular probabilidades manualmente; resolver um problema de detecção ou classificação por árvore ou tabela.
+- **Acompanhamento final da AP1 — 18h30 às 19h:** agrupamento e rótulos de $B$; preço por categoria; análise temporal; dispersão e correlação; produção de `data/processed/AmesHousing.csv`; congelamento das decisões da AP1.
+- **Entrega da AP1:** link do repositório pelo AVA até 23h59.
+- **Ocorrências posteriores:** revisão e primeira chamada da AT1 em 18/09; data final institucional para registro da AV1 em 21/09.
+- **Recursos:**
+  - **Material de aula — em construção:** [Probabilidade e entrega da AP1](../../mat/aulas/u1_s06_probabilidade.md).
+  - **Notebook guiado — em construção:** [Probabilidade e entrega da AP1](../../mat/notebooks/u1_s06_probabilidade.ipynb).
+
+### Unidade II — Probabilidade e distribuições de probabilidade — 24h
+
+#### Semana 1 — Revisão e Avaliação Teórica 1 (AT1) — 18/09
+
+- **Conteúdos formais:** 01.01 a 01.04 e 02.01.
+- **Aula 1 — 15h30 às 17h10:** revisão teórica para a AT1, integrando análise descritiva e os fundamentos de probabilidade ensinados em 11/09.
+- **Aula 2 — 17h20 às 19h:** bloco prático reservado à aplicação individual da AT1 teórica objetiva no AVA, contemplando análise descritiva e fundamentos de probabilidade.
+- **Matriz da AT1:** 10 questões objetivas, sendo 8 sobre análise descritiva e 2 sobre o conteúdo 02.01.
+- **Atividade e evidência:** registro da realização e do resultado da AT1 no AVA.
+- **Composição da AV1:** AT1 — 70%; AP1 — 30%, com a AP1 entregue em 11/09.
+- **Ocorrência posterior:** data final institucional para registro da AV1 em 21/09.
+- **Recursos:**
+  - **Material de aula — em construção:** [Revisão e avaliação teórica 1](../../mat/aulas/u2_s01_revisao_at1.md).
+
+#### Semana 2 — Variáveis aleatórias — 25/09
+
+- **Conteúdos formais:** 02.01 e 02.02.
+- **Aula 3 — 15h30 às 17h10:** variáveis aleatórias discretas e contínuas; suporte; função de probabilidade; densidade e função de distribuição acumulada.
+- **Aula 4 — 17h20 às 19h:** esperança e variância como propriedades do modelo; interpretação de localização e variabilidade; comparação entre valores teóricos e empíricos.
+- **Atividade e evidência:** representar variáveis discretas e contínuas; calcular probabilidades, esperança e variância em casos reduzidos; verificar o comportamento por simulação.
+- **Sessão extraordinária — segunda chamada da AT1:** 25/09, das 21h às 22h40, horário `N6CD`, com o mesmo escopo da primeira chamada — análise descritiva e conteúdo 02.01 —, dentro da janela institucional de 22 a 28/09; lançamento da nota até 30/09.
+- **Recursos:**
+  - **Material de aula — em construção:** [Variáveis aleatórias](../../mat/aulas/u2_s02_variaveis_aleatorias.md).
+  - **Notebook guiado — em construção:** [Variáveis aleatórias](../../mat/notebooks/u2_s02_variaveis_aleatorias.ipynb).
+
+#### Semana 3 — Distribuições discretas — 02/10
+
+- **Conteúdo formal:** 02.03.
+- **Aula 5 — 15h30 às 17h10:** ensaio de Bernoulli; distribuição Binomial; parâmetros; pressupostos; probabilidades e simulação.
+- **Aula 6 — 17h20 às 19h:** processo e distribuição de Poisson; taxa; pressupostos; probabilidades; simulação e contraste com a Binomial.
+- **Atividade e evidência:** calcular probabilidades e comparar valores teóricos e simulados para Binomial e Poisson, explicitando os mecanismos e pressupostos.
+- **Acompanhamento 1 da AP2 — 30 minutos finais da Aula 6:** variável ou evento e modelo atribuídos; variável aleatória; suporte; compatibilidade inicial do modelo e descrição empírica.
+- **Recursos:**
+  - **Material de aula — em construção:** [Distribuições discretas](../../mat/aulas/u2_s03_distribuicoes_discretas.md).
+  - **Notebook guiado — em construção:** [Distribuições discretas](../../mat/notebooks/u2_s03_distribuicoes_discretas.ipynb).
+
+#### Semana 4 — Distribuições contínuas — 09/10
+
+- **Conteúdos formais:** 02.03 e 02.04.
+- **Aula 7 — 15h30 às 17h10:** distribuições Uniforme e Exponencial; suporte; parâmetros; probabilidades; falta de memória e relação entre taxa e tempo de espera.
+- **Aula 8 — 17h20 às 19h:** distribuição Normal; parâmetros; simetria; padronização e cálculo de probabilidades.
+- **Atividade e evidência:** distinguir mecanismos; calcular e verificar probabilidades; interpretar áreas sob a Normal e preparar o plano de simulação da AP2.
+- **Acompanhamento 2 da AP2 — 30 minutos finais da Aula 8:** calibração dos parâmetros, esperança e variância teóricas, representação gráfica e plano de simulação com semente definida.
+- **Recursos:**
+  - **Material de aula — em construção:** [Distribuições contínuas](../../mat/aulas/u2_s04_distribuicoes_continuas.md).
+  - **Notebook guiado — em construção:** [Distribuições contínuas](../../mat/notebooks/u2_s04_distribuicoes_continuas.ipynb).
+
+#### Semana 5 — Normal e auditoria de modelos — 16/10
+
+- **Conteúdo formal:** 02.04.
+- **Aula 9 — 15h30 às 17h10:** simulação Normal; histograma; densidade teórica; gráfico quantil-quantil; caudas; valores discrepantes e avaliação gráfica.
+- **Aula 10 — 17h20 às 19h:** integração entre fenômeno, variável aleatória, suporte, modelo, parâmetros, pressupostos, simulação e comparação observado–teórico–simulado.
+- **Atividade e evidência:** confrontar dados observados e simulados; interpretar histograma e gráfico quantil-quantil; emitir parecer sobre a adequação do modelo.
+- **Acompanhamento final da AP2 — 30 minutos finais da Aula 10:** simulação, comparação, auditoria dos pressupostos, parecer, limitações, atualização do repositório e acesso docente.
+- **Recursos:**
+  - **Material de aula — em construção:** [Normal e auditoria de modelos](../../mat/aulas/u2_s05_normal_auditoria_modelos.md).
+  - **Notebook guiado — em construção:** [Normal e auditoria de modelos](../../mat/notebooks/u2_s05_normal_auditoria_modelos.ipynb).
+
+#### Semana 6 — Revisão e Avaliação Teórica 2 (AT2) — 23/10
+
+- **Conteúdos formais avaliados diretamente:** 02.02 a 02.04, mobilizando 02.01 como pré-requisito.
+- **Aula 11 — 15h30 às 17h10:** revisão teórica por resolução manual de problemas, seleção e interpretação de variáveis aleatórias e modelos e análise de gráficos e resultados, mobilizando os fundamentos de probabilidade.
+- **Aula 12 — 17h20 às 19h:** AT2 individual, contemplando variáveis aleatórias e modelos probabilísticos discretos e contínuos; o conteúdo 02.01 será mobilizado como pré-requisito, sem constituir objeto autônomo de cobrança.
+- **Entrega da AP2:** link do mesmo repositório pelo AVA até 23h59.
+- **Composição da AV2:** AT2 — 70%; AP2 — 30%.
+- **Ocorrência posterior:** data final institucional para registro da AV2 em 10/11.
+- **Recursos:**
+  - **Material de aula — em construção:** [Revisão e avaliação teórica 2](../../mat/aulas/u2_s06_revisao_at2.md).
+
+### Unidade III — Estatística inferencial e regressão — 24h
+
+#### Semana 1 — Amostragem e distribuições amostrais — 30/10
+
+- **Conteúdos formais:** 03.01 e 03.02.
+- **Aula 1 — 15h30 às 17h10:** população-alvo; quadro amostral; técnicas probabilísticas e não probabilísticas; vieses; amostras aleatórias simples e estratificadas.
+- **Aula 2 — 17h20 às 19h:** distribuição dos dados e distribuição amostral; variabilidade da média e da proporção; Teorema Central do Limite; erro-padrão e tamanho amostral.
+- **Atividade e evidência:** selecionar e comparar amostras simples e estratificadas; simular distribuições amostrais da média e da proporção e interpretar o erro-padrão.
+- **Recursos:**
+  - **Material de aula — em construção:** [Amostragem e distribuições amostrais](../../mat/aulas/u3_s01_amostragem_distribuicoes_amostrais.md).
+  - **Notebook guiado — em construção:** [Amostragem e distribuições amostrais](../../mat/notebooks/u3_s01_amostragem_distribuicoes_amostrais.ipynb).
+
+#### Semana 2 — Estimação e testes — 06/11
+
+- **Conteúdos formais:** 03.02 e 03.03.
+- **Aula 3 — 15h30 às 17h10:** estimação pontual e intervalar para uma média e uma proporção; distribuição $t$; erro-padrão; margem de erro e interpretação da confiança.
+- **Aula 4 — 17h20 às 19h:** teste de hipótese para uma média e para uma proporção de sucesso populacional; hipóteses; nível de significância; estatística; valor-p; decisão; erros dos tipos I e II; poder e relevância prática.
+- **Atividade e evidência:** calcular e verificar intervalos e testes para uma média e uma proporção; comunicar parâmetro, pressupostos, decisão, magnitude e limites de representatividade.
+- **Recursos:**
+  - **Material de aula — em construção:** [Estimação e testes](../../mat/aulas/u3_s02_estimacao_testes.md).
+  - **Notebook guiado — em construção:** [Estimação e testes](../../mat/notebooks/u3_s02_estimacao_testes.ipynb).
+
+#### Semana 3 — Regressão linear simples — 13/11
+
+- **Conteúdo formal:** 03.04.
+- **Aula 5 — 15h30 às 17h10:** pergunta de modelagem; resposta e preditor; componente sistemático e erro; dispersão; linearidade; mínimos quadrados; intercepto; inclinação; unidades; causalidade e extrapolação.
+- **Aula 6 — 17h20 às 19h:** ajuste com `ols()`; valores ajustados; resíduos; coeficientes; erros-padrão; intervalos; valores-p; $R^2$ e $R^2_{\mathrm{ajustado}}$.
+- **Atividade e evidência:** interpretar uma equação, calcular valor ajustado e resíduo, ajustar a regressão simples e interpretar o `OLS Regression Results`.
+- **Acompanhamento 1 da AP3 — 30 minutos finais da Aula 6:** pergunta, população, resposta, candidatas quantitativas registradas, escolha inicial de $X$, característica $B$, categoria de referência, dispersão e ajuste inicial de `SalePrice ~ X`.
+- **Sessão extraordinária — segunda chamada da AT2:** 13/11, das 21h às 22h40, horário `N6CD`, com o mesmo escopo da primeira chamada — conteúdos 02.02 a 02.04, mobilizando 02.01 como pré-requisito —, dentro da janela institucional de 11 a 17/11; lançamento da nota até 19/11.
+- **Recursos:**
+  - **Material de aula — em construção:** [Regressão linear simples](../../mat/aulas/u3_s03_regressao_linear_simples.md).
+  - **Notebook guiado — em construção:** [Regressão linear simples](../../mat/notebooks/u3_s03_regressao_linear_simples.ipynb).
+
+#### Semana 4 — Dia Nacional de Zumbi e da Consciência Negra — 20/11
+
+- **Ocorrência institucional:** feriado.
+- **Aulas 7 e 8:** sem encontro acadêmico.
+- **Carga horária:** 4 horas-aula contabilizadas institucionalmente.
+- **Atividade e evidência:** nenhuma.
+- **Exceção:** nenhum conteúdo novo, avaliação, entrega ou reposição.
+
+#### Semana 5 — Diagnóstico da regressão simples e regressão múltipla — 27/11
+
+- **Conteúdo formal:** 03.04.
+- **Aula 9 — 15h30 às 17h10:** inferência sobre a inclinação; intervalos; teste; $R^2$; $R^2_{\mathrm{ajustado}}$; resíduos versus ajustados; gráfico quantil-quantil; independência e observações influentes em nível interpretativo.
+- **Decisão sobre $X$:** aprovar ou recusar a candidata mediante justificativa conjunta pelo valor-p da inclinação, por $R^2$, por $R^2_{\mathrm{ajustado}}$ e pelos resíduos. AIC e BIC não serão usados. Uma candidata recusada será substituída por outra previamente registrada, com preservação do histórico e repetição do procedimento.
+- **Aula 10 — 17h20 às 19h:** regressão múltipla com o mesmo $X$ aprovado e `C(B)`; indicadores; categoria de referência; interpretação condicional; associação bruta e ajustada; comparação dos modelos.
+- **Atividade e evidência:** diagnosticar o modelo simples; registrar o parecer sobre $X$; ajustar `SalePrice ~ X + C(B)`; interpretar coeficientes e comparar modelos aninhados.
+- **Acompanhamento 2 da AP3 — 30 minutos finais da Aula 10:** inferência e diagnóstico do modelo simples; decisão sobre $X$; regressão múltipla; coeficientes indicadores e comparação inicial.
+- **Recursos:**
+  - **Material de aula — em construção:** [Diagnóstico da regressão simples e regressão múltipla](../../mat/aulas/u3_s05_regressao_simples_multipla.md).
+  - **Notebook guiado — em construção:** [Diagnóstico da regressão simples e regressão múltipla](../../mat/notebooks/u3_s05_regressao_simples_multipla.ipynb).
+
+#### Semana 6 — Revisão e Avaliação Teórica 3 (AT3) — 04/12
+
+- **Conteúdos formais:** 03.01 a 03.04.
+- **Aula 11 — 15h30 às 17h10:** revisão por problemas e interpretação de saídas, com 70 minutos de integração dos conteúdos e 30 minutos de acompanhamento final da AP3.
+- **Acompanhamento final da AP3:** inferência sobre os coeficientes; comparação e diagnóstico dos modelos; conclusão; limitações; reprodutibilidade; contribuições; declaração de IA; atualização final e acesso docente.
+- **Aula 12 — 17h20 às 19h:** AT3 individual, contemplando amostragem, estimação, testes de significância, correlação e regressão.
+- **Entrega da AP3:** link do mesmo repositório pelo AVA até 23h59.
+- **Composição da AV3:** AT3 — 70%; AP3 — 30%.
+- **Janela institucional:** 3 a 9 de dezembro para aplicação da AV3, segunda chamada e feedback.
+- **Sessão extraordinária — segunda chamada da AT3:** 09/12, último dia letivo, horário `N4AB`, das 19h às 20h40, com o mesmo escopo da primeira chamada — conteúdos 03.01 a 03.04 —; registro da AV3 até 11/12.
+- **Ocorrência posterior:** data final institucional para registro da AV3 em 11/12.
+- **Recursos:**
+  - **Material de aula — em construção:** [Revisão e avaliação teórica 3](../../mat/aulas/u3_s06_revisao_at3.md).
+
+## 5. Síntese da carga horária
+
+- **Unidade I:** 24 horas-aula institucionais; 20 com encontro e 4 referentes ao feriado de 14/08.
+- **Unidade II:** 24 horas-aula, todas com encontro.
+- **Unidade III:** 24 horas-aula institucionais; 20 com encontro e 4 referentes ao feriado de 20/11.
+- **Total:** 72 horas-aula institucionais; 64 com encontro e 8 correspondentes a feriados sem aula.
+
+## 6. Avaliações e entregas
+
+- **AV1:** AP1 em 11/09 até 23h59; revisão e AT1 em 18/09, com aplicação no segundo bloco; registro institucional até 21/09.
+- **AV2 — 23/10:** AT2 no segundo bloco; AP2 até 23h59; registro institucional até 10/11.
+- **AV3 — 04/12:** AT3 no segundo bloco; AP3 até 23h59; aplicação dentro da janela institucional de 03 a 09/12; registro até 11/12.
+
+### Agenda concentrada de segunda chamada das ATs
+
+- **AT1:** 25/09 (sex.), horário `N6CD`, das 21h às 22h40; mesmo escopo da primeira chamada — análise descritiva e conteúdo 02.01 —; janela institucional de 22 a 28/09; lançamento da nota até 30/09.
+- **AT2:** 13/11 (sex.), horário `N6CD`, das 21h às 22h40; mesmo escopo da primeira chamada — conteúdos 02.02 a 02.04, mobilizando 02.01 como pré-requisito —; janela institucional de 11 a 17/11; lançamento da nota até 19/11.
+- **AT3:** 09/12 (qua.), último dia letivo, horário `N4AB`, das 19h às 20h40; mesmo escopo da primeira chamada — conteúdos 03.01 a 03.04 —; janela institucional de 03 a 09/12; registro até 11/12.
+- **Concentração docente:** as datas e os horários coincidem com a agenda de segunda chamada de RLA e RPG. O instrumento de MQ preservará sua modalidade própria.
+- **Regra das APs:** a agenda aplica-se somente às ATs. Por serem atividades práticas desenvolvidas processualmente, as APs não terão segunda chamada.
+- **Operação:** as sessões são extraordinárias, não substituem encontros regulares e não alteram a carga horária. O local será divulgado no AVA/Moodle. Antes de cada sessão, deverá ser verificada eventual convocação do mesmo estudante para mais de uma disciplina no mesmo horário.
