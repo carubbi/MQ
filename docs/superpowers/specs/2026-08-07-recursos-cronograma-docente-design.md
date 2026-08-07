@@ -104,16 +104,23 @@ convenção editorial entre slides.
 Cada material seguirá, com adaptações justificadas ao tema:
 
 1. título, identificação, data, conteúdos formais e resultado de aprendizagem;
-2. pergunta orientadora;
-3. conceitos e definições;
-4. notação e formulação matemática;
-5. exemplo proposto;
-6. resolução do exemplo;
-7. aplicação ou discussão em sala;
-8. erros comuns e cuidados interpretativos;
-9. síntese;
-10. estudo e exercícios;
-11. referências.
+2. agenda do ciclo, com tópicos, tempos de referência, organização e evidência
+   de aprendizagem;
+3. pergunta orientadora;
+4. conceitos e definições;
+5. notação e formulação matemática;
+6. exemplo proposto;
+7. resolução do exemplo;
+8. aplicação ou discussão em sala;
+9. erros comuns e cuidados interpretativos;
+10. síntese;
+11. estudo e exercícios;
+12. referências.
+
+Os tempos da agenda representarão o ciclo semanal completo, incluindo a
+aplicação computacional prevista no roteiro de notebook. Serão adaptáveis à
+configuração dos encontros e não serão associados rigidamente a horários
+institucionais.
 
 Semanas de revisão reorganizarão essa estrutura em torno de problemas
 integradores e não introduzirão conteúdo curricular novo.

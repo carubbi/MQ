@@ -10,6 +10,26 @@
 
 ---
 
+## Agenda
+
+- **Duração de referência:** 200 minutos, distribuíveis conforme a configuração
+  dos encontros.
+- **Organização:** ciclo integrado com fundamentação científica, resolução
+  manual, aplicação computacional e interpretação.
+
+1. **Problema, contexto e pergunta orientadora — 20 min**
+2. **Investigação, fonte, observação, unidade de análise e variáveis — 40 min**
+3. **Variabilidade, qualidade dos dados, população e amostra — 35 min**
+4. **Descrição, inferência, vieses e notação — 35 min**
+5. **Caso reduzido e resolução manual — 30 min**
+6. **Aplicação computacional, comparação e diagnóstico — 30 min**
+7. **Síntese e evidência de aprendizagem — 10 min**
+
+- **Evidência de aprendizagem:** formular uma pergunta estatística, identificar a
+  unidade de análise e delimitar até onde a conclusão pode ser aplicada.
+
+---
+
 ## Pergunta orientadora
 
 > O que representa cada registro de um conjunto de dados e até onde as conclusões obtidas podem ser generalizadas?

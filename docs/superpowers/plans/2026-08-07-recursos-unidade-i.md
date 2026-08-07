@@ -494,6 +494,9 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 
 - title, discipline, Unit I, Week 1, date 07/08/2026 and content `01.01`;
 - the exact graph topics listed in the task interface;
+- an agenda for the complete 200-minute integrated cycle, with topics,
+  reference times, adaptable organization and learning evidence, without
+  associating the stages rigidly with institutional time slots;
 - guiding question: “O que representa cada registro de um conjunto de dados e até onde as conclusões obtidas podem ser generalizadas?”;
 - a recurring, explicitly synthetic server-request dataset, whose context is
   adapted from Barbetta, section 1.4;
