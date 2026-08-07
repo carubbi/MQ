@@ -125,8 +125,19 @@ integradores e não introduzirão conteúdo curricular novo.
 - Não serão usados `\(...\)` ou `\[...\]`.
 - Toda variável será definida e, quando aplicável, acompanhada de unidade.
 - Um exemplo será apresentado como problema antes da respectiva resolução.
+- Quando o conceito puder ser observado em dados reduzidos, o material
+  apresentará primeiro a evidência ou uma pergunta sobre ela e somente depois
+  formalizará a definição. Essa pergunta terá função de contextualização, não
+  constituirá seção formal de antecipação do resultado.
+- Um mesmo conjunto reduzido poderá ser retomado progressivamente para
+  relacionar observação, variável, unidade de análise, variabilidade,
+  população, amostra, descrição, inferência e limitações. Essa continuidade
+  será preferida à introdução de microcasos independentes para cada definição.
 - Exemplos dos slides serão genéricos, adaptados das fontes ou explicitamente
   sintéticos.
+- Quando uma referência fornecer apenas o contexto, os valores criados para o
+  material serão identificados como sintéticos e o contexto será indicado como
+  adaptado da fonte; tabelas protegidas não serão transcritas.
 - Nomes, variáveis, registros e resultados de conjuntos didáticos específicos,
   como Palmer Penguins, não serão usados nos slides teóricos.
 - A resolução explicitará procedimento, cálculos, interpretação, pressupostos

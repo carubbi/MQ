@@ -483,6 +483,7 @@ Confirm these sources and ranges in the output:
 - Apostila, sections 1.1–1.3, PDF pages 8–10;
 - Barbetta, sections 1.1–1.6, PDF pages 12–23;
 - Barbetta, sections 2.1–2.2.1, PDF pages 24–31;
+- Navidi, introduction and section 1.1, PDF pages 23–30;
 - Pinheiro, sections 1.1–1.2, PDF pages 20–23.
 
 Do not use Barbetta 2.2.2 on sample-size determination.
@@ -494,6 +495,10 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 - title, discipline, Unit I, Week 1, date 07/08/2026 and content `01.01`;
 - the exact graph topics listed in the task interface;
 - guiding question: “O que representa cada registro de um conjunto de dados e até onde as conclusões obtidas podem ser generalizadas?”;
+- a recurring, explicitly synthetic server-request dataset, whose context is
+  adapted from Barbetta, section 1.4;
+- presentation of the reduced data and a short observation question before
+  the corresponding definitions;
 - distinction among source, observation, variable, unit of analysis, population, census, sample and sampling;
 - distinction between descriptive and inferential statistics;
 - notation $N$ for population size, $n$ for sample size, $\theta$ for a population parameter and $\widehat{\theta}$ for a statistic or estimate;
@@ -501,19 +506,28 @@ Create `mat/aulas/u1_s01_fundamentos_estatisticos.md` with:
 
 - [ ] **Step 3: Add the proposed and solved example**
 
-Use a small, explicitly synthetic dataset of service records. Present the
-problem before the resolution.
+Use one small, explicitly synthetic dataset of server requests throughout the
+slides. Do not retain a second dataset of service records. Include request
+identifier, time, server, latency in milliseconds and status, with different
+latencies, one failed request and one missing latency.
 
-The resolution must:
+The conceptual progression and resolution must:
 
-- identify one service event as the unit of analysis;
-- identify examples of qualitative, quantitative and temporal variables;
+- identify one request as the unit of analysis;
+- distinguish one observation from one server;
+- identify qualitative, quantitative and temporal variables;
+- use the observed latencies to make variability visible before defining it;
 - distinguish the observed records from a conceptual target population;
+- show that missing latency is not zero and that an unusual latency is not
+  automatically an error;
 - explain why an available database is not automatically a simple random
   sample of the target population;
 - delimit descriptive conclusions and warn against unsupported generalization.
 
-Add an in-class transfer question based on a synthetic server-log table, explicitly labeled synthetic, asking students to identify unit, variables, population of interest and possible selection bias.
+Use the proposed example as an integrative return to the same table rather
+than reproducing it. Add a short in-class sampling decision based on alternative
+logging windows, asking students to approve or reject representativeness with
+justification.
 
 - [ ] **Step 4: Add study references and exercises**
 
@@ -526,7 +540,9 @@ Cite without private links:
 
 - Apostila, sections 1.1–1.3, pages 8–10;
 - Barbetta, chapter 1, sections 1.1–1.6, and chapter 2, sections 2.1–2.2.1;
+- Navidi, chapter 1, introduction and section 1.1;
 - Pinheiro, chapter 1, sections 1.1–1.2;
+- Banco de questões, questions 6 and 13;
 - Barbetta, chapter 1, exercise 2, and chapter 2, exercise 7.
 
 - [ ] **Step 5: Create the Week 1 notebook route**

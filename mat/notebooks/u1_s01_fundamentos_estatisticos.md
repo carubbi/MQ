@@ -41,6 +41,8 @@ O notebook não deverá transformar a inspeção computacional em prova de repre
 
 Antes do código, a futura implementação deverá apresentar:
 
+- uma retomada breve do conjunto sintético de requisições usado nos slides,
+  apenas para explicitar a transferência para outro conjunto de dados;
 - fonte, observação, variável, valor e unidade de análise;
 - população, censo, amostra, amostragem e representatividade;
 - estatística descritiva e inferencial;
@@ -75,6 +77,10 @@ Somente `pandas` será necessário nesta semana. A futura implementação dever�
 
 Selecionar, depois do carregamento, um recorte pequeno do próprio arquivo com
 identificador, espécie, ilha, data e uma medida corporal.
+
+O recorte não repetirá o contexto dos servidores. Ele deverá transferir para o
+Palmer Penguins as distinções já construídas entre linha, observação, unidade de
+análise, variável, valor ausente, descrição e inferência.
 
 Solicitar a classificação manual de:
 
@@ -215,12 +221,15 @@ A conclusão será escrita somente depois da inspeção do arquivo.
 
 ### Exercícios
 
+- Banco de questões, questão 6.
+- Banco de questões, questão 13.
 - Barbetta et al., capítulo 1, exercício 2.
 - Barbetta et al., capítulo 2, exercício 7.
 
 ### Referências de autoria
 
 - BARBETTA et al., capítulo 1, seções 1.1–1.6; capítulo 2, seções 2.1–2.2.1.
+- NAVIDI, capítulo 1, introdução e seção 1.1.
 - PINHEIRO et al., capítulo 1, seções 1.1–1.2.
 - GORMAN; WILLIAMS; FRASER, 2014.
 
