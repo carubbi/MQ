@@ -8,11 +8,122 @@ from scripts.grafo_refs.query_graph import query_by_topic
 
 
 UNIT_II = ("02.01", "02.02", "02.03", "02.04")
-EXPECTED_ORIGIN_COUNTS = {
-    "02.01": 37,
-    "02.02": 25,
-    "02.03": 17,
-    "02.04": 28,
+EXPECTED_ORIGINS = {
+    "02.01": {
+        "apostila-mq-sec-8-1",
+        "apostila-mq-sec-8-2",
+        "apostila-mq-sec-8-3",
+        "apostila-mq-sec-8-4",
+        "apostila-mq-sec-8-5",
+        "apostila-mq-sec-8-6",
+        "apostila-mq-sec-8-7",
+        "apostila-mq-sec-8-8",
+        "apostila-mq-sec-8-8-1",
+        "apostila-mq-sec-8-9",
+        "barbetta-2010-sec-4-1",
+        "barbetta-2010-sec-4-2",
+        "barbetta-2010-sec-4-3",
+        "barbetta-2010-sec-4-4",
+        "barbetta-2010-sec-4-5",
+        "montgomery-2018-sec-2-1-1",
+        "montgomery-2018-sec-2-1-2",
+        "montgomery-2018-sec-2-1-3",
+        "montgomery-2018-sec-2-3",
+        "montgomery-2018-sec-2-4",
+        "montgomery-2018-sec-2-5",
+        "montgomery-2018-sec-2-6",
+        "montgomery-2018-sec-2-7",
+        "montgomery-2018-sec-2-8",
+        "morettin-bussab-2010-sec-5-1",
+        "morettin-bussab-2010-sec-5-2",
+        "morettin-bussab-2010-sec-5-3",
+        "morettin-bussab-2010-sec-5-4",
+        "navidi-2024-sec-2-1",
+        "navidi-2024-sec-2-3",
+        "pinheiro-2009-exercicio-3-10-p",
+        "pinheiro-2009-exercicio-3-8-p",
+        "pinheiro-2009-exercicio-3-9-p",
+        "pinheiro-2009-sec-3-1",
+        "pinheiro-2009-sec-3-2",
+        "pinheiro-2009-sec-3-3",
+        "pinheiro-2009-sec-3-4",
+    },
+    "02.02": {
+        "apostila-mq-sec-9-1",
+        "apostila-mq-sec-9-2",
+        "apostila-mq-sec-9-3",
+        "barbetta-2010-exercicio-5-1",
+        "barbetta-2010-exercicio-6-1",
+        "barbetta-2010-sec-5-1",
+        "barbetta-2010-sec-6-1",
+        "montgomery-2018-sec-2-9",
+        "montgomery-2018-sec-3-1",
+        "montgomery-2018-sec-3-2",
+        "montgomery-2018-sec-3-3",
+        "montgomery-2018-sec-4-1",
+        "montgomery-2018-sec-4-2",
+        "montgomery-2018-sec-4-3",
+        "morettin-bussab-2010-sec-6-2",
+        "morettin-bussab-2010-sec-6-3",
+        "morettin-bussab-2010-sec-6-5",
+        "morettin-bussab-2010-sec-7-1",
+        "morettin-bussab-2010-sec-7-2",
+        "morettin-bussab-2010-sec-7-3",
+        "navidi-2024-sec-2-4",
+        "pinheiro-2009-exercicio-4-3-p",
+        "pinheiro-2009-sec-4-2",
+        "pinheiro-2009-sec-4-3",
+        "pinheiro-2009-sec-4-4",
+    },
+    "02.03": {
+        "apostila-mq-sec-10-1",
+        "apostila-mq-sec-10-2",
+        "banco-questoes-2026-2-sec-5-1-1",
+        "banco-questoes-2026-2-sec-5-1-2",
+        "barbetta-2010-exercicio-5-11",
+        "barbetta-2010-exercicio-5-7",
+        "barbetta-2010-sec-5-2",
+        "estatistica-pratica-cd-sec-2-distribuicao-binomial",
+        "estatistica-pratica-cd-sec-2-distribuicoes-poisson",
+        "montgomery-2018-sec-3-5",
+        "montgomery-2018-sec-3-8",
+        "morettin-bussab-2010-sec-6-6",
+        "morettin-bussab-2010-sec-6-7",
+        "navidi-2024-sec-4-2",
+        "navidi-2024-sec-4-3",
+        "pinheiro-2009-exercicio-4-6-p",
+        "pinheiro-2009-exercicio-4-7-p",
+    },
+    "02.04": {
+        "apostila-mq-sec-17-7",
+        "banco-questoes-2026-2-sec-5-2-1",
+        "banco-questoes-2026-2-sec-5-2-2",
+        "banco-questoes-2026-2-sec-5-2-4",
+        "barbetta-2010-exercicio-6-1",
+        "barbetta-2010-exercicio-6-13",
+        "barbetta-2010-exercicio-6-17",
+        "barbetta-2010-exercicio-6-2",
+        "barbetta-2010-exercicio-6-6",
+        "barbetta-2010-exercicio-6-8",
+        "barbetta-2010-sec-6-2",
+        "barbetta-2010-sec-6-4",
+        "estatistica-pratica-cd-sec-2-distribuicao-exponencial",
+        "estatistica-pratica-cd-sec-2-distribuicao-normal",
+        "estatistica-pratica-cd-sec-2-normal-padrao-e-graficos-qq",
+        "montgomery-2018-sec-4-4",
+        "montgomery-2018-sec-4-5",
+        "montgomery-2018-sec-4-7",
+        "montgomery-2018-sec-6-7",
+        "morettin-bussab-2010-sec-7-4",
+        "navidi-2024-sec-4-10",
+        "navidi-2024-sec-4-5",
+        "navidi-2024-sec-4-7",
+        "navidi-2024-sec-4-8",
+        "pinheiro-2009-exercicio-4-8-p",
+        "pinheiro-2009-exercicio-4-9-p",
+        "pinheiro-2009-sec-4-4",
+        "pinheiro-2009-sec-4-5",
+    },
 }
 REQUIRED_TOPICS = {
     "02.01": {
@@ -70,6 +181,12 @@ EXPECTED_EXERCISES = {
 OUT_OF_SCOPE_DISTRIBUTION_SECTIONS = {
     "apostila-mq-sec-10-4",
     "banco-questoes-2026-2-sec-5-1-3",
+    "banco-questoes-2026-2-sec-5-1-4",
+    "banco-questoes-2026-2-sec-5-1-5",
+    "banco-questoes-2026-2-sec-5-1-6",
+    "banco-questoes-2026-2-sec-5-1-7",
+    "banco-questoes-2026-2-sec-5-2-3",
+    "banco-questoes-2026-2-sec-5-2-5",
     "banco-questoes-2026-2-sec-5-2-6",
     "banco-questoes-2026-2-sec-5-2-7",
     "estatistica-pratica-cd-sec-2-distribuicao-weibull",
@@ -104,12 +221,12 @@ class UnidadeIICompleteTests(unittest.TestCase):
         cls.graph = build_graph("2026-08-07", DEFAULT_CURATED_DIRECTORY)
 
     def test_every_unidade_ii_content_has_real_references(self):
-        """Catches loss or accidental expansion of the reviewed origin matrix."""
-        for code, expected_count in EXPECTED_ORIGIN_COUNTS.items():
+        """Catches replacement, loss, or expansion of a reviewed origin."""
+        for code, expected_origins in EXPECTED_ORIGINS.items():
             with self.subTest(code=code):
                 self.assertEqual(
-                    len(curricular_origins(self.graph, code)),
-                    expected_count,
+                    curricular_origins(self.graph, code),
+                    expected_origins,
                 )
 
     def test_every_required_topic_is_supported_by_the_same_content_origins(self):
@@ -140,6 +257,34 @@ class UnidadeIICompleteTests(unittest.TestCase):
                         )
                         for reference in origins
                     )
+                )
+
+    def test_apostila_topics_match_the_pdf_localizers_exactly(self):
+        """Catches reintroducing unsupported CDF relations in chapter 9."""
+        expected = {
+            "apostila-mq-sec-9-1": {
+                "topico-variavel-aleatoria-discreta",
+                "topico-funcao-de-probabilidade",
+                "topico-esperanca",
+                "topico-variancia",
+            },
+            "apostila-mq-sec-9-2": {
+                "topico-variavel-aleatoria-continua",
+                "topico-funcao-densidade",
+                "topico-esperanca",
+                "topico-variancia",
+            },
+        }
+        for origin, expected_topics in expected.items():
+            with self.subTest(origin=origin):
+                self.assertEqual(
+                    {
+                        edge["destino"]
+                        for edge in self.graph["relacoes"]
+                        if edge["origem"] == origin
+                        and edge["tipo"] == "aborda"
+                    },
+                    expected_topics,
                 )
 
     def test_selected_exercises_preserve_ids_pages_and_contents(self):
