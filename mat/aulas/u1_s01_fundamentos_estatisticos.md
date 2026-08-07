@@ -12,7 +12,7 @@
 
 ## Pergunta orientadora
 
-> O que representa cada registro do Palmer Penguins e até onde as conclusões obtidas com esses dados podem ser generalizadas?
+> O que representa cada registro de um conjunto de dados e até onde as conclusões obtidas podem ser generalizadas?
 
 Responder exige mais do que executar código. É necessário relacionar:
 
@@ -62,7 +62,7 @@ Uma linha não é automaticamente uma pessoa, um dispositivo ou um evento. Seu s
 - **Amostragem:** processo de seleção das unidades.
 - **Quadro amostral:** representação operacional das unidades que poderiam ser selecionadas.
 
-A população precisa ser declarada. “Todos os pinguins” e “os pinguins adultos associados aos ninhos observados no Arquipélago Palmer” representam populações diferentes.
+A população precisa ser declarada. “Todos os atendimentos” e “os atendimentos registrados por determinado serviço durante um período definido” representam populações diferentes.
 
 ---
 
@@ -75,10 +75,10 @@ Uma descrição correta da amostra não garante uma inferência válida para uma
 
 | Pergunta | Natureza |
 | --- | --- |
-| Qual foi a massa corporal mediana entre os registros disponíveis? | Descritiva |
-| Qual é a massa corporal mediana de todos os pinguins da população-alvo? | Inferencial |
-| Como as medidas variam entre as espécies registradas? | Descritiva |
-| A diferença observada pode ser generalizada para outra região ou período? | Inferencial |
+| Qual foi o tempo mediano entre os registros disponíveis? | Descritiva |
+| Qual é o tempo mediano de todos os atendimentos da população-alvo? | Inferencial |
+| Como os tempos variam entre os grupos registrados? | Descritiva |
+| A diferença observada pode ser generalizada para outro serviço ou período? | Inferencial |
 
 ---
 
@@ -138,16 +138,17 @@ O tamanho $n$ influencia a variabilidade amostral, mas não corrige automaticame
 
 ## Exemplo proposto
 
-Considere este recorte dos seis primeiros registros do arquivo bruto:
+Considere o conjunto sintético a seguir, formado por seis registros de
+atendimentos:
 
-| Identificador | Espécie | Ilha | Massa corporal (g) |
+| Identificador | Canal | Período | Tempo (min) |
 | --- | --- | --- | ---: |
-| `N1A1` | Adelie | Torgersen | 3750 |
-| `N1A2` | Adelie | Torgersen | 3800 |
-| `N2A1` | Adelie | Torgersen | 3250 |
-| `N2A2` | Adelie | Torgersen | ausente |
-| `N3A1` | Adelie | Torgersen | 3450 |
-| `N3A2` | Adelie | Torgersen | 3650 |
+| `A01` | presencial | manhã | 18 |
+| `A02` | remoto | manhã | 24 |
+| `A03` | presencial | tarde | 15 |
+| `A04` | remoto | tarde | ausente |
+| `A05` | presencial | tarde | 21 |
+| `A06` | remoto | noite | 30 |
 
 Antes da resolução, responda:
 
@@ -163,12 +164,14 @@ Antes da resolução, responda:
 
 ### Unidade, registros e variáveis
 
-- Cada linha descreve um pinguim adulto associado a um ninho incluído no processo de coleta.
-- O identificador, a espécie e a ilha são variáveis qualitativas.
-- A massa corporal é quantitativa, medida em gramas.
-- A ausência da quarta massa corporal é informação sobre a qualidade e a completude dos dados; não deve ser transformada em zero.
+- Cada linha descreve um atendimento incluído no processo de registro.
+- O identificador, o canal e o período são variáveis qualitativas.
+- O tempo é quantitativo, medido em minutos.
+- A ausência do quarto tempo é informação sobre a qualidade e a completude dos dados; não deve ser transformada em zero.
 
-Os seis registros são apenas um recorte da amostra disponível. O arquivo bruto completo contém 344 registros e 17 colunas.
+Os seis registros podem constituir toda a base disponível sem constituir toda a
+população de interesse. A relação entre base, amostra e população depende de
+como e quando os atendimentos foram registrados.
 
 ---
 
@@ -176,9 +179,10 @@ Os seis registros são apenas um recorte da amostra disponível. O arquivo bruto
 
 Uma conclusão descritiva válida seria:
 
-> Entre os seis registros exibidos, as massas corporais observadas variam de 3250 g a 3800 g, com um valor ausente.
+> Entre os seis registros exibidos, os tempos observados variam de 15 min a
+> 30 min, com um valor ausente.
 
-Uma afirmação sobre todos os pinguins exigiria:
+Uma afirmação sobre todos os atendimentos exigiria:
 
 - definição explícita da população-alvo;
 - conhecimento do processo de seleção;
@@ -186,17 +190,18 @@ Uma afirmação sobre todos os pinguins exigiria:
 - tratamento fundamentado dos valores ausentes;
 - modelo inferencial compatível.
 
-Os registros não constituem, apenas por existirem, uma amostra aleatória simples de todos os pinguins.
+Os registros não constituem, apenas por existirem, uma amostra aleatória
+simples de todos os atendimentos.
 
 ---
 
 ### Pergunta estatística possível
 
-> Como a massa corporal observada varia entre as espécies registradas no conjunto Palmer Penguins?
+> Como o tempo observado varia entre os canais de atendimento registrados?
 
 Essa pergunta:
 
-- identifica uma variável quantitativa;
+- identifica uma variável quantitativa e sua unidade;
 - define os grupos de comparação;
 - admite variabilidade entre registros;
 - pode ser respondida descritivamente com os dados disponíveis;
@@ -206,7 +211,7 @@ Essa pergunta:
 
 ## Aplicação ou discussão em sala
 
-### Transferência para um log sintético
+### Transferência para outro contexto
 
 | instante | servidor | latência (ms) | status |
 | --- | --- | ---: | --- |
@@ -215,7 +220,7 @@ Essa pergunta:
 | 10:02 | B | 430 | falha |
 | 10:03 | B | 105 | sucesso |
 
-O exemplo é sintético. Em grupos, identifique:
+O exemplo também é sintético. Em grupos, identifique:
 
 1. a unidade de análise;
 2. as variáveis e seus tipos;
@@ -255,7 +260,6 @@ Encaminhamento: se cada linha representa uma requisição, “servidor” e “s
 
 - [Apostila de Métodos Quantitativos](../apostila/apostila_mq.pdf): seções 1.1–1.3, páginas 8–10.
 - [Banco de questões e provas 2026.2](../apostila/banco_questoes_provas_2026_2.pdf): questões relacionadas aos fundamentos estatísticos.
-- [Palmer Penguins — arquivo bruto](../data/raw/penguins_raw.csv).
 
 ### Exercícios indicados
 
@@ -271,4 +275,3 @@ Ao resolver, identifique população, amostra, unidade de análise, variáveis e
 - Apostila de Métodos Quantitativos, seções 1.1–1.3, páginas 8–10.
 - BARBETTA et al. *Estatística para cursos de engenharia e informática*, capítulo 1, seções 1.1–1.6, páginas 12–23; capítulo 2, seções 2.1–2.2.1, páginas 24–31.
 - PINHEIRO et al. *Estatística básica: a arte de trabalhar com dados*, capítulo 1, seções 1.1–1.2, páginas 20–23.
-- GORMAN, K. B.; WILLIAMS, T. D.; FRASER, W. R. Ecological sexual dimorphism and environmental variability within a community of Antarctic penguins. *PLoS ONE*, v. 9, n. 3, e90081, 2014.
