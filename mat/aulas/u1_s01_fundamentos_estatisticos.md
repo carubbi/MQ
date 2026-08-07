@@ -362,7 +362,7 @@ o quadro amostral, os períodos sem requisições e a execução efetiva do sort
 
 ## Estudo e exercícios
 
-### Materiais públicos
+### Materiais didáticos
 
 - [Apostila de Métodos Quantitativos](../apostila/apostila_mq.pdf): seções 1.1–1.3, páginas 8–10.
 - [Banco de questões e provas 2026.2](../apostila/banco_questoes_provas_2026_2.pdf): seção 1.1, páginas 7–13.

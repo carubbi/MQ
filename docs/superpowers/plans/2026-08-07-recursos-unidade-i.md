@@ -545,7 +545,7 @@ Add public links:
 - `../apostila/apostila_mq.pdf`, sections 1.1–1.3, pages 8–10;
 - `../apostila/banco_questoes_provas_2026_2.pdf`, section 1.1, pages 7–13.
 
-Consolidate these links in **Materiais públicos**, under **Estudo e
+Consolidate these links in **Materiais didáticos**, under **Estudo e
 exercícios**. Do not repeat internal teaching-material links in the conceptual
 slides.
 

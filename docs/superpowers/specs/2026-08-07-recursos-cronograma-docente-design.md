@@ -149,7 +149,7 @@ integradores e não introduzirão conteúdo curricular novo.
   preferencialmente, para fontes oficiais que permitam explorar o conceito em
   um caso autêntico.
 - Links para apostila, banco de questões ou outros recursos públicos da
-  disciplina serão consolidados em **Materiais públicos**, dentro de
+  disciplina serão consolidados em **Materiais didáticos**, dentro de
   **Estudo e exercícios**, com intervalos de seções ou páginas que cubram os
   itens usados. Esses links não serão repetidos nos blocos conceituais.
 - O rótulo **Fonte pública** será inserido apenas nos blocos conceituais em que
