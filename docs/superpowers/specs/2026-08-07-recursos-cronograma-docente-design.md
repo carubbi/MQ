@@ -133,37 +133,135 @@ operacional deverá distinguir explicitamente os dois estados:
 
 ### 6.2 Estrutura
 
-Cada roteiro conterá:
+As seções representam funções pedagógicas, e não uma quantidade rígida de
+células. Os itens 1 a 6 e 8 a 13 serão obrigatórios; o item 7 será condicional.
+Cada roteiro será organizado por:
 
-1. identificação, unidade, semana, data, conteúdos formais, duração, dados,
-   bibliotecas previstas e nome do futuro `.ipynb`;
-2. resultado de aprendizagem;
-3. contexto e pergunta-problema;
-4. preparação conceitual;
-5. dados, entradas e dependências;
-6. previsão antes da implementação;
-7. caso reduzido ou resolução manual;
-8. sequência planejada de células;
-9. verificação e contraste;
-10. evidência de aprendizagem;
-11. síntese e limitações;
-12. estudo, exercícios e referências;
-13. critérios para implementação futura.
+1. **Identificação:** unidade, semana, data, conteúdos formais, duração, fonte
+   dos dados ou mecanismo gerador, bibliotecas previstas e justificadas e nome
+   do futuro `.ipynb`. A implementação validará a necessidade e a versão das
+   dependências antes de fixá-las.
+2. **Resultado de aprendizagem:** resultado observável derivado do planejamento
+   da semana, sem criar uma exigência adicional.
+3. **Contexto e pergunta-problema:** situação, unidade de análise ou fenômeno,
+   dados disponíveis, pergunta estatística ou probabilística e limites iniciais
+   da investigação. Uma tarefa computacional, como “produzir um gráfico”, não
+   substituirá a pergunta substantiva.
+4. **Preparação conceitual:** somente definições, notação, propriedades,
+   pressupostos, critérios de escolha e riscos de interpretação necessários à
+   atividade. Esta seção não reproduzirá um capítulo das referências nem
+   duplicará integralmente os slides.
+5. **Dados, entradas e dependências:** procedência, arquivos ou mecanismo
+   sintético, variáveis, unidades, caminhos relativos, preparação necessária e
+   dependências previstas. Quando não houver arquivo externo, o roteiro
+   declarará essa condição em vez de criar uma entrada artificial.
+6. **Antecipação conceitual antes do cálculo ou da execução:** questão a ser
+   respondida e justificada antes de realizar o cálculo ou observar a saída
+   computacional.
+7. **Caso reduzido, resolução manual ou decisão conceitual:** preparação para a
+   aplicação computacional, utilizada somente quando for didaticamente
+   pertinente.
+8. **Sequência funcional do futuro notebook:** blocos de formulação,
+   preparação, cálculo, código, visualização, verificação e interpretação
+   necessários à progressão da semana, sem fixar prematuramente a quantidade
+   exata de células.
+9. **Verificação e contraste:** comparação apropriada ao conteúdo entre
+   antecipação e resultado, cálculo manual e computacional, teoria e simulação,
+   representações alternativas ou condições esperadas e observadas.
+10. **Evidência de aprendizagem:** produto breve definido no planejamento e no
+    cronograma. A evidência do notebook permanecerá separada do acompanhamento
+    e da entrega da AP.
+11. **Síntese e limitações:** perguntas que o futuro notebook deverá retomar
+    para responder ao problema e delimitar pressupostos, incertezas e alcance.
+    O roteiro não antecipará conclusões dependentes de resultados ainda não
+    calculados.
+12. **Estudo, exercícios e referências:** materiais rastreáveis ao grafo e
+    pertinentes à semana. Somente recursos públicos existentes serão ligados
+    para acesso discente; referências privadas serão registradas apenas como
+    fontes de autoria.
+13. **Critérios para implementação futura:** verificações específicas do
+    notebook da semana, sem repetir mecanicamente requisitos que não se
+    apliquem ao conteúdo.
 
-### 6.3 Especificação das futuras células
+### 6.3 Antecipação conceitual
 
-Cada bloco planejado declarará:
+A antecipação não será uma previsão do professor sobre a implementação do
+código. Ela será uma solicitação para que o estudante se comprometa com um
+raciocínio antes de observar a saída.
 
-- tipo da futura célula: Markdown, código ou interpretação;
-- finalidade estatística;
+Conforme o conteúdo, a questão poderá solicitar:
+
+- previsão da direção, da ordem de grandeza, da forma ou do efeito esperado;
+- classificação de variáveis, eventos, dados ou estruturas;
+- escolha justificada de medida, gráfico, modelo ou procedimento;
+- identificação prévia de pressupostos, riscos e limitações.
+
+A exatidão da antecipação não será o objetivo principal; a justificativa será
+obrigatória. A resposta será retomada na verificação e no contraste.
+
+### 6.4 Caso reduzido, resolução manual ou decisão conceitual
+
+Esta seção será condicional. Ela poderá conter:
+
+- cálculo manual curto;
+- interpretação de uma fórmula, tabela ou gráfico;
+- classificação conceitual;
+- escolha justificada de procedimento;
+- análise de um contraexemplo.
+
+Quando nenhuma dessas formas contribuir para a aprendizagem da semana, a seção
+será omitida. Não será criado um cálculo manual meramente para satisfazer o
+modelo.
+
+### 6.5 Especificação dos blocos do futuro notebook
+
+O roteiro distinguirá:
+
+- **tipo da célula:** Markdown ou código;
+- **função pedagógica:** formulação, explicação, antecipação, cálculo,
+  processamento, visualização, verificação, interpretação, evidência ou
+  síntese.
+
+“Interpretação” não será tratada como terceiro tipo de célula, pois será
+implementada em Markdown.
+
+Cada bloco declarará apenas os elementos aplicáveis:
+
+- finalidade estatística ou probabilística;
+- tipo e função das células previstas;
 - entradas;
-- operação computacional prevista;
-- saída esperada quanto à sua forma, sem inventar valores;
-- verificações necessárias;
-- perguntas interpretativas;
-- pressupostos e limitações a registrar.
+- conceito, fórmula ou operação;
+- ação computacional e bibliotecas, quando houver código;
+- produto ou forma esperada da saída, sem inventar valores;
+- verificações;
+- pergunta interpretativa;
+- pressupostos e limitações;
+- tempo aproximado, quando necessário para verificar a viabilidade da semana.
 
-### 6.4 Critérios para a implementação posterior
+O roteiro organizará blocos funcionais, e não uma lista imutável de cada célula.
+A implementação poderá dividir ou combinar células sem alterar a progressão
+pedagógica aprovada.
+
+### 6.6 Verificação, evidência e síntese
+
+A verificação deverá usar ao menos uma forma pertinente ao conteúdo:
+
+- confrontar antecipação e resultado;
+- conferir computacionalmente um caso reduzido;
+- comparar valor teórico e resultado simulado;
+- comparar dados originais e preparados;
+- contrastar medidas, representações, amostras ou modelos;
+- verificar condições, unidades, escalas e invariantes.
+
+A evidência será observável, compatível com a carga da semana e composta por
+resultado e justificativa. Código executado isoladamente não constituirá
+evidência suficiente.
+
+A síntese do roteiro especificará as perguntas de fechamento e as limitações a
+examinar. A resposta final será escrita no `.ipynb` depois da obtenção dos
+resultados.
+
+### 6.7 Critérios para a implementação posterior
 
 O roteiro preparará uma implementação que:
 
@@ -173,7 +271,11 @@ O roteiro preparará uma implementação que:
 - seja reproduzível;
 - apresente tabelas e gráficos identificados;
 - interprete cada saída relevante;
-- mantenha separação entre notebook guiado, exercícios e AP.
+- mantenha separação entre notebook guiado, exercícios e AP;
+- inclua somente bibliotecas e operações necessárias;
+- preserve a pergunta estatística como guia do código;
+- permita verificar cada resultado central;
+- satisfaça os critérios específicos definidos para a semana.
 
 ## 7. Uso do grafo
 
@@ -258,6 +360,11 @@ Cada unidade deverá satisfazer:
 - exemplos resolvidos com interpretação;
 - ausência de resultados computacionais inventados;
 - ausência de afirmação de executabilidade nos roteiros;
+- antecipação formulada como raciocínio discente, e não como previsão técnica da
+  implementação;
+- caso reduzido ou resolução manual somente quando houver função didática;
+- distinção entre tipo de célula e função pedagógica;
+- evidência correspondente ao planejamento e separada da AP;
 - ausência de títulos vazios, marcadores genéricos, `TODO` ou `TBD`;
 - links relativos válidos;
 - recursos existentes antes da inclusão no cronograma;
