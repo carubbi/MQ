@@ -52,16 +52,18 @@ os registros representam todo o funcionamento do serviço.
 
 > Que perguntas sobre o serviço podem ser respondidas com esses registros?
 
-A Estatística organiza métodos para formular perguntas, obter dados, representar a variabilidade, analisar evidências e comunicar conclusões com suas limitações.
+A **Estatística** organiza métodos para formular perguntas, obter dados,
+representar a **variabilidade**, analisar **evidências** e comunicar
+**conclusões** com suas limitações.
 
 Uma investigação estatística pode ser organizada em seis movimentos:
 
-1. delimitar o problema;
-2. formular uma pergunta respondível;
-3. definir população, unidade de análise e variáveis;
-4. obter ou reconhecer a origem dos dados;
-5. analisar a variabilidade e os padrões;
-6. comunicar a conclusão e seu alcance.
+1. delimitar o **problema**;
+2. formular uma **pergunta respondível**;
+3. definir **população**, **unidade de análise** e **variáveis**;
+4. obter ou reconhecer a **origem dos dados**;
+5. analisar a **variabilidade** e os **padrões**;
+6. comunicar a **conclusão** e seu **alcance**.
 
 **Exemplo - Investigação do tempo de resposta de um serviço.** Uma equipe
 recebe relatos de lentidão e organiza a investigação:
@@ -92,9 +94,10 @@ Fonte: adaptado de Barbetta, Bornia e Reis (2010, seções 1.1–1.4).
 - **Variável:** característica observada ou calculada para cada unidade.
 - **Valor:** realização registrada de uma variável em determinada unidade.
 
-Na tabela, cada linha é uma observação e a unidade de análise é uma requisição,
-não um servidor. `Servidor` e `status` são variáveis qualitativas, `latência` é
-quantitativa em milissegundos e `instante` registra a posição temporal.
+Na tabela, cada linha é uma **observação** e a **unidade de análise** é uma
+requisição, não um servidor. `Servidor` e `status` são **variáveis
+qualitativas**, `latência` é uma **variável quantitativa** medida em
+milissegundos e `instante` registra a **posição temporal**.
 
 Uma linha não é automaticamente uma pessoa, um dispositivo ou um evento. Seu
 significado depende da documentação e do processo que gerou o conjunto.
@@ -205,8 +208,8 @@ Para uma população definida de requisições, considere:
 
 - $N$: número de unidades da população definida;
 - $n$: número de unidades observadas na amostra;
-- $\theta$: parâmetro populacional, como uma média ou proporção;
-- $\widehat{\theta}$: estatística amostral usada para descrever os dados ou estimar $\theta$.
+- $\theta$: **parâmetro populacional**, como uma média ou proporção;
+- $\widehat{\theta}$: **estatística amostral** usada para descrever os dados ou estimar $\theta$.
 
 Em uma amostra:
 
