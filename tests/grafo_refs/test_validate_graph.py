@@ -183,6 +183,35 @@ class ValidateGraphTests(unittest.TestCase):
         errors = validate_graph(graph, self.schema, REPOSITORY_ROOT)
         self.assert_has_error(errors, "conteúdo concluído sem referência: 03.04")
 
+    def test_noneditorial_edge_cannot_cover_a_completed_content(self):
+        """Catches a topic or source masquerading as a real reference."""
+        graph = build_graph("2026-08-06", DEFAULT_CURATED_DIRECTORY)
+        graph["relacoes"] = [
+            edge
+            for edge in graph["relacoes"]
+            if not (
+                edge["tipo"] == "corresponde_a"
+                and edge["destino"] == "conteudo-03-04"
+            )
+        ]
+        graph["relacoes"].append(
+            {
+                "origem": "topico-amostra",
+                "tipo": "corresponde_a",
+                "destino": "conteudo-03-04",
+            }
+        )
+
+        errors = validate_graph(graph, self.schema, REPOSITORY_ROOT)
+        self.assert_has_error(
+            errors,
+            "origem curricular não é referência editorial: topico-amostra",
+        )
+        self.assert_has_error(
+            errors,
+            "conteúdo concluído sem referência: 03.04",
+        )
+
     def test_rejects_curricular_relationship_without_curriculum_content(self):
         """Catches corresponde_a relations that do not target a completed content."""
         errors = self.errors_for(

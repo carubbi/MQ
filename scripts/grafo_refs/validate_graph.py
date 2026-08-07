@@ -137,6 +137,7 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
     }
     curricular_edges_by_origin = defaultdict(set)
     curricular_edges_by_code = defaultdict(set)
+    curricular_candidates = []
     for edge in edges:
         if not isinstance(edge, dict):
             continue
@@ -153,13 +154,45 @@ def validate_graph(graph: dict, schema: dict, root: Path) -> list[str]:
         if edge.get("tipo") == "corresponde_a":
             code = curriculum_by_id.get(destination)
             if code is not None:
-                curricular_edges_by_origin[origin].add(code)
-                curricular_edges_by_code[code].add(origin)
+                curricular_candidates.append((origin, code))
             if code not in COMPLETED_CONTENTS:
                 errors.append(
                     "correspondência curricular sem conteúdo curricular concluído: "
                     f"{destination}"
                 )
+
+    editorial_types = {"capitulo", "secao", *ITEM_TYPES}
+    source_ids = {
+        node_id
+        for node_id, node in nodes_by_id.items()
+        if node.get("tipo") == "fonte"
+    }
+
+    def has_source_ancestor(node_id):
+        pending = list(parents.get(node_id, []))
+        visited = {node_id}
+        while pending:
+            ancestor_id = pending.pop()
+            if ancestor_id in source_ids:
+                return True
+            if ancestor_id in visited:
+                continue
+            visited.add(ancestor_id)
+            pending.extend(parents.get(ancestor_id, []))
+        return False
+
+    for origin, code in curricular_candidates:
+        origin_node = nodes_by_id[origin]
+        if (
+            origin_node.get("tipo") not in editorial_types
+            or not has_source_ancestor(origin)
+        ):
+            errors.append(
+                f"origem curricular não é referência editorial: {origin}"
+            )
+            continue
+        curricular_edges_by_origin[origin].add(code)
+        curricular_edges_by_code[code].add(origin)
 
     for code in sorted(COMPLETED_CONTENTS):
         if not curricular_edges_by_code[code]:

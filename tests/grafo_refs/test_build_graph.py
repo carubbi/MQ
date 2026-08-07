@@ -6,9 +6,14 @@ from unittest.mock import patch
 
 import fitz
 
-from scripts.grafo_refs.build_graph import build_graph, write_graph
+from scripts.grafo_refs.build_graph import (
+    REPOSITORY_ROOT,
+    build_graph,
+    write_graph,
+)
 from scripts.grafo_refs.curation import common
 from scripts.grafo_refs.curate_grafo import build_curations, write_curations
+from scripts.grafo_refs.validate_graph import validate_graph
 
 
 COMPLETED = [
@@ -22,6 +27,7 @@ TOPICS_PATH = (
     / "scripts/grafo_refs/data/topicos_t199.json"
 )
 CURATIONS_DIRECTORY = TOPICS_PATH.parent / "curadorias"
+SCHEMA_PATH = REPOSITORY_ROOT / "prof/refs/mapas/schema_grafo_referencias.json"
 CURATED_SOURCES = (
     "apostila-mq",
     "banco-questoes-2026-2",
@@ -198,8 +204,8 @@ class BuildGraphTests(unittest.TestCase):
                         (CURATIONS_DIRECTORY / f"{source}.json").read_bytes(),
                     )
 
-    def test_builds_the_declared_complete_coverage_deterministically(self):
-        """Catches a build that changes coverage, inventory, or ordering."""
+    def test_builds_complete_metadata_but_requires_semantic_validation(self):
+        """Keeps construction deterministic without blessing sparse inputs."""
         with tempfile.TemporaryDirectory() as temporary_directory:
             curated_dir = Path(temporary_directory)
             (curated_dir / "barbetta-2010.json").write_text(
@@ -240,6 +246,11 @@ class BuildGraphTests(unittest.TestCase):
         self.assertEqual(
             build_a["relacoes"],
             sorted(build_a["relacoes"], key=lambda edge: (edge["origem"], edge["tipo"], edge["destino"])),
+        )
+        schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
+        self.assertIn(
+            "conteúdo concluído sem referência: 03.04",
+            validate_graph(build_a, schema, REPOSITORY_ROOT),
         )
 
     def test_writes_utf8_json_with_a_final_newline(self):
