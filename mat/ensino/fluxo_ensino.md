@@ -22,8 +22,13 @@ Consulte [turmas e horários](turmas_2026_2.md) e o [calendário acadêmico](cal
 
 ## Materiais de apoio
 
-- Os notebooks guiados da Unidade I estão em
-  [`mat/aulas/und1/`](../aulas/und1/).
+- A [apostila de Métodos Quantitativos](../apostila/apostila_mq.pdf) e o
+  [banco de questões e provas 2026.2](../apostila/banco_questoes_provas_2026_2.pdf)
+  são materiais públicos da disciplina.
+- Os notebooks estão em construção em `mat/notebooks/`. A conclusão e a
+  publicação dos notebooks da Unidade I dependem do subgrafo completo dessa
+  unidade.
+- Os slides serão produzidos em Markdown e publicados em `mat/aulas/`.
 - Os conjuntos de dados didáticos estão em [`mat/data/`](../data/).
 - O [projeto de ensino](proj_ensino_2026.md) define objetivos, conteúdos, carga horária e critérios institucionais.
 
