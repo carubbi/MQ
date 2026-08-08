@@ -13,7 +13,7 @@
 ## Agenda
 
 - **Duração de referência:** 200 minutos, distribuíveis conforme a configuração
-  dos encontros.
+  das aulas.
 - **Organização:** ciclo integrado com fundamentação científica, resolução
   manual, aplicação computacional e interpretação.
 

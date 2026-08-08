@@ -9,14 +9,14 @@
 - Os notebooks devem usar caminhos relativos, registrar dependências e executar integralmente sem estado oculto.
 - Tabelas, gráficos e resultados numéricos devem ser apresentados com identificação, contexto e interpretação.
 
-## Organização dos encontros
+## Organização das aulas
 
 A turma `T199-64/65` tem dois blocos consecutivos às sextas-feiras:
 
 - **turma 64 — bloco teórico:** 15h30 às 17h10;
 - **turma 65 — bloco prático:** 17h20 às 19h.
 
-Os conteúdos conceituais sustentam a aplicação computacional do mesmo encontro. A separação entre os blocos não significa independência entre teoria e prática.
+Os conteúdos conceituais sustentam a aplicação computacional da mesma aula. A separação entre os blocos não significa independência entre teoria e prática.
 
 Consulte [turmas e horários](turmas_2026_2.md) e o [calendário acadêmico](calendario_2026_2.md).
 
