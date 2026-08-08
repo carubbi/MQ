@@ -1,4 +1,4 @@
-<img src="assets/imgs/UNIFOR_logo.png" width="400">
+<img src="https://raw.githubusercontent.com/carubbi/MQ/main/notebooks/assets/imgs/UNIFOR_logo.png" width="400">
 <br>
 <b>
 <font size="6" face="arial" color="blue">
