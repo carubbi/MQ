@@ -1,9 +1,6 @@
-bkp/
-docs/
-prof/
+.interno/
 scripts/
 tests/
-tmp/
 .venv/
 .DS_Store
 __pycache__/
