@@ -1,114 +1,102 @@
-# Versões discentes e resolvidas dos notebooks
+# Publicação dos notebooks finalizados
 
 ## Objetivo
 
-Manter duas apresentações de cada notebook didático:
+Manter três papéis distintos para os notebooks:
 
-- `mat/notebooks/<nome>.ipynb`: versão discente, com espaços de resposta vazios;
-- `mat/notebooks/resolvidos/<nome>.ipynb`: versão canônica, com respostas e códigos preenchidos.
+- `prof/notebooks/`: fonte canônica e permanente do professor;
+- `mat/notebooks/`: notebooks discentes ainda em elaboração;
+- `mat/notebooks/resolvidos/`: cópias finalizadas para consulta dos estudantes.
 
-A versão resolvida será a única editada manualmente. A versão discente será
-gerada por script para impedir divergências de enunciados, imagens, metadados e
-correções.
+Um notebook docente nunca será movido nem apagado durante a publicação. O
+processo apenas copiará versões finalizadas para a pasta discente.
 
-## Escopo inicial
+## Convenção de finalização
 
-A migração inicial abrangerá somente notebooks que já tenham respostas reais.
-Atualmente, isso inclui `u1_s01_fundamentos_estatisticos_aula01.ipynb`: sua
-versão discente está em `mat/notebooks/` e sua versão completa está em
-`prof/notebooks/`. Ambas possuem 62 células com IDs correspondentes. A Aula 2
-possui células de resposta vazias, e os notebooks posteriores possuem apenas o
-cabeçalho; por isso, eles permanecerão apenas na raiz até receberem conteúdo
-resolvido.
+Um arquivo localizado diretamente em `prof/notebooks/` será considerado
+finalizado quando seu nome corresponder integralmente à expressão regular:
 
-Não serão criadas cópias vazias dentro de `resolvidos/`, pois isso comunicaria
-incorretamente que existe um gabarito disponível.
+```text
+^u[1-9][0-9]*_.+\.ipynb$
+```
 
-## Marcação das respostas
+Na prática, o nome deve começar por `u`, seguido do número positivo da unidade
+e de `_`. Nomear um notebook segundo esse padrão equivale a autorizar sua
+publicação para os estudantes.
 
-As células que contêm respostas receberão a tag de metadados `solution` na
-versão canônica. Cada uma também armazenará sua apresentação discente em
-`metadata.mq.student_source`. Esse campo será uma lista de linhas, no mesmo
-formato de `source`, e poderá ser vazio quando a resposta discente deva ser uma
-célula completamente vazia.
+Arquivos sem esse prefixo são auxiliares ou permanecem restritos à área do
+professor. Atualmente, `examples.ipynb` pertence a essa categoria e não será
+publicado.
 
-Durante a geração da versão discente:
+## Publicação
 
-- células com a tag `solution` terão `source` substituído pelo conteúdo de
-  `metadata.mq.student_source`;
-- em células de código `solution`, `outputs` serão esvaziados e
-  `execution_count` será definido como `null`;
-- células sem a tag serão copiadas sem alteração;
-- a tag `solution` e o campo `metadata.mq` serão retirados das células geradas
-  para não expor respostas ou detalhes editoriais aos estudantes.
+O script `scripts/publicar_notebooks_resolvidos.py` examinará apenas os arquivos
+`.ipynb` diretamente contidos em `prof/notebooks/`. Para cada nome finalizado,
+copiará o arquivo para `mat/notebooks/resolvidos/`, preservando o mesmo nome e o
+mesmo conteúdo.
 
-Enunciados em células próprias devem permanecer sem a tag. Quando uma célula de
-código combinar comentário-guia e resposta, o comentário será preservado em
-`student_source` e apenas a implementação será omitida da versão discente.
+A publicação será determinística e idempotente. Uma nova execução sem mudanças
+nas fontes não deverá produzir diferenças no Git. O script criará a pasta de
+destino quando necessário e nunca excluirá automaticamente arquivos já
+publicados.
 
-## Gerador
+O processo falhará antes de copiar qualquer arquivo quando:
 
-O script `scripts/gerar_notebooks_discentes.py` receberá um notebook resolvido
-ou processará todos os arquivos em `mat/notebooks/resolvidos/`. Para cada fonte,
-gravará a versão discente de mesmo nome diretamente em `mat/notebooks/`.
-
-O script falhará sem sobrescrever o destino quando:
-
-- o arquivo não for um notebook JSON válido;
-- o notebook resolvido não contiver nenhuma célula `solution`;
-- uma célula `solution` não possuir `metadata.mq.student_source` válido;
-- o destino calculado escapar de `mat/notebooks/`;
-- houver colisão de nomes durante uma execução em lote.
-
-A geração será determinística: executar novamente sem alterar a fonte não deve
-produzir diferenças no Git.
+- um notebook selecionado não contiver JSON válido;
+- o nome de destino escapar de `mat/notebooks/resolvidos/`;
+- uma referência local `assets/imgs/` estiver presente;
+- dois arquivos resultarem no mesmo destino.
 
 ## Imagens e portabilidade
 
-As duas versões conservarão as URLs absolutas em
-`raw.githubusercontent.com/carubbi/MQ/main/mat/notebooks/assets/imgs/`. O
-gerador não copiará imagens nem reintroduzirá caminhos relativos, de modo que os
-notebooks continuem utilizáveis no Jupyter e no Colab.
+Os notebooks docentes finalizados deverão usar URLs absolutas sob:
 
-## Documentação
+```text
+https://raw.githubusercontent.com/carubbi/MQ/main/mat/notebooks/assets/imgs/
+```
 
-`mat/notebooks/README.md` explicará:
+Antes da primeira publicação, as referências relativas existentes nas Aulas 1
+e 2 serão corrigidas em `prof/notebooks/`. Como a publicação será uma cópia
+literal, as versões em `mat/notebooks/resolvidos/` conservarão as mesmas URLs e
+funcionarão tanto no Jupyter quanto no Colab, desde que haja acesso à internet.
 
-- qual pasta contém cada versão;
-- que `resolvidos/` é a fonte canônica;
-- como marcar células de resposta;
-- como executar o gerador;
-- que arquivos resolvidos no mesmo repositório são publicamente acessíveis.
+## Escopo inicial
 
-As referências discentes existentes no README principal e no cronograma
-continuarão apontando para `mat/notebooks/<nome>.ipynb`.
+Os seguintes notebooks satisfazem a convenção e serão publicados inicialmente:
 
-## Relação com `prof/notebooks`
+- `u1_s01_fundamentos_estatisticos_aula01.ipynb`;
+- `u1_s01_fundamentos_estatisticos_aula02.ipynb`.
 
-A versão completa da Aula 1 em `prof/notebooks/` fornecerá as respostas para a
-migração inicial. A versão discente atual em `mat/notebooks/` fornecerá os
-`student_source`, os textos atualizados e as URLs externas. A associação será
-feita pelo `id` de cada célula, e a migração falhará se a sequência de IDs ou os
-tipos das células não forem compatíveis.
+`prof/notebooks/examples.ipynb` não satisfaz a convenção e permanecerá apenas
+na área docente. Os notebooks existentes diretamente em `mat/notebooks/` não
+serão removidos nem sobrescritos pelo processo, pois representam materiais em
+elaboração.
 
-Os arquivos em `prof/notebooks/` não serão apagados nesta etapa, pois o
-diretório também contém materiais que não são duplicatas diretas. Uma limpeza
-posterior deverá ser decidida separadamente.
+## Links públicos
+
+As referências aos dois notebooks finalizados no README principal e nos
+cronogramas docente e discente passarão a apontar para
+`mat/notebooks/resolvidos/`. Referências a notebooks em elaboração continuarão
+apontando para `mat/notebooks/`.
+
+`mat/notebooks/README.md` documentará a diferença entre as pastas, a convenção
+de nomes e o comando de publicação.
 
 ## Validação
 
-Testes automatizados deverão cobrir, no mínimo:
+Testes automatizados deverão comprovar:
 
-- substituição da resposta pelo `student_source`;
-- limpeza de outputs e contador de execução em células de código `solution`;
-- remoção dos metadados privados `solution` e `metadata.mq`;
-- preservação de células sem resposta, IDs e metadados relevantes;
-- rejeição de notebook sem tag `solution`;
-- rejeição de célula `solution` sem `student_source` válido;
-- geração determinística;
-- validação JSON dos notebooks de origem e destino;
-- ausência de referências locais `assets/imgs/` nas versões geradas.
+- seleção de nomes como `u1_...ipynb` e `u12_...ipynb`;
+- rejeição de `examples.ipynb`, `unidade1.ipynb`, `u0_teste.ipynb` e arquivos
+  fora de `prof/notebooks/`;
+- validação JSON antes de qualquer cópia;
+- rejeição de referências locais de imagem;
+- criação da pasta de destino;
+- cópia literal dos notebooks selecionados;
+- preservação de arquivos discentes em elaboração;
+- idempotência da publicação;
+- ausência de `examples.ipynb` em `mat/notebooks/resolvidos/`.
 
-A migração será considerada concluída quando a Aula 1 resolvida estiver na nova
-pasta, sua versão discente for reproduzível pelo script e as validações acima
-passarem.
+A migração estará concluída quando as Aulas 1 e 2 docentes tiverem URLs
+absolutas, suas cópias literais estiverem em `mat/notebooks/resolvidos/`, os
+links públicos apontarem para elas e todas as validações passarem.
