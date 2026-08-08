@@ -6,7 +6,7 @@ Material didático, notebooks, conjuntos de dados e atividades da disciplina.
 
 1. Confira as [turmas e os horários](mat/ensino/turmas_2026_2.md).
 2. Abra o [cronograma das turmas T199-64/65](mat/ensino/cronograma_2026_2_t199_64_65.md).
-3. Inicie pelo [material da semana 1](mat/aulas/u1_s01_fundamentos_estatisticos.md) e pelos notebooks [Aula 1](mat/notebooks/u1_s01_fundamentos_estatisticos_aula01.ipynb) e [Aula 2](mat/notebooks/u1_s01_fundamentos_estatisticos_aula02.ipynb).
+3. Inicie pelo [material da semana 1](mat/aulas/u1_s01_fundamentos_estatisticos.md) e pelos notebooks resolvidos [Aula 1](mat/notebooks/resolvidos/u1_s01_fundamentos_estatisticos_aula01.ipynb) e [Aula 2](mat/notebooks/resolvidos/u1_s01_fundamentos_estatisticos_aula02.ipynb).
 4. Consulte o [projeto de ensino](mat/ensino/proj_ensino_2026.md) para objetivos, conteúdos e avaliações.
 
 ## Disciplina e calendário
