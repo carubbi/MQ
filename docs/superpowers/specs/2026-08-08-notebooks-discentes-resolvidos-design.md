@@ -14,7 +14,9 @@ correções.
 ## Escopo inicial
 
 A migração inicial abrangerá somente notebooks que já tenham respostas reais.
-Atualmente, isso inclui `u1_s01_fundamentos_estatisticos_aula01.ipynb`. A Aula 2
+Atualmente, isso inclui `u1_s01_fundamentos_estatisticos_aula01.ipynb`: sua
+versão discente está em `mat/notebooks/` e sua versão completa está em
+`prof/notebooks/`. Ambas possuem 62 células com IDs correspondentes. A Aula 2
 possui células de resposta vazias, e os notebooks posteriores possuem apenas o
 cabeçalho; por isso, eles permanecerão apenas na raiz até receberem conteúdo
 resolvido.
@@ -25,20 +27,24 @@ incorretamente que existe um gabarito disponível.
 ## Marcação das respostas
 
 As células que contêm respostas receberão a tag de metadados `solution` na
-versão canônica.
+versão canônica. Cada uma também armazenará sua apresentação discente em
+`metadata.mq.student_source`. Esse campo será uma lista de linhas, no mesmo
+formato de `source`, e poderá ser vazio quando a resposta discente deva ser uma
+célula completamente vazia.
 
 Durante a geração da versão discente:
 
-- células de código com a tag `solution` terão `source`, `outputs` e
-  `execution_count` limpos, mas a célula vazia será preservada como espaço de
-  trabalho;
-- células Markdown com a tag `solution` serão removidas integralmente;
+- células com a tag `solution` terão `source` substituído pelo conteúdo de
+  `metadata.mq.student_source`;
+- em células de código `solution`, `outputs` serão esvaziados e
+  `execution_count` será definido como `null`;
 - células sem a tag serão copiadas sem alteração;
-- a tag `solution` será retirada das células geradas para não expor detalhes
-  editoriais desnecessários aos estudantes.
+- a tag `solution` e o campo `metadata.mq` serão retirados das células geradas
+  para não expor respostas ou detalhes editoriais aos estudantes.
 
-Enunciados e orientações devem permanecer em células sem a tag. Uma célula não
-deve misturar enunciado e resposta.
+Enunciados em células próprias devem permanecer sem a tag. Quando uma célula de
+código combinar comentário-guia e resposta, o comentário será preservado em
+`student_source` e apenas a implementação será omitida da versão discente.
 
 ## Gerador
 
@@ -50,6 +56,7 @@ O script falhará sem sobrescrever o destino quando:
 
 - o arquivo não for um notebook JSON válido;
 - o notebook resolvido não contiver nenhuma célula `solution`;
+- uma célula `solution` não possuir `metadata.mq.student_source` válido;
 - o destino calculado escapar de `mat/notebooks/`;
 - houver colisão de nomes durante uma execução em lote.
 
@@ -78,19 +85,26 @@ continuarão apontando para `mat/notebooks/<nome>.ipynb`.
 
 ## Relação com `prof/notebooks`
 
-Os arquivos existentes em `prof/notebooks/` serão usados apenas como evidência
-de comparação durante a migração inicial. Eles não serão apagados nesta etapa,
-pois o diretório também contém materiais que não são duplicatas diretas. Uma
-limpeza posterior deverá ser decidida separadamente.
+A versão completa da Aula 1 em `prof/notebooks/` fornecerá as respostas para a
+migração inicial. A versão discente atual em `mat/notebooks/` fornecerá os
+`student_source`, os textos atualizados e as URLs externas. A associação será
+feita pelo `id` de cada célula, e a migração falhará se a sequência de IDs ou os
+tipos das células não forem compatíveis.
+
+Os arquivos em `prof/notebooks/` não serão apagados nesta etapa, pois o
+diretório também contém materiais que não são duplicatas diretas. Uma limpeza
+posterior deverá ser decidida separadamente.
 
 ## Validação
 
 Testes automatizados deverão cobrir, no mínimo:
 
-- limpeza de código, outputs e contador de execução em células `solution`;
-- remoção de respostas Markdown;
+- substituição da resposta pelo `student_source`;
+- limpeza de outputs e contador de execução em células de código `solution`;
+- remoção dos metadados privados `solution` e `metadata.mq`;
 - preservação de células sem resposta, IDs e metadados relevantes;
 - rejeição de notebook sem tag `solution`;
+- rejeição de célula `solution` sem `student_source` válido;
 - geração determinística;
 - validação JSON dos notebooks de origem e destino;
 - ausência de referências locais `assets/imgs/` nas versões geradas.
