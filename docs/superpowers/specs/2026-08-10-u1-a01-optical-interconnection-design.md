@@ -51,10 +51,31 @@ O contexto recorrente apresentará as cinco variáveis de configuração:
 `Processor Utilization `, `Channel Waiting Time`, `Input Waiting Time`,
 `Network Response Time` e `Channel Utilization`.
 
-As abreviações espaciais `UN`, `HR`, `BR` e `PS` serão definidas. `T/R` será
-apresentada como a razão entre o tempo de transferência da mensagem e o tempo
-de execução da thread. A inconsistência entre alguns valores e a descrição da
-fonte será registrada como questão de qualidade, não resolvida nesta aula.
+As variáveis serão descritas conforme a documentação da UCI:
+
+| Variável no arquivo | Descrição documentada |
+| --- | --- |
+| `Node Number` | Número de nós da rede: 16 para a organização $4\times4$ e 64 para a organização $8\times8$. |
+| `Thread Number` | Número de threads existentes em cada nó no início da simulação. |
+| `Spatial Distribution` | Modelo espacial do tráfego sintético que determina a distribuição das origens e dos destinos das mensagens. |
+| `Temporal Distribution` | Modelo temporal de geração dos pacotes, nas modalidades cliente-servidor ou assíncrona. |
+| `T/R` | Razão entre o tempo de transferência da mensagem $T$ e o tempo de execução da thread $R$. |
+| `Processor Utilization ` | Proporção do tempo em que as threads permanecem em execução no processador. |
+| `Channel Waiting Time` | Tempo médio de espera de um pacote na fila do canal de saída até o atendimento pelo canal. |
+| `Input Waiting Time` | Tempo médio de espera de um pacote até o atendimento pelo processador. |
+| `Network Response Time` | Tempo entre a entrada de uma mensagem de requisição na fila do canal de saída e o recebimento da mensagem de resposta correspondente na fila de entrada. |
+| `Channel Utilization` | Proporção do tempo em que o canal permanece ocupado transferindo pacotes pela rede. |
+
+Em `Spatial Distribution`, as abreviações serão definidas como `UN`
+(*Uniform*), `HR` (*Hot Region*), `BR` (*Bit Reverse*) e `PS`
+(*Perfect Shuffle*). Em `Temporal Distribution`, `Client-Server` representará
+o tráfego em que um nó servidor responde às mensagens dos clientes;
+`Asynchronous` representará o tráfego inicialmente gerado de modo independente,
+cuja geração posterior pode depender das mensagens recebidas.
+
+A documentação não será ampliada com unidades que ela não declara. A
+inconsistência entre alguns valores e a descrição da fonte será registrada como
+questão de qualidade, não resolvida nesta aula.
 
 ## Aplicação computacional
 
@@ -75,6 +96,7 @@ A adaptação estará correta quando:
 - o arquivo oficial for carregado sem limpeza antecipada;
 - a unidade de análise não for confundida com nó, pacote ou thread;
 - os casos reduzidos forem compostos por dados do arquivo;
+- as dez variáveis forem descritas conforme a documentação da UCI;
 - as 15 colunas brutas e as dez variáveis documentadas forem distinguidas;
 - os problemas de estrutura e valores forem reconhecidos, mas não corrigidos;
 - os ciclos, exercícios existentes, duração e resultado de aprendizagem forem
