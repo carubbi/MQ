@@ -88,6 +88,45 @@ os valores regulares do arquivo aparecem na escala de 0 a 1. Assim, serão lidos
 como proporções; a expressão em porcentagem exige multiplicação por 100. A aula
 registrará essa diferença sem converter ou corrigir os dados brutos.
 
+### Como interpretar os valores
+
+A descrição das variáveis será seguida por uma tabela de leitura de valores. Os
+exemplos serão retirados do arquivo oficial e não serão apresentados como
+medições de pacotes ou nós individuais.
+
+| Variável | Exemplo | Como interpretar |
+| --- | ---: | --- |
+| `Node Number` | `64` | A rede simulada contém 64 nós, organizados em uma topologia $8\times8$. |
+| `Thread Number` | `4` | Cada nó iniciou a simulação com quatro threads. |
+| `Spatial Distribution` | `UN` | As origens e os destinos das mensagens seguem uma distribuição uniforme. |
+| `Temporal Distribution` | `Client-Server` | Clientes enviam requisições e o servidor produz as respostas correspondentes. |
+| `T/R` | `0,4` | O tempo de transferência corresponde a 40% do tempo de execução da thread. |
+| `Processor Utilization ` | `0,84` | O processador permaneceu executando threads durante aproximadamente 84% do tempo. |
+| `Channel Waiting Time` | `61,85` | Os pacotes aguardaram, em média, 61,85 ciclos de relógio na fila do canal de saída. |
+| `Input Waiting Time` | `235,78` | Os pacotes aguardaram, em média, 235,78 ciclos de relógio para serem atendidos pelo processador. |
+| `Network Response Time` | `1256,05` | Entre uma requisição e a resposta correspondente transcorreram, em média, 1.256,05 ciclos de relógio. |
+| `Channel Utilization` | `0,77` | O canal permaneceu ocupado transmitindo pacotes durante aproximadamente 77% do tempo. |
+
+As cinco métricas de desempenho serão apresentadas como médias produzidas pela
+simulação. Elas não descrevem um pacote, nó ou thread individual.
+
+### Como interpretar as métricas conjuntamente
+
+As utilizações não serão classificadas isoladamente como boas ou ruins. A
+leitura conjunta relacionará:
+
+- `Processor Utilization ` com `Input Waiting Time`;
+- `Channel Utilization` com `Channel Waiting Time`;
+- as duas esperas e as utilizações com `Network Response Time`.
+
+Utilização elevada acompanhada de espera elevada poderá indicar saturação.
+Utilização baixa acompanhada de espera baixa poderá representar baixa demanda,
+sem constituir necessariamente um problema.
+
+Valores de `Channel Utilization` superiores a 1 não receberão interpretação
+como proporção. Eles serão identificados na Aula 1 e investigados posteriormente
+na aula de qualidade e pré-processamento.
+
 ## Aplicação computacional
 
 O código permanecerá curto e didático. A leitura, a inspeção de dimensões, os
@@ -109,6 +148,8 @@ A adaptação estará correta quando:
 - os casos reduzidos forem compostos por dados do arquivo;
 - as dez variáveis forem descritas, com suas unidades ou a ausência delas,
   conforme a documentação da UCI;
+- cada variável receber um exemplo de leitura contextualizada;
+- as utilizações e os tempos de espera forem interpretados conjuntamente;
 - as 15 colunas brutas e as dez variáveis documentadas forem distinguidas;
 - os problemas de estrutura e valores forem reconhecidos, mas não corrigidos;
 - os ciclos, exercícios existentes, duração e resultado de aprendizagem forem
