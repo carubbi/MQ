@@ -60,11 +60,11 @@ As variáveis serão descritas conforme a documentação da UCI:
 | `Spatial Distribution` | Modelo espacial do tráfego sintético que determina a distribuição das origens e dos destinos das mensagens. | não se aplica |
 | `Temporal Distribution` | Modelo temporal de geração dos pacotes, nas modalidades cliente-servidor ou assíncrona. | não se aplica |
 | `T/R` | Razão entre o tempo de transferência da mensagem $T$ e o tempo de execução da thread $R$. | adimensional |
-| `Processor Utilization ` | Proporção do tempo em que as threads permanecem em execução no processador. | proporção do tempo* |
-| `Channel Waiting Time` | Tempo médio de espera de um pacote na fila do canal de saída até o atendimento pelo canal. | não informada pela UCI |
-| `Input Waiting Time` | Tempo médio de espera de um pacote até o atendimento pelo processador. | não informada pela UCI |
-| `Network Response Time` | Tempo entre a entrada de uma mensagem de requisição na fila do canal de saída e o recebimento da mensagem de resposta correspondente na fila de entrada. | não informada pela UCI |
-| `Channel Utilization` | Proporção do tempo em que o canal permanece ocupado transferindo pacotes pela rede. | proporção do tempo* |
+| `Processor Utilization ` | Proporção do tempo em que as threads permanecem em execução no processador. | proporção, entre 0 e 1\*\* |
+| `Channel Waiting Time` | Tempo médio de espera de um pacote na fila do canal de saída até o atendimento pelo canal. | ciclos de relógio* |
+| `Input Waiting Time` | Tempo médio de espera de um pacote até o atendimento pelo processador. | ciclos de relógio* |
+| `Network Response Time` | Tempo entre a entrada de uma mensagem de requisição na fila do canal de saída e o recebimento da mensagem de resposta correspondente na fila de entrada. | ciclos de relógio* |
+| `Channel Utilization` | Proporção do tempo em que o canal permanece ocupado transferindo pacotes pela rede. | proporção, entre 0 e 1\*\* |
 
 Em `Spatial Distribution`, as abreviações serão definidas como `UN`
 (*Uniform*), `HR` (*Hot Region*), `BR` (*Bit Reverse*) e `PS`
@@ -73,13 +73,20 @@ o tráfego em que um nó servidor responde às mensagens dos clientes;
 `Asynchronous` representará o tráfego inicialmente gerado de modo independente,
 cuja geração posterior pode depender das mensagens recebidas.
 
-A documentação não será ampliada com unidades que ela não declara. A
-inconsistência entre alguns valores e a descrição da fonte será registrada como
-questão de qualidade, não resolvida nesta aula.
+A documentação não declara explicitamente a unidade de cada métrica temporal.
+Quando a unidade for inferida, a aula identificará a inferência e apresentará
+sua justificativa. A inconsistência entre alguns valores e a descrição da fonte
+será registrada como questão de qualidade, não resolvida nesta aula.
 
-\* A documentação descreve as utilizações como percentuais do tempo, enquanto
-os valores regulares do arquivo aparecem predominantemente na escala de 0 a 1.
-A aula registrará essa diferença sem converter ou corrigir os dados.
+\* Unidade inferida: a documentação define o tempo de transferência $T$ e o
+tempo de execução $R$ em ciclos de relógio. Como espera e resposta são durações
+produzidas pela mesma simulação, serão interpretadas em ciclos de relógio. A
+fonte não declara essa unidade separadamente para cada métrica de saída.
+
+\*\* A documentação descreve as utilizações como percentuais do tempo, enquanto
+os valores regulares do arquivo aparecem na escala de 0 a 1. Assim, serão lidos
+como proporções; a expressão em porcentagem exige multiplicação por 100. A aula
+registrará essa diferença sem converter ou corrigir os dados brutos.
 
 ## Aplicação computacional
 
