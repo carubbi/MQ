@@ -53,18 +53,18 @@ O contexto recorrente apresentará as cinco variáveis de configuração:
 
 As variáveis serão descritas conforme a documentação da UCI:
 
-| Variável no arquivo | Descrição documentada | Unidade |
+| Variável no arquivo | Unidade | Descrição documentada |
 | --- | --- | --- |
-| `Node Number` | Número de nós da rede: 16 para a organização $4\times4$ e 64 para a organização $8\times8$. | nós |
-| `Thread Number` | Número de threads existentes em cada nó no início da simulação. | threads por nó |
-| `Spatial Distribution` | Modelo espacial do tráfego sintético que determina a distribuição das origens e dos destinos das mensagens. | não se aplica |
-| `Temporal Distribution` | Modelo temporal de geração dos pacotes, nas modalidades cliente-servidor ou assíncrona. | não se aplica |
-| `T/R` | Razão entre o tempo de transferência da mensagem $T$ e o tempo de execução da thread $R$. | adimensional |
-| `Processor Utilization ` | Proporção do tempo em que as threads permanecem em execução no processador. | proporção, entre 0 e 1\*\* |
-| `Channel Waiting Time` | Tempo médio de espera de um pacote na fila do canal de saída até o atendimento pelo canal. | ciclos de relógio* |
-| `Input Waiting Time` | Tempo médio de espera de um pacote até o atendimento pelo processador. | ciclos de relógio* |
-| `Network Response Time` | Tempo entre a entrada de uma mensagem de requisição na fila do canal de saída e o recebimento da mensagem de resposta correspondente na fila de entrada. | ciclos de relógio* |
-| `Channel Utilization` | Proporção do tempo em que o canal permanece ocupado transferindo pacotes pela rede. | proporção, entre 0 e 1\*\* |
+| `Node Number` | nós | Número de nós da rede: 16 para a organização $4\times4$ e 64 para a organização $8\times8$. |
+| `Thread Number` | threads por nó | Número de threads existentes em cada nó no início da simulação. |
+| `Spatial Distribution` | não se aplica | Modelo espacial do tráfego sintético que determina a distribuição das origens e dos destinos das mensagens. |
+| `Temporal Distribution` | não se aplica | Modelo temporal de geração dos pacotes, nas modalidades cliente-servidor ou assíncrona. |
+| `T/R` | adimensional | Razão entre o tempo de transferência da mensagem $T$ e o tempo de execução da thread $R$. |
+| `Processor Utilization ` | proporção, entre 0 e 1\*\* | Proporção do tempo em que as threads permanecem em execução no processador. |
+| `Channel Waiting Time` | ciclos de relógio* | Tempo médio de espera de um pacote na fila do canal de saída até o atendimento pelo canal. |
+| `Input Waiting Time` | ciclos de relógio* | Tempo médio de espera de um pacote até o atendimento pelo processador. |
+| `Network Response Time` | ciclos de relógio* | Tempo entre a entrada de uma mensagem de requisição na fila do canal de saída e o recebimento da mensagem de resposta correspondente na fila de entrada. |
+| `Channel Utilization` | proporção, entre 0 e 1\*\* | Proporção do tempo em que o canal permanece ocupado transferindo pacotes pela rede. |
 
 Em `Spatial Distribution`, as abreviações serão definidas como `UN`
 (*Uniform*), `HR` (*Hot Region*), `BR` (*Bit Reverse*) e `PS`
