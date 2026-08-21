@@ -22,14 +22,3 @@ Lattes: http://lattes.cnpq.br/5738786447903616 |
 GitHub: https://github.com/carubbi/
 
 [Unifor.br](https://unifor.br/) | [Instagram](https://www.instagram.com/uniforcomunica/?hl=pt-br) | [Facebook](https://www.facebook.com/uniforoficial/) | [Twitter](https://www.facebook.com/uniforoficial/)  | [LinkedIn](https://www.linkedin.com/school/university-of-fortaleza/?originalSubdomain=pt) | [TV Unifor](https://www.unifor.br/tv-unifor) | [G1/Ensinando e Aprendendo](https://g1.globo.com/ce/ceara/especial-publicitario/unifor/ensinando-e-aprendendo/)
-
-# Probabilidade e entrega da AP1
-
-- **Unidade:** I
-- **Semana:** 6
-- **Data:** 11/09/2026
-- **Conteúdos formais:** `02.01`
-- **Tópicos:** Experimento aleatório; Espaço amostral; Evento; Regra da adição; Regra do produto; Probabilidade condicional; Independência; Probabilidade total; Teorema de Bayes
-- **Resultado de aprendizagem:** representar eventos e calcular probabilidades, aplicando condicionamento, probabilidade total e Teorema de Bayes a problemas reduzidos.
-
----

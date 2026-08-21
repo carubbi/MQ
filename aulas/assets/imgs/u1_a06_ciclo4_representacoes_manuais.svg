@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+  <title id="title">Esboços manuais de quatro representações gráficas</title>
+  <desc id="desc">Painéis com gráfico de barras para três espécies, histograma para quatro massas, gráfico de linha para contagens em quatro datas e gráfico de dispersão para quatro pares de medidas do bico.</desc>
+  <rect width="1000" height="650" fill="#f5f7fa"/>
+
+  <!-- Barras -->
+  <g transform="translate(25 25)" font-family="Arial, sans-serif" fill="#273444">
+    <rect width="460" height="280" rx="8" fill="#ffffff" stroke="#b8c2cc" stroke-width="1.5"/>
+    <text x="20" y="30" font-size="18" font-weight="700" fill="#17212b">A. Barras — categorias separadas</text>
+    <g fill="none" stroke="#273444" stroke-width="2">
+      <line x1="65" y1="225" x2="425" y2="225"/>
+      <line x1="65" y1="225" x2="65" y2="55"/>
+    </g>
+    <g fill="none" stroke="#d8dee6" stroke-width="1" stroke-dasharray="4 4">
+      <line x1="65" y1="65" x2="425" y2="65"/>
+      <line x1="65" y1="129" x2="425" y2="129"/>
+      <line x1="65" y1="161" x2="425" y2="161"/>
+    </g>
+    <g fill="#2f6f9f" stroke="#1f4f73" stroke-width="1.5">
+      <rect x="105" y="65" width="65" height="160"/>
+      <rect x="225" y="129" width="65" height="96"/>
+      <rect x="345" y="161" width="65" height="64"/>
+    </g>
+    <g font-size="14">
+      <text x="133" y="58">5</text><text x="253" y="122">3</text><text x="373" y="154">2</text>
+    </g>
+    <g font-size="12" fill="#465565">
+      <text x="115" y="245">Adelie</text><text x="232" y="245">Gentoo</text><text x="343" y="245">Chinstrap</text>
+      <text x="20" y="140" text-anchor="middle" transform="rotate(-90 20 140)">Frequência</text>
+      <text x="110" y="268" font-size="13" font-style="italic">As barras não se tocam.</text>
+    </g>
+  </g>
+
+  <!-- Histograma -->
+  <g transform="translate(515 25)" font-family="Arial, sans-serif" fill="#273444">
+    <rect width="460" height="280" rx="8" fill="#ffffff" stroke="#b8c2cc" stroke-width="1.5"/>
+    <text x="20" y="30" font-size="18" font-weight="700" fill="#17212b">B. Histograma — intervalos contíguos</text>
+    <g fill="none" stroke="#273444" stroke-width="2">
+      <line x1="65" y1="225" x2="425" y2="225"/><line x1="65" y1="225" x2="65" y2="55"/>
+    </g>
+    <g fill="none" stroke="#d8dee6" stroke-width="1" stroke-dasharray="4 4">
+      <line x1="65" y1="75" x2="425" y2="75"/><line x1="65" y1="150" x2="425" y2="150"/>
+    </g>
+    <g fill="#2f6f9f" stroke="#1f4f73" stroke-width="1.5">
+      <rect x="95" y="75" width="100" height="150"/><rect x="195" y="150" width="100" height="75"/><rect x="295" y="150" width="100" height="75"/>
+    </g>
+    <g font-size="14">
+      <text x="140" y="68">2</text><text x="240" y="143">1</text><text x="340" y="143">1</text>
+    </g>
+    <g font-size="12" fill="#465565">
+      <text x="110" y="245">[3,4)</text><text x="210" y="245">[4,5)</text><text x="310" y="245">[5,6)</text>
+      <text x="165" y="263">Massa corporal (×1000 g)</text>
+      <text x="20" y="140" text-anchor="middle" transform="rotate(-90 20 140)">Frequência</text>
+    </g>
+  </g>
+
+  <!-- Linha -->
+  <g transform="translate(25 335)" font-family="Arial, sans-serif" fill="#273444">
+    <rect width="460" height="280" rx="8" fill="#ffffff" stroke="#b8c2cc" stroke-width="1.5"/>
+    <text x="20" y="30" font-size="18" font-weight="700" fill="#17212b">C. Linha — ordem temporal</text>
+    <g fill="none" stroke="#273444" stroke-width="2">
+      <line x1="65" y1="225" x2="425" y2="225"/><line x1="65" y1="225" x2="65" y2="55"/>
+    </g>
+    <g fill="none" stroke="#d8dee6" stroke-width="1" stroke-dasharray="4 4">
+      <line x1="65" y1="65" x2="425" y2="65"/><line x1="65" y1="145" x2="425" y2="145"/><line x1="65" y1="185" x2="425" y2="185"/>
+    </g>
+    <polyline points="105,65 205,145 305,185 405,65" fill="none" stroke="#2f6f9f" stroke-width="3"/>
+    <g fill="#c94c4c" stroke="#7c2525" stroke-width="1.5">
+      <circle cx="105" cy="65" r="6"/><circle cx="205" cy="145" r="6"/><circle cx="305" cy="185" r="6"/><circle cx="405" cy="65" r="6"/>
+    </g>
+    <g font-size="14">
+      <text x="98" y="53">8</text><text x="198" y="133">4</text><text x="298" y="173">2</text><text x="398" y="53">8</text>
+    </g>
+    <g font-size="12" fill="#465565">
+      <text x="97" y="245">09/11</text><text x="197" y="245">10/11</text><text x="297" y="245">11/11</text><text x="397" y="245">12/11</text>
+      <text x="20" y="140" text-anchor="middle" transform="rotate(-90 20 140)">Registros</text><text x="220" y="266">Data em 2007</text>
+    </g>
+  </g>
+
+  <!-- Dispersão -->
+  <g transform="translate(515 335)" font-family="Arial, sans-serif" fill="#273444">
+    <rect width="460" height="280" rx="8" fill="#ffffff" stroke="#b8c2cc" stroke-width="1.5"/>
+    <text x="20" y="30" font-size="18" font-weight="700" fill="#17212b">D. Dispersão — pares quantitativos</text>
+    <g fill="none" stroke="#273444" stroke-width="2">
+      <line x1="65" y1="225" x2="425" y2="225"/><line x1="65" y1="225" x2="65" y2="55"/>
+    </g>
+    <g fill="none" stroke="#d8dee6" stroke-width="1" stroke-dasharray="4 4">
+      <line x1="65" y1="65" x2="425" y2="65"/><line x1="65" y1="118" x2="425" y2="118"/><line x1="65" y1="172" x2="425" y2="172"/>
+    </g>
+    <g fill="#c94c4c" stroke="#7c2525" stroke-width="1.5">
+      <circle cx="288" cy="134" r="7"/><circle cx="317" cy="203" r="7"/><circle cx="375" cy="172" r="7"/><circle cx="115" cy="102" r="7"/>
+    </g>
+    <g font-size="12" fill="#465565">
+      <text x="58" y="245">36</text><text x="130" y="245">37</text><text x="202" y="245">38</text><text x="274" y="245">39</text><text x="346" y="245">40</text><text x="418" y="245">41</text>
+      <text x="41" y="228">17</text><text x="41" y="175">18</text><text x="41" y="121">19</text><text x="41" y="68">20</text>
+      <text x="185" y="265">Comprimento do bico (mm)</text>
+      <text x="20" y="140" text-anchor="middle" transform="rotate(-90 20 140)">Profundidade do bico (mm)</text>
+    </g>
+  </g>
+</svg>
