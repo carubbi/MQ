@@ -30,6 +30,14 @@ class DossierRenderingTests(unittest.TestCase):
         self.assertNotIn("[ ]", rendered)
         self.assertNotIn("[x]", rendered.casefold())
 
+    def test_renders_references_as_readable_lists_instead_of_tables(self):
+        rendered = render_dossier(VALID_MANIFEST)
+
+        self.assertIn("1. **`secao-populacao`**", rendered)
+        self.assertIn("   - **Fonte:** `fonte-a`", rendered)
+        self.assertIn("   - **Cobertura:** Definição de população e amostra.", rendered)
+        self.assertNotIn("| Referência |", rendered)
+
 
 if __name__ == "__main__":
     unittest.main()

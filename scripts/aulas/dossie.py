@@ -7,10 +7,6 @@ def _text_list(values: list[str]) -> str:
     return "; ".join(values) if values else "Nenhum."
 
 
-def _table_cell(value: object) -> str:
-    return str(value).replace("|", "\\|").replace("\n", " ")
-
-
 def _render_scope(scope: dict) -> list[str]:
     return [
         "### Incluídos",
@@ -42,23 +38,27 @@ def _render_topic(topic: dict) -> list[str]:
             f"{compatibility['convencao']} — {compatibility['observacao']}"
         ),
         "",
-        "| Referência | Fonte | Estado | Papéis | Páginas PDF | Cobertura | Notação |",
-        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
-    for reference in topic["referencias"]:
+    for index, reference in enumerate(topic["referencias"], start=1):
         pages = reference["paginas_pdf"]
         roles = ", ".join(reference["papeis"]) or "—"
-        values = [
-            f"`{reference['id']}`",
-            f"`{reference['fonte_id']}`",
-            reference["estado"],
-            roles,
-            f"{pages['inicio']}–{pages['fim']}",
-            reference["cobertura"],
-            reference["notacao"],
-        ]
-        lines.append("| " + " | ".join(_table_cell(value) for value in values) + " |")
-    lines.append("")
+        marker = f"{index}."
+        indentation = " " * (len(marker) + 1)
+        lines.extend(
+            [
+                f"{marker} **`{reference['id']}`**",
+                f"{indentation}- **Fonte:** `{reference['fonte_id']}`",
+                f"{indentation}- **Estado:** {reference['estado']}",
+                f"{indentation}- **Papéis:** {roles}",
+                (
+                    f"{indentation}- **Páginas PDF:** "
+                    f"{pages['inicio']}–{pages['fim']}"
+                ),
+                f"{indentation}- **Cobertura:** {reference['cobertura']}",
+                f"{indentation}- **Notação:** {reference['notacao']}",
+                "",
+            ]
+        )
     return lines
 
 
