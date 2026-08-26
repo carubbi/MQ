@@ -34,7 +34,8 @@ validados.
   decisões específicas de uma aula ou de um semestre.
 - O dossiê de curadoria em Markdown é derivado, regenerável e não recebe
   decisões manuais.
-- O manifesto YAML é a fonte canônica e editável da seleção docente.
+- O manifesto YAML é criado antes do dossiê e constitui a fonte canônica das
+  evidências de leitura, dos candidatos e da seleção docente.
 - Uma aula pode combinar livremente uma ou mais referências por tópico.
 - Referências diferentes devem ser compatibilizadas por meio da notação global
   da disciplina ou de exceção explícita registrada no manifesto.
@@ -110,6 +111,9 @@ delimitação da aula
 consulta ao grafo + leitura das páginas originais
         |
         v
+manifesto YAML inicial com candidatos e evidências
+        |
+        v
 dossiê Markdown derivado
         |
         v
@@ -146,11 +150,11 @@ aulas/u1_a02.md
 ```
 
 O dossiê e o YAML são privados e permanecerão sob `.interno/`, sem rastreamento
-pelo Git. O YAML preservará localmente a decisão docente e permitirá a
-reprodução da aula no mesmo ambiente. A reprodução em outro ambiente exigirá a
-transferência ou a restauração privada desse manifesto. A saída pública será o
-único arquivo gerado da aula; não haverá uma segunda cópia do material final na
-pasta interna.
+pelo Git. O YAML preservará localmente as evidências de leitura, os candidatos
+e a decisão docente e permitirá a reprodução do dossiê e da aula no mesmo
+ambiente. A reprodução em outro ambiente exigirá a transferência ou a
+restauração privada desse manifesto. A saída pública será o único arquivo
+gerado da aula; não haverá uma segunda cópia do material final na pasta interna.
 
 A convenção matemática global não pertencerá a uma aula ou semestre específico
 e permanecerá em:
@@ -191,27 +195,27 @@ O dossiê conterá:
 
 Cada informação proveniente do grafo deverá preservar o ID canônico da
 referência. Sínteses e comparações somente serão incluídas depois da consulta
-às páginas originais.
+às páginas originais e serão lidas do manifesto YAML inicial.
 
 ### 7.3 Regeneração
 
-O dossiê será totalmente regenerável. Nenhum campo de seleção será editado
-manualmente nele. Uma nova geração poderá alterar a apresentação de candidatos,
-mas não poderá modificar o manifesto YAML existente.
+O dossiê será totalmente regenerável a partir do manifesto YAML. Nenhum campo
+de evidência ou seleção será editado manualmente nele. Uma nova geração poderá
+alterar a apresentação, mas não poderá modificar o manifesto YAML existente.
 
 ## 8. Manifesto de seleção
 
 ### 8.1 Finalidade
 
-O manifesto registra a decisão docente de forma validável. Ele diferencia
-seleção, rejeição e adiamento para impedir que candidatos não escolhidos
-reapareçam silenciosamente.
+O manifesto registra de forma validável a leitura das fontes, os candidatos e
+a decisão docente. Ele diferencia seleção, rejeição e adiamento para impedir
+que candidatos não escolhidos reapareçam silenciosamente.
 
 ### 8.2 Estrutura conceitual
 
 O documento conterá metadados da aula, versão do contrato, estado da seleção,
-convenção matemática global, ciclos planejados, tópicos e aplicação no
-notebook.
+convenção matemática global, ciclos planejados, tópicos, evidências de leitura,
+referências candidatas e aplicação no notebook.
 
 Cada tópico terá:
 
@@ -221,8 +225,14 @@ estado: selecionado
 referencias:
   - id: barbetta-2010-sec-1-6
     papel: fundamentacao
+    paginas_pdf: [18, 23]
+    cobertura: "População, amostra, parâmetro e estatística."
+    notacao: "N para tamanho da população e n para tamanho da amostra."
   - id: navidi-2024-sec-1-1
     papel: complementar
+    paginas_pdf: [25, 34]
+    cobertura: "Amostragem, representatividade e vieses."
+    notacao: "Compatível com a distinção entre população e amostra."
 compatibilizacao:
   convencao: notacao_global
   observacao: "Traduzir a notação das fontes para a convenção da disciplina."
@@ -238,6 +248,12 @@ Os papéis de referência serão `fundamentacao`, `complementar`, `contraponto`,
 Um tópico selecionado exigirá ao menos uma referência de `fundamentacao`.
 Referências adicionais poderão cumprir mais de um papel por meio de entradas
 distintas somente quando a distinção for necessária e justificada.
+
+Cada referência candidata exigirá páginas verificadas, síntese de cobertura e
+registro da notação relevante. Divergências conceituais, terminológicas ou
+matemáticas serão registradas no tópico antes de o dossiê ser renderizado. O
+estado inicial de todos os candidatos será `pendente`; a geração não presumirá
+seleção.
 
 ### 8.3 Compatibilização
 
@@ -378,9 +394,10 @@ decisão docente:
 1. extrair do cronograma o escopo de `u1_a02`;
 2. localizar no grafo os tópicos e referências candidatos;
 3. consultar as páginas originais necessárias;
-4. gerar `.interno/prof/aulas/2026-2/u1_a02/dossie.md`;
-5. gerar `.interno/prof/aulas/2026-2/u1_a02/selecao.yaml` com estrutura válida,
-   ainda sem escolhas presumidas;
+4. gerar `.interno/prof/aulas/2026-2/u1_a02/selecao.yaml` com candidatos,
+   evidências de leitura e decisões pendentes;
+5. renderizar `.interno/prof/aulas/2026-2/u1_a02/dossie.md` exclusivamente a
+   partir desse YAML;
 6. aguardar a seleção docente;
 7. validar o manifesto selecionado;
 8. gerar a aula teórica;
@@ -423,7 +440,8 @@ Não integram o primeiro incremento:
 O desenho estará implementado no piloto quando:
 
 - o dossiê for reproduzível a partir das autoridades declaradas;
-- o YAML conservar integralmente as decisões docentes;
+- o YAML conservar integralmente as evidências de leitura, os candidatos e as
+  decisões docentes;
 - referências múltiplas puderem ser compatibilizadas sem troca silenciosa de
   notação;
 - a geração aceitar somente tópicos e referências aprovados;
