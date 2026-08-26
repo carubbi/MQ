@@ -10,15 +10,17 @@
     "aula",
     "notacao",
     "escopo",
+    "planejamento_tempo",
     "ciclos",
     "topicos"
   ],
   "properties": {
-    "versao_contrato": {"const": "1.0"},
+    "versao_contrato": {"const": "1.1"},
     "estado": {"enum": ["em_selecao", "aprovado"]},
     "aula": {"$ref": "#/$defs/aula"},
     "notacao": {"$ref": "#/$defs/notacao"},
     "escopo": {"$ref": "#/$defs/escopo"},
+    "planejamento_tempo": {"$ref": "#/$defs/planejamentoTempo"},
     "ciclos": {
       "type": "array",
       "items": {"$ref": "#/$defs/ciclo"}
@@ -97,10 +99,27 @@
         "reservados": {"$ref": "#/$defs/listaTextos"}
       }
     },
+    "planejamentoTempo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["abertura_minutos", "fechamento_minutos"],
+      "properties": {
+        "abertura_minutos": {"type": "integer", "minimum": 0},
+        "fechamento_minutos": {"type": "integer", "minimum": 0}
+      }
+    },
     "ciclo": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "titulo", "topicos", "aplicacao_notebook"],
+      "required": [
+        "id",
+        "titulo",
+        "topicos",
+        "complexidade",
+        "duracao_minima_minutos",
+        "justificativa_particao",
+        "aplicacao_notebook"
+      ],
       "properties": {
         "id": {"type": "string", "pattern": "^ciclo-[0-9]{2}$"},
         "titulo": {"$ref": "#/$defs/texto"},
@@ -110,6 +129,9 @@
           "items": {"$ref": "#/$defs/texto"},
           "uniqueItems": true
         },
+        "complexidade": {"enum": ["baixa", "moderada", "alta"]},
+        "duracao_minima_minutos": {"type": "integer", "minimum": 1},
+        "justificativa_particao": {"$ref": "#/$defs/texto"},
         "aplicacao_notebook": {"$ref": "#/$defs/aplicacaoNotebook"}
       }
     },

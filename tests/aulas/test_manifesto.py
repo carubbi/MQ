@@ -4,10 +4,65 @@ import unittest
 from pathlib import Path
 
 from scripts.aulas.manifesto import dump_manifest, load_manifest, validate_manifest
-from tests.aulas.fixtures import GRAPH, VALID_MANIFEST
+from tests.aulas.fixtures import GRAPH, VALID_MANIFEST, approved_manifest
 
 
 class ManifestValidationTests(unittest.TestCase):
+    def test_accepts_approved_contract_1_1_manifest(self):
+        self.assertEqual(
+            [],
+            validate_manifest(approved_manifest(), GRAPH, require_approved=True),
+        )
+
+    def test_rejects_contract_1_0(self):
+        manifest = copy.deepcopy(VALID_MANIFEST)
+        manifest["versao_contrato"] = "1.0"
+
+        findings = validate_manifest(manifest, GRAPH)
+
+        self.assertTrue(
+            any("'1.1' was expected" in finding for finding in findings),
+            findings,
+        )
+
+    def test_rejects_missing_time_plan(self):
+        manifest = copy.deepcopy(VALID_MANIFEST)
+        del manifest["planejamento_tempo"]
+
+        findings = validate_manifest(manifest, GRAPH)
+
+        self.assertTrue(
+            any(
+                "'planejamento_tempo' is a required property" in finding
+                for finding in findings
+            ),
+            findings,
+        )
+
+    def test_rejects_cycle_without_temporal_metadata(self):
+        manifest = approved_manifest()
+        del manifest["ciclos"][0]["complexidade"]
+        del manifest["ciclos"][0]["duracao_minima_minutos"]
+        del manifest["ciclos"][0]["justificativa_particao"]
+
+        findings = validate_manifest(manifest, GRAPH)
+
+        self.assertTrue(
+            any("'complexidade' is a required property" in item for item in findings)
+        )
+        self.assertTrue(
+            any(
+                "'duracao_minima_minutos' is a required property" in item
+                for item in findings
+            )
+        )
+        self.assertTrue(
+            any(
+                "'justificativa_particao' is a required property" in item
+                for item in findings
+            )
+        )
+
     def test_accepts_complete_manifest_in_selection(self):
         self.assertEqual([], validate_manifest(VALID_MANIFEST, GRAPH))
 

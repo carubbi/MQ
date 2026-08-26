@@ -1,5 +1,7 @@
 """Fixtures pequenos e completos para os testes de curadoria."""
 
+import copy
+
 
 GRAPH = {
     "metadados": {},
@@ -52,7 +54,7 @@ GRAPH = {
 
 
 VALID_MANIFEST = {
-    "versao_contrato": "1.0",
+    "versao_contrato": "1.1",
     "estado": "em_selecao",
     "aula": {
         "id": "u1_a02",
@@ -75,6 +77,10 @@ VALID_MANIFEST = {
         "incluidos": ["População e amostra"],
         "excluidos": ["Técnicas detalhadas de amostragem"],
         "reservados": ["Distribuições amostrais"],
+    },
+    "planejamento_tempo": {
+        "abertura_minutos": 5,
+        "fechamento_minutos": 10,
     },
     "ciclos": [],
     "topicos": [
@@ -104,3 +110,37 @@ VALID_MANIFEST = {
         }
     ],
 }
+
+
+def approved_manifest() -> dict:
+    manifest = copy.deepcopy(VALID_MANIFEST)
+    manifest["estado"] = "aprovado"
+    topic = manifest["topicos"][0]
+    topic["estado"] = "selecionado"
+    reference = topic["referencias"][0]
+    reference["estado"] = "selecionada"
+    reference["papeis"] = ["fundamentacao"]
+    manifest["ciclos"] = [
+        {
+            "id": "ciclo-01",
+            "titulo": "População e amostra",
+            "topicos": ["topico-populacao"],
+            "complexidade": "moderada",
+            "duracao_minima_minutos": 20,
+            "justificativa_particao": (
+                "O ciclo reúne a definição do universo de interesse e sua "
+                "redução amostral."
+            ),
+            "aplicacao_notebook": {
+                "objetivo": "Identificar população e amostra no conjunto estudado.",
+                "pergunta": "Qual população sustenta a conclusão pretendida?",
+                "contraste": "Comparar o grupo observado ao alvo da conclusão.",
+                "evidencia": "Identificação justificada da população e da amostra.",
+                "ciclo_notebook": "ciclo-01",
+                "caminho": (
+                    "notebooks/u1_a02_fundamentos_investigacao_dados.ipynb"
+                ),
+            },
+        }
+    ]
+    return manifest
