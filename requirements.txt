@@ -16,3 +16,4 @@ PyMuPDF
 pdfplumber
 pypdf
 jsonschema
+PyYAML
