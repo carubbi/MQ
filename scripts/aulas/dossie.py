@@ -23,6 +23,58 @@ def _render_scope(scope: dict) -> list[str]:
     ]
 
 
+def _render_time_plan(manifest: dict) -> list[str]:
+    lesson_minutes = manifest["aula"]["duracao_minutos"]
+    timing = manifest["planejamento_tempo"]
+    opening = timing["abertura_minutos"]
+    closing = timing["fechamento_minutos"]
+    available = lesson_minutes - opening - closing
+    return [
+        "## Planejamento temporal",
+        "",
+        f"- **Duração da aula:** {lesson_minutes} minutos",
+        f"- **Abertura:** {opening} minutos",
+        f"- **Fechamento:** {closing} minutos",
+        f"- **Disponível para ciclos:** {available} minutos",
+    ]
+
+
+def _render_cycles(cycles: list[dict]) -> list[str]:
+    lines = ["## Ciclos conceituais", ""]
+    if not cycles:
+        return [*lines, "Ciclos ainda não definidos."]
+    for cycle in cycles:
+        application = cycle["aplicacao_notebook"]
+        topics = ", ".join(
+            f"`{topic_id}`" for topic_id in cycle["topicos"]
+        )
+        lines.extend(
+            [
+                f"### {cycle['id']} — {cycle['titulo']}",
+                "",
+                f"- **Tópicos:** {topics}",
+                f"- **Complexidade:** {cycle['complexidade']}",
+                (
+                    "- **Duração mínima:** "
+                    f"{cycle['duracao_minima_minutos']} minutos"
+                ),
+                (
+                    "- **Justificativa da partição:** "
+                    f"{cycle['justificativa_particao']}"
+                ),
+                "- **Aplicação no notebook:**",
+                f"  - **Objetivo:** {application['objetivo']}",
+                f"  - **Pergunta:** {application['pergunta']}",
+                f"  - **Contraste:** {application['contraste']}",
+                f"  - **Evidência:** {application['evidencia']}",
+                f"  - **Ciclo:** `{application['ciclo_notebook']}`",
+                f"  - **Caminho:** `{application['caminho']}`",
+                "",
+            ]
+        )
+    return lines
+
+
 def _render_topic(topic: dict) -> list[str]:
     compatibility = topic["compatibilizacao"]
     lines = [
@@ -78,6 +130,10 @@ def render_dossier(manifest: dict) -> str:
         "",
     ]
     lines.extend(_render_scope(manifest["escopo"]))
+    lines.extend([""])
+    lines.extend(_render_time_plan(manifest))
+    lines.extend([""])
+    lines.extend(_render_cycles(manifest["ciclos"]))
     lines.extend(["", "## Tópicos candidatos", ""])
     for topic in manifest["topicos"]:
         lines.extend(_render_topic(topic))

@@ -2,10 +2,38 @@ import copy
 import unittest
 
 from scripts.aulas.dossie import render_dossier
-from tests.aulas.fixtures import VALID_MANIFEST
+from tests.aulas.fixtures import VALID_MANIFEST, approved_manifest
 
 
 class DossierRenderingTests(unittest.TestCase):
+    def test_renders_time_plan_as_list(self):
+        rendered = render_dossier(VALID_MANIFEST)
+
+        self.assertIn("## Planejamento temporal", rendered)
+        self.assertIn("- **Abertura:** 5 minutos", rendered)
+        self.assertIn("- **Fechamento:** 10 minutos", rendered)
+        self.assertIn("- **Disponível para ciclos:** 85 minutos", rendered)
+
+    def test_renders_empty_cycle_selection_explicitly(self):
+        rendered = render_dossier(VALID_MANIFEST)
+
+        self.assertIn("## Ciclos conceituais", rendered)
+        self.assertIn("Ciclos ainda não definidos.", rendered)
+
+    def test_renders_approved_cycles_as_nested_lists(self):
+        rendered = render_dossier(approved_manifest())
+
+        self.assertIn("### ciclo-01 — População e amostra", rendered)
+        self.assertIn("- **Tópicos:** `topico-populacao`", rendered)
+        self.assertIn("- **Complexidade:** moderada", rendered)
+        self.assertIn("- **Duração mínima:** 20 minutos", rendered)
+        self.assertIn("- **Aplicação no notebook:**", rendered)
+        self.assertIn(
+            "  - **Pergunta:** Qual população sustenta a conclusão pretendida?",
+            rendered,
+        )
+        self.assertNotIn("| Ciclo |", rendered)
+
     def test_renders_scope_topics_references_and_evidence(self):
         rendered = render_dossier(VALID_MANIFEST)
 

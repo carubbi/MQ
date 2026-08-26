@@ -57,6 +57,10 @@ class LessonCurationCliTests(unittest.TestCase):
                 "# Dossiê de curadoria — u1_a02"
             )
         )
+        self.assertIn(
+            "## Planejamento temporal",
+            self.dossier_path.read_text(encoding="utf-8"),
+        )
         self.assertEqual(before, self.manifest_path.read_bytes())
 
     def test_validate_command_reports_semantic_errors_without_writing(self):
