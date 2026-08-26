@@ -132,20 +132,37 @@ existam e sejam válidos.
 O piloto criará:
 
 ```text
-.interno/prof/curadoria/aulas/2026-2/
-├── u1_a02_dossie.md
-└── u1_a02_selecao.yaml
+.interno/prof/aulas/
+└── 2026-2/
+    └── u1_a02/
+        ├── dossie.md
+        └── selecao.yaml
 ```
 
 Depois da seleção e validação, a saída pública será:
 
 ```text
-aulas/u1_a02_fundamentos_investigacao_dados.md
+aulas/u1_a02.md
 ```
 
-O dossiê não será publicado como material discente. O YAML permanecerá em área
-interna e será versionado para preservar a decisão docente e permitir a
-reprodução da aula.
+O dossiê e o YAML são privados e permanecerão sob `.interno/`, sem rastreamento
+pelo Git. O YAML preservará localmente a decisão docente e permitirá a
+reprodução da aula no mesmo ambiente. A reprodução em outro ambiente exigirá a
+transferência ou a restauração privada desse manifesto. A saída pública será o
+único arquivo gerado da aula; não haverá uma segunda cópia do material final na
+pasta interna.
+
+A convenção matemática global não pertencerá a uma aula ou semestre específico
+e permanecerá em:
+
+```text
+.interno/docs/modelos/notacao-estatistica.md
+```
+
+Nenhum arquivo ou diretório sob `.interno/` será rastreado pelo Git. O pipeline
+não criará exceções no `.gitignore` nem usará inclusão forçada desses
+artefatos. Backup e transferência do conteúdo privado permanecerão fora do
+escopo do repositório público.
 
 ## 7. Dossiê de curadoria
 
@@ -361,9 +378,9 @@ decisão docente:
 1. extrair do cronograma o escopo de `u1_a02`;
 2. localizar no grafo os tópicos e referências candidatos;
 3. consultar as páginas originais necessárias;
-4. gerar `u1_a02_dossie.md`;
-5. gerar um `u1_a02_selecao.yaml` estruturalmente válido, ainda sem escolhas
-   presumidas;
+4. gerar `.interno/prof/aulas/2026-2/u1_a02/dossie.md`;
+5. gerar `.interno/prof/aulas/2026-2/u1_a02/selecao.yaml` com estrutura válida,
+   ainda sem escolhas presumidas;
 6. aguardar a seleção docente;
 7. validar o manifesto selecionado;
 8. gerar a aula teórica;
