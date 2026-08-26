@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import yaml
@@ -89,6 +89,85 @@ def _page_interval(node: dict) -> tuple[int | None, int | None]:
     if isinstance(node.get("pagina_pdf"), int):
         return node["pagina_pdf"], node["pagina_pdf"]
     return node.get("pagina_pdf_inicio"), node.get("pagina_pdf_fim")
+
+
+def _cycle_findings(manifest: dict) -> list[str]:
+    findings: list[str] = []
+    lesson_duration = manifest.get("aula", {}).get("duracao_minutos")
+    timing = manifest.get("planejamento_tempo", {})
+    if not isinstance(timing, dict):
+        return findings
+    opening = timing.get("abertura_minutos")
+    closing = timing.get("fechamento_minutos")
+    cycles = manifest.get("ciclos", [])
+
+    if not all(
+        isinstance(value, int)
+        for value in (lesson_duration, opening, closing)
+    ):
+        return findings
+
+    available = lesson_duration - opening - closing
+    if available <= 0:
+        findings.append(
+            "planejamento temporal não deixa minutos disponíveis para ciclos"
+        )
+
+    durations = [
+        cycle.get("duracao_minima_minutos")
+        for cycle in cycles
+        if isinstance(cycle, dict)
+    ]
+    if all(isinstance(value, int) for value in durations):
+        required = sum(durations)
+        if available > 0 and required > available:
+            findings.append(
+                f"duração mínima dos ciclos ({required} min) excede "
+                f"o tempo disponível ({available} min)"
+            )
+
+    topic_states = {
+        topic.get("id"): topic.get("estado")
+        for topic in manifest.get("topicos", [])
+        if isinstance(topic, dict) and isinstance(topic.get("id"), str)
+    }
+    cycle_topics: list[str] = []
+    for cycle in cycles:
+        if not isinstance(cycle, dict):
+            continue
+        cycle_id = cycle.get("id")
+        for topic_id in cycle.get("topicos", []):
+            cycle_topics.append(topic_id)
+            if topic_id not in topic_states:
+                findings.append(
+                    f"ciclo {cycle_id} contém tópico desconhecido: {topic_id}"
+                )
+            elif topic_states[topic_id] != "selecionado":
+                findings.append(
+                    f"ciclo {cycle_id} contém tópico não selecionado: {topic_id}"
+                )
+        notebook_cycle = cycle.get("aplicacao_notebook", {}).get(
+            "ciclo_notebook"
+        )
+        if isinstance(cycle_id, str) and isinstance(notebook_cycle, str):
+            if notebook_cycle != cycle_id:
+                findings.append(
+                    f"aplicação do ciclo {cycle_id} aponta para {notebook_cycle}"
+                )
+
+    counts = Counter(cycle_topics)
+    for topic_id, count in counts.items():
+        if count > 1:
+            findings.append(
+                f"tópico selecionado aparece em mais de um ciclo: {topic_id}"
+            )
+    if manifest.get("estado") == "aprovado":
+        for topic_id, state in topic_states.items():
+            if state == "selecionado" and counts[topic_id] == 0:
+                findings.append(
+                    f"tópico selecionado ausente dos ciclos: {topic_id}"
+                )
+    return findings
 
 
 def _semantic_findings(
@@ -192,6 +271,7 @@ def _semantic_findings(
 
     if manifest.get("estado") == "aprovado" and not manifest.get("ciclos"):
         findings.append("manifesto aprovado deve definir ao menos um ciclo")
+    findings.extend(_cycle_findings(manifest))
     return findings
 
 

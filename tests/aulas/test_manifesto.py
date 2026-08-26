@@ -8,6 +8,84 @@ from tests.aulas.fixtures import GRAPH, VALID_MANIFEST, approved_manifest
 
 
 class ManifestValidationTests(unittest.TestCase):
+    def test_rejects_time_reserve_that_consumes_the_lesson(self):
+        manifest = approved_manifest()
+        manifest["planejamento_tempo"] = {
+            "abertura_minutos": 60,
+            "fechamento_minutos": 40,
+        }
+
+        self.assertIn(
+            "planejamento temporal não deixa minutos disponíveis para ciclos",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_cycle_minimum_duration_over_available_time(self):
+        manifest = approved_manifest()
+        manifest["ciclos"][0]["duracao_minima_minutos"] = 86
+
+        self.assertIn(
+            "duração mínima dos ciclos (86 min) excede o tempo disponível (85 min)",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_unknown_topic_inside_cycle(self):
+        manifest = approved_manifest()
+        manifest["ciclos"][0]["topicos"] = ["topico-inexistente"]
+
+        self.assertIn(
+            "ciclo ciclo-01 contém tópico desconhecido: topico-inexistente",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_rejected_topic_inside_cycle(self):
+        manifest = approved_manifest()
+        manifest["topicos"][0]["estado"] = "rejeitado"
+
+        self.assertIn(
+            "ciclo ciclo-01 contém tópico não selecionado: topico-populacao",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_selected_topic_missing_from_cycles(self):
+        manifest = approved_manifest()
+        manifest["ciclos"] = []
+
+        self.assertIn(
+            "tópico selecionado ausente dos ciclos: topico-populacao",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_selected_topic_repeated_across_cycles(self):
+        manifest = approved_manifest()
+        duplicate = copy.deepcopy(manifest["ciclos"][0])
+        duplicate["id"] = "ciclo-02"
+        duplicate["aplicacao_notebook"]["ciclo_notebook"] = "ciclo-02"
+        manifest["ciclos"].append(duplicate)
+
+        self.assertIn(
+            "tópico selecionado aparece em mais de um ciclo: topico-populacao",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_mismatched_notebook_cycle_id(self):
+        manifest = approved_manifest()
+        manifest["ciclos"][0]["aplicacao_notebook"]["ciclo_notebook"] = "ciclo-02"
+
+        self.assertIn(
+            "aplicação do ciclo ciclo-01 aponta para ciclo-02",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_allows_selected_topic_without_cycle_during_selection(self):
+        manifest = copy.deepcopy(VALID_MANIFEST)
+        manifest["topicos"][0]["estado"] = "selecionado"
+        reference = manifest["topicos"][0]["referencias"][0]
+        reference["estado"] = "selecionada"
+        reference["papeis"] = ["fundamentacao"]
+
+        self.assertEqual([], validate_manifest(manifest, GRAPH))
+
     def test_accepts_approved_contract_1_1_manifest(self):
         self.assertEqual(
             [],
@@ -123,6 +201,14 @@ class ManifestValidationTests(unittest.TestCase):
     def test_structural_error_is_reported_without_semantic_crash(self):
         manifest = copy.deepcopy(VALID_MANIFEST)
         manifest["aula"] = "inválida"
+
+        findings = validate_manifest(manifest, GRAPH)
+
+        self.assertTrue(any(item.startswith("schema: ") for item in findings))
+
+    def test_invalid_time_plan_is_reported_without_semantic_crash(self):
+        manifest = copy.deepcopy(VALID_MANIFEST)
+        manifest["planejamento_tempo"] = "inválido"
 
         findings = validate_manifest(manifest, GRAPH)
 
