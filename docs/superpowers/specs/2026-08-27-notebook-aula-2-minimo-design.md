@@ -40,15 +40,19 @@ código:
 
 - no notebook discente, a fonte será vazia, `execution_count` será nulo e
   `outputs` será uma lista vazia;
-- no notebook resolvido, a fonte conterá a solução, as oito células serão
+- no notebook resolvido, a fonte conterá a solução, as 17 células serão
   executadas na ordem em que aparecem e não conservarão saídas de erro.
 
 Essa correspondência permitirá verificar automaticamente que a solução não
 introduziu uma etapa ausente no material entregue ao estudante.
 
+Em todos os ciclos, cada operação com saída independente ocupará sua própria
+célula. Resultados diferentes não serão reunidos artificialmente em uma
+`Series`, tabela ou outra estrutura apenas para reduzir a quantidade de células.
+
 ## 4. Topologia das células
 
-Cada notebook terá exatamente 15 células:
+Cada notebook terá exatamente 24 células:
 
 1. Markdown — cabeçalho institucional, idêntico à primeira célula de
    `notebooks/u1_a01.ipynb`;
@@ -61,11 +65,20 @@ Cada notebook terá exatamente 15 células:
 8. código — maior massa corporal;
 9. código — quantidade de valores distintos de massa corporal;
 10. Markdown — `## Ciclo 2 — comparar descrição amostral e populacional`;
-11. código — descrição e comparação;
-12. Markdown — `## Ciclo 3 — delimitar população, amostra e unidades`;
-13. código — delimitação das unidades e dos conjuntos;
-14. Markdown — `## Ciclo 4 — comparar amostragem aleatória e por conveniência`;
-15. código — mecanismos de seleção e comparação de composição.
+11. código — seleção da amostra aleatória;
+12. código — média da massa corporal no conjunto disponível;
+13. código — média da massa corporal na amostra;
+14. Markdown — `## Ciclo 3 — delimitar população, amostra e unidades`;
+15. código — tamanho do conjunto disponível;
+16. código — tamanho da amostra;
+17. código — quantidade de unidades distintas pelo par identificador;
+18. código — unidade de análise;
+19. código — unidade de observação;
+20. Markdown — `## Ciclo 4 — comparar amostragem aleatória e por conveniência`;
+21. código — seleção da amostra aleatória;
+22. código — seleção da amostra por conveniência;
+23. código — contagens de espécies na amostra aleatória;
+24. código — contagens de espécies na amostra por conveniência.
 
 Não haverá resumo, objetivos, texto instrucional, comentários-guia, perguntas,
 respostas, síntese ou referências no notebook discente. Para manter a topologia
@@ -114,24 +127,28 @@ O ciclo terá quatro células de código independentes, na seguinte ordem:
 - maior massa corporal;
 - quantidade de valores distintos.
 
-Cada célula produzirá somente seu próprio resultado. Os quatro valores não serão
-reunidos em uma `Series`, tabela ou outra saída conjunta. Essa granularidade
-segue o padrão operacional de `notebooks/u1_a01.ipynb`, no qual cada operação
-discente corresponde a uma célula própria.
+Cada célula produzirá somente seu próprio resultado. Essa granularidade segue o
+padrão operacional de `notebooks/u1_a01.ipynb`, no qual cada operação discente
+corresponde a uma célula própria.
 
 Não serão antecipados desvio-padrão, quartis, variância ou gráficos.
 
 ### 6.3 Ciclo 2 — descrição amostral e populacional
 
-A célula selecionará aleatoriamente 30 observações, com semente fixa para
-reprodutibilidade, e comparará a média da massa corporal na amostra com a média
-do conjunto disponível. As duas medidas serão apresentadas com rótulos que
-distinguem seus alcances. O resultado não será apresentado como inferência
-probabilística formal.
+O ciclo terá três células de código independentes:
+
+1. selecionar aleatoriamente 30 observações, com semente fixa para
+   reprodutibilidade, e exibir a amostra;
+2. calcular a média da massa corporal no conjunto disponível;
+3. calcular a média da massa corporal na amostra.
+
+As médias serão apresentadas em células distintas para que seus alcances sejam
+comparados sem uma saída conjunta. O resultado não será apresentado como
+inferência probabilística formal.
 
 ### 6.4 Ciclo 3 — população, amostra e unidades
 
-A célula apresentará uma estrutura simples com:
+O ciclo terá cinco células de código independentes:
 
 - tamanho do conjunto disponível;
 - tamanho da amostra;
@@ -139,21 +156,23 @@ A célula apresentará uma estrutura simples com:
 - unidade de análise: pinguim;
 - unidade de observação: registro de um pinguim.
 
-Essa estrutura explicitará as decisões do exercício sem afirmar que uma linha
-define universalmente a unidade de análise.
+Cada célula exibirá somente um desses resultados. As decisões do exercício serão
+explicitadas sem afirmar que uma linha define universalmente a unidade de
+análise.
 
 ### 6.5 Ciclo 4 — mecanismos de seleção
 
-A célula construirá duas amostras com 30 observações e a mesma população de
-referência:
+O ciclo terá quatro células de código independentes:
 
-- uma amostra selecionada aleatoriamente;
-- uma amostra por conveniência formada pelas primeiras 30 observações da ilha
-  Biscoe.
+1. selecionar aleatoriamente 30 observações da população de referência;
+2. formar uma amostra por conveniência com as primeiras 30 observações da ilha
+   Biscoe;
+3. contar as espécies na amostra aleatória;
+4. contar as espécies na amostra por conveniência.
 
-As contagens de espécies das duas amostras serão reunidas em uma tabela. Como os
-tamanhos são iguais, as contagens permitirão comparar diretamente a composição
-observada e reconhecer o risco de viés introduzido pelo recorte de conveniência.
+As duas contagens permanecerão em células distintas. Como os tamanhos são
+iguais, as saídas permitirão comparar diretamente a composição observada e
+reconhecer o risco de viés introduzido pelo recorte de conveniência.
 
 ## 7. Restrições de simplicidade
 
@@ -181,7 +200,7 @@ Os metadados de kernel e linguagem serão derivados de
 que não sejam necessários à portabilidade poderão ser normalizados.
 
 O notebook resolvido será executado do início ao fim. As células de código terão
-contagens sequenciais de 1 a 8 e não conterão saídas de erro. O notebook discente
+contagens sequenciais de 1 a 17 e não conterão saídas de erro. O notebook discente
 não terá contagens de execução nem saídas.
 
 ## 9. Validação
@@ -190,11 +209,11 @@ Um teste específico verificará:
 
 - validade do JSON e leitura por `nbformat`;
 - existência dos dois arquivos;
-- total de 15 células em cada notebook;
+- total de 24 células em cada notebook;
 - igualdade do cabeçalho com a primeira célula de `u1_a01.ipynb`;
 - igualdade da topologia, dos IDs e das células Markdown entre as versões;
-- oito células de código vazias e sem saídas no notebook discente;
-- oito células de código preenchidas, executadas sequencialmente e sem erros no
+- 17 células de código vazias e sem saídas no notebook discente;
+- 17 células de código preenchidas, executadas sequencialmente e sem erros no
   notebook resolvido;
 - ausência de células Markdown além das sete previstas;
 - ausência de funções próprias, gráficos e bibliotecas adicionais;
