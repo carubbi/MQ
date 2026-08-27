@@ -49,6 +49,10 @@ introduziu uma etapa ausente no material entregue ao estudante.
 Em todos os ciclos, cada operação com saída independente ocupará sua própria
 célula. Resultados diferentes não serão reunidos artificialmente em uma
 `Series`, tabela ou outra estrutura apenas para reduzir a quantidade de células.
+As saídas serão escalares ou textos simples por padrão. `DataFrame`, `Series`,
+listas ou outras coleções só serão exibidos quando a estrutura conjunta for o
+próprio objeto da análise e não puder ser substituída por uma saída simples sem
+perda conceitual.
 
 ## 4. Topologia das células
 
@@ -115,8 +119,8 @@ dados e população-alvo.
 
 A primeira célula de código importará `pandas`, carregará o CSV público,
 selecionará as cinco colunas necessárias e removerá somente as linhas sem massa
-corporal quando essa medida for necessária. A célula exibirá as primeiras linhas
-do conjunto selecionado.
+corporal quando essa medida for necessária. A célula apenas criará o conjunto de
+dados e não produzirá saída tabular.
 
 ### 6.2 Ciclo 1 — variabilidade
 
@@ -138,7 +142,7 @@ Não serão antecipados desvio-padrão, quartis, variância ou gráficos.
 O ciclo terá três células de código independentes:
 
 1. selecionar aleatoriamente 30 observações, com semente fixa para
-   reprodutibilidade, e exibir a amostra;
+   reprodutibilidade, sem exibir o `DataFrame`;
 2. calcular a média da massa corporal no conjunto disponível;
 3. calcular a média da massa corporal na amostra.
 
@@ -170,9 +174,12 @@ O ciclo terá quatro células de código independentes:
 3. contar as espécies na amostra aleatória;
 4. contar as espécies na amostra por conveniência.
 
-As duas contagens permanecerão em células distintas. Como os tamanhos são
-iguais, as saídas permitirão comparar diretamente a composição observada e
-reconhecer o risco de viés introduzido pelo recorte de conveniência.
+As duas células de seleção apenas criarão os `DataFrame` e não os exibirão. As
+contagens permanecerão em células distintas e serão as únicas saídas em
+`Series`, pois a distribuição conjunta das categorias é o objeto necessário à
+comparação. Como os tamanhos são iguais, essas saídas permitirão comparar
+diretamente a composição observada e reconhecer o risco de viés introduzido
+pelo recorte de conveniência.
 
 ## 7. Restrições de simplicidade
 
@@ -193,6 +200,11 @@ Comentários de código também serão omitidos para que a versão resolvida sej
 formada apenas pelas instruções necessárias. Nomes de objetos e rótulos de saída
 serão suficientes para tornar o código legível.
 
+As células de carregamento e seleção poderão não produzir saída. Nas demais,
+cada saída será um único número ou texto. As duas contagens por espécie do Ciclo
+4 constituem a única exceção e poderão produzir uma `Series` cada. Nenhuma célula
+produzirá lista ou `DataFrame` como saída.
+
 ## 8. Metadados e execução
 
 Os metadados de kernel e linguagem serão derivados de
@@ -202,6 +214,11 @@ que não sejam necessários à portabilidade poderão ser normalizados.
 O notebook resolvido será executado do início ao fim. As células de código terão
 contagens sequenciais de 1 a 17 e não conterão saídas de erro. O notebook discente
 não terá contagens de execução nem saídas.
+
+Quatro células resolvidas — carregamento, seleção amostral do Ciclo 2 e as duas
+seleções do Ciclo 4 — não produzirão saída. As outras 13 produzirão uma saída
+simples por célula, exceto pelas duas `Series` categóricas justificadas no Ciclo
+4.
 
 ## 9. Validação
 
@@ -217,6 +234,11 @@ Um teste específico verificará:
   notebook resolvido;
 - ausência de células Markdown além das sete previstas;
 - ausência de funções próprias, gráficos e bibliotecas adicionais;
+- ausência de listas e `DataFrame` nas saídas resolvidas;
+- presença de somente duas saídas em `Series`, ambas correspondentes às
+  contagens por espécie do Ciclo 4;
+- presença de quatro células operacionais sem saída e 13 células com uma única
+  saída;
 - execução integral do código resolvido com o conjunto de dados esperado.
 
 A verificação de conteúdo examinará os objetos e resultados produzidos, não
