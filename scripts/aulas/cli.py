@@ -57,7 +57,7 @@ def main(argv: list[str] | None = None) -> int:
         if arguments.command == "renderizar":
             arguments.saida.parent.mkdir(parents=True, exist_ok=True)
             arguments.saida.write_text(
-                render_dossier(manifest),
+                render_dossier(manifest, graph),
                 encoding="utf-8",
             )
     except (OSError, ValueError, json.JSONDecodeError) as error:
