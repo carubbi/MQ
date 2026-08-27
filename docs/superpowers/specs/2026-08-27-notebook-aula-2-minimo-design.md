@@ -104,7 +104,7 @@ O notebook resolvido terá exatamente 25 células:
 17. código — tamanho da amostra;
 18. código — quantidade de unidades distintas pelo par identificador;
 19. código — unidade de análise;
-20. código — unidade de observação;
+20. código — exemplo de um registro de pinguim;
 21. Markdown — `## Ciclo 4 — comparar amostragem aleatória e por conveniência`;
 22. código — seleção da amostra aleatória;
 23. código — seleção da amostra por conveniência;
@@ -187,11 +187,13 @@ O ciclo terá cinco células de código independentes:
 - tamanho da amostra;
 - quantidade de unidades distintas pelo par identificador;
 - unidade de análise: pinguim;
-- unidade de observação: registro de um pinguim.
+- registro de um pinguim apresentado como linha do conjunto de dados.
 
-Cada célula exibirá somente um desses resultados. As decisões do exercício serão
-explicitadas sem afirmar que uma linha define universalmente a unidade de
-análise.
+Cada célula exibirá somente um desses resultados. A última usará
+`dados.iloc[[0], :]` para manter a estrutura tabular de uma linha e explicitar a
+seleção posicional de linhas e colunas. O registro exemplificará os dados obtidos
+de uma unidade observada, sem afirmar que uma linha define universalmente a
+unidade de análise ou a unidade de observação.
 
 ### 6.5 Ciclo 4 — mecanismos de seleção
 
@@ -257,9 +259,10 @@ intermediárias necessárias para produzi-lo.
 
 As células de criação do conjunto de dados e de seleção poderão não produzir
 saída. Nas demais, cada saída será um único número ou texto. A inspeção com
-`dados.info()` produzirá uma saída textual estrutural. As duas contagens por
-espécie do Ciclo 4 constituem a única exceção e poderão produzir uma `Series`
-cada. Nenhuma célula produzirá lista ou `DataFrame` como saída.
+`dados.info()` produzirá uma saída textual estrutural. O exemplo de registro do
+Ciclo 3 produzirá o único `DataFrame`, com uma linha e as cinco colunas
+selecionadas. As duas contagens por espécie do Ciclo 4 produzirão uma `Series`
+cada. Nenhuma célula produzirá lista nem outro `DataFrame` como saída.
 
 ## 8. Metadados e execução
 
@@ -273,8 +276,8 @@ terá cinco células de código vazias, sem contagens de execução nem saídas.
 
 Quatro células resolvidas — criação de `dados`, seleção amostral do Ciclo 2 e as
 duas seleções do Ciclo 4 — não produzirão saída. As outras 14 produzirão uma saída
-simples por célula, exceto pelas duas `Series` categóricas justificadas no Ciclo
-4.
+por célula: onze escalares ou textos simples, um `DataFrame` de uma linha e as
+duas `Series` categóricas justificadas no Ciclo 4.
 
 ## 9. Validação
 
@@ -301,7 +304,8 @@ Um teste específico verificará:
   por linha;
 - uso de variáveis intermediárias quando uma operação exigir mais de uma
   transformação;
-- ausência de listas e `DataFrame` nas saídas resolvidas;
+- ausência de listas e presença de somente um `DataFrame`, correspondente ao
+  registro de um pinguim no Ciclo 3;
 - presença de somente duas saídas em `Series`, ambas correspondentes às
   contagens por espécie do Ciclo 4;
 - presença da saída textual de `dados.info()` com as cinco colunas selecionadas;

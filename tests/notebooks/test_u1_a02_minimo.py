@@ -194,9 +194,22 @@ class NotebookAula2MinimoTest(unittest.TestCase):
             "344",
             "30",
             "pinguim",
-            "registro de um pinguim",
         ):
             self.assertIn(expected, scalar_text)
+
+        registro_source = code[13].source
+        self.assertIn(
+            "# Exibir um registro de um pinguim como exemplo dos dados "
+            "observados.",
+            registro_source,
+        )
+        self.assertIn("registro = dados.iloc[[0], :]", registro_source)
+        registro_output = code[13].outputs[0]
+        self.assertEqual(registro_output.output_type, "execute_result")
+        self.assertIn("text/html", registro_output.data)
+        registro_text = self._output_text(registro_output)
+        self.assertIn("PAL0708", registro_text)
+        self.assertIn("N1A1", registro_text)
 
         random_counts = self._output_text(code[16].outputs[0])
         convenience_counts = self._output_text(code[17].outputs[0])
