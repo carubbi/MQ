@@ -215,7 +215,8 @@ que candidatos não escolhidos reapareçam silenciosamente.
 
 O documento conterá metadados da aula, versão do contrato, estado da seleção,
 convenção matemática global, ciclos planejados, tópicos, evidências de leitura,
-referências candidatas e aplicação no notebook.
+referências candidatas, recursos discentes e aplicação no notebook. A inclusão
+de `recursos_discentes` elevará o contrato do manifesto para a versão `1.2`.
 
 Cada tópico terá:
 
@@ -263,6 +264,69 @@ fontes forem normalizadas para a convenção da disciplina. Qualquer exceção
 exigirá a convenção adotada, a justificativa e a explicação que deverá aparecer
 na aula.
 
+### 8.4 Prioridade linguística e tradução técnica
+
+A seleção priorizará a adequação da cobertura e, entre fontes igualmente
+adequadas, dará preferência a livros em língua portuguesa. A mera existência
+de uma menção em português não impedirá o uso de uma fonte mais completa em
+inglês. A apostila poderá orientar o conteúdo curricular, mas não substituirá
+automaticamente a fundamentação teórica.
+
+Quando não houver livro em português com cobertura suficiente, uma obra em
+inglês poderá cumprir o papel de `fundamentacao`. Seu uso exigirá consulta
+direta ao original, tradução técnica para o português e compatibilização com a
+terminologia e a notação global da disciplina. A tradução produzida para a aula
+não será apresentada como tradução oficial da obra.
+
+O manifesto preservará a fonte, a edição e as páginas originais e registrará,
+em `compatibilizacao.observacao`, as decisões terminológicas ou matemáticas
+necessárias. A tradução não poderá alterar o alcance da definição, omitir
+condições ou introduzir equivalências conceituais não sustentadas pela fonte.
+
+### 8.5 Recursos discentes
+
+O manifesto registrará explicitamente os itens que deverão aparecer em
+`Estudo e exercícios`. A seleção será independente do tipo da fonte: livros,
+apostilas e bancos de questões poderão fornecer materiais didáticos ou
+exercícios indicados conforme a adequação de cada item ao conteúdo, à
+profundidade e aos limites da aula.
+
+```yaml
+recursos_discentes:
+  materiais_didaticos:
+    - id: barbetta-2010-sec-1-1
+    - id: apostila-mq-sec-1-1
+  exercicios_indicados:
+    - id: barbetta-2010-exercicio-2-7
+    - id: banco-questoes-2026-2-questao-6
+```
+
+Cada entrada preservará o ID canônico do grafo. Título, autoria, seção, número
+do item e páginas serão resolvidos a partir do grafo, sem duplicação desses
+metadados no manifesto. A ordem registrada no YAML determinará a ordem de
+apresentação na aula.
+
+Em `materiais_didaticos`, serão aceitos nós dos tipos `capitulo`, `secao` ou
+`exemplo`, desde que sua relação com o conteúdo e os tópicos selecionados seja
+comprovada diretamente ou pela cadeia de contenção registrada no grafo. Em
+`exercicios_indicados`, serão aceitos somente nós concretos dos tipos
+`exercicio` ou `questao`. A origem editorial do item não determinará sua
+categoria.
+
+O objeto `recursos_discentes` será obrigatório em um manifesto aprovado. Suas
+listas poderão permanecer vazias quando a leitura das fontes não encontrar um
+item adequado; nesse caso, a subseção pública correspondente será omitida. A
+ausência de recurso é preferível à indicação artificial de conteúdo apenas
+para preencher a estrutura.
+
+A seleção dos recursos discentes não alterará os papéis bibliográficos usados
+na construção teórica. Uma seção rejeitada como `fundamentacao` poderá ser
+indicada como material didático quando houver justificativa pedagógica; de modo
+análogo, uma questão insuficiente para fundamentar um tópico poderá ser
+selecionada como exercício. Nenhum item será incluído apenas por proximidade
+editorial ou por corresponder genericamente ao conteúdo formal: o enunciado ou
+as páginas originais deverão ser verificados antes da aprovação.
+
 ## 9. Convenção matemática global
 
 Um documento canônico de notação distinguirá, quando aplicável:
@@ -290,6 +354,28 @@ global salvo exceção aprovada no manifesto.
 
 Cada aula conterá identificação, resultado de aprendizagem, agenda, pergunta
 orientadora, ciclos didáticos, síntese, estudo, exercícios e referências.
+
+### 10.1 Estudo e exercícios
+
+Ao final da exposição, `Estudo e exercícios` será organizado em duas
+subseções:
+
+- `Materiais didáticos`, com os capítulos, seções ou recursos selecionados
+  para estudo;
+- `Exercícios indicados`, com os exercícios e questões selecionados para
+  consolidação.
+
+As duas listas serão produzidas exclusivamente de `recursos_discentes` e terão
+rastreabilidade ao grafo. Livros, apostilas e bancos de questões poderão
+aparecer em qualquer uma delas quando o item cumprir a função correspondente.
+Itens da mesma fonte poderão ser consolidados em uma entrada, preservando os
+números de seções, exercícios ou questões e as páginas.
+
+A seção apresentará somente recursos aprovados e adequados ao escopo. Não
+reintroduzirá conteúdos rejeitados, adiados ou reservados apenas porque a fonte
+também cobre tópicos selecionados. Recursos públicos poderão receber vínculo
+para acesso discente; fontes privadas serão identificadas bibliograficamente,
+sem exposição de caminhos internos.
 
 Cada ciclo seguirá, com omissões apenas quando justificadas pelo conceito:
 
@@ -352,6 +438,10 @@ O pipeline rejeitará a geração quando:
   pendente;
 - um tópico selecionado não possuir referência de fundamentação;
 - uma referência não existir no grafo;
+- um recurso discente não existir no grafo ou possuir tipo incompatível com a
+  lista em que foi selecionado;
+- um recurso discente não possuir páginas verificáveis ou não estiver
+  relacionado ao conteúdo e a pelo menos um tópico selecionado da aula;
 - o tópico não estiver relacionado explicitamente à referência selecionada;
 - as páginas selecionadas não puderem ser verificadas na fonte original;
 - uma divergência de notação permanecer sem compatibilização;
@@ -379,6 +469,11 @@ Os testes automatizados cobrirão:
 - presença e conteúdo permitido em `Aplicação no notebook`;
 - ausência das categorias de conteúdo computacional proibidas;
 - rastreabilidade das referências e páginas;
+- existência, tipo, ordem e rastreabilidade dos recursos discentes;
+- correspondência exata entre `recursos_discentes` e as subseções de `Estudo e
+  exercícios`;
+- independência entre o tipo da fonte e sua função como material didático ou
+  exercício indicado;
 - distinção entre rascunho e material publicável.
 
 Validações textuais não provarão a correção matemática nem a qualidade da
