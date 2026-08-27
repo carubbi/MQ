@@ -40,7 +40,7 @@ código:
 
 - no notebook discente, a fonte será vazia, `execution_count` será nulo e
   `outputs` será uma lista vazia;
-- no notebook resolvido, a fonte conterá a solução, as cinco células serão
+- no notebook resolvido, a fonte conterá a solução, as oito células serão
   executadas na ordem em que aparecem e não conservarão saídas de erro.
 
 Essa correspondência permitirá verificar automaticamente que a solução não
@@ -48,7 +48,7 @@ introduziu uma etapa ausente no material entregue ao estudante.
 
 ## 4. Topologia das células
 
-Cada notebook terá exatamente 12 células:
+Cada notebook terá exatamente 15 células:
 
 1. Markdown — cabeçalho institucional, idêntico à primeira célula de
    `notebooks/u1_a01.ipynb`;
@@ -56,13 +56,16 @@ Cada notebook terá exatamente 12 células:
 3. Markdown — `## Carregamento do conjunto de dados`;
 4. código — carregamento;
 5. Markdown — `## Ciclo 1 — reconhecer a variabilidade`;
-6. código — variabilidade;
-7. Markdown — `## Ciclo 2 — comparar descrição amostral e populacional`;
-8. código — descrição e comparação;
-9. Markdown — `## Ciclo 3 — delimitar população, amostra e unidades`;
-10. código — delimitação das unidades e dos conjuntos;
-11. Markdown — `## Ciclo 4 — comparar amostragem aleatória e por conveniência`;
-12. código — mecanismos de seleção e comparação de composição.
+6. código — quantidade de valores válidos de massa corporal;
+7. código — menor massa corporal;
+8. código — maior massa corporal;
+9. código — quantidade de valores distintos de massa corporal;
+10. Markdown — `## Ciclo 2 — comparar descrição amostral e populacional`;
+11. código — descrição e comparação;
+12. Markdown — `## Ciclo 3 — delimitar população, amostra e unidades`;
+13. código — delimitação das unidades e dos conjuntos;
+14. Markdown — `## Ciclo 4 — comparar amostragem aleatória e por conveniência`;
+15. código — mecanismos de seleção e comparação de composição.
 
 Não haverá resumo, objetivos, texto instrucional, comentários-guia, perguntas,
 respostas, síntese ou referências no notebook discente. Para manter a topologia
@@ -104,12 +107,17 @@ do conjunto selecionado.
 
 ### 6.2 Ciclo 1 — variabilidade
 
-A célula produzirá uma série pequena com:
+O ciclo terá quatro células de código independentes, na seguinte ordem:
 
 - quantidade de valores válidos de massa corporal;
 - menor massa corporal;
 - maior massa corporal;
 - quantidade de valores distintos.
+
+Cada célula produzirá somente seu próprio resultado. Os quatro valores não serão
+reunidos em uma `Series`, tabela ou outra saída conjunta. Essa granularidade
+segue o padrão operacional de `notebooks/u1_a01.ipynb`, no qual cada operação
+discente corresponde a uma célula própria.
 
 Não serão antecipados desvio-padrão, quartis, variância ou gráficos.
 
@@ -173,7 +181,7 @@ Os metadados de kernel e linguagem serão derivados de
 que não sejam necessários à portabilidade poderão ser normalizados.
 
 O notebook resolvido será executado do início ao fim. As células de código terão
-contagens sequenciais de 1 a 5 e não conterão saídas de erro. O notebook discente
+contagens sequenciais de 1 a 8 e não conterão saídas de erro. O notebook discente
 não terá contagens de execução nem saídas.
 
 ## 9. Validação
@@ -182,11 +190,11 @@ Um teste específico verificará:
 
 - validade do JSON e leitura por `nbformat`;
 - existência dos dois arquivos;
-- total de 12 células em cada notebook;
+- total de 15 células em cada notebook;
 - igualdade do cabeçalho com a primeira célula de `u1_a01.ipynb`;
 - igualdade da topologia, dos IDs e das células Markdown entre as versões;
-- cinco células de código vazias e sem saídas no notebook discente;
-- cinco células de código preenchidas, executadas sequencialmente e sem erros no
+- oito células de código vazias e sem saídas no notebook discente;
+- oito células de código preenchidas, executadas sequencialmente e sem erros no
   notebook resolvido;
 - ausência de células Markdown além das sete previstas;
 - ausência de funções próprias, gráficos e bibliotecas adicionais;
