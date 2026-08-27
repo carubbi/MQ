@@ -229,6 +229,31 @@ Comentários de código também serão omitidos para que a versão resolvida sej
 formada apenas pelas instruções necessárias. Nomes de objetos e rótulos de saída
 serão suficientes para tornar o código legível.
 
+Os nomes das variáveis serão curtos, significativos e, sempre que possível, em
+português, como `dados`, `massa`, `amostra` e `media`. A clareza prevalecerá
+sobre a brevidade: nomes como `amostra_aleatoria` serão preferidos a abreviações
+ambíguas como `aa`. Nomes genéricos ou sem significado no contexto, como `df`,
+`x` e `tmp`, não serão usados.
+
+Cada linha realizará uma operação principal. Não haverá encadeamento de métodos;
+quando forem necessárias duas ou mais transformações, os resultados
+intermediários serão atribuídos a variáveis. O acesso direto a uma coluna, como
+`dados["Body Mass (g)"]`, não será considerado encadeamento. Por exemplo, o
+cálculo de uma média seguirá esta forma:
+
+```python
+massa = dados["Body Mass (g)"]
+massa = massa.dropna()
+media = massa.mean()
+media
+```
+
+Serão priorizados os métodos mais simples e diretos do `pandas`. Expressões
+compactas, funções auxiliares e construções avançadas não serão empregadas
+quando uma sequência curta de instruções básicas comunicar melhor cada etapa.
+Cada célula continuará dedicada a um único resultado, ainda que contenha linhas
+intermediárias necessárias para produzi-lo.
+
 As células de criação do conjunto de dados e de seleção poderão não produzir
 saída. Nas demais, cada saída será um único número ou texto. A inspeção com
 `dados.info()` produzirá uma saída textual estrutural. As duas contagens por
@@ -268,6 +293,11 @@ Um teste específico verificará:
 - distribuição das células resolvidas por seção em `2`, `4`, `3`, `5` e `4`;
 - ausência de células Markdown além das sete previstas;
 - ausência de funções próprias, gráficos e bibliotecas adicionais;
+- uso de nomes de variáveis curtos e significativos, sem abreviações ambíguas;
+- ausência de encadeamento de métodos e presença de uma única operação principal
+  por linha;
+- uso de variáveis intermediárias quando uma operação exigir mais de uma
+  transformação;
 - ausência de listas e `DataFrame` nas saídas resolvidas;
 - presença de somente duas saídas em `Series`, ambas correspondentes às
   contagens por espécie do Ciclo 4;
