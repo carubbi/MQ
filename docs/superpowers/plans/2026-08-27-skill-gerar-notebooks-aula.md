@@ -150,6 +150,10 @@ restricoes:
 
 Cada operação exige `id`, `comentario`, `codigo` e `saida`. A saída exige `quantidade`, `tipos_nbformat` e `contem`; quantidade zero exige listas vazias. O ID da aula segue `^u[0-9]+_a[0-9]+$` e cada seção tem pelo menos uma operação.
 
+Além do schema, `carregar_plano` deve rejeitar IDs repetidos entre seções,
+ciclos e operações, pois JSON Schema não garante unicidade global desses
+campos.
+
 - [ ] **Step 5: Implementar o módulo mínimo**
 
 ```python
@@ -388,7 +392,9 @@ Registrar cinco seções, distribuição resolvida `2, 4, 3, 5, 4`, código e co
 .venv/bin/python /Users/carubbi/.codex/skills/gerar-notebooks-aula/scripts/validar_notebooks.py --plano /private/tmp/u1_a02-notebook.yaml --manifesto .interno/prof/aulas/2026-2/u1_a02/selecao.yaml --aula aulas/u1_a02.md --cabecalho /Users/carubbi/.codex/skills/gerar-aula-formal/references/cabecalho-aula.md --discente notebooks/u1_a02.ipynb --resolvido notebooks/resolvidos/u1_a02.ipynb
 ```
 
-Expected: pode falhar somente pelo cabeçalho antigo conhecido nos notebooks. Outra falha revela lacuna real.
+Expected: pode falhar pelo cabeçalho antigo e pelos IDs legados conhecidos nos
+notebooks. Outra falha revela lacuna real. Não migrar os notebooks públicos
+durante este teste.
 
 - [ ] **Step 3: Gerar e validar em diretório temporário**
 
