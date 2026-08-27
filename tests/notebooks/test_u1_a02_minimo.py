@@ -149,6 +149,16 @@ class NotebookAula2MinimoTest(unittest.TestCase):
             }
             self.assertTrue(imports.issubset({"pandas"}))
 
+    def test_cada_celula_resolvida_comeca_com_um_comentario(self) -> None:
+        notebook = self._read(SOLVED)
+        code = self._cells(notebook, "code")
+
+        for cell in code:
+            lines = [line.strip() for line in cell.source.splitlines()]
+            comments = [line for line in lines if line.startswith("# ")]
+            self.assertTrue(lines[0].startswith("# "))
+            self.assertEqual(len(comments), 1)
+
     def test_saidas_resolvidas(self) -> None:
         notebook = self._read(SOLVED)
         code = self._cells(notebook, "code")

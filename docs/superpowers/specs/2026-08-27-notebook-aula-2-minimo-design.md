@@ -225,9 +225,10 @@ O notebook resolvido não incluirá:
 - código ou células que não contribuam diretamente para um dos cinco blocos
   operacionais.
 
-Comentários de código também serão omitidos para que a versão resolvida seja
-formada apenas pelas instruções necessárias. Nomes de objetos e rótulos de saída
-serão suficientes para tornar o código legível.
+Cada célula de código da versão resolvida começará com um único comentário curto
+em português, formulado com verbo no infinitivo e destinado a indicar a
+finalidade da célula. O comentário não explicará sintaxe evidente nem repetirá
+os nomes das instruções. Não haverá comentários adicionais na mesma célula.
 
 Os nomes das variáveis serão curtos, significativos e, sempre que possível, em
 português, como `dados`, `massa`, `amostra` e `media`. A clareza prevalecerá
@@ -293,6 +294,8 @@ Um teste específico verificará:
 - distribuição das células resolvidas por seção em `2`, `4`, `3`, `5` e `4`;
 - ausência de células Markdown além das sete previstas;
 - ausência de funções próprias, gráficos e bibliotecas adicionais;
+- presença de um único comentário inicial, curto e orientado à finalidade, em
+  cada célula de código resolvida;
 - uso de nomes de variáveis curtos e significativos, sem abreviações ambíguas;
 - ausência de encadeamento de métodos e presença de uma única operação principal
   por linha;
