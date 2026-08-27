@@ -12,8 +12,8 @@ Criar um par de notebooks para `u1_a02` que permita ao estudante construir o
 código do zero sem perder a correspondência com os quatro ciclos conceituais da
 aula. O notebook discente fornecerá somente o cabeçalho institucional, o título
 da aula, os títulos das seções e células de código vazias. O notebook resolvido
-preservará a mesma topologia e preencherá as células com uma solução mínima,
-executada e verificável.
+preservará o mesmo esqueleto de seções, mas acrescentará todas as células
+necessárias a uma solução mínima, executada e verificável.
 
 O novo desenho substitui, para a Aula 2, o padrão mais guiado observado em
 `notebooks/u1_a01.ipynb`. O cabeçalho da Aula 1 será reutilizado, mas seus
@@ -34,17 +34,19 @@ não será modificado. Nenhum notebook removido no worktree será restaurado.
 
 ## 3. Relação entre as versões
 
-Os dois notebooks terão a mesma sequência, tipos e IDs de células. As células
-Markdown serão idênticas. A única diferença de conteúdo estará nas células de
-código:
+Os dois notebooks compartilharão o cabeçalho, o título, os cinco títulos de
+seção e a ordem dessas sete células Markdown. Os IDs e conteúdos dessas células
+serão idênticos.
 
-- no notebook discente, a fonte será vazia, `execution_count` será nulo e
-  `outputs` será uma lista vazia;
-- no notebook resolvido, a fonte conterá a solução, as 17 células serão
-  executadas na ordem em que aparecem e não conservarão saídas de erro.
+O notebook discente terá apenas uma célula de código vazia imediatamente depois
+de cada seção operacional. Essas cinco células serão pontos iniciais de trabalho;
+o estudante será responsável por criar novas células quando uma seção exigir
+mais de uma operação.
 
-Essa correspondência permitirá verificar automaticamente que a solução não
-introduziu uma etapa ausente no material entregue ao estudante.
+O notebook resolvido não ficará limitado a uma célula por seção. Ele conterá as
+17 células de código necessárias para separar operações e saídas conforme o
+contrato. Os IDs e a quantidade das células de código não precisarão coincidir
+entre as duas versões.
 
 Em todos os ciclos, cada operação com saída independente ocupará sua própria
 célula. Resultados diferentes não serão reunidos artificialmente em uma
@@ -56,7 +58,31 @@ perda conceitual.
 
 ## 4. Topologia das células
 
-Cada notebook terá exatamente 24 células:
+### 4.1 Notebook discente
+
+O notebook discente terá exatamente 12 células:
+
+1. Markdown — cabeçalho institucional, idêntico à primeira célula de
+   `notebooks/u1_a01.ipynb`;
+2. Markdown — `# Aula 2 — Fundamentos estatísticos e investigação com dados`;
+3. Markdown — `## Carregamento do conjunto de dados`;
+4. código — célula inicial vazia;
+5. Markdown — `## Ciclo 1 — reconhecer a variabilidade`;
+6. código — célula inicial vazia;
+7. Markdown — `## Ciclo 2 — comparar descrição amostral e populacional`;
+8. código — célula inicial vazia;
+9. Markdown — `## Ciclo 3 — delimitar população, amostra e unidades`;
+10. código — célula inicial vazia;
+11. Markdown — `## Ciclo 4 — comparar amostragem aleatória e por conveniência`;
+12. código — célula inicial vazia.
+
+As cinco células de código terão fonte vazia, `execution_count` nulo e
+`outputs` vazio. O arquivo não antecipará quantas células adicionais o estudante
+deverá criar em cada seção.
+
+### 4.2 Notebook resolvido
+
+O notebook resolvido terá exatamente 24 células:
 
 1. Markdown — cabeçalho institucional, idêntico à primeira célula de
    `notebooks/u1_a01.ipynb`;
@@ -85,8 +111,8 @@ Cada notebook terá exatamente 24 células:
 24. código — contagens de espécies na amostra por conveniência.
 
 Não haverá resumo, objetivos, texto instrucional, comentários-guia, perguntas,
-respostas, síntese ou referências no notebook discente. Para manter a topologia
-idêntica, o notebook resolvido também não acrescentará células Markdown.
+respostas, síntese ou referências no notebook discente. O notebook resolvido
+também não acrescentará células Markdown além das sete compartilhadas.
 
 ## 5. Conjunto de dados
 
@@ -213,7 +239,7 @@ que não sejam necessários à portabilidade poderão ser normalizados.
 
 O notebook resolvido será executado do início ao fim. As células de código terão
 contagens sequenciais de 1 a 17 e não conterão saídas de erro. O notebook discente
-não terá contagens de execução nem saídas.
+terá cinco células de código vazias, sem contagens de execução nem saídas.
 
 Quatro células resolvidas — carregamento, seleção amostral do Ciclo 2 e as duas
 seleções do Ciclo 4 — não produzirão saída. As outras 13 produzirão uma saída
@@ -226,12 +252,16 @@ Um teste específico verificará:
 
 - validade do JSON e leitura por `nbformat`;
 - existência dos dois arquivos;
-- total de 24 células em cada notebook;
+- total de 12 células no notebook discente e 24 no resolvido;
 - igualdade do cabeçalho com a primeira célula de `u1_a01.ipynb`;
-- igualdade da topologia, dos IDs e das células Markdown entre as versões;
-- 17 células de código vazias e sem saídas no notebook discente;
+- igualdade dos conteúdos, IDs e ordem das sete células Markdown entre as
+  versões;
+- presença de uma única célula de código imediatamente depois de cada seção no
+  notebook discente;
+- cinco células de código vazias e sem saídas no notebook discente;
 - 17 células de código preenchidas, executadas sequencialmente e sem erros no
   notebook resolvido;
+- distribuição das células resolvidas por seção em `1`, `4`, `3`, `5` e `4`;
 - ausência de células Markdown além das sete previstas;
 - ausência de funções próprias, gráficos e bibliotecas adicionais;
 - ausência de listas e `DataFrame` nas saídas resolvidas;
