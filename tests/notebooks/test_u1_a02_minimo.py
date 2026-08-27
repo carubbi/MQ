@@ -193,9 +193,24 @@ class NotebookAula2MinimoTest(unittest.TestCase):
             "4177.5",
             "344",
             "30",
-            "pinguim",
         ):
             self.assertIn(expected, scalar_text)
+
+        pinguim_source = code[12].source
+        self.assertIn(
+            "# Identificar um pinguim pela chave composta do conjunto.",
+            pinguim_source,
+        )
+        self.assertIn(
+            'pinguim = dados.loc[0, ["studyName", "Individual ID"]]',
+            pinguim_source,
+        )
+        pinguim_output = code[12].outputs[0]
+        self.assertEqual(pinguim_output.output_type, "execute_result")
+        self.assertNotIn("text/html", pinguim_output.data)
+        pinguim_text = self._output_text(pinguim_output)
+        self.assertIn("PAL0708", pinguim_text)
+        self.assertIn("N1A1", pinguim_text)
 
         registro_source = code[13].source
         self.assertIn(
@@ -203,10 +218,10 @@ class NotebookAula2MinimoTest(unittest.TestCase):
             "observados.",
             registro_source,
         )
-        self.assertIn("registro = dados.iloc[[0], :]", registro_source)
+        self.assertIn("registro = dados.iloc[0, :]", registro_source)
         registro_output = code[13].outputs[0]
         self.assertEqual(registro_output.output_type, "execute_result")
-        self.assertIn("text/html", registro_output.data)
+        self.assertNotIn("text/html", registro_output.data)
         registro_text = self._output_text(registro_output)
         self.assertIn("PAL0708", registro_text)
         self.assertIn("N1A1", registro_text)
