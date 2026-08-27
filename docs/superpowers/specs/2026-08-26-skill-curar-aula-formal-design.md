@@ -36,8 +36,8 @@ A skill compreenderá duas fases internas do mesmo fluxo:
    delimitar seu escopo, consultar o grafo, ler as páginas originais, criar ou
    atualizar o manifesto e renderizar o dossiê.
 2. **Apoio à decisão:** recomendar estados de tópicos e referências, seus
-   papéis, compatibilizações e a partição da aula em ciclos conceituais; depois
-   registrar somente as decisões aprovadas pelo docente.
+   papéis, compatibilizações, recursos discentes e a partição da aula em ciclos
+   conceituais; depois registrar somente as decisões aprovadas pelo docente.
 
 A skill não gerará a aula pública. Essa responsabilidade pertencerá, em etapa
 posterior, a uma skill separada, `gerar-aula-formal`, que aceitará apenas um
@@ -65,6 +65,8 @@ repositório continuarão responsáveis pelas operações determinísticas:
 
 - validar o contrato e a semântica de `selecao.yaml`;
 - conferir IDs, relações e páginas contra o grafo;
+- validar materiais didáticos e exercícios indicados sem classificá-los pela
+  origem editorial;
 - renderizar `dossie.md` sem modificar o manifesto;
 - rejeitar um manifesto inconsistente ou prematuramente aprovado.
 
@@ -144,7 +146,9 @@ incompatível ou insuficiente para fundamentar o conceito.
 
 O manifesto permanecerá `em_selecao` enquanto houver tópico ou referência
 pendente, enquanto os ciclos não estiverem definidos ou enquanto faltar uma
-`aplicacao_notebook`. Não haverá estado próprio em cada ciclo.
+`aplicacao_notebook`. Um manifesto aprovado também exigirá
+`recursos_discentes`, ainda que uma das listas esteja vazia. Não haverá estado
+próprio em cada ciclo ou recurso discente.
 
 Somente após validação estrutural, curricular, bibliográfica e temporal, e
 após confirmação docente, o estado geral passará para `aprovado`.
@@ -198,19 +202,42 @@ ter parte de seu conteúdo adiada. Se a soma não couber na aula, a skill dever�
 recomendar redução de profundidade, adiamento ou redistribuição, e não a mera
 compressão do tempo.
 
-Para tornar essa análise auditável, a implementação atualizará o contrato do
-manifesto de `1.0` para `1.1`. O novo objeto de nível superior
-`planejamento_tempo` registrará `abertura_minutos` e `fechamento_minutos`. Cada
-ciclo acrescentará `complexidade`, `duracao_minima_minutos` e
+Para tornar essa análise auditável, o contrato `1.1` introduziu o objeto
+`planejamento_tempo`, que registra `abertura_minutos` e `fechamento_minutos`.
+Cada ciclo acrescentou `complexidade`, `duracao_minima_minutos` e
 `justificativa_particao`, preservando `ciclos[].topicos` e sem introduzir estado
 por ciclo.
 
 O validador calculará o tempo disponível a partir de `aula.duracao_minutos` e
 rejeitará o manifesto quando a soma das durações mínimas dos ciclos o exceder.
-A migração do manifesto da Aula 2 conservará todos os tópicos, referências e
-decisões existentes; acrescentará somente os novos campos temporais.
+A migração do manifesto da Aula 2 para `1.1` conservou todos os tópicos,
+referências e decisões existentes e acrescentou somente os campos temporais.
 
-## 9. Referência de calibração: Aula 2
+## 9. Recursos discentes
+
+`recursos_discentes` registrará, em listas ordenadas, os IDs do grafo que
+deverão aparecer em `Materiais didáticos` e `Exercícios indicados`. O contrato
+`1.2` introduz esse objeto sem alterar os papéis bibliográficos usados na
+fundamentação.
+
+A classificação será feita pela função pedagógica do item, não pelo tipo da
+fonte. Livros, apostilas e bancos de questões poderão fornecer materiais de
+estudo ou exercícios quando as páginas originais comprovarem adequação ao
+conteúdo, à profundidade e aos limites da aula.
+
+Em `materiais_didaticos`, serão aceitos nós `capitulo`, `secao` ou `exemplo`.
+Em `exercicios_indicados`, serão aceitos somente `exercicio` ou `questao`.
+Materiais poderão comprovar pertinência por relações próprias ou pela cadeia
+de contenção do grafo. Todo item deverá corresponder ao conteúdo formal,
+abordar ao menos um tópico selecionado, possuir páginas verificáveis e
+pertencer a uma fonte.
+
+Uma seção rejeitada como fundamentação poderá ser indicada para estudo quando
+for pedagogicamente adequada. Uma questão insuficiente para fundamentar um
+tópico poderá ser selecionada como exercício. Nenhuma dessas decisões alterará
+silenciosamente os papéis teóricos da referência.
+
+## 10. Referência de calibração: Aula 2
 
 A Aula 2 confirma a metodologia, mas não define um molde para outras aulas.
 Considerando 5 minutos de abertura e 10 de fechamento, permanecem 85 minutos
@@ -231,7 +258,7 @@ erro, distribuições amostrais e inferência probabilística formal. Três cicl
 concentrariam conceitos demais; cinco somente seriam justificados por maior
 profundidade ou por uma aplicação independente.
 
-## 10. Aplicação no notebook
+## 11. Aplicação no notebook
 
 Cada ciclo deverá conter exatamente uma `aplicacao_notebook`, com o mesmo ID do
 ciclo correspondente no notebook. A skill recomendará somente objetivo,
@@ -241,9 +268,9 @@ Não serão incluídos código, pseudocódigo, bibliotecas, funções, comandos,
 células, sequências de implementação ou resultados inventados. A subseção da
 aula será intitulada `Aplicação no notebook`.
 
-## 11. Fluxo operacional
+## 12. Fluxo operacional
 
-### 11.1 Preparação
+### 12.1 Preparação
 
 Ao receber semestre e ID da aula, a skill deverá:
 
@@ -251,12 +278,13 @@ Ao receber semestre e ID da aula, a skill deverá:
 2. declarar conteúdo, resultado, duração, escopo e reservas;
 3. consultar o grafo pelos conteúdos e tópicos pertinentes;
 4. ler as páginas originais das referências candidatas;
-5. registrar cobertura, páginas, notação e divergências no manifesto;
-6. validar o manifesto em estado `em_selecao`;
-7. renderizar o dossiê exclusivamente a partir do YAML;
-8. parar e apresentar ao docente as decisões pendentes.
+5. localizar materiais didáticos, exercícios e questões candidatos;
+6. registrar cobertura, páginas, notação e divergências no manifesto;
+7. validar o manifesto em estado `em_selecao`;
+8. renderizar o dossiê exclusivamente a partir do YAML;
+9. parar e apresentar ao docente as decisões pendentes.
 
-### 11.2 Apoio à decisão
+### 12.2 Apoio à decisão
 
 Depois de receber escolhas ou um pedido de recomendação, a skill deverá:
 
@@ -264,18 +292,19 @@ Depois de receber escolhas ou um pedido de recomendação, a skill deverá:
 2. recomendar papéis e compatibilizações;
 3. propor a partição conceitual mínima;
 4. estimar e testar a viabilidade temporal;
-5. recomendar uma aplicação de notebook para cada ciclo;
-6. explicar riscos, adiamentos e alternativas relevantes;
-7. registrar somente decisões confirmadas;
-8. regenerar o dossiê e validar novamente o manifesto;
-9. solicitar confirmação separada antes de marcar `aprovado`.
+5. recomendar materiais didáticos e exercícios pela adequação dos itens;
+6. recomendar uma aplicação de notebook para cada ciclo;
+7. explicar riscos, adiamentos e alternativas relevantes;
+8. registrar somente decisões confirmadas;
+9. regenerar o dossiê e validar novamente o manifesto;
+10. solicitar confirmação separada antes de marcar `aprovado`.
 
 O docente poderá escolher livremente uma ou mais referências compatíveis. A
 skill deverá aceitar essa decisão quando o contrato continuar válido e deverá
 alertar, de forma direta, quando a escolha causar lacuna de fundamentação,
 incompatibilidade ou excesso de escopo.
 
-## 12. Falhas e segurança
+## 13. Falhas e segurança
 
 Qualquer uma das condições seguintes interromperá o avanço do estado, sem
 apagar nem substituir o manifesto:
@@ -287,6 +316,9 @@ apagar nem substituir o manifesto:
 - tópico selecionado sem fundamentação;
 - tradução ou notação não compatibilizada;
 - tópico ou referência pendente;
+- recurso discente inexistente, sem páginas, de tipo incompatível ou sem
+  relação com conteúdo e tópico selecionado;
+- ausência de `recursos_discentes` em manifesto aprovado;
 - ausência de ciclos ou de aplicação correspondente;
 - partição conceitual incompatível com o tempo disponível;
 - tentativa de aprovar sem confirmação docente.
@@ -295,7 +327,7 @@ Mensagens de erro deverão indicar aula, campo ou ciclo afetado e uma ação
 corretiva. A skill não restaurará arquivos removidos nem incluirá alterações
 alheias do worktree em seus commits.
 
-## 13. Componentes da skill
+## 14. Componentes da skill
 
 O pacote privado conterá apenas os recursos necessários:
 
@@ -305,7 +337,8 @@ O pacote privado conterá apenas os recursos necessários:
 └── references/
     ├── criterios-estados.md
     ├── politica-referencias.md
-    └── ciclos-e-tempo.md
+    ├── ciclos-e-tempo.md
+    └── recursos-discentes.md
 ```
 
 `SKILL.md` descreverá gatilhos, sequência operacional, pontos de parada,
@@ -313,7 +346,7 @@ comandos do repositório e invariantes. Os arquivos de referência concentrarão
 critérios que precisem ser consultados durante a respectiva fase. Não serão
 duplicados schemas, scripts, PDFs ou dados do grafo dentro da skill.
 
-## 14. Verificação
+## 15. Verificação
 
 A implementação deverá ser verificada com cenários representativos:
 
@@ -323,6 +356,11 @@ A implementação deverá ser verificada com cenários representativos:
 - fundamentação inglesa traduzida quando a cobertura em português for
   insuficiente;
 - apostila usada apenas como referência de conteúdo;
+- materiais e exercícios selecionados pela adequação, independentemente de
+  serem provenientes de livro, apostila ou banco de questões;
+- item relacionado genericamente ao conteúdo, mas rejeitado por antecipar
+  assunto reservado;
+- listas de recursos vazias quando nenhuma indicação adequada for encontrada;
 - tópico selecionado sem fundamentação, que deve bloquear a aprovação;
 - três partições alternativas, das quais apenas uma é conceitualmente coerente
   e temporalmente viável;
@@ -336,7 +374,7 @@ Os testes determinísticos permanecerão no repositório. A própria skill será
 avaliada por cenários de uso e pela qualidade de suas decisões, sem transformar
 o julgamento pedagógico em uma regra textual rígida.
 
-## 15. Critérios de aceite
+## 16. Critérios de aceite
 
 A skill estará pronta quando:
 
@@ -346,6 +384,7 @@ A skill estará pronta quando:
 - manter o YAML como fonte canônica e o dossiê como derivação legível;
 - recomendar estados com justificativas acionáveis;
 - respeitar a política linguística e de compatibilização;
+- registrar e validar `recursos_discentes` sem confundi-los com fundamentação;
 - definir ciclos por coerência e complexidade, não por contagem fixa;
 - demonstrar a viabilidade temporal antes da aprovação;
 - preservar `ciclos[].topicos` e a correspondência com o notebook;
