@@ -44,7 +44,7 @@ o estudante será responsável por criar novas células quando uma seção exigi
 mais de uma operação.
 
 O notebook resolvido não ficará limitado a uma célula por seção. Ele conterá as
-17 células de código necessárias para separar operações e saídas conforme o
+18 células de código necessárias para separar operações e saídas conforme o
 contrato. Os IDs e a quantidade das células de código não precisarão coincidir
 entre as duas versões.
 
@@ -82,33 +82,34 @@ deverá criar em cada seção.
 
 ### 4.2 Notebook resolvido
 
-O notebook resolvido terá exatamente 24 células:
+O notebook resolvido terá exatamente 25 células:
 
 1. Markdown — cabeçalho institucional, idêntico à primeira célula de
    `notebooks/u1_a01.ipynb`;
 2. Markdown — `# Aula 2 — Fundamentos estatísticos e investigação com dados`;
 3. Markdown — `## Carregamento do conjunto de dados`;
 4. código — carregamento;
-5. Markdown — `## Ciclo 1 — reconhecer a variabilidade`;
-6. código — quantidade de valores válidos de massa corporal;
-7. código — menor massa corporal;
-8. código — maior massa corporal;
-9. código — quantidade de valores distintos de massa corporal;
-10. Markdown — `## Ciclo 2 — comparar descrição amostral e populacional`;
-11. código — seleção da amostra aleatória;
-12. código — média da massa corporal no conjunto disponível;
-13. código — média da massa corporal na amostra;
-14. Markdown — `## Ciclo 3 — delimitar população, amostra e unidades`;
-15. código — tamanho do conjunto disponível;
-16. código — tamanho da amostra;
-17. código — quantidade de unidades distintas pelo par identificador;
-18. código — unidade de análise;
-19. código — unidade de observação;
-20. Markdown — `## Ciclo 4 — comparar amostragem aleatória e por conveniência`;
-21. código — seleção da amostra aleatória;
-22. código — seleção da amostra por conveniência;
-23. código — contagens de espécies na amostra aleatória;
-24. código — contagens de espécies na amostra por conveniência.
+5. código — informações básicas do conjunto de dados com `dados.info()`;
+6. Markdown — `## Ciclo 1 — reconhecer a variabilidade`;
+7. código — quantidade de valores válidos de massa corporal;
+8. código — menor massa corporal;
+9. código — maior massa corporal;
+10. código — quantidade de valores distintos de massa corporal;
+11. Markdown — `## Ciclo 2 — comparar descrição amostral e populacional`;
+12. código — seleção da amostra aleatória;
+13. código — média da massa corporal no conjunto disponível;
+14. código — média da massa corporal na amostra;
+15. Markdown — `## Ciclo 3 — delimitar população, amostra e unidades`;
+16. código — tamanho do conjunto disponível;
+17. código — tamanho da amostra;
+18. código — quantidade de unidades distintas pelo par identificador;
+19. código — unidade de análise;
+20. código — unidade de observação;
+21. Markdown — `## Ciclo 4 — comparar amostragem aleatória e por conveniência`;
+22. código — seleção da amostra aleatória;
+23. código — seleção da amostra por conveniência;
+24. código — contagens de espécies na amostra aleatória;
+25. código — contagens de espécies na amostra por conveniência.
 
 Não haverá resumo, objetivos, texto instrucional, comentários-guia, perguntas,
 respostas, síntese ou referências no notebook discente. O notebook resolvido
@@ -143,10 +144,12 @@ dados e população-alvo.
 
 ### 6.1 Carregamento do conjunto de dados
 
-A primeira célula de código importará `pandas`, carregará o CSV público,
-selecionará as cinco colunas necessárias e removerá somente as linhas sem massa
-corporal quando essa medida for necessária. A célula apenas criará o conjunto de
-dados e não produzirá saída tabular.
+A primeira célula de código importará `pandas`, carregará o CSV público e
+selecionará as cinco colunas necessárias. Ela apenas criará `dados` e não
+produzirá saída. A segunda célula executará `dados.info()` para apresentar, em
+formato textual, o índice, as colunas, as quantidades de valores não nulos, os
+tipos de dados e o uso de memória. A remoção das linhas sem massa corporal será
+realizada somente nas operações que dependerem dessa medida.
 
 ### 6.2 Ciclo 1 — variabilidade
 
@@ -226,10 +229,11 @@ Comentários de código também serão omitidos para que a versão resolvida sej
 formada apenas pelas instruções necessárias. Nomes de objetos e rótulos de saída
 serão suficientes para tornar o código legível.
 
-As células de carregamento e seleção poderão não produzir saída. Nas demais,
-cada saída será um único número ou texto. As duas contagens por espécie do Ciclo
-4 constituem a única exceção e poderão produzir uma `Series` cada. Nenhuma célula
-produzirá lista ou `DataFrame` como saída.
+As células de criação do conjunto de dados e de seleção poderão não produzir
+saída. Nas demais, cada saída será um único número ou texto. A inspeção com
+`dados.info()` produzirá uma saída textual estrutural. As duas contagens por
+espécie do Ciclo 4 constituem a única exceção e poderão produzir uma `Series`
+cada. Nenhuma célula produzirá lista ou `DataFrame` como saída.
 
 ## 8. Metadados e execução
 
@@ -238,11 +242,11 @@ Os metadados de kernel e linguagem serão derivados de
 que não sejam necessários à portabilidade poderão ser normalizados.
 
 O notebook resolvido será executado do início ao fim. As células de código terão
-contagens sequenciais de 1 a 17 e não conterão saídas de erro. O notebook discente
+contagens sequenciais de 1 a 18 e não conterão saídas de erro. O notebook discente
 terá cinco células de código vazias, sem contagens de execução nem saídas.
 
-Quatro células resolvidas — carregamento, seleção amostral do Ciclo 2 e as duas
-seleções do Ciclo 4 — não produzirão saída. As outras 13 produzirão uma saída
+Quatro células resolvidas — criação de `dados`, seleção amostral do Ciclo 2 e as
+duas seleções do Ciclo 4 — não produzirão saída. As outras 14 produzirão uma saída
 simples por célula, exceto pelas duas `Series` categóricas justificadas no Ciclo
 4.
 
@@ -252,22 +256,23 @@ Um teste específico verificará:
 
 - validade do JSON e leitura por `nbformat`;
 - existência dos dois arquivos;
-- total de 12 células no notebook discente e 24 no resolvido;
+- total de 12 células no notebook discente e 25 no resolvido;
 - igualdade do cabeçalho com a primeira célula de `u1_a01.ipynb`;
 - igualdade dos conteúdos, IDs e ordem das sete células Markdown entre as
   versões;
 - presença de uma única célula de código imediatamente depois de cada seção no
   notebook discente;
 - cinco células de código vazias e sem saídas no notebook discente;
-- 17 células de código preenchidas, executadas sequencialmente e sem erros no
+- 18 células de código preenchidas, executadas sequencialmente e sem erros no
   notebook resolvido;
-- distribuição das células resolvidas por seção em `1`, `4`, `3`, `5` e `4`;
+- distribuição das células resolvidas por seção em `2`, `4`, `3`, `5` e `4`;
 - ausência de células Markdown além das sete previstas;
 - ausência de funções próprias, gráficos e bibliotecas adicionais;
 - ausência de listas e `DataFrame` nas saídas resolvidas;
 - presença de somente duas saídas em `Series`, ambas correspondentes às
   contagens por espécie do Ciclo 4;
-- presença de quatro células operacionais sem saída e 13 células com uma única
+- presença da saída textual de `dados.info()` com as cinco colunas selecionadas;
+- presença de quatro células operacionais sem saída e 14 células com uma única
   saída;
 - execução integral do código resolvido com o conjunto de dados esperado.
 
