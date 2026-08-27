@@ -123,6 +123,104 @@ class ManifestValidationTests(unittest.TestCase):
 
         self.assertEqual([], validate_manifest(manifest, GRAPH))
 
+    def test_accepts_empty_student_resource_lists(self):
+        manifest = approved_manifest()
+        manifest["recursos_discentes"] = {
+            "materiais_didaticos": [],
+            "exercicios_indicados": [],
+        }
+
+        self.assertEqual(
+            [],
+            validate_manifest(manifest, GRAPH, require_approved=True),
+        )
+
+    def test_rejects_unknown_student_resource(self):
+        manifest = approved_manifest()
+        manifest["recursos_discentes"]["materiais_didaticos"] = [
+            {"id": "ausente"}
+        ]
+
+        self.assertIn(
+            "recurso discente desconhecido: ausente",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_resource_type_in_wrong_list(self):
+        manifest = approved_manifest()
+        manifest["recursos_discentes"]["materiais_didaticos"] = [
+            {"id": "questao-populacao"}
+        ]
+
+        self.assertIn(
+            "recurso questao-populacao do tipo questao é inválido em "
+            "materiais_didaticos",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_material_type_in_exercise_list(self):
+        manifest = approved_manifest()
+        manifest["recursos_discentes"]["exercicios_indicados"] = [
+            {"id": "secao-populacao"}
+        ]
+
+        self.assertIn(
+            "recurso secao-populacao do tipo secao é inválido em "
+            "exercicios_indicados",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_accepts_chapter_related_through_contained_section(self):
+        self.assertEqual([], validate_manifest(approved_manifest(), GRAPH))
+
+    def test_rejects_resource_without_pages(self):
+        graph = copy.deepcopy(GRAPH)
+        chapter = next(
+            node
+            for node in graph["nos"]
+            if node["id"] == "capitulo-fundamentos"
+        )
+        del chapter["pagina_pdf_inicio"]
+        del chapter["pagina_pdf_fim"]
+
+        self.assertIn(
+            "recurso capitulo-fundamentos não possui páginas verificáveis",
+            validate_manifest(approved_manifest(), graph),
+        )
+
+    def test_rejects_resource_without_source_ancestor(self):
+        graph = copy.deepcopy(GRAPH)
+        graph["relacoes"] = [
+            edge
+            for edge in graph["relacoes"]
+            if not (
+                edge["origem"] == "fonte-a"
+                and edge["tipo"] == "contem"
+                and edge["destino"] == "capitulo-fundamentos"
+            )
+        ]
+
+        self.assertIn(
+            "recurso capitulo-fundamentos não pertence a uma fonte",
+            validate_manifest(approved_manifest(), graph),
+        )
+
+    def test_rejects_resource_unrelated_to_selected_topics(self):
+        graph = copy.deepcopy(GRAPH)
+        graph["relacoes"] = [
+            edge
+            for edge in graph["relacoes"]
+            if not (
+                edge["origem"] == "questao-populacao"
+                and edge["tipo"] == "aborda"
+            )
+        ]
+
+        self.assertIn(
+            "recurso questao-populacao não aborda tópico selecionado da aula",
+            validate_manifest(approved_manifest(), graph),
+        )
+
     def test_rejects_missing_time_plan(self):
         manifest = copy.deepcopy(VALID_MANIFEST)
         del manifest["planejamento_tempo"]

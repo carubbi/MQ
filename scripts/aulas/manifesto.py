@@ -3,15 +3,26 @@
 from __future__ import annotations
 
 import json
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
 
+from scripts.aulas.grafo import (
+    graph_indexes,
+    node_and_descendant_ids,
+    page_interval,
+    source_ancestors,
+)
+
 
 SCHEMA_PATH = Path(__file__).with_name("schema_selecao.json")
 REFERENCE_TYPES = {"secao", "exemplo", "exercicio", "questao"}
+STUDENT_RESOURCE_TYPES = {
+    "materiais_didaticos": {"capitulo", "secao", "exemplo"},
+    "exercicios_indicados": {"exercicio", "questao"},
+}
 
 
 def load_manifest(path: Path) -> dict:
@@ -42,53 +53,6 @@ def _schema_findings(manifest: dict) -> list[str]:
             key=lambda error: (list(error.absolute_path), error.message),
         )
     ]
-
-
-def _graph_indexes(graph: dict) -> tuple[dict[str, dict], dict[str, set[tuple[str, str]]]]:
-    nodes = {
-        node["id"]: node
-        for node in graph.get("nos", [])
-        if isinstance(node, dict) and isinstance(node.get("id"), str)
-    }
-    relations: dict[str, set[tuple[str, str]]] = defaultdict(set)
-    for edge in graph.get("relacoes", []):
-        if not isinstance(edge, dict):
-            continue
-        relation_type = edge.get("tipo")
-        origin = edge.get("origem")
-        destination = edge.get("destino")
-        if all(isinstance(value, str) for value in (relation_type, origin, destination)):
-            relations[relation_type].add((origin, destination))
-    return nodes, relations
-
-
-def _source_ancestors(
-    node_id: str,
-    nodes: dict[str, dict],
-    contains: set[tuple[str, str]],
-) -> set[str]:
-    parents: dict[str, set[str]] = defaultdict(set)
-    for parent, child in contains:
-        parents[child].add(parent)
-    ancestors: set[str] = set()
-    pending = list(parents.get(node_id, set()))
-    visited: set[str] = set()
-    while pending:
-        ancestor_id = pending.pop()
-        if ancestor_id in visited:
-            continue
-        visited.add(ancestor_id)
-        ancestor = nodes.get(ancestor_id, {})
-        if ancestor.get("tipo") == "fonte":
-            ancestors.add(ancestor_id)
-        pending.extend(parents.get(ancestor_id, set()))
-    return ancestors
-
-
-def _page_interval(node: dict) -> tuple[int | None, int | None]:
-    if isinstance(node.get("pagina_pdf"), int):
-        return node["pagina_pdf"], node["pagina_pdf"]
-    return node.get("pagina_pdf_inicio"), node.get("pagina_pdf_fim")
 
 
 def _cycle_findings(manifest: dict) -> list[str]:
@@ -170,6 +134,69 @@ def _cycle_findings(manifest: dict) -> list[str]:
     return findings
 
 
+def _student_resource_findings(
+    manifest: dict,
+    nodes: dict[str, dict],
+    relations: dict[str, set[tuple[str, str]]],
+    formal_ids: set[str],
+) -> list[str]:
+    findings: list[str] = []
+    selected_topic_ids = {
+        topic.get("id")
+        for topic in manifest.get("topicos", [])
+        if isinstance(topic, dict) and topic.get("estado") == "selecionado"
+    }
+    resources = manifest.get("recursos_discentes", {})
+    if not isinstance(resources, dict):
+        return findings
+
+    for list_name, accepted_types in STUDENT_RESOURCE_TYPES.items():
+        for entry in resources.get(list_name, []):
+            if not isinstance(entry, dict):
+                continue
+            resource_id = entry.get("id")
+            node = nodes.get(resource_id)
+            if node is None:
+                findings.append(f"recurso discente desconhecido: {resource_id}")
+                continue
+            node_type = node.get("tipo")
+            if node_type not in accepted_types:
+                findings.append(
+                    f"recurso {resource_id} do tipo {node_type} é inválido "
+                    f"em {list_name}"
+                )
+                continue
+            candidates = (
+                node_and_descendant_ids(resource_id, relations["contem"])
+                if list_name == "materiais_didaticos"
+                else {resource_id}
+            )
+            start, end = page_interval(node)
+            if not all(isinstance(value, int) for value in (start, end)):
+                findings.append(
+                    f"recurso {resource_id} não possui páginas verificáveis"
+                )
+            if not source_ancestors(resource_id, nodes, relations["contem"]):
+                findings.append(f"recurso {resource_id} não pertence a uma fonte")
+            if formal_ids and not any(
+                (candidate_id, content_id) in relations["corresponde_a"]
+                for candidate_id in candidates
+                for content_id in formal_ids
+            ):
+                findings.append(
+                    f"recurso {resource_id} não corresponde aos conteúdos da aula"
+                )
+            if selected_topic_ids and not any(
+                (candidate_id, topic_id) in relations["aborda"]
+                for candidate_id in candidates
+                for topic_id in selected_topic_ids
+            ):
+                findings.append(
+                    f"recurso {resource_id} não aborda tópico selecionado da aula"
+                )
+    return findings
+
+
 def _semantic_findings(
     manifest: dict,
     graph: dict,
@@ -177,7 +204,7 @@ def _semantic_findings(
     require_approved: bool,
 ) -> list[str]:
     findings: list[str] = []
-    nodes, relations = _graph_indexes(graph)
+    nodes, relations = graph_indexes(graph)
     content_ids = {
         node["codigo"]: node_id
         for node_id, node in nodes.items()
@@ -226,7 +253,7 @@ def _semantic_findings(
                 )
 
             source_id = reference.get("fonte_id")
-            if source_id not in _source_ancestors(
+            if source_id not in source_ancestors(
                 reference_id,
                 nodes,
                 relations["contem"],
@@ -238,7 +265,7 @@ def _semantic_findings(
             pages = reference.get("paginas_pdf", {})
             selected_start = pages.get("inicio")
             selected_end = pages.get("fim")
-            node_start, node_end = _page_interval(reference_node)
+            node_start, node_end = page_interval(reference_node)
             if (
                 all(
                     isinstance(value, int)
@@ -271,6 +298,14 @@ def _semantic_findings(
 
     if manifest.get("estado") == "aprovado" and not manifest.get("ciclos"):
         findings.append("manifesto aprovado deve definir ao menos um ciclo")
+    findings.extend(
+        _student_resource_findings(
+            manifest,
+            nodes,
+            relations,
+            formal_ids,
+        )
+    )
     findings.extend(_cycle_findings(manifest))
     return findings
 
