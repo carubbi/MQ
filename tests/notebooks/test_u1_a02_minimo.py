@@ -198,7 +198,7 @@ class NotebookAula2MinimoTest(unittest.TestCase):
 
         pinguim_source = code[12].source
         self.assertIn(
-            "# Identificar um pinguim pela chave composta do conjunto.",
+            "# Indicar a unidade de análise.",
             pinguim_source,
         )
         self.assertIn(
@@ -214,8 +214,7 @@ class NotebookAula2MinimoTest(unittest.TestCase):
 
         registro_source = code[13].source
         self.assertIn(
-            "# Exibir um registro de um pinguim como exemplo dos dados "
-            "observados.",
+            "# Indicar a unidade de observação.",
             registro_source,
         )
         self.assertIn("registro = dados.iloc[0, :]", registro_source)
