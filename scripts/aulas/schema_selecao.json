@@ -15,7 +15,7 @@
     "topicos"
   ],
   "properties": {
-    "versao_contrato": {"const": "1.1"},
+    "versao_contrato": {"const": "1.2"},
     "estado": {"enum": ["em_selecao", "aprovado"]},
     "aula": {"$ref": "#/$defs/aula"},
     "notacao": {"$ref": "#/$defs/notacao"},
@@ -25,6 +25,7 @@
       "type": "array",
       "items": {"$ref": "#/$defs/ciclo"}
     },
+    "recursos_discentes": {"$ref": "#/$defs/recursosDiscentes"},
     "topicos": {
       "type": "array",
       "minItems": 1,
@@ -38,6 +39,7 @@
         "required": ["estado"]
       },
       "then": {
+        "required": ["recursos_discentes"],
         "properties": {"ciclos": {"minItems": 1}}
       }
     }
@@ -153,6 +155,31 @@
         "evidencia": {"$ref": "#/$defs/texto"},
         "ciclo_notebook": {"type": "string", "pattern": "^ciclo-[0-9]{2}$"},
         "caminho": {"$ref": "#/$defs/texto"}
+      }
+    },
+    "recursoDiscente": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id"],
+      "properties": {
+        "id": {"$ref": "#/$defs/texto"}
+      }
+    },
+    "recursosDiscentes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["materiais_didaticos", "exercicios_indicados"],
+      "properties": {
+        "materiais_didaticos": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/recursoDiscente"},
+          "uniqueItems": true
+        },
+        "exercicios_indicados": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/recursoDiscente"},
+          "uniqueItems": true
+        }
       }
     },
     "topico": {

@@ -12,12 +12,27 @@ GRAPH = {
             "titulo": "Fonte A",
         },
         {
+            "id": "capitulo-fundamentos",
+            "tipo": "capitulo",
+            "numero_impresso": "1",
+            "titulo": "Fundamentos",
+            "pagina_pdf_inicio": 10,
+            "pagina_pdf_fim": 13,
+        },
+        {
             "id": "secao-populacao",
             "tipo": "secao",
             "numero_impresso": "1.1",
             "titulo": "População e amostra",
             "pagina_pdf_inicio": 10,
             "pagina_pdf_fim": 12,
+            "pertinencia_t199": "direta",
+        },
+        {
+            "id": "questao-populacao",
+            "tipo": "questao",
+            "numero_impresso": "1",
+            "pagina_pdf": 13,
             "pertinencia_t199": "direta",
         },
         {
@@ -37,7 +52,17 @@ GRAPH = {
         {
             "origem": "fonte-a",
             "tipo": "contem",
+            "destino": "capitulo-fundamentos",
+        },
+        {
+            "origem": "capitulo-fundamentos",
+            "tipo": "contem",
             "destino": "secao-populacao",
+        },
+        {
+            "origem": "capitulo-fundamentos",
+            "tipo": "contem",
+            "destino": "questao-populacao",
         },
         {
             "origem": "secao-populacao",
@@ -49,12 +74,22 @@ GRAPH = {
             "tipo": "aborda",
             "destino": "topico-populacao",
         },
+        {
+            "origem": "questao-populacao",
+            "tipo": "corresponde_a",
+            "destino": "conteudo-01-01",
+        },
+        {
+            "origem": "questao-populacao",
+            "tipo": "aborda",
+            "destino": "topico-populacao",
+        },
     ],
 }
 
 
 VALID_MANIFEST = {
-    "versao_contrato": "1.1",
+    "versao_contrato": "1.2",
     "estado": "em_selecao",
     "aula": {
         "id": "u1_a02",
@@ -83,6 +118,10 @@ VALID_MANIFEST = {
         "fechamento_minutos": 10,
     },
     "ciclos": [],
+    "recursos_discentes": {
+        "materiais_didaticos": [{"id": "capitulo-fundamentos"}],
+        "exercicios_indicados": [{"id": "questao-populacao"}],
+    },
     "topicos": [
         {
             "id": "topico-populacao",

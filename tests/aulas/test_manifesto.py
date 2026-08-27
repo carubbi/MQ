@@ -86,22 +86,42 @@ class ManifestValidationTests(unittest.TestCase):
 
         self.assertEqual([], validate_manifest(manifest, GRAPH))
 
-    def test_accepts_approved_contract_1_1_manifest(self):
+    def test_accepts_approved_contract_1_2_manifest(self):
         self.assertEqual(
             [],
             validate_manifest(approved_manifest(), GRAPH, require_approved=True),
         )
 
-    def test_rejects_contract_1_0(self):
+    def test_rejects_contract_1_1(self):
         manifest = copy.deepcopy(VALID_MANIFEST)
-        manifest["versao_contrato"] = "1.0"
+        manifest["versao_contrato"] = "1.1"
 
         findings = validate_manifest(manifest, GRAPH)
 
         self.assertTrue(
-            any("'1.1' was expected" in finding for finding in findings),
+            any("'1.2' was expected" in finding for finding in findings),
             findings,
         )
+
+    def test_approved_manifest_requires_student_resources(self):
+        manifest = approved_manifest()
+        del manifest["recursos_discentes"]
+
+        findings = validate_manifest(manifest, GRAPH, require_approved=True)
+
+        self.assertTrue(
+            any(
+                "'recursos_discentes' is a required property" in finding
+                for finding in findings
+            ),
+            findings,
+        )
+
+    def test_selection_manifest_may_omit_student_resources(self):
+        manifest = copy.deepcopy(VALID_MANIFEST)
+        del manifest["recursos_discentes"]
+
+        self.assertEqual([], validate_manifest(manifest, GRAPH))
 
     def test_rejects_missing_time_plan(self):
         manifest = copy.deepcopy(VALID_MANIFEST)
