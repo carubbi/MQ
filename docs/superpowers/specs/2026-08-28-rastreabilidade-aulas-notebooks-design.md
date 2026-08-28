@@ -35,12 +35,13 @@ código artificial para conteúdos cuja evidência é conceitual.
 
 ### Origem do exemplo resolvido
 
-Cada ciclo de `selecao.yaml` receberá a origem do exercício usado em `Exemplo e
+Cada ciclo de `selecao.yaml` receberá a origem da atividade usada em `Exemplo e
 resolução`, com:
 
 - ID da referência no grafo;
 - item, questão ou seção;
 - páginas PDF;
+- tipo de origem: `exercicio`, `questao` ou `exemplo_aplicado`;
 - forma de uso: `parafraseado` ou `adaptado`;
 - conceitos que devem ser aplicados manualmente.
 
@@ -49,8 +50,11 @@ necessários e receberá citação próxima. Não haverá reprodução extensa d
 editorial nem código na resolução.
 
 Quando as referências já selecionadas não contiverem exercício compatível, a
-curadoria consultará o grafo e o banco de questões. A nova fonte será selecionada
-antes da geração; a skill não inventará um exercício para preencher a seção.
+curadoria consultará o grafo e o banco de questões. Se essa busca também não
+encontrar exercício ou questão, será permitido converter um exemplo aplicado da
+referência em atividade com resolução manual. O manifesto registrará explicitamente
+essa exceção e sua origem; a skill não inventará dados ou fenômenos para preencher
+a seção.
 
 ### Utilidade das fórmulas
 
@@ -119,15 +123,16 @@ curtas e significativas e saídas separadas.
 
 ### `curar-aula-formal`
 
-A skill e o contrato do manifesto passarão a exigir a origem do exercício de
-cada ciclo. O schema e os testes de `scripts/aulas` validarão a estrutura e a
-existência do ID no grafo.
+A skill e o contrato do manifesto passarão a exigir a origem da atividade de
+cada ciclo. O schema e os testes de `scripts/aulas` validarão a estrutura, a
+existência do ID no grafo e a precedência de exercício ou questão sobre exemplo
+aplicado.
 
 ### `gerar-aula-formal`
 
 O contrato da aula exigirá:
 
-- exercício rastreável por ciclo;
+- atividade rastreável por ciclo, priorizando exercício ou questão;
 - enunciado parafraseado ou adaptado;
 - resolução manual;
 - citação próxima;
