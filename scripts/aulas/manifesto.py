@@ -19,6 +19,11 @@ from scripts.aulas.grafo import (
 
 SCHEMA_PATH = Path(__file__).with_name("schema_selecao.json")
 REFERENCE_TYPES = {"secao", "exemplo", "exercicio", "questao"}
+ACTIVITY_NODE_TYPES = {
+    "exercicio": "exercicio",
+    "questao": "questao",
+    "exemplo_aplicado": "exemplo",
+}
 STUDENT_RESOURCE_TYPES = {
     "materiais_didaticos": {"capitulo", "secao", "exemplo"},
     "exercicios_indicados": {"exercicio", "questao"},
@@ -197,6 +202,94 @@ def _student_resource_findings(
     return findings
 
 
+def _activity_findings(manifest: dict, nodes: dict[str, dict]) -> list[str]:
+    findings: list[str] = []
+    for cycle in manifest.get("ciclos", []):
+        if not isinstance(cycle, dict):
+            continue
+        cycle_id = cycle.get("id")
+        activity = cycle.get("atividade_resolvida")
+        if not isinstance(cycle_id, str) or not isinstance(activity, dict):
+            continue
+
+        reference_id = activity.get("referencia_id")
+        reference_node = nodes.get(reference_id)
+        if reference_node is None:
+            findings.append(
+                f"atividade resolvida do ciclo {cycle_id} referencia "
+                f"desconhecida: {reference_id}"
+            )
+            continue
+
+        origin_type = activity.get("tipo_origem")
+        expected_node_type = ACTIVITY_NODE_TYPES.get(origin_type)
+        node_type = reference_node.get("tipo")
+        if expected_node_type is not None and node_type != expected_node_type:
+            findings.append(
+                f"atividade resolvida do ciclo {cycle_id} declara {origin_type}, "
+                f"mas a referência {reference_id} é do tipo {node_type}"
+            )
+
+        pages = activity.get("paginas_pdf")
+        if isinstance(pages, dict):
+            selected_start = pages.get("inicio")
+            selected_end = pages.get("fim")
+            node_start, node_end = page_interval(reference_node)
+            if (
+                all(
+                    isinstance(value, int)
+                    for value in (
+                        selected_start,
+                        selected_end,
+                        node_start,
+                        node_end,
+                    )
+                )
+                and not node_start <= selected_start <= selected_end <= node_end
+            ):
+                findings.append(
+                    "páginas da atividade resolvida fora do intervalo de "
+                    f"{reference_id}: {selected_start}-{selected_end}"
+                )
+
+        exception_justification = activity.get("justificativa_excecao")
+        if origin_type == "exemplo_aplicado" and not (
+            isinstance(exception_justification, str)
+            and exception_justification.strip()
+        ):
+            findings.append(
+                f"atividade resolvida do ciclo {cycle_id} do tipo "
+                "exemplo_aplicado exige justificativa_excecao não vazia"
+            )
+        elif origin_type in {"exercicio", "questao"} and (
+            exception_justification is not None
+        ):
+            findings.append(
+                f"atividade resolvida do ciclo {cycle_id} do tipo {origin_type} "
+                "deve ter justificativa_excecao nula"
+            )
+
+        selected_topic_ids = set(cycle.get("topicos", []))
+        is_selected_exercise = any(
+            topic.get("id") in selected_topic_ids
+            and any(
+                reference.get("id") == reference_id
+                and reference.get("estado") == "selecionada"
+                and "exercicio" in reference.get("papeis", [])
+                for reference in topic.get("referencias", [])
+                if isinstance(reference, dict)
+            )
+            for topic in manifest.get("topicos", [])
+            if isinstance(topic, dict)
+        )
+        if not is_selected_exercise:
+            findings.append(
+                f"atividade resolvida do ciclo {cycle_id} não está selecionada "
+                "com papel exercicio em tópico do ciclo"
+            )
+    return findings
+
+
 def _semantic_findings(
     manifest: dict,
     graph: dict,
@@ -306,6 +399,7 @@ def _semantic_findings(
             formal_ids,
         )
     )
+    findings.extend(_activity_findings(manifest, nodes))
     findings.extend(_cycle_findings(manifest))
     return findings
 

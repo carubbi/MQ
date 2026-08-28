@@ -86,10 +86,91 @@ class ManifestValidationTests(unittest.TestCase):
 
         self.assertEqual([], validate_manifest(manifest, GRAPH))
 
-    def test_accepts_approved_contract_1_2_manifest(self):
+    def test_accepts_approved_contract_1_3_manifest(self):
         self.assertEqual(
             [],
             validate_manifest(approved_manifest(), GRAPH, require_approved=True),
+        )
+
+    def test_rejects_approved_manifest_without_resolved_activity(self):
+        manifest = approved_manifest()
+        del manifest["ciclos"][0]["atividade_resolvida"]
+
+        findings = validate_manifest(manifest, GRAPH, require_approved=True)
+
+        self.assertTrue(
+            any(
+                "'atividade_resolvida' is a required property" in finding
+                for finding in findings
+            ),
+            findings,
+        )
+
+    def test_rejects_resolved_activity_with_unknown_reference(self):
+        manifest = approved_manifest()
+        manifest["ciclos"][0]["atividade_resolvida"]["referencia_id"] = "ausente"
+
+        self.assertIn(
+            "atividade resolvida do ciclo ciclo-01 referencia desconhecida: "
+            "ausente",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_resolved_activity_with_type_different_from_graph_node(self):
+        manifest = approved_manifest()
+        manifest["ciclos"][0]["atividade_resolvida"]["tipo_origem"] = "exercicio"
+
+        self.assertIn(
+            "atividade resolvida do ciclo ciclo-01 declara exercicio, mas a "
+            "referência questao-populacao é do tipo questao",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_resolved_activity_pages_outside_graph_node(self):
+        manifest = approved_manifest()
+        manifest["ciclos"][0]["atividade_resolvida"]["paginas_pdf"] = {
+            "inicio": 12,
+            "fim": 13,
+        }
+
+        self.assertIn(
+            "páginas da atividade resolvida fora do intervalo de "
+            "questao-populacao: 12-13",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_resolved_activity_without_selected_exercise_role(self):
+        manifest = approved_manifest()
+        manifest["topicos"][0]["referencias"][1]["papeis"] = []
+
+        self.assertIn(
+            "atividade resolvida do ciclo ciclo-01 não está selecionada com "
+            "papel exercicio em tópico do ciclo",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_applied_example_without_exception_justification(self):
+        manifest = approved_manifest()
+        activity = manifest["ciclos"][0]["atividade_resolvida"]
+        activity["tipo_origem"] = "exemplo_aplicado"
+
+        self.assertIn(
+            "atividade resolvida do ciclo ciclo-01 do tipo exemplo_aplicado "
+            "exige justificativa_excecao não vazia",
+            validate_manifest(manifest, GRAPH),
+        )
+
+    def test_rejects_question_activity_with_exception_justification(self):
+        manifest = approved_manifest()
+        manifest["ciclos"][0]["atividade_resolvida"][
+            "justificativa_excecao"
+        ] = "Há uma questão disponível."
+
+        findings = validate_manifest(manifest, GRAPH)
+
+        self.assertTrue(
+            any("is not of type 'null'" in finding for finding in findings),
+            findings,
         )
 
     def test_rejects_contract_1_1(self):
@@ -99,7 +180,7 @@ class ManifestValidationTests(unittest.TestCase):
         findings = validate_manifest(manifest, GRAPH)
 
         self.assertTrue(
-            any("'1.2' was expected" in finding for finding in findings),
+            any("'1.3' was expected" in finding for finding in findings),
             findings,
         )
 
