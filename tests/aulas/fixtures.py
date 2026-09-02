@@ -89,7 +89,7 @@ GRAPH = {
 
 
 VALID_MANIFEST = {
-    "versao_contrato": "1.3",
+    "versao_contrato": "2.0",
     "estado": "em_selecao",
     "aula": {
         "id": "u1_a02",
@@ -117,7 +117,6 @@ VALID_MANIFEST = {
         "abertura_minutos": 5,
         "fechamento_minutos": 10,
     },
-    "ciclos": [],
     "recursos_discentes": {
         "materiais_didaticos": [{"id": "capitulo-fundamentos"}],
         "exercicios_indicados": [{"id": "questao-populacao"}],
@@ -159,47 +158,4 @@ def approved_manifest() -> dict:
     reference = topic["referencias"][0]
     reference["estado"] = "selecionada"
     reference["papeis"] = ["fundamentacao"]
-    topic["referencias"].append(
-        {
-            "id": "questao-populacao",
-            "fonte_id": "fonte-a",
-            "estado": "selecionada",
-            "papeis": ["exercicio"],
-            "paginas_pdf": {"inicio": 13, "fim": 13},
-            "cobertura": "Questão de identificação de população e amostra.",
-            "notacao": "N para população e n para amostra.",
-        }
-    )
-    manifest["ciclos"] = [
-        {
-            "id": "ciclo-01",
-            "titulo": "População e amostra",
-            "topicos": ["topico-populacao"],
-            "complexidade": "moderada",
-            "duracao_minima_minutos": 20,
-            "justificativa_particao": (
-                "O ciclo reúne a definição do universo de interesse e sua "
-                "redução amostral."
-            ),
-            "aplicacao_notebook": {
-                "objetivo": "Identificar população e amostra no conjunto estudado.",
-                "pergunta": "Qual população sustenta a conclusão pretendida?",
-                "contraste": "Comparar o grupo observado ao alvo da conclusão.",
-                "evidencia": "Identificação justificada da população e da amostra.",
-                "ciclo_notebook": "ciclo-01",
-                "caminho": (
-                    "notebooks/u1_a02_fundamentos_investigacao_dados.ipynb"
-                ),
-            },
-            "atividade_resolvida": {
-                "referencia_id": "questao-populacao",
-                "tipo_origem": "questao",
-                "descricao_item": "Questão 1",
-                "paginas_pdf": {"inicio": 13, "fim": 13},
-                "forma_uso": "parafraseado",
-                "conceitos_aplicados": ["População", "Amostra"],
-                "justificativa_excecao": None,
-            },
-        }
-    ]
     return manifest
