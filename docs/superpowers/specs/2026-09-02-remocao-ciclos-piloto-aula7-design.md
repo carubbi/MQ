@@ -22,7 +22,7 @@ sem reproduzir ciclos sob outro nome.
 
 ## Contrato de curadoria
 
-`selecao.yaml` passa a usar uma nova versão incompatível do contrato. A ordem de
+`selecao.yaml` passa ao contrato `2.0`, incompatível com o contrato `1.3`. A ordem de
 `topicos` estabelece a sequência pedagógica.
 
 São removidos:
@@ -67,7 +67,8 @@ seção `Aplicação no notebook` repetida por tópico.
 
 ## Contrato do notebook
 
-O plano computacional substitui `ciclos` por `atividades`. Cada atividade possui:
+O plano computacional passa do contrato `1.0` ao contrato `2.0` e substitui
+`ciclos` por `atividades`. Cada atividade possui:
 
 - ID próprio no formato `atividade-NN`;
 - título e objetivo;
@@ -85,6 +86,9 @@ Os validadores devem rejeitar atividades que apontem para tópicos inexistentes 
 não selecionados. Uma origem bibliográfica deve apontar para referência e páginas
 selecionadas; uma origem autoral deve trazer justificativa. A aprovação do plano
 computacional continua separada da aprovação da aula.
+
+No plano aprovado, todo tópico selecionado deve ser aplicado por ao menos uma
+atividade. Isso assegura cobertura sem impor correspondência um para um.
 
 ## Alterações no fluxo ativo
 
