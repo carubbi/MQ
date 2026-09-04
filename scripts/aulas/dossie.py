@@ -5,24 +5,22 @@ from __future__ import annotations
 from scripts.aulas.grafo import graph_indexes, page_interval, source_ancestors
 
 
-def _text_list(values: list[str]) -> str:
-    return "; ".join(values) if values else "Nenhum."
+def _markdown_items(values: list[str], *, indentation: str = "") -> list[str]:
+    items = values or ["Nenhum."]
+    return [f"{indentation}- {value}" for value in items]
 
 
 def _render_scope(scope: dict) -> list[str]:
-    return [
-        "### Incluídos",
-        "",
-        _text_list(scope["incluidos"]),
-        "",
-        "### Excluídos",
-        "",
-        _text_list(scope["excluidos"]),
-        "",
-        "### Reservados para aulas posteriores",
-        "",
-        _text_list(scope["reservados"]),
-    ]
+    lines: list[str] = []
+    for title, key in (
+        ("Incluídos", "incluidos"),
+        ("Excluídos", "excluidos"),
+        ("Reservados para aulas posteriores", "reservados"),
+    ):
+        lines.extend([f"### {title}", ""])
+        lines.extend(_markdown_items(scope[key]))
+        lines.extend([""])
+    return lines[:-1]
 
 
 def _render_time_plan(manifest: dict) -> list[str]:
@@ -49,8 +47,10 @@ def _render_topic(topic: dict) -> list[str]:
         f"- **ID:** `{topic['id']}`",
         f"- **Classificação:** {topic['classificacao']}",
         f"- **Profundidade:** {topic['profundidade']}",
-        f"- **Subassuntos:** {_text_list(topic['subassuntos'])}",
-        f"- **Divergências:** {_text_list(topic['divergencias'])}",
+        "- **Subassuntos:**",
+        *_markdown_items(topic["subassuntos"], indentation="  "),
+        "- **Divergências:**",
+        *_markdown_items(topic["divergencias"], indentation="  "),
         (
             "- **Compatibilização:** "
             f"{compatibility['convencao']} — {compatibility['observacao']}"

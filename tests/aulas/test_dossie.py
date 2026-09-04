@@ -28,6 +28,51 @@ class DossierRenderingTests(unittest.TestCase):
         self.assertIn("Definição de população e amostra.", rendered)
         self.assertIn("N para população e n para amostra.", rendered)
 
+    def test_renders_scope_collections_as_markdown_lists(self):
+        manifest = copy.deepcopy(VALID_MANIFEST)
+        manifest["escopo"]["incluidos"] = [
+            "População e amostra",
+            "Representatividade",
+        ]
+
+        rendered = render_dossier(manifest, GRAPH)
+
+        self.assertIn(
+            "### Incluídos\n\n- População e amostra\n- Representatividade",
+            rendered,
+        )
+        self.assertNotIn("População e amostra; Representatividade", rendered)
+
+    def test_renders_topic_collections_as_nested_markdown_lists(self):
+        manifest = copy.deepcopy(VALID_MANIFEST)
+        manifest["topicos"][0]["subassuntos"] = [
+            "População-alvo",
+            "Tamanho da população",
+        ]
+        manifest["topicos"][0]["divergencias"] = [
+            "A fonte A usa universo.",
+            "A fonte B usa população.",
+        ]
+
+        rendered = render_dossier(manifest, GRAPH)
+
+        self.assertIn(
+            "- **Subassuntos:**\n"
+            "  - População-alvo\n"
+            "  - Tamanho da população",
+            rendered,
+        )
+        self.assertIn(
+            "- **Divergências:**\n"
+            "  - A fonte A usa universo.\n"
+            "  - A fonte B usa população.",
+            rendered,
+        )
+        self.assertNotIn(
+            "População-alvo; Tamanho da população",
+            rendered,
+        )
+
     def test_rendering_is_deterministic_and_does_not_mutate_manifest(self):
         manifest = copy.deepcopy(VALID_MANIFEST)
         before = copy.deepcopy(manifest)

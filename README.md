@@ -6,7 +6,7 @@ Material didático, notebooks, conjuntos de dados e atividades da disciplina.
 
 1. Confira as [turmas e os horários](ensino/turmas_2026_2.md).
 2. Abra o [cronograma das turmas T199-64/65](ensino/cronograma_2026_2_t199_64_65.md).
-3. Inicie pelos materiais da semana 1 — [Aula 1](aulas/u1_a01_ambientacao_dados.md) e [Aula 2](aulas/u1_a02_fundamentos_investigacao_dados.md) — e pelos notebooks resolvidos [Aula 1](notebooks/resolvidos/u1_a01_ambientacao_dados.ipynb) e [Aula 2](notebooks/resolvidos/u1_a02_fundamentos_investigacao_dados.ipynb).
+3. Inicie pelos notebooks integrais da semana 1 — [Aula 1](notebooks/u1_a01.ipynb) e [Aula 2](notebooks/u1_a02.ipynb) — e consulte, quando necessário, os notebooks resolvidos [Aula 1](notebooks/resolvidos/u1_a01.ipynb) e [Aula 2](notebooks/resolvidos/u1_a02.ipynb).
 4. Consulte o [projeto de ensino](ensino/proj_ensino_2026.md) para objetivos, conteúdos e avaliações.
 
 ## Disciplina e calendário
@@ -18,7 +18,6 @@ Material didático, notebooks, conjuntos de dados e atividades da disciplina.
 
 ## Materiais de ensino
 
-- [Aulas da disciplina](aulas/)
 - [Apostila de Métodos Quantitativos](apostila/apostila_mq.pdf)
 - [Artigos e leituras complementares](artigos/)
 - [Fluxo de ensino](ensino/fluxo_ensino.md)
@@ -47,7 +46,6 @@ Esses recursos apoiam o estudo e não constituem, por si só, atividades avaliat
 
 - `apostila/`: material textual de apoio à disciplina.
 - `artigos/`: artigos e leituras complementares.
-- `aulas/`: materiais utilizados nas aulas.
 - `data/`: conjuntos de dados didáticos.
 - `ensino/`: projeto de ensino, calendário, turmas e fluxo da disciplina.
-- `notebooks/`: notebooks guiados para aplicação computacional.
+- `notebooks/`: aulas integrais com fundamentação e aplicação computacional.

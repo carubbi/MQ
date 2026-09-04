@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "versao_contrato",
+    "estado",
+    "aula_id",
+    "semestre",
+    "modo_publicacao",
+    "origem",
+    "aprovacao",
+    "notebooks"
+  ],
+  "properties": {
+    "versao_contrato": {"const": "1.0"},
+    "estado": {"enum": ["em_elaboracao", "aprovada", "publicada"]},
+    "aula_id": {"type": "string", "pattern": "^u[1-3]_a\\d{2}$"},
+    "semestre": {"type": "string", "pattern": "^\\d{4}-[12]$"},
+    "modo_publicacao": {"const": "notebook_integral"},
+    "origem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifesto", "manifesto_sha256"],
+      "properties": {
+        "manifesto": {"type": "string", "minLength": 1},
+        "manifesto_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "aprovacao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["estrutura_em", "publicacao_em", "conteudo_sha256"],
+      "properties": {
+        "estrutura_em": {
+          "oneOf": [
+            {"type": "string", "format": "date-time"},
+            {"type": "null"}
+          ]
+        },
+        "publicacao_em": {
+          "oneOf": [
+            {"type": "string", "format": "date-time"},
+            {"type": "null"}
+          ]
+        },
+        "conteudo_sha256": {
+          "oneOf": [
+            {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            {"type": "null"}
+          ]
+        }
+      }
+    },
+    "notebooks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sala", "resolvido"],
+      "properties": {
+        "sala": {"$ref": "#/$defs/notebook"},
+        "resolvido": {"$ref": "#/$defs/notebook"}
+      }
+    }
+  },
+  "$defs": {
+    "notebook": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caminho", "sha256"],
+      "properties": {
+        "caminho": {"type": "string", "minLength": 1},
+        "sha256": {
+          "oneOf": [
+            {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            {"type": "null"}
+          ]
+        }
+      }
+    }
+  }
+}
