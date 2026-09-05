@@ -30,6 +30,10 @@ Material didático, notebooks, conjuntos de dados e atividades da disciplina.
 
 Os notebooks integram fundamentação estatística, resolução guiada e aplicação computacional em Python.
 
+## Trabalhos avaliativos
+
+- [Enunciados, orientações e rubricas das AP1, AP2 e AP3](trabalhos/README.md).
+
 ## Estudos e exercícios
 
 - [Banco de questões e provas 2026.2](apostila/banco_questoes_provas_2026_2.pdf)
@@ -49,3 +53,4 @@ Esses recursos apoiam o estudo e não constituem, por si só, atividades avaliat
 - `data/`: conjuntos de dados didáticos.
 - `ensino/`: projeto de ensino, calendário, turmas e fluxo da disciplina.
 - `notebooks/`: aulas integrais com fundamentação e aplicação computacional.
+- `trabalhos/`: enunciados e orientações das avaliações práticas.
