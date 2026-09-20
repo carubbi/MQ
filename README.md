@@ -9,6 +9,10 @@ Material didático, notebooks, conjuntos de dados e atividades da disciplina.
 3. Inicie pelos notebooks integrais da semana 1 — [Aula 1](notebooks/u1_a01.ipynb) e [Aula 2](notebooks/u1_a02.ipynb) — e consulte, quando necessário, os notebooks resolvidos [Aula 1](notebooks/resolvidos/u1_a01.ipynb) e [Aula 2](notebooks/resolvidos/u1_a02.ipynb).
 4. Consulte o [projeto de ensino](ensino/proj_ensino_2026.md) para objetivos, conteúdos e avaliações.
 
+## Abordagem da disciplina
+
+A disciplina integra raciocínio estatístico e prática computacional. Além de produzir cálculos e gráficos, você aprenderá a explicar o que eles mostram e a justificar suas decisões. Portanto, as avaliações consideram a correção estatística, o funcionamento do código e a clareza das explicações.
+
 ## Disciplina e calendário
 
 - [Projeto de ensino 2026.2](ensino/proj_ensino_2026.md)

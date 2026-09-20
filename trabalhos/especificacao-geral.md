@@ -114,9 +114,7 @@ O repositório poderá ser público ou privado, mas o professor deverá ter aces
 
 O notebook deverá conter:
 
-```markdown
 ## Declaração de uso de inteligência artificial
-```
 
 Quando houver uso, o grupo informará a ferramenta ou o modelo, a finalidade, as etapas afetadas e como verificou o conteúdo. Quando não houver, deverá declarar essa condição. Os estudantes permanecem integralmente responsáveis por código, análise, referências e conclusões.
 
