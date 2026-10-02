@@ -8,6 +8,9 @@
 - Código executado sem explicação não constitui evidência suficiente de aprendizagem.
 - Os notebooks devem usar caminhos relativos, registrar dependências e executar integralmente sem estado oculto.
 - Tabelas, gráficos e resultados numéricos devem ser apresentados com identificação, contexto e interpretação.
+- Definições, propriedades e trechos adaptados nos notebooks devem trazer
+  citação autor-data conforme a ABNT NBR 10520:2023 ao final do trecho. Tabelas
+  e figuras devem indicar a fonte junto ao elemento.
 
 ## Organização das aulas
 
