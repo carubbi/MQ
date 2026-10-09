@@ -1,5 +1,6 @@
 # Notebooks e análise estatística
 ipykernel
+ipywidgets
 matplotlib
 nbconvert
 nbformat
