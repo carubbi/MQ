@@ -42,3 +42,15 @@ As colunas são `grav` (`True` para gravidez e `False` para não gravidez) e `po
 Os dados reproduzem P(gravidez | positivo) = 196/236 ≈ 0,8305 e P(não gravidez | negativo) = 760/764 ≈ 0,9948.
 
 Referência: PINHEIRO, João Ismael D. et al. *Estatística básica: a arte de trabalhar com dados*. Rio de Janeiro: Elsevier, 2009, exercício 3.9_P, p. 94.
+
+
+## CSVs sintéticos da Semana 3 da Unidade II — distribuições discretas
+
+Os arquivos abaixo apoiam a comparação entre **probabilidades teóricas** e **frequências simuladas** dos exercícios de Barbetta. Não são dados coletados nem tabelas fornecidas pela obra. Os parâmetros dos enunciados determinam as respostas teóricas; as frequências dos CSVs variam por acaso e não foram ajustadas para reproduzi-las exatamente.
+
+- [u2_s03_binomial_ex07.csv](u2_s03_binomial_ex07.csv): 5.000 lotes independentes de 20 itens. Cada item foi simulado como indicador de defeito com probabilidade 0,05. As colunas são `lote`, `defeituosos` e `bons`, com `defeituosos + bons = 20` em cada linha. Apoia o exercício 7 do capítulo 5, p. 131 impressa.
+- [u2_s03_poisson_ex11.csv](u2_s03_poisson_ex11.csv): 5.000 minutos independentes, divididos em duas janelas de 30 segundos. Cada meia janela foi simulada por Poisson com média 2,5, correspondente à taxa de cinco chegadas por minuto. As colunas são `minuto`, `chegadas_0_30s`, `chegadas_30_60s` e `chegadas_1min`. A última é a soma das duas meias janelas. Apoia o exercício 11 do capítulo 5, p. 136 impressa.
+
+Os arquivos são UTF-8, separados por vírgulas, com cabeçalho e sem valores ausentes. Foram gerados com `numpy.random.default_rng(2026)` pelo script [gerar_u2_s03.py](gerar_u2_s03.py). A mesma semente é inicializada separadamente para cada exercício. Para executar os notebooks no Colab, os CSVs devem ser lidos por URL do repositório publicada em um commit, como nos notebooks anteriores.
+
+Referência: BARBETTA, Pedro Alberto; REIS, Marcelo Menezes; BORNIA, Antonio Cezar. *Estatística para cursos de engenharia e informática*. 3. ed. São Paulo: Atlas, 2010, capítulo 5, exercícios 7 e 11.
