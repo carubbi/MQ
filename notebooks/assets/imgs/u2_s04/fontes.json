@@ -1,0 +1,74 @@
+[
+  {
+    "arquivo": "ponteiro_dois_setores.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 141,
+    "pagina_pdf": 142,
+    "recorte_relativo": [
+      0.75,
+      0.11652542372881355,
+      0.9078125,
+      0.2266949152542373
+    ]
+  },
+  {
+    "arquivo": "ponteiro_quatro_setores.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 141,
+    "pagina_pdf": 142,
+    "recorte_relativo": [
+      0.215625,
+      0.6758474576271186,
+      0.371875,
+      0.7828389830508474
+    ]
+  },
+  {
+    "arquivo": "ponteiro_angulo.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 143,
+    "pagina_pdf": 144,
+    "recorte_relativo": [
+      0.6953125,
+      0.149364406779661,
+      0.90625,
+      0.2722457627118644
+    ]
+  },
+  {
+    "arquivo": "figura_6_4_densidade_area.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 143,
+    "pagina_pdf": 144,
+    "recorte_relativo": [
+      0.171875,
+      0.3559322033898305,
+      0.8328125,
+      0.5296610169491526
+    ]
+  },
+  {
+    "arquivo": "ponteiro_intervalo_30_60.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 143,
+    "pagina_pdf": 144,
+    "recorte_relativo": [
+      0.634375,
+      0.6313559322033898,
+      0.903125,
+      0.7415254237288136
+    ]
+  },
+  {
+    "arquivo": "figura_6_6_poisson_exponencial.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 149,
+    "pagina_pdf": 150,
+    "recorte_relativo": [
+      0.2171875,
+      0.551906779661017,
+      0.7921875,
+      0.7266949152542372
+    ]
+  }
+]
