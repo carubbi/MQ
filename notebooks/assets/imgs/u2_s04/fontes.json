@@ -70,5 +70,144 @@
       0.7921875,
       0.7266949152542372
     ]
+  },
+  {
+    "arquivo": "resolucao_intervalo_30_60.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 143,
+    "pagina_pdf": 144,
+    "recorte_relativo": [
+      0.17,
+      0.779,
+      0.66,
+      0.831
+    ]
+  },
+  {
+    "arquivo": "figura_6_5_uniforme_densidade_acumulada.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 148,
+    "pagina_pdf": 149,
+    "recorte_relativo": [
+      0.16,
+      0.58,
+      0.84,
+      0.69
+    ]
+  },
+  {
+    "arquivo": "figura_6_7_exponencial_densidade_cauda.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 150,
+    "pagina_pdf": 151,
+    "recorte_relativo": [
+      0.28,
+      0.67,
+      0.7,
+      0.855
+    ]
+  },
+  {
+    "arquivo": "condicoes_densidade_area_barbetta.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 144,
+    "pagina_pdf": 145,
+    "recorte_relativo": [
+      0.095,
+      0.093,
+      0.9,
+      0.27
+    ]
+  },
+  {
+    "arquivo": "figura_6_8_normal_parametros.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 153,
+    "pagina_pdf": 154,
+    "recorte_relativo": [
+      0.265,
+      0.087,
+      0.75,
+      0.238
+    ]
+  },
+  {
+    "arquivo": "figura_6_9_normal_media_dispersao.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 153,
+    "pagina_pdf": 154,
+    "recorte_relativo": [
+      0.1,
+      0.692,
+      0.915,
+      0.875
+    ]
+  },
+  {
+    "arquivo": "figura_6_10_normal_intervalos_desvios.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 154,
+    "pagina_pdf": 155,
+    "recorte_relativo": [
+      0.09,
+      0.548,
+      0.91,
+      0.854
+    ]
+  },
+  {
+    "arquivo": "normal_padrao_morettin_pb.png",
+    "obra": "Morettin; Bussab (2010)",
+    "pagina_impressa": 177,
+    "pagina_pdf": 194,
+    "recorte_relativo": [
+      0.322,
+      0.362,
+      0.682,
+      0.542
+    ],
+    "tratamento_visual": "Fundo branco, curvas, eixos e textos pretos, com remoção da borda externa.",
+    "ferramenta_tratamento": "imagegen, ferramenta integrada",
+    "prompt_tratamento": "Edit the provided scientific plot only. Convert the blue background to pure white, and all blue graphical elements to black. Remove the thin rectangular outer border entirely. Preserve exactly the existing normal standard bell curve geometry, its symmetry and peak, coordinate axes and arrowheads, the two dashed vertical guides at -1 and +1, all tick positions, existing typography and exact mathematical labels φ(z), −1, +1, z, and original layout/aspect ratio. Keep all text and mathematical content unchanged. No added labels, no title, no grid, no shading, no color accents, no frame. Clean black scientific linework on a solid pure white background, suitable for a statistics notebook. This is a visual styling edit of the source figure, not a new plot or redesign."
+  },
+  {
+    "arquivo": "normal_pdf_wikimedia.png",
+    "obra": "Normal_Distribution_PDF.svg — Wikimedia Commons",
+    "autores": [
+      "Inductiveload"
+    ],
+    "url_fonte": "https://commons.wikimedia.org/wiki/File:Normal_Distribution_PDF.svg",
+    "url_arquivo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/960px-Normal_Distribution_PDF.svg.png",
+    "licenca": "Domínio público",
+    "idioma": "en",
+    "obtido_em": "2026-11-06",
+    "sha256": "12bbf89ef0edbbca122c493427b34cc2176fd55d2ab035070f581ca43428a4fa"
+  },
+  {
+    "arquivo": "normal_cdf_wikimedia.png",
+    "obra": "Normal_Distribution_CDF.svg — Wikimedia Commons",
+    "autores": [
+      "Inductiveload"
+    ],
+    "url_fonte": "https://commons.wikimedia.org/wiki/File:Normal_Distribution_CDF.svg",
+    "url_arquivo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Normal_Distribution_CDF.svg/960px-Normal_Distribution_CDF.svg.png",
+    "licenca": "Domínio público",
+    "idioma": "en",
+    "obtido_em": "2026-11-06",
+    "sha256": "a72aba33492bc51da2c581fbb0a4201b0d51f2ee98b0195a0350bed5a3124814"
+  },
+  {
+    "arquivo": "figura_6_11_normal_cauda_padronizacao.png",
+    "obra": "Barbetta; Reis; Bornia (2010)",
+    "pagina_impressa": 155,
+    "pagina_pdf": 156,
+    "figura_original": "6.11",
+    "recorte_relativo": [
+      0.1475,
+      0.326271186440678,
+      0.8625,
+      0.5644067796610169
+    ],
+    "sha256": "53c98ba5c98f38ad4022d41fe430d9d4778db6719d3622669e5097e9ed2c0271"
   }
 ]
