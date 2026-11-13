@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Na etapa final, o grupo modelará o preço de venda com base em um preditor quantitativo $X$, escolhido e justificado antes dos ajustes, e na característica qualitativa $B$. Serão ajustados modelos de regressão linear simples e múltipla, com interpretação inferencial dos coeficientes, diagnóstico dos resíduos, comparação dos modelos e discussão dos limites da modelagem.
+Na etapa final, o grupo ajustará uma regressão linear simples para o preço de venda com base em um preditor quantitativo $X$, escolhido e justificado antes do ajuste. Para a regressão múltipla, interpretará saídas fornecidas pelo professor, com o mesmo $X$ e a característica qualitativa $B$. A investigação incluirá interpretação inferencial dos coeficientes, diagnóstico dos resíduos, comparação dos modelos e discussão dos limites da modelagem.
 
 ## Pergunta de pesquisa
 
@@ -10,7 +10,7 @@ Como o preditor quantitativo $X$ e a característica qualitativa $B$ se associam
 
 ## Objetivo da investigação
 
-Ajustar, interpretar e diagnosticar modelos de regressão linear para analisar a associação do preço de venda com o preditor quantitativo $X$ e com a característica qualitativa $B$.
+Ajustar e interpretar a regressão linear simples e interpretar as saídas fornecidas da regressão múltipla, comparando as associações do preço de venda com o preditor quantitativo $X$ e com a característica qualitativa $B$, seus diagnósticos e limitações.
 
 ## Retomada necessária
 
@@ -33,7 +33,7 @@ Antes dos ajustes, o grupo deverá registrar:
 
 - preço de venda (`SalePrice`) como variável resposta;
 - preditor quantitativo $X$ escolhido pelo grupo;
-- variáveis candidatas consideradas e justificativa da escolha de $X$ com base na pergunta de pesquisa, no significado da variável, na plausibilidade temporal, na qualidade dos dados e na interpretabilidade;
+- justificativa da escolha de $X$ com base na pergunta de pesquisa, no significado da variável, na plausibilidade temporal, na qualidade dos dados e na interpretabilidade;
 - característica qualitativa $B$ como preditor adicional do modelo múltiplo;
 - categorias preservadas de $B$;
 - categoria de referência de $B$;
@@ -42,7 +42,9 @@ Antes dos ajustes, o grupo deverá registrar:
 
 A categoria de referência deverá ser escolhida por significado e interpretabilidade antes do exame dos valores-p. Os agrupamentos definidos na AP1 e a categoria de referência não poderão ser alterados para melhorar significância, coeficiente de determinação ou diagnóstico dos resíduos.
 
-A escolha inicial de $X$ e o conjunto de candidatas deverão ser registrados antes de qualquer ajuste ou exame dos resultados. Após o ajuste da regressão simples, o grupo deverá emitir uma decisão explícita de **aprovar** ou **recusar** $X$ e justificá-la considerando conjuntamente o valor-p da inclinação, $R^2$, $R^2_{\mathrm{ajustado}}$ e os diagnósticos de resíduos. Nenhum desses critérios será suficiente isoladamente, e AIC e BIC não poderão orientar a decisão. Se $X$ for recusado, o grupo deverá escolher outra candidata previamente registrada e repetir o ajuste, a avaliação e a decisão, preservando no notebook o histórico das candidatas, dos resultados e das justificativas. A seleção será identificada como exploratória, e os dois modelos obrigatórios deverão utilizar o mesmo $X$ aprovado.
+A escolha de $X$ deverá ser registrada antes do ajuste ou exame dos resultados. O $X$ escolhido será mantido nos dois modelos, mesmo que a associação seja fraca ou os diagnósticos apontem limitações. Essas limitações deverão integrar o parecer e a conclusão; não serão exigidos ciclos de substituição de $X$ para obter significância ou melhorar o ajuste. AIC e BIC não poderão orientar a comparação.
+
+O professor fornecerá as saídas do modelo múltiplo para o $X$, as categorias e a referência registrados pelo grupo. O material incluirá a fórmula efetivamente utilizada, o `OLS Regression Results`, os registros utilizados no ajuste, valores ajustados e resíduos, previsões para categorias distintas com o mesmo valor de $X$ e o gráfico de resíduos versus valores ajustados. Os dois modelos deverão usar os mesmos registros completos nas variáveis necessárias, preservando as decisões de preparação da AP1 e documentando eventuais exclusões por ausência. O grupo identificará o material fornecido no notebook e o incluirá no repositório para conferência.
 
 ## Etapas obrigatórias
 
@@ -102,27 +104,23 @@ A conclusão deverá distinguir significância estatística, relevância prátic
 Apresentar:
 
 - resíduos versus valores ajustados;
-- gráfico quantil-quantil;
 - discussão de linearidade;
 - discussão de homoscedasticidade;
-- discussão de normalidade dos erros;
+- reconhecimento da normalidade dos erros como condição da inferência clássica exata, sem afirmá-la comprovada pelos gráficos utilizados;
 - limites para avaliar independência;
 - reconhecimento de observações potencialmente influentes.
 
 Nenhuma observação poderá ser removida apenas para melhorar significância, $R^2$, $R^2_{\mathrm{ajustado}}$ ou aparência dos resíduos.
 
-### Decisão sobre o preditor quantitativo
+Não será exigido o gráfico quantil-quantil. Os gráficos de dispersão e de resíduos não comprovam normalidade ou independência dos erros. A discussão deverá reconhecer os limites das evidências disponíveis para a inferência.
 
-Depois da inferência e do diagnóstico do modelo simples, o grupo deverá declarar uma das decisões:
+### Parecer sobre o modelo simples
 
-- **aprovar $X$:** manter o preditor na regressão simples final e acrescentar somente `C(B)` na regressão múltipla;
-- **recusar $X$:** justificar a recusa, escolher outra candidata quantitativa previamente registrada e repetir as etapas 1 a 3.
-
-A justificativa deverá articular o valor-p da inclinação, $R^2$, $R^2_{\mathrm{ajustado}}$ e os padrões observados nos resíduos. Não haverá ponto de corte universal para aprovação além do nível de significância previamente fixado; a decisão deverá considerar em conjunto evidência inferencial, capacidade explicativa, adequação dos pressupostos e sentido substantivo.
+Articular a evidência inferencial, a magnitude da associação, $R^2$, $R^2_{\mathrm{ajustado}}$ e os padrões dos resíduos para explicar a utilidade e as limitações do modelo. Nenhuma medida isolada determina sua adequação. O parecer não exige substituir $X$ ou refazer a investigação com outro preditor.
 
 ### 4. Regressão linear múltipla
 
-Adicionar a característica qualitativa $B$ ao modelo por indicadores. Conceitualmente:
+Interpretar as saídas fornecidas pelo professor para o modelo que acrescenta a característica qualitativa $B$ por indicadores. Não será exigida a implementação ou execução do ajuste desse modelo pelo grupo. Conceitualmente:
 
 $$
 Y_i=\beta_0+\beta_1x_i+
@@ -130,7 +128,7 @@ Y_i=\beta_0+\beta_1x_i+
 \tag{3.3}
 $$
 
-Computacionalmente:
+A fórmula computacional correspondente ao ajuste fornecido é:
 
 ```text
 SalePrice ~ X + C(B)
@@ -145,7 +143,7 @@ O grupo deverá:
 - indicar a categoria de referência;
 - interpretar a inclinação de $X$, controlando por $B$;
 - interpretar os coeficientes indicadores de $B$ em relação à categoria de referência;
-- calcular ou verificar valores ajustados para categorias distintas;
+- interpretar as previsões fornecidas para categorias distintas, comparando imóveis com o mesmo valor de $X$;
 - evitar interpretação causal.
 
 ### 5. Inferência sobre os coeficientes
@@ -168,7 +166,7 @@ H_1:\gamma_k\neq0.
 \tag{3.5}
 $$
 
-Para cada coeficiente relevante, apresentar estimativa, erro-padrão, estatística $t$, valor-p, intervalo de confiança, decisão e interpretação contextual. Os testes dos indicadores deverão ser interpretados como comparações com a categoria de referência, condicionadas a $X$.
+Para cada coeficiente relevante, identificar nas saídas fornecidas a estimativa, o erro-padrão, a estatística $t$, o valor-p e o intervalo de confiança, e apresentar a decisão e a interpretação contextual. Os testes dos indicadores deverão ser interpretados como comparações com a categoria de referência, condicionadas a $X$. Não será exigido calcular novamente as estatísticas ou ajustar o modelo múltiplo.
 
 Não serão exigidos o teste do intercepto nem o teste $F$ global.
 
@@ -183,7 +181,7 @@ Comparar os modelos simples e múltiplo quanto a:
 - adequação dos pressupostos;
 - utilidade e limitações das informações acrescentadas por $B$.
 
-O grupo deverá construir para o modelo múltiplo os gráficos de resíduos versus valores ajustados e quantil-quantil. Na comparação, deverá reconhecer que $R^2$ não diminui com a inclusão de preditores e que $R^2_{\mathrm{ajustado}}$ incorpora uma penalização pela complexidade. A escolha do modelo final não poderá ser justificada somente por essas medidas ou pela quantidade de coeficientes significativos.
+O grupo deverá interpretar o gráfico de resíduos versus valores ajustados fornecido para o modelo múltiplo e compará-lo ao gráfico que construiu para o modelo simples. Na comparação de modelos aninhados com intercepto e ajustados aos mesmos registros, deverá reconhecer que $R^2$ não diminui com a inclusão de preditores e que $R^2_{\mathrm{ajustado}}$ incorpora uma penalização pela complexidade. A avaliação da utilidade dos modelos não poderá ser justificada somente por essas medidas ou pela quantidade de coeficientes significativos.
 
 ## Extensão não avaliada
 

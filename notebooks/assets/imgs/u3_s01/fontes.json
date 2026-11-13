@@ -1,0 +1,186 @@
+{
+  "aula": "u3_s01",
+  "imagens": [
+    {
+      "arquivo": "barbetta_figura_7_1.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 171,
+      "pagina_impressa": 170,
+      "localizador": "Figura 7.1",
+      "recorte_pontos_pdf": [
+        75,
+        110,
+        725,
+        427
+      ],
+      "escala_renderizacao": 2.2,
+      "tratamento": "Recorte dos elementos gráficos e rótulos internos da figura, com proporção preservada. A legenda é apresentada no notebook.",
+      "data_extracao": "2026-11-12",
+      "url_imagem_original": "https://raw.githubusercontent.com/carubbi/MQ/5d9d534ae4a0e0bdc054451dc6645c147e15b2f0/notebooks/assets/imgs/u3_s01/barbetta_populacao_amostragem_amostra.png"
+    },
+    {
+      "arquivo": "barbetta_figura_7_3.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 175,
+      "pagina_impressa": 174,
+      "localizador": "Figura 7.3",
+      "recorte_pontos_pdf": [
+        108,
+        220,
+        685,
+        455
+      ],
+      "escala_renderizacao": 2.2,
+      "tratamento": "Recorte dos elementos gráficos e rótulos internos da figura, com proporção preservada. A legenda é apresentada no notebook.",
+      "data_extracao": "2026-11-12"
+    },
+    {
+      "arquivo": "morettin_figura_10_5.png",
+      "fonte_id": "morettin-bussab-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/P. A. Morettin, W. de O. Bussab - Estatística Básica-Saraiva (2010).pdf",
+      "sha256_fonte": "e34030dd52aa7cc7ef13a085c99bc2305921be18837935b9e6db86c7936577e6",
+      "pagina_pdf": 296,
+      "pagina_impressa": 279,
+      "localizador": "Figura 10.5",
+      "recorte_pontos_pdf": [
+        41,
+        307,
+        436,
+        582
+      ],
+      "escala_renderizacao": 2.2,
+      "tratamento": "Recorte dos elementos gráficos e rótulos internos da figura, com proporção preservada. A legenda é apresentada no notebook.",
+      "data_extracao": "2026-11-12"
+    },
+    {
+      "arquivo": "barbetta_figura_7_9.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 190,
+      "pagina_impressa": 189,
+      "localizador": "Figura 7.9",
+      "recorte_pontos_pdf": [
+        120,
+        440,
+        685,
+        664
+      ],
+      "escala_renderizacao": 2.2,
+      "tratamento": "Recorte dos elementos gráficos e rótulos internos da figura, com proporção preservada. A legenda é apresentada no notebook.",
+      "data_extracao": "2026-11-12"
+    },
+    {
+      "arquivo": "barbetta_figura_8_2.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 204,
+      "pagina_impressa": 203,
+      "localizador": "Figura 8.2",
+      "recorte_pontos_pdf": [
+        216,
+        397,
+        592,
+        638
+      ],
+      "escala_renderizacao": 2.2,
+      "tratamento": "Recorte dos elementos gráficos e rótulos internos da figura, com proporção preservada. A legenda é apresentada no notebook.",
+      "data_extracao": "2026-11-12"
+    },
+    {
+      "arquivo": "barbetta_figura_8_3.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 205,
+      "pagina_impressa": 204,
+      "localizador": "Figura 8.3",
+      "recorte_pontos_pdf": [
+        210,
+        203,
+        585,
+        442
+      ],
+      "escala_renderizacao": 2.2,
+      "tratamento": "Recorte dos elementos gráficos e rótulos internos da figura, com proporção preservada. A legenda é apresentada no notebook.",
+      "data_extracao": "2026-11-12"
+    },
+    {
+      "arquivo": "morettin_figura_10_1.png",
+      "fonte_id": "morettin-bussab-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/P. A. Morettin, W. de O. Bussab - Estatística Básica-Saraiva (2010).pdf",
+      "sha256_fonte": "e34030dd52aa7cc7ef13a085c99bc2305921be18837935b9e6db86c7936577e6",
+      "pagina_pdf": 290,
+      "pagina_impressa": 273,
+      "localizador": "Figura 10.1, painéis (a) e (b)",
+      "recorte_pontos_pdf": [
+        42,
+        344,
+        433,
+        620
+      ],
+      "escala_renderizacao": 3,
+      "tratamento": "Recorte dos dois painéis completos, com rótulos internos e proporção preservados. A legenda é apresentada no notebook.",
+      "data_extracao": "2026-11-12"
+    },
+    {
+      "arquivo": "barbetta_figura_7_7.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 183,
+      "pagina_impressa": 182,
+      "localizador": "Figura 7.7",
+      "recorte_pontos_pdf": [
+        185,
+        440,
+        610,
+        610
+      ],
+      "escala_renderizacao": 3,
+      "tratamento": "Recorte dos três alvos completos e rótulos T1, T2 e T3, sem a legenda original. Identificações (a), (b) e (c) e legenda interpretativa apresentadas no notebook.",
+      "data_extracao": "2026-11-13"
+    },
+    {
+      "arquivo": "barbetta_esquema_ic_proporcao.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 186,
+      "pagina_impressa": 185,
+      "localizador": "Esquema não numerado do intervalo de confiança para proporção, após a equação (7.28)",
+      "recorte_pontos_pdf": [
+        205,
+        392,
+        605,
+        505
+      ],
+      "escala_renderizacao": 3,
+      "tratamento": "Recorte do esquema completo, com título interno, estimativa central e rótulos dos dois limites. Legenda interpretativa apresentada no notebook.",
+      "data_extracao": "2026-11-13"
+    },
+    {
+      "arquivo": "barbetta_figura_7_8.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 186,
+      "pagina_impressa": 185,
+      "localizador": "Figura 7.8",
+      "recorte_pontos_pdf": [
+        140,
+        675,
+        670,
+        940
+      ],
+      "escala_renderizacao": 3,
+      "tratamento": "Recorte da curva Normal, áreas central e caudas e tabela de valores críticos. A legenda original externa foi excluída e a legenda interpretativa é apresentada no notebook.",
+      "data_extracao": "2026-11-13"
+    }
+  ]
+}

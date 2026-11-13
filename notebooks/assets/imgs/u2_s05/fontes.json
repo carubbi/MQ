@@ -1,0 +1,95 @@
+{
+  "aula": "u2_s05",
+  "imagens": [
+    {
+      "arquivo": "correcao_continuidade_barbetta.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 164,
+      "pagina_impressa": 163,
+      "localizador": "Figura 6.15",
+      "recorte_pontos_pdf": [
+        65,
+        105,
+        760,
+        625
+      ],
+      "escala_renderizacao": 2.5,
+      "tratamento": "Recorte da página original, sem alteração de conteúdo.",
+      "data_extracao": "2026-11-11"
+    },
+    {
+      "arquivo": "resolucao_binomial_montgomery.png",
+      "fonte_id": "montgomery-2018",
+      "arquivo_fonte": ".interno/prof/refs/livros/Montgomery 2018 Applied Statistics and Probability for Engineers.pdf",
+      "sha256_fonte": "d9f43c04e1dc49b144047c12860798c9c6353364af172c539be92ca70c86ffd6",
+      "pagina_pdf": 99,
+      "pagina_impressa": 81,
+      "localizador": "Exemplo 4.14",
+      "recorte_pontos_pdf": [
+        62,
+        143,
+        539,
+        271
+      ],
+      "escala_renderizacao": 2.5,
+      "tratamento": "Recorte da página original, sem alteração de conteúdo.",
+      "data_extracao": "2026-11-11"
+    },
+    {
+      "arquivo": "qq_normal_discrepante_barbetta.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 167,
+      "pagina_impressa": 166,
+      "localizador": "Figura 6.19",
+      "recorte_pontos_pdf": [
+        70,
+        205,
+        725,
+        475
+      ],
+      "escala_renderizacao": 2.5,
+      "tratamento": "Recorte da página original, sem alteração de conteúdo.",
+      "data_extracao": "2026-11-11"
+    },
+    {
+      "arquivo": "qq_assimetria_barbetta.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 167,
+      "pagina_impressa": 166,
+      "localizador": "Figura 6.20",
+      "recorte_pontos_pdf": [
+        70,
+        605,
+        725,
+        875
+      ],
+      "escala_renderizacao": 2.5,
+      "tratamento": "Recorte da página original, sem alteração de conteúdo.",
+      "data_extracao": "2026-11-11"
+    },
+    {
+      "arquivo": "medias_amostrais_morettin.png",
+      "fonte_id": "morettin-bussab-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/P. A. Morettin, W. de O. Bussab - Estatística Básica-Saraiva (2010).pdf",
+      "sha256_fonte": "e34030dd52aa7cc7ef13a085c99bc2305921be18837935b9e6db86c7936577e6",
+      "pagina_pdf": 296,
+      "pagina_impressa": 279,
+      "localizador": "Figura 10.5",
+      "recorte_pontos_pdf": [
+        39,
+        278,
+        435,
+        582
+      ],
+      "escala_renderizacao": 2.5,
+      "tratamento": "Recorte da página original, sem alteração de conteúdo.",
+      "data_extracao": "2026-11-11"
+    }
+  ]
+}

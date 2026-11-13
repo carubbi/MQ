@@ -67,7 +67,7 @@ Atualização organizada do mesmo repositório, notebook em `notebooks/ap2.ipynb
 
 ### Delimitação da modelagem — 10%
 
-Pergunta, objetivo, variável resposta, registro prévio das candidatas e da escolha inicial justificada de $X$, preditores, unidades, categorias de $B$, categoria de referência, população conceitual e limites observacionais. O notebook deverá conter parecer explícito de aprovação ou recusa de $X$, fundamentado conjuntamente no valor-p da inclinação, em $R^2$, em $R^2_{\mathrm{ajustado}}$ e nos resíduos. Candidatas recusadas e repetições do procedimento deverão permanecer documentadas. AIC e BIC não poderão integrar a decisão.
+Pergunta, objetivo, variável resposta, registro prévio da escolha justificada de $X$, preditores, unidades, categorias de $B$, categoria de referência, população conceitual e limites observacionais. O mesmo $X$ será preservado nos dois modelos. Avaliar a justificativa substantiva e o reconhecimento das limitações, sem exigir ciclos de substituição de $X$. AIC e BIC não integrarão a comparação.
 
 ### Regressão simples — 20%
 
@@ -75,15 +75,15 @@ Pergunta, gráfico, ajuste de `SalePrice ~ X`, coeficientes, unidades, incerteza
 
 ### Regressão múltipla com `C(B)` — 20%
 
-Inclusão do mesmo $X$ e de `C(B)`, categoria de referência, indicadores, interpretação condicional e comparação com o modelo simples.
+Interpretação das saídas fornecidas pelo professor para `SalePrice ~ X + C(B)`: mesmo $X$, categoria de referência, coeficientes indicadores, interpretação condicional, previsões fornecidas para categorias distintas com o mesmo valor de $X$ e comparação com o modelo simples. Não avaliar a implementação ou execução do ajuste múltiplo pelo grupo.
 
 ### Inferência sobre os coeficientes — 20%
 
-Hipóteses, nível de significância, estimativas, erros-padrão, estatísticas $t$, valores-p, intervalos, decisões e interpretações contextuais da inclinação e dos indicadores de $B$.
+Hipóteses, nível de significância, estimativas, erros-padrão, estatísticas $t$, valores-p, intervalos, decisões e interpretações contextuais da inclinação e dos indicadores de $B$. No modelo múltiplo, avaliar a identificação e a interpretação desses elementos nas saídas fornecidas, sem exigir novo ajuste ou recálculo das estatísticas.
 
 ### Comparação e diagnóstico dos modelos — 20%
 
-Comparação entre os modelos por $R^2$ e $R^2_{\mathrm{ajustado}}$, gráficos de resíduos, pressupostos, observações influentes, proibição de exclusões orientadas pelo ajuste e justificativa que não se limite às medidas de ajuste.
+Comparação entre modelos ajustados aos mesmos registros por $R^2$ e $R^2_{\mathrm{ajustado}}$, gráfico de resíduos construído para o modelo simples e gráfico fornecido para o múltiplo, pressupostos, observações potencialmente influentes, proibição de exclusões orientadas pelo ajuste e justificativa que não se limite às medidas de ajuste. Não exigir Q–Q plot nem considerar os gráficos utilizados como comprovação de normalidade ou independência dos erros.
 
 ### Interpretação e limitações — 5%
 
@@ -91,4 +91,4 @@ Associação bruta e ajustada, significância estatística, relevância prática
 
 ### Repositório GitHub, reprodutibilidade, autoria e IA — 5%
 
-Atualização organizada do mesmo repositório, notebook em `notebooks/ap3.ipynb`, cabeçalho institucional, título principal, estrutura acadêmica por células curtas, saídas interpretadas, carregamento de `data/processed/AmesHousing.csv`, instruções finais de execução no `README.md`, dependências e caminhos reproduzíveis, notebooks executáveis, histórico de commits coerente, contribuições identificadas, declaração de IA e acesso docente.
+Atualização organizada do mesmo repositório, notebook em `notebooks/ap3.ipynb`, cabeçalho institucional, título principal, estrutura acadêmica por células curtas, saídas interpretadas, carregamento de `data/processed/AmesHousing.csv`, material fornecido pelo professor identificado e incluído, instruções finais de execução no `README.md`, dependências e caminhos reproduzíveis, notebooks executáveis, histórico de commits coerente, contribuições identificadas, declaração de IA e acesso docente.

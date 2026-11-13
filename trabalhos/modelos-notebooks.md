@@ -137,6 +137,8 @@ O notebook não deverá reunir em uma única célula extensa o carregamento, o p
 
 ## Regras de execução
 
+Na AP3, o grupo ajustará a regressão simples e interpretará as saídas do modelo múltiplo fornecidas pelo professor. Identificar e incluir esse material no repositório, com a fórmula, a categoria de referência e os registros utilizados. As seções de regressão múltipla e de sua avaliação organizarão as saídas fornecidas e as interpretações autorais, sem exigir código de ajuste múltiplo. Preservar o mesmo $X$ e a mesma amostra nos dois modelos. Não exigir ciclos de substituição de $X$ ou Q–Q plot.
+
 - Reiniciar o kernel e executar todas as células antes da entrega.
 - Não depender de variáveis criadas fora do notebook.
 - Usar caminhos relativos à raiz do repositório.

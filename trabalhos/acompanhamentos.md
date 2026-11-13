@@ -101,7 +101,7 @@ Evidências:
 - pergunta de pesquisa e objetivo da investigação;
 - população conceitual e limitações de representatividade;
 - preço de venda (`SalePrice`) como resposta;
-- registro, anterior ao ajuste, das variáveis quantitativas candidatas, da escolha de $X$ e de sua justificativa substantiva e quanto à qualidade dos dados;
+- registro, anterior ao ajuste, da escolha de $X$ e de sua justificativa substantiva e quanto à qualidade dos dados;
 - $X$ e característica $B$ como preditores;
 - categorias preservadas e categoria de referência de $B$;
 - diagrama de dispersão;
@@ -114,9 +114,9 @@ Evidências:
 
 - inferência sobre a inclinação da regressão simples;
 - diagnóstico do modelo simples;
-- parecer explícito de aprovação ou recusa de $X$, justificado pelo valor-p da inclinação, por $R^2$, por $R^2_{\mathrm{ajustado}}$ e pelos resíduos;
-- registro de cada candidata recusada e da repetição do procedimento até a aprovação de $X$;
-- regressão múltipla com `C(B)`;
+- parecer sobre a utilidade e as limitações do modelo simples, articulando inferência, magnitude da associação, medidas de ajuste e resíduos, sem exigir substituição de $X$;
+- preservação do mesmo $X$ e dos mesmos registros nos dois modelos;
+- saídas da regressão múltipla com `C(B)` fornecidas pelo professor, identificadas no notebook;
 - categoria de referência;
 - interpretação dos coeficientes indicadores;
 - inferência inicial sobre os coeficientes;
@@ -127,12 +127,12 @@ Evidências:
 Evidências:
 
 - interpretação dos principais resultados do `OLS Regression Results`;
-- gráficos de diagnóstico dos modelos;
+- gráfico de resíduos versus valores ajustados construído para o modelo simples e interpretação do gráfico fornecido para o múltiplo, sem exigência de Q–Q plot;
 - comparação entre regressão simples e múltipla por $R^2$, $R^2_{\mathrm{ajustado}}$, diagnóstico e interpretação;
-- inferência sobre a inclinação e os indicadores de $B$;
+- inferência sobre a inclinação e interpretação dos testes dos indicadores de $B$ nas saídas fornecidas;
 - células curtas, saídas individuais e interpretações subsequentes;
 - conclusão sobre associação bruta e ajustada;
 - pressupostos e limitações;
 - contribuições dos integrantes;
 - declaração de uso de IA.
-- `README.md` final, dependências atualizadas, notebooks executáveis e acesso docente confirmado.
+- `README.md` final, dependências atualizadas, notebooks executáveis, material fornecido incluído no repositório e acesso docente confirmado.

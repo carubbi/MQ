@@ -6,7 +6,7 @@ As avaliações práticas das três unidades constituem etapas distintas de uma 
 
 - AP1: organizar e explorar os dados;
 - AP2: auditar a adequação de um modelo probabilístico;
-- AP3: ajustar, interpretar, comparar e diagnosticar modelos de regressão.
+- AP3: ajustar e interpretar a regressão simples e interpretar as saídas fornecidas da regressão múltipla, comparando os modelos e seus diagnósticos.
 
 Cada etapa será entregue e avaliada separadamente. Os notebooks guiados das aulas servem como referências de método e comunicação, mas não deverão ser copiados ou concatenados para formar as APs.
 
