@@ -256,14 +256,14 @@
       "data_revisao": "2026-11-22"
     },
     {
-      "arquivo": "ic_proporcao_wald_95_cinza.png",
+      "arquivo": "ic_proporcao_95.png",
       "fonte_id": "elaboracao-docente",
       "dimensoes_px": [
         1872,
         492
       ],
-      "tratamento": "Esquema didático gerado com Matplotlib a partir do intervalo de Wald de 95% para a proporção do exemplo da subseção 9.2. As setas representam a margem de erro de cada lado da estimativa. Versão em tons de cinza.",
-      "sha256_imagem": "096724c9d8098e3653e7e4eccc53a715d19c5e466059ca7695677118477e4814",
+      "tratamento": "Esquema didático gerado com Matplotlib a partir do intervalo de Wald de 95% para a proporção do exemplo da subseção 9.2. As setas representam a margem de erro de cada lado da estimativa. Versão em tons de cinza. O rótulo ME indica a margem de erro em pontos percentuais.",
+      "sha256_imagem": "6bf3ba3d560c5b748d978ea11f299265c59bb5da1eb5b8132caa49fcc3afcaf2",
       "data_obtencao": "2026-11-20",
       "data_revisao": "2026-11-22"
     },
