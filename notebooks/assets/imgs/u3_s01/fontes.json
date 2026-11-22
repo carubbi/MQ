@@ -111,6 +111,54 @@
       "data_extracao": "2026-11-12"
     },
     {
+      "arquivo": "barbetta_figura_8_6_paineis.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 215,
+      "pagina_impressa": 214,
+      "localizador": "Figura 8.6",
+      "recorte_pontos_pdf": [
+        116,
+        472,
+        690,
+        638
+      ],
+      "escala_renderizacao": 2.2,
+      "dimensoes_px": [
+        1263,
+        366
+      ],
+      "tratamento": "Recorte dos três painéis, reordenados com a proporção e os rótulos originais preservados. A legenda é apresentada no notebook.",
+      "sha256_imagem": "75279e4e72fed48b217e7e881f3018e67a9e08e37c1f87e7232feaedfa87e50a",
+      "data_extracao": "2026-11-21",
+      "ordem_paineis": [
+        "Unilateral à esquerda",
+        "Unilateral à direita",
+        "Bilateral"
+      ],
+      "recortes_paineis_pontos_pdf": [
+        [
+          313.5,
+          472,
+          501.5,
+          638
+        ],
+        [
+          116,
+          472,
+          313.5,
+          638
+        ],
+        [
+          501.5,
+          472,
+          690,
+          638
+        ]
+      ]
+    },
+    {
       "arquivo": "morettin_figura_10_1.png",
       "fonte_id": "morettin-bussab-2010",
       "arquivo_fonte": ".interno/prof/refs/livros/P. A. Morettin, W. de O. Bussab - Estatística Básica-Saraiva (2010).pdf",
@@ -252,6 +300,100 @@
       },
       "sha256_imagem": "8bbae2fc382d2867f3ff24627192261930eaa23f170ca93ccfc5d94d25daba9f",
       "data_obtencao": "2026-11-20"
+    },
+    {
+      "arquivo": "soga_py_teste_esquerda.png",
+      "fonte_id": "soga-py-2023",
+      "localizador": "Teste unilateral à esquerda",
+      "url_fonte": "https://www.geo.fu-berlin.de/en/v/soga-py/Basics-of-statistics/Hypothesis-Tests/Introduction-to-Hypothesis-Testing/Critical-Value-and-the-p-Value-Approach/index.html",
+      "url_imagem_original": "https://userpage.fu-berlin.de/soga/soga-py/200/2070_hypothesis_tests/img/Generalized_figure_of_left_tailed_test.png",
+      "autoria_original": "Annette Rudolph, Joachim Krois e Kai Hartmann (2023)",
+      "licenca": "CC BY-SA 4.0",
+      "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensoes_px": [
+        1344,
+        960
+      ],
+      "tratamento": "Gráfico original reproduzido integralmente.",
+      "sha256_imagem": "878af055702ea384a3e4a67c3e509c4c1ac94de256cd20c70ac851790799d63a",
+      "data_obtencao": "2026-11-21"
+    },
+    {
+      "arquivo": "soga_py_teste_direita.png",
+      "fonte_id": "soga-py-2023",
+      "localizador": "Teste unilateral à direita",
+      "url_fonte": "https://www.geo.fu-berlin.de/en/v/soga-py/Basics-of-statistics/Hypothesis-Tests/Introduction-to-Hypothesis-Testing/Critical-Value-and-the-p-Value-Approach/index.html",
+      "url_imagem_original": "https://userpage.fu-berlin.de/soga/soga-py/200/2070_hypothesis_tests/img/Generalized_figure_of_right_tailed_test.png",
+      "autoria_original": "Annette Rudolph, Joachim Krois e Kai Hartmann (2023)",
+      "licenca": "CC BY-SA 4.0",
+      "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensoes_px": [
+        1344,
+        960
+      ],
+      "tratamento": "Gráfico original reproduzido integralmente.",
+      "sha256_imagem": "2301100cbab4776c92a02cec36751a4729296af0d083dc9bfa4612a12cba04be",
+      "data_obtencao": "2026-11-21"
+    },
+    {
+      "arquivo": "soga_py_teste_bilateral.png",
+      "fonte_id": "soga-py-2023",
+      "localizador": "Teste bilateral",
+      "url_fonte": "https://www.geo.fu-berlin.de/en/v/soga-py/Basics-of-statistics/Hypothesis-Tests/Introduction-to-Hypothesis-Testing/Critical-Value-and-the-p-Value-Approach/index.html",
+      "url_imagem_original": "https://userpage.fu-berlin.de/soga/soga-py/200/2070_hypothesis_tests/img/Generalized_figure_of_two_sided_test.png",
+      "autoria_original": "Annette Rudolph, Joachim Krois e Kai Hartmann (2023)",
+      "licenca": "CC BY-SA 4.0",
+      "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensoes_px": [
+        1344,
+        960
+      ],
+      "tratamento": "Gráfico original reproduzido integralmente.",
+      "sha256_imagem": "63a70168c5ed0a35f41f3752c7bbf68fb6204931883b12d6fbfa06417196ea8d",
+      "data_obtencao": "2026-11-21"
+    },
+    {
+      "arquivo": "regioes_rejeicao_normal_paineis.png",
+      "fonte_id": "soga-py-2023",
+      "localizador": "Abordagem pelo valor crítico. Testes unilaterais e bilateral.",
+      "url_fonte": "https://www.geo.fu-berlin.de/en/v/soga-py/Basics-of-statistics/Hypothesis-Tests/Introduction-to-Hypothesis-Testing/Critical-Value-and-the-p-Value-Approach/index.html",
+      "autoria_original": "Annette Rudolph, Joachim Krois e Kai Hartmann (2023)",
+      "licenca": "CC BY-SA 4.0",
+      "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensoes_px": [
+        1890,
+        532
+      ],
+      "tratamento": "Redesenho em Matplotlib com três painéis em português e títulos em peso normal.",
+      "parametros_geracao": {
+        "nivel_significancia_ilustrativo": 0.1
+      },
+      "sha256_imagem": "8bf0be293eeb996a5e43dfa4b605252872bc348850eb50f10fb0836c766a68ff",
+      "data_obtencao": "2026-11-21",
+      "ordem_paineis": [
+        "Unilateral à esquerda",
+        "Unilateral à direita",
+        "Bilateral"
+      ]
+    },
+    {
+      "arquivo": "poder_teste_escore_barras_sobrepostas.png",
+      "fonte_id": "elaboracao-docente",
+      "dimensoes_px": [
+        1376,
+        736
+      ],
+      "tratamento": "Barras sobrepostas de mesma largura geradas com Matplotlib a partir das probabilidades binomiais sob a hipótese nula e sob a proporção verdadeira. As linhas pontilhadas separam as regiões de decisão do teste de escore bilateral com aproximação Normal. Esquema inspirado em Barbetta, Reis e Bornia (2010, p. 225, Figura 8.9).",
+      "parametros_geracao": {
+        "tamanho_amostral": 400,
+        "proporcao_sob_h0": 0.8,
+        "proporcao_populacional": 0.8129,
+        "nivel_significancia_nominal": 0.05,
+        "contagem_limite_inferior": 304,
+        "contagem_limite_superior": 336
+      },
+      "sha256_imagem": "7c1b062ea8aeffd7189c27e53d8496c6f65e2a1d4ec88faf85c46862a30e5b3a",
+      "data_obtencao": "2026-11-21"
     }
   ]
 }
