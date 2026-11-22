@@ -231,7 +231,7 @@
       "data_extracao": "2026-11-13"
     },
     {
-      "arquivo": "ic_media_sigma_conhecido.png",
+      "arquivo": "ic_media_dp_conhecido.png",
       "fonte_id": "elaboracao-docente",
       "arquivo_original": "Plot_level_of_confidence.png",
       "url_imagem_original": "https://drive.google.com/uc?id=1LA7QbFX8xkzbPr86JNuoEK4k-MZ8rvR4",
@@ -240,41 +240,42 @@
         1600,
         1120
       ],
-      "tratamento": "Substituição da imagem original por novo esquema científico gerado com NumPy, SciPy e Matplotlib. Painel (a) apresenta a Normal padrão com área central e caudas. Painel (b) apresenta o intervalo observado centrado em x-barra, sem curva de densidade sobre o parâmetro fixo. Notação de quantil acumulado e sinais do eixo corrigidos.",
+      "tratamento": "Substituição da imagem original por novo esquema científico gerado com NumPy, SciPy e Matplotlib. Painel (a) apresenta a Normal padrão com área central e caudas. Painel (b) apresenta o intervalo observado centrado em x-barra, sem curva de densidade sobre o parâmetro fixo. Notação de quantil acumulado e sinais do eixo corrigidos. Versão em tons de cinza. Rótulos dos eixos abreviados.",
       "autoria_original": "Não identificada nos metadados recuperados. Imagem fornecida pelo docente.",
       "fonte_legenda": "CARUBBI, 2026, conforme padrão docente para material disponibilizado sem referência bibliográfica identificada.",
       "observacao_revisao": "Inconsistências da imagem original corrigidas pela separação dos dois painéis e pela padronização dos rótulos.",
       "data_obtencao": "2026-11-13",
       "sha256_imagem_original": "5f55813936864c8c5d2765bec5fbafbec6fb57fc1d5e66985814e4d9287cd30f",
-      "sha256_imagem": "8f68f0ac165c4a2441822916f79ae0f1a19131272669553bc8b3c62f86a4e016",
+      "sha256_imagem": "599f97bf41762bbe0ae78fe806cf6fd14106353137e65963724395312b061d12",
       "autoria_imagem_atual": "Elaboração didática para o notebook, CARUBBI, 2026.",
       "parametros_geracao": {
         "nivel_confianca": 0.95,
         "alfa": 0.05,
         "valor_critico": 1.959963984540054
       },
-      "data_revisao": "2026-11-13"
+      "data_revisao": "2026-11-22"
     },
     {
-      "arquivo": "ic_proporcao_wald_95.png",
+      "arquivo": "ic_proporcao_wald_95_cinza.png",
       "fonte_id": "elaboracao-docente",
       "dimensoes_px": [
         1872,
         492
       ],
-      "tratamento": "Esquema didático gerado com Matplotlib a partir do intervalo de Wald de 95% para a proporção do exemplo da subseção 9.2. As setas representam a margem de erro de cada lado da estimativa.",
-      "sha256_imagem": "cb9866a3f62d0dbebbe4049b34f24f89d789747d24d32646b4394e79f8ba42fc",
-      "data_obtencao": "2026-11-20"
+      "tratamento": "Esquema didático gerado com Matplotlib a partir do intervalo de Wald de 95% para a proporção do exemplo da subseção 9.2. As setas representam a margem de erro de cada lado da estimativa. Versão em tons de cinza.",
+      "sha256_imagem": "096724c9d8098e3653e7e4eccc53a715d19c5e466059ca7695677118477e4814",
+      "data_obtencao": "2026-11-20",
+      "data_revisao": "2026-11-22"
     },
     {
-      "arquivo": "ic_proporcao_wald_cobertura.png",
+      "arquivo": "ic_proporcao_cobertura.png",
       "fonte_id": "elaboracao-docente",
       "dimensoes_px": [
         1824,
         1500
       ],
-      "tratamento": "Simulação de amostras aleatórias simples com reposição e representação dos intervalos de Wald com Matplotlib.",
-      "sha256_imagem": "95bdb86fb8dc610dd2a0dfbe0b5503710053abf4e9802e9080df3b2fed083eee",
+      "tratamento": "Simulação de amostras aleatórias simples com reposição e representação dos intervalos de Wald com Matplotlib. Versão em tons de cinza. Rótulos dos eixos abreviados.",
+      "sha256_imagem": "eda5a9a3927a05cbcbc07a345228bdc13a4723f4405658d281c3b678e2246ac0",
       "parametros_geracao": {
         "nivel_confianca": 0.95,
         "proporcao_populacional": 0.8129,
@@ -283,23 +284,25 @@
         "intervalos_que_contem_a_proporcao": 48,
         "semente": 2026
       },
-      "data_obtencao": "2026-11-20"
+      "data_obtencao": "2026-11-20",
+      "data_revisao": "2026-11-22"
     },
     {
-      "arquivo": "ic_proporcao_wald_valor_critico.png",
+      "arquivo": "ic_proporcao_valor_critico.png",
       "fonte_id": "elaboracao-docente",
       "dimensoes_px": [
         1840,
         1288
       ],
-      "tratamento": "Esquema gerado com Matplotlib. O painel (a) mostra a Normal padrão e o valor crítico. O painel (b) mostra o intervalo de Wald calculado para a proporção no exemplo da aula.",
+      "tratamento": "Esquema gerado com Matplotlib. O painel (a) mostra a Normal padrão e o valor crítico. O painel (b) mostra o intervalo de Wald calculado para a proporção no exemplo da aula. Versão em tons de cinza. Rótulos dos eixos abreviados.",
       "parametros_geracao": {
         "nivel_confianca": 0.95,
         "tamanho_amostral": 400,
         "contagem": 315
       },
-      "sha256_imagem": "8bbae2fc382d2867f3ff24627192261930eaa23f170ca93ccfc5d94d25daba9f",
-      "data_obtencao": "2026-11-20"
+      "sha256_imagem": "27cac1f5f37b72fad3a0e94b9d730e98ed20cb70ac0d4102b6621c68d6c7393f",
+      "data_obtencao": "2026-11-20",
+      "data_revisao": "2026-11-22"
     },
     {
       "arquivo": "soga_py_teste_esquerda.png",
@@ -375,25 +378,6 @@
         "Unilateral à direita",
         "Bilateral"
       ]
-    },
-    {
-      "arquivo": "poder_teste_escore_barras_sobrepostas.png",
-      "fonte_id": "elaboracao-docente",
-      "dimensoes_px": [
-        1376,
-        736
-      ],
-      "tratamento": "Barras sobrepostas de mesma largura geradas com Matplotlib a partir das probabilidades binomiais sob a hipótese nula e sob a proporção verdadeira. As linhas pontilhadas separam as regiões de decisão do teste de escore bilateral com aproximação Normal. Esquema inspirado em Barbetta, Reis e Bornia (2010, p. 225, Figura 8.9).",
-      "parametros_geracao": {
-        "tamanho_amostral": 400,
-        "proporcao_sob_h0": 0.8,
-        "proporcao_populacional": 0.8129,
-        "nivel_significancia_nominal": 0.05,
-        "contagem_limite_inferior": 304,
-        "contagem_limite_superior": 336
-      },
-      "sha256_imagem": "7c1b062ea8aeffd7189c27e53d8496c6f65e2a1d4ec88faf85c46862a30e5b3a",
-      "data_obtencao": "2026-11-21"
     }
   ]
 }
