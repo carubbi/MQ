@@ -1,0 +1,205 @@
+{
+  "aula": "u3_s02",
+  "imagens": [
+    {
+      "arquivo": "barbetta_figura_7_9.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 190,
+      "pagina_impressa": 189,
+      "localizador": "Figura 7.9",
+      "recorte_pontos_pdf": [
+        120,
+        440,
+        685,
+        664
+      ],
+      "escala_renderizacao": 2.2,
+      "tratamento": "Recorte dos elementos gráficos e rótulos internos da figura, com proporção preservada. A legenda é apresentada no notebook.",
+      "data_extracao": "2026-11-12"
+    },
+    {
+      "arquivo": "barbetta_figura_8_6_paineis.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 215,
+      "pagina_impressa": 214,
+      "localizador": "Figura 8.6",
+      "recorte_pontos_pdf": [
+        116,
+        472,
+        690,
+        638
+      ],
+      "escala_renderizacao": 2.2,
+      "dimensoes_px": [
+        1263,
+        366
+      ],
+      "tratamento": "Recorte dos três painéis, reordenados com a proporção e os rótulos originais preservados. A legenda é apresentada no notebook.",
+      "sha256_imagem": "75279e4e72fed48b217e7e881f3018e67a9e08e37c1f87e7232feaedfa87e50a",
+      "data_extracao": "2026-11-21",
+      "ordem_paineis": [
+        "Unilateral à esquerda",
+        "Unilateral à direita",
+        "Bilateral"
+      ],
+      "recortes_paineis_pontos_pdf": [
+        [
+          313.5,
+          472,
+          501.5,
+          638
+        ],
+        [
+          116,
+          472,
+          313.5,
+          638
+        ],
+        [
+          501.5,
+          472,
+          690,
+          638
+        ]
+      ]
+    },
+    {
+      "arquivo": "barbetta_figura_7_7.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 183,
+      "pagina_impressa": 182,
+      "localizador": "Figura 7.7",
+      "recorte_pontos_pdf": [
+        185,
+        440,
+        610,
+        610
+      ],
+      "escala_renderizacao": 3,
+      "tratamento": "Recorte dos três alvos completos e rótulos T1, T2 e T3, sem a legenda original. Identificações (a), (b) e (c) e legenda interpretativa apresentadas no notebook.",
+      "data_extracao": "2026-11-13"
+    },
+    {
+      "arquivo": "barbetta_figura_7_8.png",
+      "fonte_id": "barbetta-2010",
+      "arquivo_fonte": ".interno/prof/refs/livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf",
+      "sha256_fonte": "8cef726c71f8504563a0501fbfb6b388b33fe2746827602c6ef546cf5b03ba2a",
+      "pagina_pdf": 186,
+      "pagina_impressa": 185,
+      "localizador": "Figura 7.8",
+      "recorte_pontos_pdf": [
+        140,
+        675,
+        670,
+        940
+      ],
+      "escala_renderizacao": 3,
+      "tratamento": "Recorte da curva Normal, áreas central e caudas e tabela de valores críticos. A legenda original externa foi excluída e a legenda interpretativa é apresentada no notebook.",
+      "data_extracao": "2026-11-13"
+    },
+    {
+      "arquivo": "ic_media_dp_conhecido.png",
+      "fonte_id": "elaboracao-docente",
+      "arquivo_original": "Plot_level_of_confidence.png",
+      "url_imagem_original": "https://drive.google.com/uc?id=1LA7QbFX8xkzbPr86JNuoEK4k-MZ8rvR4",
+      "drive_file_id": "1LA7QbFX8xkzbPr86JNuoEK4k-MZ8rvR4",
+      "dimensoes_px": [
+        1600,
+        1120
+      ],
+      "tratamento": "Substituição da imagem original por novo esquema científico gerado com NumPy, SciPy e Matplotlib. Painel (a) apresenta a Normal padrão com área central e caudas. Painel (b) apresenta o intervalo observado centrado em x-barra, sem curva de densidade sobre o parâmetro fixo. Notação de quantil acumulado e sinais do eixo corrigidos. Versão em tons de cinza. Rótulos dos eixos abreviados.",
+      "autoria_original": "Não identificada nos metadados recuperados. Imagem fornecida pelo docente.",
+      "fonte_legenda": "CARUBBI, 2026, conforme padrão docente para material disponibilizado sem referência bibliográfica identificada.",
+      "observacao_revisao": "Inconsistências da imagem original corrigidas pela separação dos dois painéis e pela padronização dos rótulos.",
+      "data_obtencao": "2026-11-13",
+      "sha256_imagem_original": "5f55813936864c8c5d2765bec5fbafbec6fb57fc1d5e66985814e4d9287cd30f",
+      "sha256_imagem": "599f97bf41762bbe0ae78fe806cf6fd14106353137e65963724395312b061d12",
+      "autoria_imagem_atual": "Elaboração didática para o notebook, CARUBBI, 2026.",
+      "parametros_geracao": {
+        "nivel_confianca": 0.95,
+        "alfa": 0.05,
+        "valor_critico": 1.959963984540054
+      },
+      "data_revisao": "2026-11-22"
+    },
+    {
+      "arquivo": "ic_proporcao_95.png",
+      "fonte_id": "elaboracao-docente",
+      "dimensoes_px": [
+        1872,
+        492
+      ],
+      "tratamento": "Esquema didático gerado com Matplotlib a partir do intervalo de Wald de 95% para a proporção do exemplo da subseção 9.2. As setas representam a margem de erro de cada lado da estimativa. Versão em tons de cinza. O rótulo ME indica a margem de erro em pontos percentuais.",
+      "sha256_imagem": "6bf3ba3d560c5b748d978ea11f299265c59bb5da1eb5b8132caa49fcc3afcaf2",
+      "data_obtencao": "2026-11-20",
+      "data_revisao": "2026-11-22"
+    },
+    {
+      "arquivo": "ic_proporcao_cobertura.png",
+      "fonte_id": "elaboracao-docente",
+      "dimensoes_px": [
+        1824,
+        1500
+      ],
+      "tratamento": "Simulação de amostras aleatórias simples com reposição e representação dos intervalos de Wald com Matplotlib. Versão em tons de cinza. Rótulos dos eixos abreviados.",
+      "sha256_imagem": "eda5a9a3927a05cbcbc07a345228bdc13a4723f4405658d281c3b678e2246ac0",
+      "parametros_geracao": {
+        "nivel_confianca": 0.95,
+        "proporcao_populacional": 0.8129,
+        "tamanho_amostral": 400,
+        "numero_amostras": 50,
+        "intervalos_que_contem_a_proporcao": 48,
+        "semente": 2026
+      },
+      "data_obtencao": "2026-11-20",
+      "data_revisao": "2026-11-22"
+    },
+    {
+      "arquivo": "ic_proporcao_valor_critico.png",
+      "fonte_id": "elaboracao-docente",
+      "dimensoes_px": [
+        1840,
+        1288
+      ],
+      "tratamento": "Esquema gerado com Matplotlib. O painel (a) mostra a Normal padrão e o valor crítico. O painel (b) mostra o intervalo de Wald calculado para a proporção no exemplo da aula. Versão em tons de cinza. Rótulos dos eixos abreviados.",
+      "parametros_geracao": {
+        "nivel_confianca": 0.95,
+        "tamanho_amostral": 400,
+        "contagem": 315
+      },
+      "sha256_imagem": "27cac1f5f37b72fad3a0e94b9d730e98ed20cb70ac0d4102b6621c68d6c7393f",
+      "data_obtencao": "2026-11-20",
+      "data_revisao": "2026-11-22"
+    },
+    {
+      "arquivo": "regioes_rejeicao_normal_paineis.png",
+      "fonte_id": "soga-py-2023",
+      "localizador": "Abordagem pelo valor crítico. Testes unilaterais e bilateral.",
+      "url_fonte": "https://www.geo.fu-berlin.de/en/v/soga-py/Basics-of-statistics/Hypothesis-Tests/Introduction-to-Hypothesis-Testing/Critical-Value-and-the-p-Value-Approach/index.html",
+      "autoria_original": "Annette Rudolph, Joachim Krois e Kai Hartmann (2023)",
+      "licenca": "CC BY-SA 4.0",
+      "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensoes_px": [
+        1890,
+        532
+      ],
+      "tratamento": "Redesenho em Matplotlib com três painéis em português e títulos em peso normal.",
+      "parametros_geracao": {
+        "nivel_significancia_ilustrativo": 0.1
+      },
+      "sha256_imagem": "8bf0be293eeb996a5e43dfa4b605252872bc348850eb50f10fb0836c766a68ff",
+      "data_obtencao": "2026-11-21",
+      "ordem_paineis": [
+        "Unilateral à esquerda",
+        "Unilateral à direita",
+        "Bilateral"
+      ]
+    }
+  ]
+}
